@@ -15,7 +15,7 @@ if (process.env.GITHUB_EVENT_NAME === "issues") {
   if (issue.user?.login !== process.env.GITHUB_REPOSITORY_OWNER) {
     throw new Error("Only the repository owner can request a paid KCI render.");
   }
-  const match = /^\\[KCI (VOICE TEST|VIDEO)\\](?:\\s|$)/.exec(issue.title || "");
+  const match = /^\[KCI (VOICE TEST|VIDEO)\](?:\s|$)/.exec(issue.title || "");
   if (!match) throw new Error("Unrecognized KCI issue title.");
   mode = match[1] === "VOICE TEST" ? "voice-test" : "video";
   // Never execute a command from issue body: it may only select a checked-in JSON job.
