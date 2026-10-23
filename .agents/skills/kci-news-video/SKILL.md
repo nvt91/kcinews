@@ -18,8 +18,8 @@ description: Convert verified Korean financial news into professional Vietnamese
 - Create reviewed JSON files in jobs/ using the example. Each scene should contain a newsworthy headline, short summary, source and a natural Vietnamese voiceText.
 - Locally or via GitHub Actions, run validate before any Vbee request:
   `node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json`
-- In the GitHub Actions workflow **KCI News Video**, first select mode **voice-test**. Listen and approve the resulting MP3.
-- Only after the voice is approved, select mode **video**. The pipeline must stop if audio fails or if exported MP4 has no audio stream.
+- For direct triggering from ChatGPT, create a GitHub issue as repository owner with title `[KCI VOICE TEST] 2026-10-23` and JSON body `{\"job\":\"jobs/kci-2026-10-23.json\"}`. The issue trigger runs only after this workflow is merged into the repository default branch. Alternatively, manually dispatch **KCI News Video** with mode **voice-test**. Listen and approve the resulting MP3.
+- Only after voice approval, open a new owner-authored issue titled `[KCI VIDEO] 2026-10-23` with the same JSON job selector, or manually dispatch mode **video**. The pipeline must stop if audio fails or if exported MP4 has no audio stream.
 - Mode **preview** can render a silent, prominently marked internal demo but must never be called complete.
 
 ## Configuration
