@@ -24,7 +24,8 @@ description: Convert verified Korean financial news into professional Vietnamese
 
 ## Configuration
 GitHub Actions Secrets: `VBEE_APP_ID`, `VBEE_API_TOKEN`.
-GitHub Actions Variables: `VBEE_VOICE_CODE`, `VBEE_WEBHOOK_URL`, optionally `VBEE_AUDIO_HOSTS` for an exact verified external audio CDN hostname.
+Selected voice code (non-secret): `n_hanoi_male_tuananhnews_news_vc` (Tuấn Anh News). It is pinned in the workflow for this KCI test.
+GitHub Actions Variables: `VBEE_WEBHOOK_URL`, optionally `VBEE_AUDIO_HOSTS` for an exact verified external audio CDN hostname.
 
 The adapter uses Vbee async API `POST https://api.vbee.vn/v1/tts`, then requests audio by request ID. **The actual polling route, response keys and callback requirements must be tested against the account's specific Vbee API documentation before invoking any chargeable work.** Do not use a dummy callback. If the account requires callback-only delivery, update the architecture to use a real authenticated HTTPS callback and job storage instead of assuming polling.
 
