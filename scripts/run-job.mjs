@@ -4,8 +4,24 @@ import { execFileSync } from "node:child_process";
 import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
 
 const FPS = 30;
-const mode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1] || "validate";
-const jobFile = process.argv.find(x => x.startsWith("--job="))?.slice(6) || "jobs/kci-2026-10-23.json";
+let mode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1] || process.env.KCI_MODE || "validate";
+let jobFile = process.argv.find(x => x.startsWith("--job="))?.slice(6) || process.env.KCI_JOB || "jobs/kci-2026-10-23.json";
+if (process.env.GITHUB_EVENT_NAME === "issues") {
+  // GitHub issues are the bridge to ChatGPT's GitHub connector.
+  // Only an owner-authored, explicitly titled new issue can spend Vbee credits.
+  const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
+  if (event.action !== "opened") throw new Error("Ignored non-new issue event.");
+  const issue = event.issue || {};
+  if (issue.user?.login !== process.env.GITHUB_REPOSITORY_OWNER) {
+    throw new Error("Only the repository owner can request a paid KCI render.");
+  }
+  const match = /^\\[KCI (VOICE TEST|VIDEO)\\](?:\\s|$)/.exec(issue.title || "");
+  if (!match) throw new Error("Unrecognized KCI issue title.");
+  mode = match[1] === "VOICE TEST" ? "voice-test" : "video";
+  // Never execute a command from issue body: it may only select a checked-in JSON job.
+  const issueBody = JSON.parse(issue.body || "{}");
+  jobFile = issueBody.job || "jobs/kci-2026-10-23.json";
+}
 if (!["validate", "preview", "voice-test", "video"].includes(mode)) throw new Error("Invalid mode.");
 if (!/^jobs\/[\w-]+\.json$/.test(jobFile)) throw new Error("Job filename must be within jobs/.");
 const job = JSON.parse(fs.readFileSync(jobFile, "utf8"));
