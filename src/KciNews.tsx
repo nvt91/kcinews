@@ -67,6 +67,8 @@ export type KciVideoProps = {
   edition: string;
   scenes: RenderScene[];
   preview: boolean;
+  /** QC-only overlay; must be off for published videos. */
+  safeGuides?: boolean;
 };
 
 const colors = {
