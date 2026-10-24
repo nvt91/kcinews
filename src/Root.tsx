@@ -2,7 +2,8 @@ import React from "react";
 import { Composition } from "remotion";
 import { FPS, KciNews, type KciVideoProps } from "./KciNews";
 import { KciNewsV2 } from "./KciNewsV2";
-import { KciNewsDaily } from "./KciNewsDaily";
+// Keep the job/composition ID stable; only replace the presentation layer.
+import { KciNewsReels as KciNewsDaily } from "./KciNewsReels";
 
 const demo: KciVideoProps = {
   headline: "KCI Market News",
