@@ -4,9 +4,13 @@ import { execFileSync } from "node:child_process";
 import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
 
 const FPS = 30;
-let mode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1] || process.env.KCI_MODE || "validate";
-let jobFile = process.argv.find(x => x.startsWith("--job="))?.slice(6) || process.env.KCI_JOB || "jobs/kci-2026-10-23.json";
-if (process.env.GITHUB_EVENT_NAME === "issues") {
+const explicitMode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1];
+const explicitJob = process.argv.find(x => x.startsWith("--job="))?.slice(6);
+let mode = explicitMode || process.env.KCI_MODE || "validate";
+let jobFile = explicitJob || process.env.KCI_JOB || "jobs/kci-2026-10-23.json";
+// An explicitly provided CLI mode must NOT be overwritten by a GitHub issue.
+// In particular, the validation step must never send a billable TTS request.
+if (process.env.GITHUB_EVENT_NAME === "issues" && !explicitMode) {
   // GitHub issues are the bridge to ChatGPT's GitHub connector.
   // Only an owner-authored, explicitly titled new issue can spend Vbee credits.
   const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
