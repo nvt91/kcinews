@@ -55,8 +55,19 @@ jobs:
       - run: node --check scripts/run-job.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
-      - run: node scripts/check-worker.mjs
+      - name: Cloudflare live endpoint check (advisory before first production deployment)
+        continue-on-error: true
+        run: node scripts/check-worker.mjs
       - run: node scripts/run-job.mjs --mode=validate
+      - name: Smoke render KCI first frame
+        run: mkdir -p out && npx remotion still src/index.ts KciNews out/kci-smoke.png --frame=25
+      - name: Upload KCI rendering evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: kci-pr-render-${{ github.run_id }}
+          path: out/kci-smoke.png
+          retention-days: 7
+          if-no-files-found: error
   render:
     if: >-
       github.event_name == 'workflow_dispatch' ||
