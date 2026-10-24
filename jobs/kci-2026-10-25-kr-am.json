@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-25-kr-am",
+  "edition": "KINH TẾ HÀN QUỐC · SÁNG 25/10/2026 KST · CHUYÊN ĐỀ CHỦ NHẬT",
+  "dataAsOf": "2026-10-25T08:06:34+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Xuất khẩu Hàn Quốc tăng 105,4%, KOSPI giảm 2,08% tuần qua — ba phép thử tuần mới",
+  "sourceDisclaimer": "Sunday 25 Oct 2026; no Sunday KRX session. Exports provisional 1–20 Oct, released 21 Oct; KOSPI last close Friday 23 Oct. Earnings/GDP are FUTURE schedules, not actual released figures. Informational only.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261025-KR-AM",
+    "articlePath": "editorial/2026-10-25/kr-am.md",
+    "eventKeys": [
+      "KR-CUSTOMS:EXPORTS-PRELIM-1-20OCT:2026-10-21",
+      "KR-KOSPI:WEEKLY-CLOSE:2026-10-23",
+      "KR-SKHYNIX:Q3-EARNINGS-CALL-SCHEDULE:2026-10-21",
+      "KR-SAMSUNG:Q3-EARNINGS-SCHEDULE:2026-10-08",
+      "KR-BOK:Q3-GDP-PRELIM-RELEASE-SCHEDULE:2026-10-24"
+    ],
+    "editorialScore": 94,
+    "scoreBreakdown": {
+      "sourcesData": 34,
+      "analysis": 23,
+      "freshness": 14,
+      "vietnamese": 14,
+      "distinctness": 9
+    },
+    "duplicateReview": "Compared accessible jobs of 23–24 Oct, issue #17 24 Oct KOSPI reversal/breadth, issue #22 24 Oct MACRO21 oil/BOK. This 25 Oct Sunday edition focuses on KCS export strength vs weekly KOSPI drop and independently verified Korean Q3 earnings/GDP forward calendar. No repetition of the old 23 Oct intraday reversal thesis or 24 Oct macro oil-policy narration.",
+    "renderSpec": "1080x1920,30fps,H.264/AAC;KciNewsDaily wide-middle Reels",
+    "voiceCode": "n_hanoi_male_tuananhnews_news_vc",
+    "publishing": "NOT_AUTHORIZED"
+  },
+  "sourceLedger": [
+    {
+      "id": "kr-customs-oct20",
+      "title": "Korea Customs Service — Provisional exports and imports, 1–20 October 2026",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&mi=2891&nttSn=10180465&nttSnUrl=3b279b0d8ae0387ac138c4741fb65b67",
+      "eventDate": "2026-10-21",
+      "publicationDate": "2026-10-21",
+      "checkedAt": "2026-10-25T08:06:34+09:00",
+      "kind": "primary",
+      "facts": [
+        "KCS released provisional 1–20 October exports of USD 61.612 billion, up 105.4% year on year; this is not a full-month result.",
+        "Semiconductor exports for the 1–20 October period were USD 27.5 billion.",
+        "The daily export average adjusted for working days rose 65.9% year on year to USD 4.74 billion."
+      ]
+    },
+    {
+      "id": "newsis-kospi-week",
+      "title": "Newsis — Weekly Korea stock outlook, 25 October 2026, citing KRX",
+      "url": "https://www.newsis.com/view/NISX20261023_0003838819",
+      "eventDate": "2026-10-23",
+      "publicationDate": "2026-10-25 07:00 KST",
+      "checkedAt": "2026-10-25T08:06:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The Friday 23 October KOSPI main-session close was 5,550.30, 2.08% lower than the previous Friday's 5,668.05.",
+        "The 19–23 October week showed persistent sharp intraday volatility. These are last-trading-week figures, not live Sunday quotes.",
+        "Analysts are watching Q3 earnings and potential shareholder return updates, neither of which is already guaranteed."
+      ]
+    },
+    {
+      "id": "skhynix-q3-call",
+      "title": "SK hynix IR — Q3 2026 earnings call invitation",
+      "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+      "eventDate": "2026-10-28",
+      "publicationDate": "2026-10-21",
+      "checkedAt": "2026-10-25T08:06:34+09:00",
+      "kind": "primary",
+      "facts": [
+        "SK hynix scheduled its Q3 2026 earnings announcement before 09:00 KST on Wednesday 28 October 2026.",
+        "SK hynix scheduled the Korean-English earnings conference call at 09:00 KST on 28 October 2026."
+      ]
+    },
+    {
+      "id": "samsung-q3-call",
+      "title": "Samsung Electronics IR — Notice of Q3 2026 earnings release schedule",
+      "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84776/",
+      "eventDate": "2026-10-29",
+      "publicationDate": "2026-10-08",
+      "checkedAt": "2026-10-25T08:06:34+09:00",
+      "kind": "primary",
+      "facts": [
+        "Samsung Electronics scheduled its Q3 2026 results conference call for Thursday 29 October 2026 at 10:00 KST.",
+        "The full Q3 2026 results discussed in the notice are future as of Sunday 25 October 2026."
+      ]
+    },
+    {
+      "id": "yonhap-korea-calendar",
+      "title": "Yonhap — Korean economic diary for 26–30 October 2026",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261023183500002",
+      "eventDate": "2026-10-27",
+      "publicationDate": "2026-10-24 09:21 KST",
+      "checkedAt": "2026-10-25T08:06:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The Bank of Korea is scheduled to release the preliminary Q3 2026 real GDP growth rate on 27 October.",
+        "Korea's National Data Office is scheduled to announce September industrial activity statistics on 30 October.",
+        "As of 25 October, those October 27 and 30 releases remain future, not already observed data."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+        "score": 46
+      },
+      {
+        "style": "investor-impact",
+        "text": "Bán dẫn kéo xuất khẩu Hàn Quốc lập kỷ lục, còn thị trường chứng khoán vẫn biến động. Tuần mới, hai hãng chip phải chứng minh điều gì?",
+        "score": 43
+      },
+      {
+        "style": "question",
+        "text": "Xuất khẩu tăng mạnh liệu đã đủ giúp thị trường Hàn Quốc phục hồi? Tuần tới có ba mốc dữ liệu đáng chú ý.",
+        "score": 40
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, kết quả kinh doanh bán dẫn hay sức khỏe kinh tế trong nước quan trọng hơn cho đà hồi phục? Bình luận góc nhìn và theo dõi Korea Capital Insight để cập nhật.",
+    "screenHeadline": "LỢI NHUẬN CHIP HAY SỨC KHỎE NỀN KINH TẾ?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Theo anh chị, kết quả kinh doanh bán dẫn hay sức khỏe kinh tế trong nước quan trọng hơn cho đà hồi phục?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN SÁNG CUỐI TUẦN · 25/10",
+      "headline": "XUẤT KHẨU TĂNG MẠNH, KOSPI VẪN GIẢM",
+      "summary": "1–20/10: xuất khẩu +105,4%; tuần 19–23/10: KOSPI −2,08%. Hai phạm vi khác nhau.",
+      "source": "Korea Customs Service 21/10 · Newsis/KRX 25/10",
+      "sourceIds": [
+        "kr-customs-oct20",
+        "newsis-kospi-week"
+      ],
+      "stats": [
+        {
+          "label": "XUẤT KHẨU · 1–20/10",
+          "value": "+105,4%",
+          "tone": "up"
+        },
+        {
+          "label": "KOSPI · TUẦN 19–23/10",
+          "value": "−2,08%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Các giai đoạn quan sát khác nhau; không phải diễn biến Chủ nhật."
+      }
+    },
+    {
+      "id": "exports",
+      "eyebrow": "KINH TẾ HÀN QUỐC · SỐ LIỆU SƠ BỘ",
+      "headline": "BÁN DẪN LÀ ĐỘNG LỰC XUẤT KHẨU",
+      "summary": "Tổng xuất khẩu 61,612 tỷ USD; riêng chip 27,5 tỷ USD, giai đoạn 1–20/10.",
+      "source": "Korea Customs Service · công bố 21/10/2026",
+      "sourceIds": [
+        "kr-customs-oct20"
+      ],
+      "stats": [
+        {
+          "label": "Tổng xuất khẩu · 1–20/10",
+          "value": "61,612 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "Trong đó bán dẫn",
+          "value": "27,5 tỷ USD",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Hải quan Hàn Quốc công bố ngày hai mươi mốt tháng Mười: xuất khẩu trong hai mươi ngày đầu tháng đạt hơn sáu mươi mốt phẩy sáu tỷ đô la, tăng một trăm linh năm phẩy bốn phần trăm so với cùng kỳ. Riêng bán dẫn đạt hai mươi bảy phẩy năm tỷ đô la. Đây mới là số liệu sơ bộ.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Toàn bộ xuất khẩu",
+            "value": 61.612,
+            "display": "61,612 tỷ USD",
+            "tone": "up"
+          },
+          {
+            "label": "Bán dẫn",
+            "value": 27.5,
+            "display": "27,5 tỷ USD",
+            "tone": "up"
+          }
+        ],
+        "qualifier": "Giá trị cùng kỳ 1–20/10/2026, không phải tăng trưởng cả tháng."
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG · PHIÊN HOÀN TẤT",
+      "headline": "KOSPI VẪN GIẢM 2,08% TRONG TUẦN",
+      "summary": "Chốt phiên thứ Sáu 23/10: 5.550,30 điểm; không có phiên KRX Chủ nhật.",
+      "source": "Newsis dẫn số liệu KRX · 25/10/2026",
+      "sourceIds": [
+        "newsis-kospi-week"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · chốt 23/10",
+          "value": "5.550,30",
+          "change": "−2,08% trong tuần",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Thế nhưng KOSPI kết thúc tuần mười chín đến hai mươi ba tháng Mười ở năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm so với cuối tuần trước. Xuất khẩu tăng không đồng nghĩa cổ phiếu sẽ tăng ngay: giá còn phản ánh rủi ro và dòng vốn.",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Mốc đóng cửa KRX thứ Sáu 23/10, không phải giá live Chủ nhật."
+      }
+    },
+    {
+      "id": "earnings",
+      "eyebrow": "KẾT QUẢ QUÝ III · LỊCH ĐÃ XÁC MINH",
+      "headline": "SK HYNIX 28/10 · SAMSUNG 29/10",
+      "summary": "Hai lịch công bố chính thức; kết quả chưa được phát hành tại mốc dữ liệu 25/10.",
+      "source": "SK hynix IR 21/10 · Samsung IR 08/10",
+      "sourceIds": [
+        "skhynix-q3-call",
+        "samsung-q3-call"
+      ],
+      "stats": [
+        {
+          "label": "SK hynix · công bố trước 09:00 KST",
+          "value": "28/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "Samsung · conference call 10:00 KST",
+          "value": "29/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Bước sang tuần mới, SK hynix dự kiến công bố kết quả quý ba trước chín giờ sáng ngày hai mươi tám tháng Mười. Samsung Electronics họp công bố lúc mười giờ sáng ngày hai mươi chín. Khi đó, cần đọc chất lượng lợi nhuận, dòng tiền và kế hoạch trả lại giá trị cho cổ đông, không coi kỳ vọng là quyết định đã có.",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Lịch công bố tương lai · chưa phải kết quả thực tế."
+      }
+    },
+    {
+      "id": "gdp",
+      "eyebrow": "KINH TẾ NỘI ĐỊA · LỊCH SẮP TỚI",
+      "headline": "GDP QUÝ III: CHỜ NGÀY 27/10",
+      "summary": "Dữ liệu hoạt động công nghiệp tháng 9 dự kiến tiếp theo vào ngày 30/10.",
+      "source": "Yonhap · lịch kinh tế 24/10/2026",
+      "sourceIds": [
+        "yonhap-korea-calendar"
+      ],
+      "stats": [
+        {
+          "label": "BOK · GDP quý III",
+          "value": "27/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "Hoạt động công nghiệp tháng 9",
+          "value": "30/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Còn sức khỏe kinh tế trong nước? Ngày hai mươi bảy tháng Mười dự kiến có GDP quý ba, và ngày ba mươi là báo cáo hoạt động công nghiệp tháng Chín. Những dữ liệu này sẽ cho biết sức bật xuất khẩu có đi cùng sản xuất, tiêu dùng và đầu tư hay không.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "27/10",
+        "unit": "LỊCH GDP QUÝ III · HÀN QUỐC",
+        "qualifier": "Số GDP mới CHƯA được công bố vào sáng 25/10."
+      }
+    },
+    {
+      "id": "closing",
+      "eyebrow": "NHỮNG ĐIỂM CẦN KIỂM TRA",
+      "headline": "BA MỐC QUAN TRỌNG CHO TUẦN MỚI",
+      "summary": "GDP 27/10 · SK hynix 28/10 · Samsung 29/10. Không khuyến nghị giao dịch.",
+      "source": "Yonhap 24/10 · SK hynix IR · Samsung IR",
+      "sourceIds": [
+        "yonhap-korea-calendar",
+        "skhynix-q3-call",
+        "samsung-q3-call"
+      ],
+      "stats": [],
+      "voiceText": "Ba phép thử tuần mới: tăng trưởng GDP, lợi nhuận bán dẫn và khả năng lan tỏa của đà phục hồi. Đây là thông tin tham khảo, không phải khuyến nghị giao dịch.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "27/10 · GDP Hàn Quốc quý III",
+          "28/10 · Kết quả SK hynix quý III",
+          "29/10 · Kết quả Samsung quý III"
+        ]
+      }
+    }
+  ]
+}
