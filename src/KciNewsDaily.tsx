@@ -250,113 +250,190 @@ const Bars:React.FC<{v:KciVisual;f:number}> = ({v,f}) => {
 };
 
 const Chip:React.FC<{v:KciVisual;s:RenderScene;f:number}> = ({v,s,f}) => (
-  <>
-    <div style={{...card,height:443,position:"relative",overflow:"hidden",background:"radial-gradient(ellipse at center,#17445B,#0C2138 70%)"}}>
-      <svg width="100%" height="100%" viewBox="0 0 940 443">
+  <div style={{height:REELS_SAFE.artworkHeight,overflow:"hidden"}}>
+    <div style={{
+      ...card,height:284,position:"relative",overflow:"hidden",
+      background:"radial-gradient(ellipse at center,#17445B,#0C2138 70%)",
+    }}>
+      <svg width="100%" height="100%" viewBox="0 0 940 360">
         {Array.from({length:12},(_,i)=>(
           <g key={i}>
-            <path d={"M0 "+(30+i*31)+" H"+(115+(i%4)*35)+" V"+(75+(i%5)*33)+" H310"}
-              fill="none" stroke={P.teal} strokeWidth="3" strokeDasharray="12 11"
-              strokeDashoffset={-f*1.5} opacity={.15+.12*Math.max(0,Math.sin(f/17+i))}/>
-            <path d={"M940 "+(30+i*31)+" H"+(810-(i%4)*35)+" V"+(75+(i%5)*33)+" H628"}
-              fill="none" stroke={P.blue} strokeWidth="3" strokeDasharray="12 11"
-              strokeDashoffset={f*1.5} opacity={.16+.1*Math.max(0,Math.cos(f/12+i))}/>
+            <path d={"M0 "+(20+i*29)+" H"+(115+(i%4)*35)+" V"+(65+(i%5)*24)+" H310"}
+              fill="none" stroke={P.teal} strokeWidth="3"
+              strokeDasharray="12 11" strokeDashoffset={-f*1.5}
+              opacity={.15+.12*Math.max(0,Math.sin(f/17+i))}/>
+            <path d={"M940 "+(20+i*29)+" H"+(810-(i%4)*35)+" V"+(65+(i%5)*24)+" H628"}
+              fill="none" stroke={P.blue} strokeWidth="3"
+              strokeDasharray="12 11" strokeDashoffset={f*1.5}
+              opacity={.16+.1*Math.max(0,Math.cos(f/12+i))}/>
           </g>
         ))}
-        <rect x="307" y="80" width="326" height="278" rx="25" fill="#0A2036" stroke={P.teal} strokeWidth="5"/>
-        <rect x="323" y="97" width="293" height="244" rx="16" fill="#113B56" stroke="#81CEE2" strokeWidth="1"/>
-        <text x="470" y="202" textAnchor="middle" fontSize="47" fontWeight="bold" fill={P.white}>
+        <rect x="308" y="39" width="325" height="275" rx="25"
+          fill="#0A2036" stroke={P.teal} strokeWidth="5"/>
+        <rect x="324" y="55" width="293" height="243" rx="16"
+          fill="#113B56" stroke="#81CEE2" strokeWidth="1"/>
+        <text x="470" y="155" textAnchor="middle" fontSize="44"
+          fontWeight="bold" fill={P.white}>
           {v.company||"Korean Company"}
         </text>
-        <text x="470" y="279" textAnchor="middle" fontSize="68" fontWeight="bold" fill={P.teal}>
+        <text x="470" y="238" textAnchor="middle" fontSize="65"
+          fontWeight="bold" fill={P.teal}>
           {s.stats[0]?.value||"—"}
         </text>
       </svg>
     </div>
-    <div style={{display:"flex",gap:19,marginTop:20}}>
+    <div style={{display:"flex",gap:12,marginTop:14}}>
       {(v.bullets||[s.summary]).slice(0,2).map((t,i)=>(
-        <div key={i} style={{...card,...fadeUp(f,30+i*12),padding:26,flex:1,fontSize:29,color:i?P.amber:P.teal,fontWeight:900,lineHeight:1.25}}>
-          {t}
-        </div>
+        <div key={i} style={{
+          ...card,...fadeUp(f,28+i*12),padding:"18px 17px",
+          flex:1,minWidth:0,fontSize:23,
+          color:i?P.amber:P.teal,fontWeight:900,lineHeight:1.22,
+          display:"flex",alignItems:"center",minHeight:93,
+          boxSizing:"border-box",
+        }}>{t}</div>
       ))}
-    </div>
-  </>
-);
-
-const Spotlight:React.FC<{v:KciVisual;f:number;color:string}> = ({v,f,color}) => (
-  <div style={{...card,height:620,position:"relative",overflow:"hidden",textAlign:"center",background:"radial-gradient(ellipse at center,#27404B,#0C2038 70%)"}}>
-    <svg style={{position:"absolute",left:0,top:0}} width="940" height="620">
-      {Array.from({length:6},(_,i)=><circle key={i}
-        cx="470" cy="268" r={110+i*51+12*ease(f,10,45)}
-        fill="none" stroke={color} strokeWidth="2" strokeDasharray="12 16"
-        strokeDashoffset={(i%2?-1:1)*f} opacity={.13+.12*Math.sin(f/17+i)**2}
-      />)}
-    </svg>
-    <div style={{position:"relative",paddingTop:88}}>
-      <div style={{fontSize:28,color,fontWeight:900,letterSpacing:2}}>{v.unit||"THỊ TRƯỜNG"}</div>
-      <div style={{...fadeUp(f,16),fontSize:136,letterSpacing:-5,fontWeight:950,marginTop:47}}>{v.value}</div>
-      <div style={{...card,...fadeUp(f,38),fontSize:29,color,margin:"76px 75px 0",padding:"26px 24px",fontWeight:850,lineHeight:1.3}}>
-        {v.qualifier}
-      </div>
     </div>
   </div>
 );
 
-const Rate:React.FC<{v:KciVisual;f:number}> = ({v,f})=>{
-  const r=163,c=2*Math.PI*r;
-  const ratio=Math.min(1,Math.max(0,(v.numericValue||0)/(v.scaleMax||5)));
-  return <>
-    <div style={{...card,height:510,display:"flex",alignItems:"center",justifyContent:"center",position:"relative"}}>
-      <svg width="445" height="445" viewBox="0 0 445 445">
-        <circle cx="222" cy="222" r={r} fill="none" stroke="#38516C" strokeWidth="27"/>
-        <circle cx="222" cy="222" r={r} fill="none" stroke={P.blue} strokeWidth="27"
-          strokeLinecap="round" strokeDasharray={c} strokeDashoffset={c*(1-ratio*ease(f,14,50))}
-          transform="rotate(-90 222 222)"/>
-      </svg>
-      <div style={{position:"absolute",top:150,left:0,right:0,textAlign:"center"}}>
-        <div style={{fontSize:27,color:P.muted,fontWeight:850}}>{v.unit||"LÃI SUẤT"}</div>
-        <div style={{fontSize:108,fontWeight:950}}>{v.value}</div>
-        {v.statusLabel&&<div style={{fontSize:26,color:P.teal,fontWeight:850}}>{v.statusLabel}</div>}
-        <div style={{fontSize:19,color:P.muted,marginTop:8}}>Thang minh họa 0–{v.scaleMax||5}</div>
-      </div>
-      <div style={{position:"absolute",bottom:16,left:30,right:30,textAlign:"center",fontSize:23,fontWeight:750,color:P.muted}}>
-        {v.qualifier}
-      </div>
+const Spotlight:React.FC<{v:KciVisual;f:number;color:string}> = ({
+  v,f,color,
+}) => (
+  <div style={{
+    ...card,height:REELS_SAFE.artworkHeight,position:"relative",
+    overflow:"hidden",textAlign:"center",
+    background:"radial-gradient(ellipse at center,#27404B,#0C2038 70%)",
+  }}>
+    <svg width="100%" height="100%" viewBox="0 0 800 460"
+      style={{position:"absolute",inset:0}}>
+      {Array.from({length:5},(_,i)=>(
+        <circle key={i} cx="400" cy="213"
+          r={92+i*43+10*ease(f,10,45)}
+          fill="none" stroke={color} strokeWidth="2"
+          strokeDasharray="12 16" strokeDashoffset={(i%2?-1:1)*f}
+          opacity={.12+.11*Math.sin(f/17+i)**2}/>
+      ))}
+    </svg>
+    <div style={{position:"relative",padding:"52px 30px 20px"}}>
+      <div style={{
+        fontSize:24,color,fontWeight:900,letterSpacing:1.2,
+      }}>{v.unit||"CHỈ SỐ THỊ TRƯỜNG"}</div>
+      <div style={{
+        ...fadeUp(f,16),fontSize:(v.value||"").length>10?82:113,
+        letterSpacing:-3,fontWeight:950,marginTop:36,
+        overflowWrap:"anywhere",
+      }}>{v.value}</div>
+      <div style={{
+        ...card,...fadeUp(f,38),fontSize:24,color,
+        margin:"38px 20px 0",padding:"23px 22px",
+        fontWeight:850,lineHeight:1.27,
+      }}>{v.qualifier}</div>
     </div>
-  </>;
-};
-const Closing:React.FC<{v:KciVisual;f:number}> = ({v,f})=>(
-  <>
-    <div style={{fontSize:29,color:P.teal,fontWeight:900,letterSpacing:3,...fadeUp(f,3)}}>NHỮNG ĐIỀU CẦN THEO DÕI</div>
-    {(v.bullets||[]).slice(0,4).map((b,i)=>(
-      <div key={i} style={{...card,...fadeUp(f,13+i*10),marginTop:17,padding:"21px 26px",display:"flex",alignItems:"center",gap:22,borderLeft:"6px solid "+[P.teal,P.amber,P.blue][i%3]}}>
-        <span style={{fontSize:47,fontWeight:950,color:[P.teal,P.amber,P.blue][i%3]}}>0{i+1}</span>
-        <span style={{fontSize:31,fontWeight:850}}>{b}</span>
-      </div>
-    ))}
-    <div style={{fontSize:44,fontWeight:950,letterSpacing:1,marginTop:35,textAlign:"center"}}>KOREA CAPITAL INSIGHT</div>
-  </>
+  </div>
 );
 
-const CallToAction:React.FC<{cta:KciCta;f:number;durationFrames:number}> = ({
-  cta,f,durationFrames,
-}) => {
+const Rate:React.FC<{v:KciVisual;f:number}> = ({v,f}) => {
+  const r=145,c=2*Math.PI*r;
+  const ratio=Math.min(1,Math.max(0,(v.numericValue||0)/(v.scaleMax||5)));
+  return (
+    <div style={{
+      ...card,height:REELS_SAFE.artworkHeight,position:"relative",
+      overflow:"hidden",display:"flex",justifyContent:"center",
+    }}>
+      <svg width="390" height="390" viewBox="0 0 390 390">
+        <circle cx="195" cy="190" r={r} fill="none"
+          stroke="#38516C" strokeWidth="23"/>
+        <circle cx="195" cy="190" r={r} fill="none"
+          stroke={P.blue} strokeWidth="23" strokeLinecap="round"
+          strokeDasharray={c}
+          strokeDashoffset={c*(1-ratio*ease(f,14,50))}
+          transform="rotate(-90 195 190)"/>
+      </svg>
+      <div style={{
+        position:"absolute",top:120,left:0,right:0,
+        textAlign:"center",
+      }}>
+        <div style={{fontSize:23,color:P.muted,fontWeight:850}}>
+          {v.unit||"LÃI SUẤT"}
+        </div>
+        <div style={{fontSize:87,fontWeight:950,letterSpacing:-2}}>
+          {v.value}
+        </div>
+        {v.statusLabel&&(
+          <div style={{fontSize:25,color:P.teal,fontWeight:850}}>
+            {v.statusLabel}
+          </div>
+        )}
+        <div style={{fontSize:17,color:P.muted,marginTop:7}}>
+          Thang minh họa 0–{v.scaleMax||5}
+        </div>
+      </div>
+      <div style={{
+        position:"absolute",bottom:14,left:26,right:26,
+        textAlign:"center",fontSize:20,fontWeight:750,color:P.muted,
+      }}>{v.qualifier}</div>
+    </div>
+  );
+};
+
+const Closing:React.FC<{v:KciVisual;f:number}> = ({v,f}) => {
+  const bullets=(v.bullets||[]).slice(0,4);
+  return (
+    <div style={{height:310,overflow:"hidden"}}>
+      <div style={{
+        fontSize:23,color:P.teal,fontWeight:900,
+        letterSpacing:1.8,...fadeUp(f,3),
+      }}>NHỮNG ĐIỀU CẦN THEO DÕI</div>
+      {bullets.map((b,i)=>(
+        <div key={i} style={{
+          ...card,...fadeUp(f,13+i*10),
+          marginTop:11,padding:"12px 17px",
+          minHeight:58,boxSizing:"border-box",
+          display:"flex",alignItems:"center",gap:15,
+          borderLeft:"6px solid "+[P.teal,P.amber,P.blue][i%3],
+        }}>
+          <span style={{
+            fontSize:34,fontWeight:950,
+            color:[P.teal,P.amber,P.blue][i%3],
+          }}>0{i+1}</span>
+          <span style={{fontSize:24,fontWeight:850,lineHeight:1.15}}>
+            {b}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const CallToAction:React.FC<{
+  cta:KciCta;f:number;durationFrames:number;
+}> = ({cta,f,durationFrames}) => {
   const showAt=Math.max(16,Math.floor(durationFrames*.51));
   const p=ease(f,showAt,18);
   return (
     <div style={{
-      position:"absolute",left:70,right:70,top:1270,padding:"30px 34px",
-      borderRadius:23,border:"2px solid "+P.teal,
-      background:"linear-gradient(95deg,rgba(11,69,76,.97),rgba(5,26,48,.97))",
-      boxShadow:"0 0 45px #37E5C522",
-      opacity:p,transform:"translateY("+((1-p)*48)+"px)",
-      minHeight:187,boxSizing:"border-box",
+      position:"absolute",
+      left:REELS_SAFE.left,right:REELS_SAFE.right,top:REELS_SAFE.cta,
+      padding:"20px 24px",minHeight:157,boxSizing:"border-box",
+      borderRadius:19,border:"2px solid "+P.teal,
+      background:"linear-gradient(95deg,rgba(11,69,76,.98),rgba(5,26,48,.98))",
+      boxShadow:"0 0 38px #37E5C52A",
+      opacity:p,transform:"translateY("+((1-p)*30)+"px)",
     }}>
-      <div style={{fontSize:20,letterSpacing:4,color:"#9FF4D9",fontWeight:900}}>
-        {cta.type==="comment"?"GÓC NHÌN CỦA ANH CHỊ":cta.type==="follow"?"THEO DÕI KCI":"LƯU LẠI ĐỂ THAM KHẢO"}
+      <div style={{
+        fontSize:16,letterSpacing:2.0,color:"#9FF4D9",fontWeight:900,
+      }}>
+        {cta.type==="comment"?"GÓC NHÌN CỦA ANH CHỊ":
+          cta.type==="follow"?"THEO DÕI KCI":"LƯU LẠI ĐỂ THAM KHẢO"}
       </div>
-      <div style={{fontSize:39,fontWeight:950,lineHeight:1.2,marginTop:12}}>{cta.screenHeadline}</div>
-      <div style={{fontSize:24,color:"#C4E8E1",fontWeight:750,marginTop:12}}>{cta.screenSubline}</div>
+      <div style={{
+        fontSize:cta.screenHeadline.length>47?27:33,
+        fontWeight:950,lineHeight:1.16,marginTop:10,
+      }}>{cta.screenHeadline}</div>
+      <div style={{
+        fontSize:20,color:"#C4E8E1",fontWeight:750,
+        marginTop:10,lineHeight:1.18,
+      }}>{cta.screenSubline}</div>
     </div>
   );
 };
