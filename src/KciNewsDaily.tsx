@@ -4,7 +4,7 @@ import {
   staticFile, useCurrentFrame, useVideoConfig,
 } from "remotion";
 import type {KciCta, KciVideoProps, KciVisual, RenderScene} from "./KciNews";
-import {REELS_SAFE, REELS_CONTENT_WIDTH, ReelsSafeGuides} from "./KciReelsSafe";
+import {REELS_SAFE, ReelsSafeGuides} from "./KciReelsSafe";
 
 const P = {
   bg:"#071224", dark:"#061024", glass:"#102844", teal:"#36DEC0",
