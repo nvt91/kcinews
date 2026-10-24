@@ -1,54 +1,56 @@
-# Remotion video
+# Korea Capital Insight — Daily News Video Engine
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Video newsroom for **Korean equities and macroeconomic news in Vietnamese**. Converts a freshly sourced KCI news brief into a verified hook/script, an engagement CTA, **Vbee Tuấn Anh News** narration and data-driven **Remotion / FFmpeg** motion graphics.
 
-Welcome to your Remotion project!
+## The complete skill
 
-## Commands
+**Name:** `kci-news-video`  
+**Source:** [`.agents/skills/kci-news-video/SKILL.md`](.agents/skills/kci-news-video/SKILL.md)
 
-**Install Dependencies**
+Inside the skill:
+- `references/EDITORIAL_BRIEF.md` — freshness, data cutoff, filings, Korean impact and source ledger
+- `references/HOOK_CTA.md` — three fact-based hooks, voice script and a meaningful comment/follow/save CTA
+- `references/PRODUCTION.md` — Vbee + Remotion + GitHub Actions runbook
+- `references/QC.md` — editorial, audio, motion, subtitle and publication release gates
+- `templates/DAILY_BRIEF.md` — narrative brief template
 
-```console
-npm i --loglevel=error
-```
+The historical 23 October 2026 video is the approved V2.1 design reference; new episodes use the **`KciNewsDaily`** template, not historical hard-coded stock prices.
 
-**Start Preview**
+## Request it from ChatGPT
 
-```console
-npm run dev
-```
+Say, for example:
 
-**Render video**
+> Dùng quy trình kci-news-video, tạo bản tin KCI tối nay. Kiểm chứng tin mới, chọn hook mạnh, viết kịch bản tiếng Việt, có lời mời bình luận và theo dõi, dựng video 9:16 bằng giọng Tuấn Anh News. Xuất bản nháp cho tôi duyệt, chưa đăng.
 
-```console
-npx remotion render
-```
+This is a **repository-local Agent Skill**, not an automatically installed ChatGPT @ plugin. A connected GitHub workflow can be operated from ChatGPT without a separate Codex prompt per video.
 
-**Upgrade Remotion**
+## Required publication safeguards
 
-```console
-npx remotion upgrade
-```
+No fabricated prices, chart paths or fake news footage. Quote verified market-session timestamps. Always produce a *spoken* and on-screen CTA after delivering informational value. Do not release without Vbee audio, inspected MP4 and the owner's approval.
 
-## Docs
+Secrets `VBEE_APP_ID` and `VBEE_API_TOKEN` remain only in GitHub Actions Secrets.
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
+## New daily episode workflow
 
-## Help
+1. Research new KST news and assemble a verified brief with precise source URLs.
+2. Write three hooks, choose and validate one, write scene voiceText + one job-level CTA.
+3. Create `jobs/kci-YYYY-MM-DD-topic.json` based on `jobs/kci-schema-v2-example.json` (archived demonstration, **not** live data).
+4. Validate the job: `node scripts/validate-kci-job.mjs jobs/<filename>.json`.
+5. Test or approve the voice. The workflow appends `cta.spoken` to the final Vbee narration segment exactly once.
+6. Render with `KciNewsDaily`. Estimate captions initially; human-check sync.
+7. Inspect the actual H.264/AAC video, all source labels, CTA and typography; deliver for approval, **not for automatic posting**.
 
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
+New jobs use schema v2 and KST `dataAsOf`. An archival 2026 video must never be treated as today's quote.
 
-## Issues
+## Development
 
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
+`npm ci`  
+`npm run dev`  
+`npm run lint`  
+`node scripts/test-kci-editorial.mjs`  
+`node scripts/create-daily-preview-props.mjs`  
+`npx remotion still src/index.ts KciNewsDaily out/daily-preview.png --props=out/kci-daily-preview-props.json --frame=1830`
 
-## License
+GitHub Actions runs a safe PR check (lint, editorial validation, hook/CTA, rendered frames). A production issue `[KCI VIDEO]` with body `{"job":"jobs/kci-YYYY-MM-DD-topic.json"}` starts review-only generation from the default branch.
 
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+**No publishing automation is enabled by this repository.** A separate daily brief at 22:00 KST may supply editorial input, but the skill itself does not automatically turn scheduled briefs into uploaded videos.
