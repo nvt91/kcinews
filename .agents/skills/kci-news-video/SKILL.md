@@ -68,6 +68,7 @@ The validator checks source references, the hook beginning, CTA completion and j
 - New schema v2 jobs render via data-driven `KciNewsDaily`. The historical `KciNewsV2` is the **approved 23/10 benchmark**, but contains some hard-coded numbers; don't reuse its historic charts for current jobs.
 - Generate captions from narration; word-count timing is **estimated**, never claim it is forced aligned. Review and correct before publishing.
 - Motion visuals must be sourced/parameterized. 9:16 at 1080×1920, 30 FPS, H.264/AAC.
+- **Mandatory Reels-safe composition**: the real Instagram screenshot showed the masthead obscured by top controls and subtitles, ticker, account overlay obscuring the lower region. Use `src/KciReelsSafe.tsx` constants; keep essential brand, hook, verified numbers, legends, subtitles and CTA within the central editorial safe zone (on 1080×1920: x=70–862 and y=260–1455). Reserve the right 218px interaction rail, top 260px, bottom 465px for platform UI; animation/background can fill the frame. For the daily template, safe captions sit near y=1284–1409 and CTA near y=1068–1225 with no overlap. Avoid important tickers or legal/source labels in bottom UI area. QC with safe-guide frame previews; do not render the guides in publication files.
 - For visual-only revisions when scripts have not changed, reuse the original preserved Vbee audio/artifact. No needless TTS calls.
 
 ### 6 — QA and release
