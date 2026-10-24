@@ -290,7 +290,8 @@
         "unit": "LÃI SUẤT BOK",
         "qualifier": "Giữ nguyên trong quyết định 22/10",
         "numericValue": 3,
-        "scaleMax": 5
+        "scaleMax": 5,
+        "statusLabel": "GIỮ NGUYÊN"
       }
     },
     {
