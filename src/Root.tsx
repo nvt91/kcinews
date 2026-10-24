@@ -2,6 +2,7 @@ import React from "react";
 import { Composition } from "remotion";
 import { FPS, KciNews, type KciVideoProps } from "./KciNews";
 import { KciNewsV2 } from "./KciNewsV2";
+import { KciNewsDaily } from "./KciNewsDaily";
 
 const demo: KciVideoProps = {
   headline: "KCI Market News",
@@ -48,6 +49,20 @@ export const RemotionRoot: React.FC = () => (
   <Composition
     id="KciNewsV2"
     component={KciNewsV2}
+    fps={FPS}
+    width={1080}
+    height={1920}
+    durationInFrames={240}
+    defaultProps={demo}
+    calculateMetadata={({ props }) => ({
+      durationInFrames: Math.max(FPS, props.scenes.reduce(
+        (end, scene) => Math.max(end, scene.startFrame + scene.durationFrames), 0,
+      )),
+    })}
+  />
+  <Composition
+    id="KciNewsDaily"
+    component={KciNewsDaily}
     fps={FPS}
     width={1080}
     height={1920}

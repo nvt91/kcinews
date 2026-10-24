@@ -23,6 +23,28 @@ export type SubtitleCue = {
   text: string;
 };
 
+export type KciVisual = {
+  kind: "reversal" | "comparison" | "company" | "risk-bars" | "spotlight" | "rate" | "closing" | "generic";
+  banner?: string;
+  milestones?: Array<{ label: string; value: string; tone?: "up" | "down" | "neutral" }>;
+  bars?: Array<{ label: string; value: number; display: string; tone?: "up" | "down" | "neutral" }>;
+  qualifier?: string;
+  company?: string;
+  bullets?: string[];
+  value?: string;
+  unit?: string;
+  numericValue?: number;
+  scaleMax?: number;
+};
+
+export type KciCta = {
+  type: "comment" | "follow" | "save";
+  spoken: string;
+  screenHeadline: string;
+  screenSubline: string;
+  question?: string;
+};
+
 export type RenderScene = {
   id: string;
   eyebrow: string;
@@ -34,6 +56,9 @@ export type RenderScene = {
   durationFrames: number;
   audioFile?: string;
   captions: SubtitleCue[];
+  sourceIds?: string[];
+  visual?: KciVisual;
+  cta?: KciCta;
 };
 
 export type KciVideoProps = {

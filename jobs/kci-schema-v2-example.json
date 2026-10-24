@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-23-kospi-cta-example",
+  "edition": "23/10/2026 KST",
+  "dataAsOf": "2026-10-23T21:55:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI đảo chiều tăng nhưng giá dầu và nỗi lo AI gây sức ép",
+  "sourceDisclaimer": "Historical demonstration from the verified brief of 23/10/2026. Re-check all links before publication; not current market prices.",
+  "sourceLedger": [
+    {
+      "id": "krx-2310",
+      "title": "Yonhap: KRX KOSPI KOSDAQ main close 23/10/2026",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261023137600008",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-23T21:04:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed 5550.30 (+0.30%) after an intraday drop greater than 4%.",
+        "KOSDAQ closed 751.69 (-1.62%) on 23/10/2026."
+      ]
+    },
+    {
+      "id": "hynix-2310",
+      "title": "DART: SK hynix (000660) Solidigm pre-IPO/IPO review discontinued",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023800002",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-23T21:04:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "SK hynix said it discontinued review of a pre-IPO/IPO for Solidigm; this is not a completed listing cancellation."
+      ]
+    },
+    {
+      "id": "us-markets-2210",
+      "title": "Reuters: US tech and semiconductor market selloff context",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-23/",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-23T21:04:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq fell 2.6% in the US cash session of October 22; semiconductor stocks experienced a large decline."
+      ]
+    },
+    {
+      "id": "energy-2310",
+      "title": "Reuters: oil intraday supply disruption fears",
+      "url": "https://www.reuters.com/business/energy/oil-little-changed-supply-concern-lingers-amid-houthi-attacks-saudi-arabia-2026-10-23/",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-23T21:04:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Brent traded as high as 115.16 USD/barrel intraday on October 23; this is not the daily closing price."
+      ]
+    },
+    {
+      "id": "bok-2210",
+      "title": "Bank of Korea October 22 monetary policy decision",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&depth2=400417&depth3=400423&menuNo=400423&nttId=11065825&oldMenuNo=400423&pageIndex=1&pageUnit=10&programType=newsDataEng&searchCnd=1&searchKwd=",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-23T21:04:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "The Bank of Korea kept its policy interest rate at 3.00% on October 22, 2026."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI có lúc giảm hơn bốn phần trăm, nhưng cuối phiên lại bất ngờ đóng cửa trong sắc xanh.",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "KOSPI có lúc giảm hơn bốn phần trăm, nhưng cuối phiên lại bất ngờ đóng cửa trong sắc xanh."
+      },
+      {
+        "style": "impact",
+        "text": "KOSPI hồi mạnh cuối phiên, nhưng hầu hết cổ phiếu không hồi theo. Vì sao?"
+      },
+      {
+        "style": "question",
+        "text": "Điều gì quan trọng hơn mức tăng của KOSPI: dòng vốn ngoại hay sức khỏe toàn thị trường?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhịp hồi này đã bền vững hay mới chỉ là hồi kỹ thuật? Bình luận góc nhìn và theo dõi Korea Capital Insight để cập nhật các phiên tiếp theo.",
+    "screenHeadline": "PHỤC HỒI HAY HỒI KỸ THUẬT?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, nhịp hồi này đã bền vững hay mới chỉ là hồi kỹ thuật?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "ĐIỂM NÓNG THỊ TRƯỜNG",
+      "headline": "KOSPI rơi hơn 4% rồi đảo chiều!",
+      "summary": "Một phiên giao dịch đầy biến động tại Seoul.",
+      "source": "KRX, 23/10/2026",
+      "stats": [
+        {
+          "label": "Đáy trong phiên",
+          "value": "5.305,98",
+          "tone": "down"
+        },
+        {
+          "label": "Đóng cửa",
+          "value": "5.550,30",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "KOSPI có lúc giảm hơn bốn phần trăm, nhưng cuối phiên lại bất ngờ đóng cửa trong sắc xanh. Điều gì khiến thị trường chứng khoán Hàn Quốc đảo chiều mạnh đến vậy?",
+      "sourceIds": [
+        "krx-2310"
+      ],
+      "visual": {
+        "kind": "reversal",
+        "banner": "↓ >4%  →  +0,30%",
+        "milestones": [
+          {
+            "label": "MỞ CỬA",
+            "value": "5.403,17",
+            "tone": "neutral"
+          },
+          {
+            "label": "THẤP NHẤT",
+            "value": "5.305,98",
+            "tone": "down"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": "5.550,30",
+            "tone": "up"
+          }
+        ],
+        "qualifier": "Ba mốc đã xác minh; không phải biểu đồ phút"
+      }
+    },
+    {
+      "id": "kospi",
+      "eyebrow": "THỊ TRƯỜNG HÀN QUỐC",
+      "headline": "Chỉ số xanh, nhiều cổ phiếu vẫn đỏ",
+      "summary": "KOSPI tăng 0,30%; KOSDAQ giảm 1,62%.",
+      "source": "KRX, đóng cửa 23/10/2026",
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "5.550,30",
+          "change": "+0,30%",
+          "tone": "up"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "751,69",
+          "change": "−1,62%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Ngày hai mươi ba tháng mười, KOSPI đóng cửa tại năm nghìn năm trăm năm mươi phẩy ba mươi điểm, tăng không phẩy ba phần trăm. Nhưng KOSDAQ lại giảm một phẩy sáu hai phần trăm.",
+      "sourceIds": [
+        "krx-2310"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": 0.3,
+            "display": "+0,30%",
+            "tone": "up"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -1.62,
+            "display": "−1,62%",
+            "tone": "down"
+          }
+        ],
+        "qualifier": "KRX regular session close 23/10"
+      }
+    },
+    {
+      "id": "hynix",
+      "eyebrow": "CỔ PHIẾU NỔI BẬT",
+      "headline": "SK hynix hỗ trợ đà hồi phục",
+      "summary": "Dừng xem xét IPO Solidigm; nhu cầu vốn đầu tư vẫn còn.",
+      "source": "SK hynix, 23/10/2026",
+      "stats": [
+        {
+          "label": "SK hynix",
+          "value": "+4,42%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "SK hynix tăng bốn phẩy bốn hai phần trăm, sau thông báo dừng xem xét niêm yết công ty con Solidigm tại Mỹ. Tuy nhiên, nhu cầu vốn đầu tư của doanh nghiệp vẫn chưa biến mất.",
+      "sourceIds": [
+        "hynix-2310"
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "SK hynix",
+        "bullets": [
+          "DỪNG XEM XÉT IPO SOLIDIGM",
+          "NHU CẦU VỐN ĐẦU TƯ VẪN CÒN"
+        ]
+      }
+    },
+    {
+      "id": "nasdaq",
+      "eyebrow": "ẢNH HƯỞNG TỪ MỸ",
+      "headline": "Lo ngại hiệu quả đầu tư AI",
+      "summary": "Biến động giá cổ phiếu chưa đồng nghĩa nhu cầu chip suy giảm.",
+      "source": "Reuters, phiên Mỹ 22/10/2026",
+      "stats": [
+        {
+          "label": "Nasdaq",
+          "value": "−2,60%",
+          "tone": "down"
+        },
+        {
+          "label": "Bán dẫn Philadelphia",
+          "value": "Giảm >6%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Áp lực đầu phiên đến từ Phố Wall. Trong phiên ngày hai mươi hai tháng mười, Nasdaq giảm hai phẩy sáu phần trăm, còn nhóm bán dẫn Philadelphia giảm hơn sáu phần trăm. Nhà đầu tư lo ngại hiệu quả của các khoản đầu tư vào trí tuệ nhân tạo.",
+      "sourceIds": [
+        "us-markets-2210"
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -2.6,
+            "display": "−2,60%"
+          },
+          {
+            "label": "BÁN DẪN PHILADELPHIA",
+            "value": -6,
+            "display": "GIẢM >6%"
+          }
+        ],
+        "qualifier": "Giảm hơn 6% là cận dưới, không phải số chính xác"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "RỦI RO NĂNG LƯỢNG",
+      "headline": "Brent vượt 115 USD/thùng trong phiên",
+      "summary": "Đây là mức cao trong phiên 23/10, không phải giá đóng cửa.",
+      "source": "Reuters, 23/10/2026",
+      "stats": [
+        {
+          "label": "Brent — cao trong phiên",
+          "value": "115,16 USD",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Giá dầu Brent trong phiên hai mươi ba tháng mười có lúc lên trên một trăm mười lăm đô la một thùng. Lo ngại nguồn cung Trung Đông có thể gây sức ép chi phí đối với doanh nghiệp Hàn Quốc.",
+      "sourceIds": [
+        "energy-2310"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "115,16",
+        "unit": "USD/thùng",
+        "qualifier": "Mức cao trong phiên, không phải giá đóng cửa"
+      }
+    },
+    {
+      "id": "bok",
+      "eyebrow": "CHÍNH SÁCH TIỀN TỆ",
+      "headline": "BOK giữ lãi suất 3%",
+      "summary": "Xuất khẩu hỗ trợ tăng trưởng, lạm phát vẫn là rủi ro.",
+      "source": "Bank of Korea, 22/10/2026",
+      "stats": [
+        {
+          "label": "Lãi suất BOK",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc giữ lãi suất ở mức ba phần trăm. Xuất khẩu tiếp tục hỗ trợ tăng trưởng, nhưng lạm phát vẫn khiến triển vọng chính sách tiền tệ cần được theo dõi thận trọng.",
+      "sourceIds": [
+        "bok-2210"
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "unit": "LÃI SUẤT BOK",
+        "qualifier": "Giữ nguyên trong quyết định 22/10",
+        "numericValue": 3,
+        "scaleMax": 5
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Theo dõi dữ liệu, không chạy theo cảm xúc",
+      "summary": "Trọng tâm: dòng vốn ngoại · giá dầu · lợi nhuận bán dẫn.",
+      "source": "KCI — nhận định tổng hợp",
+      "stats": [],
+      "voiceText": "Trong các phiên tới, hãy theo dõi dòng vốn nước ngoài, giá dầu và lợi nhuận thực tế của ngành bán dẫn. Korea Capital Insight. Nhìn thị trường qua dữ liệu, không qua cảm xúc.",
+      "sourceIds": [
+        "krx-2310",
+        "energy-2310",
+        "hynix-2310"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG VỐN NƯỚC NGOÀI",
+          "GIÁ DẦU",
+          "LỢI NHUẬN BÁN DẪN"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "KOSPI có lúc giảm hơn bốn phần trăm, rồi bất ngờ đảo chiều đóng cửa trong sắc xanh. Điều gì đã khiến thị trường chứng khoán Hàn Quốc hồi phục?"
+}
