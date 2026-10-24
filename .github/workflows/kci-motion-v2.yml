@@ -1,0 +1,102 @@
+name: KCI Motion Graphics V2
+
+on:
+  pull_request:
+    paths:
+      - "src/KciNewsV2.tsx"
+      - "src/Root.tsx"
+      - ".github/workflows/kci-motion-v2.yml"
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  quality:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - name: Smoke test premium composition
+        run: |
+          mkdir -p out
+          npx remotion still src/index.ts KciNewsV2 out/v2-smoke.png --frame=50
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kci-v2-ci-${{ github.run_id }}
+          path: out/v2-smoke.png
+          retention-days: 7
+
+  motion-v2:
+    if: >-
+      github.event_name == 'issues' &&
+      github.event.issue.user.login == github.repository_owner &&
+      startsWith(github.event.issue.title, '[KCI MOTION V2]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: kci-motion-v2
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Install video inspector
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Reuse original Vbee audio from first full video
+        uses: actions/download-artifact@v4
+        with:
+          name: kci-40055420626
+          run-id: 40055420626
+          github-token: ${{ github.token }}
+          path: .
+      - name: Confirm seven original voice recordings
+        run: |
+          node --input-type=module -e '
+          import fs from "node:fs";
+          const p=JSON.parse(fs.readFileSync("out/props.json","utf8"));
+          if(p.scenes.length!==7 || p.edition!=="23/10/2026 KST") throw Error("Wrong job");
+          for(let i=1;i<=7;i++) {
+            const name="public/voice/scene-"+String(i).padStart(2,"0")+".mp3";
+            if(!fs.existsSync(name)||fs.statSync(name).size<10000) throw Error("Missing voice "+name);
+          }
+          if(!p.scenes.every(s=>s.audioFile)) throw Error("Missing narration links");
+          console.log("Seven real Vbee recordings loaded. No Vbee API call.");
+          '
+      - name: Render motion V2 with archived narration
+        run: |
+          npx remotion render src/index.ts KciNewsV2 out/KCI_MarketNews_2026-10-23_Motion_V2.mp4 --props=out/props.json --codec=h264 --concurrency=2
+      - name: Check sound and extract review frames
+        run: |
+          test -s out/KCI_MarketNews_2026-10-23_Motion_V2.mp4
+          ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 out/KCI_MarketNews_2026-10-23_Motion_V2.mp4 | grep -q aac
+          ffprobe -v error -show_entries format=duration -of csv=p=0 out/KCI_MarketNews_2026-10-23_Motion_V2.mp4
+          mkdir -p out/frames
+          for second in 3 12 22 34 43 52 62; do
+            ffmpeg -loglevel error -y -ss "$second" -i out/KCI_MarketNews_2026-10-23_Motion_V2.mp4 -frames:v 1 -vf scale=540:-2 "out/frames/at-$second.png"
+          done
+      - name: Save video and review frames
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: kci-motion-v2-${{ github.run_id }}
+          path: |
+            out/KCI_MarketNews_2026-10-23_Motion_V2.mp4
+            out/frames/
+            out/props.json
+          retention-days: 7
+          if-no-files-found: error
