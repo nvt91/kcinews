@@ -28,6 +28,9 @@
 
 ## D. Motion graphics and typography
 - [ ] 1080×1920, 30 fps, readable font with Vietnamese diacritics; no clipped letters, overlap or extreme density.
+- [ ] **Reels-safe mobile check using the uploaded Instagram screenshot as precedent:** approximate safe zone x=70–862, y=260–1455 (1080×1920). Top UI, lower account/caption overlays and right-side reactions must never hide critical hook, brand, numbers, source qualifier, CTA or subtitles. Safe coordinates are conservative and should be rechecked on actual Facebook/Instagram UI updates.
+- [ ] Main headline and visual content centered vertically; brand begins below top controls; CTA appears **above** rather than underneath subtitles; source and disclaimer remain readable. No bottom ticker carrying essential facts.
+- [ ] Render optional `safeGuides: true` QC screenshots for opening and CTA, plus unmarked clean frames. The safe guides must be disabled in the final MP4.
 - [ ] Differentiated scene layouts: animated facts, data cards/charts and transitions. Not identical slides. A bottom ticker is NOT required for Reels.
 - [ ] All graphics reference this episode's data. Historical V2 hardcoded 23/10 values never appear in a current edition.
 - [ ] Scale/axis/unit labels consistent. Distinct open/low/close points are NOT connected into a false intraday curve.
