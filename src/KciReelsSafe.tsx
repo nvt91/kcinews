@@ -10,21 +10,13 @@ import {AbsoluteFill} from "remotion";
  * Mandatory readable elements must stay inside this rectangle.
  */
 export const REELS_SAFE = {
-  left: 70,
-  right: 218,
-  top: 260,
-  bottom: 465,
-  masthead: 265,
-  edition: 330,
-  headline: 378,
-  artwork: 735,
-  artworkHeight: 465,
-  cta: 1068,
-  source: 1242,
-  captions: 1284,
-  captionsHeight: 125,
-  disclaimer: 1425,
-} as const;
+  // User screenshot reference: Instagram overlays the top navigation,
+  // right reaction controls, and lower account/caption panels.
+  left: 96,
+  right: 196,
+  top: 264,
+  bottom: 480,
+}} as const;
 
 export const REELS_CONTENT_WIDTH = 1080 - REELS_SAFE.left - REELS_SAFE.right;
 export const REELS_CONTENT_BOTTOM = 1920 - REELS_SAFE.bottom;
