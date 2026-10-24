@@ -104,11 +104,11 @@
     }
   ],
   "hook": {
-    "spoken": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+    "spoken": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
     "candidates": [
       {
         "style": "contrast",
-        "text": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+        "text": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
         "score": 46
       },
       {
@@ -125,7 +125,7 @@
   },
   "cta": {
     "type": "comment",
-    "spoken": "Theo anh chị, kết quả kinh doanh bán dẫn hay sức khỏe kinh tế trong nước quan trọng hơn cho đà hồi phục? Bình luận góc nhìn và theo dõi Korea Capital Insight để cập nhật.",
+    "spoken": "Anh chị quan tâm hơn tới lợi nhuận chip hay sức khỏe kinh tế nội địa? Bình luận và theo dõi Korea Capital Insight.",
     "screenHeadline": "LỢI NHUẬN CHIP HAY SỨC KHỎE NỀN KINH TẾ?",
     "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
     "question": "Theo anh chị, kết quả kinh doanh bán dẫn hay sức khỏe kinh tế trong nước quan trọng hơn cho đà hồi phục?"
@@ -153,7 +153,7 @@
           "tone": "down"
         }
       ],
-      "voiceText": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
+      "voiceText": "Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?",
       "visual": {
         "kind": "generic",
         "qualifier": "Các giai đoạn quan sát khác nhau; không phải diễn biến Chủ nhật."
@@ -180,7 +180,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "Hải quan Hàn Quốc công bố ngày hai mươi mốt tháng Mười: xuất khẩu trong hai mươi ngày đầu tháng đạt hơn sáu mươi mốt phẩy sáu tỷ đô la, tăng một trăm linh năm phẩy bốn phần trăm so với cùng kỳ. Riêng bán dẫn đạt hai mươi bảy phẩy năm tỷ đô la. Đây mới là số liệu sơ bộ.",
+      "voiceText": "Hải quan Hàn Quốc công bố: xuất khẩu hai mươi ngày đầu tháng Mười đạt sáu mươi mốt phẩy sáu tỷ đô la, tăng một trăm linh năm phẩy bốn phần trăm so với cùng kỳ; bán dẫn đạt hai mươi bảy phẩy năm tỷ. Đây là số liệu sơ bộ.",
       "visual": {
         "kind": "comparison",
         "bars": [
@@ -217,7 +217,7 @@
           "tone": "down"
         }
       ],
-      "voiceText": "Thế nhưng KOSPI kết thúc tuần mười chín đến hai mươi ba tháng Mười ở năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm so với cuối tuần trước. Xuất khẩu tăng không đồng nghĩa cổ phiếu sẽ tăng ngay: giá còn phản ánh rủi ro và dòng vốn.",
+      "voiceText": "KOSPI chốt tuần ngày hai mươi ba tháng Mười tại năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm. Xuất khẩu mạnh chưa bảo đảm giá cổ phiếu tăng: nhà đầu tư còn cân nhắc dòng vốn và rủi ro.",
       "visual": {
         "kind": "generic",
         "qualifier": "Mốc đóng cửa KRX thứ Sáu 23/10, không phải giá live Chủ nhật."
@@ -245,7 +245,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Bước sang tuần mới, SK hynix dự kiến công bố kết quả quý ba trước chín giờ sáng ngày hai mươi tám tháng Mười. Samsung Electronics họp công bố lúc mười giờ sáng ngày hai mươi chín. Khi đó, cần đọc chất lượng lợi nhuận, dòng tiền và kế hoạch trả lại giá trị cho cổ đông, không coi kỳ vọng là quyết định đã có.",
+      "voiceText": "SK hynix công bố kết quả quý ba trước chín giờ sáng hai mươi tám tháng Mười. Samsung Electronics họp lúc mười giờ sáng ngày hai mươi chín. Hãy theo dõi lợi nhuận, dòng tiền và thông báo chính thức về quyền lợi cổ đông; đừng coi kỳ vọng là quyết định.",
       "visual": {
         "kind": "generic",
         "qualifier": "Lịch công bố tương lai · chưa phải kết quả thực tế."
@@ -272,7 +272,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Còn sức khỏe kinh tế trong nước? Ngày hai mươi bảy tháng Mười dự kiến có GDP quý ba, và ngày ba mươi là báo cáo hoạt động công nghiệp tháng Chín. Những dữ liệu này sẽ cho biết sức bật xuất khẩu có đi cùng sản xuất, tiêu dùng và đầu tư hay không.",
+      "voiceText": "Ngày hai mươi bảy dự kiến công bố GDP quý ba của Hàn Quốc; ngày ba mươi là số liệu hoạt động công nghiệp tháng Chín. Đây là phép thử xem sức bật xuất khẩu có lan sang kinh tế trong nước.",
       "visual": {
         "kind": "spotlight",
         "value": "27/10",
@@ -292,7 +292,7 @@
         "samsung-q3-call"
       ],
       "stats": [],
-      "voiceText": "Ba phép thử tuần mới: tăng trưởng GDP, lợi nhuận bán dẫn và khả năng lan tỏa của đà phục hồi. Đây là thông tin tham khảo, không phải khuyến nghị giao dịch.",
+      "voiceText": "Ba điểm theo dõi: tăng trưởng, lợi nhuận bán dẫn và dòng vốn. Thông tin này không phải khuyến nghị đầu tư.",
       "visual": {
         "kind": "closing",
         "bullets": [
