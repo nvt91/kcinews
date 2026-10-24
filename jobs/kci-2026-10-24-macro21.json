@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-24-macro21",
+  "edition": "VĨ MÔ 21H · 24/10/2026 KST · chuyên đề cuối tuần",
+  "dataAsOf": "2026-10-24T21:06:10+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Dầu Brent 116,72 USD/thùng sau khi BOK giữ 3%: áp lực lạm phát Hàn Quốc",
+  "sourceDisclaimer": "Weekend 24 Oct 2026 KST: Brent value is 23 Oct futures settlement, NOT live Saturday. No KRX Saturday session. Analysis only, not investment advice.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "format": "single-angle macro",
+    "articleId": "KCI-20261024-MACRO21",
+    "articlePath": "editorial/2026-10-24/macro21.md",
+    "eventKeys": [
+      "KR-BOK:RATE_HOLD:2026-10-22",
+      "GLOBAL-BRENT:SETTLEMENT:2026-10-23",
+      "KR-BOK:INFLATION_ASSESSMENT:2026-10-22"
+    ],
+    "editorialScore": 94,
+    "scoreBreakdown": {
+      "sourcesData": 34,
+      "analysis": 23,
+      "freshness": 14,
+      "vietnamese": 14,
+      "distinctness": 9
+    },
+    "duplicateReview": "Reviewed available main jobs (2026-10-23 and 2026-10-24 weekend-breadth), accessible repo issues 17–24 Oct, including legacy/demo #17; no MACRO21 found. This editorial centers oil-inflation-policy, not KOSPI breadth or company news.",
+    "voiceCode": "n_hanoi_male_tuananhnews_news_vc",
+    "renderSpec": "1080x1920;30fps;H.264/AAC;KciNewsDaily",
+    "publishing": "NOT_AUTHORIZED"
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-policy-2210",
+      "title": "Bank of Korea — Monetary Policy Decision & Opening Remarks 22 October 2026",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065825",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "primary",
+      "publicationDate": "2026-10-22",
+      "facts": [
+        "BOK held the Base Rate at 3.00% on 22 October 2026 with unanimous support from all seven board members, after July and August hikes.",
+        "For September 2026, headline CPI inflation was 2.9% year-over-year and core CPI inflation 2.8% year-over-year; the central bank inflation target is 2%.",
+        "For 2027, BOK anticipates headline and core CPI exceeding its August forecast rates of 2.3% and 2.5%, without announcing new exact figures.",
+        "The bank identified oil, FX, domestic demand and financial stability as factors informing future policy decisions."
+      ]
+    },
+    {
+      "id": "bok-outlook-2210",
+      "title": "Bank of Korea — Recent Economic Developments (October 2026)",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065826",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "primary",
+      "publicationDate": "2026-10-22",
+      "facts": [
+        "Export and semiconductor-led growth is expected to exceed the previous Korean economic outlook.",
+        "Energy input costs and the Middle East conflict pose inflation and growth uncertainties."
+      ]
+    },
+    {
+      "id": "reuters-oil-settle-2310",
+      "title": "Reuters — Brent futures Friday 23 October 2026 settlement",
+      "url": "https://www.reuters.com/business/energy/oil-little-changed-supply-concern-lingers-amid-houthi-attacks-saudi-arabia-2026-10-23/",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "secondary",
+      "publicationDate": "2026-10-23, updated article",
+      "facts": [
+        "Brent futures settled Friday 23 October 2026 at USD 116.72 per barrel, up USD 3.55 or 3.14% in that completed session.",
+        "WTI futures settled at USD 103.27 per barrel, up 3.8%; no live Saturday prices were reported.",
+        "Saudi-Houthi clashes and Middle East supply disruption fears were cited among drivers by Reuters."
+      ]
+    },
+    {
+      "id": "reuters-bok-2210",
+      "title": "Reuters — Bank of Korea rate hold on 22 October 2026",
+      "url": "https://www.reuters.com/world/asia-pacific/bank-korea-holds-rates-after-back-to-back-hikes-2026-10-22/",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "secondary",
+      "publicationDate": "2026-10-22 01:07 UTC article",
+      "facts": [
+        "Reuters verified BOK's 3.00% unanimous pause and that July and August 2026 had seen rate increases.",
+        "A November hike is an analyst expectation rather than an announced BOK decision."
+      ]
+    },
+    {
+      "id": "fed-fomc-calendar",
+      "title": "US Federal Reserve — 2026 FOMC official meeting calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "primary",
+      "publicationDate": "Live official schedule, publication timestamp not shown",
+      "facts": [
+        "The October 2026 FOMC meeting is scheduled 27–28 October, still future as of 24 October 2026."
+      ]
+    },
+    {
+      "id": "bea-release-calendar",
+      "title": "US Bureau of Economic Analysis — Release Schedule",
+      "url": "https://www.bea.gov/news/schedule/",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-24T21:06:10+09:00",
+      "kind": "primary",
+      "publicationDate": "Page updated 2026-10-24",
+      "facts": [
+        "Advance US Q3 2026 GDP and US September 2026 Personal Income and Outlays reports are scheduled for 29 October 2026 at 08:30 Eastern US time, 21:30 KST under EDT."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Dầu Brent chốt gần một trăm mười bảy đô la một thùng, ngay sau khi Hàn Quốc giữ lãi suất ở ba phần trăm. Cú ép nào đang hình thành?",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "Dầu Brent chốt gần một trăm mười bảy đô la một thùng, ngay sau khi Hàn Quốc giữ lãi suất ở ba phần trăm. Cú ép nào đang hình thành?",
+        "score": 46
+      },
+      {
+        "style": "impact",
+        "text": "Lãi suất Hàn Quốc ở ba phần trăm, nhưng dầu Brent đã chốt ở một trăm mười sáu phẩy bảy hai đô la. Ai chịu chi phí lớn hơn?",
+        "score": 43
+      },
+      {
+        "style": "question",
+        "text": "BOK vừa giữ lãi suất, còn giá dầu tăng hơn ba phần trăm trong phiên thứ Sáu. Chỉ số nào mới quyết định rủi ro lạm phát Hàn Quốc?",
+        "score": 42
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, giá dầu hay lãi suất mới là rủi ro lớn hơn cho kinh tế Hàn Quốc? Hãy bình luận góc nhìn và theo dõi Korea Capital Insight để tiếp tục đối chiếu dữ liệu.",
+    "screenHeadline": "DẦU HAY LÃI SUẤT: RỦI RO LỚN HƠN?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, giá dầu hay lãi suất mới là rủi ro lớn hơn cho kinh tế Hàn Quốc?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H · CUỐI TUẦN",
+      "headline": "DẦU ĐẮT, LÃI SUẤT CHƯA GIẢM",
+      "summary": "BOK 3% hôm 22/10; Brent chốt 116,72 USD/thùng ngày 23/10.",
+      "source": "BOK 22/10/2026 · Reuters Brent settlement 23/10/2026",
+      "sourceIds": [
+        "bok-policy-2210",
+        "reuters-oil-settle-2310"
+      ],
+      "stats": [
+        {
+          "label": "BOK · quyết định 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        },
+        {
+          "label": "Brent · chốt 23/10",
+          "value": "116,72 USD/thùng",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Dầu Brent chốt gần một trăm mười bảy đô la một thùng, ngay sau khi Hàn Quốc giữ lãi suất ở ba phần trăm. Cú ép nào đang hình thành?",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Hai ngày khác nhau · dữ liệu cuối tuần"
+      }
+    },
+    {
+      "id": "policy",
+      "eyebrow": "CHÍNH SÁCH TIỀN TỆ",
+      "headline": "BOK GIỮ LÃI SUẤT 3,00%",
+      "summary": "Cả 7 thành viên đồng ý giữ nguyên sau hai lần tăng tháng 7–8.",
+      "source": "BOK · công bố 22/10/2026",
+      "sourceIds": [
+        "bok-policy-2210",
+        "reuters-bok-2210"
+      ],
+      "stats": [
+        {
+          "label": "Lãi suất cơ bản",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ngày hai mươi hai tháng mười, cả bảy thành viên Ngân hàng Trung ương Hàn Quốc nhất trí giữ lãi suất cơ bản ở ba phần trăm. Quyết định này nối tiếp hai đợt tăng trong tháng bảy và tháng tám.",
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "unit": "LÃI SUẤT BOK",
+        "qualifier": "Quyết định 22/10/2026 · 7/7 đồng thuận",
+        "numericValue": 3,
+        "scaleMax": 5,
+        "statusLabel": "GIỮ NGUYÊN"
+      }
+    },
+    {
+      "id": "inflation",
+      "eyebrow": "LẠM PHÁT THÁNG 9",
+      "headline": "CPI VẪN TRÊN MỤC TIÊU 2%",
+      "summary": "CPI 2,9%; CPI lõi 2,8% so với cùng kỳ tháng 9/2025.",
+      "source": "BOK · số liệu tháng 9/2026, đánh giá 22/10",
+      "sourceIds": [
+        "bok-policy-2210"
+      ],
+      "stats": [
+        {
+          "label": "CPI · 9/2026 y/y",
+          "value": "2,9%",
+          "tone": "up"
+        },
+        {
+          "label": "CPI lõi · 9/2026 y/y",
+          "value": "2,8%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Bài toán là lạm phát. Tháng chín, giá tiêu dùng tăng hai phẩy chín phần trăm so với một năm trước; lạm phát lõi là hai phẩy tám phần trăm. Cả hai cao hơn mục tiêu hai phần trăm.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CPI · 9/2026",
+            "value": 2.9,
+            "display": "2,9%"
+          },
+          {
+            "label": "CPI LÕI · 9/2026",
+            "value": 2.8,
+            "display": "2,8%"
+          }
+        ],
+        "qualifier": "Cùng kỳ năm trước, không phải tăng theo tháng"
+      }
+    },
+    {
+      "id": "brent",
+      "eyebrow": "GIÁ NĂNG LƯỢNG QUỐC TẾ",
+      "headline": "BRENT CHỐT 116,72 USD/THÙNG",
+      "summary": "Hợp đồng Brent futures chốt phiên thứ Sáu 23/10: +3,14%.",
+      "source": "Reuters · Brent futures settlement 23/10/2026",
+      "sourceIds": [
+        "reuters-oil-settle-2310"
+      ],
+      "stats": [
+        {
+          "label": "Brent futures · chốt 23/10",
+          "value": "116,72 USD/thùng",
+          "change": "+3,14%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Phiên thứ Sáu, ngày hai mươi ba tháng mười, dầu Brent thanh toán ở một trăm mười sáu phẩy bảy hai đô la mỗi thùng, tăng ba phẩy một bốn phần trăm. Đây là giá chốt phiên, không phải giá trực tiếp.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "116,72",
+        "unit": "USD/thùng",
+        "qualifier": "Brent futures · settlement 23/10/2026 · +3,14%"
+      }
+    },
+    {
+      "id": "korea-channel",
+      "eyebrow": "TÁC ĐỘNG HÀN QUỐC · PHÂN TÍCH KCI",
+      "headline": "KÉP: CHI PHÍ ĐẦU VÀO VÀ VỐN",
+      "summary": "Tác động phụ thuộc độ bền của dầu, tỷ giá USD/KRW và diễn biến CPI.",
+      "source": "BOK 22/10 · Reuters 23/10 · nhận định KCI",
+      "sourceIds": [
+        "bok-policy-2210",
+        "bok-outlook-2210",
+        "reuters-oil-settle-2310"
+      ],
+      "stats": [
+        {
+          "label": "Kênh chi phí",
+          "value": "NĂNG LƯỢNG",
+          "tone": "neutral"
+        },
+        {
+          "label": "Kênh tín dụng",
+          "value": "LÃI SUẤT",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Với Hàn Quốc, dầu đắt có thể nâng chi phí nhập khẩu và đẩy giá hàng hóa; còn lãi suất cao làm vốn vay khó rẻ đi. Nhưng nếu dầu hạ nhiệt, đồng won ổn định, sức ép sẽ giảm.",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Nhận định kịch bản, không phải dự báo chắc chắn"
+      }
+    },
+    {
+      "id": "closing",
+      "eyebrow": "TUẦN MỚI CẦN THEO DÕI",
+      "headline": "BA TÍN HIỆU QUAN TRỌNG",
+      "summary": "Brent · USD/KRW · CPI. Tham khảo vĩ mô, không phải khuyến nghị đầu tư.",
+      "source": "BOK 22/10 · Reuters 23/10 · Fed lịch 27–28/10",
+      "sourceIds": [
+        "bok-policy-2210",
+        "reuters-oil-settle-2310",
+        "fed-fomc-calendar"
+      ],
+      "stats": [],
+      "voiceText": "Tuần tới, hãy nhìn ba tín hiệu: dầu Brent, tỷ giá won trên đô la và lạm phát. Đây là phân tích kịch bản, không phải khuyến nghị giao dịch.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "BRENT: GIÁ DẦU CÓ HẠ?",
+          "USD/KRW: TỶ GIÁ CÓ ỔN?",
+          "CPI: CÓ VỀ MỤC TIÊU 2%?"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Dầu Brent chốt gần một trăm mười bảy đô la một thùng, ngay sau khi Hàn Quốc giữ lãi suất ở ba phần trăm."
+}
