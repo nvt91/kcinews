@@ -111,8 +111,8 @@ if (mode !== "validate") {
     }
   }
   fs.writeFileSync(path.join(out,"subtitles-estimated.srt"),subtitleLines.map((cue,i)=>
-    String(i+1)+"\\n"+timecode(cue.from)+" --> "+timecode(cue.to)+"\\n"+cue.text+"\\n"
-  ).join("\\n"),"utf8");
+    String(i+1)+"\n"+timecode(cue.from)+" --> "+timecode(cue.to)+"\n"+cue.text+"\n"
+  ).join("\n"),"utf8");
   if(dailyJob) {
     fs.writeFileSync(path.join(out,"source-ledger.json"),JSON.stringify({
       dataAsOf:job.dataAsOf,status:job.status,sourceLedger:job.sourceLedger,
