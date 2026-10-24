@@ -55,6 +55,7 @@ jobs:
       - run: node --check scripts/run-job.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
+      - run: node scripts/check-worker.mjs
       - run: node scripts/run-job.mjs --mode=validate
   render:
     if: >-
@@ -71,7 +72,7 @@ jobs:
       VBEE_APP_ID: ${{ secrets.VBEE_APP_ID }}
       VBEE_API_TOKEN: ${{ secrets.VBEE_API_TOKEN }}
       VBEE_VOICE_CODE: n_hanoi_male_tuananhnews_news_vc
-      VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL }}
+      VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
       VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS }}
     steps:
       - uses: actions/checkout@v4
@@ -82,6 +83,8 @@ jobs:
       - run: npm ci
       - name: Validate job
         run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
+      - name: Verify Cloudflare Worker before any Vbee request
+        run: node scripts/check-worker.mjs
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - uses: actions/upload-artifact@v4
