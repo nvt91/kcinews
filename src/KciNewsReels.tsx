@@ -13,7 +13,7 @@ const ease=(f:number,start=0,len=18)=>interpolate(f,[start,start+len],[0,1],{...
 const enter=(f:number,start=0):React.CSSProperties=>({opacity:ease(f,start),transform:`translateY(${(1-ease(f,start))*14}px)`});
 const tone=(t?:string)=>t==="down"?P.red:t==="up"?P.teal:P.white;
 const card:React.CSSProperties={background:"linear-gradient(140deg,rgba(18,45,74,.97),rgba(7,20,40,.97))",border:`1px solid ${P.border}`,borderRadius:22,boxSizing:"border-box"};
-const zone=(top:number,height:number):React.CSSProperties=>({position:"absolute",left:KCI_REELS_SAFE.left,width:KCI_REELS_SAFE.width,top,height,boxSizing:"border-box"});
+const zone=(top:number,height:number):React.CSSProperties=>({position:"absolute",left:KCI_REELS_SAFE.left+12,width:KCI_REELS_SAFE.width-24,top,height,boxSizing:"border-box"});
 const small:React.CSSProperties={fontSize:23,lineHeight:1.3,color:P.muted};
 
 const Background:React.FC<{f:number;color:string}>=({f,color})=>(
@@ -26,7 +26,7 @@ const Background:React.FC<{f:number;color:string}>=({f,color})=>(
 
 const Masthead:React.FC<{edition:string;index:number;count:number;color:string}>=({edition,index,count,color})=>(
   <>
-    <div data-kci-safe="masthead" style={{...zone(268,60),display:"flex",alignItems:"center",gap:18}}>
+    <div data-kci-safe="masthead" style={{...zone(279,52),display:"flex",alignItems:"center",gap:18}}>
       <div style={{width:68,height:50,flexShrink:0,background:color,color:P.bg,fontSize:29,fontWeight:950,textAlign:"center",lineHeight:"50px",transform:"skew(-6deg)"}}>KCI</div>
       <div style={{flex:1,minWidth:0}}>
         <div style={{fontSize:25,fontWeight:900,letterSpacing:.7}}>KOREA CAPITAL INSIGHT</div>
@@ -153,9 +153,9 @@ const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number
       <div data-kci-safe="captions" style={{...zone(1220,112),background:"rgba(1,10,24,.95)",border:`1px solid ${P.border}`,borderLeft:`5px solid ${color}`,borderRadius:16,padding:"16px 22px",display:"flex",alignItems:"center",justifyContent:"center"}}>
         <div style={{fontSize:36,lineHeight:1.22,fontWeight:850,textAlign:"center",whiteSpace:"pre-wrap",opacity:cue?ease(f,cue.from,4):0}}>{cue?.text||""}</div>
       </div>
-      <div data-kci-safe="source" style={{...zone(1347,48),fontSize:19,lineHeight:1.22,color:P.muted}}>Nguồn: {scene.source}</div>
-      <div style={{...zone(1402,2),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
-      <div data-kci-safe="disclaimer" style={{...zone(1415,25),fontSize:19,lineHeight:1.2,color:P.muted}}>Thông tin tham khảo · Không phải khuyến nghị đầu tư cá nhân.</div>
+      <div data-kci-safe="source" style={{...zone(1340,32),fontSize:19,lineHeight:1.22,color:P.muted,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Nguồn: {scene.source}</div>
+      <div style={{...zone(1388,2),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
+      <div data-kci-safe="disclaimer" style={{...zone(1401,25),fontSize:18,lineHeight:1.2,color:P.muted}}>Thông tin tham khảo · Không phải khuyến nghị đầu tư cá nhân.</div>
       {preview&&<div data-kci-safe="preview" style={{...zone(1189,24),fontSize:18,fontWeight:900,color:P.red,textAlign:"right"}}>SILENT PREVIEW · CHƯA CÓ VOICE</div>}
     </AbsoluteFill>
     {scene.audioFile&&<Audio src={staticFile(scene.audioFile)}/>}
