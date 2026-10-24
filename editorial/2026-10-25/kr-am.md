@@ -18,31 +18,31 @@ Bản tin KR_NEWS sáng nay tập trung câu hỏi mới: *xuất khẩu mạnh 
 
 ## Hook A/B nội bộ (thang 50)
 
-- **46/50 · Contrast — CHỌN:** Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?
+- **46/50 · Contrast — CHỌN:** Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?
 - **43/50 · Investor impact:** Bán dẫn kéo xuất khẩu Hàn Quốc lập kỷ lục, còn thị trường chứng khoán vẫn biến động. Tuần mới, hai hãng chip phải chứng minh điều gì?
 - **40/50 · Question:** Xuất khẩu tăng mạnh liệu đã đủ giúp thị trường Hàn Quốc phục hồi? Tuần tới có ba mốc dữ liệu đáng chú ý.
 
 ## Lời đọc kịch bản sáu cảnh (Vbee Tuấn Anh News)
 
-**1. XUẤT KHẨU TĂNG MẠNH, KOSPI VẪN GIẢM** — Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm trong hai mươi ngày đầu tháng Mười, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?
+**1. XUẤT KHẨU TĂNG MẠNH, KOSPI VẪN GIẢM** — Xuất khẩu Hàn Quốc tăng hơn một trăm phần trăm, nhưng KOSPI lại giảm hơn hai phần trăm cả tuần. Vì sao?
 Nguồn: Korea Customs Service 21/10 · Newsis/KRX 25/10.
 
-**2. BÁN DẪN LÀ ĐỘNG LỰC XUẤT KHẨU** — Hải quan Hàn Quốc công bố ngày hai mươi mốt tháng Mười: xuất khẩu trong hai mươi ngày đầu tháng đạt hơn sáu mươi mốt phẩy sáu tỷ đô la, tăng một trăm linh năm phẩy bốn phần trăm so với cùng kỳ. Riêng bán dẫn đạt hai mươi bảy phẩy năm tỷ đô la. Đây mới là số liệu sơ bộ.
+**2. BÁN DẪN LÀ ĐỘNG LỰC XUẤT KHẨU** — Hải quan Hàn Quốc công bố: xuất khẩu hai mươi ngày đầu tháng Mười đạt sáu mươi mốt phẩy sáu tỷ đô la, tăng một trăm linh năm phẩy bốn phần trăm so với cùng kỳ; bán dẫn đạt hai mươi bảy phẩy năm tỷ. Đây là số liệu sơ bộ.
 Nguồn: Korea Customs Service · công bố 21/10/2026.
 
-**3. KOSPI VẪN GIẢM 2,08% TRONG TUẦN** — Thế nhưng KOSPI kết thúc tuần mười chín đến hai mươi ba tháng Mười ở năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm so với cuối tuần trước. Xuất khẩu tăng không đồng nghĩa cổ phiếu sẽ tăng ngay: giá còn phản ánh rủi ro và dòng vốn.
+**3. KOSPI VẪN GIẢM 2,08% TRONG TUẦN** — KOSPI chốt tuần ngày hai mươi ba tháng Mười tại năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm. Xuất khẩu mạnh chưa bảo đảm giá cổ phiếu tăng: nhà đầu tư còn cân nhắc dòng vốn và rủi ro.
 Nguồn: Newsis dẫn số liệu KRX · 25/10/2026.
 
-**4. SK HYNIX 28/10 · SAMSUNG 29/10** — Bước sang tuần mới, SK hynix dự kiến công bố kết quả quý ba trước chín giờ sáng ngày hai mươi tám tháng Mười. Samsung Electronics họp công bố lúc mười giờ sáng ngày hai mươi chín. Khi đó, cần đọc chất lượng lợi nhuận, dòng tiền và kế hoạch trả lại giá trị cho cổ đông, không coi kỳ vọng là quyết định đã có.
+**4. SK HYNIX 28/10 · SAMSUNG 29/10** — SK hynix công bố kết quả quý ba trước chín giờ sáng hai mươi tám tháng Mười. Samsung Electronics họp lúc mười giờ sáng ngày hai mươi chín. Hãy theo dõi lợi nhuận, dòng tiền và thông báo chính thức về quyền lợi cổ đông; đừng coi kỳ vọng là quyết định.
 Nguồn: SK hynix IR 21/10 · Samsung IR 08/10.
 
-**5. GDP QUÝ III: CHỜ NGÀY 27/10** — Còn sức khỏe kinh tế trong nước? Ngày hai mươi bảy tháng Mười dự kiến có GDP quý ba, và ngày ba mươi là báo cáo hoạt động công nghiệp tháng Chín. Những dữ liệu này sẽ cho biết sức bật xuất khẩu có đi cùng sản xuất, tiêu dùng và đầu tư hay không.
+**5. GDP QUÝ III: CHỜ NGÀY 27/10** — Ngày hai mươi bảy dự kiến công bố GDP quý ba của Hàn Quốc; ngày ba mươi là số liệu hoạt động công nghiệp tháng Chín. Đây là phép thử xem sức bật xuất khẩu có lan sang kinh tế trong nước.
 Nguồn: Yonhap · lịch kinh tế 24/10/2026.
 
-**6. BA MỐC QUAN TRỌNG CHO TUẦN MỚI** — Ba phép thử tuần mới: tăng trưởng GDP, lợi nhuận bán dẫn và khả năng lan tỏa của đà phục hồi. Đây là thông tin tham khảo, không phải khuyến nghị giao dịch.
+**6. BA MỐC QUAN TRỌNG CHO TUẦN MỚI** — Ba điểm theo dõi: tăng trưởng, lợi nhuận bán dẫn và dòng vốn. Thông tin này không phải khuyến nghị đầu tư.
 Nguồn: Yonhap 24/10 · SK hynix IR · Samsung IR.
 
-**CTA nối vào đoạn kết đúng một lần:** Theo anh chị, kết quả kinh doanh bán dẫn hay sức khỏe kinh tế trong nước quan trọng hơn cho đà hồi phục? Bình luận góc nhìn và theo dõi Korea Capital Insight để cập nhật.
+**CTA nối vào đoạn kết đúng một lần:** Anh chị quan tâm hơn tới lợi nhuận chip hay sức khỏe kinh tế nội địa? Bình luận và theo dõi Korea Capital Insight.
 
 **CTA trên màn hình:** LỢI NHUẬN CHIP HAY SỨC KHỎE NỀN KINH TẾ? — Bình luận góc nhìn · Theo dõi KCI.
 
