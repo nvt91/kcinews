@@ -1,11 +1,12 @@
 import React from "react";
 import {AbsoluteFill, Audio, Easing, interpolate, Sequence, staticFile, useCurrentFrame} from "remotion";
 import type {KciCta, KciVideoProps, KciVisual, RenderScene} from "./KciNews";
+import {REELS_SAFE, REELS_CONTENT_WIDTH, ReelsSafeGuides} from "./KciReelsSafe";
 
 /** KCI's conservative mobile layout, derived from the owner's Reels screenshot.
  * Not a platform-wide guarantee: expanded app panels can still obscure content.
  * Coordinates refer to the existing 1080 x 1920 composition. */
-export const KCI_REELS_SAFE = {left:96, right:196, top:264, bottom:480, width:788} as const;
+export const KCI_REELS_SAFE = {...REELS_SAFE, width:REELS_CONTENT_WIDTH} as const;
 const P={bg:"#071224",glass:"#102844",teal:"#36DEC0",red:"#FF647D",blue:"#63BFFE",amber:"#FFD187",white:"#F8FCFF",muted:"#A6BDD1",border:"#3B5A75"};
 const clamp={extrapolateLeft:"clamp",extrapolateRight:"clamp"} as const;
 const ease=(f:number,start=0,len=18)=>interpolate(f,[start,start+len],[0,1],{...clamp,easing:Easing.out(Easing.cubic)});
@@ -138,7 +139,7 @@ const Visual:React.FC<{s:RenderScene;f:number;color:string}>=({s,f,color})=>{
   return <div style={{width:"100%",display:"grid",gap:18}}>{s.stats.map((st,i)=><div key={i} style={{...card,...enter(f,14+i*9),padding:"23px 26px"}}><div style={{...small}}>{st.label}</div><div style={{fontSize:49,lineHeight:1.12,fontWeight:950,color:tone(st.tone),marginTop:12}}>{st.value}</div>{st.change&&<div style={{fontSize:24,marginTop:8,color:tone(st.tone)}}>{st.change}</div>}</div>)}</div>;
 };
 
-const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number;preview:boolean}>=({scene,edition,index,count,preview})=>{
+const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number;preview:boolean;safeGuides:boolean}>=({scene,edition,index,count,preview,safeGuides})=>{
   const f=useCurrentFrame(),v=scene.visual;
   const color=v?.kind==="risk-bars"?P.red:v?.kind==="spotlight"?P.amber:v?.kind==="rate"?P.blue:P.teal;
   const opacity=Math.min(ease(f,0,9),interpolate(f,[Math.max(0,scene.durationFrames-8),scene.durationFrames],[1,0],clamp));
@@ -158,10 +159,11 @@ const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number
       {preview&&<div data-kci-safe="preview" style={{...zone(1189,24),fontSize:18,fontWeight:900,color:P.red,textAlign:"right"}}>SILENT PREVIEW · CHƯA CÓ VOICE</div>}
     </AbsoluteFill>
     {scene.audioFile&&<Audio src={staticFile(scene.audioFile)}/>}
+    {safeGuides&&<ReelsSafeGuides/>}
   </AbsoluteFill>;
 };
 
 /** Same composition/job contract as KciNewsDaily; layout-only change. */
-export const KciNewsReels:React.FC<KciVideoProps>=({scenes,edition,preview})=>(
-  <AbsoluteFill style={{background:P.bg}}>{scenes.map((scene,i)=><Sequence key={scene.id} from={scene.startFrame} durationInFrames={scene.durationFrames} name={scene.headline}><Scene scene={scene} edition={edition} index={i+1} count={scenes.length} preview={preview}/></Sequence>)}</AbsoluteFill>
+export const KciNewsReels:React.FC<KciVideoProps>=({scenes,edition,preview,safeGuides=false})=>(
+  <AbsoluteFill style={{background:P.bg}}>{scenes.map((scene,i)=><Sequence key={scene.id} from={scene.startFrame} durationInFrames={scene.durationFrames} name={scene.headline}><Scene scene={scene} edition={edition} index={i+1} count={scenes.length} preview={preview} safeGuides={safeGuides}/></Sequence>)}</AbsoluteFill>
 );
