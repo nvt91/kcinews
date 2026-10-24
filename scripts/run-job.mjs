@@ -79,11 +79,10 @@ if (mode !== "validate") {
     const words=narration.trim().split(/\s+/);
     const captions=[];
     for(let wi=0; wi<words.length; wi+=7) {
-      captions.push({
-        from:Math.floor(wi/words.length*(durationFrames-10)),
-        to:Math.ceil(Math.min(wi+7,words.length)/words.length*(durationFrames-10)),
-        text:words.slice(wi,wi+7).join(" ")
-      });
+      const audioFrames=durationFrames-10;
+      const from=Math.floor(wi/words.length*audioFrames);
+      const to=Math.max(from+1,Math.floor(Math.min(wi+7,words.length)/words.length*audioFrames));
+      captions.push({from,to,text:words.slice(wi,wi+7).join(" ")});
     }
     scenes.push({...scene,voiceText:narration,startFrame,durationFrames,audioFile,captions,cta:dailyJob&&isLastScene?job.cta:undefined});
     startFrame+=durationFrames;
@@ -101,13 +100,13 @@ if (mode !== "validate") {
     return h+":"+m+":"+s+","+part;
   };
   const subtitleLines = [];
+  let previousTo=0;
   for(const scene of scenes) {
     for(const cue of scene.captions) {
-      const from=scene.startFrame+cue.from;
-      const to=scene.startFrame+cue.to;
-      subtitleLines.push({
-        from, to, text:cue.text,
-      });
+      const from=Math.max(previousTo,scene.startFrame+cue.from);
+      const to=Math.max(from+1,scene.startFrame+cue.to);
+      subtitleLines.push({from,to,text:cue.text});
+      previousTo=to;
     }
   }
   fs.writeFileSync(path.join(out,"subtitles-estimated.srt"),subtitleLines.map((cue,i)=>

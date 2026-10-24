@@ -222,8 +222,11 @@ const Rate:React.FC<{v:KciVisual;f:number}> = ({v,f})=>{
       <div style={{position:"absolute",top:150,left:0,right:0,textAlign:"center"}}>
         <div style={{fontSize:27,color:P.muted,fontWeight:850}}>{v.unit||"LÃI SUẤT"}</div>
         <div style={{fontSize:108,fontWeight:950}}>{v.value}</div>
-        <div style={{fontSize:27,color:P.teal,fontWeight:850}}>{v.qualifier}</div>
-        <div style={{fontSize:19,color:P.muted,marginTop:9}}>Thang minh họa 0–{v.scaleMax||5}</div>
+        {v.statusLabel&&<div style={{fontSize:26,color:P.teal,fontWeight:850}}>{v.statusLabel}</div>}
+        <div style={{fontSize:19,color:P.muted,marginTop:8}}>Thang minh họa 0–{v.scaleMax||5}</div>
+      </div>
+      <div style={{position:"absolute",bottom:16,left:30,right:30,textAlign:"center",fontSize:23,fontWeight:750,color:P.muted}}>
+        {v.qualifier}
       </div>
     </div>
   </>;
