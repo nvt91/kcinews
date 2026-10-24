@@ -7,7 +7,7 @@
 - Render: Remotion 4, React/TypeScript, FFmpeg/ffprobe available through Actions (existing workflow)
 - The historical benchmark `KciNewsV2` includes 23 October 2026 data **hard-coded in graphic components**. It must not serve new editions.
 - The new composition `KciNewsDaily` consumes the facts and visual kind of v2 editorial jobs. Its look derives from the approved V2.1 style while keeping dates/numbers dynamically supplied.
-- Social-platform template safety lives in `src/KciReelsSafe.tsx`: use central bounds x=70–862 and y=260–1455 for readable content in the 1080×1920 master. The header is below the top overlay, data panels above subtitles, CTA above captions, and bottom ticker is removed from the essential reading path. Revisit mobile crop examples after platform UI changes.
+- Social-platform template safety lives in `src/KciReelsSafe.tsx`: the active component `src/KciNewsReels.tsx` is registered as composition ID `KciNewsDaily` by `src/Root.tsx`. Use central bounds x=96–884, y=264–1440 for readable content in the 1080×1920 master. The header is below the top overlay, data panels above subtitles, CTA above captions, and bottom ticker is removed from the essential reading path. Revisit mobile crop examples after platform UI changes.
 - To inspect a render with safe-area outlines, set `safeGuides: true` in the **preview-only** Remotion props. Production props omit this flag. A UI screenshot is the evidence for these conservative bounds; they are not a claim of an official universal Instagram safe-zone specification.
 - Do not require Descript, Lovable or Codex for everyday ChatGPT-triggered production.
 
