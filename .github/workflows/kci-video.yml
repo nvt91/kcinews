@@ -70,7 +70,11 @@ jobs:
           node scripts/create-daily-preview-props.mjs
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-hook.png --props=out/kci-daily-preview-props.json --frame=55
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-compare.png --props=out/kci-daily-preview-props.json --frame=355
+          npx remotion still src/index.ts KciNewsDaily out/kci-daily-oil.png --props=out/kci-daily-preview-props.json --frame=1150
+          npx remotion still src/index.ts KciNewsDaily out/kci-daily-bok.png --props=out/kci-daily-preview-props.json --frame=1410
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-cta.png --props=out/kci-daily-preview-props.json --frame=1830
+          npx remotion still src/index.ts KciNewsDaily out/kci-daily-hook-safe-guides.png --props=out/kci-daily-safe-guide-props.json --frame=55
+          npx remotion still src/index.ts KciNewsDaily out/kci-daily-cta-safe-guides.png --props=out/kci-daily-safe-guide-props.json --frame=1830
       - name: Upload KCI rendering evidence
         uses: actions/upload-artifact@v4
         with:
