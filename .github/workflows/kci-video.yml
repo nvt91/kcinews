@@ -93,16 +93,25 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Install FFmpeg and ffprobe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          command -v ffprobe
+          command -v ffmpeg
       - name: Validate job
         run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
       - name: Verify Cloudflare Worker before any Vbee request
         run: node scripts/check-worker.mjs
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
-      - uses: actions/upload-artifact@v4
-        if: success()
+      - name: Preserve audio and review artifacts even if a later render step fails
+        uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: kci-${{ github.run_id }}
-          path: out/
-          if-no-files-found: error
+          path: |
+            out/
+            public/voice/*.mp3
+          if-no-files-found: warn
           retention-days: 7
