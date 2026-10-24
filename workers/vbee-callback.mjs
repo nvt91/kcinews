@@ -2,7 +2,7 @@
  * KCI Vbee TTS notification receiver — Cloudflare Workers Free.
  *
  * GET  /api/vbee-callback => health status
- * POST /api/vbee-callback => reject invalid JSON, acknowledge with 204.
+ * POST /api/vbee-callback => reject invalid JSON, acknowledge with HTTP 200.
  *
  * It intentionally DOES NOT trust/store/log/forward the callback body.
  * The KCI GitHub Actions worker authenticates separately with Vbee's
@@ -61,7 +61,7 @@ async function readLimitedJson(request) {
     if (message === null || Array.isArray(message) || typeof message !== "object") {
       return { status: 400 };
     }
-    return { status: 204 };
+    return { status: 200 };
   } catch {
     return { status: 400 };
   }
