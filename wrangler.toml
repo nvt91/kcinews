@@ -1,0 +1,4 @@
+name = "kci-vbee-callback"
+main = "workers/vbee-callback.mjs"
+compatibility_date = "2026-10-24"
+workers_dev = true
