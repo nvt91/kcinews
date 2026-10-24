@@ -27,4 +27,5 @@ const scenes=job.scenes.map((scene,i)=>{
 });
 const props={headline:job.headline,edition:job.edition,scenes,preview:true};
 fs.writeFileSync("out/kci-daily-preview-props.json",JSON.stringify(props,null,2));
+fs.writeFileSync("out/kci-daily-safe-guide-props.json",JSON.stringify({...props,safeGuides:true},null,2));
 console.log("Data-driven KCI preview created:",scenes.length,"scenes, no Vbee calls.");
