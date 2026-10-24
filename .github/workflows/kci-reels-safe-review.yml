@@ -1,0 +1,38 @@
+name: KCI Reels Safe Video Review
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    if: github.event_name == 'issues' && github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[KCI REELS SAFE]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Retrieve existing approved Vbee narration and props
+        uses: actions/download-artifact@v4
+        with:
+          name: kci-40059664340
+          run-id: 40059664340
+          github-token: ${{ github.token }}
+          path: .
+      - name: Confirm seven narrated scenes and CTA, without Vbee calls
+        run: |
+          test -s out/props.json
+          node --input-type=module -e 'import fs from "node:fs"; const p=JSON.parse(fs.readFileSync("out/props.json", "utf8")); if(p.scenes.length!==7 || !p.scenes.at(-1).cta || !p.scenes.every(s=>s.audioFile))throw Error("Missing source narration or CTA"); for(let i=1;i<=7;i++){const path="public/voice/scene-"+String(i).padStart(2,"0")+".mp3"; if(!fs.existsSync(path)||fs.statSync(path).size<10000)throw Error("Missing "+path);} console.log("Original seven Vbee scenes ready; no new TTS requests.");'
+      - name: Render Reels-safe version with original Vbee voice
+        run: npx remotion render src/index.ts KciNewsDaily out/KCI_2026-10-23_ReelsSafe_Review.mp4 --props=out/props.json --codec=h264 --concurrency=3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kci-reels-safe-${{ github.run_id }}
+          path: out/KCI_2026-10-23_ReelsSafe_Review.mp4
+          retention-days: 7
+          if-no-files-found: error
