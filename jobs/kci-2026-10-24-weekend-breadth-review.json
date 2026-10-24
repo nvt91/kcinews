@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-24-weekend-breadth-review",
+  "edition": "TỔNG KẾT 23/10/2026",
+  "dataAsOf": "2026-10-24T16:06:52+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI tăng, nhưng 719 mã vẫn giảm: nhịp hồi đã bền vững?",
+  "sourceDisclaimer": "Produced 24 October 2026 KST from user supplied 23 October brief; rechecked fresh indexed official and financial media text. This is a completed-session recap, not live market data. Original news-page open returned cache miss; see sourceLedger accessNote. No publishing or trading.",
+  "sourceLedger": [
+    {
+      "id": "mk-market-2310",
+      "title": "Maeil Business: KOSPI recovery and market breadth, 23 October 2026",
+      "url": "https://stock12.mk.co.kr/news/view/1180237",
+      "eventDate": "2026-10-23",
+      "publicationTime": "2026-10-23T16:07:04+09:00",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "secondary",
+      "accessNote": "Full article text returned by fresh web search. Direct open returned cache miss; no direct KRX final table obtained. Completed-session observations, not live quotes.",
+      "facts": [
+        "KRX main close on 2026-10-23: KOSPI 5550.30, +0.30%; KOSDAQ 751.69, -1.62%.",
+        "KOSPI open 5403.17; intraday low 5305.98 (-4.12%); close 5550.30. These are discrete checkpoints, not tick data.",
+        "KOSPI market breadth: 173 rising securities and 719 falling securities. SK hynix (000660) closed +4.42%."
+      ]
+    },
+    {
+      "id": "asiae-market-2310",
+      "title": "Asia Business Daily: KOSPI Reclaims 5500; SK hynix rises, 23 October 2026",
+      "url": "https://view.asiae.co.kr/en/article/2026102316141192290",
+      "eventDate": "2026-10-23",
+      "publicationTime": "2026-10-23T16:14:00+09:00",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "secondary",
+      "accessNote": "Fresh indexed article text corroborates close and open/low. Direct open unavailable. Flow statistics excluded because source scopes differ.",
+      "facts": [
+        "KOSPI main-session close on 2026-10-23: 5550.30, +16.53 points, +0.30%.",
+        "KOSPI opened 5403.17 and traded as low as 5305.98; SK hynix ended more than 4% higher."
+      ]
+    },
+    {
+      "id": "hynix-official-2310",
+      "title": "SK hynix official statement: Solidigm to discontinue review of potential IPO",
+      "url": "https://news.skhynix.com/en/fact-12/",
+      "eventDate": "2026-10-23",
+      "publicationTime": "2026-10-23 (time unavailable)",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "primary",
+      "accessNote": "Full official statement text retrieved through fresh indexed web result; direct article open returned cache miss. No claim that all DART amendments were inspected.",
+      "facts": [
+        "Solidigm discontinued review of potential pre-IPO and IPO options, citing capital-market conditions and share-price trends.",
+        "SK hynix states Solidigm growth prospects and investment needs are unchanged.",
+        "Alternative financing, investment timing and scale remain under consideration; no new financing method is asserted as decided."
+      ]
+    },
+    {
+      "id": "fed-calendar",
+      "title": "Federal Reserve: official 2026 FOMC meeting calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "primary",
+      "accessNote": "Official full page opened; October 2026 calendar lists 27-28. Future meeting; no policy outcome stated.",
+      "facts": ["The October 2026 FOMC meeting is scheduled for October 27-28, US calendar dates."]
+    },
+    {
+      "id": "krx-sessions",
+      "title": "KRX official equity trading hours and exchange holidays",
+      "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602020204/GLB0602020204T1.jsp",
+      "eventDate": "2026-10-24",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "primary",
+      "accessNote": "Official page opened. Search and open disagree on extended hours; extended-hours numbers intentionally excluded.",
+      "facts": ["KRX regular equity trading session is 09:00-15:30 KST. Saturdays are exchange holidays."]
+    },
+    {
+      "id": "krx-methodology",
+      "title": "KRX: definition and market-capitalization basis of KOSPI",
+      "url": "https://global.krx.co.kr/contents/GLB/02/0201/0201010100/GLB0201010100.jsp",
+      "eventDate": "2026-10-24",
+      "checkedAt": "2026-10-24T16:06:52+09:00",
+      "kind": "primary",
+      "accessNote": "Official page opened directly; stable index methodology only, no current quote used.",
+      "facts": ["KOSPI is calculated based on market capitalization. Larger constituents have larger effects on the index, all else equal."]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI tăng, nhưng hơn bảy trăm mã vẫn giảm. Vì sao chỉ số xanh mà phần lớn cổ phiếu vẫn đỏ?",
+    "selectionReason": "A sourced contrast reveals the difference between a cap-weighted index and market breadth; answered explicitly by the video.",
+    "scoringRule": "precision*3 + relevance*3 + curiosity*2 + brevity + clarity; each input 0–5; maximum 50",
+    "candidates": [
+      {"style": "contrast", "text": "KOSPI tăng, nhưng hơn bảy trăm mã vẫn giảm. Vì sao chỉ số xanh mà phần lớn cổ phiếu vẫn đỏ?", "score": 47},
+      {"style": "reversal", "text": "KOSPI mất hơn bốn phần trăm rồi đóng cửa tăng. Điều gì giúp chỉ số đảo chiều?", "score": 44},
+      {"style": "mechanism", "text": "SK hynix dừng xem xét IPO Solidigm. Cổ đông được lợi gì, và bài toán vốn còn ra sao?", "score": 43}
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhịp hồi này bền vững hay mới là hồi kỹ thuật? Bình luận góc nhìn, và theo dõi Korea Capital Insight để cập nhật thị trường Hàn Quốc.",
+    "screenHeadline": "PHỤC HỒI HAY HỒI KỸ THUẬT?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, nhịp hồi này bền vững hay mới là hồi kỹ thuật?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "TỔNG KẾT PHIÊN 23/10",
+      "headline": "Chỉ số xanh. Thị trường đã khỏe?",
+      "summary": "KOSPI hồi phục, nhưng phần lớn cổ phiếu vẫn giảm.",
+      "source": "Maeil Business dẫn KRX · Phiên chính 23/10/2026",
+      "sourceIds": ["mk-market-2310", "asiae-market-2310"],
+      "stats": [
+        {"label": "KOSPI · 23/10", "value": "5.550,30", "tone": "up", "change": "+0,30%"},
+        {"label": "KOSDAQ · 23/10", "value": "751,69", "tone": "down", "change": "−1,62%"}
+      ],
+      "voiceText": "KOSPI tăng, nhưng hơn bảy trăm mã vẫn giảm. Vì sao chỉ số xanh mà phần lớn cổ phiếu vẫn đỏ?",
+      "visual": {"kind": "comparison", "bars": [{"label": "KOSPI", "value": 0.3, "display": "+0,30%", "tone": "up"}, {"label": "KOSDAQ", "value": -1.62, "display": "−1,62%", "tone": "down"}], "qualifier": "Đóng cửa KRX 15:30 KST · 23/10/2026"}
+    },
+    {
+      "id": "reversal",
+      "eyebrow": "DIỄN BIẾN ĐÃ HOÀN TẤT",
+      "headline": "Rơi hơn 4%, rồi đảo chiều",
+      "summary": "Ba mốc của phiên 23/10 · Đơn vị: điểm chỉ số.",
+      "source": "Maeil Business; Asia Business Daily · 23/10/2026",
+      "sourceIds": ["mk-market-2310", "asiae-market-2310"],
+      "stats": [{"label": "KOSPI · thấp nhất", "value": "5.305,98", "tone": "down"}, {"label": "KOSPI · đóng cửa", "value": "5.550,30", "tone": "up"}],
+      "voiceText": "Đây là tổng kết phiên hai mươi ba tháng mười. KOSPI có lúc mất hơn bốn phần trăm, rồi đóng cửa tăng không phẩy ba phần trăm. Ngược lại, KOSDAQ giảm một phẩy sáu hai phần trăm.",
+      "visual": {"kind": "reversal", "banner": "−4,12% → +0,30%", "milestones": [{"label": "MỞ CỬA", "value": "5.403,17", "tone": "neutral"}, {"label": "THẤP NHẤT", "value": "5.305,98", "tone": "down"}, {"label": "ĐÓNG CỬA", "value": "5.550,30", "tone": "up"}], "qualifier": "Mốc rời rạc; không phải đường giá từng phút."}
+    },
+    {
+      "id": "breadth",
+      "eyebrow": "ĐỘ RỘNG THỊ TRƯỜNG",
+      "headline": "719 mã giảm. Chỉ 173 mã tăng.",
+      "summary": "Sắc xanh của chỉ số chưa lan rộng ra toàn thị trường.",
+      "source": "Maeil Business dẫn KRX · 23/10/2026",
+      "sourceIds": ["mk-market-2310"],
+      "stats": [{"label": "KOSPI · mã giảm", "value": "719", "tone": "down"}, {"label": "KOSPI · mã tăng", "value": "173", "tone": "up"}],
+      "voiceText": "Theo thống kê KRX được Maeil Business tổng hợp, KOSPI chỉ có một trăm bảy mươi ba mã tăng, trong khi bảy trăm mười chín mã giảm. Nhịp hồi chưa lan rộng đến phần lớn cổ phiếu.",
+      "visual": {"kind": "spotlight", "value": "719", "unit": "MÃ GIẢM · KOSPI", "qualifier": "Chỉ 173 mã tăng · Phiên chính 23/10"}
+    },
+    {
+      "id": "hynix",
+      "eyebrow": "CỔ PHIẾU NÂNG ĐỠ CHỈ SỐ",
+      "headline": "SK hynix hồi phục 4,42%",
+      "summary": "Solidigm dừng xem xét pre-IPO và IPO.",
+      "source": "SK hynix Newsroom; Maeil Business · 23/10/2026",
+      "sourceIds": ["hynix-official-2310", "mk-market-2310"],
+      "stats": [{"label": "SK hynix · 23/10", "value": "+4,42%", "tone": "up"}],
+      "voiceText": "SK hynix tăng bốn phẩy bốn hai phần trăm, góp phần nâng đỡ chỉ số. Cùng ngày, doanh nghiệp xác nhận dừng xem xét huy động vốn trước niêm yết và IPO Solidigm. Nhưng nhu cầu đầu tư của Solidigm không thay đổi.",
+      "visual": {"kind": "company", "company": "SK hynix", "bullets": ["DỪNG XEM XÉT IPO", "NHU CẦU VỐN VẪN CÒN"]}
+    },
+    {
+      "id": "interpretation",
+      "eyebrow": "GÓC NHÌN KCI",
+      "headline": "Hồi giá chưa đủ để kết luận",
+      "summary": "Cần kiểm chứng sức lan tỏa và nguồn vốn cho tăng trưởng.",
+      "source": "KRX: phương pháp chỉ số; SK hynix · Nhận định KCI",
+      "sourceIds": ["mk-market-2310", "hynix-official-2310", "krx-methodology"],
+      "stats": [{"label": "Sức khỏe thị trường", "value": "ĐỘ RỘNG", "tone": "neutral"}, {"label": "Đầu tư Solidigm", "value": "NGUỒN VỐN", "tone": "neutral"}],
+      "voiceText": "KOSPI tính theo vốn hóa. Vì vậy, các cổ phiếu lớn có thể kéo chỉ số lên dù đa số mã vẫn đỏ. Nhịp hồi lần này chưa đủ xác nhận thị trường khỏe. Riêng Solidigm, phương án tài trợ thay thế vẫn cần theo dõi.",
+      "visual": {"kind": "generic"}
+    },
+    {
+      "id": "closing",
+      "eyebrow": "TRƯỚC TUẦN GIAO DỊCH MỚI",
+      "headline": "Anh chị đánh giá nhịp hồi này thế nào?",
+      "summary": "Bản tổng kết 23/10 · Biên tập 24/10/2026.",
+      "source": "Fed; KRX; SK hynix · Chốt 24/10/2026 16:06 KST",
+      "sourceIds": ["fed-calendar", "krx-sessions", "mk-market-2310", "hynix-official-2310"],
+      "stats": [{"label": "FOMC · tháng 10", "value": "27–28/10", "tone": "neutral"}],
+      "voiceText": "Phiên tới, hãy theo dõi độ rộng và dòng vốn. Tuần sau, Fed họp ngày hai mươi bảy và hai mươi tám tháng mười. Đây là thông tin tham khảo, không phải khuyến nghị đầu tư.",
+      "visual": {"kind": "closing", "bullets": ["Độ rộng: lực mua có lan tỏa?", "Dòng vốn: có duy trì qua nhiều phiên?", "FOMC: 27–28/10 · Chưa có quyết định"]}
+    }
+  ],
+  "qcNotes": {
+    "editorial": "PARTIALLY_VERIFIED; original source pages inaccessible to direct open; full text in fresh search cross-checked, historical prices only.",
+    "excluded": "Conflicting foreign-flow/turnover figures, NXT totals, unverified new prices, and all unsupported live/intraday claims.",
+    "release": "REVIEW_REQUIRED; owner approval needed; no auto-posting."
+  }
+}
