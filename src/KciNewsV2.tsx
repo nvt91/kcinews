@@ -55,7 +55,7 @@ const Stat:React.FC<{label:string,value:string,color?:string,small?:string}> = (
 const Hook:React.FC<{f:number}> = ({f})=>(
   <>
     <div style={{...enter(f,13),display:"flex",alignItems:"baseline",gap:25,marginTop:25}}>
-      <span style={{fontSize:127,color:X.red,fontWeight:950,letterSpacing:-6}}>−4%+</span>
+      <span style={{fontSize:112,color:X.red,fontWeight:950,letterSpacing:-6}}>{"↓ >4%"}</span>
       <span style={{fontSize:65,color:X.muted,fontWeight:800}}>→</span>
       <span style={{fontSize:102,color:X.teal,fontWeight:950,letterSpacing:-4}}>+0,30%</span>
     </div>
@@ -111,7 +111,7 @@ const Chip:React.FC<{f:number}> = ({f})=>(
       </svg>
     </div>
     <div style={{display:"flex",gap:19,marginTop:20}}>
-      <div style={{...enter(f,30),flex:1}}><Stat label="SOLIDIGM" value="IPO DỪNG" color={X.teal}/></div>
+      <div style={{...enter(f,30),flex:1}}><Stat label="XEM XÉT IPO SOLIDIGM" value="ĐÃ DỪNG" color={X.teal}/></div>
       <div style={{...enter(f,38),flex:1}}><Stat label="NHU CẦU ĐẦU TƯ" value="VẪN CÒN" color={X.amber}/></div>
     </div>
   </>
