@@ -1,0 +1,107 @@
+name: KCI News Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "validate or preview are no-Vbee runs; voice-test and video invoke paid Vbee requests"
+        type: choice
+        required: true
+        default: validate
+        options:
+          - validate
+          - preview
+          - voice-test
+          - video
+      job:
+        description: "Reviewed input JSON inside jobs/"
+        type: string
+        required: true
+        default: jobs/kci-2026-10-23.json
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'api/**'
+      - 'workers/**'
+      - 'wrangler.toml'
+      - 'scripts/**'
+      - 'jobs/**'
+      - 'package.json'
+      - '.github/workflows/kci-video.yml'
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kci-render-${{ github.event.issue.number || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: node --check scripts/vbee.mjs
+      - run: node --check scripts/run-job.mjs
+      - run: node --check workers/vbee-callback.mjs
+      - run: node scripts/test-vbee-callback.mjs
+      - name: Cloudflare live endpoint check (advisory before first production deployment)
+        continue-on-error: true
+        run: node scripts/check-worker.mjs
+      - run: node scripts/run-job.mjs --mode=validate
+      - name: Smoke render KCI first frame
+        run: mkdir -p out && npx remotion still src/index.ts KciNews out/kci-smoke.png --frame=25
+      - name: Upload KCI rendering evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: kci-pr-render-${{ github.run_id }}
+          path: out/kci-smoke.png
+          retention-days: 7
+          if-no-files-found: error
+  render:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' &&
+       github.event.issue.user.login == github.repository_owner &&
+       (startsWith(github.event.issue.title, '[KCI VOICE TEST]') ||
+        startsWith(github.event.issue.title, '[KCI VIDEO]')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      KCI_JOB: ${{ inputs.job }}
+      KCI_MODE: ${{ inputs.mode }}
+      VBEE_APP_ID: ${{ secrets.VBEE_APP_ID }}
+      VBEE_API_TOKEN: ${{ secrets.VBEE_API_TOKEN }}
+      VBEE_VOICE_CODE: n_hanoi_male_tuananhnews_news_vc
+      VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
+      VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Validate job
+        run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
+      - name: Verify Cloudflare Worker before any Vbee request
+        run: node scripts/check-worker.mjs
+      - name: Produce preview, Vbee test, or MP4
+        run: node scripts/run-job.mjs
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: kci-${{ github.run_id }}
+          path: out/
+          if-no-files-found: error
+          retention-days: 7
