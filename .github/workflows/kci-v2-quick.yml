@@ -1,0 +1,32 @@
+name: KCI Motion V2 Fast
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  render:
+    if: github.event_name == 'issues' && github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[KCI V2 QUICK]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: kci-40055420626
+          run-id: 40055420626
+          github-token: ${{ github.token }}
+          path: .
+      - run: test -s out/props.json && test -s public/voice/scene-01.mp3 && test -s public/voice/scene-07.mp3
+      - run: npx remotion render src/index.ts KciNewsV2 out/KCI_MarketNews_2026-10-23_Motion_V2.mp4 --props=out/props.json --codec=h264 --concurrency=2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kci-motion-quick-${{ github.run_id }}
+          path: out/KCI_MarketNews_2026-10-23_Motion_V2.mp4
+          retention-days: 7
