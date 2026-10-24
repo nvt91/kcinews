@@ -4,6 +4,7 @@ import {
   staticFile, useCurrentFrame, useVideoConfig,
 } from "remotion";
 import type {KciCta, KciVideoProps, KciVisual, RenderScene} from "./KciNews";
+import {REELS_SAFE, REELS_CONTENT_WIDTH, ReelsSafeGuides} from "./KciReelsSafe";
 
 const P = {
   bg:"#071224", dark:"#061024", glass:"#102844", teal:"#36DEC0",
@@ -52,105 +53,198 @@ const Background:React.FC<{frame:number,color:string}> = ({frame,color}) => (
 );
 
 const Masthead:React.FC<{
-  i:number; count:number; edition:string; color:string;
+  i:number;count:number;edition:string;color:string;
 }> = ({i,count,edition,color}) => (
   <>
-    <div style={{position:"absolute",top:0,width:1080,height:7,background:"linear-gradient(90deg,"+color+",#144669,transparent)"}}/>
-    <div style={{position:"absolute",top:74,left:65,right:65,display:"flex",alignItems:"center",justifyContent:"space-between"}}>
-      <div style={{display:"flex",alignItems:"center",gap:20}}>
-        <div style={{width:78,height:60,background:color,color:P.dark,textAlign:"center",fontSize:32,fontWeight:950,paddingTop:9,boxSizing:"border-box",transform:"skew(-7deg)"}}>KCI</div>
-        <div>
-          <div style={{fontSize:29,fontWeight:900,letterSpacing:1.7}}>KOREA CAPITAL INSIGHT</div>
-          <div style={{fontSize:18,letterSpacing:4.4,color:P.muted}}>MARKET INTELLIGENCE</div>
+    <div style={{
+      position:"absolute",top:0,left:0,right:0,height:7,
+      background:"linear-gradient(90deg,"+color+",#144669,transparent)",
+    }}/>
+    <div style={{
+      position:"absolute",left:REELS_SAFE.left,right:REELS_SAFE.right,
+      top:REELS_SAFE.masthead,display:"flex",alignItems:"center",
+      justifyContent:"space-between",
+    }}>
+      <div style={{display:"flex",alignItems:"center",gap:12,minWidth:0}}>
+        <div style={{
+          width:65,height:50,background:color,color:P.dark,
+          fontSize:28,fontWeight:950,textAlign:"center",paddingTop:7,
+          boxSizing:"border-box",transform:"skew(-7deg)",flexShrink:0,
+        }}>KCI</div>
+        <div style={{minWidth:0}}>
+          <div style={{
+            fontSize:24,fontWeight:900,letterSpacing:1.1,
+            whiteSpace:"nowrap",
+          }}>KOREA CAPITAL INSIGHT</div>
+          <div style={{fontSize:15,letterSpacing:3,color:P.muted}}>
+            MARKET INTELLIGENCE
+          </div>
         </div>
       </div>
-      <div style={{fontSize:23,color:P.muted,fontWeight:800}}>
+      <div style={{fontSize:18,fontWeight:800,color:P.muted,flexShrink:0,marginLeft:10}}>
         {String(i).padStart(2,"0")}/{String(count).padStart(2,"0")}
       </div>
     </div>
-    <div style={{position:"absolute",left:70,right:70,top:155,borderTop:"1px solid #45607866"}}/>
-    <div style={{position:"absolute",top:178,left:70,right:70,fontSize:22,letterSpacing:2.3,color:P.muted,fontWeight:800,display:"flex",justifyContent:"space-between"}}>
+    <div style={{
+      position:"absolute",top:REELS_SAFE.edition,left:REELS_SAFE.left,
+      right:REELS_SAFE.right,borderTop:"1px solid #46627C88",
+      display:"flex",justifyContent:"space-between",paddingTop:10,
+      fontSize:17,fontWeight:800,color:P.muted,letterSpacing:1.1,
+    }}>
       <span>DAILY MARKET BRIEF</span><span>{edition}</span>
     </div>
   </>
 );
 
-const Headline:React.FC<{scene:RenderScene;frame:number;color:string}> = ({scene,frame,color}) => (
-  <div style={{position:"absolute",top:252,left:70,right:70}}>
-    <div style={{...fadeUp(frame,1),fontSize:28,color,fontWeight:900,letterSpacing:3}}>
-      ▰ {scene.eyebrow.toUpperCase()}
-    </div>
+const Headline:React.FC<{scene:RenderScene;frame:number;color:string}> = ({
+  scene,frame,color,
+}) => {
+  // All essential text must end before the artwork zone. Long titles use
+  // smaller type rather than pushing the lower content into Instagram UI.
+  const titleSize=scene.headline.length>84?42:
+    scene.headline.length>65?46:
+    scene.headline.length>46?51:57;
+  const summarySize=scene.summary.length>115?23:26;
+  return (
     <div style={{
-      ...fadeUp(frame,7,42),fontSize:67,fontWeight:950,lineHeight:1.13,
-      color:P.white,letterSpacing:-1.3,marginTop:31,
-    }}>{scene.headline}</div>
-    <div style={{width:250*ease(frame,17,22),height:5,background:color,marginTop:29,boxShadow:"0 0 24px "+color+"77"}}/>
-    <div style={{...fadeUp(frame,21),marginTop:25,fontSize:30,color:"#B9CDDF",lineHeight:1.35}}>
-      {scene.summary}
+      position:"absolute",top:REELS_SAFE.headline,
+      left:REELS_SAFE.left,right:REELS_SAFE.right,
+    }}>
+      <div style={{
+        ...fadeUp(frame,1),fontSize:24,color,fontWeight:900,
+        letterSpacing:2.0,lineHeight:1.15,
+      }}>▰ {scene.eyebrow.toUpperCase()}</div>
+      <div style={{
+        ...fadeUp(frame,7,30),fontSize:titleSize,fontWeight:950,
+        lineHeight:1.12,letterSpacing:-1.0,marginTop:18,
+        maxHeight:196,overflow:"hidden",wordBreak:"break-word",
+      }}>{scene.headline}</div>
+      <div style={{
+        height:4,width:196*ease(frame,17,23),background:color,
+        marginTop:17,boxShadow:"0 0 22px "+color+"55",
+      }}/>
+      <div style={{
+        ...fadeUp(frame,21,18),fontSize:summarySize,
+        color:"#C5D5E4",lineHeight:1.27,marginTop:13,
+        maxHeight:67,overflow:"hidden",
+      }}>{scene.summary}</div>
     </div>
-  </div>
-);
+  );
+};
 
 const Info:React.FC<{label:string;value:string;color:string;sub?:string}> = ({
   label,value,color,sub,
 }) => (
-  <div style={{...card,flex:1,minWidth:0,padding:"28px 22px"}}>
-    <div style={{fontSize:25,color:P.muted,fontWeight:850,letterSpacing:.3}}>{label}</div>
-    <div style={{fontSize:57,color,fontWeight:950,letterSpacing:-1.5,marginTop:18,whiteSpace:"nowrap"}}>{value}</div>
-    {sub&&<div style={{fontSize:24,color,marginTop:12,fontWeight:850}}>{sub}</div>}
+  <div style={{
+    ...card,flex:1,minWidth:0,padding:"20px 18px",
+    boxSizing:"border-box",overflow:"hidden",
+  }}>
+    <div style={{fontSize:20,color:P.muted,fontWeight:850,lineHeight:1.17}}>{label}</div>
+    <div style={{
+      fontSize:value.length>12?34:value.length>9?40:51,
+      color,fontWeight:950,letterSpacing:-1,marginTop:12,
+      overflowWrap:"anywhere",lineHeight:1.09,
+    }}>{value}</div>
+    {sub&&<div style={{fontSize:21,color,marginTop:9,fontWeight:850}}>{sub}</div>}
   </div>
 );
 
-const Reversal:React.FC<{v:KciVisual;f:number}> = ({v,f}) => (
-  <>
-    <div style={{...fadeUp(f,12),fontSize:105,color:P.teal,fontWeight:950,letterSpacing:-5}}>
-      {v.banner||"PHIÊN ĐẢO CHIỀU"}
+const Reversal:React.FC<{v:KciVisual;f:number}> = ({v,f}) => {
+  const banner=v.banner||"PHIÊN ĐẢO CHIỀU";
+  const bannerSize=banner.length>21?62:banner.length>16?71:82;
+  return (
+    <div style={{height:REELS_SAFE.artworkHeight,overflow:"hidden"}}>
+      <div style={{
+        ...fadeUp(f,12),fontSize:bannerSize,color:P.teal,
+        fontWeight:950,letterSpacing:-2,lineHeight:1.12,
+      }}>{banner}</div>
+      <div style={{
+        fontSize:19,letterSpacing:1.2,color:P.muted,
+        marginTop:8,fontWeight:800,
+      }}>CÁC MỐC GIÁ ĐƯỢC XÁC MINH</div>
+      <div style={{
+        height:3,background:P.border,margin:"48px 20px 21px",
+      }}>
+        <div style={{
+          width:(100*ease(f,27,45))+"%",height:3,background:P.blue,
+        }}/>
+      </div>
+      <div style={{display:"flex",gap:10}}>
+        {(v.milestones||[]).map((m,i)=>(
+          <div key={i} style={{
+            ...card,...fadeUp(f,25+i*12),flex:1,minWidth:0,
+            padding:"20px 5px",textAlign:"center",
+          }}>
+            <div style={{fontSize:18,color:P.muted,fontWeight:900}}>
+              {m.label}
+            </div>
+            <div style={{
+              fontSize:m.value.length>9?30:35,
+              color:tone(m.tone),fontWeight:950,marginTop:12,
+              letterSpacing:-.5,whiteSpace:"nowrap",
+            }}>{m.value}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{
+        fontSize:18,color:P.muted,lineHeight:1.3,marginTop:17,
+      }}>{v.qualifier||"Các mốc rời rạc, không phải biểu đồ phút"}</div>
     </div>
-    <div style={{fontSize:23,letterSpacing:2.4,color:P.muted,marginTop:6,fontWeight:750}}>
-      CÁC MỐC QUAN SÁT ĐƯỢC XÁC MINH
-    </div>
-    <div style={{height:3,background:P.border,margin:"73px 35px 30px"}}>
-      <div style={{width:(100*ease(f,27,45))+"%",height:3,background:P.blue}}/>
-    </div>
-    <div style={{display:"flex",gap:16}}>
-      {(v.milestones||[]).map((m,i)=>(
-        <div key={i} style={{...card,...fadeUp(f,25+i*12),flex:1,padding:"30px 10px",textAlign:"center"}}>
-          <div style={{fontSize:23,color:P.muted,fontWeight:900}}>{m.label}</div>
-          <div style={{fontSize:43,color:tone(m.tone),fontWeight:950,marginTop:22}}>{m.value}</div>
-        </div>
-      ))}
-    </div>
-    <div style={{fontSize:23,color:P.muted,marginTop:35}}>{v.qualifier||"Mốc dữ liệu rời rạc, không phải đường giá liên tục"}</div>
-  </>
-);
+  );
+};
 
 const Bars:React.FC<{v:KciVisual;f:number}> = ({v,f}) => {
   const bars=v.bars||[];
   const max=Math.max(1,...bars.map(x=>Math.abs(x.value)));
+  const many=bars.length>3;
   return (
-    <div style={{...card,padding:38}}>
-      <div style={{fontSize:25,color:P.teal,fontWeight:900,letterSpacing:2}}>SO SÁNH CHỈ BÁO · CÙNG ĐƠN VỊ</div>
+    <div style={{
+      ...card,padding:many?22:29,
+      height:REELS_SAFE.artworkHeight,boxSizing:"border-box",
+      overflow:"hidden",
+    }}>
+      <div style={{
+        fontSize:21,color:P.teal,fontWeight:900,letterSpacing:1.2,
+      }}>SO SÁNH BIẾN ĐỘNG · CÙNG ĐƠN VỊ</div>
       {bars.map((b,i)=>(
-        <div key={i} style={{...fadeUp(f,18+i*8),marginTop:37}}>
-          <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:25}}>
-            <span style={{fontSize:28,fontWeight:850,maxWidth:540}}>{b.label}</span>
-            <span style={{fontSize:40,fontWeight:950,color:tone(b.tone|| (b.value<0?"down":"up"))}}>{b.display}</span>
+        <div key={i} style={{
+          ...fadeUp(f,18+i*8),marginTop:many?18:26,
+        }}>
+          <div style={{
+            display:"flex",justifyContent:"space-between",
+            alignItems:"baseline",gap:12,
+          }}>
+            <span style={{
+              fontSize:many?21:24,fontWeight:850,maxWidth:450,
+            }}>{b.label}</span>
+            <span style={{
+              fontSize:many?28:35,fontWeight:950,
+              whiteSpace:"nowrap",color:tone(b.tone||(b.value<0?"down":"up")),
+            }}>{b.display}</span>
           </div>
-          <div style={{marginTop:14,height:28,position:"relative",background:"#2B4158",borderRadius:12}}>
-            <div style={{position:"absolute",height:"100%",width:3,left:"50%",top:0,background:"#BACAD8",zIndex:1}}/>
+          <div style={{
+            marginTop:11,height:many?18:23,position:"relative",
+            background:"#2B4158",borderRadius:12,
+          }}>
+            <div style={{
+              position:"absolute",height:"100%",width:3,
+              left:"50%",top:0,background:"#BACAD8",zIndex:1,
+            }}/>
             <div style={{
               position:"absolute",height:"100%",borderRadius:10,top:0,
-              left:b.value<0?undefined:"50%",right:b.value<0?"50%":undefined,
+              left:b.value<0?undefined:"50%",
+              right:b.value<0?"50%":undefined,
               background:b.value<0?P.red:P.teal,
               width:(46*Math.abs(b.value)/max*ease(f,26+i*9,30))+"%",
-              boxShadow:"0 0 16px "+(b.value<0?P.red:P.teal)+"66",
+              boxShadow:"0 0 15px "+(b.value<0?P.red:P.teal)+"55",
             }}/>
           </div>
         </div>
       ))}
-      <div style={{fontSize:22,color:P.muted,marginTop:36}}>
-        {v.qualifier||"Thanh thể hiện số liệu so sánh, không phải đường thời gian"}
-      </div>
+      <div style={{
+        fontSize:17,color:P.muted,marginTop:many?13:22,
+        lineHeight:1.22,
+      }}>{v.qualifier||"Dữ liệu xác minh; không phải đồ thị thời gian"}</div>
     </div>
   );
 };
