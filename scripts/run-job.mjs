@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
+import { validateKciJob } from "./validate-kci-job.mjs";
 
 const FPS = 30;
 const explicitMode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1];
@@ -29,6 +30,8 @@ if (process.env.GITHUB_EVENT_NAME === "issues" && !explicitMode) {
 if (!["validate", "preview", "voice-test", "video"].includes(mode)) throw new Error("Invalid mode.");
 if (!/^jobs\/[\w-]+\.json$/.test(jobFile)) throw new Error("Job filename must be within jobs/.");
 const job = JSON.parse(fs.readFileSync(jobFile, "utf8"));
+const dailyJob = job.schemaVersion === 2;
+if (dailyJob) validateKciJob(job);
 if (!/^[a-z0-9-]{5,90}$/.test(job.id) || !Array.isArray(job.scenes) || job.scenes.length < 1 || job.scenes.length > 12) throw new Error("Invalid job data.");
 const seen = new Set();
 for (const scene of job.scenes) {
@@ -54,9 +57,14 @@ if (mode !== "validate") {
     const scene = job.scenes[i];
     let seconds = 9;
     let audioFile;
+    // Only new daily jobs carry the approved CTA in the final spoken segment.
+    // Historical v1 jobs remain byte-for-byte unchanged.
+    const isLastScene = i === job.scenes.length - 1;
+    const narration = scene.voiceText +
+      (dailyJob && isLastScene ? " " + job.cta.spoken : "");
     if (mode === "voice-test" || mode === "video") {
       const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
-      await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : scene.voiceText,target);
+      await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
       const output = execFileSync("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",target],{encoding:"utf8"}).trim();
       seconds = Number(output);
       if (!Number.isFinite(seconds) || seconds < 2 || seconds > 95) throw new Error("Invalid voice duration");
@@ -68,7 +76,7 @@ if (mode !== "validate") {
       }
     }
     const durationFrames = Math.ceil(seconds*FPS)+10;
-    const words=scene.voiceText.trim().split(/\s+/);
+    const words=narration.trim().split(/\s+/);
     const captions=[];
     for(let wi=0; wi<words.length; wi+=7) {
       captions.push({
@@ -77,17 +85,46 @@ if (mode !== "validate") {
         text:words.slice(wi,wi+7).join(" ")
       });
     }
-    scenes.push({...scene,startFrame,durationFrames,audioFile,captions});
+    scenes.push({...scene,voiceText:narration,startFrame,durationFrames,audioFile,captions,cta:dailyJob&&isLastScene?job.cta:undefined});
     startFrame+=durationFrames;
   }
   const props = {headline:job.headline,edition:job.edition,scenes,preview:mode==="preview"};
   fs.writeFileSync(path.join(out,"props.json"),JSON.stringify(props,null,2));
+
+  // Proportional captions are approximate and require a listening QA pass.
+  const timecode = (frame) => {
+    const ms = Math.round(frame * 1000 / FPS);
+    const h = String(Math.floor(ms / 3600000)).padStart(2,"0");
+    const m = String(Math.floor(ms % 3600000 / 60000)).padStart(2,"0");
+    const s = String(Math.floor(ms % 60000 / 1000)).padStart(2,"0");
+    const part = String(ms % 1000).padStart(3,"0");
+    return h+":"+m+":"+s+","+part;
+  };
+  const subtitleLines = [];
+  for(const scene of scenes) {
+    for(const cue of scene.captions) {
+      const from=scene.startFrame+cue.from;
+      const to=scene.startFrame+cue.to;
+      subtitleLines.push({
+        from, to, text:cue.text,
+      });
+    }
+  }
+  fs.writeFileSync(path.join(out,"subtitles-estimated.srt"),subtitleLines.map((cue,i)=>
+    String(i+1)+"\\n"+timecode(cue.from)+" --> "+timecode(cue.to)+"\\n"+cue.text+"\\n"
+  ).join("\\n"),"utf8");
+  if(dailyJob) {
+    fs.writeFileSync(path.join(out,"source-ledger.json"),JSON.stringify({
+      dataAsOf:job.dataAsOf,status:job.status,sourceLedger:job.sourceLedger,
+      hook:job.hook,cta:job.cta,
+    },null,2));
+  }
   const outputFile=path.join(out,job.id+(mode==="preview"?"-preview":"")+".mp4");
-  execFileSync("npx",["remotion","render","src/index.ts","KciNews",outputFile,"--props="+path.join(out,"props.json"),"--codec=h264","--concurrency=2"],{stdio:"inherit",timeout:1200000});
+  execFileSync("npx",["remotion","render","src/index.ts",dailyJob?"KciNewsDaily":"KciNews",outputFile,"--props="+path.join(out,"props.json"),"--codec=h264","--concurrency=2"],{stdio:"inherit",timeout:1200000});
   if (mode==="video") {
     const streams=execFileSync("ffprobe",["-v","error","-select_streams","a","-show_entries","stream=codec_name","-of","csv=p=0",outputFile],{encoding:"utf8"}).trim();
     if (!streams) throw new Error("No voice in the exported MP4. Rejecting.");
   }
-  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Timing estimated using word positions, requires review",published:false},null,2));
+  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
   console.log("Output created; human review required:",outputFile);
 }
