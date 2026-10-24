@@ -438,109 +438,129 @@ const CallToAction:React.FC<{
   );
 };
 
-const Bottom:React.FC<{s:RenderScene;f:number;color:string;ticker:string[]}> = ({
-  s,f,color,ticker,
+const Bottom:React.FC<{s:RenderScene;f:number;color:string}> = ({
+  s,f,color,
 }) => {
   const cue=s.captions.find(c=>f>=c.from&&f<c.to);
   const opacity=cue?ease(f,cue.from,5):0;
-  const moving=-(f*1.28)%950;
-  return <>
-    <div style={{
-      position:"absolute",left:70,right:70,bottom:267,minHeight:125,
-      background:"rgba(1,10,24,.95)",border:"1px solid "+P.border,
-      borderLeft:"6px solid "+color,borderRadius:17,padding:"21px 27px",
-      display:"flex",alignItems:"center",justifyContent:"center",boxSizing:"border-box",
-    }}>
-      <div style={{fontSize:37,fontWeight:850,lineHeight:1.23,opacity,textAlign:"center",whiteSpace:"pre-wrap"}}>
-        {cue?.text||""}
-      </div>
-    </div>
-    <div style={{
-      position:"absolute",left:70,right:70,bottom:214,fontSize:20,
-      color:P.muted,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",
-    }}>NGUỒN: {s.source}</div>
-    <div style={{
-      position:"absolute",bottom:118,left:0,right:0,height:70,
-      background:"#030C1C",borderTop:"1px solid #3B6683",
-      display:"flex",overflow:"hidden",
-    }}>
-      <div style={{background:color,color:P.bg,padding:"20px 22px",fontWeight:950,fontSize:24,zIndex:2}}>MARKETS</div>
-      <div style={{position:"relative",flex:1,overflow:"hidden"}}>
+  return (
+    <>
+      <div style={{
+        position:"absolute",
+        left:REELS_SAFE.left,right:REELS_SAFE.right,
+        top:REELS_SAFE.source,
+        fontSize:18,color:P.muted,fontWeight:750,
+        whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",
+      }}>NGUỒN: {s.source}</div>
+      <div style={{
+        position:"absolute",
+        left:REELS_SAFE.left,right:REELS_SAFE.right,
+        top:REELS_SAFE.captions,height:REELS_SAFE.captionsHeight,
+        padding:"17px 23px",boxSizing:"border-box",
+        borderRadius:17,background:"rgba(1,10,24,.97)",
+        border:"1px solid "+P.border,borderLeft:"6px solid "+color,
+        display:"flex",alignItems:"center",justifyContent:"center",
+        overflow:"hidden",
+      }}>
         <div style={{
-          width:"max-content",display:"flex",gap:54,height:"100%",alignItems:"center",
-          transform:"translateX("+moving+"px)",
-        }}>
-          {[...ticker,...ticker,...ticker].map((x,i)=>(
-            <span key={i} style={{fontSize:23,fontWeight:850,color:i%4===0?color:"#C6D7E6",whiteSpace:"nowrap"}}>{x}</span>
-          ))}
-        </div>
+          fontSize:29,fontWeight:870,lineHeight:1.22,
+          opacity,textAlign:"center",whiteSpace:"pre-wrap",
+          overflowWrap:"break-word",
+        }}>{cue?.text||""}</div>
       </div>
-    </div>
-    <div style={{position:"absolute",bottom:76,left:70,right:70,height:3,background:"#315064"}}>
-      <div style={{height:3,width:(100*f/Math.max(1,s.durationFrames-1))+"%",background:color}}/>
-    </div>
-    <div style={{position:"absolute",bottom:30,left:70,right:70,fontSize:20,color:"#86A0B6",textAlign:"center"}}>
-      Thông tin tham khảo · Không phải khuyến nghị đầu tư
-    </div>
-  </>;
+      <div style={{
+        position:"absolute",
+        left:REELS_SAFE.left,right:REELS_SAFE.right,
+        top:REELS_SAFE.disclaimer,
+        color:"#94A9B9",textAlign:"center",
+        fontSize:16,fontWeight:650,
+      }}>Thông tin tham khảo · Không phải khuyến nghị đầu tư</div>
+    </>
+  );
 };
 
 const Scene:React.FC<{
-  scene:RenderScene;edition:string;index:number;count:number;preview:boolean;ticker:string[];
-}> = ({scene,edition,index,count,preview,ticker}) => {
+  scene:RenderScene;edition:string;index:number;
+  count:number;preview:boolean;safeGuides:boolean;
+}> = ({scene,edition,index,count,preview,safeGuides}) => {
   const frame=useCurrentFrame();
   const {fps}=useVideoConfig();
   const v=scene.visual;
-  const color=v?.kind==="risk-bars"?P.red:v?.kind==="spotlight"?P.amber:v?.kind==="rate"?P.blue:P.teal;
-  const inOut=Math.min(interpolate(frame,[0,10],[0,1],cap),
-    interpolate(frame,[Math.max(0,scene.durationFrames-9),scene.durationFrames],[1,0],cap));
+  const color=v?.kind==="risk-bars"?P.red:
+    v?.kind==="spotlight"?P.amber:v?.kind==="rate"?P.blue:P.teal;
+  const inOut=Math.min(
+    interpolate(frame,[0,10],[0,1],cap),
+    interpolate(frame,[Math.max(0,scene.durationFrames-9),scene.durationFrames],[1,0],cap),
+  );
   const settle=spring({frame,fps,config:{damping:22,stiffness:70,mass:1}});
   return (
-    <AbsoluteFill style={{background:P.bg,color:P.white,fontFamily:"Arial, sans-serif",overflow:"hidden"}}>
+    <AbsoluteFill style={{
+      background:P.bg,color:P.white,fontFamily:"Arial, sans-serif",overflow:"hidden",
+    }}>
       <Background frame={frame} color={color}/>
-      <AbsoluteFill style={{opacity:inOut,transform:"scale("+(0.986+.014*settle)+")"}}>
+      <AbsoluteFill style={{
+        opacity:inOut,
+        transform:"scale("+(0.986+.014*settle)+")",
+      }}>
         <Masthead i={index} count={count} edition={edition} color={color}/>
         <Headline scene={scene} frame={frame} color={color}/>
-        <div style={{position:"absolute",left:70,right:70,top:740,minHeight:660}}>
+        <div style={{
+          position:"absolute",
+          left:REELS_SAFE.left,right:REELS_SAFE.right,
+          top:REELS_SAFE.artwork,height:REELS_SAFE.artworkHeight,
+          overflow:"hidden",
+        }}>
           {v?.kind==="reversal"&&<Reversal v={v} f={frame}/>}
-          {["comparison","risk-bars"].includes(v?.kind||"")&&v&&<Bars v={v} f={frame}/>}
+          {["comparison","risk-bars"].includes(v?.kind||"")&&v&&(
+            <Bars v={v} f={frame}/>
+          )}
           {v?.kind==="company"&&<Chip v={v} s={scene} f={frame}/>}
           {v?.kind==="spotlight"&&<Spotlight v={v} f={frame} color={color}/>}
           {v?.kind==="rate"&&<Rate v={v} f={frame}/>}
           {v?.kind==="closing"&&<Closing v={v} f={frame}/>}
           {(!v||v.kind==="generic")&&(
-            <div style={{display:"grid",gap:20}}>
-              {scene.stats.map((s,i)=><div key={i} style={{...fadeUp(frame,15+i*11)}}>
-                <Info label={s.label} value={s.value} color={tone(s.tone)} sub={s.change}/>
-              </div>)}
+            <div style={{
+              display:"grid",
+              gridTemplateColumns:scene.stats.length>2?"1fr 1fr":"1fr",
+              gap:13,
+            }}>
+              {scene.stats.map((st,i)=>(
+                <div key={i} style={{...fadeUp(frame,15+i*9)}}>
+                  <Info label={st.label} value={st.value}
+                    color={tone(st.tone)} sub={st.change}/>
+                </div>
+              ))}
             </div>
           )}
         </div>
         {v?.kind==="closing"&&scene.cta&&(
-          <CallToAction cta={scene.cta} f={frame} durationFrames={scene.durationFrames}/>
+          <CallToAction cta={scene.cta} f={frame}
+            durationFrames={scene.durationFrames}/>
         )}
-        <Bottom s={scene} f={frame} color={color} ticker={ticker}/>
+        <Bottom s={scene} f={frame} color={color}/>
       </AbsoluteFill>
-      {preview&&<div style={{position:"absolute",top:214,right:69,color:P.red,fontSize:23,fontWeight:900}}>SILENT PREVIEW</div>}
+      {preview&&(
+        <div style={{
+          position:"absolute",top:REELS_SAFE.top-38,
+          right:REELS_SAFE.right+8,color:P.red,fontSize:19,fontWeight:900,
+        }}>SILENT PREVIEW</div>
+      )}
       {scene.audioFile&&<Audio src={staticFile(scene.audioFile)}/>}
+      {safeGuides&&<ReelsSafeGuides/>}
     </AbsoluteFill>
   );
 };
 
-export const KciNewsDaily:React.FC<KciVideoProps> = ({scenes,edition,preview}) => {
-  const ticker=scenes.flatMap(s=>s.stats.slice(0,2).map(st=>
-    st.label.toUpperCase()+" "+st.value+" "+(st.change||"").trim(),
-  )).slice(0,9);
-  if(!ticker.length)ticker.push("KOREA CAPITAL INSIGHT · VERIFIED MARKET NEWS");
-  return (
-    <AbsoluteFill style={{background:P.bg}}>
-      {scenes.map((scene,i)=>(
-        <Sequence key={scene.id} name={scene.headline} from={scene.startFrame}
-          durationInFrames={scene.durationFrames}>
-          <Scene scene={scene} edition={edition} index={i+1} count={scenes.length}
-            preview={preview} ticker={ticker}/>
-        </Sequence>
-      ))}
-    </AbsoluteFill>
-  );
-};
+export const KciNewsDaily:React.FC<KciVideoProps> = ({
+  scenes,edition,preview,safeGuides=false,
+}) => (
+  <AbsoluteFill style={{background:P.bg}}>
+    {scenes.map((scene,i)=>(
+      <Sequence key={scene.id} name={scene.headline}
+        from={scene.startFrame} durationInFrames={scene.durationFrames}>
+        <Scene scene={scene} edition={edition} index={i+1}
+          count={scenes.length} preview={preview} safeGuides={safeGuides}/>
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);
