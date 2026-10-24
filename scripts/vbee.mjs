@@ -41,7 +41,7 @@ async function jsonRequest(url, config) {
   catch { throw new Error("Vbee returned unexpected non-JSON."); }
 }
 const dataPart = (x) => x?.data ?? x?.result ?? x;
-const audioUrl = (x) => dataPart(x)?.audioLink ?? dataPart(x)?.audio_link ?? dataPart(x)?.audioUrl;
+const audioUrl = (x) => dataPart(x)?.audioLink ?? dataPart(x)?.audio_link ?? dataPart(x)?.audioUrl ?? dataPart(x)?.audio_url;
 const requestId = (x) => dataPart(x)?.requestId ?? dataPart(x)?.request_id;
 const state = (x) => String(dataPart(x)?.status ?? "").toUpperCase();
 
@@ -86,20 +86,50 @@ export async function synthesizeVbee(text, outputPath) {
     link = audioUrl(polled);
   }
   if (!link) throw new Error("Vbee generation timed out; do not repeat the chargeable request blindly.");
-  const url = new URL(link);
   const configuredHosts = (process.env.VBEE_AUDIO_HOSTS || "")
-    .split(",").map((x) => x.trim().toLowerCase()).filter(Boolean);
-  const allow = ["vbee.vn", "cdn.vbee.vn", "api.vbee.vn", ...configuredHosts];
-  if (url.protocol !== "https:" || !allow.includes(url.hostname.toLowerCase())) {
-    throw new Error("Audio CDN hostname is not allowlisted. Verify then set VBEE_AUDIO_HOSTS.");
-  }
+    .split(",").map((host) => host.trim().toLowerCase()).filter(Boolean);
+  const isAllowedHost = (hostname) =>
+    hostname === "vbee.vn" || hostname.endsWith(".vbee.vn") ||
+    configuredHosts.includes(hostname);
+  const parseAudioUrl = (value) => {
+    const uri = new URL(value);
+    if (uri.protocol !== "https:" || uri.username || uri.password ||
+        (uri.port && uri.port !== "443") || !isAllowedHost(uri.hostname.toLowerCase())) {
+      throw new Error(
+        "Vbee audio URL host is not allowlisted: " + uri.hostname +
+        ". Verify it with Vbee and set VBEE_AUDIO_HOSTS to the exact hostname if appropriate.",
+      );
+    }
+    return uri;
+  };
+
+  // A Vbee CDN may respond with an HTTPS 302/307 to its storage location.
+  // Manual redirect handling avoids leaking the Bearer token (never sent to CDN)
+  // and prevents redirects to arbitrary private/network-local addresses.
+  let current = parseAudioUrl(link);
   let response;
-  try {
-    response = await fetch(link, { redirect: "error", signal: AbortSignal.timeout(45000) });
-  } catch {
-    throw new Error("Unable to fetch Vbee audio.");
+  for (let hop = 0; hop < 4; hop++) {
+    try {
+      response = await fetch(current.href, {
+        redirect: "manual",
+        signal: AbortSignal.timeout(45000),
+      });
+    } catch (error) {
+      const kind = String(error?.cause?.code || error?.name || "NETWORK_ERROR")
+        .replace(/[^A-Za-z0-9_-]/g, "").slice(0, 50);
+      throw new Error("Unable to fetch Vbee audio from " + current.hostname + ": " + kind);
+    }
+    if (![301, 302, 303, 307, 308].includes(response.status)) break;
+    const location = response.headers.get("location");
+    if (!location) throw new Error("Vbee CDN redirect lacks Location header.");
+    current = parseAudioUrl(new URL(location, current).href);
+    response = null;
   }
-  if (!response.ok) throw new Error("Audio download HTTP " + response.status);
+  if (!response) throw new Error("Too many Vbee CDN redirects (maximum 4).");
+  if (!response.ok) {
+    throw new Error("Vbee audio download HTTP " + response.status +
+      " from " + current.hostname);
+  }
   const audio = Buffer.from(await response.arrayBuffer());
   if (audio.length < 2000 || audio.length > 30_000_000) {
     throw new Error("Implausible audio payload size.");
