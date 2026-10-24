@@ -9,6 +9,7 @@ const demo: KciVideoProps = {
   headline: "KCI Market News",
   edition: "23/10/2026 KST",
   preview: true,
+  safeGuides: false,
   scenes: [
     {
       id: "demo",
