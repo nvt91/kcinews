@@ -68,6 +68,7 @@ The validator checks source references, the hook beginning, CTA completion and j
 - New schema v2 jobs render via data-driven `KciNewsDaily`. The historical `KciNewsV2` is the **approved 23/10 benchmark**, but contains some hard-coded numbers; don't reuse its historic charts for current jobs.
 - Generate captions from narration; word-count timing is **estimated**, never claim it is forced aligned. Review and correct before publishing.
 - Motion visuals must be sourced/parameterized. 9:16 at 1080×1920, 30 FPS, H.264/AAC.
+- **Instagram/Facebook Reels viewing safety:** use the active `KciNewsReels` behind composition ID `KciNewsDaily`. Follow the owner's *latest* full-width middle layout in [QC D1](references/QC.md#d1-full-width-middle-layout--revised-owner-feedback-24-october-2026): title/charts can use x56–1024 in the middle; only lower caption/source/CTA areas reserve a right-side interaction rail (x56–914); leave top 264px and bottom 480px free of critical text. Check actual app overlays and do not narrow the whole canvas into a boxed column.
 - For visual-only revisions when scripts have not changed, reuse the original preserved Vbee audio/artifact. No needless TTS calls.
 
 ### 6 — QA and release
