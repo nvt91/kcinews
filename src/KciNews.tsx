@@ -35,6 +35,7 @@ export type KciVisual = {
   unit?: string;
   numericValue?: number;
   scaleMax?: number;
+  statusLabel?: string;
 };
 
 export type KciCta = {
