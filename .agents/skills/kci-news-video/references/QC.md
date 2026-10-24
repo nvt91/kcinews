@@ -34,26 +34,32 @@
 - [ ] Visual assets original/licensed; generative footage clearly illustrative, no fake official footage.
 - [ ] Inspect multiple extracted frames and listen beginning/middle/outro, including CTA; report the actual inspection scope.
 
-### D1. Reels-safe central layout — owner feedback, 24 October 2026
+### D1. Full-width middle layout — revised owner feedback, 24 October 2026
 
-The owner's screenshot shows the app/status controls covering the old top branding/date, while account/caption controls cover the bottom subtitle/source/ticker. The right-side action rail is also reserved. Correct the composition, not just the export resolution or a uniform downscale of the entire frame.
+The owner's first screenshot showed app/status controls over the old top branding/date, and account/description controls over the bottom subtitle/source/ticker. The initial fix was too narrow. The owner then requested use of the WHOLE MIDDLE AREA rather than boxing everything into a small central block. This revision supersedes the former x96–884 global safe column.
 
-The production composition ID remains `KciNewsDaily`; `src/Root.tsx` now routes it to `KciNewsReels` in `src/KciNewsReels.tsx`. The old `KciNewsDaily.tsx`, `KciNewsV2` and `KciNews` remain archival references, not the safe template for new mobile editions. This presentation change applies to both KR_NEWS and MACRO. It does NOT change their independent schedules, story quotas, source requirements, narration or publication permissions.
+The production composition ID remains `KciNewsDaily`; `src/Root.tsx` routes it to `KciNewsReels` in `src/KciNewsReels.tsx`. The old `KciNewsDaily.tsx`, `KciNewsV2` and `KciNews` remain archival references. This visual change applies to KR_NEWS and MACRO. It does NOT change independent schedules, story quotas, data, narration, source requirements or publication permission.
 
-Internal conservative profile on 1080×1920: left margin96px, right margin196px, top264px, bottom480px. Essential content occupies x96–884, y264–1440. These coordinates are KCI's design choice based on the supplied screenshot, NOT a claimed official Meta specification or a guarantee across devices, app versions, expanded descriptions or open comment panels.
+Internal profile on 1080×1920:
+- Main content: x56–1024 (width968). Branding starts y268; headline/summary and visuals use the wide middle down to y1192. No narrow outer card or global right-side blank strip.
+- Lower overlays only: x56–914 (width858), preserving166px on the right for the lower action rail. Captions y1220–1332; sources y1347–1395; disclaimer ends by y1440.
+- Top264px and bottom480px stay free of essential content. Background decoration may fill the canvas.
 
-- [ ] Compact masthead and edition date are below the top control zone; not at the canvas edge.
-- [ ] Headline, summary and chart occupy the central block. Keep meaningful font sizes; shorten copy or split a scene rather than shrink everything.
-- [ ] Captions occupy y1220–1332, normally <=2 lines, above account/description overlays. Check every cue, not only the opening frame.
-- [ ] Sources occupy y1347–1395 and disclaimer ends by y1440. Keep source/time/venue context visible; full URLs stay in the source ledger. Do not clip required labels with ellipsis.
-- [ ] Closing CTA remains inside the central visual block and ends above captions. Preserve the once-only spoken CTA.
-- [ ] No essential text, numerical label or logo is placed in the right action rail. All motion entrance/end states are checked, not just settled positions.
-- [ ] The Reels cut omits the redundant bottom finance ticker. Its meaningful facts remain in scene graphics/voice/ledger; do not erase the source or disclaimer to save room.
-- [ ] Keep scenes concise: normally <=3 comparison bars, <=3 generic stat cards, <=3 closing bullets, <=2 company callouts. Do not silently discard extra facts; re-edit/split and validate the scene when needed.
-- [ ] Inspect headline, reversal, company, generic and closing/CTA frames with simulated top/bottom/right UI masks, then review a real-device preview when available. Mark simulation as simulation; don't claim an actual Facebook preview test unless performed.
-- [ ] Check text bounding boxes and scroll overflow; check at mobile display scale. If app chrome changes, revise the shared safe profile rather than moving one episode ad hoc.
+These are KCI's design choices based on the supplied screenshot and owner feedback, NOT official Meta specifications or guarantees across devices, app versions, expanded descriptions or open comment panels. Check the actual positions of the action rail; if it overlaps a lower visual label, move that label locally rather than narrowing the entire scene again.
 
-A layout-only re-edit of archived news must retain its original market/report date. It is not a new fact-checked daily bulletin. Disclose if validation used a browser DOM preview rather than the complete Remotion/GitHub Actions runtime.
+- [ ] Main title, summary, numbers and charts use the full middle width with modest equal side margins. Never uniformly stretch typography or scale the old narrow video as a substitute for re-layout.
+- [ ] Prefer open news graphics, large numbers, columns and thin rules. Remove redundant rounded outer chart panels and excessive nested cards. Background remains edge-to-edge.
+- [ ] Compact masthead and date remain below the top control zone. New title sizes are meaningful, normally65px, not reduced to fit a small central box.
+- [ ] Captions normally use no more than2 lines, above account/description overlays. Check every cue. Lower subtitle/source clearance must not become a global width restriction for the main content.
+- [ ] Source/time/venue context and the disclaimer remain readable. Full URLs stay in the ledger; no ellipsis hiding essential labels.
+- [ ] Closing CTA stays in the visual band, above captions, using a separator rather than a rounded card. Preserve the once-only spoken CTA.
+- [ ] Check all text and animation entry/end states against simulated top/bottom/local-right controls, not only settled positions. Do not claim a real-device Facebook test unless performed.
+- [ ] Omit the redundant bottom ticker. Keep its meaningful facts in graphics/voice/ledger rather than erasing sources or disclaimer.
+- [ ] Normally limit to3 comparison bars,3 generic stat cards,3 closing bullets and2 company callouts. Two generic facts may sit side by side to use the middle width. Never silently discard extra facts; re-edit/split instead.
+- [ ] Check company names and numerical labels for overflow after widening/enlarging. Long data must be reflowed, not cut off. Decorative circles may be clipped to their own visual region; meaningful text may not.
+- [ ] Inspect opening, reversal, company, generic and closing/CTA frames at mobile display scale; measure text bounding boxes and scroll overflow. Check geometry for every caption and important motion phase.
+
+A layout-only re-edit of archived news retains the original market/report date. It is not a freshly verified daily bulletin. Disclose whether validation used a browser DOM preview versus a complete Remotion/GitHub Actions runtime. A successful TSX transpile is a syntax check, not a dependency-aware typecheck. Stream-copying and matching audio hashes verifies unchanged audio, not a new pronunciation or listening review.
 
 ## E. Subtitle and technical artifact
 - [ ] Captions are synchronized to natural speech, clean punctuation, <=2 lines when feasible and above Reels UI safe zone.
