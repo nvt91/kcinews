@@ -85,7 +85,7 @@ jobs:
       VBEE_API_TOKEN: ${{ secrets.VBEE_API_TOKEN }}
       VBEE_VOICE_CODE: n_hanoi_male_tuananhnews_news_vc
       VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
-      VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS }}
+      VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS || 'vbee-studio2-3.s3.ap-southeast-1.amazonaws.com' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
