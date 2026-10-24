@@ -22,6 +22,8 @@ on:
     paths:
       - 'src/**'
       - 'api/**'
+      - 'workers/**'
+      - 'wrangler.toml'
       - 'scripts/**'
       - 'jobs/**'
       - 'package.json'
@@ -51,6 +53,8 @@ jobs:
       - run: npm run lint
       - run: node --check scripts/vbee.mjs
       - run: node --check scripts/run-job.mjs
+      - run: node --check workers/vbee-callback.mjs
+      - run: node scripts/test-vbee-callback.mjs
       - run: node scripts/run-job.mjs --mode=validate
   render:
     if: >-
