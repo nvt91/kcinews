@@ -53,6 +53,7 @@ jobs:
       - run: npm run lint
       - run: node --check scripts/vbee.mjs
       - run: node --check scripts/run-job.mjs
+      - run: node scripts/test-vbee-adapter.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
       - name: Cloudflare live endpoint check (advisory before first production deployment)
