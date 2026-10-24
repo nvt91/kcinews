@@ -16,7 +16,7 @@ export const REELS_SAFE = {
   right: 196,
   top: 264,
   bottom: 480,
-}} as const;
+} as const;
 
 export const REELS_CONTENT_WIDTH = 1080 - REELS_SAFE.left - REELS_SAFE.right;
 export const REELS_CONTENT_BOTTOM = 1920 - REELS_SAFE.bottom;
