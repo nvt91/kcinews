@@ -25,13 +25,13 @@ const Background:React.FC<{f:number;color:string}>=({f,color})=>(
 
 const Masthead:React.FC<{edition:string;index:number;count:number;color:string}>=({edition,index,count,color})=>(
   <>
-    <div data-kci-safe="masthead" style={{...zone(268,60),display:"flex",alignItems:"center",gap:18}}>
+    <div data-kci-safe="masthead" style={{...zone(278,54),display:"flex",alignItems:"center",gap:18}}>
       <div style={{width:68,height:50,flexShrink:0,background:color,color:P.bg,fontSize:29,fontWeight:950,textAlign:"center",lineHeight:"50px",transform:"skew(-6deg)"}}>KCI</div>
       <div style={{flex:1,minWidth:0}}><div style={{fontSize:27,fontWeight:900,letterSpacing:.7}}>KOREA CAPITAL INSIGHT</div><div style={{fontSize:16,letterSpacing:3.1,color:P.muted,marginTop:5}}>MARKET INTELLIGENCE</div></div>
       <div style={{fontSize:22,color:P.muted,fontWeight:800}}>{String(index).padStart(2,"0")}/{String(count).padStart(2,"0")}</div>
     </div>
-    <div style={{...zone(339,1),background:`${P.border}99`}}/>
-    <div data-kci-safe="edition" style={{...zone(351,29),fontSize:22,color:P.muted,fontWeight:750,letterSpacing:.4}}>{edition}</div>
+    <div style={{...zone(345,1),background:`${P.border}99`}}/>
+    <div data-kci-safe="edition" style={{...zone(355,29),fontSize:22,color:P.muted,fontWeight:750,letterSpacing:.4}}>{edition}</div>
   </>
 );
 
@@ -90,7 +90,7 @@ const Closing:React.FC<{v:KciVisual;cta?:KciCta;f:number;duration:number}>=({v,c
   <div style={{width:"100%",alignSelf:"flex-start"}}>
     <div style={{fontSize:24,fontWeight:850,color:P.teal,letterSpacing:1}}>NHỮNG ĐIỀU CẦN THEO DÕI</div>
     {(v.bullets||[]).map((b,i)=><div key={i} style={{...enter(f,13+i*8),display:"flex",gap:20,marginTop:17,alignItems:"center"}}><span style={{fontSize:35,fontWeight:950,color:[P.teal,P.amber,P.blue][i%3]}}>0{i+1}</span><span style={{fontSize:29,lineHeight:1.2,fontWeight:800}}>{b}</span></div>)}
-    {cta&&<div data-kci-safe="cta" style={{...enter(f,Math.max(16,Math.floor(duration*.51))),borderTop:`3px solid ${P.teal}`,padding:"20px 0 0",marginTop:24}}><div style={{fontSize:19,letterSpacing:2,fontWeight:850,color:"#9FF4D9"}}>{cta.type==="comment"?"GÓC NHÌN CỦA ANH CHỊ":cta.type==="follow"?"THEO DÕI KCI":"LƯU LẠI ĐỂ THAM KHẢO"}</div><div style={{fontSize:42,fontWeight:950,lineHeight:1.15,marginTop:12}}>{cta.screenHeadline}</div><div style={{fontSize:25,color:"#C4E8E1",lineHeight:1.25,marginTop:12,maxWidth:858}}>{cta.screenSubline}</div></div>}
+    {cta&&<div data-kci-safe="cta" style={{...enter(f,Math.max(16,Math.floor(duration*.51))),maxWidth:KCI_REELS_LOWER.width,borderTop:`3px solid ${P.teal}`,padding:"20px 0 0",marginTop:24}}><div style={{fontSize:19,letterSpacing:2,fontWeight:850,color:"#9FF4D9"}}>{cta.type==="comment"?"GÓC NHÌN CỦA ANH CHỊ":cta.type==="follow"?"THEO DÕI KCI":"LƯU LẠI ĐỂ THAM KHẢO"}</div><div style={{fontSize:42,fontWeight:950,lineHeight:1.15,marginTop:12}}>{cta.screenHeadline}</div><div style={{fontSize:25,color:"#C4E8E1",lineHeight:1.25,marginTop:12,maxWidth:858}}>{cta.screenSubline}</div></div>}
   </div>
 );
 
@@ -117,8 +117,8 @@ const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number
       <div data-kci-safe="visual" style={{...zone(718,474),display:"flex",alignItems:"center"}}><Visual s={scene} f={f} color={color}/></div>
       <div data-kci-safe="captions" style={{...zone(1220,112,true),background:"linear-gradient(90deg,rgba(1,10,24,.8),rgba(1,10,24,.35))",borderTop:`3px solid ${color}`,padding:"15px 14px",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:38,lineHeight:1.22,fontWeight:850,textAlign:"center",whiteSpace:"pre-wrap",opacity:cue?ease(f,cue.from,4):0}}>{cue?.text||""}</div></div>
       <div data-kci-safe="source" style={{...zone(1347,48,true),fontSize:19,lineHeight:1.22,color:P.muted}}>Nguồn: {scene.source}</div>
-      <div style={{...zone(1402,2,true),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
-      <div data-kci-safe="disclaimer" style={{...zone(1415,25,true),fontSize:19,lineHeight:1.2,color:P.muted}}>Thông tin tham khảo · Không phải khuyến nghị đầu tư cá nhân.</div>
+      <div style={{...zone(1431,2,true),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
+      <div data-kci-safe="disclaimer" style={{...zone(1400,25,true),fontSize:19,lineHeight:1.2,color:P.muted}}>Thông tin tham khảo · Không phải khuyến nghị đầu tư cá nhân.</div>
       {preview&&<div data-kci-safe="preview" style={{...zone(1189,24,true),fontSize:18,fontWeight:900,color:P.red,textAlign:"right"}}>SILENT PREVIEW · CHƯA CÓ VOICE</div>}
     </AbsoluteFill>
     {scene.audioFile&&<Audio src={staticFile(scene.audioFile)}/>}
