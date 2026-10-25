@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-25-macro21",
+  "edition": "VĨ MÔ 21H · CHỦ NHẬT 25/10/2026 KST · lịch tuần 26–30/10",
+  "dataAsOf": "2026-10-25T20:55:52+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Fed họp trước dữ liệu GDP/PCE Mỹ: bốn phép thử vĩ mô đối với đồng won",
+  "sourceDisclaimer": "As-of Sun 25 Oct 2026 20:55 KST; BOK Q2 0.6% is previously published; GDP Q3 KR, Oct Fed decision, and US GDP/PCE are scheduled FUTURE releases. Sunday has no KRX session. Not investment advice.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "format": "single-angle macro calendar",
+    "articleId": "KCI-20261025-MACRO21",
+    "articlePath": "editorial/2026-10-25/macro21.md",
+    "eventKeys": [
+      "KR-BOK:Q3_GDP_SCHEDULE:2026-10-25",
+      "US-FED:OCT_FOMC_MEETING_CALENDAR:2026-10-25",
+      "US-BEA:Q3_GDP_SEP_PCE_RELEASE_SCHEDULE:2026-10-25"
+    ],
+    "editorialScore": 92,
+    "scoreBreakdown": {
+      "sourcesData": 33,
+      "analysis": 23,
+      "freshness": 13,
+      "vietnamese": 14,
+      "distinctness": 9
+    },
+    "duplicateReview": "Reviewed accessible jobs/issues 18–25 October 2026: #22 MACRO21 24/10 oil/BOK inflation; #23 KR_AM 25/10 export, #24 KR_SPECIAL pension, #25 KR_CLOSE KOFR/KRX/shipbuilding; this video is a distinct forward calendar explanation contrasting Fed decision timing and data releases. BOK rate/Q2 GDP reused only as clearly dated context.",
+    "voiceCode": "n_hanoi_male_tuananhnews_news_vc",
+    "renderSpec": "1080x1920;30fps;H.264/AAC;KciNewsDaily",
+    "publishing": "NOT_AUTHORIZED"
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-gdp-calendar-1027",
+      "title": "Bank of Korea — October 2026 statistical release calendar, Q3 GDP advance 27 October",
+      "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?date=2026-10&menuNo=400359",
+      "eventDate": "2026-10-27",
+      "publicationDate": "Official live schedule, revision timestamp unavailable",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK's official October calendar lists Q3 2026 Real GDP advance estimate on Tuesday 27 October; no Q3 result existed as of the Sunday 25 October cutoff.",
+        "The GDP publication is a scheduled future release, not a reported growth reading."
+      ]
+    },
+    {
+      "id": "bok-gdp-q2-prelim-0908",
+      "title": "Bank of Korea — Gross National Income Q2 2026 preliminary, published 8 September",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11064532&programType=newsData",
+      "eventDate": "2026-09-08",
+      "publicationDate": "2026-09-08",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "primary",
+      "facts": [
+        "Real Korean GDP grew 0.6% quarter-on-quarter and 3.7% year-on-year in Q2 2026; this is the prior quarter, not Q3.",
+        "Future Q3 output components such as consumption and exports should be judged on their actual reported contributions."
+      ]
+    },
+    {
+      "id": "bok-rate-hold-1022",
+      "title": "Bank of Korea — Monetary Policy Decision and opening remarks, 22 October",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065825",
+      "eventDate": "2026-10-22",
+      "publicationDate": "2026-10-22",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK kept the Base Rate at 3.00% on 22 October 2026.",
+        "The BOK discussed elevated inflation near 3%, financial stability concerns, external uncertainty and the need to assess effects of earlier hikes; subsequent interest-rate decisions were not preannounced."
+      ]
+    },
+    {
+      "id": "fed-fomc-calendar-1028",
+      "title": "Federal Reserve — official 2026 FOMC meeting calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "eventDate": "2026-10-27",
+      "publicationDate": "2026 meeting calendar; last update not specified",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "primary",
+      "facts": [
+        "The October 2026 FOMC meeting is scheduled for 27–28 October US local time; this decision is future as of 25 October KST.",
+        "The official calendar does not report an October rate result yet; the September meeting was previously completed."
+      ]
+    },
+    {
+      "id": "bea-gdp-pce-calendar-1029",
+      "title": "US Bureau of Economic Analysis — official October 2026 release schedule",
+      "url": "https://www.bea.gov/news/schedule/",
+      "eventDate": "2026-10-29",
+      "publicationDate": "Official calendar; page last modified 2026-10-25",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "primary",
+      "facts": [
+        "BEA schedules its Q3 2026 advance GDP estimate on Thursday 29 October 2026 at 08:30 US Eastern daylight time (21:30 KST).",
+        "BEA also schedules September 2026 Personal Income and Outlays, including PCE price indices, at the same time.",
+        "Both US releases are scheduled AFTER the October 27–28 FOMC meeting, so they cannot be described as already-known results informing that October decision."
+      ]
+    },
+    {
+      "id": "news1-agenda-1025",
+      "title": "News1 Korean economic weekly agenda, 25 October 2026 14:03 KST",
+      "url": "https://www.news1.kr/economy/trend/6331060",
+      "eventDate": "2026-10-25",
+      "publicationDate": "2026-10-25 14:03 KST",
+      "checkedAt": "2026-10-25T20:55:52+09:00",
+      "kind": "secondary",
+      "facts": [
+        "News1 corroborates that the BOK Q3 advance GDP reading is scheduled on 27 October, with consumption, investment, and export contributions in focus.",
+        "Other Korean statistical announcements later in the week are not presented as already released."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Fed họp trước, dữ liệu lạm phát Mỹ đến sau! Còn Hàn Quốc chuẩn bị công bố GDP quý ba. Đồng won sẽ chịu phép thử nào?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Fed họp trước, dữ liệu lạm phát Mỹ đến sau! Còn Hàn Quốc chuẩn bị công bố GDP quý ba. Đồng won sẽ chịu phép thử nào?",
+        "score": 47
+      },
+      {
+        "style": "korean-impact",
+        "text": "GDP Hàn Quốc, Fed và lạm phát Mỹ cùng dồn vào tuần 26 đến 30 tháng mười. Vì sao đồng won có thể biến động mạnh?",
+        "score": 44
+      },
+      {
+        "style": "question",
+        "text": "Khi Hàn Quốc chuẩn bị có GDP mới và Mỹ sắp họp Fed, thông tin nào quan trọng hơn đối với tỷ giá USD trên won?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, GDP Hàn Quốc hay thông điệp từ Fed sẽ tác động mạnh hơn đến đồng won trong tuần tới? Hãy bình luận góc nhìn và theo dõi Korea Capital Insight để cùng kiểm chứng.",
+    "screenHeadline": "GDP HÀN HAY FED SẼ TÁC ĐỘNG ĐẾN WON?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI để đối chiếu dữ liệu",
+    "question": "Theo anh chị, GDP Hàn Quốc hay thông điệp từ Fed sẽ tác động mạnh hơn đến đồng won trong tuần tới?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H · CHỦ NHẬT 25/10",
+      "headline": "FED HỌP TRƯỚC · PCE ĐẾN SAU",
+      "summary": "Một tuần với các báo cáo GDP Hàn–Mỹ và quyết định Fed, chưa công bố kết quả.",
+      "source": "BOK lịch 27/10 · Fed 27–28/10 · BEA 29/10",
+      "sourceIds": [
+        "bok-gdp-calendar-1027",
+        "fed-fomc-calendar-1028",
+        "bea-gdp-pce-calendar-1029"
+      ],
+      "stats": [
+        {
+          "label": "GDP Hàn Q3 · dự kiến",
+          "value": "27/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "US GDP & PCE · dự kiến",
+          "value": "29/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Fed họp trước, dữ liệu lạm phát Mỹ đến sau! Còn Hàn Quốc chuẩn bị công bố GDP quý ba. Đồng won sẽ chịu phép thử nào?",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Chuyên đề lịch vĩ mô; không phải công bố kết quả"
+      }
+    },
+    {
+      "id": "korean-gdp",
+      "eyebrow": "HÀN QUỐC · GDP QUÝ III",
+      "headline": "27/10: KIỂM TRA CHẤT LƯỢNG TĂNG TRƯỞNG",
+      "summary": "GDP quý II tăng 0,6% theo quý; quý III CHƯA công bố.",
+      "source": "BOK lịch 10/2026 · GDP Q2 sơ bộ 08/09/2026",
+      "sourceIds": [
+        "bok-gdp-calendar-1027",
+        "bok-gdp-q2-prelim-0908",
+        "news1-agenda-1025"
+      ],
+      "stats": [
+        {
+          "label": "GDP thực Q2/2026 · quý/quý",
+          "value": "+0,6%",
+          "tone": "up"
+        },
+        {
+          "label": "GDP Q3 · công bố dự kiến",
+          "value": "27/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Sáng hai mươi bảy tháng mười, BOK dự kiến công bố GDP quý ba. Quý hai, kinh tế Hàn Quốc tăng không phẩy sáu phần trăm so với quý trước. Lần này cần xem tiêu dùng nội địa có bắt kịp xuất khẩu không.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "27/10",
+        "unit": "GDP Q3 · HÀN QUỐC",
+        "qualifier": "Lịch BOK, kết quả chưa phát hành; Q2 đã xác nhận +0,6% quý/quý"
+      }
+    },
+    {
+      "id": "bok",
+      "eyebrow": "NỀN CHÍNH SÁCH · 22/10",
+      "headline": "BOK GIỮ LÃI SUẤT 3,00%",
+      "summary": "Lạm phát và ổn định tài chính vẫn là các điều kiện của chính sách.",
+      "source": "Bank of Korea · quyết định 22/10/2026",
+      "sourceIds": [
+        "bok-rate-hold-1022",
+        "bok-gdp-calendar-1027"
+      ],
+      "stats": [
+        {
+          "label": "Base Rate · giữ nguyên 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ngày hai mươi hai tháng mười, BOK giữ lãi suất cơ bản ba phần trăm. Ngân hàng nhấn mạnh rủi ro lạm phát và tài chính. Tăng trưởng quý ba sẽ là dữ liệu mới để đánh giá chính sách, chưa phải một quyết định tăng lãi suất.",
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "unit": "BOK BASE RATE",
+        "qualifier": "Giữ nguyên tại cuộc họp 22/10/2026; không phải dự báo kỳ tới",
+        "numericValue": 3,
+        "scaleMax": 5,
+        "statusLabel": "GIỮ NGUYÊN"
+      }
+    },
+    {
+      "id": "fomc",
+      "eyebrow": "MỸ · FOMC 27–28/10",
+      "headline": "FED SẮP HỌP, CHƯA RA QUYẾT ĐỊNH",
+      "summary": "Tín hiệu chính sách Mỹ tác động kỳ vọng lợi suất và USD.",
+      "source": "Federal Reserve · lịch họp chính thức năm 2026",
+      "sourceIds": [
+        "fed-fomc-calendar-1028",
+        "bok-rate-hold-1022"
+      ],
+      "stats": [
+        {
+          "label": "Lịch FOMC · theo giờ Mỹ",
+          "value": "27–28/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Fed họp hai ngày, hai mươi bảy và hai mươi tám tháng mười theo giờ Mỹ. Kết quả chưa được công bố. Với đồng won, điểm quan trọng là Fed phát tín hiệu cứng rắn hay ôn hòa hơn kỳ vọng của thị trường.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "27–28/10",
+        "unit": "FOMC · GIỜ MỸ",
+        "qualifier": "Lịch họp, KHÔNG phải thông báo đã tăng/giảm lãi suất"
+      }
+    },
+    {
+      "id": "us-gdp-pce",
+      "eyebrow": "MỸ · THỨ NĂM 29/10",
+      "headline": "GDP QUÝ III VÀ PCE THÁNG CHÍN",
+      "summary": "Hai báo cáo cùng dự kiến 21:30 KST, sau cuộc họp Fed.",
+      "source": "BEA release schedule · 29/10/2026, 08:30 EDT = 21:30 KST",
+      "sourceIds": [
+        "bea-gdp-pce-calendar-1029",
+        "fed-fomc-calendar-1028"
+      ],
+      "stats": [
+        {
+          "label": "US GDP Q3 · bản đầu",
+          "value": "29/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "PCE · kỳ tháng 9",
+          "value": "21:30 KST",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Tối hai mươi chín tháng mười, lúc chín giờ ba mươi theo giờ Seoul, Mỹ dự kiến công bố GDP quý ba bản đầu và báo cáo chi tiêu tháng chín, gồm PCE. Các số này ra sau cuộc họp Fed; hiện chưa có kết quả.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "21:30",
+        "unit": "29/10 · GIỜ SEOUL",
+        "qualifier": "BEA: GDP Q3 advance & Personal Income/Outlays Sep 2026; lịch trước công bố"
+      }
+    },
+    {
+      "id": "korean-impact",
+      "eyebrow": "ĐIỀU CẦN QUAN SÁT",
+      "headline": "GDP · LỢI SUẤT · USD/KRW",
+      "summary": "Phản ứng phụ thuộc bất ngờ so với kỳ vọng; không dự báo giá cụ thể.",
+      "source": "BOK 22/10 · Fed lịch 27–28/10 · BEA lịch 29/10 · phân tích KCI",
+      "sourceIds": [
+        "bok-rate-hold-1022",
+        "bok-gdp-calendar-1027",
+        "fed-fomc-calendar-1028",
+        "bea-gdp-pce-calendar-1029"
+      ],
+      "stats": [],
+      "voiceText": "Nếu tăng trưởng Hàn yếu hơn dự kiến còn Fed cứng rắn, đô la có thể gây áp lực lên won. Chiều ngược lại cũng có thể xảy ra. Hãy theo dõi số thực tế so với dự báo và tỷ giá USD trên won. Đây không phải khuyến nghị giao dịch.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "27/10: GDP Q3 HÀN QUỐC",
+          "27–28/10: FOMC GIỜ MỸ",
+          "29/10 21:30 KST: GDP + PCE MỸ"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Fed họp trước, dữ liệu lạm phát Mỹ đến sau! Còn Hàn Quốc chuẩn bị công bố GDP quý ba. Đồng won sẽ chịu phép thử nào?"
+}
