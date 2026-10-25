@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-26-kr-am",
+  "edition": "26/10/2026 · BẢN SÁNG · 08:10 KST",
+  "dataAsOf": "2026-10-26T08:10:42+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Hàn Quốc thặng dư vượt Đức và Nhật cộng lại: bán dẫn mạnh, nội địa ra sao?",
+  "sourceDisclaimer": "Bản sáng 26/10/2026, chốt 08:10 KST. Dữ liệu cán cân Q2 là số lịch sử được báo chí dẫn từ BOK/IMF, không phải giá giao dịch mới. Không phải khuyến nghị đầu tư.",
+  "metadata": {
+    "articleId": "KCI-20261026-KR-AM",
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articlePath": "editorial/2026-10-26/kr-am.md",
+    "eventKeys": [
+      "korea-current-account-q2-2026-imf-comparison-2026-10-25",
+      "micron-taiwan-labor-bonus-2026-10-22",
+      "korea-domestic-growth-context-2026-10-16"
+    ],
+    "voiceName": "Anh Khôi Tin tức",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "productionGate": "BLOCKED_PENDING_VOICE_LISTEN_APPROVAL",
+    "voiceTestRun": "https://github.com/nvt91/kcinews/actions/runs/40205899873"
+  },
+  "sourceLedger": [
+    {
+      "id": "ca-news1-1025",
+      "title": "News1 trên Dong-A Ilbo — thặng dư tài khoản vãng lai Q2 2026",
+      "url": "https://www.donga.com/news/Economy/article/all/20261025/134902205/1",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Theo số IMF trên BOK ECOS được News1 dẫn ngày 25/10: cán cân vãng lai Hàn Quốc Q2/2026 thặng dư 116,63 tỷ USD, Đức và Nhật cộng lại 102,89 tỷ USD; trong 36 nước có dữ liệu, chỉ đứng sau Trung Quốc.",
+        "Số liệu Q2 công bố/báo cáo lại ngày 25/10, không phải Q3 hoặc tổng kết phiên 26/10."
+      ]
+    },
+    {
+      "id": "ca-khan-1025",
+      "title": "Kyunghyang — đối chiếu thặng dư Q2 và khung so sánh quốc tế",
+      "url": "https://www.khan.co.kr/article/202610251129001/amp",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Đối chiếu ngày 25/10: Hàn Quốc 116,63 tỷ USD, Đức 52,28 tỷ, Nhật 50,62 tỷ theo dữ liệu BOK/IMF cho Q2/2026.",
+        "Dữ liệu phản ánh cán cân vãng lai, không phải lợi nhuận cổ phiếu hay tốc độ tăng GDP."
+      ]
+    },
+    {
+      "id": "ca-ytn-1025",
+      "title": "YTN — rủi ro tập trung bán dẫn và bài toán nội địa",
+      "url": "https://www.ytn.co.kr/_ln/0102_202610251906185345",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Báo cáo YTN 25/10 nói thặng dư Q2 đạt khoảng 116,6 tỷ USD; trích ý kiến cần tăng năng lực của ngành nội địa và đa dạng động lực sau bán dẫn."
+      ]
+    },
+    {
+      "id": "micron-reuters-1022",
+      "title": "Reuters — Micron trả thưởng liên kết lợi nhuận trong bối cảnh tranh chấp Taiwan",
+      "url": "https://www.reuters.com/technology/micron-introduces-quarterly-employee-bonus-tied-profits-2026-10-22/",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Micron công bố chính sách thưởng quý liên kết lợi nhuận toàn cầu bắt đầu năm tài khóa 2027, trong lúc công đoàn Taoyuan đàm phán.",
+        "Không có dữ liệu nguồn này xác nhận đình trệ sản xuất HBM hay đơn hàng ngày 26/10."
+      ]
+    },
+    {
+      "id": "micron-reuters-1021",
+      "title": "Reuters — tình hình thương lượng Taoyuan/Taichung",
+      "url": "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
+      "eventDate": "2026-10-21",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Micron đã đạt thỏa thuận với công đoàn Taichung ngày 21/10, riêng Taoyuan vẫn dự kiến ngừng việc cảnh báo 24h ngày 22/10.",
+        "Tác động tới nguồn cung cần bằng chứng mới; không suy đình trệ kéo dài từ một cuộc cảnh báo 24h."
+      ]
+    },
+    {
+      "id": "micron-donga-1022",
+      "title": "Dong-A Ilbo — Taoyuan đình công cảnh báo 24h ngày 22/10",
+      "url": "https://www.donga.com/news/NewsStand/article/all/20261022/134888635/1",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Bài 22/10 xác nhận công đoàn Taoyuan bắt đầu hành động đình công cảnh báo 24h ngày 22/10; Taichung đã đạt thỏa thuận 21/10.",
+        "Nhận định ngành về ảnh hưởng ngắn hạn hạn chế là đánh giá, không phải xác nhận biến động giá chứng khoán."
+      ]
+    },
+    {
+      "id": "gov-oct-trend",
+      "title": "Cổng thông tin chính sách Hàn Quốc — báo cáo xu hướng kinh tế tháng 10/2026",
+      "url": "https://www.korea.kr/archive/expDocView.do?docId=41913&pWise=sub&pWiseSub=J1",
+      "eventDate": "2026-10-16",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "Bộ Kinh tế Tài chính Hàn Quốc công bố báo cáo tháng 10 ngày 16/10, gồm tiêu dùng, đầu tư, sản xuất, xuất nhập khẩu và tài chính-ngoại hối.",
+        "Đây là tài liệu nền công bố 16/10, không phải kết quả kinh tế mới 26/10."
+      ]
+    },
+    {
+      "id": "krx-hours",
+      "title": "KRX quy định giờ giao dịch cổ phiếu regular session",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "KRX regular cash session giao dịch 09:00–15:30 giờ Hàn Quốc; 08:10 KST 26/10 không thể có giá đóng cửa phiên chính ngày 26/10."
+      ]
+    },
+    {
+      "id": "nxt-hours",
+      "title": "Nextrade chính thức — cấu trúc phiên NXT",
+      "url": "https://www.nextrade.co.kr/marketOverview/content.do",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T08:10:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "NXT premarket 08:00–08:50 KST, khác KRX regular; không đồng nhất và không gộp dữ liệu để gọi là phiên KRX."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc thặng dư quý hai còn lớn hơn Đức và Nhật cộng lại. Nhưng điều đó có đồng nghĩa cả nền kinh tế đều khỏe?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hàn Quốc thặng dư quý hai còn lớn hơn Đức và Nhật cộng lại. Nhưng điều đó có đồng nghĩa cả nền kinh tế đều khỏe?"
+      },
+      {
+        "style": "investor-impact",
+        "text": "Thặng dư đối ngoại Hàn Quốc vượt cả Đức và Nhật cộng lại. Vì sao cổ phiếu vẫn cần thêm bằng chứng?"
+      },
+      {
+        "style": "question",
+        "text": "Bán dẫn giúp Hàn Quốc kiếm về lượng ngoại tệ rất lớn. Nhưng sức mua trong nước sẽ hưởng lợi thế nào?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, Hàn Quốc nên ưu tiên mở rộng ngành bán dẫn hay phát triển mạnh hơn tiêu dùng và dịch vụ nội địa? Bình luận góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "HÀN QUỐC NÊN ƯU TIÊN ĐIỀU GÌ?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, Hàn Quốc nên ưu tiên mở rộng bán dẫn hay thúc đẩy tiêu dùng nội địa?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "ĐIỂM NHẤN HÀN QUỐC",
+      "headline": "Thặng dư vượt Đức và Nhật cộng lại",
+      "summary": "Đối chiếu số quý II, được báo cáo lại ngày 25/10.",
+      "voiceText": "Hàn Quốc thặng dư quý hai còn lớn hơn Đức và Nhật cộng lại. Nhưng điều đó có đồng nghĩa cả nền kinh tế đều khỏe? Số liệu đáng chú ý, nhưng câu trả lời nằm ở cấu trúc tăng trưởng.",
+      "source": "News1 / BOK–IMF, 25/10/2026",
+      "sourceIds": [
+        "ca-news1-1025",
+        "ca-khan-1025"
+      ],
+      "stats": [
+        {
+          "label": "Cán cân vãng lai Q2/2026",
+          "value": "116,63 tỷ USD",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "ca-numbers",
+      "eyebrow": "KINH TẾ ĐỐI NGOẠI",
+      "headline": "116,63 tỷ USD trong một quý",
+      "summary": "Đức và Nhật cộng lại: 102,89 tỷ USD.",
+      "voiceText": "Theo số IMF trên hệ thống thống kê Ngân hàng Trung ương Hàn Quốc được báo chí dẫn ngày hai mươi lăm tháng mười, cán cân vãng lai quý hai thặng dư một trăm mười sáu phẩy sáu ba tỷ đô la. Lớn hơn Đức và Nhật cộng lại. Đây là số quý hai, không phải quý ba hay kết quả hôm nay.",
+      "source": "News1, Kyunghyang 25/10/2026",
+      "sourceIds": [
+        "ca-news1-1025",
+        "ca-khan-1025"
+      ],
+      "stats": [
+        {
+          "label": "Hàn Quốc Q2",
+          "value": "116,63 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "Đức + Nhật Q2",
+          "value": "102,89 tỷ USD",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "ca-impact",
+      "eyebrow": "ĐẰNG SAU CON SỐ",
+      "headline": "Bán dẫn là động lực chủ yếu",
+      "summary": "Thặng dư đối ngoại không phải lợi nhuận chứng khoán.",
+      "voiceText": "Động lực lớn đến từ xuất khẩu bán dẫn. Nhưng thặng dư cán cân vãng lai không có nghĩa mọi doanh nghiệp đều có doanh thu tốt, hay mọi hộ gia đình đều tăng thu nhập. Hàn Quốc cần xem dòng ngoại tệ có biến thành đầu tư, việc làm và sức mua trong nước hay không.",
+      "source": "News1; YTN, 25/10/2026",
+      "sourceIds": [
+        "ca-news1-1025",
+        "ca-ytn-1025"
+      ],
+      "stats": [
+        {
+          "label": "Phân tích KCI",
+          "value": "Xuất khẩu ≠ nội địa",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "micron",
+      "eyebrow": "CẬP NHẬT NGÀNH CHIP",
+      "headline": "Micron: cảnh báo lao động tại Đài Loan",
+      "summary": "Diễn biến từ ngày 22/10, chưa có xác nhận đứt nguồn cung.",
+      "voiceText": "Ở thị trường bộ nhớ, Micron vừa trải qua cuộc ngừng việc cảnh báo hai mươi bốn giờ tại Taoyuan hôm hai mươi hai tháng mười. Công đoàn tại Taichung đã đạt thỏa thuận; Micron công bố kế hoạch thưởng theo lợi nhuận. Chưa có bằng chứng sản lượng chip bị gián đoạn kéo dài.",
+      "source": "Reuters / Dong-A, 21–22/10/2026",
+      "sourceIds": [
+        "micron-reuters-1021",
+        "micron-reuters-1022",
+        "micron-donga-1022"
+      ],
+      "stats": [
+        {
+          "label": "Taoyuan · cảnh báo",
+          "value": "24 giờ",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "industry",
+      "eyebrow": "TÁC ĐỘNG ĐẾN HÀN QUỐC",
+      "headline": "Không vội suy lợi thế cho Samsung, SK hynix",
+      "summary": "Phải quan sát thực tế cung–cầu và sản lượng.",
+      "voiceText": "Với Samsung Electronics và SK hynix, chuyện đáng theo dõi là nguồn cung DRAM và HBM thực tế, cùng chi phí nhân lực. Một cuộc cảnh báo ngắn không đủ để kết luận giá chip tăng hay doanh nghiệp Hàn Quốc chắc chắn hưởng lợi.",
+      "source": "Reuters, 21–22/10/2026",
+      "sourceIds": [
+        "micron-reuters-1021",
+        "micron-reuters-1022"
+      ],
+      "stats": [
+        {
+          "label": "Điểm cần xác minh",
+          "value": "Sản lượng / giao hàng",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "close",
+      "eyebrow": "PHÉP THỬ TIẾP THEO",
+      "headline": "Chờ GDP quý III và sức cầu nội địa",
+      "summary": "26/10 lúc 08:10: KRX chính thức chưa mở phiên.",
+      "voiceText": "Sáng nay, phiên chính KRX chưa mở cửa; NXT có phiên trước giờ riêng, nên không gọi đây là giá đóng cửa hôm nay. Tiếp theo cần đối chiếu GDP Hàn Quốc khi công bố với tiêu dùng và đầu tư trong nước. Không đánh đồng thặng dư ngoại thương với sức khỏe mọi ngành.",
+      "source": "KRX / NXT; báo cáo chính phủ tháng 10",
+      "sourceIds": [
+        "krx-hours",
+        "nxt-hours",
+        "gov-oct-trend"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Đối chiếu GDP Q3 khi có số chính thức",
+          "Theo dõi nhu cầu tiêu dùng và đầu tư",
+          "Kiểm tra nguồn cung chip thay vì suy đoán"
+        ]
+      }
+    }
+  ]
+}
