@@ -1,6 +1,6 @@
 # KCI News — Google Sheets production ledger
 
-Owner request: 25 October 2026. Save KCI tasks and video outputs to the owner's existing KCI News Sheet for oversight. This is a logging/approval surface, NOT a publisher or a scheduler. Do not change existing schedules, production quotas, Vbee billing/voice, secrets, or permissions.
+Owner requests: 25 October 2026 — use the existing KCI News Sheet as a logging/approval surface; 26 October 2026 — explicitly include the separate Global/US morning video task and switch NEW KCI narration to Anh Khôi Tin tức. The Sheet is NOT a publisher or a scheduler. Logging never changes schedules, production quotas, Vbee configuration, secrets, or permissions by itself; the new voice is configured separately in VOICE_PROFILE.md and the video workflow.
 
 ## Verified destination
 
@@ -9,14 +9,14 @@ Owner request: 25 October 2026. Save KCI tasks and video outputs to the owner's 
 - Time zone: Asia/Seoul; locale vi_VN.
 - Video ledger: sheetId `0`, title `Trang tính1` at initialization; headers row2, records from row3, columns B:O.
 - Existing native table: tableId `376391657`, name `Bảng_1`. Preserve its native structure, styles and dropdowns; extend its range when adding a row. Its initial authored range is B2:O3; do not assume this remains the populated end.
-- Schedule inventory: sheetId25001, `Lịch tác vụ`, table header B9:K9, existing tasks rows10–15.
+- Schedule inventory: sheetId25001, `Lịch tác vụ`, table header B9:K9, existing tasks rows10–16; the GLOBAL_US / US_AM task is row15, schedule 09:00 Asia/Seoul Monday–Saturday. The task row is for oversight, not the scheduler.
 - Usage notes: sheetId25002, `Hướng dẫn`.
 
 Read metadata and bounded cell data through the connected Google Drive/Sheets tools before every write. The mounted Excel attachment is not the live destination. If access fails, do not create another spreadsheet, infer successful writes, replace credentials or change sharing.
 
 ## Scope
 
-Log KR_NEWS editions KR_AM, KR_MID, KR_CLOSE and independent MACRO/MACRO21. Their current producer automations and KCI Video Completion Watch read DAILY_CADENCE.md, which requires this reference. The existing Global & US Morning task is listed in the schedule inventory only; do not modify or silently integrate that separate automation. No personal portfolio, email or other-brand data belongs here.
+Log KR_NEWS editions KR_AM, KR_MID, KR_CLOSE; independent MACRO/MACRO21; and — by separate owner request on 26 October — GLOBAL_US / US_AM (Global & US Morning Video, 09:00 KST Monday–Saturday). The producer for that independent US task must create at most one unique job/articleId `KCI-YYYYMMDD-US-AM` and upsert video status into Trang tính1 using the same read/upsert/verify and owner-approval restrictions. KCI Sheet Sync reconciles GLOBAL_US only when real source job/run/video evidence exists. Sheet recording does not change another task's time or content. No personal portfolio, email or other-brand data belongs here.
 
 One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. Visual revisions/reruns update that row, not a duplicate. A rendered video awaiting correction remains a recorded MP4, not approved or published. Optional KR_MID checks that fail the news materiality gate may record BỎ QUA without creating a video, invoking TTS or sending a routine no-news notification.
 
@@ -28,7 +28,7 @@ One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. V
 | C | Ngày giờ sản xuất | Actual evidenced MP4 completion time in KST; blank until produced. Use native date-time and note whether based on artifact creation or workflow completion. Never use scheduled start as completion. |
 | D | Caption đăng bài Viral kèm hastag | Draft caption with a truthful hook, concise context, one useful comment/follow CTA, short disclaimer and 2–3 relevant hashtags. No promise of virality. Preserve existing owner edits; only seed when blank/new or explicitly authorized to revise. |
 | E | Link có thể mở video nếu có | Verified MP4/Drive link, or verified authenticated GitHub run/artifact link with note explaining access and expiry. No imaginary public URLs or sandbox paths as external links. Blank when unavailable. |
-| F | Luồng / bản tin | KR_NEWS / KR_AM, KR_NEWS / KR_MID, KR_NEWS / KR_CLOSE, or MACRO / MACRO21. |
+| F | Luồng / bản tin | KR_NEWS / KR_AM, KR_NEWS / KR_MID, KR_NEWS / KR_CLOSE, MACRO / MACRO21, or GLOBAL_US / US_AM. |
 | G | Sản xuất & QC | Machine-observed production state, from the vocabulary below. |
 | H | Anh duyệt | OWNER-CONTROLLED. Initialize CHỜ DUYỆT for a new output; never infer approval. |
 | I | Xuất bản | OWNER-CONTROLLED. Initialize CHƯA ĐĂNG; no auto-posting or inference from approval. |
