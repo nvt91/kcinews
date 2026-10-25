@@ -3,7 +3,7 @@
 ## Existing verified components
 - Private repo: `nvt91/kcinews`
 - Cloudflare health/callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`
-- Vbee voice code: `n_hanoi_male_tuananhnews_news_vc` (approved Tuấn Anh News)
+- Owner-selected Vbee voice code: `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức, selected 26 October 2026). Selection is confirmed; successful live synthesis and listening approval must be established separately. Read [VOICE_PROFILE.md](VOICE_PROFILE.md).
 - Render: Remotion 4, React/TypeScript, FFmpeg/ffprobe available through Actions (existing workflow)
 - The historical benchmark `KciNewsV2` includes 23 October 2026 data **hard-coded in graphic components**. It must not serve new editions.
 - The new composition `KciNewsDaily` consumes the facts and visual kind of v2 editorial jobs. Its look derives from the approved V2.1 style while keeping dates/numbers dynamically supplied.
@@ -24,7 +24,7 @@ Use `jobs/kci-schema-v2-example.json` and run `node scripts/validate-kci-job.mjs
 1. Editorial agent researches/verifies, writes the brief, source ledger, 3 scored hooks, scene voice lines and CTA.
 2. Save reviewed `jobs/kci-YYYY-MM-DD-topic.json` via connected GitHub. Use unique event/story id; don't overwrite approved prior editions.
 3. Run `node scripts/validate-kci-job.mjs jobs/<file>.json`. The production runner calls the same validator for schema v2 before any voice generation.
-4. Test Vbee voice for a new speaker (or material change). For approved Tuấn Anh News, generate/retain segment MP3s. The last segment appends the CTA exactly once.
+4. Test Vbee voice for a new speaker (or material change). Use the owner-selected Anh Khôi Tin tức code and the short-trial/listening gate in [VOICE_PROFILE.md](VOICE_PROFILE.md); after approval, generate/retain segment MP3s. The last segment appends the CTA exactly once. A configuration-only change must not trigger paid TTS or regeneration of archived clips.
 5. Poll Vbee by authenticated request ID, accept only validated HTTPS audio hosts, and inspect MP3 duration with ffprobe. On failed render preserve audio segments; do not blindly repeat paid POSTs on timeout.
 6. Build `props.json` including timing from actual audio and CTA object on the last scene. Render dynamic `KciNewsDaily` when schemaVersion 2; never silently fall back to old historical V2.
 7. Extract screenshots of first 3 sec, main move, company, macro, CTA and outro. Check that date, numbers, labels and sources match the ledger. Audio must be present in final MP4. Subtitle timings are only approximate if word-count based.
