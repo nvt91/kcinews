@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-25-kr-close",
+  "edition": "KINH TẾ & THỊ TRƯỜNG HÀN QUỐC · BẢN CHIỀU CHỦ NHẬT 25/10/2026 KST",
+  "dataAsOf": "2026-10-25T17:48:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Hàn Quốc mở gói tín dụng KOFR 1.000 tỷ won, ngành đóng tàu tăng hợp tác và KOSDAQ yếu",
+  "sourceDisclaimer": "Bản Chủ nhật 25/10/2026; KRX không có phiên hôm nay. Số liệu chứng khoán là chốt 23/10, biến động tuần 19–23/10. Tin và kế hoạch có điều kiện, không khuyến nghị đầu tư.",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "articleId": "KCI-20261025-KR-CLOSE",
+  "articlePath": "editorial/2026-10-25/kr-close.md",
+  "eventKeys": [
+    "KR-KOFR:POLICY_BANK_LOAN_LAUNCH:2026-10-25",
+    "KR-BUSAN:SHIPBUILDING_3X_RELEASE:2026-10-25",
+    "KR-KRX:WEEKLY_CLOSING_BREADTH:2026-10-23"
+  ],
+  "sourceLedger": [
+    {
+      "id": "krx-hours",
+      "title": "Korea Exchange — trading days and regular session, official market regulations",
+      "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602010201/GLB0602010201T1.jsp",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "KOSPI market trades Monday to Friday excluding weekends/holidays. Sunday 25 October 2026 has no KRX cash session. Regular session is 09:00 to 15:30 KST on trading days."
+      ]
+    },
+    {
+      "id": "krx-week-1023",
+      "title": "Newsworks 25 Oct — KRX completed weekly KOSPI and KOSDAQ closes, Friday 23 Oct",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=900595",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Last completed KRX cash market session was Friday October 23: KOSPI 5550.30; KOSDAQ 751.69.",
+        "For the completed trading week ending October 23, KOSPI fell 2.08% from October 16 and KOSDAQ fell 5.42%. These are weekly returns, not movements on October 25."
+      ]
+    },
+    {
+      "id": "seoul-finance-week",
+      "title": "Seoul Finance 25 Oct — market weekly comparison and equity-market context",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=640913",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Corroborates KOSPI Friday October 23 close 5550.30, weekly -2.08%, and KOSDAQ weekly -5.42%; prior week comparison includes 5668.05 KOSPI.",
+        "Market risk discussion relates to AI sector investor confidence, stock buyback flows and uneven selling; no Sunday price changes."
+      ]
+    },
+    {
+      "id": "fsc-kofr-roadmap",
+      "title": "Financial Services Commission — KOFR benchmark reform roadmap, March 30 2026",
+      "url": "https://www.fsc.go.kr/no010101/86586?curPage=3&srchBeginDt=&srchCtgry=&srchEndDt=&srchKey=&srchText=",
+      "eventDate": "2026-03-30",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "FSC/BOK March 30 policy planned KOFR-based short-term lending totaling KRW 1 trillion in H2 2026 from KDB and IBK at KRW 500 billion each.",
+        "Korean overnight repo-based risk-free benchmark to replace reliance on certain legacy reference rates; new KORIBOR lending slated to cease in principle April 2027."
+      ]
+    },
+    {
+      "id": "hankook-kofr-1025",
+      "title": "Hankook Ilbo October 25, 15:24 KST — KOFR products launch October 26",
+      "url": "https://www.hankookilbo.com/news/article/A2026102514320003892",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KDB and IBK plan to launch KOFR-based short-term corporate working-capital loans October 26, KRW 500 billion per institution; announced total size is not actual disbursement.",
+        "FSC/BOK benchmark reform progress: KOFR swap share for July 2025 to June 2026 was 12.1%, above first-year 10% target; benchmark draws from actual secured transactions."
+      ]
+    },
+    {
+      "id": "ajunews-kofr-1025",
+      "title": "Aju News October 25, 15:46 KST — KOFR swap share and planned lending",
+      "url": "https://www.ajunews.com/view/20261025154300205",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Corroborates KOFR swap use ratio 12.1% in year through June 2026, compared to 10% target; preliminary Q3 2026 share 18.5%.",
+        "Confirms KDB/IBK planned lending October 26, KRW 500 billion each, total KRW 1 trillion."
+      ]
+    },
+    {
+      "id": "busan-ship",
+      "title": "Busan Metropolitan City press release October 25 — 3X smart shipbuilding cooperation",
+      "url": "https://www.busan.go.kr/nbtnewsBU/1760531",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "Busan announces on October 25 a cooperation meeting held on October 21 with Ulsan, Gyeongnam and anchor shipbuilding companies for green transition (GX), AI manufacturing transition (AX) and smart transition (SX).",
+        "Busan plans to seek 2027 national budget support; the October 25 release does not establish that this funding has already been awarded."
+      ]
+    },
+    {
+      "id": "yonhap-ship",
+      "title": "Yonhap October 25, 08:20 KST — Busan regional shipbuilding meeting reported",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261025008600051",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Meeting on October 21 included HD Hyundai Heavy Industries, Samsung Heavy Industries, Hanwha Ocean, HJ Heavy Industries and others.",
+        "The proposal discusses 2027 funding, regulation, fiscal/financial aid, workforce and R&D rather than signed contracts or guaranteed funds."
+      ]
+    },
+    {
+      "id": "bop-imf-acct",
+      "title": "Geoje Journal October 25 — IMF/BOK ECOS current-account international comparisons",
+      "url": "https://www.geojejournal.co.kr/news/articleView.html?idxno=208581",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reports IMF-data-based Q2 2026 Korean current account surplus USD 116.63 billion, second among 36 countries with available data; this is reported secondary research, not a independently downloaded IMF primary dataset.",
+        "The IMF annual estimates in news reports remain forecasts, not realized 2026 outcomes."
+      ]
+    },
+    {
+      "id": "bok-gdp-agenda",
+      "title": "MoneyToday October 25 15:29 KST — Q3 Korean growth outlook and October 27 advance GDP",
+      "url": "https://www.mt.co.kr/economy/2026/10/25/2026102511001714923",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-25T17:48:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Bank of Korea Q3 2026 advance GDP release is scheduled October 27, not yet reported at October 25 cutoff.",
+        "The article identifies uneven distribution between chip-led exports and non-chip/domestic sectors; growth projections are forecasts."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Một nghìn tỷ won tín dụng doanh nghiệp sắp ra mắt. Nhưng Hàn Quốc còn thay đổi cả cách tính lãi vay!",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Một nghìn tỷ won tín dụng doanh nghiệp sắp ra mắt. Nhưng Hàn Quốc còn thay đổi cả cách tính lãi vay!"
+      },
+      {
+        "style": "market-impact",
+        "text": "KOSDAQ mất hơn năm phần trăm tuần qua. Vì sao tuần mới nhà đầu tư cần quan tâm đến chính sách tín dụng KOFR?"
+      },
+      {
+        "style": "question",
+        "text": "Hàn Quốc sắp đưa lãi suất KOFR vào vay doanh nghiệp. Liệu điều này có thực sự làm vốn rẻ hơn?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, minh bạch lãi suất hay đầu tư công nghiệp quan trọng hơn cho tăng trưởng Hàn Quốc? Chia sẻ góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "LÃI SUẤT MINH BẠCH HAY NÂNG CẤP SẢN XUẤT?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Minh bạch lãi suất hay đầu tư công nghiệp quan trọng hơn cho tăng trưởng Hàn Quốc?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KINH TẾ & THỊ TRƯỜNG HÀN QUỐC",
+      "headline": "1.000 TỶ WON: THAY ĐỔI CÁCH TÍNH LÃI VAY",
+      "summary": "Bản chiều Chủ nhật 25/10 · Không có phiên KRX hôm nay",
+      "source": "FSC 30/3 · Hankook Ilbo 25/10 · KRX",
+      "sourceIds": [
+        "fsc-kofr-roadmap",
+        "hankook-kofr-1025",
+        "krx-hours"
+      ],
+      "stats": [
+        {
+          "label": "Quy mô sản phẩm dự kiến",
+          "value": "1.000 tỷ won",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.000",
+        "unit": "TỶ WON · KDB + IBK",
+        "qualifier": "Hạn mức công bố; chưa phải vốn đã giải ngân"
+      },
+      "voiceText": "Một nghìn tỷ won tín dụng doanh nghiệp sắp ra mắt. Nhưng Hàn Quốc còn thay đổi cả cách tính lãi vay! Đây là bản chiều Chủ nhật, hai mươi lăm tháng Mười. Sàn KRX nghỉ giao dịch hôm nay."
+    },
+    {
+      "id": "kofr-loans",
+      "eyebrow": "CHÍNH SÁCH TÍN DỤNG",
+      "headline": "KDB + IBK: HAI GÓI VAY 500 TỶ WON",
+      "summary": "Dự kiến mở từ thứ Hai 26/10; dùng lãi suất tham chiếu KOFR",
+      "source": "FSC 30/3 · Hankook Ilbo 25/10",
+      "sourceIds": [
+        "fsc-kofr-roadmap",
+        "hankook-kofr-1025",
+        "ajunews-kofr-1025"
+      ],
+      "stats": [
+        {
+          "label": "KDB · Hạn mức",
+          "value": "500 tỷ won",
+          "tone": "neutral"
+        },
+        {
+          "label": "IBK · Hạn mức",
+          "value": "500 tỷ won",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KDB",
+            "value": 500,
+            "display": "500 tỷ won",
+            "tone": "neutral"
+          },
+          {
+            "label": "IBK",
+            "value": 500,
+            "display": "500 tỷ won",
+            "tone": "neutral"
+          }
+        ],
+        "qualifier": "Hạn mức sản phẩm công bố, KHÔNG phải giải ngân"
+      },
+      "voiceText": "Ngày hai mươi sáu tháng Mười, KDB và IBK dự kiến mở các gói tín dụng dùng lãi tham chiếu KOFR, mỗi ngân hàng năm trăm tỷ won. Tổng cộng một nghìn tỷ won cho vay doanh nghiệp. Đây là quy mô sản phẩm, không phải tiền đã giải ngân."
+    },
+    {
+      "id": "kofr-why",
+      "eyebrow": "VÌ SAO KOFR QUAN TRỌNG?",
+      "headline": "LÃI THAM CHIẾU DỰA TRÊN GIAO DỊCH THẬT",
+      "summary": "Thị trường hoán đổi lãi suất sử dụng KOFR vượt mục tiêu năm đầu",
+      "source": "FSC 30/3 · Aju News 25/10",
+      "sourceIds": [
+        "fsc-kofr-roadmap",
+        "hankook-kofr-1025",
+        "ajunews-kofr-1025"
+      ],
+      "stats": [
+        {
+          "label": "Tỷ trọng KOFR OIS, 7/2025–6/2026",
+          "value": "12,1%",
+          "tone": "up"
+        },
+        {
+          "label": "Mục tiêu năm đầu",
+          "value": "10%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Thực tế 7/25–6/26",
+            "value": 12.1,
+            "display": "12,1%",
+            "tone": "up"
+          },
+          {
+            "label": "Mục tiêu cùng kỳ",
+            "value": 10,
+            "display": "10,0%",
+            "tone": "neutral"
+          }
+        ],
+        "qualifier": "Tỷ trọng giao dịch hoán đổi lãi suất; KHÔNG phải lãi vay"
+      },
+      "voiceText": "KOFR được tính từ giao dịch mua bán lại qua đêm có bảo đảm, thay vì chủ yếu dựa vào báo giá như một số lãi suất cũ. Tỷ trọng hoán đổi dùng KOFR trong năm đầu đạt mười hai phẩy một phần trăm, vượt mục tiêu mười phần trăm. Nhưng đổi chuẩn không đồng nghĩa mọi khoản vay sẽ rẻ hơn."
+    },
+    {
+      "id": "weekly-market",
+      "eyebrow": "CHỨNG KHOÁN: PHIÊN GẦN NHẤT 23/10",
+      "headline": "KOSDAQ GIẢM MẠNH HƠN KOSPI THEO TUẦN",
+      "summary": "Tuần 19–23/10 · KRX main session Friday close, không có phiên Chủ nhật",
+      "source": "Newsworks 25/10 · Seoul Finance 25/10 / KRX",
+      "sourceIds": [
+        "krx-hours",
+        "krx-week-1023",
+        "seoul-finance-week"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI đóng cửa 23/10",
+          "value": "5.550,30",
+          "change": "−2,08%/tuần",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ đóng cửa 23/10",
+          "value": "751,69",
+          "change": "−5,42%/tuần",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "KOSPI (theo tuần)",
+            "value": -2.08,
+            "display": "−2,08%"
+          },
+          {
+            "label": "KOSDAQ (theo tuần)",
+            "value": -5.42,
+            "display": "−5,42%"
+          }
+        ],
+        "qualifier": "Đóng cửa KRX 23/10; so với 16/10, không phải giá 25/10"
+      },
+      "voiceText": "Với chứng khoán, phiên gần nhất là thứ Sáu, ngày hai mươi ba. KOSPI đóng cửa ở năm nghìn năm trăm năm mươi phẩy ba điểm, giảm hai phẩy không tám phần trăm theo tuần. KOSDAQ về bảy trăm năm mươi mốt phẩy sáu chín điểm, giảm năm phẩy bốn hai phần trăm. Đây không phải biến động hôm nay."
+    },
+    {
+      "id": "shipbuilding",
+      "eyebrow": "CHÍNH SÁCH NGÀNH ĐÓNG TÀU",
+      "headline": "BUSAN LIÊN KẾT NGÀNH ĐÓNG TÀU 3X",
+      "summary": "Doanh nghiệp lớn tham gia họp 21/10; thành phố công bố 25/10",
+      "source": "Busan Metropolitan City 25/10 · Yonhap 25/10",
+      "sourceIds": [
+        "busan-ship",
+        "yonhap-ship"
+      ],
+      "stats": [
+        {
+          "label": "Thời điểm cuộc họp",
+          "value": "21/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "Kế hoạch ngân sách",
+          "value": "2027",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "BUSAN · ĐÓNG TÀU",
+        "bullets": [
+          "ĐÓNG TÀU XANH + AI SẢN XUẤT",
+          "NGÂN SÁCH 2027 CHƯA ĐƯỢC DUYỆT"
+        ]
+      },
+      "voiceText": "Tin ngành đáng chú ý: Busan công bố chương trình hợp tác với các doanh nghiệp đóng tàu tại Ulsan và Gyeongnam. HD Hyundai Heavy Industries, Samsung Heavy Industries và Hanwha Ocean có mặt tại cuộc họp hôm hai mươi mốt. Mục tiêu là đóng tàu xanh, ứng dụng AI và đào tạo nhân lực. Ngân sách cho năm hai nghìn không trăm hai mươi bảy vẫn phải vận động."
+    },
+    {
+      "id": "closing",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "CHÍNH SÁCH MỚI · VỐN THẬT · PHỤC HỒI THỊ TRƯỜNG",
+      "summary": "Kiểm chứng thực thi, không coi dự kiến là kết quả đã có",
+      "source": "FSC/KDB/IBK · Busan · KRX, kiểm chứng 25/10 KST",
+      "sourceIds": [
+        "fsc-kofr-roadmap",
+        "hankook-kofr-1025",
+        "busan-ship",
+        "krx-week-1023"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KOFR: gói vay có triển khai đúng 26/10?",
+          "Đóng tàu: nguồn vốn 2027 có được phê duyệt?",
+          "KOSDAQ: nhóm cổ phiếu nhỏ có phục hồi?"
+        ]
+      },
+      "voiceText": "Tuần tới, hãy kiểm tra tín dụng KOFR có triển khai, dự án đóng tàu có nguồn vốn, và thị trường cổ phiếu vừa và nhỏ có hồi phục không. Nội dung tham khảo, không phải khuyến nghị giao dịch."
+    }
+  ]
+}
