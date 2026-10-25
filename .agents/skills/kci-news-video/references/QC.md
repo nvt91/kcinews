@@ -19,12 +19,13 @@
 - [ ] CTA overlay sits within mobile safe area, does not cover or fight with the captions.
 
 ## C. Voice / audio
-- [ ] Vbee Tuấn Anh News (code `n_hanoi_male_tuananhnews_news_vc`), no eSpeak / generic English voice.
+- [ ] New narration uses Vbee Anh Khôi Tin tức (code `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`), selected by the owner on 26 October 2026; no eSpeak / generic English voice. Read [VOICE_PROFILE.md](VOICE_PROFILE.md). Verify actual job/run voice evidence and the short-trial/listening gate; a configuration change alone is not successful synthesis or listening approval.
+- [ ] Historical/in-flight artifacts retain their actual original voice. Do not relabel old Tuấn Anh News audio as Anh Khôi, fail historical output merely because the default changed, or regenerate paid narration without authorization.
 - [ ] All scenes have audible audio, no missing/cut sentence, sudden clipping, or duplicated outro CTA.
 - [ ] Correct pronunciation of KOSPI, SK hynix, BOK, USD/KRW, won, dates, percentages and intraday high.
 - [ ] Background music legally usable and well below spoken volume. Correct final integrated loudness if an audio processing pass was done.
 - [ ] Voice length drives scene duration. MP4 has real AAC stream and decodable packets.
-- [ ] Layout-only revisions retain the existing approved voice/timing. Do not call Vbee again unless the spoken script changes.
+- [ ] Layout-only revisions retain the existing approved voice/timing. Do not call Vbee again unless the spoken script changes or the owner explicitly requests replacing that clip's voice.
 
 ## D. Motion graphics and typography
 - [ ] 1080×1920, 30 fps, readable font with Vietnamese diacritics; no clipped letters, overlap or extreme density.
