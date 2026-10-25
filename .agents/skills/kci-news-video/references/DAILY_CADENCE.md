@@ -1,5 +1,9 @@
 # KCI — Separate macro coverage and Korean economic/market digests
 
+## Mandatory Sheet handoff — owner request, 25 October 2026
+
+Every KR_NEWS/MACRO producer and KCI Video Completion Watch must also read [SHEET_TRACKING.md](SHEET_TRACKING.md) and update the owner's existing **KCI News** Google Sheet through connected Google Drive tools at meaningful checkpoints and before returning a result. Spreadsheet ID: `1ZBtYv3sW20VZUpQXeA8o9BguGm-Dx7jyJ2U56bH1ur0`; sheetId0, `Trang tính1`, headers row2, records from row3, exact articleId key in columnK. Preserve the original B:E fields, native table, owner approval/publication choices and feedback. Upsert one row per edition, read back writes, and report actual sync failures. The completion-notification marker suppresses duplicate chat delivery, NOT reconciliation of a missing/stale Sheet row. Do not recreate audio/video to fix a Sheet failure. This is agent-mediated logging, not a GitHub webhook. It changes no schedules, quotas, billing, unrelated workflows or publishing authorization. The separate Global/US task is inventory-only unless the owner separately asks to integrate it.
+
 Owner clarification: 24 October 2026. This REPLACES the mistaken four-article/four-video cadence. Korean digest schedules start 25 October 2026. The independent macro task is restored to its existing 21:00 Asia/Seoul slot, including 24 October. This document is an operating contract, not an executable scheduler.
 
 ## Two independent streams
