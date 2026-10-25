@@ -182,7 +182,7 @@
       "eyebrow": "KINH TẾ ĐỐI NGOẠI",
       "headline": "116,63 tỷ USD trong một quý",
       "summary": "Đức và Nhật cộng lại: 102,89 tỷ USD.",
-      "voiceText": "Theo số IMF trên hệ thống thống kê Ngân hàng Trung ương Hàn Quốc được báo chí dẫn ngày hai mươi lăm tháng mười, cán cân vãng lai quý hai thặng dư một trăm mười sáu phẩy sáu ba tỷ đô la. Lớn hơn Đức và Nhật cộng lại. Đây là số quý hai, không phải quý ba hay kết quả hôm nay.",
+      "voiceText": "Theo IMF qua thống kê BOK được báo chí dẫn ngày hai mươi lăm, cán cân vãng lai Hàn Quốc quý hai thặng dư một trăm mười sáu phẩy sáu ba tỷ đô la. Lớn hơn Đức và Nhật cộng lại. Đây không phải số quý ba.",
       "source": "News1, Kyunghyang 25/10/2026",
       "sourceIds": [
         "ca-news1-1025",
@@ -209,7 +209,7 @@
       "eyebrow": "ĐẰNG SAU CON SỐ",
       "headline": "Bán dẫn là động lực chủ yếu",
       "summary": "Thặng dư đối ngoại không phải lợi nhuận chứng khoán.",
-      "voiceText": "Động lực lớn đến từ xuất khẩu bán dẫn. Nhưng thặng dư cán cân vãng lai không có nghĩa mọi doanh nghiệp đều có doanh thu tốt, hay mọi hộ gia đình đều tăng thu nhập. Hàn Quốc cần xem dòng ngoại tệ có biến thành đầu tư, việc làm và sức mua trong nước hay không.",
+      "voiceText": "Xuất khẩu bán dẫn hỗ trợ mức thặng dư này. Nhưng không thể suy mọi doanh nghiệp, hộ gia đình đều khá lên. Cần xem đầu tư, việc làm và tiêu dùng nội địa.",
       "source": "News1; YTN, 25/10/2026",
       "sourceIds": [
         "ca-news1-1025",
@@ -231,7 +231,7 @@
       "eyebrow": "CẬP NHẬT NGÀNH CHIP",
       "headline": "Micron: cảnh báo lao động tại Đài Loan",
       "summary": "Diễn biến từ ngày 22/10, chưa có xác nhận đứt nguồn cung.",
-      "voiceText": "Ở thị trường bộ nhớ, Micron vừa trải qua cuộc ngừng việc cảnh báo hai mươi bốn giờ tại Taoyuan hôm hai mươi hai tháng mười. Công đoàn tại Taichung đã đạt thỏa thuận; Micron công bố kế hoạch thưởng theo lợi nhuận. Chưa có bằng chứng sản lượng chip bị gián đoạn kéo dài.",
+      "voiceText": "Tại Đài Loan, công đoàn Micron ở Taoyuan ngừng việc cảnh báo hai mươi bốn giờ hôm hai mươi hai tháng mười. Taichung trước đó đã đạt thỏa thuận. Micron công bố thưởng gắn lợi nhuận. Chưa có bằng chứng gián đoạn cung ứng kéo dài.",
       "source": "Reuters / Dong-A, 21–22/10/2026",
       "sourceIds": [
         "micron-reuters-1021",
@@ -254,7 +254,7 @@
       "eyebrow": "TÁC ĐỘNG ĐẾN HÀN QUỐC",
       "headline": "Không vội suy lợi thế cho Samsung, SK hynix",
       "summary": "Phải quan sát thực tế cung–cầu và sản lượng.",
-      "voiceText": "Với Samsung Electronics và SK hynix, chuyện đáng theo dõi là nguồn cung DRAM và HBM thực tế, cùng chi phí nhân lực. Một cuộc cảnh báo ngắn không đủ để kết luận giá chip tăng hay doanh nghiệp Hàn Quốc chắc chắn hưởng lợi.",
+      "voiceText": "Với Samsung và SK hynix, hãy theo dõi sản lượng DRAM, HBM và giá bán thực tế. Đình công cảnh báo ngắn không có nghĩa hai hãng Hàn chắc chắn hưởng lợi.",
       "source": "Reuters, 21–22/10/2026",
       "sourceIds": [
         "micron-reuters-1021",
@@ -276,7 +276,7 @@
       "eyebrow": "PHÉP THỬ TIẾP THEO",
       "headline": "Chờ GDP quý III và sức cầu nội địa",
       "summary": "26/10 lúc 08:10: KRX chính thức chưa mở phiên.",
-      "voiceText": "Sáng nay, phiên chính KRX chưa mở cửa; NXT có phiên trước giờ riêng, nên không gọi đây là giá đóng cửa hôm nay. Tiếp theo cần đối chiếu GDP Hàn Quốc khi công bố với tiêu dùng và đầu tư trong nước. Không đánh đồng thặng dư ngoại thương với sức khỏe mọi ngành.",
+      "voiceText": "Lúc tám giờ mười sáng nay KRX chưa mở phiên chính; NXT là phiên trước giờ riêng. Chờ GDP quý ba và số liệu tiêu dùng để kiểm tra sức khỏe nội địa.",
       "source": "KRX / NXT; báo cáo chính phủ tháng 10",
       "sourceIds": [
         "krx-hours",
