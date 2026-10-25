@@ -1,7 +1,7 @@
 # Korea Capital Insight: Hook / Voice Script / CTA playbook
 
 ## Brand voice
-Professional newsroom, clear and energetic **without** hysterical urgency or artificial AI filler. Spoken Vietnamese for investors following Korean equities and macroeconomic developments. Explain what happened, *why*, Korean market relevance, then the next checkpoint. Voice is Vbee Tuấn Anh News; pronounce stocks, acronyms, numbers and dates consistently.
+Professional newsroom, clear and energetic **without** hysterical urgency or artificial AI filler. Spoken Vietnamese for investors following Korean equities and macroeconomic developments. Explain what happened, *why*, Korean market relevance, then the next checkpoint. Voice is Vbee Anh Khôi Tin tức (`n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`); pronounce stocks, acronyms, numbers and dates consistently. Follow [VOICE_PROFILE.md](VOICE_PROFILE.md) for the changed-speaker trial and historical-audio rules.
 
 ## Hook decision system
 For the same set of verified facts draft **at least three distinct candidates**:
