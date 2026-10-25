@@ -1,11 +1,13 @@
 # Korea Capital Insight — Daily News Video Engine
 
-Video newsroom for **Korean equities and macroeconomic news in Vietnamese**. Converts a freshly sourced KCI news brief into a verified hook/script, an engagement CTA, **Vbee Tuấn Anh News** narration and data-driven **Remotion / FFmpeg** motion graphics.
+Video newsroom for **Korean equities and macroeconomic news in Vietnamese**. Converts a freshly sourced KCI news brief into a verified hook/script, an engagement CTA, **Vbee Anh Khôi Tin tức** narration and data-driven **Remotion / FFmpeg** motion graphics.
 
 ## The complete skill
 
 **Name:** `kci-news-video`  
 **Source:** [`.agents/skills/kci-news-video/SKILL.md`](.agents/skills/kci-news-video/SKILL.md)
+
+Selected voice for NEW videos (26/10/2026): `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`. Older videos retain their original narration; selection must be confirmed with a real Vbee voice sample before audio quality can be approved.
 
 Inside the skill:
 - `references/EDITORIAL_BRIEF.md` — freshness, data cutoff, filings, Korean impact and source ledger
@@ -20,7 +22,7 @@ The historical 23 October 2026 video is the approved V2.1 design reference; new 
 
 Say, for example:
 
-> Dùng quy trình kci-news-video, tạo bản tin KCI tối nay. Kiểm chứng tin mới, chọn hook mạnh, viết kịch bản tiếng Việt, có lời mời bình luận và theo dõi, dựng video 9:16 bằng giọng Tuấn Anh News. Xuất bản nháp cho tôi duyệt, chưa đăng.
+> Dùng quy trình kci-news-video, tạo bản tin KCI tối nay. Kiểm chứng tin mới, chọn hook mạnh, viết kịch bản tiếng Việt, có lời mời bình luận và theo dõi, dựng video 9:16 bằng giọng Anh Khôi Tin tức. Xuất bản nháp cho tôi duyệt, chưa đăng.
 
 This is a **repository-local Agent Skill**, not an automatically installed ChatGPT @ plugin. A connected GitHub workflow can be operated from ChatGPT without a separate Codex prompt per video.
 
