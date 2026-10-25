@@ -1,11 +1,11 @@
 ---
 name: kci-news-video
-description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news, from a verified brief and strong truthful hook to script, follow/comment/save CTA, Vbee Tuấn Anh News narration, Remotion motion graphics, and MP4 quality control. Use for "bản tin KCI", "video chứng khoán Hàn Quốc", "brief vĩ mô", "kịch bản hook và CTA" and recurring news-video requests.
+description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news, from a verified brief and strong truthful hook to script, follow/comment/save CTA, Vbee Anh Khôi Tin tức narration, Remotion motion graphics, and MP4 quality control. Use for "bản tin KCI", "video chứng khoán Hàn Quốc", "brief vĩ mô", "kịch bản hook và CTA" and recurring news-video requests.
 ---
 
 # KCI News Video — Production Skill v2.0
 
-The owner approved Korea Capital Insight financial-news styling, the Vbee voice `n_hanoi_male_tuananhnews_news_vc` (Tuấn Anh News), and the Remotion V2.1 design direction. Preserve those decisions. The purpose of this skill is a **repeatable source-backed Vietnamese financial newsroom**, not a static slideshow.
+The owner approved Korea Capital Insight financial-news styling, selected the Vbee voice `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức) on 26 October 2026, and approved the Remotion V2.1 design direction. Preserve those decisions. The purpose of this skill is a **repeatable source-backed Vietnamese financial newsroom**, not a static slideshow. Read [VOICE_PROFILE.md](references/VOICE_PROFILE.md) for the current selection, trial/listening gate and preservation of historical narration; a saved voice code is not proof of successful synthesis or listening approval.
 
 ## Invocation and references
 
@@ -20,6 +20,7 @@ Read the focused references at the matching stage:
 2. [Hook, script and engagement CTA](references/HOOK_CTA.md)
 3. [Vbee, Remotion and GitHub workflow](references/PRODUCTION.md)
 4. [Editorial/visual/voice QC and release](references/QC.md)
+5. [Current voice selection and migration rules](references/VOICE_PROFILE.md)
 
 ## Non-negotiable rules
 
@@ -63,8 +64,8 @@ The validator checks source references, the hook beginning, CTA completion and j
 
 ### 5 — Vbee + Remotion
 
-- Voice: `n_hanoi_male_tuananhnews_news_vc`; Cloudflare callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`.
-- First use or voice change: request a short trial and listen. After approval, generate Vbee MP3 for each scene with real durations and retain them.
+- Voice: `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức); Cloudflare callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`.
+- First use or voice change: request a short trial and listen. After approval, generate Vbee MP3 for each scene with real durations and retain them. Follow [VOICE_PROFILE.md](references/VOICE_PROFILE.md); do not claim the new voice has already passed a live test, and do not regenerate old clips merely to change the default.
 - New schema v2 jobs render via data-driven `KciNewsDaily`. The historical `KciNewsV2` is the **approved 23/10 benchmark**, but contains some hard-coded numbers; don't reuse its historic charts for current jobs.
 - Generate captions from narration; word-count timing is **estimated**, never claim it is forced aligned. Review and correct before publishing.
 - Motion visuals must be sourced/parameterized. 9:16 at 1080×1920, 30 FPS, H.264/AAC.
