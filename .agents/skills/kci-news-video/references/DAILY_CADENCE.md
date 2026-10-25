@@ -34,7 +34,7 @@ KR_NEWS uses digest mode, NOT one video per written article. The written brief c
 
 Target 90–110 seconds within the approved 60–110-second range; reduce items rather than rush narration. Single-story format remains available for the separate macro video or an exceptionally dominant story. Draft three truthful hooks and select one. Use one meaningful comment invitation plus a restrained follow request, spoken once and displayed. Retain a short information-only disclaimer.
 
-Read SKILL.md, EDITORIAL_BRIEF.md, HOOK_CTA.md, PRODUCTION.md and QC.md. This document controls stream/count/digest format; their source, security, voice and QA gates remain binding.
+Read SKILL.md, EDITORIAL_BRIEF.md, HOOK_CTA.md, PRODUCTION.md, QC.md and VOICE_PROFILE.md. This document controls stream/count/digest format; their source, security, voice and QA gates remain binding.
 
 ## Identity and persistent handoff
 
@@ -58,7 +58,7 @@ Before job/trigger creation, check exact date+stream+edition, issues/runs and le
 1. Research the web anew; open sources/amendments. Prefer DART/KIND, KRX/NXT, company IR, BOK/ECOS, issuing Korean agencies, Fed/BLS/BEA/Treasury. Reuters/Yonhap support discovery/context/corroboration. Record real URLs, publication/event dates, reporting period, units, venue/session and KST cutoff. Old chat numbers and snippets are not fresh evidence.
 2. Separate facts/estimates/analysis. Resolve conflicting figures or omit them. Score source/data35+analysis25+freshness15+Vietnamese15+distinctness10. Require85+ and no material error before paid voice; score is not probability. Critical evidence missing=BLOCKED. No private portfolio details, invented targets, trading instructions or promises.
 3. Save brief, source ledger, selected hooks, script, source-linked scenes, event keys and reviewed JSON. Validate schema before TTS. Structural validation is not factual verification.
-4. Preserve Vbee Tuấn Anh News n_hanoi_male_tuananhnews_news_vc, existing Secrets/callback, Remotion KciNewsDaily, 1080x1920,30fps,H.264/AAC. No archived hard-coded charts, fictitious intraday curves, silent-video substitution or unapproved voice. Never print/request credentials.
+4. Use the owner-selected Vbee Anh Khôi Tin tức `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` for new narration, following [VOICE_PROFILE.md](VOICE_PROFILE.md) and its trial/listening gate. Preserve existing Secrets/callback, Remotion KciNewsDaily, 1080x1920,30fps,H.264/AAC. No archived hard-coded charts, fictitious intraday curves, silent-video substitution or unapproved voice. Never print/request credentials. Do not regenerate or relabel older audio when changing this default.
 5. Save valid files on main, then create ONE owner-authored [KCI VIDEO] issue for the edition, using .github/workflows/kci-video.yml. Production runs do not modify workflows, Secrets, schedules or billing settings.
 6. Inspect actual MP4: source/date/venue labels, opening/middle/CTA/outro, Vietnamese overflow, audible correct narration, CTA, audio streams and captions. Word-count timing is estimated. Never claim listening/visual inspection not performed.
 
