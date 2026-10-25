@@ -19,7 +19,7 @@
 - [ ] CTA overlay sits within mobile safe area, does not cover or fight with the captions.
 
 ## C. Voice / audio
-- [ ] Vbee Tuấn Anh News (code `n_hanoi_male_tuananhnews_news_vc`), no eSpeak / generic English voice.
+- [ ] For NEW video narrations, Vbee Anh Khôi Tin tức (code `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`), no eSpeak / generic English voice. Verify the actual run or MP3 and follow `VOICE_PROFILE.md`; do not relabel old Tuấn Anh News videos as Anh Khôi.
 - [ ] All scenes have audible audio, no missing/cut sentence, sudden clipping, or duplicated outro CTA.
 - [ ] Correct pronunciation of KOSPI, SK hynix, BOK, USD/KRW, won, dates, percentages and intraday high.
 - [ ] Background music legally usable and well below spoken volume. Correct final integrated loudness if an audio processing pass was done.
