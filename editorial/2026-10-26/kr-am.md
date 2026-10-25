@@ -35,3 +35,10 @@ Chọn **#1 + #2 + #3**, #4 làm cảnh “cần theo dõi”; một video tổn
 ## Nguồn, chất lượng và chặn TTS
 
 Source ledger đầy đủ, claim IDs, timestamp và schema nằm tại `jobs/kci-2026-10-26-kr-am.json`; voice mới Anh Khôi Tin tức `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`. Thử giọng issue #29 GitHub Actions [run 40205899873](https://github.com/nvt91/kcinews/actions/runs/40205899873) **SUCCESS**, artifact audio 12603951980, nhưng **chưa có bằng chứng đã nghe và phê duyệt đoạn kiểm thử** (issue không có xác nhận trong comments). Theo VOICE_PROFILE, giữ BLOCKED trước toàn bộ paid TTS/video; không tạo issue [KCI VIDEO], không chạy full synthesis, không dựng MP4 hoặc bịa link. Giá và số liệu giữ đúng mốc quá khứ/tương lai; giới hạn bảng IMF/BOK gốc còn thiếu nêu rõ, không xem là số đã xác thực độc lập.
+
+## QA và nhật ký handoff
+
+- **Schema v2:** kiểm tra độc lập đầy đủ các ràng buộc nguồn, scene, CTA, định dạng KST và giới hạn runner: PASS; **chưa chạy trực tiếp lệnh Node validator trong Actions**, vì chưa đạt cổng nghe duyệt trước paid TTS.
+- **Voice trial đã có từ trước:** issue [#29](https://github.com/nvt91/kcinews/issues/29), run [40205899873](https://github.com/nvt91/kcinews/actions/runs/40205899873) SUCCESS; artifact `12603951980` (hết hạn 02/11/2026 00:14 KST, yêu cầu quyền GitHub). MP3 từ artifact: 6,576 giây, 24kHz mono, mean −19,6 dB, peak −1,5 dB; có tiếng nhưng **chưa nghe/đối chiếu phát âm bởi người duyệt**, không xác nhận chất lượng giọng hoặc chấp thuận. File mẫu trong cuộc trò chuyện: `KCI_AnhKhoi_TinTuc_VoiceTrial_20261026.mp3`. Không tạo lại mẫu, chưa sản xuất toàn bộ lời đọc.
+- **SHEET_SYNC_OK:** ngày 26/10/2026, ghi đúng một bản `KCI-20261026-KR-AM` tại `Trang tính1!B10:O10` và đọc lại; C/E trống, G=`BLOCKED`, H=`CHỜ DUYỆT`, I=`CHƯA ĐĂNG`; M dẫn **run thử giọng, không phải run dựng video**. Bảng native Bảng_1 được mở rộng đến hàng 10. Không sửa bản tin khác.
+- **Release gate:** BLOCKED_PENDING_VOICE_LISTEN_APPROVAL. Không tạo `[KCI VIDEO]` issue/full Vbee/Remotion, không có MP4, không báo hoàn thành và không tự đăng. Các kỳ tiếp theo vẫn thuộc lịch đang có; không tạo lịch hay chạy bù.
