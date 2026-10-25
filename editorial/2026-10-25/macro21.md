@@ -30,21 +30,21 @@
    Fed họp trước, dữ liệu lạm phát Mỹ đến sau! Còn Hàn Quốc chuẩn bị công bố GDP quý ba. Đồng won sẽ chịu phép thử nào?
 
 2. 27/10: KIỂM TRA CHẤT LƯỢNG TĂNG TRƯỞNG
-   Sáng hai mươi bảy tháng mười, BOK dự kiến công bố GDP quý ba. Quý hai, kinh tế Hàn Quốc tăng không phẩy sáu phần trăm so với quý trước. Lần này cần xem tiêu dùng nội địa có bắt kịp xuất khẩu không.
+   Ngày hai mươi bảy tháng mười, BOK dự kiến công bố GDP quý ba. Quý hai tăng không phẩy sáu phần trăm so với quý trước. Cần xem tiêu dùng nội địa có theo kịp xuất khẩu.
 
 3. BOK GIỮ LÃI SUẤT 3,00%
-   Ngày hai mươi hai tháng mười, BOK giữ lãi suất cơ bản ba phần trăm. Ngân hàng nhấn mạnh rủi ro lạm phát và tài chính. Tăng trưởng quý ba sẽ là dữ liệu mới để đánh giá chính sách, chưa phải một quyết định tăng lãi suất.
+   BOK vừa giữ lãi suất cơ bản ba phần trăm hôm hai mươi hai tháng mười, vì lạm phát và rủi ro tài chính. GDP quý ba sẽ bổ sung căn cứ cho quyết định tiếp theo.
 
 4. FED SẮP HỌP, CHƯA RA QUYẾT ĐỊNH
-   Fed họp hai ngày, hai mươi bảy và hai mươi tám tháng mười theo giờ Mỹ. Kết quả chưa được công bố. Với đồng won, điểm quan trọng là Fed phát tín hiệu cứng rắn hay ôn hòa hơn kỳ vọng của thị trường.
+   Fed họp ngày hai mươi bảy đến hai mươi tám tháng mười theo giờ Mỹ; chưa có kết quả. Thông điệp cứng rắn hay ôn hòa hơn kỳ vọng có thể ảnh hưởng đồng won.
 
 5. GDP QUÝ III VÀ PCE THÁNG CHÍN
-   Tối hai mươi chín tháng mười, lúc chín giờ ba mươi theo giờ Seoul, Mỹ dự kiến công bố GDP quý ba bản đầu và báo cáo chi tiêu tháng chín, gồm PCE. Các số này ra sau cuộc họp Fed; hiện chưa có kết quả.
+   Tối hai mươi chín tháng mười, lúc chín giờ ba mươi theo giờ Seoul, Mỹ lên lịch công bố GDP quý ba và báo cáo PCE tháng chín. Cả hai công bố sau cuộc họp Fed.
 
 6. GDP · LỢI SUẤT · USD/KRW
-   Nếu tăng trưởng Hàn yếu hơn dự kiến còn Fed cứng rắn, đô la có thể gây áp lực lên won. Chiều ngược lại cũng có thể xảy ra. Hãy theo dõi số thực tế so với dự báo và tỷ giá USD trên won. Đây không phải khuyến nghị giao dịch.
+   GDP Hàn yếu hơn dự kiến trong khi Fed cứng rắn có thể gây sức ép lên won. Chiều ngược lại cũng có thể. Hãy đối chiếu số thực tế với kỳ vọng trước khi kết luận.
 
-**CTA chính — đọc một lần tại cảnh cuối sau voiceText:** Theo anh chị, GDP Hàn Quốc hay thông điệp từ Fed sẽ tác động mạnh hơn đến đồng won trong tuần tới? Hãy bình luận góc nhìn và theo dõi Korea Capital Insight để cùng kiểm chứng.
+**CTA chính — đọc một lần tại cảnh cuối sau voiceText:** Theo anh chị, GDP Hàn Quốc hay thông điệp Fed sẽ tác động mạnh hơn tới đồng won tuần tới? Bình luận góc nhìn và theo dõi Korea Capital Insight để kiểm chứng.
 
 **On-screen CTA:** GDP HÀN HAY FED SẼ TÁC ĐỘNG ĐẾN WON? — Bình luận góc nhìn · Theo dõi KCI để đối chiếu dữ liệu
 
