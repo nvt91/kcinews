@@ -35,7 +35,7 @@ try {
 
   process.env.VBEE_APP_ID = "fake-unit-app";
   process.env.VBEE_API_TOKEN = "fake-unit-token";
-  process.env.VBEE_VOICE_CODE = "n_hanoi_male_tuananhnews_news_vc";
+  process.env.VBEE_VOICE_CODE = "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc";
   process.env.VBEE_WEBHOOK_URL = "https://kcinews.golffashion-vn.workers.dev/api/vbee-callback";
   const oldFetch = globalThis.fetch;
   const calls = [];
@@ -44,6 +44,7 @@ try {
       calls.push({url: String(url), method: options.method || "GET", redirect:options.redirect});
       if (String(url) === "https://api.vbee.vn/v1/tts") {
         assert.equal(options.method, "POST");
+        assert.equal(JSON.parse(options.body).voiceCode, "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc");
         return new Response(JSON.stringify({
           status: "PROCESSING",
           requestId: "test-request-123",
