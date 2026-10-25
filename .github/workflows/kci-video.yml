@@ -94,7 +94,7 @@ jobs:
       KCI_MODE: ${{ inputs.mode }}
       VBEE_APP_ID: ${{ secrets.VBEE_APP_ID }}
       VBEE_API_TOKEN: ${{ secrets.VBEE_API_TOKEN }}
-      VBEE_VOICE_CODE: n_hanoi_male_tuananhnews_news_vc
+      VBEE_VOICE_CODE: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc
       VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
       VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS || 'vbee-studio2-3.s3.ap-southeast-1.amazonaws.com' }}
     steps:
