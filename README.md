@@ -14,6 +14,7 @@ Inside the skill:
 - `references/HOOK_CTA.md` — three fact-based hooks, voice script and a meaningful comment/follow/save CTA
 - `references/PRODUCTION.md` — Vbee + Remotion + GitHub Actions runbook
 - `references/QC.md` — editorial, audio, motion, subtitle and publication release gates
+- `references/POST_PRODUCTION.md` — nine-step editing standard; separate actual camera takes/color/zoom from AI-voiced motion graphics, with a preview-before-final gate
 - `templates/DAILY_BRIEF.md` — narrative brief template
 
 The historical 23 October 2026 video is the approved V2.1 design reference; new episodes use the **`KciNewsDaily`** template, not historical hard-coded stock prices.
@@ -40,7 +41,8 @@ Secrets `VBEE_APP_ID` and `VBEE_API_TOKEN` remain only in GitHub Actions Secrets
 4. Validate the job: `node scripts/validate-kci-job.mjs jobs/<filename>.json`.
 5. Test or approve the voice. The workflow appends `cta.spoken` to the final Vbee narration segment exactly once.
 6. Render with `KciNewsDaily`. Estimate captions initially; human-check sync.
-7. Inspect the actual H.264/AAC video, all source labels, CTA and typography; deliver for approval, **not for automatic posting**.
+7. Follow `references/POST_PRODUCTION.md` and inspect 0–3s hook, sparse keyword callouts, effects-map sync when measured, audio mix, Reels-safe stills and preview QC. Real multi-take/eye tracking/skin grading apply only to real footage.
+8. Deliver the verified H.264/AAC PREVIEW for owner approval, **not for automatic posting**. Call a separately created export FINAL only after explicit owner approval; don't pretend named paths or word alignment/audio measurements exist.
 
 New jobs use schema v2 and KST `dataAsOf`. An archival 2026 video must never be treated as today's quote.
 
