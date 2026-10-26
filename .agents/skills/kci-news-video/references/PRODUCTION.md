@@ -1,47 +1,51 @@
 # KCI Production Contract: ChatGPT → GitHub → Vbee → Remotion
 
-## Existing verified components
-- Private repo: `nvt91/kcinews`
-- Cloudflare health/callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`
-- Owner-selected Vbee voice code: `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức, selected 26 October 2026). Selection is confirmed; successful live synthesis and listening approval must be established separately. Read [VOICE_PROFILE.md](VOICE_PROFILE.md).
-- Render: Remotion 4, React/TypeScript, FFmpeg/ffprobe available through Actions (existing workflow)
-- The historical benchmark `KciNewsV2` includes 23 October 2026 data **hard-coded in graphic components**. It must not serve new editions.
-- The new composition `KciNewsDaily` consumes the facts and visual kind of v2 editorial jobs. Its look derives from the approved V2.1 style while keeping dates/numbers dynamically supplied.
-- Do not require Descript, Lovable or Codex for everyday ChatGPT-triggered production.
+## Current runtime and approval boundary — 26 October 2026
 
-## Job structure
-Use `jobs/kci-schema-v2-example.json` and run `node scripts/validate-kci-job.mjs <path>`. Important fields:
-- `schemaVersion` = 2, `id`, `edition`, `dataAsOf` ISO timestamp with +09:00, `headline`, `status` = REVIEW_REQUIRED.
-- `sourceLedger[]`: `id` / `title` / `url` / `eventDate` / `checkedAt` / `facts[]`. One claim can cite multiple sources; no orphan scene source ID.
-- `hook.spoken`: must be the opening words of first scene `voiceText`.
-- `cta`: one primary CTA with spoken + visual texts.
-- `scenes[]`: unique id, eyebrow, headline, summary, voiceText, source, sourceIds[], stats[] and `visual`.
-- `visual.kind` maps to one of `reversal`, `comparison`, `company`, `risk-bars`, `spotlight`, `rate`, `closing`, `generic`.
-- Where bars represent numeric observations, `visual.bars[]` contains actual signed values with units/labels. No interpolation of unseen price ticks.
-- For reversal, `visual.milestones[]` are **discrete confirmed checkpoints** with labels such as OPEN/LOW/CLOSE, not a sampled time series.
+Read [EDITING_WORKFLOW.md](EDITING_WORKFLOW.md) for the owner's nine-step profile and [ALIGNED_PREVIEW_RUNTIME.md](ALIGNED_PREVIEW_RUNTIME.md) for executable commands, editing-plan fields and honest QA limits.
 
-## Main pipeline
-1. Editorial agent researches/verifies, writes the brief, source ledger, 3 scored hooks, scene voice lines and CTA.
-2. Save reviewed `jobs/kci-YYYY-MM-DD-topic.json` via connected GitHub. Use unique event/story id; don't overwrite approved prior editions.
-3. Run `node scripts/validate-kci-job.mjs jobs/<file>.json`. The production runner calls the same validator for schema v2 before any voice generation.
-4. Test Vbee voice for a new speaker (or material change). Use the owner-selected Anh Khôi Tin tức code and the short-trial/listening gate in [VOICE_PROFILE.md](VOICE_PROFILE.md); after approval, generate/retain segment MP3s. The last segment appends the CTA exactly once. A configuration-only change must not trigger paid TTS or regeneration of archived clips.
-5. Poll Vbee by authenticated request ID, accept only validated HTTPS audio hosts, and inspect MP3 duration with ffprobe. On failed render preserve audio segments; do not blindly repeat paid POSTs on timeout.
-6. Build `props.json` including timing from actual audio and CTA object on the last scene. Render dynamic `KciNewsDaily` when schemaVersion 2; never silently fall back to old historical V2.
-7. Extract screenshots of first 3 sec, main move, company, macro, CTA and outro. Check that date, numbers, labels and sources match the ledger. Audio must be present in final MP4. Subtitle timings are only approximate if word-count based.
-8. Package artifact MP4, source/job JSON, voice transcript, optional SRT/thumbnail, QC status. No upload to Facebook/Instagram/website without approval.
+The schema-v2 `preview` path now creates a voiced review MP4 from real Vbee audio and Whisper word alignment. `video` is a backward-compatible alias for PREVIEW, not automatic final. An owner `[KCI VIDEO]` issue also stops at voiced preview. A new job MUST include a reviewed `editingPlan` or `editingPlanPath`; the template cannot invent an effects map. `validate` stays no-TTS. Do not reuse the earlier silent preview or word-count captions as evidence of word alignment.
 
-## Direct ChatGPT execution via GitHub connector
-On default branch with v2 job, the current authorized path is:
-- GitHub Issue by repository owner: title `[KCI VIDEO] 2026-10-24 morning` (or `[KCI VOICE TEST] ...`)
-- JSON body `{"job":"jobs/kci-2026-10-24-morning.json"}`
-- Workflow `.github/workflows/kci-video.yml` must be on `main` and must use review-only artifacts.
-- A GitHub issue triggers production, NOT a social post. Check workflow completion, retrieve artifact, inspect, then deliver link.
+Preview delivery is `output/preview.mp4` plus every-beat stills and measured logs. Output `output/final.mp4` only after the owner explicitly approves the specific preview/cut and required listening/factual/sync QA passes. Final uses1080x1920,H.264 target18Mbps,AAC320k; motion-only retains30fps. The current executable route is TTS/motion only, not automatic face tracking or camera editing. Real footage requires its own validated input/FPS/take/face pipeline; do not silently process it as TTS.
 
-The legacy `[KCI V2 QUICK]` workflow is bound to the Oct 2026 archived 7-MP3 artifact; it is **not** a universal daily renderer.
+## Components
+- Private repo `nvt91/kcinews`.
+- Cloudflare callback `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`.
+- Owner-selected Vbee code `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức). Read [VOICE_PROFILE.md](VOICE_PROFILE.md); configuration is not proof of successful synthesis or listening approval.
+- Remotion4,React/TypeScript,FFmpeg/ffprobe; CPU-only matching torch/torchaudio and stable-ts/faster-whisper installed by `scripts/install-alignment.sh`.
+- `src/aligned-index.tsx` registers composition ID `KciNewsDaily` for the word-cued runtime. The historical entry/template remains for archived fixtures; it is not the new voiced-preview route.
+- Historical `KciNewsV2` contains hard-coded23October data and must not serve new episodes. No Descript/Lovable/Codex requirement for routine production.
 
-## Security and cost
-- `VBEE_APP_ID` and `VBEE_API_TOKEN` are GitHub Secrets. They must never appear in code, issue body, published article, data artifact or ChatGPT message.
-- Existing Cloudflare Worker is notification-only. It cannot trigger synthesis or verify the identity of a market-data source.
-- Use the exact allowlisted external Vbee S3 host observed from production, not an unrestricted internet audio URL.
-- Render artifact retention is limited by Actions policy; maintain archival copies as needed.
-- Voice credits and GitHub Actions runtime can have costs, but a paid Vbee subscription already exists. Don't block approved content solely out of generic cost concern; do avoid unnecessary duplicate generation.
+## Reviewed job structure
+
+Use the existing schema-v2 example and validator, preserving all source fields:
+- `schemaVersion:2`,unique`id`,`edition`,`dataAsOf`KST timestamp,headline,statusREVIEW_REQUIRED.
+- `sourceLedger[]` withid,title,url,eventDate,checkedAt,facts; every claim's sourceIds point to actual evidence.
+- `hook.spoken` starts the firstscene.voiceText.
+- `cta.spoken` lives once outside scenes and is appended once to the last narration segment. Do not duplicate it.
+- scenes haveuniqueid,eyebrow,headline,summary,voiceText,source,sourceIds,stats,visual.
+- Numeric charts use actual signed values/units; discrete confirmed open/low/close observations are not interpolated into imaginary price paths.
+- Add `editingPlan` or a checked-in `editingPlanPath` underjobs/oreditorial/. Plan inputKind=`tts_motion`; beats carry sceneId,exactspoken`trigger`,optionaloccurrence,2–4word`keyword`,source-backedlabel,value,context,andoptional kindcta. See ALIGNED_PREVIEW_RUNTIME. Keep date/session/unit/forecast qualifiers even when keywords are short.
+- Preserve stream/slot/articleId/articlePath/eventKeys/digest mode and same-day idempotency required by DAILY_CADENCE. Preview/final are stages of one edition, not extra news videos.
+
+## Production sequence
+
+1. Research fresh sources, write brief/ledger,three hooks,scene narration and once-onlyCTA. Verify dates,sessions,units,uncertainty and corrections; perform editorial scoring.
+2. Build and review the effects map. Check source linkage and capability before paid TTS. Missing plan or unsupported input is BLOCKED, not permission to use legacy timing.
+3. Save unique reviewed job to main when authorized. Run `node scripts/validate-kci-job.mjs jobs/<file>.json`. The runtime also validates before synthesis.
+4. Use the approved voice trial/listening process when still required. Keep exact-text+voice cache receipts and MP3s. Lastscene includesCTAonce. Reuse audio for picture-only revisions; do not generate retakes for a TTS-only job without reason.
+5. Poll Vbee using the authenticated request ID and allowlisted HTTPS audio hosts. Preserve pending-state receipts on timeout/failure; do not issue duplicate paid POSTs. A fresh Actions runner does not share local cache: retrieve previous job/run artifacts and cache before a retry.
+6. Align every real narration file with Whisper cross-attention/DTW, detect waveform silence>0.15s, protect speech/two-frame handles,apply short join fades and align the edited audio again. Save original/edited timing,hashes,models/attempts and edit-decision records. Never fabricate a duration for a word the aligner could not locate.
+7. Render `output/preview.mp4` with audible narration, keyword cues and source/date context. Extract settled and onset-neighbor images for EVERY mapped beat, plus first/middle/last. Check actualDOMbounds,decode,blackframes,encodedloudness and truepeak. No final is produced in this stage.
+8. Inspect images and actual audio, correct errors, deliver preview,word/effecttimings,takes.md,edit log and realmetrics. Model timestamp accuracy is not groundtruth; sub-frame renderer quantization alone cannot certify the two-frame acoustic requirement. Unheard/unverified checks remain PREVIEW_QA_REQUIRED.
+9. After explicit approval of the exact previewversion/cut/hash and completed requiredQA, record trueapprovalprovenance and invoke the separate final route with matching preserved assets. No automatic final from a generic issue or Sheet cell. Publish only under separate explicit authorization.
+
+## GitHub connection
+
+Owner issue title `[KCI VIDEO] YYYY-MM-DD <edition> <topic>`, body only`{"job":"jobs/<actual-file>.json"}` selects a checked-in job for voicedPREVIEW. `[KCI VOICE TEST]` remains a short trial only. Workflow `.github/workflows/kci-video.yml` must be onmain. Actual completion requires artifact+inspection, not just run success.
+
+The separate PR integration test reuses preserved26OctoberAnhKhôi audio without Vbee secrets/calls. Its technical preview is prominently marked nonpublishable and does not count toward daily editions. Do not claim it is new verified news. The legacy `[KCI V2 QUICK]` route is bound to archived audio, not a daily renderer.
+
+## Security, artifacts and cost
+
+Vbee AppID/token remain exclusively in GitHubSecrets; never print/export/read values into issue bodies,code,articles or artifacts. Existing callback is notification-only. Use the exact known allowlisted Vbeeaudiohost, not unrestrictedURLs. Preserveaudio/pendingrequests/outputalignment/QConfailure. Do not distribute font binaries. ActionsartifactURLs need authentication and expire; keep realarchivalcopies when authorized. Do not upload/post tosocial/website,sendthirdparties ortrade withoutauthorization. Do not repeat paid synthesis just because a visual render orSheetwrite failed.

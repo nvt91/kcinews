@@ -1,0 +1,85 @@
+name: KCI Aligned Voiced Preview
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/align-kci-audio.py'
+      - 'scripts/alignment_candidates.py'
+      - 'scripts/recover_alignment.py'
+      - 'scripts/run-voiced-preview.mjs'
+      - 'scripts/produce-voiced-preview.mjs'
+      - 'scripts/install-alignment.sh'
+      - 'scripts/ensure-media-tools.sh'
+      - 'scripts/test-aligned-preview.*'
+      - 'src/KciAlignedPreview.tsx'
+      - 'src/aligned-index.tsx'
+      - 'jobs/kci-2026-10-26-word-preview-plan.json'
+      - '.github/workflows/kci-aligned-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: kci-word-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.head_ref, 'feat/voiced-word-preview-'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      HF_HUB_DISABLE_XET: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install rendering and matched CPU-only alignment dependencies
+        timeout-minutes: 15
+        run: |
+          npm ci
+          bash scripts/ensure-media-tools.sh
+          bash scripts/install-alignment.sh
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kci-whisper-small-cpu-v1
+      - name: Unit tests and type checking, no paid synthesis
+        run: |
+          node --check scripts/run-voiced-preview.mjs
+          node --check scripts/produce-voiced-preview.mjs
+          python -m py_compile scripts/align-kci-audio.py scripts/recover_alignment.py
+          python scripts/test-aligned-preview.py
+          node scripts/test-aligned-preview.mjs
+          npx tsc --noEmit
+      - name: Reuse the existing Anh Khoi source artifact
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 40248740101
+          name: kci-40248740101
+          github-token: ${{ github.token }}
+          path: review-source
+      - name: Align each real narration, render voiced preview and beat stills
+        run: |
+          node scripts/run-voiced-preview.mjs --mode=preview --props=review-source/out/props.json --audio-root=review-source/public --plan=jobs/kci-2026-10-26-word-preview-plan.json --output=output --id=kci-20261026-word-preview --model=small --fps=30 --version=v1
+          test -s output/preview.mp4
+          test ! -e output/final.mp4
+      - name: Preserve preview, word timings, edit decisions and measured QC
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kci-aligned-preview-${{ github.run_id }}
+          path: |
+            output/
+            alignment-environment.txt
+          if-no-files-found: warn
+          retention-days: 7

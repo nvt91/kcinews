@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "validate or preview are no-Vbee runs; voice-test and video invoke paid Vbee requests"
+        description: "validate is no-Vbee; preview/video may synthesize missing narration; no automatic final"
         type: choice
         required: true
         default: validate
@@ -14,10 +14,10 @@ on:
           - voice-test
           - video
       job:
-        description: "Reviewed input JSON inside jobs/"
+        description: "Reviewed schema-v2 JSON with an editing plan inside jobs/"
         type: string
         required: true
-        default: jobs/kci-2026-10-23.json
+        default: jobs/kci-schema-v2-example.json
   pull_request:
     paths:
       - 'src/**'
@@ -56,14 +56,17 @@ jobs:
       - run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
       - run: node --check scripts/vbee.mjs
       - run: node --check scripts/run-job.mjs
+      - run: node --check scripts/produce-voiced-preview.mjs
+      - run: node scripts/test-aligned-preview.mjs
+      - run: python scripts/test-aligned-preview.py
       - run: node scripts/test-vbee-adapter.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
-      - name: Cloudflare live endpoint check (advisory before first production deployment)
+      - name: Cloudflare live endpoint check (advisory)
         continue-on-error: true
         run: node scripts/check-worker.mjs
       - run: node scripts/run-job.mjs --mode=validate
-      - name: Test legacy KCI and data-driven daily story frames
+      - name: Test preserved legacy and data-driven layout fixtures, no synthesis
         run: |
           mkdir -p out
           npx remotion still src/index.ts KciNews out/kci-smoke.png --frame=25
@@ -71,7 +74,7 @@ jobs:
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-hook.png --props=out/kci-daily-preview-props.json --frame=55
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-compare.png --props=out/kci-daily-preview-props.json --frame=355
           npx remotion still src/index.ts KciNewsDaily out/kci-daily-cta.png --props=out/kci-daily-preview-props.json --frame=1830
-      - name: Upload KCI rendering evidence
+      - name: Upload layout evidence
         uses: actions/upload-artifact@v4
         with:
           name: kci-pr-render-${{ github.run_id }}
@@ -88,7 +91,7 @@ jobs:
        (startsWith(github.event.issue.title, '[KCI VOICE TEST]') ||
         startsWith(github.event.issue.title, '[KCI VIDEO]')))
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     permissions:
       contents: read
       issues: write
@@ -100,37 +103,49 @@ jobs:
       VBEE_VOICE_CODE: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc
       VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
       VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS || 'vbee-studio2-3.s3.ap-southeast-1.amazonaws.com' }}
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      HF_HUB_DISABLE_XET: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       - run: npm ci
-      - name: Install FFmpeg and ffprobe
+      - name: Validate the selected job without paid synthesis
+        run: node scripts/run-job.mjs --mode=validate
+      - name: Ensure FFmpeg and CPU-only word alignment
+        timeout-minutes: 15
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-          command -v ffprobe
-          command -v ffmpeg
-      - name: Validate job
-        run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
-      - name: Verify Cloudflare Worker before any Vbee request
+          bash scripts/ensure-media-tools.sh
+          bash scripts/install-alignment.sh
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kci-whisper-small-cpu-v1
+      - name: Verify callback before a possible Vbee request
         run: node scripts/check-worker.mjs
-      - name: Produce preview, Vbee test, or MP4
+      - name: Produce voiced preview or voice test; never auto-final
         run: node scripts/run-job.mjs
-      - name: Preserve audio and review artifacts even if a later render step fails
+      - name: Preserve audio, pending requests and review evidence on failure
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: kci-${{ github.run_id }}
           path: |
             out/
+            output/
             public/voice/*.mp3
+            public/voice-cache/
+            public/aligned/
+            alignment-environment.txt
           if-no-files-found: warn
           retention-days: 7
-
-      - name: Record Actions run on the requesting issue
+      - name: Record Actions run on requesting issue
         if: ${{ always() && github.event_name == 'issues' }}
         continue-on-error: true
         env:
@@ -141,4 +156,4 @@ jobs:
           KCI_RESULT: ${{ job.status }}
         run: |
           gh issue comment "$KCI_ISSUE" --repo "$KCI_REPO" \
-            --body "KCI_ACTIONS_RUN:$KCI_RUN_ID | Result: $KCI_RESULT | https://github.com/$KCI_REPO/actions/runs/$KCI_RUN_ID — Review-only artifact; do not auto-publish."
+            --body "KCI_ACTIONS_RUN:$KCI_RUN_ID | Result: $KCI_RESULT | https://github.com/$KCI_REPO/actions/runs/$KCI_RUN_ID — PREVIEW/VOICE TEST only; final requires approval; do not auto-publish."
