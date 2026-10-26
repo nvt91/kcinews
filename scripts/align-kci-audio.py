@@ -12,6 +12,7 @@ import subprocess
 import wave
 import unicodedata
 from alignment_candidates import select_monotonic_path
+from recover_alignment import recover
 
 
 def run(argv: list[str]) -> subprocess.CompletedProcess:
@@ -130,7 +131,7 @@ def main()->None:
         raw=pcm(src);raw_seconds=len(raw)/48000;raw_total+=raw_seconds
         def aligned(file:Path,tag:str)->list:
             cache=out/'alignment'/(scene['id']+'-'+tag+'.json')
-            key=hashlib.sha256((sha(file)+text+args.model+'acoustic-candidates-v3'+json.dumps(versions,sort_keys=True)).encode()).hexdigest()
+            key=hashlib.sha256((sha(file)+text+args.model+'acoustic-candidates-v4'+json.dumps(versions,sort_keys=True)).encode()).hexdigest()
             if cache.exists() and (cached:=json.loads(cache.read_text())).get('cacheKey')==key:return cached['words']
             attempts=[];observations=[];selected=None
             passes=[(args.model,True,False,100),(args.model,True,True,442),(args.model,False,True,442)]
@@ -149,7 +150,11 @@ def main()->None:
                     selected={'model':model_name,'words':words,'method':'single acoustic alignment'};break
                 mixed=select_monotonic_path(observations)
                 if mixed:
-                    selected={'model':'multiple-acoustic-candidates','words':mixed,'method':'monotonic path of unchanged observed intervals; no interpolation'};break
+                    selected={'model':'multiple-acoustic-candidates','words':mixed,'method':'monotonic unchanged observed intervals; no interpolation'};break
+            if selected is None:
+                observations.extend(recover(get_model(args.model),file,text,out/'alignment'/f"{scene['id']}-{tag}-recovery.json"))
+                mixed=select_monotonic_path(observations)
+                if mixed:selected={'model':'acoustic-recovery','words':mixed,'method':'observed ASR/padded-audio intervals with padding removed; no fabricated duration'}
             if selected is None:raise ValueError(f'TIMING_UNVERIFIED {scene["id"]}/{tag}: no valid acoustic path; evidence retained')
             alignment_attempts.append({'sceneId':scene['id'],'pass':tag,'attemptCount':len(attempts),'selectedModel':selected['model'],'method':selected['method']})
             save(cache,{'cacheKey':key,'method':selected['method']+'; requires independent listening review','model':selected['model'],'versions':versions,'audioSha256':sha(file),'transcript':text,'words':selected['words'],'attemptCount':len(attempts)})
