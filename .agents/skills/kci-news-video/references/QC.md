@@ -62,6 +62,13 @@ These are KCI's design choices based on the supplied screenshot and owner feedba
 
 A layout-only re-edit of archived news retains the original market/report date. It is not a freshly verified daily bulletin. Disclose whether validation used a browser DOM preview versus a complete Remotion/GitHub Actions runtime. A successful TSX transpile is a syntax check, not a dependency-aware typecheck. Stream-copying and matching audio hashes verifies unchanged audio, not a new pronunciation or listening review.
 
+## D2. Facebook/Instagram caption QA — owner update 26 October 2026
+- [ ] Caption is short (aim 30–65 Vietnamese words before hashtags), natural, approachable and readable to Vietnamese retail-investor audiences; no generic AI phrasing, inflated promises or excessive emoji.
+- [ ] Opening/takeaway is tied to the actual verified event; no false market timestamp or overconfident investment recommendation.
+- [ ] Use 3–5 genuine topic-specific discovery hashtags. Check trend evidence near publishing when accessible; if trend status is unavailable, never claim the tags are verified trending.
+- [ ] At most one light CTA, avoid recycling stock copy and do not repeat the whole voiceover. Plain Facebook/Instagram text has no Markdown bold.
+- [ ] In KCI News Sheet, preserve caption cells the owner edited; update only when blank or revision is expressly authorized.
+
 ## E. Subtitle and technical artifact
 - [ ] Captions are synchronized to natural speech, clean punctuation, <=2 lines when feasible and above Reels UI safe zone.
 - [ ] If alignment is estimated, flag and correct before final publishing; no misleading perfect-sync claim.
