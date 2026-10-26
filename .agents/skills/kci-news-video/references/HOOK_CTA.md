@@ -46,5 +46,31 @@ A reviewed v2 job has:
 
 The production runner appends `cta.spoken` **once** to the final narration segment. A dedicated animated overlay appears during closing portion; subtitles include spoken CTA in a single continuous voice track. Changes to CTA wording require new voice or a separately generated/synchronized ending—do NOT reuse outdated voice.
 
+## Caption đăng video — yêu cầu chủ kênh, 26/10/2026
+
+Áp dụng cho caption đăng Facebook/Instagram/Reels của KCI và caption nháp ghi vào cột D của KCI News Sheet. Đây là phần chữ đi kèm video, KHÔNG phải brief nghiên cứu, kịch bản lời đọc hoặc phụ đề. Giữ nguyên yêu cầu nguồn của brief và quy trình duyệt video.
+
+- Viết ngắn gọn, mộc mạc, thân thiện, phù hợp người Việt theo dõi kinh tế và chứng khoán Hàn Quốc, kể cả người chưa quen thuật ngữ tài chính. Dùng lời nói tự nhiên, không giảng bài, không tự khen chuyên môn, không cố tạo vẻ sang trọng hay giật gân.
+- Mặc định khoảng 30–60 từ, 2–3 câu, chưa tính hashtag và lưu ý đầu tư. Có thể ngắn hơn nếu đã đủ ý; chỉ dài hơn khi cần giữ một điều kiện quan trọng để không gây hiểu sai. Không kéo dài cho đủ số từ.
+- Chọn một điều đáng chú ý hoặc một câu hỏi cụ thể mà video thực sự trả lời, thêm một câu giải thích gần gũi; lời mời trao đổi/theo dõi nếu có phải nhẹ và gắn đúng nội dung. Không kể lại toàn bộ 3–5 tin, không sao chép brief 250–400 từ vào caption, không nhồi số liệu hoặc nhiều lệnh tương tác.
+- Đa dạng mở đầu và câu kết. Tránh rập khuôn như "Trong bối cảnh thị trường đầy biến động", "Cơ hội vàng", "Đừng bỏ lỡ", "Bí mật ít ai biết"; không ép bình luận từ khóa, không FOMO hoặc hứa lợi nhuận.
+- Định dạng phần caption thực tế bằng văn bản thường: không markdown in đậm, bảng hoặc tiêu đề báo cáo; tối đa một emoji nếu hợp nội dung. Hashtag để cuối, tách một dòng.
+- Mọi số liệu/sự kiện phải có trong hồ sơ nguồn đã kiểm chứng của đúng video. Giữ những từ cần thiết như "ước tính", ngày dữ liệu lịch sử hoặc "chưa phải lỗ đã chốt" nếu bỏ đi sẽ gây hiểu sai. Không thêm dữ kiện mới chỉ để tạo hook. Hồ sơ nguồn đầy đủ vẫn được giữ riêng trong brief; thêm dẫn nguồn ngắn trong caption khi cần để không biến ước tính của bên thứ ba thành kết luận chính thức.
+- Giữ lưu ý ngắn theo quy tắc KCI: "Thông tin tham khảo, không phải khuyến nghị đầu tư cá nhân." Độ ngắn không được xóa ranh giới dữ kiện/nhận định.
+
+### Hashtag đúng chủ đề, có kiểm tra xu hướng
+
+- Giữ mặc định 2–3 hashtag có chọn lọc: một hashtag thương hiệu `#KoreaCapitalInsight`, một hashtag đúng chủ đề/độc giả, và khi có căn cứ thì một hashtag đang được quan tâm phù hợp chính câu chuyện. Đây là lựa chọn biên tập, không phải giới hạn kỹ thuật của nền tảng.
+- Trước khi chọn hashtag xu hướng cho từng bài, kiểm tra thông tin mới trên đúng nền tảng và thị trường/ngôn ngữ người xem khi công cụ cho phép. Lưu bằng chứng ngắn trong hồ sơ biên tập: hashtag, nền tảng, phạm vi thời gian/thị trường và URL hoặc dữ liệu quan sát được. Không suy từ một bài đăng đơn lẻ, snippet, tổng lượt dùng tích lũy hay xu hướng trên nền tảng khác rằng hashtag đang thịnh hành với khán giả KCI.
+- Nếu không xác minh được xu hướng, vẫn chọn hashtag liên quan nội dung và ghi giới hạn trong hồ sơ nội bộ; không gắn nhãn "đang trend", không bịa thứ hạng/lượt xem và không hứa tăng tương tác. Không để thiếu dữ liệu xu hướng cản một caption tin tức đã đủ nguồn.
+- `#ChungKhoanHanQuoc`, `#KinhTeHanQuoc`, `#KOSPI`, `#SKHynix` chỉ là ví dụ hashtag theo chủ đề, KHÔNG phải danh sách xu hướng đã xác minh. Chỉ chọn khi video thực sự nói về chủ đề đó, không dùng tất cả như một bộ cố định.
+- Không nhồi `#viral`, `#fyp`, `#xuhuong` hoặc trend giải trí không liên quan chỉ để bắt trend. Không dùng hashtag hàm ý lợi nhuận chắc chắn hay khuyến nghị mua bán.
+
+### Lưu và kiểm duyệt caption
+
+Lưu caption sẵn để sao chép và ghi chú kiểm tra hashtag riêng trong hồ sơ của bản tin. Khi ghi Sheet, đọc và tuân thủ [SHEET_TRACKING.md](SHEET_TRACKING.md): chỉ điền ô D mới/trống hoặc sửa khi được yêu cầu rõ; không ghi đè caption chủ kênh đã sửa. Không sửa hàng loạt caption cũ, tạo lại voice/render hoặc thay lịch chỉ vì đổi phong cách caption. Không tự đăng bài.
+
+Trước giao, đọc lại như đang nói chuyện với một người xem: một ý chính rõ, câu dễ hiểu, không văn mẫu, không thiếu điều kiện số liệu, 2–3 hashtag phù hợp và không tự nhận xu hướng chưa kiểm chứng. Yêu cầu này thay thế cách viết caption dài hoặc cách hiểu "Viral" trong tên cột Sheet là mục tiêu giật gân; không thay đổi tên cột, giọng Anh Khôi, bố cục video hay quyền duyệt.
+
 ## Editorial A/B learning
 For similar stories, rotate hook mechanisms and CTA types across *different* videos; do not spam the same ask. After publication (only when metrics accessible), compare 3-second retention, average watch duration, completion rate, qualified comments, follow conversion and saves. A high CTR does not excuse factual misrepresentation. Store learnings as notes, not fabricated performance.
