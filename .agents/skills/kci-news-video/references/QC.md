@@ -62,6 +62,20 @@ These are KCI's design choices based on the supplied screenshot and owner feedba
 
 A layout-only re-edit of archived news retains the original market/report date. It is not a freshly verified daily bulletin. Disclose whether validation used a browser DOM preview versus a complete Remotion/GitHub Actions runtime. A successful TSX transpile is a syntax check, not a dependency-aware typecheck. Stream-copying and matching audio hashes verifies unchanged audio, not a new pronunciation or listening review.
 
+## D3. Nine-step adaptive editor acceptance — 26 October 2026
+
+Read [POST_PRODUCTION.md](POST_PRODUCTION.md) for the full owner's nine-stage spec and applicability matrix. On each KCI episode record media type and each stage's state `PASS / N/A / NOT_VERIFIED / FAIL`.
+
+- [ ] Take selection: if real repeated recordings are present, compare every complete candidate, use last good unless clearly weaker, write real `takes.md` source timestamps/reason. On single-pass Vbee voice, do not invent human takes; mark N/A.
+- [ ] Cut/trim: check actual waveform and pronunciation, remove unwanted >0.15s quiet sections only when appropriate; preserve natural pauses/important dates; two-frame handles and very short fades where cuts exist. Do not claim number of removed silences without measuring.
+- [ ] Grade and zoom: only actual footage gets subtle cinematic color, matched exposure/white balance, original before/after and face/eye-centered crop; 1080p source max 115% zoom, 0.4s push-in. No skin grading or face tracking on graphics-only news.
+- [ ] Text: sparse 2–4-word keyword/number motion cues, Inter Bold where available with Vietnamese accents, white/navy `#1c2c58`/accent blue `#365daa`, ~80ms fade, expo-out/no bounce, safe contrast, no overlay over a face or essential financial values. Keep data units, source and Reels-safe subtitles accessible; do not falsely claim legacy full-line captions were replaced in current renderer.
+- [ ] Effect map: timeline of spoken words/scene cue/effect onset. Require ±2-frame proof **only when word-level timestamps were genuinely generated and checked**; proportional word-count cues ≠ proof. One salient foreground change per 2–4s; do not stack foreground effects.
+- [ ] Hook: frame 0 visually strong, sound-off text readable during first second, purposeful changes at 0–3s every ~1–1.5s, never a false or exaggerated market move.
+- [ ] Audio: gentle treatment to preserve real voice, actual integrated LUFS/true peak if available before asserting −14 LUFS/≤−1dBTP; background music 18–22dB lower when used, clean ending/no pops and CTA once.
+- [ ] Preview gate: generate review MP4 plus key effect stills, inspect, send to owner and record pending sign-off before any final label/export. If a final is approved, verify actual path and H.264/AAC bitrate/fps; do not assume 18Mbps/320kbps.
+- [ ] Reporting: actual raw duration, actual edited duration, rejected take count and cut-silence count/length. For TTS-only videos mark raw footage and excluded takes N/A; don't fake metrics. Persist links and QA status in KCI News Sheet while preserving owner's approval cells.
+
 ## E. Subtitle and technical artifact
 - [ ] Captions are synchronized to natural speech, clean punctuation, <=2 lines when feasible and above Reels UI safe zone.
 - [ ] If alignment is estimated, flag and correct before final publishing; no misleading perfect-sync claim.
