@@ -7,6 +7,14 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 The owner approved Korea Capital Insight financial-news styling, selected the Vbee voice `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức) on 26 October 2026, and approved the Remotion V2.1 design direction. Preserve those decisions. The purpose of this skill is a **repeatable source-backed Vietnamese financial newsroom**, not a static slideshow. Read [VOICE_PROFILE.md](references/VOICE_PROFILE.md) for the current selection, trial/listening gate and preservation of historical narration; a saved voice code is not proof of successful synthesis or listening approval.
 
+## Mandatory new-edit override — owner request, 26 October 2026
+
+Read [EDITING_WORKFLOW.md](references/EDITING_WORKFLOW.md) on every new production or revision. Profile `KCI_EDIT_20261026_V1` incorporates the owner's nine editing stages: take selection/Whisper word timing, waveform-protected trimming, footage-only grading/eye zoom, keyword-only graphics, measured effects map, first-three-second hook, audio mastering, and **voiced PREVIEW → explicit owner approval of that cut → FINAL**. The scheduled producer stops at preview, not final. Do not confuse preview approval with permission to publish.
+
+This profile takes precedence over conflicting historical editing defaults below and in references: use Inter Bold around68px, white/navy#1c2c58/blue#365daa, keyword cues2–4words (not full-sentence burned-in captions), owner safe zone top220/bottom420/right140 at1080x1920, master-14LUFS/true peak<=-1dBTP, and approval-gated final H.264 around18Mbps/AAC320kbps. Recorded footage retains its established source FPS; graphics-only keeps30fps. Preserve source/date/unit qualifiers and full-width use of the AVAILABLE middle, without an enclosing cramped card.
+
+Classify real recorded-takes versus TTS/motion first. Do not invent camera takes, faces, glances, color before/after or edit statistics for generated narration. Word timing must be measured/reviewed on actual edited audio; proportional estimates cannot pass the two-frame effect gate. Read current code/capabilities before paid TTS or a legacy trigger: storing this specification does not install Whisper/face tracking or prove end-to-end support. Report missing stages honestly and never bypass the preview gate. Keep schedules, stream separation, quota, source verification, current Anh Khôi voice, caption-copy preferences, credentials and all historical output unchanged. Preview/final stage labels, notification dedup and Sheet handling are specified in EDITING_WORKFLOW.md.
+
 ## Invocation and references
 
 - **"Brief KCI"**: verify fresh market/macro stories, deliver a dated brief and source ledger.
@@ -21,6 +29,7 @@ Read the focused references at the matching stage:
 3. [Vbee, Remotion and GitHub workflow](references/PRODUCTION.md)
 4. [Editorial/visual/voice QC and release](references/QC.md)
 5. [Current voice selection and migration rules](references/VOICE_PROFILE.md)
+6. [Nine-stage editing and preview-before-final — overrides older editing defaults](references/EDITING_WORKFLOW.md)
 
 ## Non-negotiable rules
 
@@ -38,7 +47,7 @@ Read the focused references at the matching stage:
 
 Read [EDITORIAL_BRIEF.md](references/EDITORIAL_BRIEF.md). Verify material stories about KOSPI/KOSDAQ, individual Korean companies, BOK/Fed, US macro/tech, KRW, CPI, exports, China demand, interest rates, bond yields, energy, geopolitical risks. Select a maximum of 5–7 developments for the **written brief** and three opening highlights.
 
-For a 60–110-second video, choose **one central news angle and three to five strongest facts**, not the entire long brief. Record sources and exact claim IDs, KST cutoff, market sessions, units and uncertainty in the job.
+For a 60–110-second video, choose **one central news angle and three to five strongest facts**, not the entire long brief. Record sources and exact claim IDs, KST cutoff, market sessions, units and uncertainty in the job. For digest editions, the latest DAILY_CADENCE.md controls story count and duration.
 
 ### 2 — Honest hooks and narrative
 
@@ -50,7 +59,7 @@ Script: **HOOK → WHAT HAPPENED → WHY → KOREA IMPACT → WHAT'S NEXT → CT
 
 Pick one primary purpose: `comment` (balanced, answerable question), `follow` (specific news value), or `save` (evergreen analysis/checklist). A subtle follow request may accompany a primary comment invitation, but not a stack of three commands.
 
-Place CTA near the closing 10–20% after the core value. New schema v2 stores `cta.spoken` once outside `scenes[].voiceText`. The production runner **appends that CTA to the final Vbee narration segment**; the video template displays corresponding on-screen language. Do not duplicate spoken CTA in the outro script.
+Place CTA near the closing10–20% after the core value. New schema v2 stores `cta.spoken` once outside `scenes[].voiceText`. The production runner **appends that CTA to the final Vbee narration segment**; the video template displays corresponding on-screen language. Do not duplicate spoken CTA in the outro script.
 
 Example for an index reversal: "Theo anh chị, đây là hồi phục bền vững hay chỉ là nhịp hồi kỹ thuật? Bình luận góc nhìn và theo dõi Korea Capital Insight để cập nhật các phiên tiếp theo."
 
@@ -60,28 +69,30 @@ Use [jobs/kci-schema-v2-example.json](../../../jobs/kci-schema-v2-example.json) 
 
 `node scripts/validate-kci-job.mjs jobs/kci-YYYY-MM-DD-topic.json`
 
-The validator checks source references, the hook beginning, CTA completion and job structure; it cannot itself establish that third-party facts are true. Never relabel the archived 23 October 2026 news as today's news.
+The validator checks source references, the hook beginning, CTA completion and job structure; it cannot itself establish that third-party facts are true. Never relabel the archived 23 October 2026 news as today's news. Save the editing profile, capability assessment, effect map and preview stage in the editorial record; do not assume adding a JSON field changes renderer behavior.
 
-### 5 — Vbee + Remotion
+### 5 — Vbee + Remotion + owner editing profile
 
 - Voice: `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức); Cloudflare callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`.
 - First use or voice change: request a short trial and listen. After approval, generate Vbee MP3 for each scene with real durations and retain them. Follow [VOICE_PROFILE.md](references/VOICE_PROFILE.md); do not claim the new voice has already passed a live test, and do not regenerate old clips merely to change the default.
-- New schema v2 jobs render via data-driven `KciNewsDaily`. The historical `KciNewsV2` is the **approved 23/10 benchmark**, but contains some hard-coded numbers; don't reuse its historic charts for current jobs.
-- Generate captions from narration; word-count timing is **estimated**, never claim it is forced aligned. Review and correct before publishing.
-- Motion visuals must be sourced/parameterized. 9:16 at 1080×1920, 30 FPS, H.264/AAC.
-- **Instagram/Facebook Reels viewing safety:** use the active `KciNewsReels` behind composition ID `KciNewsDaily`. Follow the owner's *latest* full-width middle layout in [QC D1](references/QC.md#d1-full-width-middle-layout--revised-owner-feedback-24-october-2026): title/charts can use x56–1024 in the middle; only lower caption/source/CTA areas reserve a right-side interaction rail (x56–914); leave top 264px and bottom 480px free of critical text. Check actual app overlays and do not narrow the whole canvas into a boxed column.
-- For visual-only revisions when scripts have not changed, reuse the original preserved Vbee audio/artifact. No needless TTS calls.
+- New schema v2 jobs render via data-driven `KciNewsDaily`. The historical `KciNewsV2` is the **approved23/10 benchmark**, but contains some hard-coded numbers; don't reuse its historic charts for current jobs.
+- Follow all applicable stages in [EDITING_WORKFLOW.md](references/EDITING_WORKFLOW.md). Whisper each actual narration/source clip, review cuts against waveforms and align the edited audio. Show keyword/number cues, not full-sentence rolling captions. Word-count timing remains an estimate and cannot establish the required two-frame effects synchronization.
+- Motion visuals must be sourced/parameterized.9:16 at1080×1920; pure graphics30fps, camera footage FPS per the editing profile. Preview first; final encoding only after owner approval.
+- **Instagram/Facebook Reels viewing safety:** the active `KciNewsReels` is behind composition ID `KciNewsDaily`. The latest owner profile is top220px/bottom420px/right140px for essential content, with meaningful boxes at y220–1500,x<=940. Use the available middle width, not a narrow boxed column. The former x56–1024/top264/bottom480 layout in QC D1 is historical; EDITING_WORKFLOW step5 governs new work. Verify entry/exit states and actual app overlays rather than claiming universal platform safety.
+- For visual-only revisions when scripts have not changed, reuse original preserved Vbee audio/artifact. No needless TTS calls.
 
-### 6 — QA and release
+### 6 — QA, preview approval and final export
 
-Read [QC.md](references/QC.md). Inspect actual frame samples from opening, middle, CTA and outro; check no black frames, overflowing Vietnamese, improper session labels or faulty source footnotes; ensure voice audio exists and CTA is spoken. Status remains `REVIEW_REQUIRED` until explicitly accepted.
+Read [QC.md](references/QC.md) and the overriding [EDITING_WORKFLOW.md](references/EDITING_WORKFLOW.md). Inspect actual frame samples for EVERY mapped beat, opening/middle/CTA/outro, nearby onset frames, source/time labels and waveform/audio joins. Do not claim checks that were not performed.
 
-Deliver MP4 (or a verified authenticated GitHub artifact), a source ledger, script, optional thumbnail/caption, and a concise QC summary. If blocked, report exact obstacle and preserve existing audio. Don't pretend ongoing GitHub jobs succeeded.
+Deliver the real voiced `output/preview.mp4`, beat stills, takes/edit log, source ledger, script, caption and measured QC metrics. Stop with `PREVIEW_READY — CHỜ ANH DUYỆT — CHƯA RENDER FINAL — CHƯA ĐĂNG`. Unresolved checks mean PREVIEW_QA_REQUIRED or BLOCKED, not a final-quality pass. Only explicit owner approval of that identified preview cut authorizes `output/final.mp4`; it does not authorize posting. Preserve approval provenance and recheck time-sensitive facts before a delayed final. An edited cut requires renewed approval.
+
+If blocked, report the exact obstacle and preserve existing audio. Do not pretend ongoing GitHub jobs succeeded or a new document implements unsupported media tooling.
 
 ## Run from ChatGPT
 
-This is a **repository-local Agent Skill** in `nvt91/kcinews`. It does **not** automatically become a selectable ChatGPT @ plugin. The owner may simply say "Dùng quy trình kci-news-video, tạo bản tin KCI tối nay"; then the assistant can follow the skill, research current sources, create/update a reviewed job through connected GitHub tools, start the verified workflow, inspect artifacts and return a video. No need to direct the owner to Codex for each edition.
+This is a **repository-local Agent Skill** in `nvt91/kcinews`. It does **not** automatically become a selectable ChatGPT @ plugin. The owner may say "Dùng quy trình kci-news-video, tạo bản tin KCI tối nay"; the assistant follows the skill, researches current sources, prepares a reviewed job through connected GitHub tools, verifies that a preview-only route supports the applicable editing gates, inspects artifacts and returns a preview. No need to direct the owner to Codex for every edition when that supported route is available.
 
-Existing owner-authored GitHub issue triggers: `[KCI VOICE TEST]` and `[KCI VIDEO]`; issue body uses `{"job":"jobs/kci-YYYY-MM-DD-topic.json"}`. Run modes do not confer permission to publish.
+Existing owner-authored issue triggers are `[KCI VOICE TEST]` and `[KCI VIDEO]`; body uses `{"job":"jobs/kci-YYYY-MM-DD-topic.json"}`. These historical trigger names do NOT establish preview-stage compliance or permission to render final. Inspect the live workflow/runner first; missing required capability must be reported before paid synthesis. No credentials/workflow rewrite or new billed service is implied merely by this specification update.
 
-Schedules for morning/evening written briefs and any social-media publication are separate automations. **This skill does not silently enable auto-posting.**
+Schedules and social publication are separate. **This skill does not silently enable auto-posting.**
