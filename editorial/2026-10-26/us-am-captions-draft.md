@@ -1,0 +1,203 @@
+# DRAFT SRT — NOT AUDIO-ALIGNED
+
+This SRT file was generated from the script with a 97-second illustrative allocation across six scenes (11 + 17 + 17 + 16 + 18 + 18 seconds) before the Anh Khôi Vbee voice trial. It is not forced-aligned, is NOT synchronized to actual audio and must be regenerated or manually adjusted using real Vbee MP3 durations and listening review before publication.
+
+Associated reviewed job: jobs/kci-2026-10-26-us-am.json
+
+---
+
+1
+00:00:00,000 --> 00:00:02,139
+Dầu Brent chốt trên một trăm mười
+
+2
+00:00:02,139 --> 00:00:04,278
+sáu đô la, Dow Jones mất hơn
+
+3
+00:00:04,278 --> 00:00:06,417
+sáu trăm năm mươi điểm. Vì sao
+
+4
+00:00:06,417 --> 00:00:08,556
+tuần này Hàn Quốc cần chú ý?
+
+5
+00:00:08,556 --> 00:00:10,694
+Ba phép thử lớn đang chờ thị
+
+6
+00:00:10,694 --> 00:00:11,000
+trường.
+
+7
+00:00:11,000 --> 00:00:13,333
+Phiên Mỹ thứ Sáu, S&P năm trăm
+
+8
+00:00:13,333 --> 00:00:15,667
+giảm không phẩy năm hai phần trăm,
+
+9
+00:00:15,667 --> 00:00:18,000
+Nasdaq giảm không phẩy hai một phần
+
+10
+00:00:18,000 --> 00:00:20,333
+trăm, và Dow Jones giảm một phẩy
+
+11
+00:00:20,333 --> 00:00:22,667
+hai ba phần trăm. Riêng chỉ số
+
+12
+00:00:22,667 --> 00:00:25,000
+bán dẫn Philadelphia tăng nhẹ không phẩy
+
+13
+00:00:25,000 --> 00:00:27,333
+bốn phần trăm sau phiên lao dốc
+
+14
+00:00:27,333 --> 00:00:28,000
+trước đó.
+
+15
+00:00:28,000 --> 00:00:30,088
+Dầu Brent chốt thứ Sáu tại một
+
+16
+00:00:30,088 --> 00:00:32,175
+trăm mười sáu đô la bảy mươi
+
+17
+00:00:32,175 --> 00:00:34,263
+hai cent một thùng. Đầu tuần, giá
+
+18
+00:00:34,263 --> 00:00:36,351
+lùi về khoảng một trăm mười lăm
+
+19
+00:00:36,351 --> 00:00:38,439
+đô la bảy mươi chín cent, theo
+
+20
+00:00:38,439 --> 00:00:40,526
+ghi nhận lúc tám giờ mười lăm
+
+21
+00:00:40,526 --> 00:00:42,614
+sáng giờ Hàn. Căng thẳng tại Saudi
+
+22
+00:00:42,614 --> 00:00:44,702
+Arabia vẫn làm tăng rủi ro nguồn
+
+23
+00:00:44,702 --> 00:00:45,000
+cung.
+
+24
+00:00:45,000 --> 00:00:47,000
+Fed họp ngày hai mươi bảy và
+
+25
+00:00:47,000 --> 00:00:49,000
+hai mươi tám tháng mười. GDP quý
+
+26
+00:00:49,000 --> 00:00:51,000
+ba và chỉ số giá PCE tháng
+
+27
+00:00:51,000 --> 00:00:53,000
+chín của Mỹ dự kiến công bố
+
+28
+00:00:53,000 --> 00:00:55,000
+ngày hai mươi chín. Cùng tuần, Microsoft,
+
+29
+00:00:55,000 --> 00:00:57,000
+Alphabet và Amazon có lịch báo cáo;
+
+30
+00:00:57,000 --> 00:00:59,000
+thị trường sẽ chú ý hiệu quả
+
+31
+00:00:59,000 --> 00:01:01,000
+chi tiêu cho trí tuệ nhân tạo.
+
+32
+00:01:01,000 --> 00:01:03,291
+Với Hàn Quốc, dầu cao có thể
+
+33
+00:01:03,291 --> 00:01:05,582
+làm tăng chi phí nhập khẩu. Thông
+
+34
+00:01:05,582 --> 00:01:07,873
+điệp Fed và lợi suất trái phiếu
+
+35
+00:01:07,873 --> 00:01:10,164
+Mỹ quanh năm phần trăm có thể
+
+36
+00:01:10,164 --> 00:01:12,455
+ảnh hưởng đồng won. Còn Samsung Electronics
+
+37
+00:01:12,455 --> 00:01:14,745
+và SK hynix nhạy với kỳ vọng
+
+38
+00:01:14,745 --> 00:01:17,036
+chi tiêu AI. Chưa thể từ đó
+
+39
+00:01:17,036 --> 00:01:19,000
+kết luận KOSPI chắc chắn giảm.
+
+40
+00:01:19,000 --> 00:01:20,969
+Tuần này, hãy phân biệt dữ liệu
+
+41
+00:01:20,969 --> 00:01:22,938
+đã xảy ra với những sự kiện
+
+42
+00:01:22,938 --> 00:01:24,906
+còn chờ công bố. Giá dầu, Fed
+
+43
+00:01:24,906 --> 00:01:26,875
+và báo cáo công nghệ mới là
+
+44
+00:01:26,875 --> 00:01:28,844
+các mốc quan sát. Theo anh chị,
+
+45
+00:01:28,844 --> 00:01:30,813
+giá dầu, thông điệp Fed hay lợi
+
+46
+00:01:30,813 --> 00:01:32,781
+nhuận công nghệ sẽ chi phối thị
+
+47
+00:01:32,781 --> 00:01:34,750
+trường Hàn Quốc mạnh nhất? Bình luận
+
+48
+00:01:34,750 --> 00:01:36,719
+góc nhìn và theo dõi Korea Capital
+
+49
+00:01:36,719 --> 00:01:37,000
+Insight.
