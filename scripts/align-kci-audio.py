@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audio-derived word alignment. No TTS, no credentials, no fabricated word timings."""
+"""Audio-derived word alignment and waveform-protected edits; never synthesize speech."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -45,11 +45,9 @@ def silence_ranges(path: Path, total: float) -> list[tuple[float, float]]:
 
 
 def protected_cuts(silences: list, words: list, total: float, fps: float) -> tuple[list, list]:
-    """Only quiet gap interiors can be removed. Preserve two frames around speech."""
     handles, cuts, exceptions = 2/fps, [], []
     for start, end in silences:
         if end-start <= .15: continue
-        # Any model-aligned word spanning a quiet interval protects that interval.
         if any(w['start'] < end and w['end'] > start for w in words):
             exceptions.append({'start': start, 'end': end, 'reason': 'word-overlap; preserve speech'})
             continue
@@ -123,12 +121,17 @@ def main() -> None:
     assets=Path(args.asset_dir).resolve();assets.mkdir(parents=True,exist_ok=True)
     root=Path(args.audio_root).resolve()
     torch.set_num_threads(2)
-    model=stable_whisper.load_faster_whisper(args.model,device='cpu',compute_type='int8',cpu_threads=2,num_workers=1)
+    models={}
+    def get_model(name):
+        if name not in models:
+            models[name]=stable_whisper.load_faster_whisper(name,device='cpu',compute_type='int8',cpu_threads=2,num_workers=1)
+        return models[name]
     versions={name:importlib.metadata.version(name) for name in ['stable-ts','faster-whisper','ctranslate2']}
     inventory, edl, all_words, scenes, assembled=[],[],[],[],[]
+    alignment_attempts=[]
     offset=0.; raw_total=0.; candidates=0; removed_count=0
     takes=['# takes.md\n','Input: preserved Vbee TTS audio, no recorded retakes.','Take selection / rejected camera takes: N/A. No new TTS calls.\n']
-    for i,scene in enumerate(source['scenes']):
+    for scene in source['scenes']:
         src=(root/scene['audioFile']).resolve()
         if not src.is_relative_to(root) or not src.is_file(): raise ValueError('Invalid local source audio')
         text=scene.get('voiceText','').strip()
@@ -136,27 +139,37 @@ def main() -> None:
         raw=pcm(src); raw_seconds=len(raw)/48000; raw_total+=raw_seconds
         def aligned(file: Path, tag: str) -> list:
             cache=out/'alignment'/(scene['id']+'-'+tag+'.json')
-            key=hashlib.sha256((sha(file)+text+args.model+json.dumps(versions,sort_keys=True)).encode()).hexdigest()
+            key=hashlib.sha256((sha(file)+text+args.model+'bounded-realignment-v2'+json.dumps(versions,sort_keys=True)).encode()).hexdigest()
             if cache.exists() and (cached:=json.loads(cache.read_text())).get('cacheKey')==key:
                 return cached['words']
-            result=model.align(str(file),text,language='vi',regroup=False,verbose=None,original_split=True,suppress_silence=True)
-            if result is None: raise ValueError('Whisper alignment failed')
-            data=result.to_dict()
-            words=[{'word':w['word'].strip(),'start':float(w['start']),'end':float(w['end']),'probability':w.get('probability')} for seg in data['segments'] for w in seg.get('words',[])]
-            if not words or norm(' '.join(w['word'] for w in words)) != norm(text): raise ValueError('Aligned transcript changed or omitted words')
-            bad=[w for w in words if w['end'] <= w['start']]
-            if bad: raise ValueError('Zero-duration words require alignment review: '+str(bad[:3]))
-            save(cache,{'cacheKey':key,'method':'Whisper cross-attention/DTW forced alignment on actual audio; not ground-truth onset','model':args.model,'versions':versions,'audioSha256':sha(file),'transcript':text,'words':words})
-            return words
+            attempts=[]; selected=None
+            # Different acoustic passes, not proportional interpolation or invented minimum durations.
+            passes=[(args.model,True),(args.model,False)]
+            if args.model!='medium': passes += [('medium',True),('medium',False)]
+            for model_name,suppress in passes:
+                result=get_model(model_name).align(str(file),text,language='vi',regroup=False,verbose=None,original_split=True,suppress_silence=suppress)
+                if result is None:
+                    attempts.append({'model':model_name,'suppressSilence':suppress,'error':'no-result'});continue
+                data=result.to_dict()
+                words=[{'word':w['word'].strip(),'start':float(w['start']),'end':float(w['end']),'probability':w.get('probability')} for seg in data['segments'] for w in seg.get('words',[])]
+                complete=bool(words) and norm(' '.join(w['word'] for w in words))==norm(text)
+                bad=[w for w in words if w['end']<=w['start'] or w['start']<0]
+                attempts.append({'model':model_name,'suppressSilence':suppress,'completeTranscript':complete,'invalidWords':bad})
+                save(out/'alignment'/f"{scene['id']}-{tag}-attempts.json",{'attempts':attempts,'audioSha256':sha(file)})
+                if complete and not bad:
+                    selected={'model':model_name,'suppressSilence':suppress,'words':words};break
+            if selected is None:
+                raise ValueError(f"TIMING_UNVERIFIED {scene['id']}/{tag}: no valid audio-derived alignment; evidence saved")
+            alignment_attempts.append({'sceneId':scene['id'],'pass':tag,'attempts':attempts,'selectedModel':selected['model'],'selectedSuppressSilence':selected['suppressSilence']})
+            save(cache,{'cacheKey':key,'method':'Whisper cross-attention/DTW forced alignment on actual audio; not ground-truth onset','model':selected['model'],'suppressSilence':selected['suppressSilence'],'versions':versions,'audioSha256':sha(file),'transcript':text,'words':selected['words'],'attempts':attempts})
+            return selected['words']
         original_words=aligned(src,'original')
         silences=silence_ranges(src,raw_seconds); candidates+=len(silences)
         cuts,exceptions=protected_cuts(silences,original_words,raw_seconds,args.fps)
-        ranges=keep_ranges(cuts,raw_seconds)
         chunks=[]; mapping=[]; local_offset=0.
-        for a,b in ranges:
+        for a,b in keep_ranges(cuts,raw_seconds):
             start,end=round(a*48000),round(b*48000)
-            part=raw[start:end].copy()
-            fade=min(240,len(part)//2) # 5 ms, inside the protected quiet handles.
+            part=raw[start:end].copy();fade=min(240,len(part)//2)
             if start>0 and fade: part[:fade]*=np.linspace(0,1,fade)
             if end<len(raw) and fade: part[-fade:]*=np.linspace(1,0,fade)
             chunks.append(part)
@@ -164,7 +177,7 @@ def main() -> None:
             local_offset+=len(part)/48000
         edited=np.concatenate(chunks) if chunks else raw.copy()
         edited_file=assets/(scene['id']+'-edited.wav');write_wav(edited_file,edited)
-        words=aligned(edited_file,'edited') # Re-align the actual edited audio, not uniform re-timing.
+        words=aligned(edited_file,'edited')
         edited_seconds=len(edited)/48000
         words=[dict(w,start=w['start']+offset,end=w['end']+offset,sceneId=scene['id']) for w in words]
         all_words.extend(words)
@@ -173,12 +186,11 @@ def main() -> None:
         edl.append({'sceneId':scene['id'],'silencesDetected':silences,'removed':cuts,'protectedExceptions':exceptions,'sampleAccurateMapping':mapping,'speechHandlesFrames':2,'joinFadeMs':5})
         removed_count+=len(cuts); assembled.append(edited); offset+=edited_seconds
         takes.append(f"## {scene['id']}\nSource `{src.name}`; range 0–{raw_seconds:.6f}s. Single existing TTS segment retained. Rejected retakes: N/A.\n\n{text}\n")
-    joined=np.concatenate(assembled);write_wav(assets/'narration-edited.wav',joined)
+    write_wav(assets/'narration-edited.wav',np.concatenate(assembled))
     write_wav(assets/'narration-raw.wav',np.concatenate([pcm(root/s['audioFile']) for s in source['scenes']]))
     beats=[]
     for n,cue in enumerate(plan['beats']):
-        words=[w for w in all_words if w['sceneId']==cue['sceneId']]
-        selected=locate(words,cue['trigger'],cue.get('occurrence',0))
+        selected=locate([w for w in all_words if w['sceneId']==cue['sceneId']],cue['trigger'],cue.get('occurrence',0))
         onset=selected[0]['start']; frame=round(onset*args.fps)
         beats.append({**cue,'id':f'beat-{n+1:03d}','startFrame':frame,'firstVisibleFrame':frame,'wordOnsetSeconds':onset,'wordEndSeconds':selected[-1]['end'],'rendererQuantizationErrorFrames':round(frame-onset*args.fps,5),'words':selected,'groundTruthSyncStatus':'REQUIRES_LISTENING_REVIEW'})
     beats.sort(key=lambda b:b['startFrame'])
@@ -186,11 +198,9 @@ def main() -> None:
         b['endFrame']=beats[n+1]['startFrame'] if n+1<len(beats) else math.ceil(offset*args.fps)
         if b['endFrame']<=b['startFrame']: raise ValueError('Two effects collide at one frame; simplify plan')
         b['durationFrames']=min(round(.4*args.fps),b['endFrame']-b['startFrame'])
-    # A short silent visual-only tail returns to the first frame without replaying/cutting voice.
     frames=math.ceil(offset*args.fps)+round(.5*args.fps)
-    metrics={'inputKind':'tts_motion','model':args.model,'alignmentVersions':versions,'rawDecodedAudioSeconds':raw_total,'rawEncodedAudioSeconds':sum(x['encodedContainerSeconds'] for x in inventory),'editedNarrationSeconds':offset,'previewDurationSeconds':frames/args.fps,'visualLoopTailSeconds':frames/args.fps-offset,'sourceClipCount':len(inventory),'selectedTtsSegments':len(inventory),'rejectedTakes':None,'rejectedTakesReason':'N/A: no camera retakes','silencesDetected':candidates,'silencesActuallyCut':removed_count,'secondsRemoved':raw_total-offset,'actualCutRanges':removed_count,'fps':args.fps,'fpsSource':'Existing graphics-only Remotion timebase; no camera footage','faceCheck':'N/A: graphics-only, no face footage','music':'none','denoise':'bypassed: clean preserved TTS; avoid damaging consonants','manualListening':'NOT_PERFORMED_BY_AUTOMATED_PIPELINE','groundTruthTwoFrameSync':'NOT_VERIFIED','quantizationMaxAbsFrames':max(abs(b['rendererQuantizationErrorFrames']) for b in beats),'published':False,'finalRendered':False}
-    save(out/'source-inventory.json',inventory);save(out/'edit-decisions.json',edl)
-    save(out/'words.json',all_words);save(out/'effects-map.json',beats);save(out/'metrics.json',metrics)
+    metrics={'inputKind':'tts_motion','model':args.model,'modelsActuallyLoaded':list(models),'alignmentVersions':versions,'rawDecodedAudioSeconds':raw_total,'rawEncodedAudioSeconds':sum(x['encodedContainerSeconds'] for x in inventory),'editedNarrationSeconds':offset,'previewDurationSeconds':frames/args.fps,'visualLoopTailSeconds':frames/args.fps-offset,'sourceClipCount':len(inventory),'selectedTtsSegments':len(inventory),'rejectedTakes':None,'rejectedTakesReason':'N/A: no camera retakes','silencesDetected':candidates,'silencesActuallyCut':removed_count,'secondsRemoved':raw_total-offset,'actualCutRanges':removed_count,'fps':args.fps,'fpsSource':'Existing graphics-only Remotion timebase; no camera footage','faceCheck':'N/A: graphics-only, no face footage','music':'none','denoise':'bypassed: clean preserved TTS; avoid damaging consonants','manualListening':'NOT_PERFORMED_BY_AUTOMATED_PIPELINE','groundTruthTwoFrameSync':'NOT_VERIFIED','quantizationMaxAbsFrames':max(abs(b['rendererQuantizationErrorFrames']) for b in beats),'published':False,'finalRendered':False}
+    for filename,value in [('source-inventory.json',inventory),('edit-decisions.json',edl),('words.json',all_words),('effects-map.json',beats),('metrics.json',metrics),('alignment-attempts.json',alignment_attempts)]:save(out/filename,value)
     (out/'takes.md').write_text('\n'.join(takes),encoding='utf-8')
     lines=['# Effects map','Offsets compare rendered frames to model-derived audio alignment, NOT independently verified phoneme ground truth.','|Beat|Trigger|Onset s|Frame|Quantization frames|','|---|---|---:|---:|---:|']
     lines += [f"|{b['id']}|{b['trigger']}|{b['wordOnsetSeconds']:.4f}|{b['startFrame']}|{b['rendererQuantizationErrorFrames']}|" for b in beats]
