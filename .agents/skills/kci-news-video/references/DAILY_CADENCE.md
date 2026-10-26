@@ -34,7 +34,7 @@ KR_NEWS uses digest mode, NOT one video per written article. The written brief c
 
 Target 90–110 seconds within the approved 60–110-second range; reduce items rather than rush narration. Single-story format remains available for the separate macro video or an exceptionally dominant story. Draft three truthful hooks and select one. Use one meaningful comment invitation plus a restrained follow request, spoken once and displayed. Retain a short information-only disclaimer.
 
-Read SKILL.md, EDITORIAL_BRIEF.md, HOOK_CTA.md, PRODUCTION.md, QC.md and VOICE_PROFILE.md. This document controls stream/count/digest format; their source, security, voice and QA gates remain binding.
+Read SKILL.md, EDITORIAL_BRIEF.md, HOOK_CTA.md, PRODUCTION.md, POST_PRODUCTION.md, QC.md and VOICE_PROFILE.md. This document controls stream/count/digest format; their source, security, voice and QA gates remain binding.
 
 ## Identity and persistent handoff
 
@@ -64,7 +64,7 @@ Before job/trigger creation, check exact date+stream+edition, issues/runs and le
 
 ## Completion and notifications
 
-Only verified playable MP4s count as completed. Draft, job-created, queued, rendering, failed, QA_REQUIRED and BLOCKED remain distinct. All outputs stay REVIEW_REQUIRED / CHỜ DUYỆT — CHƯA ĐĂNG.
+Only verified playable MP4s count as completed. Draft, job-created, queued, rendering, failed, QA_REQUIRED and BLOCKED remain distinct. All outputs stay REVIEW_REQUIRED / CHỜ DUYỆT — CHƯA ĐĂNG. A scheduled video's first MP4 is a **preview for the owner's review**, not a final-approved master. Daily schedules remain unchanged; the owner's sign-off for an earlier video does not hold up starting the next preview. For the nine-stage post-production acceptance and when real raw-footage take grading is relevant, apply [POST_PRODUCTION.md](POST_PRODUCTION.md). New human-take measurements are N/A on normal Vbee-only news. The completion watcher may notify PREVIEW READY after verified artifact and QC, but must not imply FINAL APPROVED.
 
 If finished within the producer run, deliver inspected MP4 or verified authenticated artifact, script, sources and QC. Otherwise record actual issue/run URL and state for KCI Video Completion Watch. The watcher serves BOTH streams and only checks/QCs/delivers: no paid TTS, new trigger or rerun.
 
