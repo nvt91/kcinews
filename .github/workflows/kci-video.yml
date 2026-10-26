@@ -89,6 +89,9 @@ jobs:
         startsWith(github.event.issue.title, '[KCI VIDEO]')))
     runs-on: ubuntu-latest
     timeout-minutes: 35
+    permissions:
+      contents: read
+      issues: write
     env:
       KCI_JOB: ${{ inputs.job }}
       KCI_MODE: ${{ inputs.mode }}
@@ -126,3 +129,16 @@ jobs:
             public/voice/*.mp3
           if-no-files-found: warn
           retention-days: 7
+
+      - name: Record Actions run on the requesting issue
+        if: ${{ always() && github.event_name == 'issues' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KCI_ISSUE: ${{ github.event.issue.number }}
+          KCI_REPO: ${{ github.repository }}
+          KCI_RUN_ID: ${{ github.run_id }}
+          KCI_RESULT: ${{ job.status }}
+        run: |
+          gh issue comment "$KCI_ISSUE" --repo "$KCI_REPO" \
+            --body "KCI_ACTIONS_RUN:$KCI_RUN_ID | Result: $KCI_RESULT | https://github.com/$KCI_REPO/actions/runs/$KCI_RUN_ID — Review-only artifact; do not auto-publish."
