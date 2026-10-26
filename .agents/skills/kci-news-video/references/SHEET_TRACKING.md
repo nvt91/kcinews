@@ -26,7 +26,7 @@ One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. V
 | --- | --- | --- |
 | B | Tên video | Clear Vietnamese title; identify archival/weekend editions. Preserve an owner's edited title. |
 | C | Ngày giờ sản xuất | Actual evidenced MP4 completion time in KST; blank until produced. Use native date-time and note whether based on artifact creation or workflow completion. Never use scheduled start as completion. |
-| D | Caption đăng bài Viral kèm hastag | Draft caption with a truthful hook, concise context, one useful comment/follow CTA, short disclaimer and 2–3 relevant hashtags. No promise of virality. Preserve existing owner edits; only seed when blank/new or explicitly authorized to revise. |
+| D | Caption đăng bài Viral kèm hastag | Short, plain, friendly Vietnamese caption: normally 30–60 words / 2–3 sentences, excluding disclaimer and 2–3 relevant hashtags. Follow the caption and trend-verification rules in HOOK_CTA.md. No promise of virality. Preserve existing owner edits; only seed when blank/new or explicitly authorized to revise. |
 | E | Link có thể mở video nếu có | Verified MP4/Drive link, or verified authenticated GitHub run/artifact link with note explaining access and expiry. No imaginary public URLs or sandbox paths as external links. Blank when unavailable. |
 | F | Luồng / bản tin | KR_NEWS / KR_AM, KR_NEWS / KR_MID, KR_NEWS / KR_CLOSE, MACRO / MACRO21, or GLOBAL_US / US_AM. |
 | G | Sản xuất & QC | Machine-observed production state, from the vocabulary below. |
@@ -44,6 +44,14 @@ H allowed values: `CHỜ DUYỆT`, `CẦN SỬA`, `ĐÃ DUYỆT`, `KHÔNG DÙNG`
 I allowed values: `CHƯA ĐĂNG`, `ĐÃ ĐĂNG`, `KHÔNG ĐĂNG`.
 
 Map queued/in-progress to ĐANG DỰNG only when a real job exists. A success flag alone cannot yield MP4 — QC ĐẠT. A verified playable MP4 with outstanding duration/subtitle/factual/audio checks is MP4 — CẦN RÀ SOÁT. Use MP4 — QC ĐẠT only after the required QC scope is evidenced and state remaining qualifications. Lack of a critical source is BLOCKED, not a completed video. A failed run is LỖI and must preserve audio/artifacts. Do not regress a newer completed row because an older run failed.
+
+## Caption style update — owner request, 26 October 2026
+
+Before drafting a NEW caption for column D, read the caption section of [HOOK_CTA.md](HOOK_CTA.md). Use short, mộc mạc, friendly language for Vietnamese viewers, one main idea and a light relevant invitation rather than a long analytical report. Default 30–60 words / 2–3 sentences, excluding a short investment disclaimer and 2–3 hashtags. Preserve material source/date/estimate qualifications; do not compress them into misleading claims. Plain text only, no markdown bold, at most one suitable emoji. The existing header word "Viral" does not authorize sensational wording, irrelevant hashtags or promises of reach.
+
+Use a brand hashtag plus relevant topic tags; add a topical trend only when supported by fresh evidence for the intended platform/audience. Trend evidence and checking time belong in the editorial record, not a long caption. If trend verification is unavailable, use relevant tags without calling them trending. The sync/watcher must not invent trend status, current market facts or a fresh news story to fill a cell. It may reuse the source-backed producer caption and evidence; otherwise record the limitation.
+
+This preference applies to future caption drafting, not an authorization to overwrite existing D cells, owner edits or historical publication text. Do not bulk-edit old rows, regenerate voice/video, change schedules, alter approval/publication selections or rename the native table/header for this style change. Only claim actual Sheet writes after the normal write/readback process.
 
 ## Read / upsert / verify procedure
 
