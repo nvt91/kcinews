@@ -46,5 +46,9 @@ A reviewed v2 job has:
 
 The production runner appends `cta.spoken` **once** to the final narration segment. A dedicated animated overlay appears during closing portion; subtitles include spoken CTA in a single continuous voice track. Changes to CTA wording require new voice or a separately generated/synchronized ending—do NOT reuse outdated voice.
 
+## Social caption is not the voice script
+
+For Facebook/Instagram copy accompanying the finished video, use [CAPTION_STYLE.md](CAPTION_STYLE.md): 30–65 Vietnamese words before hashtags, simple friendly language, one useful question or low-pressure invitation and 3–5 relevant hashtags based on the actual topic. Favor timely hashtags only when real trend evidence exists; never invent virality or use unrelated trending tags. No Markdown bold; do not paste the long video voice script into the caption. The caption can be more conversational than the precise on-camera newsroom narration, but **facts and session qualifiers must match**. A caption is a draft, not authorization to publish.
+
 ## Editorial A/B learning
 For similar stories, rotate hook mechanisms and CTA types across *different* videos; do not spam the same ask. After publication (only when metrics accessible), compare 3-second retention, average watch duration, completion rate, qualified comments, follow conversion and saves. A high CTR does not excuse factual misrepresentation. Store learnings as notes, not fabricated performance.
