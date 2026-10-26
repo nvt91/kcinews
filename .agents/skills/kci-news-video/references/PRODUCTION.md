@@ -20,6 +20,12 @@ Use `jobs/kci-schema-v2-example.json` and run `node scripts/validate-kci-job.mjs
 - Where bars represent numeric observations, `visual.bars[]` contains actual signed values with units/labels. No interpolation of unseen price ticks.
 - For reversal, `visual.milestones[]` are **discrete confirmed checkpoints** with labels such as OPEN/LOW/CLOSE, not a sampled time series.
 
+## Mandatory adaptive post-production after the Vbee segment build
+
+Read [POST_PRODUCTION.md](POST_PRODUCTION.md) for the owner's nine-stage editing specification: choose takes only when real recorded alternatives exist; carefully remove unwanted silence without changing meaning; color-match/eye-zoom only real footage, not pure Remotion graphics; use a sound-off 0–3s hook, sparse motion keyword callouts, a source-verified effects map, soft audio processing with actual loudness measurement and a preliminary render plus still frames **before the owner approves a final**. The owner supplied 2–4-word keyword labels and trigger accuracy within 2 frames; the current runner only estimates text timings by word counts, so DO NOT claim word-level sync or Whisper has been implemented. Use scene-level cues and explicitly mark word-level verification pending until a real alignment/renderer upgrade exists. Apply the stricter already-approved KCI Reels margins rather than reverting to smaller generic margins.
+
+**Critical separation:** a daily GitHub Actions `out/<job-id>.mp4` is an MP4-for-review, not an owner-approved final. Keep the current flow producing those review artifacts. Store notes and source provenance; only when the owner approves a specific preview should a final/approved export be created, and do not claim a named `output/final.mp4` exists without verifying its actual path and encoding. Existing archived voices can be reused for graphics-only edits with identical script.
+
 ## Main pipeline
 1. Editorial agent researches/verifies, writes the brief, source ledger, 3 scored hooks, scene voice lines and CTA.
 2. Save reviewed `jobs/kci-YYYY-MM-DD-topic.json` via connected GitHub. Use unique event/story id; don't overwrite approved prior editions.
