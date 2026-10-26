@@ -39,6 +39,12 @@ One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. V
 | N | Cập nhật KST | Actual last successful observation/write timestamp, native date-time. |
 | O | Link bài đã đăng | OWNER-CONTROLLED; only confirmed published-post URL. Blank does not authorize publishing. |
 
+### Global/US (US_AM) caption standard — owner's update, 26 October 2026
+
+For **GLOBAL_US / US_AM only**, the owner requests a plain, warm, conversational Vietnamese Facebook/Instagram caption with **50–100 Unicode characters total including whitespace, punctuation, and hashtags**. Aim for one factual, interesting sentence and optionally one natural, answerable question; use **1–2 relevant hashtags** (e.g. #KoreaCapitalInsight plus topic). Count code points before save: `[...caption].length` must be within 50–100. Do not make it verbose, formulaic, heavily promotional, sensational, bold-formatted, or multi-paragraph. Avoid adding a long disclaimer, a source list, or a link that breaks the character cap: preserve sources, nuance, and investment disclaimer in the full brief/video and QC records. Never trade factual correctness for the length. This new instruction **overrides the generic 2–3 hashtag / full-caption disclaimer guideline in column D for GLOBAL_US only**, not for other KCI streams.
+
+For existing video `KCI-20261026-US-AM`, the owner explicitly requested revising its previously long caption; replace that one caption with a 50–100-character version. Subsequent sync must preserve the revised caption and any further owner edits, never expand it back to the old long form. For future editions, set the caption when the row is created or when blank; owner edits always take precedence.
+
 G allowed values: `CHỜ NGHIÊN CỨU`, `ĐANG BIÊN TẬP`, `ĐANG DỰNG`, `MP4 — CẦN RÀ SOÁT`, `MP4 — QC ĐẠT`, `LỖI`, `BLOCKED`, `BỎ QUA`.
 H allowed values: `CHỜ DUYỆT`, `CẦN SỬA`, `ĐÃ DUYỆT`, `KHÔNG DÙNG`.
 I allowed values: `CHƯA ĐĂNG`, `ĐÃ ĐĂNG`, `KHÔNG ĐĂNG`.
