@@ -41,7 +41,7 @@
 **Nguồn:** fed-calendar-oct, bea-calendar-2910, barrons-earnings-week.
 
 ### Cảnh 5 — TÁC ĐỘNG TỚI HÀN QUỐC
-**Headline:** BA KÊNH TRUYỀN DẪN. **Giọng:** Với Hàn Quốc, dầu cao có thể làm tăng chi phí nhập khẩu. Thông điệp Fed và lợi suất trái phiếu Mỹ quanh năm phần trăm có thể ảnh hưởng đồng won. Còn Samsung Electronics và SK hynix nhạy với kỳ vọng chi tiêu AI. Chưa thể từ đó kết luận KOSPI chắc chắn giảm.
+**Headline:** BA KÊNH TRUYỀN DẪN. **Giọng:** Với Hàn Quốc, dầu cao có thể làm tăng chi phí nhập khẩu. Thông điệp Fed và lợi suất trái phiếu Mỹ quanh năm phần trăm có thể ảnh hưởng đồng won. Còn Samsung Electronics và SK hynix nhạy với kỳ vọng chi tiêu AI. Những tín hiệu này chưa đủ để dự đoán KOSPI sẽ giảm.
 **Visual:** generic; Đây là các kịch bản rủi ro, không phải dự báo giá KOSPI.
 **Nguồn:** reuters-global-2310, reuters-oil-2610, fed-calendar-oct, barrons-earnings-week.
 
