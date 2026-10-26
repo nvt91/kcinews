@@ -5,7 +5,6 @@ import re
 import unicodedata
 from pathlib import Path
 import subprocess
-import numpy as np
 
 
 def norm(text):
@@ -17,15 +16,14 @@ def flattened(result):
 
 
 def recover(model, file:Path, transcript:str, evidence:Path):
-    """Return observed candidate intervals from ASR and padded actual audio.
-
-    Padding is an inference aid only, not an edit to the delivered narration.
-    ASR output is retained even when it differs, never silently substituted as news text.
-    """
-    observed=[]; records=[]
+    """Observe ASR/padded-audio candidates. Padding never changes delivered audio."""
+    import numpy as np
+    observed=[];records=[]
     asr=model.transcribe(str(file),language='vi',word_timestamps=True,regroup=False,verbose=None,condition_on_previous_text=False)
     asr_words=flattened(asr)
     records.append({'kind':'independent-ASR','words':asr_words,'recognizedText':' '.join(w['word'] for w in asr_words)})
+    evidence.parent.mkdir(parents=True,exist_ok=True)
+    evidence.write_text(json.dumps({'transcript':transcript,'candidates':records},ensure_ascii=False,indent=2),encoding='utf-8')
     if norm(' '.join(w['word'] for w in asr_words))==norm(transcript):observed.append(asr_words)
     raw=np.frombuffer(subprocess.run(['ffmpeg','-v','error','-i',str(file),'-ac','1','-ar','16000','-f','f32le','-'],check=True,capture_output=True).stdout,dtype='<f4').copy()
     for pad in [.5,1.0]:
@@ -37,6 +35,5 @@ def recover(model, file:Path, transcript:str, evidence:Path):
             w['start']=round(w['start']-pad,6);w['end']=round(w['end']-pad,6)
         records.append({'kind':'padded-actual-audio','inferencePaddingSeconds':pad,'words':words})
         if norm(' '.join(w['word'] for w in words))==norm(transcript):observed.append(words)
-    evidence.parent.mkdir(parents=True,exist_ok=True)
-    evidence.write_text(json.dumps({'transcript':transcript,'candidates':records},ensure_ascii=False,indent=2),encoding='utf-8')
+        evidence.write_text(json.dumps({'transcript':transcript,'candidates':records},ensure_ascii=False,indent=2),encoding='utf-8')
     return observed
