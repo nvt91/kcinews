@@ -21,6 +21,7 @@ Read the focused references at the matching stage:
 3. [Vbee, Remotion and GitHub workflow](references/PRODUCTION.md)
 4. [Editorial/visual/voice QC and release](references/QC.md)
 5. [Current voice selection and migration rules](references/VOICE_PROFILE.md)
+6. [Natural social caption and topic-matched hashtags](references/CAPTION_STYLE.md)
 
 ## Non-negotiable rules
 
@@ -76,7 +77,7 @@ The validator checks source references, the hook beginning, CTA completion and j
 
 Read [QC.md](references/QC.md). Inspect actual frame samples from opening, middle, CTA and outro; check no black frames, overflowing Vietnamese, improper session labels or faulty source footnotes; ensure voice audio exists and CTA is spoken. Status remains `REVIEW_REQUIRED` until explicitly accepted.
 
-Deliver MP4 (or a verified authenticated GitHub artifact), a source ledger, script, optional thumbnail/caption, and a concise QC summary. If blocked, report exact obstacle and preserve existing audio. Don't pretend ongoing GitHub jobs succeeded.
+Deliver MP4 (or a verified authenticated GitHub artifact), a source ledger, script, and **a short, warm, natural Facebook/Instagram caption with 3–5 relevant, topical hashtags** following [CAPTION_STYLE.md](references/CAPTION_STYLE.md), plus optional thumbnail and concise QC summary. Aim for 30–65 Vietnamese words before hashtags; do not use bold text, misleading clickbait, or unverified claims that a hashtag is trending. Keep manually edited captions in KCI News Sheet unchanged. If blocked, report exact obstacle and preserve existing audio. Don't pretend ongoing GitHub jobs succeeded.
 
 ## Run from ChatGPT
 
