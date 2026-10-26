@@ -4,9 +4,12 @@ on:
   pull_request:
     paths:
       - 'scripts/align-kci-audio.py'
+      - 'scripts/alignment_candidates.py'
+      - 'scripts/recover_alignment.py'
       - 'scripts/run-voiced-preview.mjs'
       - 'scripts/produce-voiced-preview.mjs'
       - 'scripts/install-alignment.sh'
+      - 'scripts/ensure-media-tools.sh'
       - 'scripts/test-aligned-preview.*'
       - 'src/KciAlignedPreview.tsx'
       - 'src/aligned-index.tsx'
@@ -41,10 +44,10 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install rendering and matched CPU-only alignment dependencies
+        timeout-minutes: 15
         run: |
           npm ci
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          bash scripts/ensure-media-tools.sh
           bash scripts/install-alignment.sh
       - uses: actions/cache@v4
         with:
@@ -54,7 +57,7 @@ jobs:
         run: |
           node --check scripts/run-voiced-preview.mjs
           node --check scripts/produce-voiced-preview.mjs
-          python -m py_compile scripts/align-kci-audio.py
+          python -m py_compile scripts/align-kci-audio.py scripts/recover_alignment.py
           python scripts/test-aligned-preview.py
           node scripts/test-aligned-preview.mjs
           npx tsc --noEmit
