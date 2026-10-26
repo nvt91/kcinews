@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-27-kr-am",
+  "edition": "27/10/2026 KR_AM KST",
+  "dataAsOf": "2026-10-27T08:03:42+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Xuất khẩu chip mạnh, tâm lý tiêu dùng Hàn Quốc giảm: chờ kiểm chứng GDP quý III",
+  "sourceDisclaimer": "KCI 27 October 2026 morning research DRAFT only. BOK Q3 GDP outcome not independently verified at 08:03 KST. Oct 26 stock closes and Oct 1–20 trade data are historical. Do not synthesize voice or render with legacy runner; requires updated source verification and compliant voiced preview route.",
+  "metadata": {
+    "articleId": "KCI-20261027-KR-AM",
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articlePath": "editorial/2026-10-27/kr-am.md",
+    "eventKeys": [
+      "KR-BOK:CCSI-OCT-2026:2026-10-27",
+      "KR-BOK:GDP-Q3-ADVANCE-SCHEDULE:2026-10-27",
+      "KR-KRX:CLOSE-HISTORICAL-2026-10-26",
+      "KR-KCS:EXPORTS-1-20OCT-CONTEXT-2026-10-21",
+      "KR-SKHYNIX:Q3-RETURNS-CALENDAR-2026-10-28"
+    ],
+    "voiceName": "Anh Khôi Tin tức",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "renderStyle": "KCI Newsroom V3 proposed, NOT deployed",
+    "mediaMode": "tts_motion",
+    "productionGate": "BLOCKED_PIPELINE_AND_GDP_RESULT_NOT_VERIFIED: main workflow issue trigger invokes video/TTS and final-like MP4 without audited word-aligned voiced preview or owner-approval gate; PR34 preview run failed QC loudness and is unmerged. Voice listening approval also unverified. No paid TTS or video trigger.",
+    "previewState": "NOT_CREATED",
+    "finalRendered": false,
+    "published": false,
+    "rawDuration": "NOT_MEASURED",
+    "editedDuration": "NOT_MEASURED",
+    "rejectedTakes": "N/A — TTS only",
+    "silencesCut": "NOT_MEASURED",
+    "audioLUFS": "NOT_MEASURED",
+    "truePeak": "NOT_MEASURED",
+    "wordAlignment": "NOT_VERIFIED",
+    "twoFrameSync": "NOT_VERIFIED",
+    "visualSafeZone": "NOT_VERIFIED",
+    "faceTracking": "N/A",
+    "colorGrading": "N/A",
+    "approval": "WAITING_FOR_APPROVABLE_PREVIEW",
+    "dedup": "Compared main jobs 23-26 Oct, editorial KR_AM and KR_CLOSE 25-26 Oct, MACRO21 26 Oct, issue search since 20 Oct, PR34 status and workflow run list. No main KR_AM job on 27 Oct at cutoff; do not duplicate 26 Oct KRX close or SK hynix dividend story as a fresh development."
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-ccsi-1027",
+      "title": "Bank of Korea — October 2026 Consumer Sentiment Survey (front-page notice 27 Oct, detailed release inaccessible during run)",
+      "url": "https://www.bok.or.kr/portal/main/main.do",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK page lists Oct 2026 CCSI 105.4, down 1.2 points on the prior month; scheduled survey release 06:00 KST 27 Oct.",
+        "Detailed release could not be opened; independent per-component breakdown not verified."
+      ]
+    },
+    {
+      "id": "bok-calendar-q3",
+      "title": "Bank of Korea official statistical release calendar — Q3 2026 GDP advance scheduled 27 Oct 08:00",
+      "url": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?date=69675-01&menuNo=200775",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK calendar lists consumer sentiment at 06:00 and real Q3 GDP first estimate at 08:00 KST on Oct 27.",
+        "At this editorial cutoff original GDP release values were not independently retrieved; do not quote an actual quarterly number."
+      ]
+    },
+    {
+      "id": "yonhap-gdp-calendar",
+      "title": "Yonhap Oct 24 — Q3 GDP preview and BOK August forecast",
+      "url": "https://www.yna.co.kr/view/AKR20261023183500002",
+      "eventDate": "2026-10-24",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "BOK planned first Q3 GDP release Oct 27; BOK's August forecast was 0.3% quarter-on-quarter for Q3, not actual.",
+        "Q2 GDP quarter-on-quarter 0.6% cited as historical context."
+      ]
+    },
+    {
+      "id": "yonhap-krx-1026",
+      "title": "Yonhap 26 Oct 16:09 KST — KRX regular-session KOSPI / KOSDAQ close",
+      "url": "https://www.yna.co.kr/view/AKR20261026126951008",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Oct 26 KRX regular-session close KOSPI 5,469.47, down 80.83 points / -1.46%; KOSDAQ 727.21, down 24.48 points / -3.26%.",
+        "This is YESTERDAY'S completed regular session; no Oct 27 KRX close is available at 08:03 KST."
+      ]
+    },
+    {
+      "id": "kcs-reuters-1021",
+      "title": "Reuters 21 Oct — preliminary Korea Customs exports, 1–20 October 2026",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-october-1-20-exports-surge-105-record-chip-sales-2026-10-21/",
+      "eventDate": "2026-10-21",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Customs Oct 1–20 preliminary exports +105.4% year on year, semiconductor exports +222.5%, share 44.7%.",
+        "These are OCTOBER 1–20 historical observations, already covered in KR_AM Oct 25; use only as dated context."
+      ]
+    },
+    {
+      "id": "reuters-hynix-1026",
+      "title": "Reuters 26 Oct — SK hynix to discuss shareholder returns with Q3 earnings 28 Oct",
+      "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-announce-steps-boost-shareholder-returns-wednesday-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "SK hynix expected shareholder-return details alongside Q3 earnings Wednesday Oct 28.",
+        "Reported 16 trillion won special dividend was NOT confirmed; company reviewing options."
+      ]
+    },
+    {
+      "id": "krx-hours",
+      "title": "KRX official regular-session trading rules",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "Regular KRX stock market normally runs 09:00–15:30 KST; do not treat premarket / NXT as KRX close."
+      ]
+    },
+    {
+      "id": "nxt-hours",
+      "title": "Nextrade official venue and trading-hours information",
+      "url": "https://www.nextrade.co.kr/marketOverview/content.do",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T08:03:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "NXT is a separate Korean trading venue with an early trading session from 08:00; do not combine NXT and KRX quotations."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Xuất khẩu chip tăng mạnh, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Hai tín hiệu này nói gì về nền kinh tế?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu chip tăng mạnh, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Hai tín hiệu này nói gì về nền kinh tế?"
+      },
+      {
+        "style": "impact",
+        "text": "Tâm lý người tiêu dùng giảm, trong khi bán dẫn vẫn xuất khẩu mạnh. Điều gì quan trọng hơn với cổ phiếu Hàn?"
+      },
+      {
+        "style": "question",
+        "text": "GDP quý ba có cho thấy sức mạnh xuất khẩu lan sang tiêu dùng và đầu tư của Hàn Quốc hay chưa?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà tăng xuất khẩu chip đã đủ để kéo sức mua trong nước đi lên chưa? Chia sẻ góc nhìn và theo dõi Korea Capital Insight để cùng kiểm tra các số liệu tiếp theo.",
+    "screenHeadline": "XUẤT KHẨU ĐỦ KÉO SỨC MUA? ",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Đà tăng xuất khẩu chip đã đủ để kéo sức mua trong nước đi lên chưa?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "HÀN QUỐC — KINH TẾ",
+      "headline": "Xuất khẩu mạnh, niềm tin tiêu dùng giảm",
+      "summary": "CCSI tháng 10 giảm; dữ liệu chip 1–20/10 tăng mạnh.",
+      "voiceText": "Xuất khẩu chip tăng mạnh, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Hai tín hiệu này nói gì về nền kinh tế? Hai chỉ dấu đang diễn biến khác nhau và cần được đọc đúng thời điểm.",
+      "source": "BOK 27/10; KCS/Reuters 21/10",
+      "sourceIds": [
+        "bok-ccsi-1027",
+        "kcs-reuters-1021"
+      ],
+      "stats": [
+        {
+          "label": "CCSI tháng 10",
+          "value": "105,4",
+          "tone": "down"
+        },
+        {
+          "label": "Thay đổi so với tháng 9",
+          "value": "−1,2 điểm",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CCSI tháng 10",
+            "value": -1.2,
+            "display": "−1,2 điểm"
+          },
+          {
+            "label": "Xuất khẩu 1–20/10 (cũ)",
+            "value": 105.4,
+            "display": "+105,4%"
+          }
+        ],
+        "qualifier": "Khác chỉ tiêu/thang đo; không so trực tiếp độ lớn hai cột."
+      }
+    },
+    {
+      "id": "consumer",
+      "eyebrow": "NGÂN HÀNG TRUNG ƯƠNG HÀN QUỐC",
+      "headline": "CCSI 105,4 điểm, giảm 1,2",
+      "summary": "Khảo sát kỳ tháng 10, công bố sáng 27/10; không phải doanh số bán lẻ.",
+      "voiceText": "Theo mục công bố sáng hai mươi bảy tháng mười của Ngân hàng Trung ương Hàn Quốc, chỉ số tâm lý tiêu dùng tháng mười ở mức một trăm linh năm phẩy bốn, giảm một phẩy hai điểm so với tháng trước. Chỉ số này đo cảm nhận của hộ gia đình, không phải số tiền họ đã chi tiêu.",
+      "source": "BOK, công bố 27/10/2026",
+      "sourceIds": [
+        "bok-ccsi-1027"
+      ],
+      "stats": [
+        {
+          "label": "Consumer Sentiment Index",
+          "value": "105,4",
+          "change": "−1,2 điểm",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "105,4",
+        "unit": "CCSI điểm",
+        "qualifier": "Khảo sát tháng 10; so với tháng 9 giảm 1,2 điểm"
+      }
+    },
+    {
+      "id": "exports",
+      "eyebrow": "XUẤT KHẨU — BỐI CẢNH",
+      "headline": "Bán dẫn vẫn là động lực",
+      "summary": "1–20/10 là dữ liệu lịch sử, không phải số giao dịch ngày 27.",
+      "voiceText": "Ở chiều ngược lại, số liệu Hải quan cho giai đoạn một đến hai mươi tháng mười, công bố ngày hai mươi mốt, ghi nhận xuất khẩu bán dẫn tăng hơn hai trăm hai mươi hai phần trăm so với cùng kỳ. Đây là số liệu của giai đoạn đã qua. Xuất khẩu mạnh chưa tự động chứng minh sức mua nội địa tăng đều.",
+      "source": "Korea Customs Service / Reuters, 21/10/2026",
+      "sourceIds": [
+        "kcs-reuters-1021"
+      ],
+      "stats": [
+        {
+          "label": "Xuất khẩu chip 1–20/10",
+          "value": "+222,5%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+222,5%",
+        "unit": "chip / cùng kỳ",
+        "qualifier": "Thống kê sơ bộ 1–20/10; công bố 21/10"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "CHỨNG KHOÁN HÀN QUỐC",
+      "headline": "Phiên 26/10: KOSDAQ yếu hơn KOSPI",
+      "summary": "KRX regular đóng cửa ngày 26/10, không phải diễn biến sáng 27.",
+      "voiceText": "Phiên chính hôm qua, hai mươi sáu tháng mười, KOSPI giảm một phẩy bốn sáu phần trăm, còn KOSDAQ giảm ba phẩy hai sáu phần trăm. Con số này là giá đóng cửa KRX hôm qua; không phải báo giá đang giao dịch sáng nay, và cũng không phải số liệu của sàn Nextrade.",
+      "source": "Yonhap / KRX regular close 26/10",
+      "sourceIds": [
+        "yonhap-krx-1026",
+        "krx-hours",
+        "nxt-hours"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI 26/10",
+          "value": "5.469,47",
+          "change": "−1,46%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ 26/10",
+          "value": "727,21",
+          "change": "−3,26%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -1.46,
+            "display": "−1,46%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -3.26,
+            "display": "−3,26%"
+          }
+        ],
+        "qualifier": "Đóng cửa KRX regular 26/10, KHÔNG phải giá 27/10"
+      }
+    },
+    {
+      "id": "gdp",
+      "eyebrow": "CỘT MỐC CẦN ĐỐI CHIẾU",
+      "headline": "GDP quý III: cần kiểm tra bản gốc",
+      "summary": "Lịch công bố 08:00 sáng 27/10; chưa xác minh được số liệu mới.",
+      "voiceText": "BOK có lịch công bố ước tính GDP quý ba vào sáng hai mươi bảy tháng mười. Để đánh giá tăng trưởng có lan tỏa hay chưa, cần xem đồng thời tiêu dùng, đầu tư và xuất khẩu. KCI chưa đưa con số GDP chưa kiểm chứng vào bản tin; dự báo cũ không phải kết quả mới.",
+      "source": "BOK lịch thống kê / Yonhap 24/10",
+      "sourceIds": [
+        "bok-calendar-q3",
+        "yonhap-gdp-calendar"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Chưa xác minh được số GDP quý III tại mốc rà soát; không hiển thị dự báo như thực tế."
+      }
+    },
+    {
+      "id": "close",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Theo dõi GDP, sức mua và lợi nhuận",
+      "summary": "SK hynix dự kiến công bố kết quả và biện pháp trả cổ đông 28/10.",
+      "voiceText": "Một mốc nữa là ngày hai mươi tám tháng mười, khi SK hynix dự kiến thông tin kết quả quý ba và phương án trả cổ đông. Khoản cổ tức mười sáu nghìn tỷ won được báo chí nhắc tới vẫn chưa phải quyết định chính thức. Hãy chờ công bố doanh nghiệp thay vì suy đoán từ tin đồn.",
+      "source": "Reuters 26/10; BOK 27/10",
+      "sourceIds": [
+        "reuters-hynix-1026",
+        "bok-calendar-q3"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "GDP QUÝ III — CHỜ SỐ GỐC",
+          "NIỀM TIN TIÊU DÙNG",
+          "SK HYNIX 28/10"
+        ]
+      }
+    }
+  ]
+}
