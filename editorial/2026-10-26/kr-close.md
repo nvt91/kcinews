@@ -46,3 +46,7 @@ Thông tin tham khảo, không phải khuyến nghị đầu tư cá nhân.
 - DART nguyên bản 502 trong trình đọc, đã đối chiếu văn bản tái hiện và Reuters; không diễn giải số tiền tin đồn thành cổ tức đã xác nhận.
 - Không có MP4/voice full/CTA phát âm được kiểm chứng, không khẳng định video đã sản xuất. Trạng thái **BLOCKED** đối với paid TTS/render; nếu cổng nghe chưa có thì duy trì.
 - **CHỜ DUYỆT — CHƯA ĐĂNG**; không tạo lịch, không giao dịch, không đăng.
+
+## Nhật ký Google Sheet
+
+**SHEET_SYNC_OK**, đã ghi ngày 26/10/2026 vào KCI News Sheet gốc, tab `Trang tính1!B12:O12`, khóa duy nhất cột K `KCI-20261026-KR-CLOSE`, đã đọc lại đúng một bản và xác minh B/D/F/G/H/I/J/K/L/M/N. C/E/O trống vì chưa có MP4, chưa đăng; G = `BLOCKED`, H = `CHỜ DUYỆT`, I = `CHƯA ĐĂNG`. Native table Bảng_1 ID `376391657` đã được mở rộng qua updateTable đến B2:O12 (Google Sheets API trả thành công). Thời điểm log 17:16:42 KST, trường M chỉ trỏ tới **run thử giọng**, không phải render video. Không gọi lại Vbee và không tạo issue trigger.
