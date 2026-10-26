@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-26-us-am",
+  "articleId": "KCI-20261026-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "digest",
+  "edition": "26/10/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-10-26T08:57:37+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Dầu Brent trên 116 USD, Phố Wall đỏ điểm trước tuần Fed — KCI Global/US 26/10",
+  "sourceDisclaimer": "Data cutoff 26/10/2026 08:57 KST. US regular-session close 23/10, Monday early oil quote 26/10 08:15 KST. FOMC, GDP, PCE and earnings are scheduled, not results. Informational only.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-10-26/us-am.md",
+  "eventKeys": [
+    "US-MARKET-20261023-CLOSE",
+    "ENERGY-20261026-EARLY-TRADING",
+    "FED-FOMC-20261027-28",
+    "BEA-20261029-GDP-PCE",
+    "US-BIGTECH-EARNINGS-WEEK-20261026"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-us-close-2310",
+      "title": "Associated Press — How major US stock indexes fared Friday 23 October 2026",
+      "url": "https://apnews.com/article/e07c72bc5cbe5dffe352ddf30054e35f",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US cash session of Friday 2026-10-23 closed: S&P 500 7,623.68 (-39.75 points, approximately -0.52%), Dow Jones 52,215.16 (-652.82 points, approximately -1.23%), Nasdaq Composite 25,955.34 (-53.52 points, approximately -0.21%).",
+        "These results were established on US Friday Oct 23, corresponding to the Korean early morning of Sat Oct 24; they are not Monday US closing quotes."
+      ]
+    },
+    {
+      "id": "reuters-global-2310",
+      "title": "Reuters — Stocks fall, tech shares steady, oil highest in nearly six months — 23 October",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-23/",
+      "eventDate": "2026-10-23",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -0.52%, Dow -1.23% and Nasdaq Composite -0.21% for the US cash session of Friday 2026-10-23.",
+        "Philadelphia semiconductor index rose approximately 0.4% Friday after heavy losses on Thursday; do not conflate the two sessions.",
+        "Brent settled Friday at USD 116.72/barrel, WTI at USD 103.27/barrel; US 10Y Treasury yield around 4.99%."
+      ]
+    },
+    {
+      "id": "reuters-oil-2610",
+      "title": "Reuters — Oil prices down almost $1 in early Monday trading",
+      "url": "https://www.reuters.com/business/energy/oil-prices-down-almost-1-early-trading-2026-10-25/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "At 23:15 GMT on Sunday Oct 25, corresponding to 08:15 KST Monday Oct 26, Brent oil futures were about USD 115.79/barrel, down USD 0.93 from Friday settlement.",
+        "At the same observed time WTI oil futures were about USD 102.28/barrel, down USD 0.99; both are early-session observations, not Monday closing prices."
+      ]
+    },
+    {
+      "id": "reuters-gulf-2510",
+      "title": "Reuters — Gulf bourses slip as Houthi-Saudi clashes rattle investors",
+      "url": "https://www.reuters.com/world/middle-east/gulf-bourses-slip-houthi-saudi-clashes-rattle-investors-2026-10-25/",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Saudi benchmark index lost 2.7% on Sunday October 25 amid elevated security risks, reported attacks and worries about Saudi energy infrastructure.",
+        "The Reuters report discusses regional supply and shipping risks; an energy supply disruption is a risk scenario, not yet a quantified export outage for Monday."
+      ]
+    },
+    {
+      "id": "fed-calendar-oct",
+      "title": "Federal Reserve Board — October 2026 calendar including FOMC 27–28 October",
+      "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "primary",
+      "facts": [
+        "Federal Open Market Committee is scheduled to meet Tuesday-Wednesday October 27–28, 2026.",
+        "Scheduled FOMC policy communication is Wednesday October 28 at 2:00pm US Eastern, corresponding to Thursday October 29 03:00 KST while EDT is in effect."
+      ]
+    },
+    {
+      "id": "bea-calendar-2910",
+      "title": "Bureau of Economic Analysis — Release schedule for Q3 GDP advance and September PCE",
+      "url": "https://www.bea.gov/news/schedule",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "primary",
+      "facts": [
+        "BEA has scheduled GDP (advance estimate), Q3 2026 for Thursday October 29 at 8:30am US Eastern.",
+        "BEA has scheduled Personal Income and Outlays, September 2026, which carries PCE inflation, for October 29 at 8:30am US Eastern; this corresponds to October 29 21:30 KST. These results were NOT known Monday morning."
+      ]
+    },
+    {
+      "id": "barrons-earnings-week",
+      "title": "Barron's — Major US technology earnings and macro releases to watch in week of 26 October 2026",
+      "url": "https://www.barrons.com/articles/what-to-watch-fed-meeting-inflation-alphabet-amazon-verizon-b5cfd2e0",
+      "eventDate": "2026-10-25",
+      "checkedAt": "2026-10-26T08:57:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Alphabet and Microsoft are expected to report quarterly earnings Wednesday Oct 28; Amazon Thursday Oct 29, US local calendar.",
+        "AI capital spending, profitability and forward guidance are key questions; results are scheduled and not yet published in this Monday morning edition."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Dầu Brent chốt trên một trăm mười sáu đô la, Dow Jones mất hơn sáu trăm năm mươi điểm. Vì sao tuần này Hàn Quốc cần chú ý?",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "Dầu Brent chốt trên một trăm mười sáu đô la, Dow Jones mất hơn sáu trăm năm mươi điểm. Vì sao tuần này Hàn Quốc cần chú ý?"
+      },
+      {
+        "style": "impact",
+        "text": "Phố Wall đỏ điểm, dầu neo giá cao và Fed sắp họp: ba áp lực nào có thể truyền sang chứng khoán Hàn Quốc?"
+      },
+      {
+        "style": "question",
+        "text": "Nhóm bán dẫn Mỹ nhích hồi sau cú bán tháo, nhưng giá dầu còn cao. Đã đến lúc nhà đầu tư yên tâm?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, giá dầu, thông điệp Fed hay lợi nhuận công nghệ sẽ chi phối thị trường Hàn Quốc mạnh nhất? Bình luận góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "DẦU, FED HAY CỔ PHIẾU AI?",
+    "screenSubline": "Ý kiến của anh chị · Korea Capital Insight",
+    "question": "Giá dầu, thông điệp Fed hay lợi nhuận công nghệ sẽ chi phối thị trường Hàn Quốc mạnh nhất?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · MỸ & KINH TẾ THẾ GIỚI",
+      "headline": "DẦU >116 USD · DOW MẤT 653 ĐIỂM",
+      "summary": "Kết quả phiên Mỹ thứ Sáu 23/10, không phải phiên thứ Hai.",
+      "source": "Reuters / AP · 23/10/2026",
+      "stats": [
+        {
+          "label": "Brent chốt 23/10",
+          "value": "116,72 USD/thùng",
+          "tone": "neutral"
+        },
+        {
+          "label": "Dow thay đổi 23/10",
+          "value": "−652,82 điểm",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Dầu Brent chốt trên một trăm mười sáu đô la, Dow Jones mất hơn sáu trăm năm mươi điểm. Vì sao tuần này Hàn Quốc cần chú ý? Ba phép thử lớn đang chờ thị trường.",
+      "sourceIds": [
+        "reuters-global-2310",
+        "ap-us-close-2310"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "116,72",
+        "unit": "USD/THÙNG",
+        "qualifier": "Brent — giá chốt phiên Mỹ 23/10, không phải giá giao dịch sáng 26/10"
+      }
+    },
+    {
+      "id": "wallstreet",
+      "eyebrow": "PHỐ WALL · PHIÊN THỨ SÁU 23/10",
+      "headline": "BA CHỈ SỐ CHÍNH GIẢM",
+      "summary": "SOX hồi 0,4% nhưng chưa xóa cú giảm phiên trước.",
+      "source": "Reuters / AP · đóng cửa 23/10 EDT",
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.623,68 · −0,52%",
+          "tone": "down"
+        },
+        {
+          "label": "Nasdaq",
+          "value": "25.955,34 · −0,21%",
+          "tone": "down"
+        },
+        {
+          "label": "Dow",
+          "value": "52.215,16 · −1,23%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Phiên Mỹ thứ Sáu, S&P năm trăm giảm không phẩy năm hai phần trăm, Nasdaq giảm không phẩy hai một phần trăm, và Dow Jones giảm một phẩy hai ba phần trăm. Riêng chỉ số bán dẫn Philadelphia tăng nhẹ không phẩy bốn phần trăm sau phiên lao dốc trước đó.",
+      "sourceIds": [
+        "ap-us-close-2310",
+        "reuters-global-2310"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -0.52,
+            "display": "−0,52%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -0.21,
+            "display": "−0,21%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.23,
+            "display": "−1,23%"
+          },
+          {
+            "label": "SOX",
+            "value": 0.4,
+            "display": "+0,4%"
+          }
+        ],
+        "qualifier": "US regular session close 23/10/2026; SOX +0,4% trong cùng phiên"
+      }
+    },
+    {
+      "id": "energy",
+      "eyebrow": "RỦI RO NĂNG LƯỢNG",
+      "headline": "DẦU VẪN CAO SAU CUỐI TUẦN CĂNG THẲNG",
+      "summary": "Giá đầu tuần là quan sát lúc 08:15 KST, chưa phải đóng cửa.",
+      "source": "Reuters · 23/10 và 26/10 08:15 KST",
+      "stats": [
+        {
+          "label": "Brent chốt thứ Sáu",
+          "value": "116,72 USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "Brent 08:15 sáng thứ Hai",
+          "value": "115,79 USD",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Dầu Brent chốt thứ Sáu tại một trăm mười sáu đô la bảy mươi hai cent một thùng. Đầu tuần, giá lùi về khoảng một trăm mười lăm đô la bảy mươi chín cent, theo ghi nhận lúc tám giờ mười lăm sáng giờ Hàn. Căng thẳng tại Saudi Arabia vẫn làm tăng rủi ro nguồn cung.",
+      "sourceIds": [
+        "reuters-global-2310",
+        "reuters-oil-2610",
+        "reuters-gulf-2510"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "115,79",
+        "unit": "USD/THÙNG",
+        "qualifier": "Brent futures, 26/10 08:15 KST — giá đang giao dịch, KHÔNG phải đóng cửa"
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "TUẦN QUYẾT ĐỊNH",
+      "headline": "FED 27–28/10 · GDP & PCE 29/10",
+      "summary": "Sự kiện chưa diễn ra vào lúc bản tin được biên tập.",
+      "source": "Federal Reserve / BEA · lịch chính thức",
+      "stats": [
+        {
+          "label": "FOMC",
+          "value": "27–28/10",
+          "tone": "neutral"
+        },
+        {
+          "label": "GDP Q3 & PCE tháng 9",
+          "value": "29/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Fed họp ngày hai mươi bảy và hai mươi tám tháng mười. GDP quý ba và chỉ số giá PCE tháng chín của Mỹ dự kiến công bố ngày hai mươi chín. Cùng tuần, Microsoft, Alphabet và Amazon có lịch báo cáo; thị trường sẽ chú ý hiệu quả chi tiêu cho trí tuệ nhân tạo.",
+      "sourceIds": [
+        "fed-calendar-oct",
+        "bea-calendar-2910",
+        "barrons-earnings-week"
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "FOMC: 27–28/10 (US)",
+          "FED DECISION: 29/10 03:00 KST",
+          "GDP & PCE: 29/10 21:30 KST"
+        ],
+        "qualifier": "Lịch tương lai; chưa có kết quả tại thời điểm bản tin"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "BA KÊNH TRUYỀN DẪN",
+      "summary": "Đây là các kịch bản rủi ro, không phải dự báo giá KOSPI.",
+      "source": "KCI phân tích từ Reuters, Fed và BEA",
+      "stats": [
+        {
+          "label": "Dầu",
+          "value": "Chi phí nhập khẩu",
+          "tone": "neutral"
+        },
+        {
+          "label": "Fed / US10Y",
+          "value": "USD/KRW",
+          "tone": "neutral"
+        },
+        {
+          "label": "AI capex",
+          "value": "Chuỗi cung ứng chip",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Với Hàn Quốc, dầu cao có thể làm tăng chi phí nhập khẩu. Thông điệp Fed và lợi suất trái phiếu Mỹ quanh năm phần trăm có thể ảnh hưởng đồng won. Còn Samsung Electronics và SK hynix nhạy với kỳ vọng chi tiêu AI. Chưa thể từ đó kết luận KOSPI chắc chắn giảm.",
+      "sourceIds": [
+        "reuters-global-2310",
+        "reuters-oil-2610",
+        "fed-calendar-oct",
+        "barrons-earnings-week"
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "BRENT → CHI PHÍ NHẬP KHẨU",
+          "FED / US10Y → USD/KRW",
+          "AI CAPEX → NHU CẦU & LỢI NHUẬN CHIP"
+        ],
+        "qualifier": "Các kênh tác động có điều kiện — nhận định KCI"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "THỨ CẦN THEO DÕI TRONG TUẦN",
+      "summary": "Dầu · Fed · GDP/PCE · lợi nhuận công nghệ.",
+      "source": "Fed / BEA / Reuters / KCI",
+      "stats": [],
+      "voiceText": "Tuần này, hãy phân biệt dữ liệu đã xảy ra với những sự kiện còn chờ công bố. Giá dầu, Fed và báo cáo công nghệ mới là các mốc quan sát.",
+      "sourceIds": [
+        "fed-calendar-oct",
+        "bea-calendar-2910",
+        "reuters-oil-2610",
+        "barrons-earnings-week"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DẦU VÀ RỦI RO NGUỒN CUNG",
+          "FED · GDP · PCE",
+          "MICROSOFT · ALPHABET · AMAZON"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Dầu Brent chốt trên một trăm mười sáu đô la, còn Dow Jones mất hơn sáu trăm năm mươi điểm. Tuần này, Fed sẽ họp chính sách."
+}
