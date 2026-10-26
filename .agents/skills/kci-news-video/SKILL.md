@@ -21,6 +21,7 @@ Read the focused references at the matching stage:
 3. [Vbee, Remotion and GitHub workflow](references/PRODUCTION.md)
 4. [Editorial/visual/voice QC and release](references/QC.md)
 5. [Current voice selection and migration rules](references/VOICE_PROFILE.md)
+6. [Nine-step post-production and review-before-final gates](references/POST_PRODUCTION.md)
 
 ## Non-negotiable rules
 
@@ -72,11 +73,17 @@ The validator checks source references, the hook beginning, CTA completion and j
 - **Instagram/Facebook Reels viewing safety:** use the active `KciNewsReels` behind composition ID `KciNewsDaily`. Follow the owner's *latest* full-width middle layout in [QC D1](references/QC.md#d1-full-width-middle-layout--revised-owner-feedback-24-october-2026): title/charts can use x56–1024 in the middle; only lower caption/source/CTA areas reserve a right-side interaction rail (x56–914); leave top 264px and bottom 480px free of critical text. Check actual app overlays and do not narrow the whole canvas into a boxed column.
 - For visual-only revisions when scripts have not changed, reuse the original preserved Vbee audio/artifact. No needless TTS calls.
 
+### 5B — Nine-stage visual/audio post-production (adaptive to media)
+
+Read [POST_PRODUCTION.md](references/POST_PRODUCTION.md) on **every video run**, including all scheduled KCI editions. Source class is `NEWS_GRAPHICS` (default Vbee/Remotion), `TALKING_HEAD` (only actual supplied raw footage) or `MIXED`. For the normal TTS/graphics news, prioritize readable 0–3s hook, dynamic 2–4-word keyword/data callouts, event-driven effects, Reels-safe full middle, cleaned natural voice, effects-map timing and measured QC. **Do not invent human takes, face tracking, skin grading or before/after footage.** Whisper word timing, two-frame effect sync, loudness/true peak and encoder targets are only PASS when actually run/measured. Keep the stricter existing KCI Reels overlay safe area where it exceeds the owner's generic 220px top / 420px bottom / 140px right.
+
+Generate a review MP4 and representative effect-map frame stills first; obtain owner feedback **before a separately approved final/export**. Keep daily automatic preview production running, but never mislabel a review file as `output/final.mp4`. Report measured values only; raw-footage/takes counters = N/A for graphics-only Vbee.
+
 ### 6 — QA and release
 
 Read [QC.md](references/QC.md). Inspect actual frame samples from opening, middle, CTA and outro; check no black frames, overflowing Vietnamese, improper session labels or faulty source footnotes; ensure voice audio exists and CTA is spoken. Status remains `REVIEW_REQUIRED` until explicitly accepted.
 
-Deliver MP4 (or a verified authenticated GitHub artifact), a source ledger, script, optional thumbnail/caption, and a concise QC summary. If blocked, report exact obstacle and preserve existing audio. Don't pretend ongoing GitHub jobs succeeded.
+Deliver a VERIFIED **review/preview** MP4 (or authenticated GitHub artifact), effect-map and per-scene review stills when available, a source ledger, script, optional thumbnail/caption, and concise QC summary. Export/label FINAL only after the owner approves that specific cut. Include source/edited durations and counts of actually removed silences/takes; report N/A or not measured, not invented values. If blocked, report exact obstacle and preserve existing audio. Don't pretend ongoing GitHub jobs succeeded.
 
 ## Run from ChatGPT
 
