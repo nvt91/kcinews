@@ -24,17 +24,17 @@ Một bản tin tổng hợp duy nhất tập trung **CCSI 27/10 → xuất kh�
 
 ## Kịch bản nháp, 6 cảnh
 
-1. **Xuất khẩu mạnh, niềm tin tiêu dùng giảm:** Xuất khẩu chip tăng mạnh, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Hai tín hiệu này nói gì về nền kinh tế? Hai chỉ dấu đang diễn biến khác nhau và cần được đọc đúng thời điểm.
+1. **Xuất khẩu mạnh, niềm tin tiêu dùng giảm:** Xuất khẩu chip tăng mạnh, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Hai tín hiệu này nói gì về nền kinh tế? Chúng ta cùng nhìn vào dữ liệu.
 
-2. **CCSI 105,4 điểm, giảm 1,2:** Theo mục công bố sáng hai mươi bảy tháng mười của Ngân hàng Trung ương Hàn Quốc, chỉ số tâm lý tiêu dùng tháng mười ở mức một trăm linh năm phẩy bốn, giảm một phẩy hai điểm so với tháng trước. Chỉ số này đo cảm nhận của hộ gia đình, không phải số tiền họ đã chi tiêu.
+2. **CCSI 105,4 điểm, giảm 1,2:** Ngân hàng Trung ương Hàn Quốc ghi nhận chỉ số tâm lý tiêu dùng tháng mười ở mức một trăm linh năm phẩy bốn, giảm một phẩy hai điểm so với tháng Chín. Đây là khảo sát cảm nhận, không phải doanh số bán lẻ.
 
-3. **Bán dẫn vẫn là động lực:** Ở chiều ngược lại, số liệu Hải quan cho giai đoạn một đến hai mươi tháng mười, công bố ngày hai mươi mốt, ghi nhận xuất khẩu bán dẫn tăng hơn hai trăm hai mươi hai phần trăm so với cùng kỳ. Đây là số liệu của giai đoạn đã qua. Xuất khẩu mạnh chưa tự động chứng minh sức mua nội địa tăng đều.
+3. **Bán dẫn vẫn là động lực:** Trong giai đoạn một đến hai mươi tháng mười, xuất khẩu chip tăng hơn hai trăm hai mươi hai phần trăm cùng kỳ, theo dữ liệu sơ bộ công bố ngày hai mươi mốt. Con số mạnh, nhưng không tự bảo đảm tiêu dùng trong nước cũng tăng.
 
-4. **Phiên 26/10: KOSDAQ yếu hơn KOSPI:** Phiên chính hôm qua, hai mươi sáu tháng mười, KOSPI giảm một phẩy bốn sáu phần trăm, còn KOSDAQ giảm ba phẩy hai sáu phần trăm. Con số này là giá đóng cửa KRX hôm qua; không phải báo giá đang giao dịch sáng nay, và cũng không phải số liệu của sàn Nextrade.
+4. **Phiên 26/10: KOSDAQ yếu hơn KOSPI:** Phiên chính hôm qua, hai mươi sáu tháng mười, KOSPI giảm một phẩy bốn sáu phần trăm và KOSDAQ mất ba phẩy hai sáu phần trăm. Đây là giá đóng cửa KRX hôm qua, không phải báo giá sáng nay hay kết quả của Nextrade.
 
-5. **GDP quý III: cần kiểm tra bản gốc:** BOK có lịch công bố ước tính GDP quý ba vào sáng hai mươi bảy tháng mười. Để đánh giá tăng trưởng có lan tỏa hay chưa, cần xem đồng thời tiêu dùng, đầu tư và xuất khẩu. KCI chưa đưa con số GDP chưa kiểm chứng vào bản tin; dự báo cũ không phải kết quả mới.
+5. **GDP quý III: cần kiểm tra bản gốc:** BOK lên lịch công bố GDP quý ba sáng hai mươi bảy tháng mười. Hãy xem mức đóng góp của tiêu dùng, đầu tư và xuất khẩu trên bảng gốc; không lấy dự báo cũ làm kết quả vừa công bố.
 
-6. **Theo dõi GDP, sức mua và lợi nhuận:** Một mốc nữa là ngày hai mươi tám tháng mười, khi SK hynix dự kiến thông tin kết quả quý ba và phương án trả cổ đông. Khoản cổ tức mười sáu nghìn tỷ won được báo chí nhắc tới vẫn chưa phải quyết định chính thức. Hãy chờ công bố doanh nghiệp thay vì suy đoán từ tin đồn.
+6. **Theo dõi GDP, sức mua và lợi nhuận:** Ngày hai mươi tám tháng mười, SK hynix dự kiến thông tin kết quả quý ba và phương án trả cổ đông. Khoản cổ tức mười sáu nghìn tỷ won được nhắc tới vẫn chưa phải quyết định chính thức.
 
 **CTA một lần, nối cảnh cuối khi có voice:** Theo anh chị, đà tăng xuất khẩu chip đã đủ để kéo sức mua trong nước đi lên chưa? Chia sẻ góc nhìn và theo dõi Korea Capital Insight để cùng kiểm tra các số liệu tiếp theo.
 
