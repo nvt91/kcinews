@@ -26,7 +26,7 @@ One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. V
 | --- | --- | --- |
 | B | Tên video | Clear Vietnamese title; identify archival/weekend editions. Preserve an owner's edited title. |
 | C | Ngày giờ sản xuất | Actual evidenced MP4 completion time in KST; blank until produced. Use native date-time and note whether based on artifact creation or workflow completion. Never use scheduled start as completion. |
-| D | Caption đăng bài Viral kèm hastag | Draft caption with a truthful hook, concise context, one useful comment/follow CTA, short disclaimer and 2–3 relevant hashtags. No promise of virality. Preserve existing owner edits; only seed when blank/new or explicitly authorized to revise. |
+| D | Caption đăng bài Viral kèm hastag | For NEW captions, follow [CAPTION_STYLE.md](CAPTION_STYLE.md): usually 30–65 Vietnamese words, plain/friendly/non-corporate Vietnamese, one relevant insight or gentle question and 3–5 topic-matched/trend-aware hashtags. Only claim a tag is trending if current evidence supports it; no irrelevant trend-chasing or guaranteed virality. No Markdown bold in FB/IG copy. Always preserve owner-edited text in D; seed only if blank/new or owner explicitly requests an update. |
 | E | Link có thể mở video nếu có | Verified MP4/Drive link, or verified authenticated GitHub run/artifact link with note explaining access and expiry. No imaginary public URLs or sandbox paths as external links. Blank when unavailable. |
 | F | Luồng / bản tin | KR_NEWS / KR_AM, KR_NEWS / KR_MID, KR_NEWS / KR_CLOSE, MACRO / MACRO21, or GLOBAL_US / US_AM. |
 | G | Sản xuất & QC | Machine-observed production state, from the vocabulary below. |
