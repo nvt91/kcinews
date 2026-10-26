@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-26-macro21",
+  "edition": "Vĩ mô 21h — 26/10/2026",
+  "dataAsOf": "2026-10-26T21:10:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Lãi suất BOK giữ 3% nhưng ngân hàng tiếp tục siết tín dụng: rủi ro tăng trưởng Hàn Quốc",
+  "sourceDisclaimer": "Chỉ số khảo sát là kỳ vọng Q4, không phải dữ liệu vay đã giải ngân. Thông tin tham khảo, không phải khuyến nghị đầu tư.",
+  "metadata": {
+    "articleId": "KCI-20261026-MACRO21",
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "format": "single-angle BOK monetary transmission",
+    "articlePath": "editorial/2026-10-26/macro21.md",
+    "eventKeys": [
+      "KR-BOK:Q4_LOAN_PRACTICES:2026-10-26",
+      "KR-BOK:RATE_HOLD:2026-10-22"
+    ],
+    "editorialScore": 94,
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "mediaMode": "tts_motion",
+    "productionGate": "BLOCKED_PIPELINE: main runner uses proportional seven-word full-caption timing, cannot produce audited word-aligned voiced preview or owner-approval-gated final; no paid render triggered.",
+    "previewState": "NOT_CREATED",
+    "previewVersion": null,
+    "approval": "PENDING_PREVIEW",
+    "rawDuration": "NOT_MEASURED",
+    "editedDuration": "NOT_MEASURED",
+    "humanTakes": "N/A",
+    "removedSilences": "NOT_MEASURED",
+    "audioLufs": "NOT_MEASURED",
+    "truePeak": "NOT_MEASURED",
+    "wordAlignment": "NOT_VERIFIED",
+    "effectOffsetFrames": "NOT_MEASURED",
+    "faceTracking": "N/A",
+    "colorGrade": "N/A",
+    "publishing": "NOT_AUTHORIZED",
+    "dedup": "Compared 24-25 Oct MACRO21, 25 Oct KR_CLOSE, 26 Oct KR_AM/KR_CLOSE/US_AM and issues 19-26 Oct; new 26 Oct BOK credit-survey angle distinct."
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-loans-1026",
+      "title": "BOK Lending Practices Survey announced 26 October 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11065895&programType=newsData",
+      "eventDate": "2026-10-26",
+      "kind": "primary",
+      "checkedAt": "2026-10-26T21:10:00+09:00",
+      "facts": [
+        "BOK published its credit practices Q3 2026 and outlook Q4 2026 survey on October 26; the original detailed attachment was not directly read."
+      ]
+    },
+    {
+      "id": "bok-rate-1022",
+      "title": "BOK monetary policy decision 22 October 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11065823",
+      "eventDate": "2026-10-22",
+      "kind": "primary",
+      "checkedAt": "2026-10-26T21:10:00+09:00",
+      "facts": [
+        "BOK held its policy base rate at 3.00% on 22 October; this does not imply commercial bank lending standards immediately loosen."
+      ]
+    },
+    {
+      "id": "yonhap-loans-1026",
+      "title": "Yonhap Bank lending survey Q4 outlook 26 October 12:00 KST",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261026068100002",
+      "eventDate": "2026-10-26",
+      "kind": "secondary",
+      "checkedAt": "2026-10-26T21:10:00+09:00",
+      "facts": [
+        "Q4 aggregate bank lending attitude outlook -11 versus Q3 observed -20; sector breakdown SMEs -19, general household loans -8 and mortgages 0. Credit-risk index 29 versus 26; housing demand index 14; 203 institutions surveyed September 2-16."
+      ]
+    },
+    {
+      "id": "newspim-loans-1026",
+      "title": "NewsPim Korean banks forecast tighter loan screening October 26",
+      "url": "https://ir.newspim.com/news/view/20261026000308",
+      "eventDate": "2026-10-26",
+      "kind": "secondary",
+      "checkedAt": "2026-10-26T21:10:00+09:00",
+      "facts": [
+        "Independent media corroboration of Q4 bank lending-attitude index -11 and rising credit risk index 29; these are survey indices, not percentages."
+      ]
+    },
+    {
+      "id": "bok-gdp-1027",
+      "title": "BOK October 2026 GDP Q3 advance release schedule",
+      "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?date=2026-10&menuNo=400359",
+      "eventDate": "2026-10-27",
+      "kind": "primary",
+      "checkedAt": "2026-10-26T21:10:00+09:00",
+      "facts": [
+        "Korean real GDP advance release for Q3 2026 is scheduled October 27; no Q3 result was published at the October 26 evening cutoff."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Lãi suất không tăng, sao đi vay vẫn khó? Khảo sát mới của Ngân hàng Trung ương Hàn Quốc cho thấy một nghịch lý đáng chú ý.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Lãi suất không tăng, sao đi vay vẫn khó? Khảo sát mới của Ngân hàng Trung ương Hàn Quốc cho thấy một nghịch lý đáng chú ý.",
+        "score": 47
+      },
+      {
+        "style": "korean-impact",
+        "text": "BOK vẫn dự báo siết tín dụng quý tư, dù lãi suất cơ bản giữ ở ba phần trăm. Doanh nghiệp nhỏ bị ảnh hưởng ra sao?",
+        "score": 45
+      },
+      {
+        "style": "question",
+        "text": "Khi ngân hàng lo rủi ro nợ xấu, liệu doanh nghiệp nhỏ và hộ gia đình có còn vay vốn dễ dàng trong quý tư?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, rủi ro lớn hơn với kinh tế Hàn là doanh nghiệp khó vay hay nợ hộ gia đình? Bình luận góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "TÍN DỤNG: RỦI RO NÀO LỚN HƠN?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Doanh nghiệp khó vay hay rủi ro nợ hộ gia đình đáng lo hơn đối với Hàn Quốc?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "LÃI SUẤT ĐỨNG YÊN, VẪN KHÓ VAY?",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "bok-loans-1026",
+        "bok-rate-1022",
+        "yonhap-loans-1026"
+      ],
+      "stats": [
+        {
+          "label": "BOK policy rate 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Lãi suất không tăng, sao đi vay vẫn khó? Khảo sát mới của Ngân hàng Trung ương Hàn Quốc cho thấy một nghịch lý đáng chú ý.",
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Khảo sát ngân hàng Q4/2026, không phải lãi suất cho vay"
+      }
+    },
+    {
+      "id": "rate",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "BOK GIỮ LÃI SUẤT 3,00%",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "bok-rate-1022"
+      ],
+      "stats": [
+        {
+          "label": "BOK Base Rate",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ngày hai mươi hai tháng mười, BOK giữ lãi suất cơ bản ba phần trăm. Nhưng điều đó không có nghĩa các ngân hàng sẽ lập tức nới tiêu chuẩn cho vay.",
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "qualifier": "Lãi suất chính sách 22/10/2026; không phải lãi vay cá nhân"
+      }
+    },
+    {
+      "id": "tightening",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "BỚT SIẾT, CHƯA NỚI",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "bok-loans-1026",
+        "yonhap-loans-1026",
+        "newspim-loans-1026"
+      ],
+      "stats": [
+        {
+          "label": "Q3 · quan sát",
+          "value": "−20",
+          "tone": "down"
+        },
+        {
+          "label": "Q4 · dự báo",
+          "value": "−11",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Chỉ số thái độ cho vay dự kiến quý tư là âm mười một, so với âm hai mươi trong quý ba. Nghĩa là mức siết có thể giảm, nhưng chưa chuyển sang nới. Đây là ý kiến khảo sát, không phải số vốn thực tế giải ngân.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Q3 khảo sát",
+            "value": -20,
+            "display": "−20"
+          },
+          {
+            "label": "Q4 dự báo",
+            "value": -11,
+            "display": "−11"
+          }
+        ],
+        "qualifier": "Chỉ số thái độ cho vay, số âm là siết chặt; không phải %"
+      }
+    },
+    {
+      "id": "borrowers",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "DOANH NGHIỆP NHỎ CHỊU ÁP LỰC",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "yonhap-loans-1026",
+        "newspim-loans-1026"
+      ],
+      "stats": [
+        {
+          "label": "SME Q4",
+          "value": "−19",
+          "tone": "down"
+        },
+        {
+          "label": "Vay cá nhân",
+          "value": "−8",
+          "tone": "down"
+        },
+        {
+          "label": "Vay mua nhà",
+          "value": "0",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Với doanh nghiệp nhỏ và vừa, chỉ số là âm mười chín. Vay tiêu dùng thông thường âm tám. Riêng vay mua nhà là không, tức tiêu chuẩn dự kiến gần như giữ nguyên. Các nhóm vay có triển vọng khác nhau.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Doanh nghiệp SME",
+            "value": -19,
+            "display": "−19"
+          },
+          {
+            "label": "Vay tiêu dùng",
+            "value": -8,
+            "display": "−8"
+          },
+          {
+            "label": "Vay mua nhà",
+            "value": 0,
+            "display": "0 (giữ)"
+          }
+        ],
+        "qualifier": "Chỉ số thái độ cho vay Q4 dự kiến; không phải tỉ lệ duyệt vay"
+      }
+    },
+    {
+      "id": "risk",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "TÍN DỤNG: RỦI RO TĂNG",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "yonhap-loans-1026",
+        "newspim-loans-1026"
+      ],
+      "stats": [
+        {
+          "label": "Rủi ro Q4 · dự báo",
+          "value": "29",
+          "tone": "down"
+        },
+        {
+          "label": "Nhu cầu vay nhà",
+          "value": "+14",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Rủi ro tín dụng tổng hợp dự kiến tăng từ hai mươi sáu lên hai mươi chín, trong khi chỉ số nhu cầu vay mua nhà vẫn dương mười bốn. Nhu cầu còn đó, nhưng ngân hàng cũng lo khả năng trả nợ.",
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "Rủi ro Q3",
+            "value": 26,
+            "display": "26"
+          },
+          {
+            "label": "Rủi ro Q4",
+            "value": 29,
+            "display": "29"
+          }
+        ],
+        "qualifier": "Chỉ số rủi ro tín dụng, không phải tỷ lệ nợ xấu"
+      }
+    },
+    {
+      "id": "impact",
+      "eyebrow": "VĨ MÔ 21H · HÀN QUỐC 26/10",
+      "headline": "TỪ TÍN DỤNG ĐẾN TĂNG TRƯỞNG",
+      "summary": "Diễn biến tín dụng và rủi ro vay ngân hàng theo khảo sát BOK; chỉ số không phải tỷ lệ phần trăm.",
+      "source": "BOK 22/10, BOK 26/10; Yonhap 26/10",
+      "sourceIds": [
+        "bok-rate-1022",
+        "bok-loans-1026",
+        "yonhap-loans-1026",
+        "bok-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "Mốc cần kiểm tra",
+          "value": "GDP Q3 · 27/10",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Nếu xu hướng siết kéo dài, doanh nghiệp nhỏ có thể giảm đầu tư và hộ gia đình dè dặt chi tiêu. Nhưng khảo sát chưa phải dữ liệu tín dụng đã xảy ra. Cần kiểm tra dư nợ, nợ xấu và GDP thực tế khi công bố.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Khảo sát không phải giải ngân",
+          "Đối chiếu rủi ro tín dụng",
+          "GDP Q3 dự kiến 27/10"
+        ],
+        "qualifier": "Phân tích có điều kiện, không dự đoán giá cổ phiếu"
+      }
+    }
+  ]
+}
