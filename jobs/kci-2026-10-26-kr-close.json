@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-26-kr-close",
+  "edition": "KINH TẾ & THỊ TRƯỜNG HÀN QUỐC · BẢN CHIỀU 26/10/2026 KST",
+  "dataAsOf": "2026-10-26T17:16:42+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI xuống 5.469,47; SK hynix bác thông tin cổ tức đã chốt",
+  "sourceDisclaimer": "Thông tin tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+  "metadata": {
+    "articleId": "KCI-20261026-KR-CLOSE",
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articlePath": "editorial/2026-10-26/kr-close.md",
+    "eventKeys": [
+      "krx-kospi-kosdaq-regular-close-2026-10-26",
+      "krx-kospi-foreign-institution-flow-2026-10-26",
+      "000660-skhynix-dividend-clarification-2026-10-26",
+      "kr-cptpp-presidential-policy-2026-10-26"
+    ],
+    "voiceName": "Anh Khôi Tin tức",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "productionGate": "BLOCKED_PENDING_VOICE_LISTEN_APPROVAL",
+    "voiceTrialRun": "https://github.com/nvt91/kcinews/actions/runs/40205899873",
+    "observedDartOriginal": "HTTP 502 in web reader; verified reproduced filing + Reuters",
+    "nxtStatus": "After-hours may still trade; NXT final not verified at cutoff"
+  },
+  "sourceLedger": [
+    {
+      "id": "yonhap-1026-close",
+      "title": "Yonhap 26 Oct 15:38 — KOSPI/KOSDAQ official regular-session close (syndicated at Supple)",
+      "url": "https://supple.kr/news/cmvowh530003d7qmrkl0jzixe",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KRX regular session on 26 October closed KOSPI 5469.47, down 80.83 points or 1.46%; KOSDAQ 727.21, down 24.48 points or 3.26%.",
+        "KOSPI close was lowest since 6 April 2026; KOSDAQ close lowest since 31 July 2026."
+      ]
+    },
+    {
+      "id": "mt-1026-close",
+      "title": "Money Today 26 Oct 16:22 — close and KRX investor flows at 15:45 KST",
+      "url": "https://www.mt.co.kr/stock/2026/10/26/2026102616101322514",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "At KRX cash close KOSPI 5469.47 (-1.46%), KOSDAQ 727.21 (-3.26%).",
+        "KRX figures cited at 15:45 KST: KOSPI foreign investors net sold about 707 billion KRW, institutions net bought about 604 billion KRW, and individuals net bought about 64 billion KRW. These are net trading flows, not overall daily market volume."
+      ]
+    },
+    {
+      "id": "dart-hynix-1026",
+      "title": "SK hynix DART/KIND original receipt 20261026800118 — rumor clarification; full official page unavailable (502), cross-checked mirrored filing",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800118",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "Primary filing reference for SK hynix explanation concerning 16 trillion KRW special dividend rumors; official page returned 502 in web reader, so wording verified using reproduction and Reuters.",
+        "Company said no dividend amount had been finalized; further shareholder return measures to be announced with Q3 results on 28 October subject to board resolution."
+      ]
+    },
+    {
+      "id": "bosoop-hynix-1026",
+      "title": "Bosoop — reproduced full SK hynix original rumor-clarification disclosure received 09:59 KST 26 Oct",
+      "url": "https://www.bosoop.com/disclosures/20261026800118/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Official disclosure content reproduced: 16 trillion KRW special dividend was media report; company reviewing options but nothing decided yet.",
+        "Filing reception timestamp was 09:59 KST on 26 October; follow-up filing and Q3-results announcement expected 28 October 2026."
+      ]
+    },
+    {
+      "id": "reuters-hynix-1026",
+      "title": "Reuters 26 Oct — SK hynix promises shareholder-return announcement 28 Oct, not confirmed 16tn KRW",
+      "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-announce-steps-boost-shareholder-returns-wednesday-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Company confirmed reviewing shareholder return methods and plans to announce on 28 October with quarterly results.",
+        "16 trillion KRW special-dividend amount originates in a Korean media report; company did not confirm it."
+      ]
+    },
+    {
+      "id": "reuters-cptpp-1026",
+      "title": "Reuters 26 Oct — President Lee on CPTPP membership prospects through June 2030",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-unlikely-join-pacific-trade-pact-within-his-term-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "secondary",
+      "facts": [
+        "President Lee Jae Myung said accession to 12-member CPTPP unlikely to be completed before his presidential term ends June 2030.",
+        "Earlier this month he instructed his ministers not to pursue an application given impact on South Korean farmers; this is a policy stance, not a confirmed direct equity-price impact."
+      ]
+    },
+    {
+      "id": "krx-hours-primary",
+      "title": "KRX official trading rules — stock regular session 09:00–15:30 KST",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "Korea Exchange regular cash trading session is distinct from after-hours trading; regular session ends 15:30 KST on an ordinary trading day."
+      ]
+    },
+    {
+      "id": "nxt-market-primary",
+      "title": "Nextrade official market-hours page — separate NXT sessions",
+      "url": "https://www.nextrade.co.kr/marketOverview/content.do",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "NXT after-market is separate from KRX regular session and may remain open after the KRX 15:30 close; no NXT end-of-day numbers verified at 17:16 KST."
+      ]
+    },
+    {
+      "id": "sk-hynix-ir-aug",
+      "title": "SK hynix official IR release 19 Aug 2026 — announced 40 trillion KRW buyback and over 50% of 2025–27 free cash flow target",
+      "url": "https://news.skhynix.com/en/share-buyback-and-retirement/",
+      "eventDate": "2026-08-19",
+      "checkedAt": "2026-10-26T17:16:42+09:00",
+      "kind": "primary",
+      "facts": [
+        "The August 19 announcement set a buyback and cancellation plan up to 40 trillion KRW and target of over 50% of cumulative FCF (2025–27) for shareholder returns.",
+        "This historical commitment is context and does not confirm the Oct 26 reported special dividend."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI giảm một phẩy bốn sáu phần trăm, KOSDAQ mất tới ba phẩy hai sáu phần trăm. Cùng ngày, SK hynix phải giải thích tin cổ tức mười sáu nghìn tỷ won. Điều gì đã được xác nhận?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI giảm một phẩy bốn sáu phần trăm, KOSDAQ mất tới ba phẩy hai sáu phần trăm. Cùng ngày, SK hynix phải giải thích tin cổ tức mười sáu nghìn tỷ won. Điều gì đã được xác nhận?",
+        "score": 48,
+        "breakdown": "Accuracy 15/15, KR relevance 15/15, curiosity 10/10, brevity 4/5, clarity 4/5"
+      },
+      {
+        "style": "investor-impact",
+        "text": "Khối ngoại lại bán ròng cổ phiếu Hàn Quốc, nhưng SK hynix đang bàn chuyện trả thêm tiền cho cổ đông. Điều nào tác động dài hơn?",
+        "score": 44,
+        "breakdown": "Accuracy 15, relevance 15, curiosity 8, brevity 3, clarity 3"
+      },
+      {
+        "style": "question",
+        "text": "KOSDAQ mất hơn ba phần trăm sau phiên chính. Nhà đầu tư nên nhìn vào dòng vốn, kết quả kinh doanh hay tin cổ tức chưa xác nhận?",
+        "score": 43,
+        "breakdown": "Accuracy 15, relevance 15, curiosity 6, brevity 3, clarity 4"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, thị trường cần lợi nhuận tốt hơn hay khối ngoại quay lại mua ròng để hồi phục? Bình luận góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "THỊ TRƯỜNG CẦN ĐIỀU GÌ ĐỂ HỒI PHỤC?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, lợi nhuận tốt hơn hay khối ngoại quay lại mua ròng quan trọng hơn để thị trường hồi phục?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KINH TẾ & THỊ TRƯỜNG HÀN QUỐC",
+      "headline": "KOSPI −1,46%; KOSDAQ −3,26%",
+      "summary": "KRX phiên chính 26/10 · SK hynix phản hồi tin cổ tức 16 nghìn tỷ won chưa xác nhận.",
+      "voiceText": "KOSPI giảm một phẩy bốn sáu phần trăm, KOSDAQ mất tới ba phẩy hai sáu phần trăm. Cùng ngày, SK hynix phải giải thích tin cổ tức mười sáu nghìn tỷ won. Điều gì đã được xác nhận?",
+      "source": "Yonhap/Money Today; SK hynix DART, 26/10",
+      "sourceIds": [
+        "yonhap-1026-close",
+        "mt-1026-close",
+        "bosoop-hynix-1026"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 15:30",
+          "value": "−1,46%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ · KRX 15:30",
+          "value": "−3,26%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -1.46,
+            "display": "−1,46%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -3.26,
+            "display": "−3,26%"
+          }
+        ],
+        "qualifier": "Thay đổi so với KRX close 23/10; không gồm NXT"
+      }
+    },
+    {
+      "id": "market-close",
+      "eyebrow": "CHỐT PHIÊN CHÍNH KRX",
+      "headline": "KOSPI xuống thấp nhất từ đầu tháng Tư",
+      "summary": "KOSPI 5.469,47 · KOSDAQ 727,21 điểm; đóng cửa 15:30 KST.",
+      "voiceText": "Chốt phiên chính ngày hai mươi sáu tháng mười, KOSPI còn năm nghìn bốn trăm sáu mươi chín phẩy bốn bảy điểm, thấp nhất từ đầu tháng Tư. KOSDAQ còn bảy trăm hai mươi bảy phẩy hai mốt điểm. Đây là KRX, không phải NXT sau giờ.",
+      "source": "Yonhap 15:38 KST; Money Today 16:22, 26/10",
+      "sourceIds": [
+        "yonhap-1026-close",
+        "mt-1026-close",
+        "krx-hours-primary"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX chính",
+          "value": "5.469,47",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ · KRX chính",
+          "value": "727,21",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI · điểm",
+            "value": 5469.47,
+            "display": "5.469,47"
+          },
+          {
+            "label": "KOSDAQ · điểm",
+            "value": 727.21,
+            "display": "727,21"
+          }
+        ],
+        "qualifier": "KRX regular close 26/10 · 15:30 KST · 2 chỉ số khác thang"
+      }
+    },
+    {
+      "id": "foreign-flows",
+      "eyebrow": "DÒNG TIỀN THEO NHÓM",
+      "headline": "Khối ngoại bán ròng khoảng 707 tỷ won",
+      "summary": "Tổ chức mua ròng khoảng 604 tỷ won · KRX KOSPI, dữ liệu 15:45 KST.",
+      "voiceText": "Theo Money Today dẫn KRX lúc ba giờ bốn mươi lăm, nhà đầu tư nước ngoài bán ròng khoảng bảy trăm linh bảy tỷ won trên KOSPI. Tổ chức mua ròng khoảng sáu trăm linh bốn tỷ won. Lực mua này chưa đủ giữ chỉ số.",
+      "source": "Money Today/KRX, 26/10 · 15:45 KST",
+      "sourceIds": [
+        "mt-1026-close"
+      ],
+      "stats": [
+        {
+          "label": "Ngoại · KOSPI 15:45",
+          "value": "−707 tỷ won",
+          "tone": "down"
+        },
+        {
+          "label": "Tổ chức · KOSPI 15:45",
+          "value": "+604 tỷ won",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "NƯỚC NGOÀI",
+            "value": -707,
+            "display": "−707 tỷ won"
+          },
+          {
+            "label": "TỔ CHỨC",
+            "value": 604,
+            "display": "+604 tỷ won"
+          }
+        ],
+        "qualifier": "Giá trị mua/bán ròng KRX KOSPI · 15:45 KST · làm tròn"
+      }
+    },
+    {
+      "id": "hynix-disclosure",
+      "eyebrow": "CÔNG BỐ DOANH NGHIỆP · 000660",
+      "headline": "SK hynix: 16 nghìn tỷ won chưa được quyết định",
+      "summary": "Giải trình 09:59 KST · phương án cổ đông dự kiến 28/10.",
+      "voiceText": "SK hynix công bố lúc chín giờ năm mươi chín rằng tin cổ tức đặc biệt mười sáu nghìn tỷ won hiện chưa được quyết định. Họ đang cân nhắc nhiều phương án và dự kiến công bố cùng kết quả quý ba vào ngày hai mươi tám tháng mười. Đừng coi con số báo chí đưa là khoản cổ tức đã phê duyệt.",
+      "source": "DART 20261026800118; Reuters/Bosoop 26/10",
+      "sourceIds": [
+        "dart-hynix-1026",
+        "bosoop-hynix-1026",
+        "reuters-hynix-1026",
+        "sk-hynix-ir-aug"
+      ],
+      "stats": [
+        {
+          "label": "Tin báo chí · chưa chốt",
+          "value": "16 nghìn tỷ won",
+          "tone": "neutral"
+        },
+        {
+          "label": "Ngày công bố kế hoạch",
+          "value": "28/10",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "SK HYNIX · 000660",
+        "bullets": [
+          "16 NGHÌN TỶ WON: BÁO CHÍ, CHƯA XÁC NHẬN",
+          "KẾ HOẠCH MỚI: CHỜ 28/10"
+        ]
+      }
+    },
+    {
+      "id": "cptpp",
+      "eyebrow": "CHÍNH SÁCH THƯƠNG MẠI",
+      "headline": "CPTPP: khả năng gia nhập trong nhiệm kỳ rất thấp",
+      "summary": "Tổng thống Lee phát biểu 26/10; đây là chính sách, không phải tác động cổ phiếu đã đo.",
+      "voiceText": "Về thương mại, Tổng thống Lee nói Hàn Quốc khó hoàn tất gia nhập hiệp định CPTPP trước khi nhiệm kỳ kết thúc vào năm hai nghìn không trăm ba mươi. Đây là tín hiệu chính sách; chưa thể quy thành tác động lợi nhuận cụ thể với doanh nghiệp niêm yết.",
+      "source": "Reuters, 26/10/2026",
+      "sourceIds": [
+        "reuters-cptpp-1026"
+      ],
+      "stats": [
+        {
+          "label": "Thời hạn nhiệm kỳ",
+          "value": "06/2030",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT · CẦN THEO DÕI",
+      "headline": "Nhìn lợi nhuận thực và dòng vốn",
+      "summary": "SK hynix 28/10 · dòng tiền ngoại · NXT sau giờ chưa chốt.",
+      "voiceText": "Hai ngày tới, hãy theo dõi kết quả SK hynix, chính sách phân phối tiền cho cổ đông và dòng vốn ngoại. NXT vẫn có phiên sau giờ riêng; bản tin chưa có số tổng kết NXT tại thời điểm chốt. Thông tin chỉ để tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "source": "KCI tổng hợp nguồn ngày 26/10",
+      "sourceIds": [
+        "reuters-hynix-1026",
+        "mt-1026-close",
+        "nxt-market-primary"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "SK HYNIX · 28/10",
+          "KHỐI NGOẠI · KRX",
+          "NXT NGOÀI GIỜ · ĐỂ RIÊNG"
+        ]
+      }
+    }
+  ]
+}
