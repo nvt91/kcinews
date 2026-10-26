@@ -55,12 +55,15 @@
 
 **Định dạng dựng mục tiêu:** MP4 H.264/AAC 1080×1920, 30fps, ~75–100 giây theo thời lượng audio Vbee thật; Reels-safe vùng chữ quan trọng ở giữa; không bịa chart. **Subtitle:** tạo từ voice thực sau TTS; thời gian phân phối theo số từ chỉ là ước lượng, KHÔNG xem là forced alignment; chưa có MP3 thì chưa có SRT đồng bộ chuẩn.
 
-## Kiểm duyệt và trạng thái triển khai
+## Kiểm duyệt và trạng thái triển khai — cập nhật sau render 26/10/2026
 
-- **Biên tập:** 90/100 (đánh giá nội bộ về nguồn, logic, độ mới và tiếng Việt; không phải xác suất chính xác của nhận định). Chưa phát sinh dữ liệu Fed/GDP/PCE hay kết quả doanh nghiệp.
-- **Giọng đã CHỌN, CHƯA được xác nhận TTS/đã nghe đạt:** Vbee Anh Khôi Tin tức, mã n_hanoi_male_anhkhoitintuc_zero_shot_news_vc. GitHub Issue #29 ([KCI VOICE TEST] ngày 26/10) đã tồn tại nhưng không có chứng cứ xác minh thử âm thanh đã nghe/đạt trong quyền truy cập hiện tại. Không gọi voice dự phòng, không tái tạo clip cũ.
-- **Trạng thái:** BLOCKED trước FULL paid TTS/render do voice trial chưa có bằng chứng được kiểm duyệt. Tài liệu/job sẵn sàng để xác minh giọng và dựng bằng workflow, KHÔNG xem như đã có MP4.
-- **Phát hành:** CHỜ DUYỆT — CHƯA ĐĂNG. Không giao dịch hay tự xuất bản.
+- **Biên tập:** 90/100 (đánh giá nội bộ, không phải xác suất chính xác). Dữ liệu Mỹ thuộc phiên 23/10 và dầu đầu tuần 26/10 08:15 KST; các sự kiện Fed/GDP/PCE/earnings còn ở tương lai tại cutoff 08:57:37 KST.
+- **Lần thử #30:** run [40248542355](https://github.com/nvt91/kcinews/actions/runs/40248542355) dừng ở validator do bắt nhầm cụm phủ định “chắc chắn giảm”, trước khi gọi Vbee; không tạo video. Đã diễn đạt lại thành “Những tín hiệu này chưa đủ để dự đoán KOSPI sẽ giảm”, không thay đổi luận điểm.
+- **Render thành công:** issue [#31](https://github.com/nvt91/kcinews/issues/31), GitHub Actions [run 40248740101](https://github.com/nvt91/kcinews/actions/runs/40248740101), artifact ID `12619313344`, tạo 26/10 09:25:16 KST, hết hạn 02/11/2026 09:25 KST. Artifact gồm `out/kci-2026-10-26-us-am.mp4`, 6 MP3 Vbee, props, source ledger, phụ đề ước lượng và QC. File gốc 72,70 giây, H.264/AAC 1080 × 1920, 30 fps.
+- **Giọng:** workflow thực thi với Vbee `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` (Anh Khôi Tin tức); 6 đoạn MP3 thực đã hiện diện trong artifact và audio AAC hữu thanh trong MP4. Chưa nghe kiểm duyệt toàn bộ phát âm/nhịp/CTA; không tuyên bố human listening approval chỉ từ voiceCode hay file audio có tồn tại.
+- **Bản review đã xử lý:** bản MP4 giữ nguyên lời đọc/số liệu/đồ họa, làm chậm đồng bộ hình+giọng khoảng 6% để được **77,10 giây**, cân âm khoảng **−16,3 LUFS** (true peak **−1,1 dBFS**), giải mã toàn bộ không lỗi. 9 khung hình mẫu đã xem, không thấy tràn vùng an toàn rõ ở những khung đã lấy. Bản này đã được gửi trong ChatGPT, không phải file mới trong GitHub artifact gốc.
+- **QA:** `MP4 — CẦN RÀ SOÁT`, phụ đề dùng căn thời gian ước lượng theo số từ, chưa phải forced alignment. Không ghi QC ĐẠT khi chưa nghe đối chiếu hoàn toàn. Bảng KCI News dòng 11 đã cập nhật thời gian MP4, trạng thái, liên kết Actions và ghi chú kỹ thuật.
+- **Phát hành:** **CHỜ DUYỆT — CHƯA ĐĂNG**. Chưa có quyền tự đăng mạng xã hội; không giao dịch.
 
 ## Nguồn xác minh (ngày sự kiện / liên kết)
 
