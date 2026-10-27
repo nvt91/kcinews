@@ -1,5 +1,10 @@
 # KCI News — Google Sheets production ledger
 
+## GLOBAL_US render-first instruction, 27 October 2026
+
+Beginning with the next GLOBAL_US/US_AM edition, the owner wants a fully rendered voiced MP4 delivered first, then owner review (no pre-render preview approval). Do not equate a finished technical render with approval or publication. In Trang tính1 write C=verified actual MP4 completion time KST, E=real playable video/run/artifact link, G=honest QC state, H=CHỜ DUYỆT and I=CHƯA ĐĂNG; if no actual MP4 leave C empty. Record technical limitations without inventing QC PASS. Preserve owner edits, articleId idempotency, history and the separate stream schedules. Lịch tác vụ row15 is for recording this configuration, never controlling the scheduler. Caption remains 50–100 total characters including hashtags.
+
+
 Owner requests: 25 October 2026 — use the existing KCI News Sheet as a logging/approval surface; 26 October 2026 — explicitly include the separate Global/US morning video task and switch NEW KCI narration to Anh Khôi Tin tức. The Sheet is NOT a publisher or a scheduler. Logging never changes schedules, production quotas, Vbee configuration, secrets, or permissions by itself; the new voice is configured separately in VOICE_PROFILE.md and the video workflow.
 
 ## Verified destination
