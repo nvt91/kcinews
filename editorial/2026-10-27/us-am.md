@@ -25,43 +25,43 @@ Tiêu chí: đúng dữ kiện, dễ hiểu ngay ba giây đầu, hấp dẫn nh
 ## Kịch bản đọc · storyboard
 
 ### Nhịp 1: hook — PHỐ WALL HỒI · META 95 TỶ USD?
-- **Voice:** Phố Wall bật tăng, còn Meta muốn huy động tới chín mươi lăm tỷ đô la cho AI. Có gì phía sau hai tín hiệu trái chiều? Một bên là giá cổ phiếu hồi phục, bên kia là chi phí vốn rất lớn.
+- **Voice:** Phố Wall bật tăng, còn Meta muốn huy động tới chín mươi lăm tỷ đô la cho AI. Có gì phía sau hai tín hiệu trái chiều?
 - **Hình:** spotlight, Hai tín hiệu khác chiều về kỳ vọng AI sau phiên Mỹ 26/10.
 - **Nguồn:** reuters-us-2610, meta-primary-2610
 - **Đồ họa/cảnh báo:** Meta đề xuất tài trợ bằng vốn cổ phần, không phải vốn đã huy động thành công.
 
 ### Nhịp 2: wallstreet — S&P 500 +0,70% · SOX +2,8%
-- **Voice:** Phiên Mỹ ngày hai mươi sáu tháng mười, S&P năm trăm tăng không phẩy bảy phần trăm; Nasdaq tăng không phẩy tám ba phần trăm, còn Dow Jones tăng không phẩy hai tám phần trăm. Chỉ số bán dẫn Philadelphia bật tăng hai phẩy tám phần trăm, nhưng vẫn giảm mạnh nếu tính từ đầu tháng.
+- **Voice:** Phiên Mỹ ngày hai mươi sáu tháng mười, S&P năm trăm tăng không phẩy bảy phần trăm; Nasdaq tăng không phẩy tám ba. Dow Jones tăng không phẩy hai tám phần trăm. Chỉ số bán dẫn Philadelphia tăng hai phẩy tám phần trăm, nhưng vẫn giảm sâu từ đầu tháng.
 - **Hình:** comparison, Nasdaq +0,83%; Dow +0,28%. Nhịp hồi chưa xóa rủi ro AI.
 - **Nguồn:** reuters-us-2610, ap-us-2610
 - **Đồ họa/cảnh báo:** Đóng cửa phiên chính Mỹ 26/10/2026; SOX vẫn -12,2% từ đầu tháng theo Reuters.
 
 ### Nhịp 3: meta — META LÊN KẾ HOẠCH HUY ĐỘNG 95 TỶ USD
-- **Voice:** Meta công bố kế hoạch huy động tối đa chín mươi lăm tỷ đô la để mở rộng hạ tầng AI. Khoảng ba mươi lăm tỷ thuộc các đợt chào bán vừa khởi động. Sáu mươi tỷ còn lại là chương trình dự kiến sau này, chưa phải tiền đã thu về. Cổ phiếu Meta giảm một phẩy chín phần trăm trong phiên.
+- **Voice:** Meta công bố kế hoạch huy động tối đa chín mươi lăm tỷ đô la cho AI. Khoảng ba mươi lăm tỷ là các đợt chào bán vừa khởi động; sáu mươi tỷ còn lại mới là dự kiến. Cổ phiếu Meta giảm một phẩy chín phần trăm. Đây chưa phải số tiền đã huy động đủ.
 - **Hình:** comparison, 35 tỷ đang chào bán; 60 tỷ mới ở giai đoạn dự kiến.
 - **Nguồn:** meta-primary-2610, reuters-us-2610
 - **Đồ họa/cảnh báo:** Nguồn Meta 26/10: KẾ HOẠCH TỐI ĐA, chưa hoàn tất; phần ~60 tỷ chưa được thiết lập.
 
 ### Nhịp 4: anthropic — AI TĂNG NHANH, CHI PHÍ CŨNG LỚN
-- **Voice:** Cùng ngày, Anthropic nộp hồ sơ IPO tại Mỹ. Hồ sơ cho thấy doanh thu tăng nhanh, nhưng mức lỗ và rủi ro vận hành vẫn đáng chú ý. Thị trường có thêm lý do quan tâm tới nhu cầu AI, đồng thời hỏi liệu các khoản đầu tư khổng lồ sẽ sinh lời ra sao.
+- **Voice:** Anthropic nộp hồ sơ IPO tại Mỹ. Doanh thu tăng nhanh nhưng mức lỗ và rủi ro vận hành vẫn lớn. Nhu cầu AI có thể tăng, song hiệu quả vốn đầu tư vẫn cần kiểm chứng.
 - **Hình:** company, Hồ sơ IPO không đồng nghĩa đã niêm yết hoặc đã có lãi.
 - **Nguồn:** reuters-us-2610, reuters-anthropic-2610
 - **Đồ họa/cảnh báo:** Nộp hồ sơ IPO ngày 26/10/2026; KHÔNG phải IPO đã hoàn tất.
 
 ### Nhịp 5: fed — FED 27–28/10 · GDP/PCE 29/10
-- **Voice:** Về vĩ mô, Fed họp ngày hai mươi bảy và hai mươi tám tháng mười. Ngày hai mươi chín, Mỹ dự kiến công bố GDP quý ba và chỉ số giá PCE tháng chín. Cùng tuần là báo cáo của Microsoft, Alphabet và Amazon. Những kết quả này còn ở phía trước, nên chưa thể xem là đã được thị trường xác nhận.
+- **Voice:** Fed họp hai mươi bảy và hai mươi tám tháng mười. GDP quý ba và PCE tháng chín của Mỹ dự kiến công bố ngày hai mươi chín. Cùng tuần, Microsoft, Alphabet và Amazon báo cáo. Đây là các sự kiện chưa có kết quả tại thời điểm bản tin.
 - **Hình:** generic, Lịch công bố quan trọng cho kỳ vọng lãi suất và vốn AI.
 - **Nguồn:** fed-primary-oct2026, bea-gdp-2910, bea-pce-2910, reuters-us-2610
 - **Đồ họa/cảnh báo:** Lịch sự kiện trước thời điểm công bố; không hiển thị số liệu GDP/PCE tháng 9 chưa có.
 
 ### Nhịp 6: korea — SOX HỒI CÓ ĐỦ ĐỠ KOSPI?
-- **Voice:** Với Hàn Quốc, nhóm bán dẫn Mỹ hồi phục có thể hỗ trợ tâm lý đối với Samsung Electronics và SK hynix. Nhưng KOSPI mới đóng cửa phiên hai mươi sáu tháng mười giảm một phẩy bốn sáu phần trăm. Nếu chi phí AI tăng mà doanh thu không theo kịp, hoặc dầu và lợi suất Mỹ tiếp tục cao, đồng won cùng lợi nhuận doanh nghiệp Hàn có thể chịu áp lực.
+- **Voice:** Với Hàn Quốc, Samsung Electronics và SK hynix có thể hưởng lợi khi nhóm chip Mỹ hồi. Nhưng KOSPI mới đóng cửa phiên hai mươi sáu giảm một phẩy bốn sáu phần trăm. Nếu chi phí AI vượt hiệu quả kinh doanh, hoặc dầu và lợi suất Mỹ neo cao, đồng won cùng cổ phiếu Hàn có thể chịu sức ép.
 - **Hình:** generic, Theo dõi giá dầu, thông điệp Fed và hướng dẫn đầu tư AI.
 - **Nguồn:** reuters-us-2610, yonhap-kospi-2610, meta-primary-2610, marketwatch-oil-2610
 - **Đồ họa/cảnh báo:** Hai phiên chính tại Mỹ/Hàn thuộc cùng ngày địa phương 26/10; không dùng đây làm dự báo giá 27/10.
 
 ### Nhịp 7: outro — TIN TỐT CHƯA XÓA HẾT RỦI RO
-- **Voice:** Đó là các tín hiệu cần quan sát, chưa phải kết luận nên mua hay bán. Quan trọng nhất vẫn là kết quả kinh doanh và thông điệp Fed.
+- **Voice:** Đó là tín hiệu cần quan sát, chưa đủ để kết luận về xu hướng hay quyết định mua bán.
 - **Hình:** closing, Kết quả doanh nghiệp + Fed + dữ liệu kinh tế mới là phép thử.
 - **Nguồn:** fed-primary-oct2026, bea-gdp-2910, bea-pce-2910, reuters-us-2610
 - **Đồ họa/cảnh báo:** Bản tin tham khảo; không phải tư vấn giao dịch cá nhân.
