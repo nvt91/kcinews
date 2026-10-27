@@ -133,7 +133,7 @@
       "sourceIds": [
         "reuters-cxmt"
       ],
-      "voiceText": "Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi? Reuters Breakingviews vừa phân tích sức ép cạnh tranh dài hạn. Đây là một góc nhìn, không phải dữ liệu lợi nhuận mới.",
+      "voiceText": "Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi? Reuters phân tích rủi ro dài hạn, chưa phải số liệu lợi nhuận mới.",
       "visual": {
         "kind": "generic"
       },
@@ -148,7 +148,7 @@
       "sourceIds": [
         "reuters-cxmt"
       ],
-      "voiceText": "Khi các hãng Hàn tập trung nhiều hơn vào HBM cho trí tuệ nhân tạo, bộ nhớ phổ thông mở thêm cơ hội cho CXMT của Trung Quốc. Điều đó chưa có nghĩa Samsung hay SK hynix đánh mất vị thế.",
+      "voiceText": "Khi các hãng Hàn ưu tiên HBM cho trí tuệ nhân tạo, CXMT của Trung Quốc có thêm cơ hội ở DRAM phổ thông. Nhưng chưa có bằng chứng Samsung hay SK hynix mất vị thế.",
       "visual": {
         "kind": "company",
         "company": "CXMT"
@@ -164,7 +164,7 @@
       "sourceIds": [
         "reuters-cxmt"
       ],
-      "voiceText": "Counterpoint dự báo thị phần giao hàng DRAM của CXMT có thể lên mười một phần trăm năm hai nghìn không trăm hai mươi tám, từ tám phần trăm năm ngoái. Đây là dự báo, không phải số liệu hiện hành.",
+      "voiceText": "Counterpoint dự báo CXMT đạt mười một phần trăm lượng DRAM giao hàng năm hai nghìn không trăm hai mươi tám, so với tám phần trăm năm hai nghìn không trăm hai mươi lăm. Đây chỉ là dự báo.",
       "visual": {
         "kind": "spotlight",
         "value": "11%",
@@ -192,7 +192,7 @@
         "skh-ir",
         "skh-reuters"
       ],
-      "voiceText": "Theo lịch chính thức, SK hynix sẽ công bố quý ba trước chín giờ sáng, họp nhà đầu tư lúc chín giờ. Lúc chốt tin chưa có số lợi nhuận. Cần xem HBM, dòng tiền và phương án hoàn trả cổ đông.",
+      "voiceText": "SK hynix dự kiến công bố quý ba trước chín giờ sáng, họp nhà đầu tư lúc chín giờ. Khi chưa có kết quả, cần chờ số liệu lợi nhuận, nhu cầu HBM và dòng tiền.",
       "visual": {
         "kind": "company",
         "company": "SK hynix"
@@ -214,7 +214,7 @@
         "reuters-krx",
         "krx-schedule"
       ],
-      "voiceText": "KOSPI đóng cửa phiên chính hôm qua tại năm nghìn sáu trăm ba mươi tám phẩy ba tư điểm, tăng ba phẩy không chín phần trăm. Đây không phải giá sáng nay. Đà hồi cần được kiểm chứng bằng lợi nhuận thực.",
+      "voiceText": "Hôm qua, KOSPI đóng cửa phiên chính ở năm nghìn sáu trăm ba mươi tám phẩy ba tư điểm, tăng ba phẩy không chín phần trăm. Đây không phải giá sáng nay. Nhịp hồi cần được kiểm chứng bằng lợi nhuận.",
       "visual": {
         "kind": "spotlight",
         "value": "+3,09%",
@@ -243,7 +243,7 @@
         "skh-ir",
         "reuters-krx"
       ],
-      "voiceText": "Hãy tách bạch dự báo thị phần, biến động giá và lợi nhuận thực tế. Báo cáo của SK hynix sẽ cung cấp dữ liệu quan trọng tiếp theo.",
+      "voiceText": "Đừng nhầm dự báo thị phần, diễn biến giá và lợi nhuận thực tế. Báo cáo SK hynix sẽ là phép thử tiếp theo.",
       "visual": {
         "kind": "closing",
         "bullets": [
