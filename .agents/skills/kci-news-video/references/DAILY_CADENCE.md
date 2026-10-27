@@ -6,6 +6,10 @@ Every KR_NEWS/MACRO producer and KCI Video Completion Watch must also read [SHEE
 
 Owner clarification: 24 October 2026. This REPLACES the mistaken four-article/four-video cadence. Korean digest schedules start 25 October 2026. The independent macro task is restored to its existing 21:00 Asia/Seoul slot, including 24 October. This document is an operating contract, not an executable scheduler.
 
+## Output clarification — owner 27 October 2026
+
+Every eligible video slot must try to produce a complete, playable MP4 with voice, motion graphics, hook and CTA before asking the owner to review. The owner does not approve an unrendered intermediate or have to request a separate identical final export. A rendered cut stays CHỜ DUYỆT — CHƯA ĐĂNG until user action; actual evidence/QC required and missing optional advanced checks are reported honestly. This does NOT alter schedules, story quotas or independent streams. The 27 October override in SKILL.md and EDITING_WORKFLOW.md takes precedence over older preview-before-final text.
+
 ## Two independent streams
 
 **MACRO — Theo dõi vĩ mô, 21:00 KST daily.** Preserve the separately approved macro-monitoring and one-video review workflow. Cover material monetary policy, growth, inflation, rates, FX, energy, trade and global risks, explaining transmission to Korea. Do not repurpose this task into a fourth Korean-news slot, a company-disclosure slot or an extra market recap. Its video is NOT counted in the Korean-news target.
