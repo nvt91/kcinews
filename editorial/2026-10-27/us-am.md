@@ -1,6 +1,15 @@
-# KCI Global/US — 27/10/2026 · BẢN BIÊN TẬP CHỜ PREVIEW
+# KCI Global/US — 27/10/2026 · MP4 ĐÃ DỰNG, CHỜ ANH DUYỆT
 
 **Article ID:** KCI-20261027-US-AM · **Stream:** GLOBAL_US / US_AM · **Cutoff:** 2026-10-27T09:05:23+09:00 · **Nguồn gần nhất:** US regular close thứ Hai **26/10/2026 16:00 EDT = thứ Ba 27/10 05:00 KST**. Tin và dữ liệu sau cutoff không được tự đưa vào edition này.
+
+## Cập nhật sau render 27/10/2026 — trạng thái mới nhất
+
+- Sau lượt tự động 09:00 bị dừng ở `BLOCKED_PIPELINE`, chủ kênh yêu cầu **render MP4 ngay, duyệt sau khi có video**. Giờ/slot không thay đổi, không tạo video trùng.
+- Đã kích hoạt [GitHub Issue #36](https://github.com/nvt91/kcinews/issues/36); [Actions run 40426006490](https://github.com/nvt91/kcinews/actions/runs/40426006490) kết thúc SUCCESS. Artifact gốc ID `12699822444`, tạo 27/10/2026 khoảng 09:29 KST, hết hạn 03/11/2026 khoảng 09:29 KST.
+- Artifact có 7 đoạn MP3 Vbee **Anh Khôi Tin tức** (code `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`), `out/kci-2026-10-27-us-am.mp4` 76,07 giây, 1080×1920 30fps H.264/AAC và source ledger/SRT. Tổng container duration của 7 MP3 **73,632 giây**; không có camera take.
+- QC video gốc phát hiện chữ Anthropic quá lớn và tràn mép phải. Bản `KCI_Global_US_2026-10-27_AnhKhoi_Review.mp4` được sửa từ MP4 gốc bằng đồ họa overlay (không gọi lại Vbee): hook có chữ lớn khung 0, hai nhịp cảnh Anthropic không cắt chữ, tăng chất lượng video và cân âm. Bản sửa **đã bàn giao riêng qua ChatGPT**, chưa nằm trong GitHub artifact gốc. File sửa: 76,07 giây, **172.263.401 byte**, H.264 khoảng **17,88 Mbps**, AAC thực tế ~233 kbps, loudness **−14,82 LUFS**, true peak **−1,14 dBTP**, decode toàn bộ PASS, 0 black frame >0,08 giây. 19 khung hình mẫu đã được kiểm tra.
+- Các bước chưa được chứng minh: nghe thẩm định toàn bộ giọng/phát âm, Whisper word-level alignment, ≤2 frame effects map; **23 ứng viên khoảng lặng ≥0,25s** từ máy phát hiện (không đồng nghĩa 23 lỗi), **0 khoảng lặng bị cắt bằng biên tập**. Camera take/da/zoom mắt=N/A.
+- Trạng thái cuối: **MP4 — CẦN RÀ SOÁT / CHỜ DUYỆT / CHƯA ĐĂNG**; Google Sheet KCI News tab Trang tính1, hàng 15 đã ghi giờ hoàn thành, link run, tình trạng thật và liên kết nguồn. Không tự đăng. Lịch sử BLOCKED trước render bên dưới chỉ là trạng thái tại thời điểm 09:13 KST, không còn đại diện kết quả mới nhất.
 
 ## Tóm tắt biên tập
 
@@ -74,7 +83,7 @@ Phố Wall hồi, Meta tính huy động vốn lớn cho AI. Anh chị nghĩ sao
 
 Hashtag nêu đúng chủ đề, **chưa xác minh là xu hướng trên Facebook/Instagram**; không tự gọi là viral.
 
-## Effects plan & hiện trạng kỹ thuật
+## Effects plan & trạng thái lịch sử lúc 09:13 KST trước khi render
 
 - `jobs/kci-2026-10-27-us-am-effects.json` có 25 nhịp keyword/số/CTA, tất cả có từ khóa trong chính bản script này. Dự kiến 2–4 từ/cue, hình nhấn vào số liệu đúng thời điểm nói, vùng an toàn top220/bottom420/right140, Inter Bold, navy #1c2c58 và xanh #365daa. Không dùng ảnh fake sàn chứng khoán, đường giá suy diễn hay phụ đề cả câu.
 - **Input:** tts_motion. Chọn take, phát hiện khuôn mặt, chỉnh màu da, before/after footage = **N/A**.
