@@ -32,6 +32,10 @@ No fabricated prices, chart paths or fake news footage. Quote verified market-se
 
 Secrets `VBEE_APP_ID` and `VBEE_API_TOKEN` remain only in GitHub Actions Secrets.
 
+## Render first — owner reviews the video (27 October 2026)
+
+Every scheduled KCI producer creates the **complete MP4 with Vietnamese Anh Khôi voice, motion graphics, hook and CTA** before delivery to the owner. The owner reviews the actual encoded video for content and quality; there is no requirement to pre-approve a storyboard or render the unchanged video a second time after approval. Rendering is not permission to post. If a supported technique such as word-alignment precision hasn't been executed, report the QA limitation honestly without claiming a pass or silently withholding an otherwise playable sourced MP4. See [EDITING_WORKFLOW.md](.agents/skills/kci-news-video/references/EDITING_WORKFLOW.md) and [QC.md](.agents/skills/kci-news-video/references/QC.md). All existing schedules and Vbee credentials remain unchanged.
+
 ## New daily episode workflow
 
 1. Research new KST news and assemble a verified brief with precise source URLs.
