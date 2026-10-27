@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-27-kr-mid",
+  "edition": "KR_MID — Bản tin bổ sung 27/10/2026",
+  "dataAsOf": "2026-10-27T12:21:37+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "GDP Hàn Quốc quý III tăng 1,0%, vượt dự báo nhưng tiêu dùng tư nhân suy yếu",
+  "sourceDisclaimer": "Các số liệu là ước tính GDP lần đầu của BOK công bố 27/10, chủ yếu q/q; số Reuters 0,7% là dự báo, không phải số liệu thực.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_MID",
+    "format": "digest",
+    "articleId": "KCI-20261027-KR-MID",
+    "articlePath": "editorial/2026-10-27/kr-mid.md",
+    "eventKeys": [
+      "BOK|2026-Q3-REAL-GDP-ADVANCE|2026-10-27"
+    ],
+    "gate": "PASS: BOK GDP result verified by independent reporting after 08:03 morning cutoff; q/q +1.0 vs consensus +0.7, private consumption -0.2",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render complete voiced MP4 for review first; no posting without owner approval",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc"
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-gdp-schedule-1027",
+      "title": "Bank of Korea official statistical schedule — Q3 2026 GDP advance release, 27 Oct at 08:00 KST",
+      "url": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?date=2019-10&menuNo=200775",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T12:21:37+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK official calendar lists 2026년 3/4분기 실질 국내총생산(속보) at 08:00 KST on 27 October 2026.",
+        "The calendar establishes publication timing, not GDP figures; numeric advance GDP observations independently confirmed via Yonhap and Reuters citing the BOK estimates."
+      ]
+    },
+    {
+      "id": "yonhap-gdp-1027",
+      "title": "Yonhap News Agency — Q3 GDP 1.0%, BOK advance data, 27 Oct 2026 08:20 KST",
+      "url": "https://en.yna.co.kr/view/AEN20261027001451320",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T12:21:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "BOK advance real Q3 2026 GDP expanded 1.0% q/q, after 0.6% in Q2, versus BOK August projection 0.3%.",
+        "Q3 real GDP rose 3.4% y/y, after 3.7% in Q2; exports rose 2.3% q/q and facilities investment 4.1% q/q.",
+        "Government consumption rose 1.9% q/q, private consumption fell 0.2% q/q, and construction investment rose 0.7% q/q."
+      ]
+    },
+    {
+      "id": "reuters-gdp-1027",
+      "title": "Reuters — South Korea Q3 GDP beats forecasts as AI chip boom boosts exports, 27 Oct 2026 08:17 KST",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-economy-grows-faster-than-expected-third-quarter-2026-10-26/",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T12:21:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Korean real GDP growth was 1.0% q/q in Q3, exceeding Reuters economist consensus +0.7% q/q, following +0.6% in Q2.",
+        "Exports +2.3% q/q and facilities investment +4.1% q/q reflect strength linked to AI semiconductor demand.",
+        "Private consumption decreased 0.2% q/q, underscoring uneven growth; an official BOK spokesman estimated about half of overall economic growth related to semiconductors."
+      ]
+    },
+    {
+      "id": "mt-gdp-1027",
+      "title": "Money Today — Korea Q3 GDP advance composition, published 27 Oct 2026 08:00 KST",
+      "url": "https://www.mt.co.kr/amp/economy/2026/10/27/2026102707211281095",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T12:21:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The GDP release shows private consumption -0.2%, government consumption +1.9%, exports +2.3%, and facilities investment +4.1% q/q.",
+        "Net exports contributed +0.1 percentage point to Q3 q/q growth; aggregate domestic demand +0.9 percentage point including investment and public consumption."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "GDP Hàn Quốc quý ba tăng một phần trăm, cao hơn dự báo. Nhưng tiêu dùng tư nhân lại giảm. Điều gì đang kéo nền kinh tế đi lên?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "GDP Hàn Quốc quý ba tăng một phần trăm, cao hơn dự báo. Nhưng tiêu dùng tư nhân lại giảm. Điều gì đang kéo nền kinh tế đi lên?",
+        "score": 48,
+        "breakdown": "Accuracy 15, KR relevance 15, curiosity 10, brevity 4, clarity 4"
+      },
+      {
+        "style": "investor-impact",
+        "text": "Xuất khẩu và đầu tư giúp GDP Hàn Quốc vượt dự báo, nhưng sức mua người dân đi xuống. Nhà đầu tư nên nhìn vào đâu?",
+        "score": 45,
+        "breakdown": "Accuracy 15, KR relevance 15, curiosity 8, brevity 3, clarity 4"
+      },
+      {
+        "style": "question",
+        "text": "GDP quý ba vượt dự báo. Vì sao kinh tế Hàn Quốc tăng một phần trăm mà tiêu dùng tư nhân vẫn giảm?",
+        "score": 43,
+        "breakdown": "Accuracy 15, KR relevance 15, curiosity 7, brevity 3, clarity 3"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà tăng xuất khẩu chip có đủ giúp tiêu dùng trong nước hồi phục không? Chia sẻ góc nhìn và theo dõi Korea Capital Insight để cùng cập nhật các số liệu tới.",
+    "screenHeadline": "TĂNG TRƯỞNG CÓ LAN RA TIÊU DÙNG?",
+    "screenSubline": "Góc nhìn của anh chị? · Theo dõi Korea Capital Insight",
+    "question": "Đà tăng xuất khẩu chip có đủ giúp tiêu dùng trong nước hồi phục không?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · GDP HÀN QUỐC",
+      "headline": "GDP quý III +1,0% nhưng sức mua vẫn yếu",
+      "summary": "BOK công bố 27/10 · GDP thực +1,0% q/q, tiêu dùng tư nhân −0,2% q/q.",
+      "voiceText": "GDP Hàn Quốc quý ba tăng một phần trăm, cao hơn dự báo. Nhưng tiêu dùng tư nhân lại giảm. Điều gì đang kéo nền kinh tế đi lên? Đây là số GDP ước tính lần đầu được công bố sáng hai mươi bảy tháng mười.",
+      "source": "BOK / Reuters / Yonhap · 27/10 08:00–08:20 KST",
+      "sourceIds": [
+        "bok-gdp-schedule-1027",
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDP thực Q3 · q/q",
+          "value": "+1,0%",
+          "tone": "up"
+        },
+        {
+          "label": "Tiêu dùng tư nhân · q/q",
+          "value": "−0,2%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+1,0%",
+        "qualifier": "GDP thực quý III/2026, thay đổi so với quý II; ước tính lần đầu của BOK 27/10"
+      }
+    },
+    {
+      "id": "quarter",
+      "eyebrow": "CON SỐ MỚI CỦA BOK",
+      "headline": "Tăng trưởng quý III vượt dự báo",
+      "summary": "Q3 +1,0% q/q so với Q2 +0,6%; dự báo Reuters +0,7% q/q.",
+      "voiceText": "Tăng trưởng quý ba đạt một phần trăm so với quý trước, cao hơn mức không phẩy sáu của quý hai và dự báo không phẩy bảy phần trăm. Đây là tốc độ tăng của GDP thực, không phải mức tăng giá cổ phiếu.",
+      "source": "BOK qua Yonhap / Reuters · 27/10/2026",
+      "sourceIds": [
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDP Q2 · q/q",
+          "value": "+0,6%",
+          "tone": "neutral"
+        },
+        {
+          "label": "GDP Q3 · q/q",
+          "value": "+1,0%",
+          "tone": "up"
+        },
+        {
+          "label": "Dự báo Q3 · Reuters",
+          "value": "+0,7%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "QUÝ II · THỰC TẾ",
+            "value": 0.6,
+            "display": "+0,6%"
+          },
+          {
+            "label": "QUÝ III · THỰC TẾ",
+            "value": 1,
+            "display": "+1,0%"
+          },
+          {
+            "label": "QUÝ III · DỰ BÁO",
+            "value": 0.7,
+            "display": "+0,7%"
+          }
+        ],
+        "qualifier": "Thay đổi GDP thực so với quý trước · không phải chỉ số chứng khoán"
+      }
+    },
+    {
+      "id": "drivers",
+      "eyebrow": "ĐỘNG LỰC TĂNG TRƯỞNG",
+      "headline": "Xuất khẩu và đầu tư thiết bị cùng tăng",
+      "summary": "Q3 xuất khẩu +2,3%; đầu tư thiết bị +4,1% so với quý II.",
+      "voiceText": "Xuất khẩu tăng hai phẩy ba phần trăm, còn đầu tư thiết bị tăng bốn phẩy một phần trăm so với quý trước. Nhu cầu chip phục vụ hạ tầng trí tuệ nhân tạo là một động lực quan trọng, nhưng không phải toàn bộ nền kinh tế đều hưởng lợi như nhau.",
+      "source": "BOK qua Reuters / Yonhap · quý III/2026",
+      "sourceIds": [
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027",
+        "mt-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "Xuất khẩu quý III",
+          "value": "+2,3%",
+          "tone": "up"
+        },
+        {
+          "label": "Đầu tư thiết bị quý III",
+          "value": "+4,1%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "XUẤT KHẨU · Q/Q",
+            "value": 2.3,
+            "display": "+2,3%"
+          },
+          {
+            "label": "ĐẦU TƯ THIẾT BỊ · Q/Q",
+            "value": 4.1,
+            "display": "+4,1%"
+          }
+        ],
+        "qualifier": "Đều là tốc độ thay đổi theo quý, hai cấu phần khác nhau"
+      }
+    },
+    {
+      "id": "consumer",
+      "eyebrow": "ĐIỂM YẾU CẦN NHÌN RÕ",
+      "headline": "Tiêu dùng tư nhân giảm 0,2%",
+      "summary": "Tiêu dùng tư nhân −0,2% q/q dù chi tiêu chính phủ +1,9%.",
+      "voiceText": "Trái lại, tiêu dùng tư nhân giảm không phẩy hai phần trăm trong quý ba. Chi tiêu chính phủ tăng một phẩy chín phần trăm. Điều này cho thấy GDP tăng mạnh chưa đồng nghĩa sức mua của các hộ gia đình đã phục hồi.",
+      "source": "BOK qua Yonhap / Reuters / Money Today · 27/10",
+      "sourceIds": [
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027",
+        "mt-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "Tiêu dùng tư nhân",
+          "value": "−0,2%",
+          "tone": "down"
+        },
+        {
+          "label": "Chi tiêu chính phủ",
+          "value": "+1,9%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "TIÊU DÙNG TƯ NHÂN",
+            "value": -0.2,
+            "display": "−0,2%"
+          },
+          {
+            "label": "CHI TIÊU CHÍNH PHỦ",
+            "value": 1.9,
+            "display": "+1,9%"
+          }
+        ],
+        "qualifier": "Thay đổi thực theo quý · hai đối tượng chi tiêu khác nhau"
+      }
+    },
+    {
+      "id": "meaning",
+      "eyebrow": "Ý NGHĨA ĐỐI VỚI THỊ TRƯỜNG",
+      "headline": "Chênh lệch giữa bán dẫn và sức mua",
+      "summary": "GDP tăng nhờ xuất khẩu, đầu tư và chi tiêu công; sức mua còn yếu.",
+      "voiceText": "Với cổ phiếu Hàn Quốc, số liệu này củng cố câu chuyện đầu tư vào sản xuất và xuất khẩu bán dẫn. Nhưng nhóm phụ thuộc tiêu dùng nội địa vẫn cần thêm bằng chứng. Một quý GDP vượt dự báo không đủ bảo đảm mọi doanh nghiệp sẽ tăng lợi nhuận.",
+      "source": "KCI phân tích từ số liệu BOK, Reuters, Yonhap 27/10",
+      "sourceIds": [
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDP thực quý III · y/y",
+          "value": "+3,4%",
+          "tone": "up"
+        },
+        {
+          "label": "Xuất khẩu quý III · q/q",
+          "value": "+2,3%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "close",
+      "eyebrow": "KCI · KẾT LUẬN VÀ THEO DÕI",
+      "headline": "Kiểm tra lợi nhuận và sức mua thực tế",
+      "summary": "Theo dõi báo cáo quý, tiền lương, việc làm và tiêu dùng để đánh giá sức lan tỏa.",
+      "voiceText": "Sắp tới, hãy đối chiếu kết quả kinh doanh của doanh nghiệp chip với dữ liệu việc làm, thu nhập và tiêu dùng. Tăng trưởng được dẫn dắt bởi một vài động lực lớn vẫn cần kiểm chứng khả năng lan rộng.",
+      "source": "BOK/Yonhap/Reuters · bản tin chốt dữ liệu 27/10 12:21 KST",
+      "sourceIds": [
+        "yonhap-gdp-1027",
+        "reuters-gdp-1027"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "GDP Q3 +1,0% · BẢN ƯỚC TÍNH",
+          "XUẤT KHẨU VÀ ĐẦU TƯ TĂNG",
+          "TIÊU DÙNG TƯ NHÂN −0,2%"
+        ]
+      }
+    }
+  ]
+}
