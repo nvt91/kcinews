@@ -139,7 +139,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "KOSPI bật tăng hơn ba phần trăm. Nhưng rủi ro AI đã qua chưa? Phiên chính ngày hai mươi bảy tháng mười, chứng khoán Hàn Quốc phục hồi mạnh sau nhịp giảm hôm qua. Nhưng thông tin mới từ Ngân hàng Trung ương cho thấy một kịch bản trái chiều.",
+      "voiceText": "KOSPI bật tăng hơn ba phần trăm. Nhưng rủi ro AI đã qua chưa? Thị trường Hàn phục hồi trong phiên hai mươi bảy tháng mười. Ngay lúc đó, Ngân hàng Trung ương đưa ra một kịch bản đáng chú ý.",
       "visual": {
         "kind": "spotlight",
         "value": "+3,1%",
@@ -167,7 +167,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "Theo AP, KOSPI kết phiên tại năm nghìn sáu trăm ba mươi tám phẩy ba bốn điểm, cao hơn khoảng ba phẩy một phần trăm so với hôm qua. SK hynix tăng năm phẩy hai phần trăm; Samsung Electronics tăng bốn phẩy hai phần trăm. Hai cổ phiếu chip góp phần nổi bật vào đà hồi.",
+      "voiceText": "KOSPI đóng cửa tại năm nghìn sáu trăm ba mươi tám phẩy ba bốn điểm, tăng ba phẩy một phần trăm. Theo AP, SK hynix tăng năm phẩy hai phần trăm, Samsung Electronics tăng bốn phẩy hai phần trăm. Nhóm chip dẫn dắt nhịp hồi.",
       "visual": {
         "kind": "comparison",
         "bars": [
@@ -201,7 +201,7 @@
           "tone": "down"
         }
       ],
-      "voiceText": "Cùng ngày, Reuters dẫn phân tích của Ngân hàng Trung ương Hàn Quốc. Nếu các tập đoàn công nghệ Mỹ giảm chi tiêu xây dựng hạ tầng AI trong năm tới, xuất khẩu chip Hàn Quốc có thể thấp hơn dự báo khoảng năm mươi đến một trăm tỷ đô la. Đây là kịch bản bi quan, không phải doanh số đã giảm.",
+      "voiceText": "Reuters dẫn kịch bản bi quan của Ngân hàng Trung ương Hàn Quốc: nếu các hãng công nghệ Mỹ giảm đầu tư AI năm sau, xuất khẩu chip có thể thấp hơn dự báo từ năm mươi đến một trăm tỷ đô la. Đây là giả định, không phải doanh số đã giảm.",
       "visual": {
         "kind": "spotlight",
         "value": "50–100 tỷ USD",
@@ -226,7 +226,7 @@
           "tone": "down"
         }
       ],
-      "voiceText": "Theo chính kịch bản ấy, tăng trưởng GDP năm hai nghìn không trăm hai mươi bảy có thể hụt khoảng không phẩy bốn điểm phần trăm. Trong khi đó, GDP quý ba mới công bố tăng một phần trăm so với quý trước, đã được giải thích ở bản trưa. Đây là hai thước đo và hai thời kỳ khác nhau.",
+      "voiceText": "Kịch bản ấy còn có thể kéo giảm tăng trưởng GDP năm hai nghìn không trăm hai mươi bảy khoảng không phẩy bốn điểm phần trăm. Còn GDP quý ba thực tế tăng một phần trăm; số này đã được đưa trong bản bổ sung trưa.",
       "visual": {
         "kind": "spotlight",
         "value": "−0,4 điểm %",
@@ -249,7 +249,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Với Samsung, quỹ Palliser Capital đề xuất doanh nghiệp mua lại cổ phiếu ưu đãi, quy mô khoảng một trăm ba mươi hai nghìn tỷ won. Đây là kiến nghị của nhà đầu tư được Reuters Breakingviews phân tích, không phải chương trình Samsung đã thông qua. Tính khả thi và lợi ích cho các nhóm cổ đông vẫn cần đánh giá.",
+      "voiceText": "Palliser Capital đề xuất Samsung mua lại khoảng một trăm ba mươi hai nghìn tỷ won cổ phiếu ưu đãi. Reuters Breakingviews ghi rõ đây là đề xuất của quỹ, chưa phải chương trình được Samsung phê duyệt. Nhà đầu tư cần chờ quyết định chính thức.",
       "visual": {
         "kind": "company",
         "company": "Samsung Electronics",
@@ -271,7 +271,7 @@
         "reuters-1027-samsung-activism"
       ],
       "stats": [],
-      "voiceText": "Nhìn về phía trước, kết quả kinh doanh SK hynix ngày hai mươi tám và Samsung ngày hai mươi chín tháng mười sẽ là phép thử quan trọng cho lợi nhuận ngành chip. KOSPI hồi mạnh đáng chú ý, nhưng một phiên tăng chưa đủ xác nhận rủi ro đã kết thúc.",
+      "voiceText": "Kết quả kinh doanh SK hynix sẽ công bố ngày hai mươi tám, Samsung ngày hai mươi chín tháng mười. Hãy xem lợi nhuận và dòng tiền có đi cùng giá cổ phiếu hay không.",
       "visual": {
         "kind": "closing",
         "bullets": [
