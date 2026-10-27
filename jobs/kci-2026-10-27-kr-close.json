@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-27-kr-close",
+  "edition": "KR_CLOSE — Bản tin sau phiên 27/10/2026 KST",
+  "dataAsOf": "2026-10-27T17:54:10+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI phục hồi 3,1% nhưng BOK cảnh báo kịch bản xuất khẩu chip",
+  "sourceDisclaimer": "KOSPI là đóng cửa phiên chính KRX ngày 27/10; NXT sau giờ không cộng vào chỉ số. Số BOK năm 2027 là kịch bản giả định, đề xuất Palliser chưa được Samsung chấp thuận.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261027-KR-CLOSE",
+    "articlePath": "editorial/2026-10-27/kr-close.md",
+    "eventKeys": [
+      "KRX-KOSPI|2026-10-27-MAIN-CLOSE-5638.34",
+      "BOK|AI-SPENDING-2027-CHIP-EXPORT-STRESS|2026-10-27",
+      "SAMSUNG-005930|PALLISER-PREFERRED-BUYBACK-PROPOSAL|2026-10-27"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Full narrated MP4 render first; owner approves video, no auto posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "sourceCoverageLimitations": [
+      "KRX KOSDAQ full-index close, breadth and investor category flows not independently verified at cutoff: OMIT numbers.",
+      "No NXT after-hours finalized observation at cutoff; do not conflate KRX and NXT.",
+      "V3 design and word alignment are NOT claimed implemented by current main runner."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "ap-1027-close",
+      "title": "AP News 27 Oct 2026 — Asian markets closing report; KOSPI 5638.34 +3.1%",
+      "url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-e11a2240fc3283c4507d44b9833f30a2",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T17:54:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KRX main session 27 Oct: KOSPI closed 5638.34 points, +3.1% vs prior session, after gaining more than 4% intraday.",
+        "AP reports SK hynix +5.2% and Samsung Electronics +4.2% in the 27 October cash session.",
+        "SK hynix Q3 earnings scheduled 28 October; Samsung Electronics scheduled 29 October."
+      ]
+    },
+    {
+      "id": "reuters-1027-ai-scenario",
+      "title": "Reuters 27 Oct — BOK scenario for Korean semiconductor exports if US Big Tech AI spending slows",
+      "url": "https://www.reuters.com/world/asia-pacific/bank-korea-warns-countrys-chip-exports-could-fall-by-up-100-billion-if-ai-2026-10-27/",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T17:54:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Pessimistic BOK scenario: 2027 Korean semiconductor exports could be USD 50bn to USD 100bn below previously expected levels if US Big Tech AI capital spending slows; it is NOT an observed fall.",
+        "Under the scenario BOK estimated a potential ~0.4 percentage point hit to 2027 Korean GDP growth, conditional on assumptions including chip price decline.",
+        "BOK stressed uncertainty about AI spending and the memory-chip cycle."
+      ]
+    },
+    {
+      "id": "reuters-1027-samsung-activism",
+      "title": "Reuters Breakingviews commentary 27 Oct 2026 — Palliser Capital proposal for Samsung preferred shares",
+      "url": "https://www.reuters.com/commentary/breakingviews/pallisers-samsung-buyback-bet-puts-hat-hat-2026-10-27/",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T17:54:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Palliser Capital proposes that Samsung Electronics repurchase approximately KRW 132tn of non-voting preferred shares; proposal, NOT Samsung-approved buyback.",
+        "Reuters Breakingviews commentary questions execution/political feasibility of preferred-only repurchase; no company decision established.",
+        "Samsung is scheduled to report earnings Thursday, 29 Oct 2026, per AP/Reuters."
+      ]
+    },
+    {
+      "id": "reuters-1027-gdp-context",
+      "title": "Reuters 27 Oct — Korea Q3 GDP advance +1.0% q/q, first estimate",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-economy-grows-faster-than-expected-third-quarter-2026-10-26/",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T17:54:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "BOK Q3 2026 advance real GDP +1.0% q/q, versus +0.7% Reuters median forecast; exports +2.3% and private consumption -0.2% q/q.",
+        "This 08:00 GDP release was already the primary subject of KCI KR_MID 27 October; in KR_CLOSE use it ONLY as background rather than new breaking news."
+      ]
+    },
+    {
+      "id": "bok-official-release-calendar",
+      "title": "Bank of Korea statistics publication calendar — Q3 GDP advance 08:00 KST 27 Oct 2026",
+      "url": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?date=2019-10&menuNo=200775",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T17:54:10+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK official calendar lists the 2026 Q3 real GDP advance release for 08:00 KST 27 October 2026; calendar establishes event timing only, not Q3 growth value."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI bật tăng hơn ba phần trăm. Nhưng rủi ro AI đã qua chưa?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI bật tăng hơn ba phần trăm. Nhưng rủi ro AI đã qua chưa?",
+        "score": 47,
+        "breakdown": "Chính xác15, quan hệ KR15, tò mò9, súc tích4, diễn đạt4"
+      },
+      {
+        "style": "investor-impact",
+        "text": "Thị trường Hàn bật mạnh nhờ chip, vậy rủi ro AI có giảm tương ứng không?",
+        "score": 45,
+        "breakdown": "Chính xác15, KR14, tò mò8, súc tích4, diễn đạt4"
+      },
+      {
+        "style": "question",
+        "text": "KOSPI lên trên năm nghìn sáu trăm điểm, nhưng ngân hàng trung ương đang cảnh báo điều gì?",
+        "score": 43,
+        "breakdown": "Chính xác14, KR15, tò mò7, súc tích3, diễn đạt4"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, phiên tăng hôm nay mở đầu một nhịp hồi bền vững, hay mới là hồi phục ngắn hạn? Bình luận góc nhìn và theo dõi Korea Capital Insight để cùng kiểm tra các báo cáo tiếp theo.",
+    "screenHeadline": "NHỊP HỒI CÓ BỀN VỮNG?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Phiên tăng hôm nay là hồi phục bền vững hay chỉ là nhịp hồi ngắn hạn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · SAU PHIÊN 27/10",
+      "headline": "KOSPI hồi mạnh — rủi ro AI còn đó",
+      "summary": "KRX đóng cửa +3,1% · BOK cảnh báo kịch bản xuất khẩu chip năm 2027.",
+      "source": "AP · Reuters/BOK · 27/10/2026 KST",
+      "sourceIds": [
+        "ap-1027-close",
+        "reuters-1027-ai-scenario"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · 27/10 KRX",
+          "value": "+3,1%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "KOSPI bật tăng hơn ba phần trăm. Nhưng rủi ro AI đã qua chưa? Phiên chính ngày hai mươi bảy tháng mười, chứng khoán Hàn Quốc phục hồi mạnh sau nhịp giảm hôm qua. Nhưng thông tin mới từ Ngân hàng Trung ương cho thấy một kịch bản trái chiều.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "+3,1%",
+        "qualifier": "KOSPI · đóng cửa phiên chính KRX ngày 27/10; AP ghi nhận 5.638,34 điểm."
+      }
+    },
+    {
+      "id": "close-market",
+      "eyebrow": "KRX · ĐÓNG CỬA 15:30 KST",
+      "headline": "Bán dẫn dẫn dắt nhịp hồi của KOSPI",
+      "summary": "KOSPI 5.638,34 điểm · SK hynix +5,2% · Samsung Electronics +4,2%.",
+      "source": "AP — KRX main-session close 27/10/2026",
+      "sourceIds": [
+        "ap-1027-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · điểm",
+          "value": "5.638,34",
+          "tone": "up"
+        },
+        {
+          "label": "So phiên 26/10",
+          "value": "+3,1%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Theo AP, KOSPI kết phiên tại năm nghìn sáu trăm ba mươi tám phẩy ba bốn điểm, cao hơn khoảng ba phẩy một phần trăm so với hôm qua. SK hynix tăng năm phẩy hai phần trăm; Samsung Electronics tăng bốn phẩy hai phần trăm. Hai cổ phiếu chip góp phần nổi bật vào đà hồi.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SK HYNIX · KRX 27/10",
+            "value": 5.2,
+            "display": "+5,2%"
+          },
+          {
+            "label": "SAMSUNG ELECTRONICS · KRX 27/10",
+            "value": 4.2,
+            "display": "+4,2%"
+          }
+        ],
+        "qualifier": "Biến động giá hai cổ phiếu phiên chính KRX, không phải dự báo."
+      }
+    },
+    {
+      "id": "bok-warning",
+      "eyebrow": "BOK · KỊCH BẢN RỦI RO",
+      "headline": "Xuất khẩu chip có thể hụt so dự báo",
+      "summary": "BOK mô phỏng rủi ro nếu Big Tech Mỹ giảm đầu tư AI trong năm 2027.",
+      "source": "Reuters dẫn phân tích BOK, 27/10/2026",
+      "sourceIds": [
+        "reuters-1027-ai-scenario"
+      ],
+      "stats": [
+        {
+          "label": "Hụt so dự báo · kịch bản BOK",
+          "value": "50–100 tỷ USD",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Cùng ngày, Reuters dẫn phân tích của Ngân hàng Trung ương Hàn Quốc. Nếu các tập đoàn công nghệ Mỹ giảm chi tiêu xây dựng hạ tầng AI trong năm tới, xuất khẩu chip Hàn Quốc có thể thấp hơn dự báo khoảng năm mươi đến một trăm tỷ đô la. Đây là kịch bản bi quan, không phải doanh số đã giảm.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "50–100 tỷ USD",
+        "qualifier": "KỊCH BẢN BI QUAN của BOK: chênh lệch xuất khẩu chip 2027 so với dự báo cũ nếu Big Tech giảm đầu tư AI; chưa xảy ra."
+      }
+    },
+    {
+      "id": "risk",
+      "eyebrow": "RỦI RO · KHÔNG PHẢI DỰ BÁO CHẮC CHẮN",
+      "headline": "GDP năm 2027 có thể mất 0,4 điểm %",
+      "summary": "Ước lượng có điều kiện; nhu cầu AI và chu kỳ bộ nhớ còn bất định.",
+      "source": "Reuters/BOK, 27/10 · khác GDP thực Q3 đã nói ở KR_MID",
+      "sourceIds": [
+        "reuters-1027-ai-scenario",
+        "reuters-1027-gdp-context",
+        "bok-official-release-calendar"
+      ],
+      "stats": [
+        {
+          "label": "GDP 2027 · KỊCH BẢN",
+          "value": "−0,4 điểm %",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Theo chính kịch bản ấy, tăng trưởng GDP năm hai nghìn không trăm hai mươi bảy có thể hụt khoảng không phẩy bốn điểm phần trăm. Trong khi đó, GDP quý ba mới công bố tăng một phần trăm so với quý trước, đã được giải thích ở bản trưa. Đây là hai thước đo và hai thời kỳ khác nhau.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "−0,4 điểm %",
+        "qualifier": "Chỉ là tác động GIẢ ĐỊNH tới tăng trưởng GDP 2027 trong stress scenario BOK; không phải GDP thực tế."
+      }
+    },
+    {
+      "id": "samsung-proposal",
+      "eyebrow": "SAMSUNG · QUẢN TRỊ CÔNG TY",
+      "headline": "Palliser đề xuất mua lại cổ phiếu ưu đãi",
+      "summary": "Khoảng 132 nghìn tỷ won là quy mô đề xuất của quỹ, chưa phải quyết định Samsung.",
+      "source": "Reuters Breakingviews (bình luận), 27/10/2026",
+      "sourceIds": [
+        "reuters-1027-samsung-activism"
+      ],
+      "stats": [
+        {
+          "label": "Đề xuất Palliser · KHÔNG CHỐT",
+          "value": "132 nghìn tỷ won",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Với Samsung, quỹ Palliser Capital đề xuất doanh nghiệp mua lại cổ phiếu ưu đãi, quy mô khoảng một trăm ba mươi hai nghìn tỷ won. Đây là kiến nghị của nhà đầu tư được Reuters Breakingviews phân tích, không phải chương trình Samsung đã thông qua. Tính khả thi và lợi ích cho các nhóm cổ đông vẫn cần đánh giá.",
+      "visual": {
+        "kind": "company",
+        "company": "Samsung Electronics",
+        "bullets": [
+          "PALLISER ĐỀ XUẤT · 132 NGHÌN TỶ WON",
+          "CHƯA PHẢI QUYẾT ĐỊNH CỦA SAMSUNG"
+        ]
+      }
+    },
+    {
+      "id": "takeaway",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Giá cổ phiếu hồi — kiểm chứng bằng lợi nhuận",
+      "summary": "SK hynix công bố 28/10 · Samsung Electronics dự kiến 29/10; NXT ngoài giờ là sàn riêng.",
+      "source": "AP · Reuters/BOK · chốt 27/10/2026 17:54 KST",
+      "sourceIds": [
+        "ap-1027-close",
+        "reuters-1027-ai-scenario",
+        "reuters-1027-samsung-activism"
+      ],
+      "stats": [],
+      "voiceText": "Nhìn về phía trước, kết quả kinh doanh SK hynix ngày hai mươi tám và Samsung ngày hai mươi chín tháng mười sẽ là phép thử quan trọng cho lợi nhuận ngành chip. KOSPI hồi mạnh đáng chú ý, nhưng một phiên tăng chưa đủ xác nhận rủi ro đã kết thúc.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KOSPI 5.638,34 · +3,1% · KRX 27/10",
+          "BOK: RỦI RO AI LÀ KỊCH BẢN",
+          "SK HYNIX 28/10 · SAMSUNG 29/10"
+        ]
+      }
+    }
+  ]
+}
