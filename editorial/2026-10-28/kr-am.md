@@ -24,19 +24,19 @@ Chọn tin 1 về cạnh tranh CXMT làm điểm mới chính, tin 2 về SK hyn
 
 **Editorial score:** 89/100 (nguồn 33/35, phân tích 23/25, độ mới 13/15, tiếng Việt 13/15, khác biệt 7/10); không lỗi trọng yếu đã biết trước TTS, nhưng báo cáo SK hynix tương lai vẫn phải được cập nhật khi công bố.
 
-## Kịch bản (272 từ trắng-tách, 6 cảnh gồm CTA)
+## Kịch bản (244 từ trắng-tách, 6 cảnh gồm CTA)
 
-1. Chip nhớ: đối thủ mới: Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi? Reuters Breakingviews vừa phân tích sức ép cạnh tranh dài hạn. Đây là một góc nhìn, không phải dữ liệu lợi nhuận mới.
+1. Chip nhớ: đối thủ mới: Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi? Reuters phân tích rủi ro dài hạn, chưa phải số liệu lợi nhuận mới.
 
-2. CXMT tiến vào DRAM phổ thông: Khi các hãng Hàn tập trung nhiều hơn vào HBM cho trí tuệ nhân tạo, bộ nhớ phổ thông mở thêm cơ hội cho CXMT của Trung Quốc. Điều đó chưa có nghĩa Samsung hay SK hynix đánh mất vị thế.
+2. CXMT tiến vào DRAM phổ thông: Khi các hãng Hàn ưu tiên HBM cho trí tuệ nhân tạo, CXMT của Trung Quốc có thêm cơ hội ở DRAM phổ thông. Nhưng chưa có bằng chứng Samsung hay SK hynix mất vị thế.
 
-3. Thị phần CXMT được dự báo tăng: Counterpoint dự báo thị phần giao hàng DRAM của CXMT có thể lên mười một phần trăm năm hai nghìn không trăm hai mươi tám, từ tám phần trăm năm ngoái. Đây là dự báo, không phải số liệu hiện hành.
+3. Thị phần CXMT được dự báo tăng: Counterpoint dự báo CXMT đạt mười một phần trăm lượng DRAM giao hàng năm hai nghìn không trăm hai mươi tám, so với tám phần trăm năm hai nghìn không trăm hai mươi lăm. Đây chỉ là dự báo.
 
-4. SK hynix trước giờ công bố: Theo lịch chính thức, SK hynix sẽ công bố quý ba trước chín giờ sáng, họp nhà đầu tư lúc chín giờ. Lúc chốt tin chưa có số lợi nhuận. Cần xem HBM, dòng tiền và phương án hoàn trả cổ đông.
+4. SK hynix trước giờ công bố: SK hynix dự kiến công bố quý ba trước chín giờ sáng, họp nhà đầu tư lúc chín giờ. Khi chưa có kết quả, cần chờ số liệu lợi nhuận, nhu cầu HBM và dòng tiền.
 
-5. KOSPI hồi 3,09% ngày 27/10: KOSPI đóng cửa phiên chính hôm qua tại năm nghìn sáu trăm ba mươi tám phẩy ba tư điểm, tăng ba phẩy không chín phần trăm. Đây không phải giá sáng nay. Đà hồi cần được kiểm chứng bằng lợi nhuận thực.
+5. KOSPI hồi 3,09% ngày 27/10: Hôm qua, KOSPI đóng cửa phiên chính ở năm nghìn sáu trăm ba mươi tám phẩy ba tư điểm, tăng ba phẩy không chín phần trăm. Đây không phải giá sáng nay. Nhịp hồi cần được kiểm chứng bằng lợi nhuận.
 
-6. Ba điểm cần kiểm chứng: Hãy tách bạch dự báo thị phần, biến động giá và lợi nhuận thực tế. Báo cáo của SK hynix sẽ cung cấp dữ liệu quan trọng tiếp theo.
+6. Ba điểm cần kiểm chứng: Đừng nhầm dự báo thị phần, diễn biến giá và lợi nhuận thực tế. Báo cáo SK hynix sẽ là phép thử tiếp theo.
 
 **CTA chỉ đọc một lần:** Theo anh chị, báo cáo SK hynix nên được xem từ lợi nhuận, đơn hàng HBM hay dòng tiền? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.
 
