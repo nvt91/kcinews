@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-27-us-am",
+  "articleId": "KCI-20261027-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "digest",
+  "edition": "27/10/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-10-27T09:05:23+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall hồi, Meta lên kế hoạch gọi 95 tỷ USD cho AI — Global/US 27/10",
+  "sourceDisclaimer": "Cutoff 27/10/2026 09:05:23 KST. All US equity close data are from Monday 26/10 regular session, 16:00 EDT=Tue 27/10 05:00 KST. Meta $95bn is a financing PLAN, not completed proceeds. Fed, GDP/PCE and tech earnings are future as of cutoff. No verified current Oct27 KRX close. Information only.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-10-27/us-am.md",
+  "editingPlanPath": "jobs/kci-2026-10-27-us-am-effects.json",
+  "previewVersion": "v1",
+  "eventKeys": [
+    "US-MARKET-20261026-CLOSE",
+    "US-SOX-20261026-CLOSE",
+    "META-EQUITY-20261026-PLAN",
+    "ANTHROPIC-IPO-FILING-20261026",
+    "FED-FOMC-20261027-28",
+    "BEA-GDP-PCE-20261029",
+    "KOREA-KOSPI-20261026-CLOSE"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-us-2610",
+      "title": "Reuters — Equities end higher as Anthropic's IPO filing buoys AI stocks",
+      "url": "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US Oct 26 regular close: Dow 52,361.58 (+0.28%), S&P 500 7,676.77 (+0.70%), Nasdaq 26,169.38 (+0.83%).",
+        "Philadelphia Semiconductor Index gained 2.8% in the Oct 26 US session, but was still down 12.2% for October at the report.",
+        "Meta shares finished down 1.9% as Anthropic's IPO filing and expensive AI buildout remained in focus.",
+        "The Fed announcement, GDP/PCE releases and Alphabet/Microsoft/Amazon earnings were still future events as of Oct 26 close."
+      ]
+    },
+    {
+      "id": "ap-us-2610",
+      "title": "Associated Press — How major US stock indexes fared Monday 10/26/2026",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-693ac6c4e67da0332045e66804780be7",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "AP independently confirms Oct 26 closing levels: S&P 500 7,676.77, Dow 52,361.58 and Nasdaq 26,169.38.",
+        "AP reports US stocks advanced on Monday while AI-linked stocks remained volatile and upcoming earnings/Fed decisions awaited."
+      ]
+    },
+    {
+      "id": "meta-primary-2610",
+      "title": "Meta Platforms official Oct 26 release — concurrent offerings and possible future ATM programme",
+      "url": "https://www.prnewswire.com/news-releases/meta-announces-launch-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements-302919267.html",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "Meta announced approximately USD 35 billion in concurrent underwritten public stock/depositary-share offerings: USD 22.5 billion common and USD 12.5 billion preferred-linked shares.",
+        "A separate approximately USD 60 billion at-the-market Class C share program is PLANNED for after Class C trading begins, expected Q1 2027; not established or completed.",
+        "USD 95 billion is the combined announced potential financing plan, NOT cash already raised; Meta projects 2026 capital expenditure of USD 135–145 billion."
+      ]
+    },
+    {
+      "id": "reuters-anthropic-2610",
+      "title": "Reuters — Anthropic's IPO filing reveals AI growth, cost and security risks",
+      "url": "https://www.reuters.com/legal/litigation/anthropic-discloses-month-long-training-pause-ai-security-breaches-ipo-filing-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Anthropic's Oct 26 US IPO filing disclosed risks and a training pause, highlighting investment costs and safety challenges.",
+        "A filing is not a completed share listing; use this only as news sentiment/context, not proof of future profits."
+      ]
+    },
+    {
+      "id": "fed-primary-oct2026",
+      "title": "US Federal Reserve — official monetary-policy calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy.htm",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "FOMC is scheduled for Oct 27–28, 2026 US local dates, with press conference on Oct 28.",
+        "At 09:05 KST Oct 27, there is NO Oct 28 policy decision yet; expected rate hold is a market forecast, not a result."
+      ]
+    },
+    {
+      "id": "bea-gdp-2910",
+      "title": "US BEA — official GDP release and next release date",
+      "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "US GDP third-quarter 2026 advance estimate is scheduled for Oct 29, 2026; no Q3 advance result at the KST cutoff.",
+        "The most recent Q2 2026 third GDP estimate showed 2.2% annualized real growth, released Sep 30; not a Q3 figure."
+      ]
+    },
+    {
+      "id": "bea-pce-2910",
+      "title": "US BEA — official PCE inflation release and next release date",
+      "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "Next PCE price index release scheduled for Oct 29, 2026; September result not known at the Oct 27 KST cutoff.",
+        "August 2026 headline PCE annual rise was 3.4%; do not reuse as September PCE."
+      ]
+    },
+    {
+      "id": "yonhap-kospi-2610",
+      "title": "Yonhap — Seoul shares dip over 1% ahead of earnings and Fed decision, Oct 26",
+      "url": "https://en.yna.co.kr/view/AEN20261026006400320",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed Monday Oct 26 at 5,469.47, down 80.83 points (-1.46%); do not describe as Oct 27 market close.",
+        "Samsung Electronics and SK hynix upcoming results were expected to provide clues to AI demand; future performance is conditional."
+      ]
+    },
+    {
+      "id": "marketwatch-oil-2610",
+      "title": "MarketWatch — Brent oil futures settlement, Oct 26",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-federal-reserve-interest-rate-decision-october-meeting/card/global-oil-futures-settle-with-biggest-decline-in-two-weeks-NUjT60i2GpZlstsC2U3G",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-27T09:05:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "MarketWatch cites Oct 26 Brent futures settlement at USD 115.81 per barrel (-0.8%); high oil prices remain a watch item.",
+        "A separate Oct 26 news outlet showed materially different Brent settlement. The video will not state an exact Brent closing level until independently reconciled."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall bật tăng, còn Meta muốn huy động tới chín mươi lăm tỷ đô la cho AI. Có gì phía sau hai tín hiệu trái chiều?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Phố Wall bật tăng, còn Meta muốn huy động tới chín mươi lăm tỷ đô la cho AI. Có gì phía sau hai tín hiệu trái chiều?",
+        "score": 92
+      },
+      {
+        "style": "korea-impact",
+        "text": "Cổ phiếu bán dẫn Mỹ tăng gần ba phần trăm. Liệu ngành chip Hàn Quốc sẽ được hưởng lợi?",
+        "score": 88
+      },
+      {
+        "style": "event-question",
+        "text": "Fed sắp quyết định lãi suất, còn Big Tech chuẩn bị báo cáo. Nhịp hồi Phố Wall có bền?",
+        "score": 86
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, sức bật của cổ phiếu chip hay chi phí đầu tư AI đáng chú ý hơn? Bình luận góc nhìn và theo dõi Korea Capital Insight.",
+    "screenHeadline": "CỔ PHIẾU CHIP HAY CHI PHÍ AI?",
+    "screenSubline": "Chia sẻ góc nhìn của anh chị · KCI",
+    "question": "Sức bật của cổ phiếu chip hay chi phí đầu tư AI đáng chú ý hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI GLOBAL / US · 27/10",
+      "headline": "PHỐ WALL HỒI · META 95 TỶ USD?",
+      "summary": "Hai tín hiệu khác chiều về kỳ vọng AI sau phiên Mỹ 26/10.",
+      "source": "Reuters / Meta · 26/10/2026",
+      "stats": [
+        {
+          "label": "KẾ HOẠCH META",
+          "value": "Tối đa 95 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "S&P 500, phiên 26/10",
+          "value": "+0,70%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Phố Wall bật tăng, còn Meta muốn huy động tới chín mươi lăm tỷ đô la cho AI. Có gì phía sau hai tín hiệu trái chiều? Một bên là giá cổ phiếu hồi phục, bên kia là chi phí vốn rất lớn.",
+      "sourceIds": [
+        "reuters-us-2610",
+        "meta-primary-2610"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "95",
+        "unit": "TỶ USD · KẾ HOẠCH",
+        "qualifier": "Meta đề xuất tài trợ bằng vốn cổ phần, không phải vốn đã huy động thành công."
+      }
+    },
+    {
+      "id": "wallstreet",
+      "eyebrow": "PHIÊN MỸ 26/10 · ĐÃ ĐÓNG CỬA",
+      "headline": "S&P 500 +0,70% · SOX +2,8%",
+      "summary": "Nasdaq +0,83%; Dow +0,28%. Nhịp hồi chưa xóa rủi ro AI.",
+      "source": "Reuters / AP · close 26/10/2026 EDT",
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.676,77 · +0,70%",
+          "tone": "up"
+        },
+        {
+          "label": "Nasdaq",
+          "value": "26.169,38 · +0,83%",
+          "tone": "up"
+        },
+        {
+          "label": "SOX",
+          "value": "+2,8%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Phiên Mỹ ngày hai mươi sáu tháng mười, S&P năm trăm tăng không phẩy bảy phần trăm; Nasdaq tăng không phẩy tám ba phần trăm, còn Dow Jones tăng không phẩy hai tám phần trăm. Chỉ số bán dẫn Philadelphia bật tăng hai phẩy tám phần trăm, nhưng vẫn giảm mạnh nếu tính từ đầu tháng.",
+      "sourceIds": [
+        "reuters-us-2610",
+        "ap-us-2610"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 0.7,
+            "display": "+0,70%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 0.83,
+            "display": "+0,83%"
+          },
+          {
+            "label": "DOW JONES",
+            "value": 0.28,
+            "display": "+0,28%"
+          },
+          {
+            "label": "SOX",
+            "value": 2.8,
+            "display": "+2,8%"
+          }
+        ],
+        "qualifier": "Đóng cửa phiên chính Mỹ 26/10/2026; SOX vẫn -12,2% từ đầu tháng theo Reuters."
+      }
+    },
+    {
+      "id": "meta",
+      "eyebrow": "DÒNG VỐN AI · CÔNG BỐ DOANH NGHIỆP",
+      "headline": "META LÊN KẾ HOẠCH HUY ĐỘNG 95 TỶ USD",
+      "summary": "35 tỷ đang chào bán; 60 tỷ mới ở giai đoạn dự kiến.",
+      "source": "Meta (công bố gốc) / Reuters · 26/10",
+      "stats": [
+        {
+          "label": "Chào bán được công bố",
+          "value": "Khoảng 35 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "Chương trình dự kiến",
+          "value": "Khoảng 60 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "META phiên 26/10",
+          "value": "−1,9%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Meta công bố kế hoạch huy động tối đa chín mươi lăm tỷ đô la để mở rộng hạ tầng AI. Khoảng ba mươi lăm tỷ thuộc các đợt chào bán vừa khởi động. Sáu mươi tỷ còn lại là chương trình dự kiến sau này, chưa phải tiền đã thu về. Cổ phiếu Meta giảm một phẩy chín phần trăm trong phiên.",
+      "sourceIds": [
+        "meta-primary-2610",
+        "reuters-us-2610"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Chào bán",
+            "value": 35,
+            "display": "~35 tỷ USD"
+          },
+          {
+            "label": "Dự kiến trong tương lai",
+            "value": 60,
+            "display": "~60 tỷ USD"
+          }
+        ],
+        "qualifier": "Nguồn Meta 26/10: KẾ HOẠCH TỐI ĐA, chưa hoàn tất; phần ~60 tỷ chưa được thiết lập."
+      }
+    },
+    {
+      "id": "anthropic",
+      "eyebrow": "ANTHROPIC · HỒ SƠ IPO",
+      "headline": "AI TĂNG NHANH, CHI PHÍ CŨNG LỚN",
+      "summary": "Hồ sơ IPO không đồng nghĩa đã niêm yết hoặc đã có lãi.",
+      "source": "Reuters · 26/10/2026",
+      "stats": [
+        {
+          "label": "Tình trạng Anthropic",
+          "value": "Đã nộp hồ sơ IPO",
+          "tone": "neutral"
+        },
+        {
+          "label": "Câu hỏi thị trường",
+          "value": "Hiệu quả vốn AI",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Cùng ngày, Anthropic nộp hồ sơ IPO tại Mỹ. Hồ sơ cho thấy doanh thu tăng nhanh, nhưng mức lỗ và rủi ro vận hành vẫn đáng chú ý. Thị trường có thêm lý do quan tâm tới nhu cầu AI, đồng thời hỏi liệu các khoản đầu tư khổng lồ sẽ sinh lời ra sao.",
+      "sourceIds": [
+        "reuters-us-2610",
+        "reuters-anthropic-2610"
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "ANTHROPIC",
+        "qualifier": "Nộp hồ sơ IPO ngày 26/10/2026; KHÔNG phải IPO đã hoàn tất."
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "LỊCH MỸ · CHƯA CÓ KẾT QUẢ",
+      "headline": "FED 27–28/10 · GDP/PCE 29/10",
+      "summary": "Lịch công bố quan trọng cho kỳ vọng lãi suất và vốn AI.",
+      "source": "Federal Reserve / BEA / Reuters",
+      "stats": [
+        {
+          "label": "FOMC",
+          "value": "27–28/10 (Mỹ)",
+          "tone": "neutral"
+        },
+        {
+          "label": "GDP quý III & PCE tháng 9",
+          "value": "29/10 (Mỹ)",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Về vĩ mô, Fed họp ngày hai mươi bảy và hai mươi tám tháng mười. Ngày hai mươi chín, Mỹ dự kiến công bố GDP quý ba và chỉ số giá PCE tháng chín. Cùng tuần là báo cáo của Microsoft, Alphabet và Amazon. Những kết quả này còn ở phía trước, nên chưa thể xem là đã được thị trường xác nhận.",
+      "sourceIds": [
+        "fed-primary-oct2026",
+        "bea-gdp-2910",
+        "bea-pce-2910",
+        "reuters-us-2610"
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "FED: họp 27–28/10 (Mỹ)",
+          "GDP Q3 advance: 29/10 (Mỹ)",
+          "PCE tháng 9: 29/10 (Mỹ)",
+          "Big Tech: lịch lợi nhuận trong tuần"
+        ],
+        "qualifier": "Lịch sự kiện trước thời điểm công bố; không hiển thị số liệu GDP/PCE tháng 9 chưa có."
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "HÀN QUỐC · PHÂN TÍCH CÓ ĐIỀU KIỆN",
+      "headline": "SOX HỒI CÓ ĐỦ ĐỠ KOSPI?",
+      "summary": "Theo dõi giá dầu, thông điệp Fed và hướng dẫn đầu tư AI.",
+      "source": "Reuters / Yonhap / Fed / Meta",
+      "stats": [
+        {
+          "label": "KOSPI, đóng cửa 26/10",
+          "value": "5.469,47 · −1,46%",
+          "tone": "down"
+        },
+        {
+          "label": "Trọng tâm theo dõi",
+          "value": "Chip · Won · Dầu",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Với Hàn Quốc, nhóm bán dẫn Mỹ hồi phục có thể hỗ trợ tâm lý đối với Samsung Electronics và SK hynix. Nhưng KOSPI mới đóng cửa phiên hai mươi sáu tháng mười giảm một phẩy bốn sáu phần trăm. Nếu chi phí AI tăng mà doanh thu không theo kịp, hoặc dầu và lợi suất Mỹ tiếp tục cao, đồng won cùng lợi nhuận doanh nghiệp Hàn có thể chịu áp lực.",
+      "sourceIds": [
+        "reuters-us-2610",
+        "yonhap-kospi-2610",
+        "meta-primary-2610",
+        "marketwatch-oil-2610"
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "SOX Mỹ: +2,8% (26/10)",
+          "KOSPI Hàn: −1,46% (26/10)",
+          "Kênh rủi ro: AI · DẦU · USD/KRW"
+        ],
+        "qualifier": "Hai phiên chính tại Mỹ/Hàn thuộc cùng ngày địa phương 26/10; không dùng đây làm dự báo giá 27/10."
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN CHỜ · TUẦN 27–29/10",
+      "headline": "TIN TỐT CHƯA XÓA HẾT RỦI RO",
+      "summary": "Kết quả doanh nghiệp + Fed + dữ liệu kinh tế mới là phép thử.",
+      "source": "KCI · nguồn đối chiếu Fed, BEA, Reuters",
+      "stats": [
+        {
+          "label": "Mốc dữ liệu tiếp theo",
+          "value": "FED · GDP · PCE",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Đó là các tín hiệu cần quan sát, chưa phải kết luận nên mua hay bán. Quan trọng nhất vẫn là kết quả kinh doanh và thông điệp Fed.",
+      "sourceIds": [
+        "fed-primary-oct2026",
+        "bea-gdp-2910",
+        "bea-pce-2910",
+        "reuters-us-2610"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Phố Wall hồi sau phiên 26/10",
+          "Meta cần vốn AI quy mô lớn",
+          "Chờ Fed · GDP/PCE · báo cáo Big Tech"
+        ],
+        "qualifier": "Bản tin tham khảo; không phải tư vấn giao dịch cá nhân."
+      }
+    }
+  ]
+}
