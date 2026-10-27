@@ -1,0 +1,214 @@
+{
+  "profile": "KCI_EDIT_20261026_V1",
+  "inputKind": "tts_motion",
+  "technicalPreview": false,
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articleId": "KCI-20261027-US-AM",
+  "edition": "GLOBAL_US / US_AM",
+  "timingStatus": "PLANNED_UNTIMED",
+  "note": "Triggers are exact words in approved narration, NOT Whisper-measured timestamps; deltaFrames, original/edited word times and beat stills are NOT_MEASURED until real voiced preview. Do not trigger legacy paid video path while PR #34 is unmerged.",
+  "beats": [
+    {
+      "sceneId": "hook",
+      "trigger": "Phố Wall",
+      "keyword": "Phố Wall hồi",
+      "label": "CHỨNG KHOÁN MỸ",
+      "value": "+0,70% S&P500",
+      "context": "Phiên chính Mỹ 26/10/2026; nhịp hồi không xóa rủi ro."
+    },
+    {
+      "sceneId": "hook",
+      "trigger": "chín mươi lăm",
+      "keyword": "95 tỷ USD?",
+      "label": "KẾ HOẠCH META",
+      "value": "TỐI ĐA 95 TỶ",
+      "context": "Meta công bố 26/10, chưa thu tiền đủ 95 tỷ."
+    },
+    {
+      "sceneId": "hook",
+      "trigger": "hai tín hiệu trái chiều",
+      "keyword": "Hai tín hiệu trái",
+      "label": "PHỐ WALL / META",
+      "value": "HỒI / GỌI VỐN",
+      "context": "Hai thông tin khác hướng cùng ngày; không tuyên bố quan hệ nhân quả."
+    },
+    {
+      "sceneId": "wallstreet",
+      "trigger": "S&P năm trăm",
+      "keyword": "S&P 500 hồi",
+      "label": "S&P 500",
+      "value": "+0,70%",
+      "context": "Phiên chính Mỹ chốt 26/10/2026."
+    },
+    {
+      "sceneId": "wallstreet",
+      "trigger": "Nasdaq tăng",
+      "keyword": "Nasdaq tăng trở lại",
+      "label": "NASDAQ",
+      "value": "+0,83%",
+      "context": "Phiên chính Mỹ chốt 26/10/2026."
+    },
+    {
+      "sceneId": "wallstreet",
+      "trigger": "Dow Jones tăng",
+      "keyword": "Dow Jones tăng",
+      "label": "DOW JONES",
+      "value": "+0,28%",
+      "context": "Phiên chính Mỹ chốt 26/10/2026."
+    },
+    {
+      "sceneId": "wallstreet",
+      "trigger": "hai phẩy tám",
+      "keyword": "Bán dẫn bật tăng",
+      "label": "PHILADELPHIA SOX",
+      "value": "+2,8%",
+      "context": "Phiên chính Mỹ 26/10/2026, theo Reuters."
+    },
+    {
+      "sceneId": "meta",
+      "trigger": "Meta công bố",
+      "keyword": "Meta gọi vốn",
+      "label": "AI INFRA",
+      "value": "TỐI ĐA 95 TỶ USD",
+      "context": "Kế hoạch huy động Meta 26/10; not proceeds already received."
+    },
+    {
+      "sceneId": "meta",
+      "trigger": "ba mươi lăm",
+      "keyword": "35 tỷ khởi động",
+      "label": "CÁC ĐỢT CHÀO BÁN",
+      "value": "~35 TỶ USD",
+      "context": "Offerings launched 26/10; không gắn nhãn đã huy động xong."
+    },
+    {
+      "sceneId": "meta",
+      "trigger": "Sáu mươi tỷ",
+      "keyword": "60 tỷ dự kiến",
+      "label": "ATM CLASS C",
+      "value": "~60 TỶ USD",
+      "context": "Meta chưa thiết lập chương trình, dự kiến Q1/2027."
+    },
+    {
+      "sceneId": "meta",
+      "trigger": "một phẩy chín",
+      "keyword": "Meta giảm điểm",
+      "label": "META · PHIÊN 26/10",
+      "value": "−1,9%",
+      "context": "Mức giảm giá đóng cửa phiên Mỹ 26/10 Reuters."
+    },
+    {
+      "sceneId": "anthropic",
+      "trigger": "Anthropic nộp hồ sơ IPO",
+      "keyword": "Anthropic nộp IPO",
+      "label": "HỒ SƠ IPO",
+      "value": "26/10/2026",
+      "context": "Không hiển thị là niêm yết thành công."
+    },
+    {
+      "sceneId": "anthropic",
+      "trigger": "doanh thu tăng nhanh",
+      "keyword": "Doanh thu tăng nhanh",
+      "label": "MÔ HÌNH AI",
+      "value": "TĂNG TRƯỞNG",
+      "context": "Thông tin theo hồ sơ được Reuters tường thuật; không bịa tốc độ tăng trưởng."
+    },
+    {
+      "sceneId": "anthropic",
+      "trigger": "mức lỗ",
+      "keyword": "Chi phí AI lớn",
+      "label": "RỦI RO AI",
+      "value": "LỖ & CHI PHÍ",
+      "context": "Phân biệt thua lỗ và triển vọng, không nêu số chưa kiểm đủ."
+    },
+    {
+      "sceneId": "fed",
+      "trigger": "Fed họp",
+      "keyword": "Fed sắp họp",
+      "label": "FOMC",
+      "value": "27–28/10",
+      "context": "Ngày theo giờ Mỹ; tại 09:05 KST 27/10 chưa có quyết định."
+    },
+    {
+      "sceneId": "fed",
+      "trigger": "GDP quý ba",
+      "keyword": "GDP quý ba",
+      "label": "BEA Q3 ADVANCE",
+      "value": "29/10",
+      "context": "Lịch công bố, KHÔNG phải GDP quý III đã công bố."
+    },
+    {
+      "sceneId": "fed",
+      "trigger": "PCE tháng chín",
+      "keyword": "PCE tháng chín",
+      "label": "BEA PCE",
+      "value": "29/10",
+      "context": "Lịch công bố, KHÔNG phải số PCE tháng 9 đã công bố."
+    },
+    {
+      "sceneId": "fed",
+      "trigger": "Microsoft",
+      "keyword": "Big Tech báo cáo",
+      "label": "LỢI NHUẬN CÔNG NGHỆ",
+      "value": "MICROSOFT · ALPHABET · AMAZON",
+      "context": "Thời gian trong tuần Mỹ, chưa có kết quả được nêu."
+    },
+    {
+      "sceneId": "korea",
+      "trigger": "Với Hàn Quốc",
+      "keyword": "Tác động tới Hàn",
+      "label": "HÀN QUỐC",
+      "value": "CHIP / WON / DẦU",
+      "context": "Kênh truyền dẫn giả định, không phải giá mục tiêu."
+    },
+    {
+      "sceneId": "korea",
+      "trigger": "Samsung Electronics",
+      "keyword": "Chuỗi chip Hàn",
+      "label": "BÁN DẪN HÀN",
+      "value": "SAMSUNG · SK HYNIX",
+      "context": "Chờ hướng dẫn Big Tech, không khẳng định nhu cầu chip sẽ tăng."
+    },
+    {
+      "sceneId": "korea",
+      "trigger": "KOSPI mới đóng cửa",
+      "keyword": "KOSPI giảm điểm",
+      "label": "KRX · 26/10",
+      "value": "−1,46%",
+      "context": "Số đóng cửa Hàn 26/10, không thay bằng giá đang giao dịch 27/10."
+    },
+    {
+      "sceneId": "korea",
+      "trigger": "đồng won",
+      "keyword": "Rủi ro đồng won",
+      "label": "TRUYỀN DẪN",
+      "value": "USD/KRW",
+      "context": "Điều kiện: chi phí AI/dầu/lợi suất tác động qua tỷ giá, không phải dự báo chắc chắn."
+    },
+    {
+      "sceneId": "outro",
+      "trigger": "tín hiệu cần quan sát",
+      "keyword": "Chờ dữ liệu thật",
+      "label": "ĐÁNH GIÁ RỦI RO",
+      "value": "CHƯA KẾT LUẬN",
+      "context": "Không hàm ý khuyến nghị giao dịch."
+    },
+    {
+      "sceneId": "outro",
+      "trigger": "Theo anh chị",
+      "keyword": "Anh chị nghĩ sao",
+      "label": "GÓC NHÌN NGƯỜI XEM",
+      "value": "CHIP HAY AI?",
+      "context": "CTA bình luận một câu cân bằng.",
+      "kind": "cta"
+    },
+    {
+      "sceneId": "outro",
+      "trigger": "Bình luận góc nhìn",
+      "keyword": "Chia sẻ góc nhìn",
+      "label": "BÌNH LUẬN",
+      "value": "ĐỂ LẠI Ý KIẾN",
+      "context": "Không yêu cầu tiết lộ danh mục hoặc dữ liệu cá nhân.",
+      "kind": "cta"
+    }
+  ]
+}
