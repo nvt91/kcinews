@@ -1,5 +1,9 @@
 # KCI Production Contract: ChatGPT → GitHub → Vbee → Remotion
 
+## Owner production directive — 27 October 2026
+
+For ALL five scheduled KCI streams, render the actual full narrated H.264/AAC MP4 and deliver it to the owner for **video-only review**. Do not stop at script, stills or a silent preview; do not ask the owner to approve before rendering or to request a second identical export after reviewing. A full-quality MP4 may have a review filename, but it must be playable, sourced and have real Anh Khôi voice + CTA. Owner approval concerns publication or requests for revisions, not creation of the MP4. No auto-posting. If advanced word-sync/mastering measurements are unavailable, render with feasible trustworthy checks and disclose QA gaps (e.g. MP4 — CẦN RÀ SOÁT), instead of pretending an unimplemented editor passed. Only serious factual/voice/render failures block production. Consult the latest EDITING_WORKFLOW.md override and preserve existing schedules, voices, dedup and secrets.
+
 ## Existing verified components
 - Private repo: `nvt91/kcinews`
 - Cloudflare health/callback: `https://kcinews.golffashion-vn.workers.dev/api/vbee-callback`
