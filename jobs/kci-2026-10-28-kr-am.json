@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-28-kr-am",
+  "edition": "KR_AM — Kinh tế và thị trường Hàn Quốc sáng 28/10/2026 KST",
+  "dataAsOf": "2026-10-28T08:04:40+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Chip nhớ Hàn Quốc trước rủi ro CXMT và báo cáo SK hynix sáng nay",
+  "sourceDisclaimer": "Cutoff 08:04 KST 28/10. CXMT 11% năm 2028 là dự báo qua Reuters Breakingviews; KOSPI +3,09% là đóng cửa phiên KRX 27/10. Kết quả SK hynix quý III chưa công bố tại cutoff. Chờ duyệt, chưa đăng.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261028-KR-AM",
+    "articlePath": "editorial/2026-10-28/kr-am.md",
+    "eventKeys": [
+      "CXMT|DRAM-SHARE-COUNTERPOINT-FORECAST|2026-10-28",
+      "SK-HYNIX|Q3-EARNINGS-IR-CALL-SCHEDULE|2026-10-28",
+      "KRX-KOSPI|2026-10-27-CLOSE-5638.34"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render full voiced review MP4 first, owner approves video before posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "limitations": [
+      "Prior KR_MID, KR_CLOSE and MACRO21 Oct27 already covered GDP and KOSPI; market close is dated context only.",
+      "Reuters Breakingviews is opinion, not official data. No Q3 SK hynix actual earnings amounts at cutoff.",
+      "Main renderer does not prove Whisper word synchronization, safe-zone frame-by-frame checks, LUFS/true peak or per-beat stills. Report NOT_VERIFIED where absent."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "reuters-cxmt",
+      "title": "Reuters Breakingviews opinion published 28 Oct 07:00 KST — China memory competition",
+      "url": "https://www.reuters.com/commentary/breakingviews/seouls-worst-china-tech-fears-are-coming-true-2026-10-27/",
+      "eventDate": "2026-10-28",
+      "kind": "secondary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "Reuters commentary explores how China's CXMT challenges commodity DRAM while South Korean manufacturers prioritize HBM.",
+        "Counterpoint forecasts CXMT 11% shipment-share in DRAM by 2028, versus 8% in 2025, not an achieved 2028 result."
+      ]
+    },
+    {
+      "id": "skh-ir",
+      "title": "SK hynix official IR — third quarter 2026 earnings call invitation",
+      "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+      "eventDate": "2026-10-21",
+      "kind": "primary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "SK hynix scheduled Q3 earnings release before 09:00 KST 28 Oct 2026 and conference call at 09:00 KST."
+      ]
+    },
+    {
+      "id": "skh-reuters",
+      "title": "Reuters 26 Oct — shareholder returns discussed for earnings release",
+      "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-announce-steps-boost-shareholder-returns-wednesday-2026-10-26/",
+      "eventDate": "2026-10-26",
+      "kind": "secondary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "SK hynix is reviewing shareholder return options; rumored special dividend is not confirmed."
+      ]
+    },
+    {
+      "id": "reuters-krx",
+      "title": "Reuters 27 Oct KRX main-session close syndicated by Livemint",
+      "url": "https://www.livemint.com/market/south-korean-shares-end-over-3-higher-on-us-rally-strong-gdp/amp-11793084466066.html",
+      "eventDate": "2026-10-27",
+      "kind": "secondary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "KOSPI closed Oct 27 at 5,638.34 points up 168.87 or 3.09%, not the greater than 4% intraday change."
+      ]
+    },
+    {
+      "id": "bok-gdp",
+      "title": "Bank of Korea official Q3 2026 advance GDP dated Oct 27",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11065944",
+      "eventDate": "2026-10-27",
+      "kind": "primary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "Real GDP advance Q3 rose 1.0% q/q and 3.4% y/y; already included in prior KR_MID/MACRO21 editions."
+      ]
+    },
+    {
+      "id": "krx-schedule",
+      "title": "KRX official regular stock trading hours",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "eventDate": "2026-10-28",
+      "kind": "primary",
+      "checkedAt": "2026-10-28T08:04:40+09:00",
+      "facts": [
+        "Korea main KRX cash session is 09:00–15:30 KST; NXT is separate, and prices before 09:00 are not a KRX close."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi?",
+        "score": 47
+      },
+      {
+        "style": "company-impact",
+        "text": "SK hynix sắp công bố kết quả quý ba. Nhưng điều gì quan trọng hơn lợi nhuận: dòng tiền hay cuộc đua DRAM?",
+        "score": 45
+      },
+      {
+        "style": "market-question",
+        "text": "KOSPI vừa tăng hơn ba phần trăm, vì sao ngành chip Hàn vẫn cần theo dõi đối thủ Trung Quốc?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, báo cáo SK hynix nên được xem từ lợi nhuận, đơn hàng HBM hay dòng tiền? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "ĐỌC BÁO CÁO SK HYNIX",
+    "screenSubline": "Lợi nhuận · HBM · dòng tiền",
+    "question": "Báo cáo SK hynix nên được xem từ lợi nhuận, đơn hàng HBM hay dòng tiền?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "ĐIỂM MỚI · SÁNG 28/10",
+      "headline": "Chip nhớ: đối thủ mới",
+      "summary": "Chip nhớ: đối thủ mới. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "Reuters Breakingviews · ý kiến 28/10",
+      "sourceIds": [
+        "reuters-cxmt"
+      ],
+      "voiceText": "Hàn Quốc dẫn đầu chip nhớ AI, nhưng Trung Quốc đang tiến lên ở DRAM phổ thông. Sáng nay, điều gì đáng theo dõi? Reuters Breakingviews vừa phân tích sức ép cạnh tranh dài hạn. Đây là một góc nhìn, không phải dữ liệu lợi nhuận mới.",
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "industry",
+      "eyebrow": "BÁN DẪN · CẠNH TRANH",
+      "headline": "CXMT tiến vào DRAM phổ thông",
+      "summary": "CXMT tiến vào DRAM phổ thông. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "Reuters Breakingviews 28/10",
+      "sourceIds": [
+        "reuters-cxmt"
+      ],
+      "voiceText": "Khi các hãng Hàn tập trung nhiều hơn vào HBM cho trí tuệ nhân tạo, bộ nhớ phổ thông mở thêm cơ hội cho CXMT của Trung Quốc. Điều đó chưa có nghĩa Samsung hay SK hynix đánh mất vị thế.",
+      "visual": {
+        "kind": "company",
+        "company": "CXMT"
+      },
+      "stats": []
+    },
+    {
+      "id": "forecast",
+      "eyebrow": "DỰ BÁO CẦN PHÂN BIỆT",
+      "headline": "Thị phần CXMT được dự báo tăng",
+      "summary": "Thị phần CXMT được dự báo tăng. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "Counterpoint qua Reuters · 28/10",
+      "sourceIds": [
+        "reuters-cxmt"
+      ],
+      "voiceText": "Counterpoint dự báo thị phần giao hàng DRAM của CXMT có thể lên mười một phần trăm năm hai nghìn không trăm hai mươi tám, từ tám phần trăm năm ngoái. Đây là dự báo, không phải số liệu hiện hành.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "11%",
+        "unit": "CXMT · DRAM 2028",
+        "qualifier": "Dự báo Counterpoint qua Reuters, không phải thị phần thực tế"
+      },
+      "stats": [
+        {
+          "label": "2028 · dự báo",
+          "value": "11%"
+        },
+        {
+          "label": "2025 · tham chiếu",
+          "value": "8%"
+        }
+      ]
+    },
+    {
+      "id": "hynix",
+      "eyebrow": "KẾT QUẢ KINH DOANH · HÔM NAY",
+      "headline": "SK hynix trước giờ công bố",
+      "summary": "SK hynix trước giờ công bố. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "SK hynix IR · lịch 28/10",
+      "sourceIds": [
+        "skh-ir",
+        "skh-reuters"
+      ],
+      "voiceText": "Theo lịch chính thức, SK hynix sẽ công bố quý ba trước chín giờ sáng, họp nhà đầu tư lúc chín giờ. Lúc chốt tin chưa có số lợi nhuận. Cần xem HBM, dòng tiền và phương án hoàn trả cổ đông.",
+      "visual": {
+        "kind": "company",
+        "company": "SK hynix"
+      },
+      "stats": [
+        {
+          "label": "Họp IR",
+          "value": "09:00 KST"
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG · PHIÊN TRƯỚC",
+      "headline": "KOSPI hồi 3,09% ngày 27/10",
+      "summary": "KOSPI hồi 3,09% ngày 27/10. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "Reuters · KRX 27/10/2026",
+      "sourceIds": [
+        "reuters-krx",
+        "krx-schedule"
+      ],
+      "voiceText": "KOSPI đóng cửa phiên chính hôm qua tại năm nghìn sáu trăm ba mươi tám phẩy ba tư điểm, tăng ba phẩy không chín phần trăm. Đây không phải giá sáng nay. Đà hồi cần được kiểm chứng bằng lợi nhuận thực.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "+3,09%",
+        "unit": "KOSPI · KRX",
+        "qualifier": "Đóng cửa chính thức ngày 27/10/2026, 5.638,34 điểm"
+      },
+      "stats": [
+        {
+          "label": "Đóng cửa 27/10",
+          "value": "5.638,34"
+        },
+        {
+          "label": "Thay đổi",
+          "value": "+3,09%"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Ba điểm cần kiểm chứng",
+      "summary": "Ba điểm cần kiểm chứng. Kiểm chứng đúng thời điểm, không suy diễn.",
+      "source": "KCI · tổng hợp nguồn",
+      "sourceIds": [
+        "reuters-cxmt",
+        "skh-ir",
+        "reuters-krx"
+      ],
+      "voiceText": "Hãy tách bạch dự báo thị phần, biến động giá và lợi nhuận thực tế. Báo cáo của SK hynix sẽ cung cấp dữ liệu quan trọng tiếp theo.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "LỢI NHUẬN SK HYNIX",
+          "NHU CẦU HBM",
+          "DÒNG TIỀN VÀ DRAM"
+        ]
+      },
+      "stats": []
+    }
+  ]
+}
