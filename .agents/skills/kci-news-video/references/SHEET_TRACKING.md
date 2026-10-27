@@ -25,6 +25,10 @@ Log KR_NEWS editions KR_AM, KR_MID, KR_CLOSE; independent MACRO/MACRO21; and —
 
 One canonical articleId = one row. Use the existing IDs from DAILY_CADENCE.md. Visual revisions/reruns update that row, not a duplicate. A rendered video awaiting correction remains a recorded MP4, not approved or published. Optional KR_MID checks that fail the news materiality gate may record BỎ QUA without creating a video, invoking TTS or sending a routine no-news notification.
 
+## Render completion vs owner approval — 27 October 2026
+
+For a new fully rendered, playable narrated MP4, write its real completion timestamp in C and its verified accessible link in E even when it is a review copy awaiting user approval. G reflects QC honestly; H remains CHỜ DUYỆT, I remains CHƯA ĐĂNG. This replaces any former "C stays blank until a second post-approval final render" instruction for new editions. Video rendering is not publication; don't treat an approved caption or Sheet selection as an instruction to upload automatically. Don't overwrite edits, duplicate rows or invent output links.
+
 ## Column contract
 
 | Column | Header / purpose | Ownership and rule |
