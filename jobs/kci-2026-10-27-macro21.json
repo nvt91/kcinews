@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-27-macro21",
+  "edition": "MACRO21 — Vĩ mô 27/10/2026",
+  "dataAsOf": "2026-10-27T21:07:10+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "GDP Hàn Quốc tăng 1,0% nhưng thu nhập quốc nội thực tăng 3,4%: vì sao?",
+  "sourceDisclaimer": "GDP/GDI là số liệu thực quý III sơ bộ công bố 27/10 (q/q); tiêu dùng tư nhân q/q; CCSI là khảo sát tháng 10 (điểm), lãi suất BOK là quyết định 22/10. GDI không phải thu nhập hộ gia đình.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "format": "single-story",
+    "articleId": "KCI-20261027-MACRO21",
+    "articlePath": "editorial/2026-10-27/macro21.md",
+    "eventKeys": [
+      "BOK|2026-Q3-REAL-GDI-ADVANCE|2026-10-27",
+      "BOK|2026-Q3-GDP-GDI-TERMS-OF-TRADE|2026-10-27",
+      "BOK|2026-OCT-CCSI-HOUSEHOLD-CONTRAST|2026-10-27"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Owner 2026-10-27: produce FULL voiced MP4 first for owner video-only review, no auto-post, report incomplete advanced QC honestly.",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "productionMode": "tts_motion",
+    "overlapNotes": "KR_MID focused real GDP 1.0, private consumption -0.2; KR_AM mentioned CCSI 105.4; this edition's primary angle is distinct real GDI 3.4 versus GDP 1.0, terms-of-trade and household pass-through. KR_CLOSE covered AI BOK stress test; not repeated.",
+    "qcPlan": {
+      "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+      "audioLufs": "NOT_MEASURED",
+      "truePeak": "NOT_MEASURED",
+      "whisperWordAlignment": "NOT_VERIFIED",
+      "effectOffsetFrames": "NOT_MEASURED",
+      "takes": "N/A",
+      "faceTracking": "N/A",
+      "publishing": "NOT_AUTHORIZED"
+    }
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-q3-gdp-1027",
+      "title": "Bank of Korea press release: Q3 2026 real GDP and real GDI advance, 27 Oct 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11065944&programType=newsData",
+      "kind": "primary",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T21:07:10+09:00",
+      "facts": [
+        "Advance Q3 2026 real GDP expanded +1.0% quarter-on-quarter, +3.4% year-on-year.",
+        "Real gross domestic income GDI increased +3.4% quarter-on-quarter, +18.8% year-on-year. GDP and GDI are distinct aggregate measures, not household wage changes."
+      ]
+    },
+    {
+      "id": "bok-ccsi-1027",
+      "title": "Bank of Korea press release: October 2026 Consumer Sentiment Survey, 27 Oct 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=11065921&programType=newsData",
+      "kind": "primary",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T21:07:10+09:00",
+      "facts": [
+        "October 2026 CCSI level 105.4 index points, declining 1.2 points month-on-month.",
+        "This is a survey of consumer sentiment, not household spending or realized consumption growth."
+      ]
+    },
+    {
+      "id": "bok-oct-policy-1022",
+      "title": "Bank of Korea monetary policy decision: kept base rate 3.00% on 22 Oct 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11065823",
+      "kind": "primary",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-27T21:07:10+09:00",
+      "facts": [
+        "BOK maintained policy base rate at 3.00% on 22 Oct 2026, weighing strong export-led growth and still elevated inflation.",
+        "BOK noted uncertainty about Middle East tension, financial conditions, and lagged effects of recent rate hikes; does not commit to future decisions."
+      ]
+    },
+    {
+      "id": "newspim-gdi-1027",
+      "title": "NewsPim on 27 Oct BOK real GDP/GDI: terms of trade, exports, consumer spending",
+      "url": "https://www.newspim.com/news/view/20261027000339",
+      "kind": "secondary",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T21:07:10+09:00",
+      "facts": [
+        "Q3 real GDI growth +3.4% q/q is associated with improved terms of trade as semiconductor export prices rose while some import prices fell.",
+        "Real private consumption decreased 0.2% q/q in Q3, while export value +2.3% q/q and facilities investment +4.1% q/q; do not equate GDI with household personal incomes."
+      ]
+    },
+    {
+      "id": "yonhap-ccsi-1027",
+      "title": "Yonhap 27 Oct BOK October consumer sentiment survey details",
+      "url": "https://en.yna.co.kr/view/AEN20261026008200320",
+      "kind": "secondary",
+      "eventDate": "2026-10-27",
+      "checkedAt": "2026-10-27T21:07:10+09:00",
+      "facts": [
+        "October CCSI 105.4, down 1.2 points from September; survey conducted October 13–20 among 2,500 households.",
+        "Forward economic outlook subindex was 88, down two points; sentiment scale above 100 means more optimistic than the long-term mean."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "GDP Hàn Quốc tăng một phần trăm, nhưng thu nhập thực của cả nền kinh tế tăng tới ba phẩy bốn phần trăm. Điều gì tạo nên chênh lệch này?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "GDP Hàn Quốc tăng một phần trăm, nhưng thu nhập thực của cả nền kinh tế tăng tới ba phẩy bốn phần trăm. Điều gì tạo nên chênh lệch này?",
+        "score": 48,
+        "breakdown": "Fact16/16, curiosity 14/15, relevance10/10, accessibility8/9"
+      },
+      {
+        "style": "korean-impact",
+        "text": "GDP tăng một phần trăm, GDI tăng ba phẩy bốn phần trăm. Vậy hộ gia đình Hàn Quốc có thật sự khá hơn?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Vì sao sức mua toàn nền kinh tế Hàn Quốc tăng nhanh mà tiêu dùng tư nhân lại giảm trong quý ba?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, tăng trưởng từ xuất khẩu có sớm lan tới thu nhập và chi tiêu của hộ gia đình không? Hãy bình luận và theo dõi Korea Capital Insight.",
+    "screenHeadline": "TĂNG TRƯỞNG CÓ LAN TỎA?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Tăng trưởng từ xuất khẩu có sớm lan tới việc làm và chi tiêu hộ gia đình không?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "GDP +1,0% · GDI +3,4%",
+      "summary": "Cùng quý III/2026 nhưng là hai thước đo khác nhau · BOK 27/10.",
+      "voiceText": "GDP Hàn Quốc tăng một phần trăm, nhưng thu nhập thực của cả nền kinh tế tăng tới ba phẩy bốn phần trăm. Điều gì tạo nên chênh lệch này? Đây là số liệu sơ bộ quý ba vừa được Ngân hàng Trung ương Hàn Quốc công bố.",
+      "source": "BOK · GDP & GDI quý III/2026 · 27/10",
+      "sourceIds": [
+        "bok-q3-gdp-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDP thực · q/q",
+          "value": "+1,0%",
+          "tone": "up"
+        },
+        {
+          "label": "GDI thực · q/q",
+          "value": "+3,4%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "GDP Q3 2026 · Q/Q",
+            "value": 1,
+            "display": "+1,0%"
+          },
+          {
+            "label": "GDI Q3 2026 · Q/Q",
+            "value": 3.4,
+            "display": "+3,4%"
+          }
+        ],
+        "qualifier": "BOK sơ bộ, thay đổi so với quý II/2026"
+      }
+    },
+    {
+      "id": "numbers",
+      "eyebrow": "CÔNG BỐ SÁNG 27/10",
+      "headline": "Hai chỉ tiêu, hai ý nghĩa",
+      "summary": "GDP đo sản lượng; GDI phản ánh thu nhập thực toàn nền kinh tế.",
+      "voiceText": "Trước hết, GDP thực đo lượng hàng hóa và dịch vụ nền kinh tế tạo ra. Còn GDI thực thể hiện thu nhập quốc nội sau khi tính thêm sức mua từ giá xuất nhập khẩu. Vì thế, không nên đọc hai chỉ số như cùng một đại lượng.",
+      "source": "BOK · báo cáo GDP/GDI sơ bộ 27/10",
+      "sourceIds": [
+        "bok-q3-gdp-1027",
+        "newspim-gdi-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDP",
+          "value": "Sản lượng",
+          "tone": "neutral"
+        },
+        {
+          "label": "GDI",
+          "value": "Sức mua quốc gia",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "qualifier": "GDI không phải thu nhập tiền lương của từng hộ gia đình"
+      }
+    },
+    {
+      "id": "trade",
+      "eyebrow": "VÌ SAO GDI TĂNG MẠNH?",
+      "headline": "Điều kiện thương mại",
+      "summary": "Giá xuất khẩu và nhập khẩu thay đổi có thể tác động sức mua quốc gia.",
+      "voiceText": "Một nguyên nhân được báo chí ghi nhận là điều kiện thương mại cải thiện: giá xuất khẩu, đặc biệt liên quan bán dẫn, tăng thuận lợi hơn một số giá nhập khẩu. Nhưng GDI tăng mạnh không đồng nghĩa mọi người lao động đều nhận được mức tăng thu nhập tương tự.",
+      "source": "BOK / NewsPim · 27/10",
+      "sourceIds": [
+        "bok-q3-gdp-1027",
+        "newspim-gdi-1027"
+      ],
+      "stats": [
+        {
+          "label": "GDI thực Q3 · q/q",
+          "value": "+3,4%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+3,4%",
+        "qualifier": "GDI thực Q3/2026 q/q; toàn nền kinh tế, không phải thu nhập cá nhân"
+      }
+    },
+    {
+      "id": "households",
+      "eyebrow": "TÍN HIỆU TỪ HỘ GIA ĐÌNH",
+      "headline": "Sức mua chưa lan đều",
+      "summary": "Tiêu dùng Q3 −0,2% q/q; khảo sát CCSI tháng 10 ở 105,4 điểm.",
+      "voiceText": "Bằng chứng là trong quý ba, tiêu dùng tư nhân giảm không phẩy hai phần trăm so với quý trước. Sang khảo sát tháng mười, chỉ số tâm lý tiêu dùng đạt một trăm linh năm phẩy bốn điểm, giảm một phẩy hai điểm so với tháng chín. Đây là hai kỳ dữ liệu khác nhau.",
+      "source": "BOK / NewsPim / Yonhap · 27/10",
+      "sourceIds": [
+        "newspim-gdi-1027",
+        "bok-ccsi-1027",
+        "yonhap-ccsi-1027"
+      ],
+      "stats": [
+        {
+          "label": "Tiêu dùng Q3 · q/q",
+          "value": "−0,2%",
+          "tone": "down"
+        },
+        {
+          "label": "CCSI tháng 10",
+          "value": "105,4",
+          "tone": "neutral"
+        },
+        {
+          "label": "CCSI so tháng 9",
+          "value": "−1,2 điểm",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "TIÊU DÙNG TƯ NHÂN Q3 · %",
+            "value": -0.2,
+            "display": "−0,2% q/q"
+          },
+          {
+            "label": "CCSI THÁNG 10 · ĐIỂM",
+            "value": 105.4,
+            "display": "105,4 điểm"
+          }
+        ],
+        "qualifier": "Khác đơn vị/kỳ; hai thanh chỉ minh họa dấu hiệu, không so tỷ lệ trực tiếp"
+      }
+    },
+    {
+      "id": "policy",
+      "eyebrow": "LÃI SUẤT VÀ TIÊU DÙNG",
+      "headline": "BOK giữ mức 3,00%",
+      "summary": "Quyết định ngày 22/10, không dự báo chắc lần họp kế tiếp.",
+      "voiceText": "BOK đã giữ lãi suất cơ bản ba phần trăm vào ngày hai mươi hai tháng mười. Khi xuất khẩu mạnh nhưng tiêu dùng chưa đồng đều, ngân hàng trung ương phải cân nhắc đồng thời tăng trưởng, lạm phát và rủi ro tài chính. Chưa thể kết luận chắc bước đi lãi suất tiếp theo.",
+      "source": "BOK · thông cáo chính sách 22/10/2026",
+      "sourceIds": [
+        "bok-oct-policy-1022",
+        "bok-ccsi-1027"
+      ],
+      "stats": [
+        {
+          "label": "Lãi suất BOK 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "qualifier": "Lãi suất chính sách BOK được giữ ngày 22/10/2026"
+      }
+    },
+    {
+      "id": "closing",
+      "eyebrow": "THEO DÕI TỪ ĐÂU?",
+      "headline": "Tăng trưởng có lan tỏa?",
+      "summary": "Thu nhập hộ gia đình, việc làm, chi tiêu thực và lạm phát là phép thử.",
+      "voiceText": "Điểm đáng theo dõi không phải chỉ là GDP đẹp đến mức nào, mà lợi ích từ xuất khẩu có lan ra việc làm, thu nhập và sức mua của người dân hay không. Những báo cáo tiếp theo sẽ giúp kiểm tra điều đó. Đây là Korea Capital Insight.",
+      "source": "BOK GDP/CCSI và chính sách · đến 27/10/2026",
+      "sourceIds": [
+        "bok-q3-gdp-1027",
+        "bok-ccsi-1027",
+        "bok-oct-policy-1022"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "GDP và GDI có khác nhau",
+          "Tiêu dùng & thu nhập hộ gia đình",
+          "Lạm phát và quyết định BOK"
+        ],
+        "cta": {
+          "headline": "TĂNG TRƯỞNG CÓ LAN TỎA?",
+          "subline": "Góc nhìn của anh chị? · Theo dõi KCI"
+        }
+      }
+    }
+  ]
+}
