@@ -73,7 +73,7 @@ const Spotlight:React.FC<{v:KciVisual;f:number;color:string}>=({v,f,color})=>(
 
 const Company:React.FC<{v:KciVisual;s:RenderScene;f:number}>=({v,s,f})=>(
   <div style={{width:"100%"}}>
-    <div style={{height:270,position:"relative",display:"flex",alignItems:"center",justifyContent:"space-between",gap:24,borderTop:`2px solid ${P.teal}77`,borderBottom:`1px solid ${P.border}`}}><div style={{fontSize:51,fontWeight:900}}>{v.company||"DOANH NGHIỆP"}</div><div style={{...enter(f,16),fontSize:116,fontWeight:950,color:tone(s.stats[0]?.tone||"up"),whiteSpace:"nowrap"}}>{s.stats[0]?.value||"—"}</div></div>
+    <div style={{height:270,position:"relative",display:"flex",flexDirection:"column",alignItems:"flex-start",justifyContent:"center",gap:16,borderTop:`2px solid ${P.teal}77`,borderBottom:`1px solid ${P.border}`}}><div style={{fontSize:43,fontWeight:900,maxWidth:"86%",overflowWrap:"break-word"}}>{v.company||"DOANH NGHIỆP"}</div><div style={{...enter(f,16),fontSize:(s.stats[0]?.value||"—").length>20?48:(s.stats[0]?.value||"—").length>12?62:96,fontWeight:950,color:tone(s.stats[0]?.tone||"up"),maxWidth:"86%",whiteSpace:"normal",overflowWrap:"break-word",lineHeight:1.08}}>{s.stats[0]?.value||"—"}</div></div>
     <div style={{display:"flex",gap:28,marginTop:24}}>{(v.bullets||[s.summary]).map((b,i)=><div key={i} style={{...enter(f,28+i*8),flex:1,minWidth:0,padding:"14px 0",fontSize:28,lineHeight:1.22,fontWeight:850,color:i?P.amber:P.teal}}>{b}</div>)}</div>
   </div>
 );
