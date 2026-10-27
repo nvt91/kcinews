@@ -2,6 +2,10 @@
 
 **All these checks are release gates, not just a score.** Failure yields `REVIEW_REQUIRED` or `BLOCKED`, never `READY_TO_PUBLISH`.
 
+## 27 October 2026 — complete rendered MP4 before owner review
+
+On all new KR_AM/KR_MID/KR_CLOSE/MACRO21/GLOBAL_US runs, the user's expected delivery is an actual full voiced MP4, NOT merely a script, storyboard or unrendered preview. Complete the best available trustworthy render first, verify file H.264/AAC with Anh Khôi voice, financial facts and visible CTA, then send the playable file for owner review. Owner's approval is only required before publication or requested re-edit; a second identical encode is unnecessary. Optional unimplemented alignment/color/true-peak checks must be reported as NOT_VERIFIED or MP4 — CẦN RÀ SOÁT, not falsely PASS and not a reason to withhold an otherwise usable MP4. Missing voice, misleading numbers or corrupt video are blockers. Don't auto-post or imply approval because a render succeeded. See EDITING_WORKFLOW.md for stage mapping.
+
 ## A. Newsroom and fact checks
 - [ ] Every quantitative headline/statement has specific HTTPS evidence in sourceLedger and sourceIds in the scene.
 - [ ] Market session and instrument match: KRX main close versus intraday, US last complete session versus open/futures, KOSPI versus NXT, USD/KRW spot versus fix, interest rate versus yield.
