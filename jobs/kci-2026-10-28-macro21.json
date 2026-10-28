@@ -115,7 +115,7 @@
       "eyebrow": "KCI · VĨ MÔ 21H",
       "headline": "BRENT 115,47 USD",
       "summary": "Giá hợp đồng tương lai lúc 13:35 KST 28/10, không phải giá 21h.",
-      "voiceText": "Giá dầu Brent bật lên 115 đô la 47 xu sau tin về một nhà máy lọc dầu Saudi Arabia. Hàn Quốc sẽ chịu áp lực gì? Đây là mức Reuters ghi nhận đầu giờ chiều nay, tăng một phẩy bốn phần trăm tại thời điểm đó.",
+      "voiceText": "Giá dầu Brent bật lên 115 đô la 47 xu sau tin về một nhà máy lọc dầu Saudi Arabia. Hàn Quốc sẽ chịu áp lực gì? Reuters ghi nhận mức này lúc mười ba giờ ba mươi lăm, không phải giá hiện tại.",
       "source": "Reuters · 28/10 · 13:35 KST",
       "sourceIds": [
         "reuters-oil-1028"
@@ -143,7 +143,7 @@
       "eyebrow": "RỦI RO NGUỒN CUNG",
       "headline": "Thông tin chưa xác nhận",
       "summary": "Houthi tuyên bố tấn công; Saudi chưa xác nhận vào thời điểm Reuters đưa tin.",
-      "voiceText": "Nguyên nhân là thông tin lực lượng Houthi tuyên bố phóng tên lửa vào một nhà máy lọc dầu lớn tại Saudi Arabia. Tuy nhiên, phía Saudi chưa xác nhận ngay vụ việc. Vì vậy, chưa thể kết luận công suất lọc dầu đã thực sự bị gián đoạn.",
+      "voiceText": "Houthi tuyên bố tấn công một nhà máy lọc dầu lớn ở Saudi Arabia. Phía Saudi chưa xác nhận ngay thông tin đó. Chúng ta chưa biết có thiệt hại hay gián đoạn nguồn cung thực tế hay không.",
       "source": "Reuters · 28/10/2026",
       "sourceIds": [
         "reuters-oil-1028"
@@ -165,7 +165,7 @@
       "eyebrow": "KÊNH TÁC ĐỘNG ĐẾN HÀN",
       "headline": "Dầu → chi phí nhập khẩu",
       "summary": "Rủi ro chi phí năng lượng và vận tải có thể truyền vào giá hàng hóa.",
-      "voiceText": "Với Hàn Quốc, điều đáng chú ý không chỉ là giá dầu tăng trong một phiên. Nếu giá năng lượng duy trì ở mức cao, chi phí nhập khẩu, vận tải và sản xuất có thể chịu thêm sức ép. Nhưng mức tác động còn phụ thuộc tỷ giá won, hợp đồng mua dầu và thời gian giá cao kéo dài.",
+      "voiceText": "Với Hàn Quốc, dầu cao kéo dài có thể làm tăng chi phí nhập khẩu, vận tải và sản xuất. Nhưng mức ảnh hưởng còn tùy tỷ giá won và thời gian giá cao duy trì.",
       "source": "Reuters 28/10 · phân tích cơ chế; BOK 22/10",
       "sourceIds": [
         "reuters-oil-1028",
@@ -188,7 +188,7 @@
       "eyebrow": "LÃI SUẤT HÀN QUỐC",
       "headline": "BOK giữ 3,00%",
       "summary": "Quyết định 22/10; lạm phát và rủi ro Trung Đông vẫn đáng theo dõi.",
-      "voiceText": "Ngân hàng Trung ương Hàn Quốc đã giữ lãi suất cơ bản ở ba phần trăm ngày hai mươi hai tháng mười. Trong đánh giá kinh tế tháng mười, BOK cũng lưu ý áp lực chi phí còn lan vào lạm phát. Dầu cao kéo dài có thể khiến bài toán chính sách khó hơn, nhưng không có nghĩa BOK chắc chắn tăng lãi suất.",
+      "voiceText": "BOK đã giữ lãi suất cơ bản ba phần trăm ngày hai mươi hai tháng mười. Ngân hàng trung ương vẫn lo áp lực chi phí truyền sang lạm phát. Dầu tăng không có nghĩa lãi suất chắc chắn tăng.",
       "source": "BOK · 22/10 và 26/10/2026",
       "sourceIds": [
         "bok-policy-1022",
@@ -212,7 +212,7 @@
       "eyebrow": "MỐC CẦN CHỜ",
       "headline": "Fed chưa công bố",
       "summary": "Quyết định FOMC dự kiến 03:00 KST ngày 29/10.",
-      "voiceText": "Một mốc khác là cuộc họp Fed tại Mỹ. Theo lịch chính thức, quyết định sẽ được công bố lúc ba giờ sáng ngày hai mươi chín tháng mười, giờ Hàn Quốc. Ở thời điểm bản tin tối nay, kết quả vẫn chưa có. Diễn biến lãi suất Mỹ sau đó có thể tác động tới đô la, tỷ giá và dòng vốn.",
+      "voiceText": "Fed dự kiến công bố quyết định lúc ba giờ sáng ngày hai mươi chín tháng mười, giờ Hàn Quốc. Tối nay chưa có kết quả. Lãi suất Mỹ có thể ảnh hưởng tới đô la và dòng vốn.",
       "source": "Federal Reserve · lịch 28/10 US EDT",
       "sourceIds": [
         "fed-calendar-1028"
@@ -235,7 +235,7 @@
       "eyebrow": "THEO DÕI TIẾP",
       "headline": "Giá dầu có hạ nhiệt?",
       "summary": "Kiểm tra xác nhận nguồn cung, Brent và phản ứng lãi suất/tỷ giá.",
-      "voiceText": "Điểm cần theo dõi tiếp là liệu Saudi có xác nhận thiệt hại hay không, giá dầu có giữ mức cao hay hạ nhiệt, và phản ứng của thị trường sau quyết định Fed. Đây là Korea Capital Insight.",
+      "voiceText": "Điểm cần theo dõi là xác nhận từ Saudi, giá dầu sau tin và phản ứng thị trường sau quyết định Fed. Đây là Korea Capital Insight.",
       "source": "Reuters 28/10 · BOK · Fed",
       "sourceIds": [
         "reuters-oil-1028",
