@@ -1,0 +1,12 @@
+# KCI MACRO21 — 28/10/2026 · Render QC
+
+**ArticleId:** KCI-20261028-MACRO21 · **Status:** MP4 — CẦN RÀ SOÁT / CHỜ DUYỆT / CHƯA ĐĂNG.
+
+- Issue [#45](https://github.com/nvt91/kcinews/issues/45) / [run 40685456179](https://github.com/nvt91/kcinews/actions/runs/40685456179) **SUCCESS** / [artifact 12815485566](https://github.com/nvt91/kcinews/actions/runs/40685456179/artifacts/12815485566), 6 real Vbee MP3 segments + complete Remotion MP4. Original 57.500s, 1080×1920 30fps H.264/AAC, 13,605,524 bytes, full FFmpeg decode PASS.
+- Chat review MP4 after uniform 4.35% duration adjustment and loudness mastering: **60.018s**, 18,666,046 bytes, H.264 1080×1920 30fps (actual 2.243Mbps), AAC stereo 48kHz (actual 236.8kbps), full FFmpeg decode PASS. SHA256 `24db2fc4a2f2a4cb0e589e6a4ae218c9b54c4378b88b3c06bf6df58fd734b28b`.
+- Six raw MP3 durations 10.344/8.856/7.536/8.376/7.824/12.456s = **55.392s**. Voice code configured Anh Khôi Tin tức, but no independent human listening identity/pronunciation check. Camera takes/retakes N/A (tts_motion). **0 silent intervals cut**; 6 boundary silences >0.4s remain in original. Review audio -14.75 LUFS, -1.26dBTP. No black segments >=0.08s. Codec/bitrate targets ~18Mbps/320kbps NOT MET as actual measured.
+- Six beat stills and contact sheet generated locally. Whisper word timing, effect offsets <=2frames, all-frame safe-zone, full listening, pops and keyword-only lower-third QA **NOT_VERIFIED**. Lower-third currently shows phrase fragments, not strictly 2–4 keyword cues; hook frame0 weaker than at 1s. **QC=MP4 — CẦN RÀ SOÁT** not PASS.
+- Editorial caveats: Reuters Brent USD115.47 is 04:35 UTC = 13:35 KST 28/10, NOT 21h spot. Houthi claimed Saudi refinery attack, Saudi had not immediately confirmed; no proven loss of output. BOK held 3% on 22/10; Fed announcement pending until 03:00 KST 29/10. Conditional macro transmission, not certain forecast.
+- First run [40685136621](https://github.com/nvt91/kcinews/actions/runs/40685136621) failed editorial regex before paid TTS; wording fixed before issue #45. No double paid synthesis for failed schema run.
+
+**Approval:** Owner has not approved or posted. Keep scheduled streams, secrets and quota unchanged. Chat MP4 is a direct review copy; GitHub artifact contains original Remotion master.
