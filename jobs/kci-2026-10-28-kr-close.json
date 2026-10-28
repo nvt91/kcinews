@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-28-kr-close",
+  "edition": "KR_CLOSE — Bản tin sau phiên 28/10/2026 KST",
+  "dataAsOf": "2026-10-28T17:33:21+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI áp sát 6.000 điểm: chip hồi mạnh, LG mở rộng mảng AI",
+  "sourceDisclaimer": "KOSPI 28/10 là đóng cửa phiên chính KRX; KOSDAQ chưa có số đối chiếu; NXT ngoài giờ tách riêng. SK hynix Q3 sơ bộ và đã có trong KR_MID; giá trị đơn hàng LG không phải doanh thu.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261028-KR-CLOSE",
+    "articlePath": "editorial/2026-10-28/kr-close.md",
+    "eventKeys": [
+      "KRX-KOSPI|2026-10-28-MAIN-CLOSE-5997.27",
+      "000660-SK-HYNIX|Q3-2026-MARKET-REACTION|2026-10-28",
+      "000660-SK-HYNIX|Q3-2026-BOARD-DIVIDEND-BUYBACK|2026-10-28",
+      "066570-LG-ELECTRONICS|Q3-2026-DETAILED-RESULTS-AIDC-ORDERS|2026-10-28"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render full voiced MP4, owner reviews video before posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "limitations": [
+      "KR_MID already covered SK hynix Q3 earnings; KR_CLOSE adds market close and board capital-allocation nuance, not fresh earnings label.",
+      "KOSDAQ data conflicting among secondary historical snapshots; omit exact level and change. KRX breadth and foreign/institutional flows not verified; omit.",
+      "NXT after-hours not finalized at cutoff; do not conflate with KRX close.",
+      "Main runner estimates word caption timing; Whisper +/-2 frames and -14 LUFS/true peak not independently verified."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "investing-kospi-1028",
+      "title": "Investing.com Korean KOSPI historical close 28 Oct 2026",
+      "url": "https://kr.investing.com/indices/kospi-historical-data",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T17:33:21+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI historical daily record 28 Oct 2026: 5,997.27 points, +6.37% versus 27 Oct close 5,638.34; main session reference, not NXT.",
+        "28 Oct daily open 5,763.85 and high 6,023.35; these are observed checkpoints, not a minute-by-minute curve."
+      ]
+    },
+    {
+      "id": "reuters-asia-1028",
+      "title": "Reuters 28 Oct 2026 Asian markets AI rebound",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-28/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T17:33:21+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters reports South Korea's KOSPI rallied more than 6% on 28 Oct following SK hynix results and AI memory investor enthusiasm.",
+        "Investors continue to debate AI infrastructure spending sustainability; this is a risk/analysis, not proof of demand collapse."
+      ]
+    },
+    {
+      "id": "skhynix-q3-1028",
+      "title": "SK hynix official Q3 2026 preliminary K-IFRS results and capital returns",
+      "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T17:33:21+09:00",
+      "kind": "primary",
+      "facts": [
+        "Preliminary Q3 2026 revenue KRW 104.6155 trillion, operating profit KRW 83.3338 trillion, +32% and +38% quarter-on-quarter.",
+        "Board resolved third-quarter cash dividend KRW 14 trillion and KRW 20 trillion share repurchase, of which KRW 10 trillion earmarked for cancellation and remaining around KRW 10 trillion employee compensation, not all buyback shareholder returns.",
+        "Total 2026 shareholder return plan around KRW 100 trillion includes previously announced programs; not all newly announced incremental money."
+      ]
+    },
+    {
+      "id": "lg-q3-1028",
+      "title": "LG Electronics Global Newsroom official 28 Oct 2026 Q3 results",
+      "url": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-releases-third-quarter-2026-financial-results/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T17:33:21+09:00",
+      "kind": "primary",
+      "facts": [
+        "LG Electronics Q3 2026 consolidated revenue KRW 23.82 trillion and operating profit KRW 781.9 billion, official results disclosed 28 Oct.",
+        "Cumulative orders for AI data center cooling solutions exceeded KRW 3 trillion by Q3 2026; order backlog is not booked revenue.",
+        "LG vehicle solutions achieved record third-quarter revenue and operating profit; company outlook flags continued weak TV demand and component cost pressure."
+      ]
+    },
+    {
+      "id": "reuters-samsung-outlook",
+      "title": "Reuters 7 Oct 2026 Samsung preliminary Q3 earnings and 29 Oct detail schedule",
+      "url": "https://www.reuters.com/business/samsung-q3-profit-jumps-783-ai-memory-boom-lifts-chip-earnings-2026-10-07/",
+      "eventDate": "2026-10-07",
+      "checkedAt": "2026-10-28T17:33:21+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Samsung preliminary Q3 operating profit forecast KRW 107.4 trillion announced 7 Oct, not a fresh 28 Oct actual.",
+        "Detailed business division results scheduled 29 Oct 2026; should not present as already released."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa tăng hơn sáu phần trăm, áp sát mốc sáu nghìn điểm. Nhưng đà hồi này dựa vào điều gì?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI vừa tăng hơn sáu phần trăm, áp sát mốc sáu nghìn điểm. Nhưng đà hồi này dựa vào điều gì?",
+        "score": 47,
+        "breakdown": "Đúng số 15, liên quan KR 15, tò mò 9, ngắn gọn 4, tự nhiên 4"
+      },
+      {
+        "style": "investor-impact",
+        "text": "KOSPI tăng hơn sáu phần trăm. Liệu lợi nhuận ngành chip có đủ sức giữ nhịp hồi?",
+        "score": 45
+      },
+      {
+        "style": "question",
+        "text": "Tại sao KOSPI tăng mạnh hôm nay, trong khi rủi ro chi phí đầu tư AI vẫn còn?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà hồi này sẽ bền hơn nhờ lợi nhuận chip, hay cần thêm tín hiệu từ dòng tiền? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "ĐÀ HỒI CÓ BỀN?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Đà hồi có bền nhờ lợi nhuận chip hay cần thêm tín hiệu từ dòng tiền?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · SAU PHIÊN 28/10",
+      "headline": "KOSPI áp sát 6.000 điểm",
+      "summary": "Chỉ số KRX tăng hơn 6% · nhóm chip dẫn dắt.",
+      "source": "Investing.com · Reuters, KRX 28/10/2026",
+      "sourceIds": [
+        "investing-kospi-1028",
+        "reuters-asia-1028"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 28/10",
+          "value": "+6,37%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "KOSPI vừa tăng hơn sáu phần trăm, áp sát mốc sáu nghìn điểm. Nhưng đà hồi này dựa vào điều gì? Sau phiên phục hồi hôm qua, thị trường Hàn Quốc tiếp tục tăng mạnh trong ngày hai mươi tám tháng mười. Tâm điểm là kết quả kinh doanh ngành chip và kỳ vọng dòng tiền quay lại cổ phiếu công nghệ. Nhưng đừng chỉ nhìn vào một con số tăng giá: chúng ta cần phân biệt điều đã xảy ra với triển vọng còn phải kiểm chứng.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "+6,37%",
+        "qualifier": "KOSPI, đóng cửa phiên chính KRX 28/10/2026, không phải NXT ngoài giờ."
+      }
+    },
+    {
+      "id": "market-close",
+      "eyebrow": "KRX · PHIÊN CHÍNH 28/10",
+      "headline": "KOSPI đóng cửa 5.997,27",
+      "summary": "Tăng 358,93 điểm so với 27/10 · gần mốc 6.000.",
+      "source": "Investing.com KOSPI historical 28/10 · Reuters",
+      "sourceIds": [
+        "investing-kospi-1028",
+        "reuters-asia-1028"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · điểm",
+          "value": "5.997,27",
+          "tone": "up"
+        },
+        {
+          "label": "So với 27/10",
+          "value": "+6,37%",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "KOSPI kết thúc phiên chính ở năm nghìn chín trăm chín mươi bảy phẩy hai bảy điểm, tăng sáu phẩy ba bảy phần trăm so với hôm qua. Reuters cũng ghi nhận mức tăng hơn sáu phần trăm. Đây là kết quả đóng cửa trên sàn KRX, không cộng với giao dịch NXT ngoài giờ. Riêng số liệu KOSDAQ giữa các bảng tra cứu chưa khớp tại mốc biên tập, nên bản tin không đưa một mức đóng cửa chưa được đối chiếu.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "5.997,27",
+        "qualifier": "KOSPI close KRX 28/10, +6,37% so phiên 27/10; không cộng NXT."
+      }
+    },
+    {
+      "id": "sk-impact",
+      "eyebrow": "BÁN DẪN · PHẢN ỨNG THỊ TRƯỜNG",
+      "headline": "Lợi nhuận chip hỗ trợ đà hồi",
+      "summary": "SK hynix Q3: lợi nhuận hoạt động 83,33 nghìn tỷ won.",
+      "source": "SK hynix IR · Reuters 28/10",
+      "sourceIds": [
+        "skhynix-q3-1028",
+        "reuters-asia-1028"
+      ],
+      "stats": [
+        {
+          "label": "SK hynix · LNHĐ Q3",
+          "value": "83,33 nghìn tỷ ₩",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Động lực đáng chú ý là SK hynix. Báo cáo sơ bộ quý ba cho thấy lợi nhuận hoạt động đạt tám mươi ba phẩy ba ba nghìn tỷ won, tăng ba mươi tám phần trăm so với quý trước. Số liệu này đã được KCI đưa trong bản tin trưa, nên bản chiều không xem đây là một công bố mới. Điều mới cần quan sát là phản ứng giá cổ phiếu và mức độ thị trường tin vào khả năng duy trì lợi nhuận chip AI trong các quý tới.",
+      "visual": {
+        "kind": "spotlight",
+        "value": "83,33 nghìn tỷ ₩",
+        "qualifier": "SK hynix Q3 2026 preliminary K-IFRS; số đã công bố sáng, không phải tin mới sau phiên."
+      }
+    },
+    {
+      "id": "sk-board",
+      "eyebrow": "SK HYNIX · QUYẾT ĐỊNH HĐQT",
+      "headline": "Cổ tức và mua lại cổ phiếu",
+      "summary": "Cổ tức Q3 14 nghìn tỷ · mua lại 20 nghìn tỷ won.",
+      "source": "SK hynix official results 28/10",
+      "sourceIds": [
+        "skhynix-q3-1028"
+      ],
+      "stats": [
+        {
+          "label": "Cổ tức Q3",
+          "value": "14 nghìn tỷ ₩",
+          "tone": "neutral"
+        },
+        {
+          "label": "Mua lại cổ phiếu",
+          "value": "20 nghìn tỷ ₩",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ở khía cạnh phân bổ vốn, hội đồng quản trị SK hynix quyết định cổ tức tiền mặt quý ba tổng cộng mười bốn nghìn tỷ won, cùng chương trình mua lại cổ phiếu hai mươi nghìn tỷ won. Tuy nhiên, chỉ một nửa lượng mua lại này dự kiến hủy để hoàn trả cổ đông; phần còn lại phục vụ chế độ đãi ngộ nhân viên. Kế hoạch hoàn trả cổ đông khoảng một trăm nghìn tỷ won cho cả năm cũng bao gồm chương trình cũ, không phải toàn bộ tiền mới.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CỔ TỨC Q3",
+            "value": 14,
+            "display": "14 nghìn tỷ ₩"
+          },
+          {
+            "label": "MUA LẠI",
+            "value": 20,
+            "display": "20 nghìn tỷ ₩"
+          }
+        ],
+        "qualifier": "Quyết định HĐQT 28/10; 10 nghìn tỷ won mua lại dự kiến hủy, phần còn lại dành cho nhân viên."
+      }
+    },
+    {
+      "id": "lg-electronics",
+      "eyebrow": "DOANH NGHIỆP · LG ELECTRONICS",
+      "headline": "LG mở rộng mảng làm mát AI",
+      "summary": "Đơn hàng tích lũy AIDC trên 3 nghìn tỷ won.",
+      "source": "LG Electronics Global Newsroom 28/10",
+      "sourceIds": [
+        "lg-q3-1028"
+      ],
+      "stats": [
+        {
+          "label": "Doanh thu Q3",
+          "value": "23,82 nghìn tỷ ₩",
+          "tone": "neutral"
+        },
+        {
+          "label": "LNHĐ Q3",
+          "value": "781,9 tỷ ₩",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Không chỉ có bán dẫn. LG Electronics công bố doanh thu quý ba hai mươi ba phẩy tám hai nghìn tỷ won và lợi nhuận hoạt động bảy trăm tám mươi mốt phẩy chín tỷ won. Điểm mới là tổng đơn hàng tích lũy cho giải pháp làm mát trung tâm dữ liệu AI vượt ba nghìn tỷ won. Đây là giá trị đơn hàng, chưa phải doanh thu đã ghi nhận. Mảng linh kiện ô tô cũng có quý ba kỷ lục, cho thấy nhu cầu AI đang tạo cơ hội ngoài ngành chip.",
+      "visual": {
+        "kind": "company",
+        "company": "LG Electronics",
+        "bullets": [
+          "Q3: DOANH THU 23,82 NGHÌN TỶ WON",
+          "ĐƠN HÀNG LÀM MÁT AI >3 NGHÌN TỶ WON",
+          "ĐƠN HÀNG KHÔNG PHẢI DOANH THU"
+        ]
+      }
+    },
+    {
+      "id": "takeaway",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Đà hồi có được xác nhận?",
+      "summary": "Theo dõi lợi nhuận thực, dòng tiền và báo cáo Samsung 29/10.",
+      "source": "Reuters · SK hynix IR · LG IR 28/10",
+      "sourceIds": [
+        "investing-kospi-1028",
+        "skhynix-q3-1028",
+        "lg-q3-1028",
+        "reuters-samsung-outlook"
+      ],
+      "stats": [],
+      "voiceText": "Tóm lại, phiên tăng mạnh phản ánh sự trở lại của kỳ vọng vào lợi nhuận AI, nhưng không bảo đảm mọi doanh nghiệp đều hưởng lợi như nhau. Ngày mai, báo cáo chi tiết của Samsung sẽ là một phép thử tiếp theo. Với KCI, cần theo dõi cả dòng tiền, chi phí đầu tư và khả năng chuyển đơn hàng thành lợi nhuận, thay vì kết luận chỉ từ một phiên tăng.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KOSPI +6,37% · KRX 28/10",
+          "SK HYNIX: LỢI NHUẬN & HOÀN TRẢ VỐN",
+          "LG: ĐƠN HÀNG LÀM MÁT AI",
+          "SAMSUNG: BÁO CÁO CHI TIẾT 29/10"
+        ]
+      }
+    }
+  ]
+}
