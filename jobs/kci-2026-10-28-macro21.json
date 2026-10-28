@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-28-macro21",
+  "edition": "MACRO21 — Vĩ mô 28/10/2026",
+  "dataAsOf": "2026-10-28T21:03:50+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Tin về nhà máy lọc dầu Saudi đẩy giá dầu tăng: kênh ảnh hưởng tới lạm phát Hàn Quốc",
+  "sourceDisclaimer": "Brent futures USD115.47 at 13:35 KST 28 Oct, not 21h live. Houthi claim unconfirmed by Saudi at Reuters cutoff. BOK 3.00% held 22 Oct; Fed Oct28 decision still future at 21h KST.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "articleId": "KCI-20261028-MACRO21",
+    "articlePath": "editorial/2026-10-28/macro21.md",
+    "eventKeys": [
+      "SAUDI-REFINERY|HOUTHI-CLAIM|2026-10-28",
+      "BRENT-FUTURES|0435UTC|2026-10-28",
+      "BOK|COST-PRESSURE-CHANNEL|2026-10-28"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "V1",
+    "productionMode": "tts_motion",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "overlapNotes": "Oct24 macro discussed 23 Oct oil settlement and BOK; Oct28 focuses new unconfirmed Saudi refinery report and precise Fed release clock, no repeat KOSPI or company earnings. KR_CLOSE 28 covered KOSPI and LG; KR_MID covered SK hynix.",
+    "qcPlan": {
+      "whisperWordAlignment": "NOT_VERIFIED",
+      "effectOffsetFrames": "NOT_MEASURED",
+      "audioLufs": "NOT_MEASURED",
+      "truePeak": "NOT_MEASURED",
+      "takes": "N/A",
+      "faceTracking": "N/A",
+      "publishing": "NOT_AUTHORIZED"
+    }
+  },
+  "sourceLedger": [
+    {
+      "id": "reuters-oil-1028",
+      "title": "Reuters 28 Oct 2026: oil futures rose after Houthis' claimed Saudi refinery attack",
+      "url": "https://www.reuters.com/world/asia-pacific/oil-prices-rise-after-attack-saudi-arabian-refinery-reignites-supply-concerns-2026-10-28/",
+      "kind": "secondary",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T21:03:50+09:00",
+      "facts": [
+        "Brent futures at 04:35 UTC on 28 October 2026 were USD 115.47/bbl, +1.4%; not a 21:00 KST live price.",
+        "Houthis claimed a missile strike on Saudi refinery with reported capacity 550,000 bpd; Saudi authorities had not immediately confirmed the strike. Do not state confirmed damage or disrupted output."
+      ]
+    },
+    {
+      "id": "bok-policy-1022",
+      "title": "Bank of Korea monetary policy direction 22 October 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11065823",
+      "kind": "primary",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-28T21:03:50+09:00",
+      "facts": [
+        "BOK held the base rate at 3.00% on 22 October 2026; elevated inflation and Middle East uncertainty were among considerations.",
+        "This is a past policy decision, not a new 28 October rate announcement."
+      ]
+    },
+    {
+      "id": "fed-calendar-1028",
+      "title": "Federal Reserve October 2026 calendar: FOMC meeting 27–28 October and 2pm ET release",
+      "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar",
+      "kind": "primary",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T21:03:50+09:00",
+      "facts": [
+        "FOMC October 27–28 meeting has a 2pm US Eastern announcement on October 28; equals 03:00 KST October 29 because EDT UTC-4.",
+        "At 21:03 KST on 28 October, the Fed decision is still in the future; do not infer an outcome."
+      ]
+    },
+    {
+      "id": "bok-assessment-1026",
+      "title": "Bank of Korea October 2026 economic conditions assessment",
+      "url": "https://www.bok.or.kr/portal/main/main.do",
+      "kind": "primary",
+      "eventDate": "2026-10-26",
+      "checkedAt": "2026-10-28T21:03:50+09:00",
+      "facts": [
+        "BOK's 26 October economic assessment flagged continued high inflation as cumulative cost pressures pass through and demand pressures increase.",
+        "The report also described strong semiconductor-led growth despite elevated Middle East uncertainty."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá dầu Brent bật lên 115 đô la 47 xu sau tin về một nhà máy lọc dầu Saudi Arabia. Hàn Quốc sẽ chịu áp lực gì?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá dầu Brent bật lên 115 đô la 47 xu sau tin về một nhà máy lọc dầu Saudi Arabia. Hàn Quốc sẽ chịu áp lực gì?",
+        "score": 47
+      },
+      {
+        "style": "impact",
+        "text": "Một thông tin chưa được Saudi xác nhận cũng đủ khiến giá dầu bật tăng. Người dân Hàn Quốc có thể chịu ảnh hưởng ra sao?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Dầu Brent tăng hơn một phần trăm trong ngày 28 tháng mười. Liệu áp lực lạm phát Hàn Quốc có tăng theo?",
+        "score": 44
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, giá dầu sẽ sớm hạ nhiệt hay còn biến động mạnh? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "GIÁ DẦU CÓ HẠ NHIỆT?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Theo anh chị, giá dầu sẽ sớm hạ nhiệt hay còn biến động mạnh?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "BRENT 115,47 USD",
+      "summary": "Giá hợp đồng tương lai lúc 13:35 KST 28/10, không phải giá 21h.",
+      "voiceText": "Giá dầu Brent bật lên 115 đô la 47 xu sau tin về một nhà máy lọc dầu Saudi Arabia. Hàn Quốc sẽ chịu áp lực gì? Đây là mức Reuters ghi nhận đầu giờ chiều nay, tăng một phẩy bốn phần trăm tại thời điểm đó.",
+      "source": "Reuters · 28/10 · 13:35 KST",
+      "sourceIds": [
+        "reuters-oil-1028"
+      ],
+      "stats": [
+        {
+          "label": "Brent 13:35 KST",
+          "value": "115,47 USD",
+          "tone": "up"
+        },
+        {
+          "label": "Thay đổi tại mốc",
+          "value": "+1,4%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "115,47 USD",
+        "qualifier": "Brent futures, 04:35 UTC = 13:35 KST 28/10, không phải giá hiện tại"
+      }
+    },
+    {
+      "id": "incident",
+      "eyebrow": "RỦI RO NGUỒN CUNG",
+      "headline": "Thông tin chưa xác nhận",
+      "summary": "Houthi tuyên bố tấn công; Saudi chưa xác nhận vào thời điểm Reuters đưa tin.",
+      "voiceText": "Nguyên nhân là thông tin lực lượng Houthi tuyên bố phóng tên lửa vào một nhà máy lọc dầu lớn tại Saudi Arabia. Tuy nhiên, phía Saudi chưa xác nhận ngay vụ việc. Vì vậy, chưa thể kết luận công suất lọc dầu đã thực sự bị gián đoạn.",
+      "source": "Reuters · 28/10/2026",
+      "sourceIds": [
+        "reuters-oil-1028"
+      ],
+      "stats": [
+        {
+          "label": "Công suất cơ sở được nhắc tới",
+          "value": "550.000 thùng/ngày",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Thông tin tấn công do Houthi tuyên bố; chưa có xác nhận thiệt hại từ Saudi"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TÁC ĐỘNG ĐẾN HÀN",
+      "headline": "Dầu → chi phí nhập khẩu",
+      "summary": "Rủi ro chi phí năng lượng và vận tải có thể truyền vào giá hàng hóa.",
+      "voiceText": "Với Hàn Quốc, điều đáng chú ý không chỉ là giá dầu tăng trong một phiên. Nếu giá năng lượng duy trì ở mức cao, chi phí nhập khẩu, vận tải và sản xuất có thể chịu thêm sức ép. Nhưng mức tác động còn phụ thuộc tỷ giá won, hợp đồng mua dầu và thời gian giá cao kéo dài.",
+      "source": "Reuters 28/10 · phân tích cơ chế; BOK 22/10",
+      "sourceIds": [
+        "reuters-oil-1028",
+        "bok-policy-1022"
+      ],
+      "stats": [
+        {
+          "label": "Kênh truyền dẫn",
+          "value": "Năng lượng → CPI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Kịch bản có điều kiện; không phải dự báo CPI định lượng"
+      }
+    },
+    {
+      "id": "bok",
+      "eyebrow": "LÃI SUẤT HÀN QUỐC",
+      "headline": "BOK giữ 3,00%",
+      "summary": "Quyết định 22/10; lạm phát và rủi ro Trung Đông vẫn đáng theo dõi.",
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc đã giữ lãi suất cơ bản ở ba phần trăm ngày hai mươi hai tháng mười. Trong đánh giá kinh tế tháng mười, BOK cũng lưu ý áp lực chi phí còn lan vào lạm phát. Dầu cao kéo dài có thể khiến bài toán chính sách khó hơn, nhưng không có nghĩa BOK chắc chắn tăng lãi suất.",
+      "source": "BOK · 22/10 và 26/10/2026",
+      "sourceIds": [
+        "bok-policy-1022",
+        "bok-assessment-1026"
+      ],
+      "stats": [
+        {
+          "label": "Lãi suất cơ bản BOK 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "qualifier": "BOK giữ nguyên ngày 22/10/2026, không phải quyết định mới tối 28/10"
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "MỐC CẦN CHỜ",
+      "headline": "Fed chưa công bố",
+      "summary": "Quyết định FOMC dự kiến 03:00 KST ngày 29/10.",
+      "voiceText": "Một mốc khác là cuộc họp Fed tại Mỹ. Theo lịch chính thức, quyết định sẽ được công bố lúc ba giờ sáng ngày hai mươi chín tháng mười, giờ Hàn Quốc. Ở thời điểm bản tin tối nay, kết quả vẫn chưa có. Diễn biến lãi suất Mỹ sau đó có thể tác động tới đô la, tỷ giá và dòng vốn.",
+      "source": "Federal Reserve · lịch 28/10 US EDT",
+      "sourceIds": [
+        "fed-calendar-1028"
+      ],
+      "stats": [
+        {
+          "label": "Công bố FOMC",
+          "value": "03:00 KST 29/10",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "03:00 KST",
+        "qualifier": "29/10/2026 · tương đương 14:00 EDT ngày 28/10, chưa công bố lúc 21:03 KST"
+      }
+    },
+    {
+      "id": "closing",
+      "eyebrow": "THEO DÕI TIẾP",
+      "headline": "Giá dầu có hạ nhiệt?",
+      "summary": "Kiểm tra xác nhận nguồn cung, Brent và phản ứng lãi suất/tỷ giá.",
+      "voiceText": "Điểm cần theo dõi tiếp là liệu Saudi có xác nhận thiệt hại hay không, giá dầu có giữ mức cao hay hạ nhiệt, và phản ứng của thị trường sau quyết định Fed. Đây là Korea Capital Insight.",
+      "source": "Reuters 28/10 · BOK · Fed",
+      "sourceIds": [
+        "reuters-oil-1028",
+        "bok-policy-1022",
+        "fed-calendar-1028"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Xác minh tình trạng nhà máy Saudi",
+          "Brent và chi phí năng lượng",
+          "Fed, USD/KRW và kỳ vọng lãi suất"
+        ],
+        "cta": {
+          "headline": "GIÁ DẦU CÓ HẠ NHIỆT?",
+          "subline": "Bình luận góc nhìn · Theo dõi KCI"
+        }
+      }
+    }
+  ]
+}
