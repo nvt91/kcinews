@@ -32,49 +32,49 @@
 
 ### 1. hook — NASDAQ +1,18% · ĐỘ RỘNG TRÁI CHIỀU
 
-Nasdaq tăng một phẩy một tám phần trăm, nhưng phần lớn cổ phiếu trong S&P năm trăm lại giảm. Vì sao Phố Wall không cùng một nhịp? Đây là bản tin thị trường Mỹ, nhìn từ Hàn Quốc sáng hai mươi tám tháng mười.
+Nasdaq tăng một phẩy một tám phần trăm, nhưng phần lớn cổ phiếu trong S&P năm trăm lại giảm. Vì sao Phố Wall không cùng một nhịp? Đây là bản tin KCI sáng hai mươi tám tháng mười.
 
 Sources: reuters-us-2710, ap-us-2710.
 
 ### 2. close — NASDAQ DẪN ĐÀ TĂNG
 
-Kết phiên Mỹ ngày hai mươi bảy tháng mười, S&P năm trăm tăng không phẩy sáu phần trăm, lên bảy nghìn bảy trăm hai mươi hai phẩy sáu điểm. Nasdaq tăng một phẩy một tám phần trăm; Dow Jones gần như đi ngang, tăng không phẩy không ba. Cổ phiếu công nghệ và trí tuệ nhân tạo kéo các chỉ số lớn đi lên. Nhưng chỉ số tăng không có nghĩa phần lớn cổ phiếu đều tăng.
+Phiên Mỹ hai mươi bảy tháng mười, S&P năm trăm tăng không phẩy sáu phần trăm, đóng cửa ở bảy nghìn bảy trăm hai mươi hai phẩy sáu điểm. Nasdaq tăng một phẩy một tám phần trăm; Dow Jones nhích không phẩy không ba. Nhóm công nghệ AI là động lực quan trọng, nhưng không thể coi mọi cổ phiếu cùng được hưởng lợi.
 
 Sources: reuters-us-2710, ap-us-2710.
 
 ### 3. breadth — CỔ PHIẾU LỚN DẪN CHỈ SỐ
 
-Điểm đáng chú ý là theo hãng tin A P, hơn một nửa số cổ phiếu thành phần S&P năm trăm giảm giá trong ngày. Một số doanh nghiệp AI có vốn hóa lớn vẫn đủ sức kéo chỉ số lên. Vì thế, khi nhìn sức khỏe Phố Wall, nên tách mức tăng của chỉ số vốn hóa khỏi mức lan tỏa của dòng tiền. Đây là dấu hiệu cần theo dõi, không phải kết luận rằng thị trường sẽ đảo chiều.
+Theo A P, hơn một nửa cổ phiếu thành phần S&P năm trăm giảm giá. Một số doanh nghiệp vốn hóa lớn kéo chỉ số đi lên. Vì vậy, cần phân biệt chỉ số tăng với độ rộng thị trường. Đây là tín hiệu nên theo dõi, chưa đủ để kết luận sắp đảo chiều.
 
 Sources: ap-us-2710, reuters-us-2710.
 
 ### 4. broadcom — 63 TỶ USD CHO HẠ TẦNG AI
 
-Một động lực của nhóm chip là thương vụ công bố hôm hai mươi sáu tháng mười: các ngân hàng lớn và Blackstone thu xếp cấu trúc tài trợ sáu mươi ba tỷ đô la cho thiết bị tính toán AI sử dụng công nghệ Broadcom, rồi cho Anthropic thuê. Việc triển khai dự kiến bắt đầu trong năm hai nghìn không trăm hai mươi bảy. Xin lưu ý, sáu mươi ba tỷ đô la là quy mô tài trợ, không phải doanh thu đã ghi nhận của Broadcom. Chi phí vốn và rủi ro khoản vay vẫn là câu hỏi lớn.
+Ngày hai mươi sáu tháng mười, các ngân hàng và Blackstone công bố cấu trúc tài trợ sáu mươi ba tỷ đô la để mua thiết bị chip Broadcom cho Anthropic thuê. Dự kiến triển khai từ năm hai nghìn không trăm hai mươi bảy. Đây là quy mô tài trợ hạ tầng, không phải doanh thu Broadcom đã ghi nhận. Rủi ro chi phí vay và hiệu quả đầu tư vẫn hiện hữu.
 
 Sources: broadcom-primary-2610, reuters-broadcom-2610.
 
 ### 5. meta — META NÂNG KẾ HOẠCH 97,5 TỶ USD
 
-Ở hướng ngược lại, Meta mở rộng quy mô kế hoạch huy động vốn cổ phần lên tới chín mươi bảy phẩy năm tỷ đô la để hỗ trợ đầu tư AI. Cổ phiếu Meta giảm một phẩy sáu phần trăm trong phiên. Đây là quy mô kế hoạch huy động, không phải tiền đã thu đủ. Nó cho thấy nhu cầu tính toán rất lớn, nhưng cũng đặt ra câu hỏi về pha loãng cổ phần, chi phí vốn và khả năng tạo lợi nhuận từ những khoản đầu tư đó.
+Meta mở rộng kế hoạch huy động vốn cổ phần lên tới chín mươi bảy phẩy năm tỷ đô la cho AI. Cổ phiếu giảm một phẩy sáu phần trăm phiên Mỹ. Đây vẫn là kế hoạch, không phải tiền đã huy động đủ. Sức cầu tính toán lớn đi cùng câu hỏi về chi phí vốn và khả năng sinh lời.
 
 Sources: reuters-us-2710.
 
 ### 6. consumers — NIỀM TIN TIÊU DÙNG HỒI PHỤC
 
-Về kinh tế, khảo sát niềm tin người tiêu dùng Mỹ tháng mười của Conference Board tăng lên chín mươi mốt phẩy bảy điểm, từ mức tám mươi bốn phẩy hai đã điều chỉnh của tháng chín. Mức tăng bảy phẩy năm điểm phần nào gắn với giá xăng bán lẻ hạ bớt. Nhưng các hộ gia đình vẫn lo chi phí thực phẩm và năng lượng. Chỉ số tâm lý tốt hơn chưa đồng nghĩa sức mua và lạm phát đã hết rủi ro.
+Khảo sát Conference Board cho thấy niềm tin tiêu dùng Mỹ tháng mười đạt chín mươi mốt phẩy bảy điểm, tăng từ mức tám mươi bốn phẩy hai đã điều chỉnh của tháng chín. Người dân bớt lo khi giá xăng hạ, nhưng chi phí thực phẩm và năng lượng vẫn gây áp lực. Một tháng cải thiện chưa xóa được rủi ro lạm phát.
 
 Sources: conference-board-2710, reuters-confidence-2710.
 
 ### 7. fed-korea — CHỜ FED, LỢI NHUẬN BIG TECH
 
-Sự kiện tiếp theo là quyết định lãi suất Fed, dự kiến công bố ngày hai mươi tám tháng mười theo giờ Mỹ. Tại thời điểm bản tin sáng nay ở Hàn Quốc, Fed chưa công bố kết quả. Microsoft và Alphabet cũng chuẩn bị báo cáo lợi nhuận. Với KOSPI và KOSDAQ, câu chuyện sẽ tích cực hơn nếu nhu cầu chip AI thực sự chuyển thành đơn hàng và lợi nhuận. Ngược lại, nếu lợi suất Mỹ còn cao hoặc đầu tư AI thiếu hiệu quả, nhóm bán dẫn Hàn và tỷ giá đô la trên won có thể chịu biến động. Đây là các kịch bản, không phải dự báo chắc chắn.
+Fed dự kiến công bố quyết định lãi suất ngày hai mươi tám tháng mười theo giờ Mỹ; tại giờ phát bản tin này vẫn chưa có kết quả. Microsoft và Alphabet cũng sắp công bố lợi nhuận. Nếu nhu cầu AI chuyển thành doanh thu chip, ngành bán dẫn Hàn Quốc có thể hưởng lợi. Nếu lãi suất cao kéo dài hoặc vốn AI kém hiệu quả, KOSPI, KOSDAQ và tỷ giá đô la trên won có thể biến động mạnh. Đây là kịch bản có điều kiện, không phải dự báo chắc chắn.
 
 Sources: fed-calendar-oct26, reuters-us-2710, broadcom-primary-2610.
 
 ### 8. outro — THEO DÕI DỮ LIỆU THẬT
 
-Tóm lại, Phố Wall có nhịp hồi do AI dẫn dắt, trong khi độ rộng thị trường và chi phí vốn cần thêm dữ liệu để kiểm chứng. Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư cá nhân.
+Phố Wall hồi nhờ AI nhưng độ rộng thị trường và chi phí vốn cần được theo dõi tiếp. Thông tin này chỉ để tham khảo, không phải khuyến nghị đầu tư.
 
 Sources: fed-calendar-oct26, reuters-us-2710.
 
@@ -89,3 +89,8 @@ Sources: fed-calendar-oct26, reuters-us-2710.
 - Effects map planned in jobs/kci-2026-10-28-us-am-effects.json, onset and delta NOT_MEASURED prior to MP4/audio.
 - No claims of actual loudness, peak, video duration, bitrate, file/audio QC before measured output.
 - Approval/publication remain CHỜ DUYỆT/CHƯA ĐĂNG until owner action. Source context is editorial, not investment advice.
+
+
+### Script revision prior to voice
+
+Tightened verified script to 513 Vietnamese whitespace-separated tokens; no paid Vbee request had been triggered before this revision. Beat triggers filtered to 14 literal matches. Target digest 90–110s, duration pending actual TTS.
