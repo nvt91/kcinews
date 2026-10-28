@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-29-kr-am",
+  "edition": "KR_AM — Kinh tế và thị trường Hàn Quốc sáng 29/10/2026 KST",
+  "dataAsOf": "2026-10-29T07:57:30+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Doanh nghiệp Hàn lạc quan trở lại, Samsung chờ báo cáo, KOSPI vượt 6.000",
+  "sourceDisclaimer": "CBSI 104.2 is Oct survey released 29/10 06:00; Samsung 195/107.4 trillion won are 08/10 guidance only; KOSPI 6012.44 +6.63% is KRX close 28/10, not NXT or current price. Prior KR_CLOSE brief 5997.27/+6.37% contradicted and corrected.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261029-KR-AM",
+    "articlePath": "editorial/2026-10-29/kr-am.md",
+    "eventKeys": [
+      "BOK|CBSI-OCT26-RELEASE-20261029",
+      "005930|SAMSUNG-Q3-DETAILS-SCHEDULE-20261029",
+      "KRX-KOSPI|20261028-CLOSE-CORRECTION"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render voiced full MP4 first; owner reviews before posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "limitations": [
+      "BOK detailed primary PDF not directly retrieved; corroborated Yonhap and BOK calendar.",
+      "KR_CLOSE 28/10 reported 5997.27/+6.37%; independent Newsis and Hankyung show 6012.44/+6.63%, corrected.",
+      "Samsung detailed earnings still upcoming at 07:57 KST; guidance not actual.",
+      "Main renderer has estimated seven-word captions; word-sync ±2 frames and loudness/true peak not yet independently verified.",
+      "TTS/motion: footage takes, face tracking, skin grading N/A."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-survey",
+      "title": "Yonhap: BOK October business confidence 29 Oct 06:00",
+      "url": "https://www.yna.co.kr/view/AKR20261028163500002",
+      "eventDate": "2026-10-29",
+      "kind": "secondary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "October all-industry CBSI 104.2, up 5.1 points; highest since Aug 2022, first above 100 since Sep 2022.",
+        "Manufacturing CBSI 105.6 up 6.1 points; small firms up 11.2; survey October 14-21; base effects from holiday and strike."
+      ]
+    },
+    {
+      "id": "bok-calendar",
+      "title": "BOK official October 2026 statistical release calendar",
+      "url": "https://www.bok.or.kr/portal/stats/statsPublictSchdul/listCldr.do?menuNo=200775",
+      "eventDate": "2026-10-29",
+      "kind": "primary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "BOK scheduled October business survey and ESI for 29 Oct 2026."
+      ]
+    },
+    {
+      "id": "samsung-ir",
+      "title": "Samsung Electronics Q3 2026 guidance 8 Oct",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026",
+      "eventDate": "2026-10-08",
+      "kind": "primary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "Preliminary Q3 2026 consolidated revenue guidance approximately KRW 195 trillion and operating profit KRW 107.4 trillion; not final results."
+      ]
+    },
+    {
+      "id": "samsung-schedule",
+      "title": "Newsis 29 Oct Samsung Q3 detailed earnings schedule",
+      "url": "https://www.newsis.com/view/NISX20261028_0003845284",
+      "eventDate": "2026-10-29",
+      "kind": "secondary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "Samsung planned detailed Q3 2026 earnings and conference call on 29 Oct morning; HBM4 and chip division earnings are upcoming, not yet announced at cutoff."
+      ]
+    },
+    {
+      "id": "krx-close",
+      "title": "Newsis 28 Oct KRX KOSPI main close",
+      "url": "https://mobile.newsis.com/view/NISX20261028_0003845065",
+      "eventDate": "2026-10-28",
+      "kind": "secondary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "KOSPI closed 28 Oct KRX regular session 6012.44 points, +374.10 points (+6.63%); KOSDAQ 771.28 (+3.69%)."
+      ]
+    },
+    {
+      "id": "krx-crosscheck",
+      "title": "Hankyung KOSPI historical 28 Oct close",
+      "url": "https://markets.hankyung.com/indices/kospi",
+      "eventDate": "2026-10-28",
+      "kind": "secondary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "Historical 28 Oct 2026 KOSPI close 6012.44 (+6.63%), contradicting earlier KR_CLOSE brief 5997.27 (+6.37%)."
+      ]
+    },
+    {
+      "id": "skhynix-ir",
+      "title": "SK hynix official preliminary Q3 2026 results",
+      "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+      "eventDate": "2026-10-28",
+      "kind": "primary",
+      "checkedAt": "2026-10-29T07:57:30+09:00",
+      "facts": [
+        "SK hynix Q3 operating profit KRW 83.3338 trillion and revenue KRW 104.6155 trillion, disclosed Oct 28 and already covered by KR_MID/KR_CLOSE."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Doanh nghiệp Hàn Quốc lạc quan trở lại sau hơn bốn năm. Nhưng thị trường có đang tăng quá nhanh?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Doanh nghiệp Hàn Quốc lạc quan trở lại sau hơn bốn năm. Nhưng thị trường có đang tăng quá nhanh?",
+        "score": 48
+      },
+      {
+        "style": "investor-impact",
+        "text": "KOSPI vừa trở lại trên sáu nghìn điểm. Sáng nay, doanh nghiệp Hàn Quốc còn đón tin vui nào?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Niềm tin doanh nghiệp tăng mạnh, Samsung sắp công bố kết quả. Điều gì sẽ quyết định nhịp tiếp theo?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, báo cáo Samsung hay sức khỏe doanh nghiệp nhỏ sẽ quan trọng hơn với thị trường thời gian tới? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "TÍN HIỆU NÀO QUAN TRỌNG?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Samsung hay sức khỏe doanh nghiệp nhỏ quan trọng hơn với thị trường?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN TIN SÁNG · 29/10",
+      "headline": "Tâm lý kinh doanh hồi phục",
+      "summary": "CBSI 104,2 và KOSPI phiên trước trên 6.000.",
+      "voiceText": "Doanh nghiệp Hàn Quốc lạc quan trở lại sau hơn bốn năm. Nhưng thị trường có đang tăng quá nhanh? Hôm nay, KCI chọn ba điểm quan trọng: khảo sát mới của Ngân hàng Trung ương Hàn Quốc, lịch báo cáo của Samsung Electronics, và mức đóng cửa KOSPI đã được đối chiếu lại. Chúng ta sẽ tách rõ số liệu thực tế, dự báo và góc nhìn thị trường.",
+      "source": "BOK qua Yonhap 29/10; Newsis KRX 28/10",
+      "sourceIds": [
+        "bok-survey",
+        "krx-close"
+      ],
+      "stats": [
+        {
+          "label": "CBSI tháng 10",
+          "value": "104,2",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "banner": "TÂM LÝ DOANH NGHIỆP",
+        "qualifier": "29/10 07:57 KST"
+      }
+    },
+    {
+      "id": "cbsi",
+      "eyebrow": "KINH TẾ · BOK",
+      "headline": "CBSI lên 104,2 điểm",
+      "summary": "Tăng 5,1 điểm so tháng trước.",
+      "voiceText": "Sáng hai mươi chín tháng mười, khảo sát do Ngân hàng Trung ương Hàn Quốc công bố cho thấy chỉ số tâm lý doanh nghiệp toàn nền kinh tế tháng mười đạt một trăm linh bốn phẩy hai điểm, tăng năm phẩy một điểm so tháng chín. Đây là mức cao nhất hơn bốn năm, và lần đầu vượt mốc trung bình dài hạn một trăm sau hơn bốn năm. Cần nhớ, đây là khảo sát tâm lý, không phải tăng trưởng GDP hay doanh thu thực tế.",
+      "source": "Yonhap dẫn BOK · 29/10 06:00",
+      "sourceIds": [
+        "bok-survey",
+        "bok-calendar"
+      ],
+      "stats": [
+        {
+          "label": "CBSI toàn ngành",
+          "value": "104,2",
+          "change": "+5,1 điểm",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "104,2",
+        "qualifier": "CBSI tháng 10/2026 · +5,1 điểm so tháng 9"
+      }
+    },
+    {
+      "id": "spread",
+      "eyebrow": "DOANH NGHIỆP · SẢN XUẤT",
+      "headline": "Sức bật lan sang doanh nghiệp nhỏ",
+      "summary": "Chế tạo +6,1; doanh nghiệp nhỏ +11,2 điểm.",
+      "voiceText": "Điểm đáng chú ý là tâm lý ngành chế tạo tăng sáu phẩy một điểm, còn nhóm doanh nghiệp nhỏ tăng mười một phẩy hai điểm. Sức bật từ bán dẫn, ô tô và đóng tàu được cho là lan sang các nhà cung cấp. Tuy nhiên, một phần cải thiện cũng đến từ hiệu ứng nền: tháng chín chịu ảnh hưởng nghỉ lễ và đình công ô tô. Vì vậy, chưa thể kết luận mọi ngành đã hồi phục đồng đều.",
+      "source": "Yonhap/BOK · khảo sát 14–21/10",
+      "sourceIds": [
+        "bok-survey"
+      ],
+      "stats": [
+        {
+          "label": "Chế tạo",
+          "value": "+6,1 điểm",
+          "tone": "up"
+        },
+        {
+          "label": "Doanh nghiệp nhỏ",
+          "value": "+11,2 điểm",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Chế tạo",
+            "value": 6.1,
+            "display": "+6,1 điểm"
+          },
+          {
+            "label": "DN nhỏ",
+            "value": 11.2,
+            "display": "+11,2 điểm"
+          }
+        ],
+        "qualifier": "CBSI tháng 10 so tháng 9"
+      }
+    },
+    {
+      "id": "samsung",
+      "eyebrow": "LỊCH HÔM NAY · SAMSUNG",
+      "headline": "Chờ báo cáo quý III chi tiết",
+      "summary": "Số ngày 08/10 chỉ là hướng dẫn sơ bộ.",
+      "voiceText": "Tiếp theo là Samsung Electronics, dự kiến công bố báo cáo quý ba chi tiết trong sáng nay. Hồi ngày tám tháng mười, doanh nghiệp đã đưa ra số dự kiến: doanh thu hợp nhất khoảng một trăm chín mươi lăm nghìn tỷ won, lợi nhuận hoạt động khoảng một trăm linh bảy phẩy bốn nghìn tỷ won. Đây vẫn là hướng dẫn sơ bộ, chưa phải kết quả chi tiết công bố sáng hai mươi chín. Nhà đầu tư đang chờ lợi nhuận bộ phận bán dẫn, tiến độ HBM và kế hoạch phân bổ vốn.",
+      "source": "Samsung chính thức 08/10; Newsis 29/10",
+      "sourceIds": [
+        "samsung-ir",
+        "samsung-schedule"
+      ],
+      "stats": [
+        {
+          "label": "Lợi nhuận Q3 dự kiến",
+          "value": "~107,4 nghìn tỷ KRW",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "Samsung Electronics",
+        "qualifier": "Hướng dẫn 08/10; báo cáo chi tiết dự kiến 29/10"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG · KRX 28/10",
+      "headline": "KOSPI đóng trên 6.000 điểm",
+      "summary": "6.012,44 điểm; tăng 6,63% phiên trước.",
+      "voiceText": "Còn trên thị trường, KOSPI kết thúc phiên chính KRX ngày hai mươi tám tháng mười tại sáu nghìn không trăm mười hai phẩy bốn bốn điểm, tăng sáu phẩy sáu ba phần trăm. Đây là mức đóng cửa hôm qua, không phải giá giao dịch sáng nay. Số này đã được đối chiếu lại từ nhiều nguồn vì một bảng giá thứ cấp trước đó ghi khác. Đà tăng có đóng góp lớn từ nhóm bán dẫn; kết quả quý ba kỷ lục của SK hynix đã được KCI đưa tin hôm qua.",
+      "source": "Newsis KRX 28/10; Hankyung; SK hynix IR",
+      "sourceIds": [
+        "krx-close",
+        "krx-crosscheck",
+        "skhynix-ir"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · 28/10",
+          "value": "6.012,44",
+          "change": "+6,63%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "6.012,44",
+        "qualifier": "KRX đóng cửa 28/10/2026 · +6,63%"
+      }
+    },
+    {
+      "id": "outlook",
+      "eyebrow": "GÓC NHÌN · KCI",
+      "headline": "Giá tăng không bằng phục hồi đều",
+      "summary": "Phân biệt kỳ vọng doanh nghiệp và dòng tiền thị trường.",
+      "voiceText": "Điều quan trọng là không đánh đồng hai tín hiệu. Tâm lý doanh nghiệp cải thiện cho thấy kỳ vọng tốt hơn, còn giá cổ phiếu tăng mạnh phản ánh giao dịch của một phiên cụ thể. Để đánh giá độ bền, chúng ta cần xem báo cáo chi tiết Samsung có xác nhận lợi nhuận từ bộ nhớ AI hay không, và liệu doanh nghiệp vừa, nhỏ có duy trì được mức cải thiện trong những khảo sát tiếp theo. Đây là những câu hỏi cần dữ liệu, không phải kết luận sẵn.",
+      "source": "BOK/Yonhap; Samsung IR; Newsis KRX",
+      "sourceIds": [
+        "bok-survey",
+        "samsung-ir",
+        "krx-close"
+      ],
+      "stats": [
+        {
+          "label": "CBSI",
+          "value": "104,2",
+          "tone": "up"
+        },
+        {
+          "label": "KOSPI 28/10",
+          "value": "+6,63%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "banner": "TÂM LÝ ≠ LỢI NHUẬN",
+        "qualifier": "Nhận định KCI · không phải khuyến nghị đầu tư"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI TIẾP",
+      "headline": "Phép thử hôm nay",
+      "summary": "Samsung chi tiết Q3; khảo sát doanh nghiệp tháng tới.",
+      "voiceText": "Tóm lại, sáng nay có tin mới từ khảo sát doanh nghiệp; còn kết quả chi tiết Samsung là dữ kiện phải chờ công bố. Mức KOSPI vừa nhắc thuộc phiên chính ngày hôm qua, không phải giá hiện hành. KCI sẽ tiếp tục phân biệt số thực tế, dự báo và nhận định để mọi người dễ theo dõi.",
+      "source": "BOK qua Yonhap; Samsung; KRX qua Newsis",
+      "sourceIds": [
+        "bok-survey",
+        "samsung-schedule",
+        "krx-close"
+      ],
+      "stats": [
+        {
+          "label": "BOK · tháng 10",
+          "value": "CBSI 104,2",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "BOK: tâm lý doanh nghiệp cải thiện",
+          "Samsung: chờ chi tiết quý III",
+          "KOSPI: phiên 28/10, không phải live"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
