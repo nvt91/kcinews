@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-28-kr-mid",
+  "edition": "KR_MID — Bản tin bổ sung 28/10/2026",
+  "dataAsOf": "2026-10-28T12:28:44+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "SK hynix quý III lợi nhuận kỷ lục 83,33 nghìn tỷ won, công bố kế hoạch hoàn trả cổ đông",
+  "sourceDisclaimer": "Số liệu sơ bộ K-IFRS Q3/2026 công bố 28/10, chưa kiểm toán; 100 nghìn tỷ won hoàn trả cổ đông gồm chương trình đã công bố trước. Không phải khuyến nghị đầu tư.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_MID",
+    "format": "digest",
+    "articleId": "KCI-20261028-KR-MID",
+    "articlePath": "editorial/2026-10-28/kr-mid.md",
+    "eventKeys": [
+      "000660-SK-HYNIX|Q3-2026-EARNINGS-RECORD|2026-10-28",
+      "000660-SK-HYNIX|2026-SHAREHOLDER-RETURN-PLAN|2026-10-28"
+    ],
+    "gate": "PASS: New official preliminary Q3 actual and 2026 shareholder returns disclosed after KR_AM cutoff 08:04 KST, material to valuation and chip industry; not in morning.",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render full voiced MP4 for owner review, no auto-post",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "limitations": [
+      "Actual result after KR_AM 08:04 cutoff; no reuse of KR_AM pre-release conjecture as current fact.",
+      "Q3 figures are preliminary K-IFRS and may change after audit.",
+      "Main runner has approximate caption timing; no proven ±2-frame Whisper alignment or -14 LUFS/true-peak pass."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "skh-official-q3",
+      "title": "SK hynix official Q3 2026 financial results, 28 October 2026",
+      "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T12:28:44+09:00",
+      "kind": "primary",
+      "facts": [
+        "Preliminary consolidated K-IFRS Q3 revenue 104.6155 trillion won, operating profit 83.3338 trillion won, net profit 39.7756 trillion won, operating margin 80%.",
+        "Quarter-on-quarter revenue +32%, operating profit +38%; Q2 operating profit 60.5426 trillion won.",
+        "Company expects HBM4 to be mainstream in Q4 and states long-term agreements cover more than half of 2027–2028 capacity.",
+        "Company targets approximately 100 trillion won total shareholder returns in 2026 including 40 trillion won buyback announced in August, not 100 trillion newly announced."
+      ]
+    },
+    {
+      "id": "yonhap-q3",
+      "title": "Yonhap 28 Oct 2026 08:29 KST, SK hynix preliminary Q3 filing",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261028028000527",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T12:28:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Yonhap reports Q3 operating profit 83.3338 trillion won, revenue 104.6155 trillion won, net profit 39.7756 trillion won.",
+        "Yonhap Infomax consensus operating profit was 76.2605 trillion won; actual was 9.3% higher."
+      ]
+    },
+    {
+      "id": "reuters-q3",
+      "title": "Reuters 28 Oct 2026, SK hynix Q3 and shareholder return program",
+      "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-q3-profit-jumps-more-than-7-fold-beats-forecasts-2026-10-27/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-28T12:28:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters reports quarterly profit above expectations, 2026 shareholder return plan and demand for AI memory.",
+        "Shareholder return plan includes existing programs; shares' intraday price moves are not needed for this episode."
+      ]
+    },
+    {
+      "id": "skh-ir-calendar",
+      "title": "SK hynix IR conference call invitation published 21 Oct for 28 Oct 2026",
+      "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+      "eventDate": "2026-10-21",
+      "checkedAt": "2026-10-28T12:28:44+09:00",
+      "kind": "primary",
+      "facts": [
+        "Company scheduled earnings announcement before 09:00 KST and investor call at 09:00 KST on 28 Oct; morning KCI cutoff 08:04 lacked results."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "SK hynix vừa báo lợi nhuận quý ba hơn tám mươi ba nghìn tỷ won. Con số này nói gì về cuộc đua chip AI?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "SK hynix vừa báo lợi nhuận quý ba hơn tám mươi ba nghìn tỷ won. Con số này nói gì về cuộc đua chip AI?",
+        "score": 47
+      },
+      {
+        "style": "investor-impact",
+        "text": "SK hynix lãi kỷ lục và công bố kế hoạch hoàn trả cổ đông. Nhà đầu tư nên chú ý điều gì?",
+        "score": 45
+      },
+      {
+        "style": "question",
+        "text": "Lợi nhuận SK hynix tăng mạnh, nhưng đầu tư nhà máy cũng sẽ lớn hơn. Dòng tiền có theo kịp?",
+        "score": 44
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều đáng theo dõi nhất là nhu cầu chip AI hay dòng tiền sau các khoản đầu tư lớn? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "ĐIỀU GÌ QUAN TRỌNG NHẤT?",
+    "screenSubline": "Nhu cầu HBM · đầu tư · dòng tiền",
+    "question": "Điều đáng theo dõi nhất là nhu cầu chip AI hay dòng tiền sau các khoản đầu tư lớn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN TIN BỔ SUNG · 28/10",
+      "headline": "SK hynix: lợi nhuận kỷ lục",
+      "summary": "SK hynix: lợi nhuận kỷ lục. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "SK hynix vừa báo lợi nhuận quý ba hơn tám mươi ba nghìn tỷ won. Con số này nói gì về cuộc đua chip AI? Số liệu mới được công bố sau bản tin sáng, và vượt kỳ vọng thị trường. Nhưng điều đáng chú ý không chỉ là lợi nhuận.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3",
+        "yonhap-q3"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "83,33 nghìn tỷ ₩",
+        "unit": "Lợi nhuận hoạt động Q3/2026",
+        "qualifier": "Sơ bộ K-IFRS · SK hynix, công bố 28/10"
+      },
+      "stats": [
+        {
+          "label": "Lợi nhuận hoạt động",
+          "value": "83,33 nghìn tỷ ₩"
+        }
+      ]
+    },
+    {
+      "id": "earnings",
+      "eyebrow": "KẾT QUẢ · QUÝ III",
+      "headline": "Doanh thu vượt 100 nghìn tỷ",
+      "summary": "Doanh thu vượt 100 nghìn tỷ. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "SK hynix ghi nhận doanh thu quý ba hơn một trăm linh bốn nghìn tỷ won, lần đầu vượt mốc một trăm nghìn tỷ trong một quý. Lợi nhuận hoạt động đạt tám mươi ba phẩy ba ba nghìn tỷ won, cao hơn dự báo khoảng chín phần trăm. Đây là số sơ bộ, chưa phải báo cáo đã kiểm toán.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3",
+        "yonhap-q3"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Doanh thu Q3",
+            "display": "104,62 nghìn tỷ ₩",
+            "value": 104.62
+          },
+          {
+            "label": "Lợi nhuận Q3",
+            "display": "83,33 nghìn tỷ ₩",
+            "value": 83.33
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Doanh thu Q3",
+          "value": "104,62 nghìn tỷ ₩"
+        },
+        {
+          "label": "Biên lợi nhuận hoạt động",
+          "value": "80%"
+        }
+      ]
+    },
+    {
+      "id": "momentum",
+      "eyebrow": "ĐỘNG LỰC · HBM",
+      "headline": "Lợi nhuận tăng 38% theo quý",
+      "summary": "Lợi nhuận tăng 38% theo quý. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "So với quý trước, doanh thu tăng ba mươi hai phần trăm và lợi nhuận hoạt động tăng ba mươi tám phần trăm. Theo công ty, nhu cầu bộ nhớ cho trí tuệ nhân tạo và các sản phẩm giá trị cao tiếp tục hỗ trợ kết quả. Tuy nhiên, tăng trưởng mạnh không có nghĩa mọi mảng chip đều hưởng lợi như nhau.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Doanh thu QoQ",
+            "display": "+32%",
+            "value": 32
+          },
+          {
+            "label": "Lợi nhuận QoQ",
+            "display": "+38%",
+            "value": 38
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Doanh thu so quý trước",
+          "value": "+32%"
+        },
+        {
+          "label": "Lợi nhuận so quý trước",
+          "value": "+38%"
+        }
+      ]
+    },
+    {
+      "id": "demand",
+      "eyebrow": "HỢP ĐỒNG · NĂNG LỰC",
+      "headline": "Hơn 50% công suất đã có hợp đồng",
+      "summary": "Hơn 50% công suất đã có hợp đồng. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "Một điểm mới khác là SK hynix cho biết đã ký thỏa thuận dài hạn với mười bốn khách hàng lớn, bao phủ hơn một nửa công suất dự kiến cho hai năm hai nghìn không trăm hai mươi bảy và hai nghìn không trăm hai mươi tám. Đây là thông tin công ty công bố, không phải bảo đảm doanh thu hay lợi nhuận tương lai.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": ">50%",
+        "unit": "Công suất 2027–2028",
+        "qualifier": "Hợp đồng dài hạn theo công bố SK hynix 28/10"
+      },
+      "stats": [
+        {
+          "label": "Khách hàng lớn",
+          "value": "14"
+        },
+        {
+          "label": "Công suất theo hợp đồng",
+          "value": ">50%"
+        }
+      ]
+    },
+    {
+      "id": "returns",
+      "eyebrow": "CỔ ĐÔNG · 2026",
+      "headline": "Kế hoạch hoàn trả 100 nghìn tỷ",
+      "summary": "Kế hoạch hoàn trả 100 nghìn tỷ. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "Công ty cũng công bố mục tiêu hoàn trả cổ đông khoảng một trăm nghìn tỷ won trong năm nay, gồm cổ tức và mua lại cổ phiếu. Cần lưu ý con số này bao gồm cả chương trình bốn mươi nghìn tỷ won đã thông báo trước đó, không phải toàn bộ là khoản mới. Cùng lúc, doanh nghiệp dự kiến tăng đầu tư năng lực sản xuất.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3",
+        "reuters-q3"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~100 nghìn tỷ ₩",
+        "unit": "Kế hoạch tổng năm 2026",
+        "qualifier": "Bao gồm 40 nghìn tỷ ₩ mua lại đã công bố tháng 8"
+      },
+      "stats": [
+        {
+          "label": "Hoàn trả cổ đông 2026",
+          "value": "~100 nghìn tỷ ₩"
+        },
+        {
+          "label": "Đã công bố trước",
+          "value": "40 nghìn tỷ ₩"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "Theo dõi dòng tiền và HBM",
+      "summary": "Theo dõi dòng tiền và HBM. Số liệu và bối cảnh được kiểm chứng theo nguồn.",
+      "voiceText": "Nhìn từ góc độ đầu tư, kết quả vượt dự báo củng cố câu chuyện nhu cầu chip AI. Nhưng vẫn cần theo dõi chi tiêu vốn, dòng tiền tự do và khả năng duy trì biên lợi nhuận. Đây là thông tin tham khảo, không phải khuyến nghị mua bán cổ phiếu.",
+      "source": "SK hynix · 28/10/2026",
+      "sourceIds": [
+        "skh-official-q3",
+        "yonhap-q3"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "LỢI NHUẬN VÀ BIÊN",
+          "ĐẦU TƯ VÀ DÒNG TIỀN",
+          "HỢP ĐỒNG HBM"
+        ]
+      },
+      "stats": []
+    }
+  ]
+}
