@@ -25,19 +25,19 @@ C 44/50: Lợi nhuận SK hynix tăng mạnh, nhưng đầu tư nhà máy cũng 
 
 **Editorial score 92/100:** nguồn 34/35, phân tích 24/25, độ mới 15/15, tiếng Việt 12/15, khác biệt 7/10. Trọng tâm: Q3 actual vượt dự báo → nhu cầu HBM/hợp đồng → kế hoạch hoàn trả vốn và rủi ro CapEx. Phân biệt thông tin doanh nghiệp với suy luận KCI.
 
-## Kịch bản (6 cảnh + CTA, 398 từ cách-khoảng-trắng)
+## Kịch bản (6 cảnh + CTA, 316 từ cách-khoảng-trắng)
 
-1. **SK hynix: lợi nhuận kỷ lục** — SK hynix vừa báo lợi nhuận quý ba hơn tám mươi ba nghìn tỷ won. Con số này nói gì về cuộc đua chip AI? Số liệu mới được công bố sau bản tin sáng, và vượt kỳ vọng thị trường. Nhưng điều đáng chú ý không chỉ là lợi nhuận.
+1. **SK hynix: lợi nhuận kỷ lục** — SK hynix vừa báo lợi nhuận quý ba hơn tám mươi ba nghìn tỷ won. Con số này nói gì về cuộc đua chip AI? Đây là kết quả mới công bố sau bản tin sáng, và cao hơn dự báo.
 
-2. **Doanh thu vượt 100 nghìn tỷ** — SK hynix ghi nhận doanh thu quý ba hơn một trăm linh bốn nghìn tỷ won, lần đầu vượt mốc một trăm nghìn tỷ trong một quý. Lợi nhuận hoạt động đạt tám mươi ba phẩy ba ba nghìn tỷ won, cao hơn dự báo khoảng chín phần trăm. Đây là số sơ bộ, chưa phải báo cáo đã kiểm toán.
+2. **Doanh thu vượt 100 nghìn tỷ** — Doanh thu quý ba đạt hơn một trăm linh bốn nghìn tỷ won, lần đầu vượt mốc một trăm nghìn tỷ. Lợi nhuận hoạt động đạt tám mươi ba phẩy ba ba nghìn tỷ won, cao hơn dự báo khoảng chín phần trăm. Đây là số sơ bộ.
 
-3. **Lợi nhuận tăng 38% theo quý** — So với quý trước, doanh thu tăng ba mươi hai phần trăm và lợi nhuận hoạt động tăng ba mươi tám phần trăm. Theo công ty, nhu cầu bộ nhớ cho trí tuệ nhân tạo và các sản phẩm giá trị cao tiếp tục hỗ trợ kết quả. Tuy nhiên, tăng trưởng mạnh không có nghĩa mọi mảng chip đều hưởng lợi như nhau.
+3. **Lợi nhuận tăng 38% theo quý** — So với quý trước, doanh thu tăng ba mươi hai phần trăm, lợi nhuận hoạt động tăng ba mươi tám phần trăm. SK hynix cho biết nhu cầu chip nhớ AI và sản phẩm giá trị cao đang hỗ trợ kết quả, nhưng không có nghĩa mọi dòng chip đều tăng giống nhau.
 
-4. **Hơn 50% công suất đã có hợp đồng** — Một điểm mới khác là SK hynix cho biết đã ký thỏa thuận dài hạn với mười bốn khách hàng lớn, bao phủ hơn một nửa công suất dự kiến cho hai năm hai nghìn không trăm hai mươi bảy và hai nghìn không trăm hai mươi tám. Đây là thông tin công ty công bố, không phải bảo đảm doanh thu hay lợi nhuận tương lai.
+4. **Hơn 50% công suất đã có hợp đồng** — Đáng chú ý, công ty đã ký thỏa thuận dài hạn với mười bốn khách hàng, bao phủ hơn một nửa công suất dự kiến cho hai năm hai nghìn không trăm hai mươi bảy và hai nghìn không trăm hai mươi tám. Đây chưa phải doanh thu đã ghi nhận.
 
-5. **Kế hoạch hoàn trả 100 nghìn tỷ** — Công ty cũng công bố mục tiêu hoàn trả cổ đông khoảng một trăm nghìn tỷ won trong năm nay, gồm cổ tức và mua lại cổ phiếu. Cần lưu ý con số này bao gồm cả chương trình bốn mươi nghìn tỷ won đã thông báo trước đó, không phải toàn bộ là khoản mới. Cùng lúc, doanh nghiệp dự kiến tăng đầu tư năng lực sản xuất.
+5. **Kế hoạch hoàn trả 100 nghìn tỷ** — SK hynix cũng đặt mục tiêu hoàn trả cổ đông khoảng một trăm nghìn tỷ won trong năm hai nghìn không trăm hai mươi sáu. Con số này bao gồm chương trình bốn mươi nghìn tỷ đã công bố trước đó. Công ty đồng thời dự kiến tăng đầu tư nhà máy.
 
-6. **Theo dõi dòng tiền và HBM** — Nhìn từ góc độ đầu tư, kết quả vượt dự báo củng cố câu chuyện nhu cầu chip AI. Nhưng vẫn cần theo dõi chi tiêu vốn, dòng tiền tự do và khả năng duy trì biên lợi nhuận. Đây là thông tin tham khảo, không phải khuyến nghị mua bán cổ phiếu.
+6. **Theo dõi dòng tiền và HBM** — Vì thế, bên cạnh lợi nhuận kỷ lục, hãy theo dõi chi tiêu vốn, dòng tiền và khả năng duy trì biên lợi nhuận. Các số quý ba vẫn là sơ bộ, không phải khuyến nghị mua bán.
 
 **CTA đọc một lần:** Theo anh chị, điều đáng theo dõi nhất là nhu cầu chip AI hay dòng tiền sau các khoản đầu tư lớn? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.
 
