@@ -153,18 +153,6 @@
       "deltaFrames": "NOT_MEASURED"
     },
     {
-      "id": "beat-13",
-      "sceneId": "fed-korea",
-      "trigger": "quyết định lãi suất Fed",
-      "keyword": "Fed chưa công bố",
-      "label": "Fed chưa công bố",
-      "value": "28/10 MỸ",
-      "context": "Chưa kết quả tại cutoff",
-      "kind": "fact",
-      "timingStatus": "PLANNED_UNTIMED",
-      "deltaFrames": "NOT_MEASURED"
-    },
-    {
       "id": "beat-14",
       "sceneId": "fed-korea",
       "trigger": "Microsoft và Alphabet",
@@ -172,18 +160,6 @@
       "label": "Big Tech báo cáo",
       "value": "MICROSOFT / ALPHABET",
       "context": "Chưa có Q3 công bố tại cutoff",
-      "kind": "fact",
-      "timingStatus": "PLANNED_UNTIMED",
-      "deltaFrames": "NOT_MEASURED"
-    },
-    {
-      "id": "beat-15",
-      "sceneId": "fed-korea",
-      "trigger": "KOSPI và KOSDAQ",
-      "keyword": "Tác động Hàn",
-      "label": "Tác động Hàn",
-      "value": "CHIP / USD-KRW",
-      "context": "Kịch bản có điều kiện",
       "kind": "fact",
       "timingStatus": "PLANNED_UNTIMED",
       "deltaFrames": "NOT_MEASURED"
