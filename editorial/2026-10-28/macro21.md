@@ -34,7 +34,7 @@ Với Hàn Quốc, dầu cao kéo dài có thể làm tăng chi phí nhập kh�
 
 **4. BOK giữ 3,00%** · nguồn bok-policy-1022, bok-assessment-1026
 
-BOK đã giữ lãi suất cơ bản ba phần trăm ngày hai mươi hai tháng mười. Ngân hàng trung ương vẫn lo áp lực chi phí truyền sang lạm phát. Dầu tăng không có nghĩa lãi suất chắc chắn tăng.
+BOK đã giữ lãi suất cơ bản ba phần trăm ngày hai mươi hai tháng mười. Ngân hàng trung ương vẫn lo áp lực chi phí truyền sang lạm phát. Dầu tăng không tự động dẫn tới quyết định nâng lãi suất.
 
 **5. Fed chưa công bố** · nguồn fed-calendar-1028
 
