@@ -139,7 +139,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "KOSPI vừa tăng hơn sáu phần trăm, áp sát mốc sáu nghìn điểm. Nhưng đà hồi này dựa vào điều gì? Sau phiên phục hồi hôm qua, thị trường Hàn Quốc tiếp tục tăng mạnh trong ngày hai mươi tám tháng mười. Tâm điểm là kết quả kinh doanh ngành chip và kỳ vọng dòng tiền quay lại cổ phiếu công nghệ. Nhưng đừng chỉ nhìn vào một con số tăng giá: chúng ta cần phân biệt điều đã xảy ra với triển vọng còn phải kiểm chứng.",
+      "voiceText": "KOSPI vừa tăng hơn sáu phần trăm, áp sát mốc sáu nghìn điểm. Nhưng đà hồi này dựa vào điều gì? Phiên hai mươi tám tháng mười, thị trường Hàn tăng mạnh nhờ kỳ vọng lợi nhuận chip AI. Tuy vậy, một phiên tăng chưa đủ xác nhận xu hướng dài hạn.",
       "visual": {
         "kind": "spotlight",
         "value": "+6,37%",
@@ -168,7 +168,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "KOSPI kết thúc phiên chính ở năm nghìn chín trăm chín mươi bảy phẩy hai bảy điểm, tăng sáu phẩy ba bảy phần trăm so với hôm qua. Reuters cũng ghi nhận mức tăng hơn sáu phần trăm. Đây là kết quả đóng cửa trên sàn KRX, không cộng với giao dịch NXT ngoài giờ. Riêng số liệu KOSDAQ giữa các bảng tra cứu chưa khớp tại mốc biên tập, nên bản tin không đưa một mức đóng cửa chưa được đối chiếu.",
+      "voiceText": "KOSPI đóng cửa phiên chính KRX ở năm nghìn chín trăm chín mươi bảy phẩy hai bảy điểm, tăng sáu phẩy ba bảy phần trăm so với hôm qua. Reuters cũng xác nhận chỉ số tăng hơn sáu phần trăm. Đây là kết quả KRX, không cộng giao dịch NXT ngoài giờ. Số liệu KOSDAQ chưa được đối chiếu thống nhất nên không nêu mức cụ thể.",
       "visual": {
         "kind": "spotlight",
         "value": "5.997,27",
@@ -192,7 +192,7 @@
           "tone": "up"
         }
       ],
-      "voiceText": "Động lực đáng chú ý là SK hynix. Báo cáo sơ bộ quý ba cho thấy lợi nhuận hoạt động đạt tám mươi ba phẩy ba ba nghìn tỷ won, tăng ba mươi tám phần trăm so với quý trước. Số liệu này đã được KCI đưa trong bản tin trưa, nên bản chiều không xem đây là một công bố mới. Điều mới cần quan sát là phản ứng giá cổ phiếu và mức độ thị trường tin vào khả năng duy trì lợi nhuận chip AI trong các quý tới.",
+      "voiceText": "SK hynix là tâm điểm. Lợi nhuận hoạt động quý ba sơ bộ đạt tám mươi ba phẩy ba ba nghìn tỷ won, tăng ba mươi tám phần trăm so quý trước. KCI đã đưa tin này ở bản trưa. Điểm đáng theo dõi sau phiên là liệu đà tăng cổ phiếu có đi cùng triển vọng nhu cầu HBM và dòng tiền trong những quý tới.",
       "visual": {
         "kind": "spotlight",
         "value": "83,33 nghìn tỷ ₩",
@@ -220,7 +220,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Ở khía cạnh phân bổ vốn, hội đồng quản trị SK hynix quyết định cổ tức tiền mặt quý ba tổng cộng mười bốn nghìn tỷ won, cùng chương trình mua lại cổ phiếu hai mươi nghìn tỷ won. Tuy nhiên, chỉ một nửa lượng mua lại này dự kiến hủy để hoàn trả cổ đông; phần còn lại phục vụ chế độ đãi ngộ nhân viên. Kế hoạch hoàn trả cổ đông khoảng một trăm nghìn tỷ won cho cả năm cũng bao gồm chương trình cũ, không phải toàn bộ tiền mới.",
+      "voiceText": "Hội đồng quản trị SK hynix quyết định cổ tức quý ba tổng cộng mười bốn nghìn tỷ won và mua lại cổ phiếu hai mươi nghìn tỷ won. Một nửa khoản mua lại dự kiến hủy, phần còn lại dành cho nhân viên. Kế hoạch hoàn trả cổ đông khoảng một trăm nghìn tỷ won năm nay bao gồm cả chương trình đã công bố trước đó, không phải toàn bộ tiền mới.",
       "visual": {
         "kind": "comparison",
         "bars": [
@@ -259,7 +259,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Không chỉ có bán dẫn. LG Electronics công bố doanh thu quý ba hai mươi ba phẩy tám hai nghìn tỷ won và lợi nhuận hoạt động bảy trăm tám mươi mốt phẩy chín tỷ won. Điểm mới là tổng đơn hàng tích lũy cho giải pháp làm mát trung tâm dữ liệu AI vượt ba nghìn tỷ won. Đây là giá trị đơn hàng, chưa phải doanh thu đã ghi nhận. Mảng linh kiện ô tô cũng có quý ba kỷ lục, cho thấy nhu cầu AI đang tạo cơ hội ngoài ngành chip.",
+      "voiceText": "LG Electronics cũng công bố doanh thu quý ba hai mươi ba phẩy tám hai nghìn tỷ won, lợi nhuận hoạt động bảy trăm tám mươi mốt phẩy chín tỷ won. Tổng đơn hàng tích lũy cho hệ thống làm mát trung tâm dữ liệu AI vượt ba nghìn tỷ won. Đây là đơn hàng, chưa phải doanh thu. Mảng linh kiện ô tô cũng ghi nhận kết quả quý ba kỷ lục.",
       "visual": {
         "kind": "company",
         "company": "LG Electronics",
@@ -283,7 +283,7 @@
         "reuters-samsung-outlook"
       ],
       "stats": [],
-      "voiceText": "Tóm lại, phiên tăng mạnh phản ánh sự trở lại của kỳ vọng vào lợi nhuận AI, nhưng không bảo đảm mọi doanh nghiệp đều hưởng lợi như nhau. Ngày mai, báo cáo chi tiết của Samsung sẽ là một phép thử tiếp theo. Với KCI, cần theo dõi cả dòng tiền, chi phí đầu tư và khả năng chuyển đơn hàng thành lợi nhuận, thay vì kết luận chỉ từ một phiên tăng.",
+      "voiceText": "Như vậy, đà hồi đang được hỗ trợ bởi kết quả kinh doanh thực tế, nhưng triển vọng vẫn phụ thuộc chi tiêu AI và chi phí vốn. Báo cáo chi tiết Samsung dự kiến ngày mai sẽ là phép thử tiếp theo. Hãy quan sát lợi nhuận và dòng tiền, thay vì kết luận chỉ từ một phiên tăng.",
       "visual": {
         "kind": "closing",
         "bullets": [
