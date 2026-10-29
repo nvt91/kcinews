@@ -1,0 +1,13 @@
+{
+  "job": "kci-2026-10-29-kr-am",
+  "status": "REVIEW_REQUIRED",
+  "mode": "video",
+  "voicePresent": true,
+  "subtitles": "Whisper alignment: 4 aligned, 1 proportional fallback",
+  "ctaIncluded": true,
+  "composition": "KciNewsDaily",
+  "published": false,
+  "fallbackScenes": 1,
+  "vbeeCharacters": 1840,
+  "note": "do not copy https://example.invalid/not-a-callback canary-not-for-comment"
+}
