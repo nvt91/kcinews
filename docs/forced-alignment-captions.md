@@ -25,10 +25,10 @@ Chưa đo lại MP3. Các cơ chế sau đủ lớn để giải thích mức Wa
 
 ## Cách bật
 
-Cờ mặc định tắt. Không tải model và không gọi Whisper.
+Script cục bộ vẫn tắt cho đến khi có `KCI_ALIGN_CAPTIONS=1` hoặc `--align-captions`. Job `render` trên Actions thì khác: nếu biến repository `KCI_ALIGN_CAPTIONS` không được đặt, workflow gán `1` để nhánh PR căn phụ đề mà không sửa cấu hình repo. Nếu biến đã có giá trị, kể cả `0`, workflow giữ đúng giá trị đó. Khi merge có thể đặt biến thành `0` hoặc đổi lại biểu thức mặc định trong workflow.
 
 - Biến `KCI_ALIGN_CAPTIONS=1` (hoặc `true` / `yes`), hoặc cờ `--align-captions` trên `node scripts/run-job.mjs`.
-- Trên GitHub Actions, biến repository `KCI_ALIGN_CAPTIONS=1` mới chạy bước cài trong job `render`. Giá trị khác hoặc trống được workflow coi là `0`, bước cài bị bỏ qua.
+- Bước cài whisper.cpp có `continue-on-error`. Cài hoặc tải model lỗi thì `run-job.mjs` quay về cue 7 từ và job dựng vẫn chạy tiếp.
 - Binary: `whisper-cli` (whisper.cpp) hoặc `whisper` local. Model file qua `KCI_WHISPER_MODEL`. Workflow khi được bật tải `ggml-base.bin` vào `~/.cache/kci-whisper/` và đặt `KCI_WHISPER_BIN`.
 - Bảng dung lượng của whisper.cpp, không đo trên máy này: tiny khoảng 75 MiB, base khoảng 142 MiB, small khoảng 466 MiB, medium khoảng 1,5 GiB. Workflow dùng base.
 - Thời gian cài và thời gian nhận dạng: chưa đo, vì test cục bộ không tải model và không chạy bước cài. Khi cờ bật, job `render` thêm một lần biên dịch whisper.cpp và một lần tải khoảng 142 MiB trước bước dựng hiện có.

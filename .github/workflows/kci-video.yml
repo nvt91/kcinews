@@ -102,7 +102,10 @@ jobs:
       VBEE_VOICE_CODE: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc
       VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
       VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS || 'vbee-studio2-3.s3.ap-southeast-1.amazonaws.com' }}
-      KCI_ALIGN_CAPTIONS: ${{ vars.KCI_ALIGN_CAPTIONS || '0' }}
+      # Unset repo variable defaults to 1 so this PR branch can align captions
+      # without changing repository settings. Set KCI_ALIGN_CAPTIONS to 0 to
+      # force the old 7-word cues. Revisit this default when merging.
+      KCI_ALIGN_CAPTIONS: ${{ vars.KCI_ALIGN_CAPTIONS || '1' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -122,6 +125,7 @@ jobs:
         run: node scripts/check-worker.mjs
       - name: Install offline whisper.cpp only when caption alignment is enabled
         if: env.KCI_ALIGN_CAPTIONS == '1'
+        continue-on-error: true
         run: |
           set -euo pipefail
           sudo apt-get update -qq
@@ -141,7 +145,7 @@ jobs:
           fi
           echo "KCI_WHISPER_BIN=whisper-cli" >> "$GITHUB_ENV"
           echo "KCI_WHISPER_MODEL=$HOME/.cache/kci-whisper/ggml-base.bin" >> "$GITHUB_ENV"
-          echo "Upstream whisper.cpp table lists ggml-base at about 142 MiB. This step is skipped when KCI_ALIGN_CAPTIONS is 0."
+          echo "Upstream whisper.cpp table lists ggml-base at about 142 MiB. If this step fails, run-job keeps the 7-word cues and the render continues."
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - name: Preserve audio and review artifacts even if a later render step fails
