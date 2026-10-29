@@ -63,6 +63,10 @@ jobs:
         continue-on-error: true
         run: node scripts/check-worker.mjs
       - run: node scripts/run-job.mjs --mode=validate
+      - name: Notify script offline checks
+        run: |
+          node --check scripts/notify-render.mjs
+          node scripts/test-notify-render.mjs
       - name: Test legacy KCI and data-driven daily story frames
         run: |
           mkdir -p out
@@ -120,6 +124,7 @@ jobs:
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - name: Preserve audio and review artifacts even if a later render step fails
+        id: upload-review
         uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -130,15 +135,19 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Record Actions run on the requesting issue
-        if: ${{ always() && github.event_name == 'issues' }}
+      - name: Notify when render finishes (review only, no publish)
+        if: always()
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          KCI_EVENT_NAME: ${{ github.event_name }}
           KCI_ISSUE: ${{ github.event.issue.number }}
           KCI_REPO: ${{ github.repository }}
           KCI_RUN_ID: ${{ github.run_id }}
+          KCI_RUN_ATTEMPT: ${{ github.run_attempt }}
           KCI_RESULT: ${{ job.status }}
-        run: |
-          gh issue comment "$KCI_ISSUE" --repo "$KCI_REPO" \
-            --body "KCI_ACTIONS_RUN:$KCI_RUN_ID | Result: $KCI_RESULT | https://github.com/$KCI_REPO/actions/runs/$KCI_RUN_ID — Review-only artifact; do not auto-publish."
+          KCI_SERVER_URL: ${{ github.server_url }}
+          KCI_ARTIFACT_URL: ${{ steps.upload-review.outputs.artifact-url }}
+          KCI_EDITION: ${{ github.event.issue.title || inputs.job }}
+          KCI_JOB: ${{ inputs.job }}
+        run: node scripts/notify-render.mjs
