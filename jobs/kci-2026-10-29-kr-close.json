@@ -160,7 +160,7 @@
       "eyebrow": "THỊ TRƯỜNG · KRX",
       "headline": "KOSPI mất mốc 6.000 trong phiên",
       "summary": "Không đưa mức đóng cửa chưa được đối chiếu.",
-      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay không giữ được mốc sáu nghìn điểm trong giao dịch chính. Reuters ghi nhận thị trường đảo chiều giảm khi Samsung bị bán. Các bảng giá thứ cấp đang lệch nhau về số điểm cuối phiên, nên bản tin này không công bố con số đóng cửa chưa xác minh, và không gộp giao dịch NXT.",
+      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay rơi trở lại dưới mốc sáu nghìn điểm trong giao dịch chính. Reuters ghi nhận thị trường đảo chiều khi Samsung giảm giá. Do các bảng số đóng cửa chưa khớp nhau, bản tin không đưa mức điểm cuối phiên hoặc cộng dữ liệu NXT.",
       "sourceIds": [
         "market-reuters",
         "samsung-reuters"
@@ -184,7 +184,7 @@
       "eyebrow": "PHẢN ỨNG SAU BÁO CÁO",
       "headline": "Samsung: lợi nhuận không đủ",
       "summary": "Tin mới: phản ứng giá sau công bố sáng.",
-      "voiceText": "Samsung công bố lợi nhuận hoạt động quý ba một trăm linh bảy phẩy bốn nghìn tỷ won, nhưng số này đã có trong báo cáo sơ bộ và bản tin trưa. Điểm mới là phản ứng của nhà đầu tư: cổ phiếu có lúc giảm hơn sáu phần trăm trong ngày. Theo Reuters, thị trường thất vọng vì kế hoạch hoàn trả cổ đông cụ thể còn phải chờ đến tháng một năm sau.",
+      "voiceText": "Samsung công bố lợi nhuận quý ba một trăm linh bảy phẩy bốn nghìn tỷ won, đã được nhắc trong bản tin trưa. Điểm mới là cổ phiếu có lúc giảm sáu phẩy hai phần trăm trong phiên. Reuters cho rằng nhà đầu tư thất vọng vì kế hoạch hoàn trả cổ đông cụ thể phải chờ đến tháng một.",
       "sourceIds": [
         "samsung-primary",
         "samsung-reuters"
@@ -208,7 +208,7 @@
       "eyebrow": "HYUNDAI · KẾT QUẢ Q3",
       "headline": "Lãi hoạt động tăng, doanh thu giảm",
       "summary": "Báo cáo mới 14:30 KST ngày 29/10.",
-      "voiceText": "Chiều nay Hyundai công bố lợi nhuận hoạt động quý ba hai phẩy sáu tám nghìn tỷ won, tăng năm phẩy năm phần trăm so với cùng kỳ. Nhưng doanh thu giảm ba phẩy bốn phần trăm, còn lợi nhuận ròng giảm hơn hai mươi bốn phần trăm. Sản lượng bán buôn toàn cầu giảm hơn mười một phần trăm, do gián đoạn sản xuất và ít ngày làm việc hơn.",
+      "voiceText": "Chiều nay Hyundai công bố lợi nhuận hoạt động quý ba hai phẩy sáu tám nghìn tỷ won, tăng năm phẩy năm phần trăm cùng kỳ. Nhưng doanh thu giảm ba phẩy bốn phần trăm và lợi nhuận ròng giảm hơn hai mươi bốn phần trăm. Sản lượng bán buôn toàn cầu cũng giảm hơn mười một phần trăm.",
       "sourceIds": [
         "hyundai-official",
         "hyundai-reuters"
@@ -248,7 +248,7 @@
       "eyebrow": "Ô TÔ · TRIỂN VỌNG",
       "headline": "Hyundai hạ mục tiêu 2026",
       "summary": "Dự báo mới, chưa phải kết quả thực hiện.",
-      "voiceText": "Đáng chú ý hơn, Hyundai hạ mục tiêu bán buôn cả năm từ bốn phẩy mười sáu xuống còn bốn triệu xe. Biên lợi nhuận hoạt động mục tiêu cũng giảm về năm phẩy năm đến sáu phẩy năm phần trăm. Đây là kế hoạch điều chỉnh, không phải kết quả cả năm đã xảy ra. Xe hybrid vẫn là điểm sáng về cơ cấu bán hàng.",
+      "voiceText": "Hyundai hạ mục tiêu bán buôn cả năm từ bốn phẩy mười sáu xuống bốn triệu xe. Biên lợi nhuận hoạt động mục tiêu giảm còn năm phẩy năm đến sáu phẩy năm phần trăm. Đây là dự báo điều chỉnh, chưa phải kết quả thực tế. Xe hybrid vẫn là điểm sáng.",
       "sourceIds": [
         "hyundai-official"
       ],
@@ -287,7 +287,7 @@
       "eyebrow": "KINH TẾ · XUẤT KHẨU",
       "headline": "Dự báo tăng mạnh, cần đọc kỹ",
       "summary": "Reuters khảo sát, số thực công bố 01/11.",
-      "voiceText": "Ở góc độ vĩ mô, khảo sát chín chuyên gia của Reuters dự báo xuất khẩu Hàn Quốc tháng mười tăng chín mươi ba phẩy hai phần trăm so với cùng kỳ. Nhưng đây mới là dự báo. Tháng này có hai mươi hai ngày làm việc, nhiều hơn hai ngày so với năm ngoái, nên hiệu ứng lịch có thể làm tỷ lệ tăng cao bất thường. Số chính thức dự kiến công bố ngày một tháng mười một.",
+      "voiceText": "Reuters khảo sát chín chuyên gia, dự báo xuất khẩu Hàn Quốc tháng mười tăng chín mươi ba phẩy hai phần trăm cùng kỳ. Nhưng đây chưa phải số thực. Tháng này có hai mươi hai ngày làm việc, nhiều hơn hai ngày so với năm ngoái, khiến tỷ lệ tăng có thể bị khuếch đại. Dữ liệu chính thức dự kiến ra ngày một tháng mười một.",
       "sourceIds": [
         "exports-poll"
       ],
@@ -310,7 +310,7 @@
       "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
       "headline": "Lợi nhuận và kỳ vọng đang lệch nhịp",
       "summary": "Phân biệt số đã công bố và dự báo.",
-      "voiceText": "Nhìn chung, cổ phiếu Samsung giảm dù lợi nhuận cao, Hyundai giữ được lãi hoạt động nhưng hạ mục tiêu bán hàng, còn xuất khẩu được dự báo tăng rất mạnh. Ba câu chuyện cho thấy kỳ vọng và kết quả thực tế không phải lúc nào cũng đi cùng nhau. Hãy theo dõi báo cáo chính thức và phản ứng thị trường thay vì chỉ nhìn một con số.",
+      "voiceText": "Như vậy, Samsung lãi lớn nhưng cổ phiếu vẫn chịu áp lực, Hyundai giữ được lợi nhuận hoạt động nhưng hạ mục tiêu, còn xuất khẩu mới ở mức dự báo. Đừng nhầm kỳ vọng với kết quả thực tế. Hãy theo dõi các báo cáo chính thức.",
       "sourceIds": [
         "samsung-reuters",
         "hyundai-official",
