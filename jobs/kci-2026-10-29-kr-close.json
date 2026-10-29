@@ -6,7 +6,7 @@
   "status": "REVIEW_REQUIRED",
   "template": "KciNewsDaily",
   "headline": "KOSPI giảm sau lợi nhuận Samsung; Hyundai hạ mục tiêu và dự báo xuất khẩu tháng 10",
-  "sourceDisclaimer": "KRX 29 Oct close numerical print NOT VERIFIED due conflicting secondary quote snapshots; omit exact KOSPI/KOSDAQ close and breadth/flows. Reuters intraday Samsung max decline is not closing price. Hyundai Q3 actuals and 2026 guidance differentiated; Reuters October export poll +93.2% is forecast, official 1 Nov. NXT separate. KR_AM/KR_MID Samsung earnings covered; this video emphasizes post-release market reaction, new Hyundai 14:30 result and export poll.",
+  "sourceDisclaimer": "KRX 29 Oct close recorded from Water-verified KRX/Yonhap figures: KOSPI 5,937.66 (−1.24%), KOSDAQ 753.23 (−2.34%), Samsung Electronics 232,000 won (−4.13%), USD/KRW 1,336.8 at 15:30 KST. Ledger URL for that source is thiếu. Breadth and investor flows still omitted. Reuters morning-session Samsung decline of as much as 6.2% is not the closing price. Hyundai Q3 actuals and 2026 guidance differentiated; Reuters October export poll +93.2% is forecast, official 1 Nov. NXT separate. KR_AM/KR_MID Samsung earnings covered; this video emphasizes post-release market reaction, new Hyundai 14:30 result and export poll.",
   "metadata": {
     "stream": "KR_NEWS",
     "slot": "KR_CLOSE",
@@ -23,8 +23,8 @@
     "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
     "previewVersion": "v1-rendered-review",
     "limitations": [
-      "Exact KRX closing indices and market breadth/flows excluded because live secondary data snapshots conflict; do not infer a precise close.",
-      "Reuters intraday Samsung share drop is explicitly NOT the closing return.",
+      "KRX 29 Oct close uses Water-verified KRX/Yonhap prints; source URL thiếu. Market breadth and investor flows still omitted.",
+      "Reuters morning-session Samsung drop of as much as 6.2% is explicitly NOT the closing return.",
       "Export +93.2% is Reuters survey forecast; official release 1 Nov 09:00 KST.",
       "TTS/motion footage takes/face grade N/A; word alignment, LUFS and beat stills NOT_VERIFIED until measured.",
       "KR_AM and KR_MID 29 Oct Samsung results already covered; focus on reaction and Hyundai after 14:30."
@@ -80,15 +80,17 @@
       ]
     },
     {
-      "id": "market-reuters",
-      "title": "Reuters global markets 29 Oct: KOSPI reversed gains on Samsung weakness",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-29/",
+      "id": "krx-yonhap-close",
+      "title": "KRX/Yonhap đóng cửa phiên 29/10/2026 (Water xác minh)",
+      "url": "thiếu",
       "eventDate": "2026-10-29",
       "checkedAt": "2026-10-29T17:19:45+09:00",
       "kind": "secondary",
       "facts": [
-        "Reuters 29 Oct 11:28 KST snapshot: KOSPI down 1.2% at that time after nearly 7% rise 28 Oct; Samsung down 4% at snapshot.",
-        "KOSPI fell below 6000 intraday after opening at 6017.22; this source is intraday, not final KRX closing print."
+        "KOSPI đóng cửa 29/10/2026: 5.937,66 (−1,24%).",
+        "KOSDAQ đóng cửa 29/10/2026: 753,23 (−2,34%).",
+        "Samsung Electronics đóng cửa 232.000 won (−4,13%).",
+        "USD/KRW 1.336,8 lúc 15:30 KST. URL nguồn: thiếu."
       ]
     },
     {
@@ -99,7 +101,7 @@
       "checkedAt": "2026-10-29T17:19:45+09:00",
       "kind": "secondary",
       "facts": [
-        "Median of nine economists forecasts October exports +93.2% YoY, NOT actual data; official October figures due 1 Nov at 09:00 KST.",
+        "Median of nine economists forecasts October exports +93.2% YoY, NOT actual data; official October figures due 1 Nov.",
         "October has 22 working days vs 20 year earlier; base/calendar effects inflate the annual comparison."
       ]
     }
@@ -140,7 +142,6 @@
       "voiceText": "Samsung lãi kỷ lục, nhưng cổ phiếu lại bị bán mạnh. Trong khi đó, Hyundai vừa hạ mục tiêu cả năm. Thị trường Hàn Quốc đang lo điều gì? Đây là bản tin chiều ngày hai mươi chín tháng mười.",
       "sourceIds": [
         "samsung-reuters",
-        "market-reuters",
         "hyundai-official"
       ],
       "stats": [
@@ -158,57 +159,77 @@
     {
       "id": "market",
       "eyebrow": "THỊ TRƯỜNG · KRX",
-      "headline": "KOSPI mất mốc 6.000 trong phiên",
-      "summary": "Không đưa mức đóng cửa chưa được đối chiếu.",
-      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay rơi trở lại dưới mốc sáu nghìn điểm trong giao dịch chính. Reuters ghi nhận thị trường đảo chiều khi Samsung giảm giá. Do các bảng số đóng cửa chưa khớp nhau, bản tin không đưa mức điểm cuối phiên hoặc cộng dữ liệu NXT.",
+      "headline": "KOSPI đóng cửa 5.937,66",
+      "summary": "Số đóng cửa KRX 29/10 theo Yonhap; URL thiếu.",
+      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay rơi trở lại dưới mốc sáu nghìn điểm trong giao dịch chính. Theo Yonhap và KRX, KOSPI đóng cửa năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm, giảm một phẩy hai bốn phần trăm. KOSDAQ đóng cửa bảy trăm năm mươi ba phẩy hai ba điểm, giảm hai phẩy ba bốn phần trăm. Đô la lúc mười lăm giờ ba mươi là một nghìn ba trăm ba mươi sáu phẩy tám won. Đây là đóng cửa KRX, không gồm NXT.",
       "sourceIds": [
-        "market-reuters",
-        "samsung-reuters"
+        "krx-yonhap-close"
       ],
       "stats": [
         {
-          "label": "Mốc quan trọng",
-          "value": "6.000 điểm",
+          "label": "KOSPI đóng cửa",
+          "value": "5.937,66 (−1,24%)",
           "tone": "down"
+        },
+        {
+          "label": "KOSDAQ đóng cửa",
+          "value": "753,23 (−2,34%)",
+          "tone": "down"
+        },
+        {
+          "label": "USD/KRW 15:30 KST",
+          "value": "1.336,8",
+          "tone": "neutral"
         }
       ],
       "visual": {
         "kind": "spotlight",
-        "value": "< 6.000",
-        "qualifier": "KOSPI dưới mốc 6.000 trong phiên 29/10; KHÔNG phải giá đóng cửa xác nhận"
+        "value": "5.937,66",
+        "qualifier": "KOSPI đóng cửa 29/10 −1,24% · Yonhap/KRX · không gồm NXT"
       },
-      "source": "Reuters 29/10 · diễn biến trong phiên"
+      "source": "Yonhap · KRX · 29/10"
     },
     {
       "id": "samsung",
       "eyebrow": "PHẢN ỨNG SAU BÁO CÁO",
       "headline": "Samsung: lợi nhuận không đủ",
       "summary": "Tin mới: phản ứng giá sau công bố sáng.",
-      "voiceText": "Samsung công bố lợi nhuận quý ba một trăm linh bảy phẩy bốn nghìn tỷ won, đã được nhắc trong bản tin trưa. Điểm mới là cổ phiếu có lúc giảm sáu phẩy hai phần trăm trong phiên. Reuters cho rằng nhà đầu tư thất vọng vì kế hoạch hoàn trả cổ đông cụ thể phải chờ đến tháng một.",
+      "voiceText": "Samsung công bố lợi nhuận quý ba một trăm linh bảy phẩy bốn nghìn tỷ won, đã được nhắc trong bản tin trưa. Điểm mới là cổ phiếu có lúc giảm tới sáu phẩy hai phần trăm trong phiên sáng, theo Reuters. Theo Yonhap và KRX, Samsung đóng cửa ở hai trăm ba mươi hai nghìn won, giảm bốn phẩy một ba phần trăm. Reuters cho rằng nhà đầu tư thất vọng vì kế hoạch hoàn trả cổ đông cụ thể phải chờ đến tháng một.",
       "sourceIds": [
         "samsung-primary",
-        "samsung-reuters"
+        "samsung-reuters",
+        "krx-yonhap-close"
       ],
       "stats": [
         {
-          "label": "Giảm mạnh nhất trong phiên",
+          "label": "giảm tới 6,2% trong phiên sáng (Reuters)",
           "value": "−6,2%",
+          "tone": "down"
+        },
+        {
+          "label": "Samsung đóng cửa KRX",
+          "value": "232.000 ₩",
+          "tone": "down"
+        },
+        {
+          "label": "So với phiên trước",
+          "value": "−4,13%",
           "tone": "down"
         }
       ],
       "visual": {
         "kind": "spotlight",
         "value": "−6,2%",
-        "qualifier": "Mức giảm lớn nhất trong phiên 29/10 theo Reuters; không phải giá đóng cửa"
+        "qualifier": "Giảm tới 6,2% trong phiên sáng (Reuters). Đóng cửa KRX 232.000 won, −4,13%."
       },
-      "source": "Samsung IR · Reuters · 29/10"
+      "source": "Samsung IR · Reuters · Yonhap/KRX · 29/10"
     },
     {
       "id": "hyundai-profit",
       "eyebrow": "HYUNDAI · KẾT QUẢ Q3",
       "headline": "Lãi hoạt động tăng, doanh thu giảm",
       "summary": "Báo cáo mới 14:30 KST ngày 29/10.",
-      "voiceText": "Chiều nay Hyundai công bố lợi nhuận hoạt động quý ba hai phẩy sáu tám nghìn tỷ won, tăng năm phẩy năm phần trăm cùng kỳ. Nhưng doanh thu giảm ba phẩy bốn phần trăm và lợi nhuận ròng giảm hơn hai mươi bốn phần trăm. Sản lượng bán buôn toàn cầu cũng giảm hơn mười một phần trăm.",
+      "voiceText": "Chiều nay Hyundai công bố lợi nhuận hoạt động quý ba hai phẩy sáu tám nghìn tỷ won, tăng năm phẩy năm phần trăm cùng kỳ. Nhưng doanh thu giảm ba phẩy bốn phần trăm và lợi nhuận ròng giảm hơn hai mươi bốn phần trăm. Doanh số bán buôn toàn cầu cũng giảm hơn mười một phần trăm.",
       "sourceIds": [
         "hyundai-official",
         "hyundai-reuters"

@@ -19,6 +19,6 @@ Publication day 29/10, reporting period Q3 ending 30/09. Revenue 195,3tn KRW / p
 3. Question 45/50: Samsung dự kiến hoàn trả cổ đông tới một trăm mười nghìn tỷ won. Bao nhiêu là kế hoạch mới và bao nhiêu đã có?
 
 ## Production
-One 7-scene video, 431 Vietnamese space-delimited words including spoken CTA; estimated runtime ~90–110s subject to actual TTS. Narration Anh Khôi Tin tức, code n_hanoi_male_anhkhoitintuc_zero_shot_news_vc; Remotion KciNewsDaily/schema2. CTA exactly once at end. Caption 30 words incl hashtags: 🇰🇷 Samsung vừa công bố kết quả quý III: mảng chip lãi lớn, còn mảng thiết bị lại lỗ. Cùng xem điều gì đáng chú ý nhé! #KCI #Samsung #ChungKhoanHanQuoc
+One 7-scene video, 429 Vietnamese space-delimited words including spoken CTA; estimated runtime ~90–110s subject to actual TTS. Narration Anh Khôi Tin tức, code n_hanoi_male_anhkhoitintuc_zero_shot_news_vc; Remotion KciNewsDaily/schema2. CTA exactly once at end. Caption 30 words incl hashtags: 🇰🇷 Samsung vừa công bố kết quả quý III: mảng chip lãi lớn, còn mảng thiết bị lại lỗ. Cùng xem điều gì đáng chú ý nhé! #KCI #Samsung #ChungKhoanHanQuoc
 
 No camera footage/takes: N/A. Whisper word sync ±2 frames, silence cuts, beat stills, LUFS/true peak: NOT_MEASURED until real artifact QC. Rendered review MP4 required before owner decision; QC candid; never auto-publish.
