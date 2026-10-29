@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-29-kr-mid",
+  "edition": "KR_MID — Bản tin Hàn Quốc bổ sung 29/10/2026",
+  "dataAsOf": "2026-10-29T11:53:21+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Samsung Q3 chi tiết: chip lãi 106,5 nghìn tỷ won, DX lỗ; kế hoạch hoàn trả cổ đông",
+  "sourceDisclaimer": "Q3 actual vs 08/10 preliminary guidance; DS/DX segment breakdown and shareholder return plan newly disclosed 29/10 after KR_AM 07:57 KST. Full-year payout range and 2027 AI demand are company plans/forecasts, not realized outcomes. No intraday prices.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_MID",
+    "format": "digest",
+    "articleId": "KCI-20261029-KR-MID",
+    "articlePath": "editorial/2026-10-29/kr-mid.md",
+    "eventKeys": [
+      "005930|SAMSUNG-Q3-2026-SEGMENT-DETAILS|2026-10-29",
+      "005930|SAMSUNG-2026-SHAREHOLDER-RETURN-PLAN|2026-10-29"
+    ],
+    "gate": "PASS: Samsung official Q3 segment results and shareholder-return policy disclosed 29 Oct after KR_AM 07:57 cutoff; the morning only had 08 Oct preliminary guidance and the pending detailed announcement. Material earnings concentration, DX loss and capital-allocation outlook.",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render full voiced MP4 for owner review; do not auto-post",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "previewVersion": "v1-rendered-review",
+    "limitations": [
+      "Source publication is dated 29 Oct; exact newsroom minute not exposed; IR call scheduled 10:00 KST, Reuters report 09:56 KST; AM 07:57 only reported upcoming detail.",
+      "2026 shareholder return KRW 90–110tn is company projection, includes previously executed/confirmed KRW 35tn; remaining final allocation due Jan 2027.",
+      "KciNewsDaily renderer uses proportional seven-word captions; Whisper ±2 frames, -14 LUFS and true peak require separate measurement; mark NOT_VERIFIED until tested.",
+      "TTS/motion only: footage take selection, face tracking, camera zoom and color grading N/A.",
+      "No 29 Oct intraday stock price asserted; prior-day KOSPI correction not repeated."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "samsung-kr-q3",
+      "title": "Samsung Newsroom Korea official Q3 2026 detailed results, 29 Oct",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T11:53:21+09:00",
+      "kind": "primary",
+      "facts": [
+        "Q3 consolidated revenue KRW 195.3tn and operating profit KRW 107.4tn; QoQ revenue +14% and operating profit +20%.",
+        "DS Q3 revenue KRW 147.1tn and operating profit KRW 106.5tn; HBM4 sales scaled and server SSD demand robust.",
+        "DX Q3 revenue KRW 52.1tn and operating loss KRW 0.8tn; costs for components and logistics pressured device businesses.",
+        "Q3 cash dividend KRW 4,601 per common/preferred share, total KRW 30tn; full-year estimated shareholder return KRW 90-110tn, not yet all final.",
+        "Already planned/executed shareholder return KRW 35tn; remaining KRW 55-75tn expected, with final plan to be announced by end-Jan 2027.",
+        "2026 expected capital expenditure KRW 84.4tn, of which DS KRW 76.8tn; 2027 memory demand above supply is company outlook, not fact."
+      ]
+    },
+    {
+      "id": "samsung-global-q3",
+      "title": "Samsung Global Newsroom official Q3 2026 results 29 Oct",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T11:53:21+09:00",
+      "kind": "primary",
+      "facts": [
+        "Samsung confirms Q3 revenue KRW 195.3tn, operating profit KRW 107.4tn, DS profit KRW 106.5tn, DX operating loss KRW 0.8tn.",
+        "Memory Business says HBM4 shipments increased and AI infrastructure spending in 2027 could be historically high; forecasts are not realized results."
+      ]
+    },
+    {
+      "id": "reuters-samsung-q3",
+      "title": "Reuters 29 Oct 09:56 KST: Samsung Q3 record profit on AI chip demand",
+      "url": "https://www.reuters.com/world/china/samsung-posts-record-profit-q3-ai-chip-boom-2026-10-29/",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T11:53:21+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters published 00:56 UTC / 09:56 KST: Samsung Q3 operating profit KRW 107.4tn, in line with preliminary guidance, nearly nine times prior-year.",
+        "Investors remain cautious about the sustainability of AI investment; this is market interpretation, not Samsung guidance."
+      ]
+    },
+    {
+      "id": "samsung-ir-schedule",
+      "title": "Samsung IR notice: Q3 2026 detailed earnings conference 29 Oct 10:00 KST",
+      "url": "https://www.samsung.com/sec/ir/reports-disclosures/notices/",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T11:53:21+09:00",
+      "kind": "primary",
+      "facts": [
+        "Samsung investor relations scheduled Q3 2026 earnings conference for 29 Oct at 10:00 KST, after KR_AM cutoff 07:57 KST."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Samsung vừa công bố chi tiết lợi nhuận quý ba hơn một trăm linh bảy nghìn tỷ won. Nhưng có một điểm bất ngờ: mảng chip kiếm gần như toàn bộ lợi nhuận, còn mảng thiết bị lại lỗ.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Samsung vừa công bố chi tiết lợi nhuận quý ba hơn một trăm linh bảy nghìn tỷ won. Nhưng có một điểm bất ngờ: mảng chip kiếm gần như toàn bộ lợi nhuận, còn mảng thiết bị lại lỗ.",
+        "score": 48
+      },
+      {
+        "style": "investor-impact",
+        "text": "Samsung lãi kỷ lục, nhưng mảng thiết bị lại lỗ. Báo cáo chi tiết mới nói gì về chất lượng lợi nhuận?",
+        "score": 47
+      },
+      {
+        "style": "question",
+        "text": "Samsung dự kiến hoàn trả cổ đông tới một trăm mười nghìn tỷ won. Bao nhiêu là kế hoạch mới và bao nhiêu đã có?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điểm đáng theo dõi hơn là sức mạnh mảng chip hay khả năng phục hồi mảng thiết bị? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "CHIP HAY THIẾT BỊ?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Sức mạnh mảng chip hay khả năng phục hồi mảng thiết bị quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "TIN MỚI · 29/10",
+      "headline": "Samsung: lãi kỷ lục, nhưng không đều",
+      "summary": "Báo cáo chi tiết quý III/2026, sau bản tin sáng.",
+      "voiceText": "Samsung vừa công bố chi tiết lợi nhuận quý ba hơn một trăm linh bảy nghìn tỷ won. Nhưng có một điểm bất ngờ: mảng chip kiếm gần như toàn bộ lợi nhuận, còn mảng thiết bị lại lỗ. Đây là thông tin mới sau bản tin sáng, và nó cho thấy hai bộ mặt rất khác nhau trong cùng một tập đoàn.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "samsung-ir-schedule"
+      ],
+      "stats": [
+        {
+          "label": "Lợi nhuận hoạt động Q3",
+          "value": "107,4 nghìn tỷ ₩",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "107,4 nghìn tỷ ₩",
+        "qualifier": "Lợi nhuận hoạt động hợp nhất · Q3/2026 · Samsung 29/10"
+      },
+      "source": "Samsung Newsroom · 29/10/2026"
+    },
+    {
+      "id": "consolidated",
+      "eyebrow": "BÁO CÁO CHI TIẾT",
+      "headline": "Doanh thu tăng, lợi nhuận xác nhận",
+      "summary": "Số chính thức, không nhầm với hướng dẫn 08/10.",
+      "voiceText": "Theo báo cáo chính thức ngày hai mươi chín tháng mười, doanh thu hợp nhất đạt một trăm chín mươi lăm phẩy ba nghìn tỷ won, tăng mười bốn phần trăm so với quý trước. Lợi nhuận hoạt động đạt một trăm linh bảy phẩy bốn nghìn tỷ, tăng hai mươi phần trăm. Con số lợi nhuận đã được dự báo sơ bộ từ đầu tháng; điều mới hôm nay là cơ cấu từng mảng và kế hoạch sử dụng tiền.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "reuters-samsung-q3"
+      ],
+      "stats": [
+        {
+          "label": "Doanh thu Q3",
+          "value": "195,3 nghìn tỷ ₩",
+          "tone": "up"
+        },
+        {
+          "label": "Lợi nhuận Q3",
+          "value": "107,4 nghìn tỷ ₩",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Doanh thu",
+            "value": 195.3,
+            "display": "195,3 nghìn tỷ ₩"
+          },
+          {
+            "label": "Lợi nhuận",
+            "value": 107.4,
+            "display": "107,4 nghìn tỷ ₩"
+          }
+        ],
+        "qualifier": "Q3/2026 · hợp nhất · Samsung IR 29/10"
+      },
+      "source": "Samsung IR · Reuters · 29/10"
+    },
+    {
+      "id": "semiconductor",
+      "eyebrow": "BÁN DẪN · DS",
+      "headline": "Mảng chip tạo lợi nhuận chủ lực",
+      "summary": "DS lãi 106,5 nghìn tỷ won trong quý III.",
+      "voiceText": "Mảng giải pháp thiết bị, tức DS, ghi nhận doanh thu một trăm bốn mươi bảy phẩy một nghìn tỷ won và lợi nhuận hoạt động một trăm linh sáu phẩy năm nghìn tỷ. Samsung cho biết doanh số bộ nhớ HBM4 tăng mạnh, trong khi nhu cầu ổ cứng thể rắn cho máy chủ tiếp tục hỗ trợ kinh doanh. Đây là kết quả đã ghi nhận, không phải chỉ là kỳ vọng về trí tuệ nhân tạo.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "samsung-global-q3"
+      ],
+      "stats": [
+        {
+          "label": "DS doanh thu",
+          "value": "147,1 nghìn tỷ ₩",
+          "tone": "up"
+        },
+        {
+          "label": "DS lợi nhuận",
+          "value": "106,5 nghìn tỷ ₩",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "DS doanh thu",
+            "value": 147.1,
+            "display": "147,1 nghìn tỷ ₩"
+          },
+          {
+            "label": "DS lợi nhuận",
+            "value": 106.5,
+            "display": "106,5 nghìn tỷ ₩"
+          }
+        ],
+        "qualifier": "Samsung DS · Q3/2026 · đơn vị nghìn tỷ KRW"
+      },
+      "source": "Samsung Newsroom · 29/10"
+    },
+    {
+      "id": "device-loss",
+      "eyebrow": "THIẾT BỊ · DX",
+      "headline": "Điện thoại, thiết bị chịu áp lực",
+      "summary": "DX lỗ hoạt động 0,8 nghìn tỷ won.",
+      "voiceText": "Ở chiều ngược lại, mảng trải nghiệm thiết bị, gọi là DX, đạt doanh thu năm mươi hai phẩy một nghìn tỷ won nhưng lỗ hoạt động không phẩy tám nghìn tỷ. Chi phí linh kiện, nguyên liệu và logistics là những sức ép được doanh nghiệp nêu ra. Vì vậy, lợi nhuận kỷ lục của cả tập đoàn không đồng nghĩa mọi mảng kinh doanh đều khỏe.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "samsung-global-q3"
+      ],
+      "stats": [
+        {
+          "label": "DX doanh thu",
+          "value": "52,1 nghìn tỷ ₩",
+          "tone": "neutral"
+        },
+        {
+          "label": "DX lợi nhuận",
+          "value": "−0,8 nghìn tỷ ₩",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "DS lợi nhuận",
+            "value": 106.5,
+            "display": "+106,5 nghìn tỷ ₩"
+          },
+          {
+            "label": "DX lợi nhuận",
+            "value": -0.8,
+            "display": "−0,8 nghìn tỷ ₩"
+          }
+        ],
+        "qualifier": "Lợi nhuận hoạt động Q3/2026 · DS và DX"
+      },
+      "source": "Samsung Newsroom · 29/10"
+    },
+    {
+      "id": "shareholders",
+      "eyebrow": "DÒNG TIỀN · CỔ ĐÔNG",
+      "headline": "Kế hoạch hoàn trả cổ đông lớn",
+      "summary": "Dự kiến 90–110 nghìn tỷ won trong 2026.",
+      "voiceText": "Điểm mới đáng chú ý nữa là chính sách hoàn trả cổ đông. Samsung thông báo cổ tức tiền mặt quý ba là bốn nghìn sáu trăm linh một won mỗi cổ phiếu phổ thông. Tổng hoàn trả cổ đông năm hai nghìn không trăm hai mươi sáu được ước tính trong khoảng chín mươi đến một trăm mười nghìn tỷ won. Đây là tổng dự kiến, bao gồm cả phần đã thực hiện hoặc xác nhận, không phải toàn bộ tiền mới vừa công bố.",
+      "sourceIds": [
+        "samsung-kr-q3"
+      ],
+      "stats": [
+        {
+          "label": "Cổ tức Q3 / cổ phiếu",
+          "value": "4.601 ₩",
+          "tone": "neutral"
+        },
+        {
+          "label": "Hoàn trả 2026 dự kiến",
+          "value": "90–110 nghìn tỷ ₩",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "90–110 nghìn tỷ ₩",
+        "qualifier": "TỔNG hoàn trả cổ đông 2026 dự kiến · chưa chốt toàn bộ"
+      },
+      "source": "Samsung Newsroom · 29/10"
+    },
+    {
+      "id": "outlook",
+      "eyebrow": "TRIỂN VỌNG · 2027",
+      "headline": "AI mạnh, rủi ro vẫn còn",
+      "summary": "Triển vọng doanh nghiệp, không phải kết quả đã xảy ra.",
+      "voiceText": "Samsung dự kiến chi đầu tư cơ sở vật chất tám mươi bốn phẩy bốn nghìn tỷ won trong năm nay. Hãng cũng nhận định nhu cầu chip phục vụ trí tuệ nhân tạo năm sau có thể vượt xa nguồn cung. Nhưng đó là dự báo của doanh nghiệp, còn thị trường phải tiếp tục kiểm tra khả năng duy trì lợi nhuận, chi phí đầu tư và sức khỏe mảng thiết bị. Không nên chỉ nhìn một con số lãi kỷ lục.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "samsung-global-q3"
+      ],
+      "stats": [
+        {
+          "label": "CAPEX 2026 dự kiến",
+          "value": "84,4 nghìn tỷ ₩",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "84,4 nghìn tỷ ₩",
+        "qualifier": "Chi đầu tư cơ sở vật chất 2026 dự kiến · Samsung"
+      },
+      "source": "Samsung Newsroom · 29/10"
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Lợi nhuận có lan rộng không?",
+      "summary": "Tách kết quả thực tế, kế hoạch và dự báo.",
+      "voiceText": "Tóm lại, bản báo cáo chi tiết mới cho thấy mảng chip đang là động lực chính, trong khi thiết bị còn chịu áp lực. Kế hoạch hoàn trả cổ đông lớn là thông tin đáng chú ý, nhưng số tiền cuối cùng sẽ được công bố sau. Điều quan trọng là theo dõi cả chất lượng lợi nhuận và dòng tiền, thay vì chỉ nhìn mức tăng trưởng nổi bật.",
+      "sourceIds": [
+        "samsung-kr-q3",
+        "samsung-global-q3"
+      ],
+      "stats": [
+        {
+          "label": "DS lợi nhuận Q3",
+          "value": "106,5 nghìn tỷ ₩",
+          "tone": "up"
+        },
+        {
+          "label": "DX lợi nhuận Q3",
+          "value": "−0,8 nghìn tỷ ₩",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chip tạo phần lớn lợi nhuận",
+          "DX vẫn chịu áp lực chi phí",
+          "Hoàn trả cổ đông: kế hoạch, chưa chốt hết"
+        ],
+        "cta": true
+      },
+      "source": "Samsung Newsroom · 29/10"
+    }
+  ]
+}
