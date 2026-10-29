@@ -10,7 +10,7 @@ ArticleId KCI-20261029-KR-CLOSE · cutoff 17:19:45 KST · profile KCI_EDIT_20261
 
 **3. Hyundai — tin doanh nghiệp mới lúc 14:30 KST.** Doanh thu quý III 45,11 nghìn tỷ won, giảm 3,4% cùng kỳ; lợi nhuận hoạt động 2,677 nghìn tỷ won, tăng 5,5%; lợi nhuận ròng 1,932 nghìn tỷ won, giảm 24,2%. Doanh số bán buôn toàn cầu giảm 11,3%. Hyundai hạ mục tiêu 2026 từ 4,16 triệu xuống 4 triệu xe, biên lợi nhuận mục tiêu từ 6,3–7,3% về 5,5–6,5%. Đây là *guidance*, không phải số thực cả năm. Nguồn: https://www.hyundai.com/worldwide/en/newsroom/detail/0000001298 ; https://www.reuters.com/business/autos-transportation/hyundai-motor-reports-55-rise-q3-operating-profit-beats-forecasts-2026-10-29/ .
 
-**4. Xuất khẩu — dự báo chưa công bố chính thức.** Khảo sát Reuters công bố 14:21 KST: trung vị 9 nhà kinh tế dự báo xuất khẩu tháng 10 tăng 93,2% cùng kỳ. Tháng này có 22 ngày làm việc, hơn năm trước 2 ngày, nên tỷ lệ tăng chịu ảnh hưởng lịch và nền so sánh. Số chính thức dự kiến ra ngày 01/11; giờ công bố chưa được xác minh. Nguồn: https://www.reuters.com/world/asia-pacific/south-koreas-october-exports-seen-rising-fastest-pace-since-1974-2026-10-29/ .
+**4. Xuất khẩu — dự báo chưa công bố chính thức.** Khảo sát Reuters công bố 14:21 KST: trung vị 9 nhà kinh tế dự báo xuất khẩu tháng 10 tăng 93,2% cùng kỳ. Tháng này có 22 ngày làm việc, hơn năm trước 2 ngày, nên tỷ lệ tăng chịu ảnh hưởng lịch và nền so sánh. Số chính thức dự kiến ra ngày 01/11; giờ phát hành chưa xác minh. Nguồn: https://www.reuters.com/world/asia-pacific/south-koreas-october-exports-seen-rising-fastest-pace-since-1974-2026-10-29/ .
 
 ## Biên tập, chống trùng và dựng
 

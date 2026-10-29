@@ -138,7 +138,7 @@
     },
     {
       "id": "shinhan-hankyung",
-      "title": "Hankyung: Shinhan Investment researcher on Samsung shares after Q3 results",
+      "title": "Hankyung: Shinhan Investment researcher on Samsung shares after Q3 results (per Water)",
       "url": "https://www.hankyung.com/article/2026102939116",
       "eventDate": "2026-10-29",
       "checkedAt": "2026-10-29T17:53:00+09:00",
@@ -156,8 +156,9 @@
       "checkedAt": "2026-10-29T17:19:45+09:00",
       "kind": "secondary",
       "facts": [
-        "Median of nine economists forecasts October exports +93.2% YoY, NOT actual data; official October figures due 1 Nov.",
-        "October has 22 working days vs 20 year earlier; base/calendar effects inflate the annual comparison."
+        "Median of nine economists (Reuters poll) forecasts October exports +93.2% YoY, NOT actual data; official October figures due on 1 Nov (release time not verified).",
+        "October has 22 working days vs 20 year earlier; base/calendar effects inflate the annual comparison.",
+        "Official October export figures are due on 1 Nov (time of release not verified)."
       ]
     }
   ],
