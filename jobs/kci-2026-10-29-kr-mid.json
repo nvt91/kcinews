@@ -83,6 +83,16 @@
       ]
     }
   ],
+  "rightsNotes": [
+    {
+      "item": "Giọng Vbee Anh Khôi",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    },
+    {
+      "item": "Nhạc nền",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    }
+  ],
   "hook": {
     "spoken": "Samsung vừa công bố báo cáo quý ba: lợi nhuận hoạt động một trăm linh bảy phẩy bốn nghìn tỷ won. Nhưng mảng chip tạo gần hết lợi nhuận, còn mảng thiết bị lại lỗ.",
     "candidates": [

@@ -14,6 +14,6 @@ ArticleId KCI-20261029-KR-CLOSE · cutoff 17:19:45 KST · profile KCI_EDIT_20261
 
 ## Biên tập, chống trùng và dựng
 
-Chọn ba cụm: phản ứng thị trường/Samsung, Hyundai, dự báo xuất khẩu. Đã đọc KR_AM 07:57, KR_MID 11:53, jobs/issues/runs 23–29/10; không lặp lại Samsung như một báo cáo mới. Hook tương phản được chấm 48/50, hai phương án còn lại 46/50 và 45/50. Điểm biên tập 89/100: nguồn 34, logic 23, tính mới 15, ngôn ngữ 11, chống trùng 6. Kịch bản 475 từ kể cả CTA, một MP4 Anh Khôi Tin tức, Remotion schema2. Camera/takes N/A; Whisper, loudness, cuts, ảnh beat NOT_MEASURED trước render. Không tự đăng.
+Chọn ba cụm: phản ứng thị trường/Samsung, Hyundai, dự báo xuất khẩu. Đã đọc KR_AM 07:57, KR_MID 11:53, jobs/issues/runs 23–29/10; không lặp lại Samsung như một báo cáo mới. Hook tương phản được chấm 48/50, hai phương án còn lại 46/50 và 45/50. Điểm biên tập 89/100: nguồn 34, logic 23, tính mới 15, ngôn ngữ 11, chống trùng 6. Kịch bản 475 từ kể cả CTA, một MP4 Anh Khôi Tin tức, Remotion schema2. Giấy phép giọng Vbee Anh Khôi và nhạc nền: anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ. Không có URL trong repo. Camera/takes N/A; Whisper, loudness, cuts, ảnh beat NOT_MEASURED trước render. Không tự đăng.
 
 **Caption (<50 từ):** 🇰🇷 Samsung lãi kỷ lục nhưng cổ phiếu giảm, Hyundai lại hạ mục tiêu cả năm. Theo bạn, thị trường đang lo điều gì hơn? #KCI #ChungKhoanHanQuoc

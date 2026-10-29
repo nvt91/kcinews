@@ -161,10 +161,12 @@ if (mode !== "validate") {
     String(i+1)+"\n"+timecode(cue.from)+" --> "+timecode(cue.to)+"\n"+cue.text+"\n"
   ).join("\n"),"utf8");
   if(dailyJob) {
-    fs.writeFileSync(path.join(out,"source-ledger.json"),JSON.stringify({
+    const ledgerOut = {
       dataAsOf:job.dataAsOf,status:job.status,sourceLedger:job.sourceLedger,
       hook:job.hook,cta:job.cta,
-    },null,2));
+    };
+    if (Array.isArray(job.rightsNotes) && job.rightsNotes.length) ledgerOut.rightsNotes = job.rightsNotes;
+    fs.writeFileSync(path.join(out,"source-ledger.json"),JSON.stringify(ledgerOut,null,2));
   }
   const outputFile=path.join(out,job.id+(mode==="preview"?"-preview":"")+".mp4");
   execFileSync("npx",["remotion","render","src/index.ts",dailyJob?"KciNewsDaily":"KciNews",outputFile,"--props="+path.join(out,"props.json"),"--codec=h264","--concurrency=2"],{stdio:"inherit",timeout:1200000});
