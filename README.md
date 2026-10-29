@@ -34,7 +34,7 @@ Secrets `VBEE_APP_ID` and `VBEE_API_TOKEN` remain only in GitHub Actions Secrets
 
 ## Render first — owner reviews the video (27 October 2026)
 
-Every scheduled KCI producer creates the **complete MP4 with Vietnamese Anh Khôi voice, motion graphics, hook and CTA** before delivery to the owner. The owner reviews the actual encoded video for content and quality; there is no requirement to pre-approve a storyboard or render the unchanged video a second time after approval. Rendering is not permission to post. If a supported technique such as word-alignment precision hasn't been executed, report the QA limitation honestly without claiming a pass or silently withholding an otherwise playable sourced MP4. See [EDITING_WORKFLOW.md](.agents/skills/kci-news-video/references/EDITING_WORKFLOW.md) and [QC.md](.agents/skills/kci-news-video/references/QC.md). All existing schedules and Vbee credentials remain unchanged.
+Each KCI edition the owner starts creates the **complete MP4 with Vietnamese Anh Khôi voice, motion graphics, hook and CTA** before delivery to the owner. The owner reviews the actual encoded video for content and quality; there is no requirement to pre-approve a storyboard or render the unchanged video a second time after approval. Rendering is not permission to post. If a supported technique such as word-alignment precision hasn't been executed, report the QA limitation honestly without claiming a pass or silently withholding an otherwise playable sourced MP4. See [EDITING_WORKFLOW.md](.agents/skills/kci-news-video/references/EDITING_WORKFLOW.md) and [QC.md](.agents/skills/kci-news-video/references/QC.md). This repository has no cron. The owner opens an issue `[KCI VIDEO] YYYY-MM-DD <EDITION>` or dispatches the workflow at the KST slots in [DAILY_CADENCE.md](.agents/skills/kci-news-video/references/DAILY_CADENCE.md). Vbee credentials remain unchanged.
 
 ## New daily episode workflow
 
@@ -59,4 +59,4 @@ New jobs use schema v2 and KST `dataAsOf`. An archival 2026 video must never be 
 
 GitHub Actions runs a safe PR check (lint, editorial validation, hook/CTA, rendered frames). A production issue `[KCI VIDEO]` with body `{"job":"jobs/kci-YYYY-MM-DD-topic.json"}` starts review-only generation from the default branch.
 
-**No publishing automation is enabled by this repository.** A separate daily brief at 22:00 KST may supply editorial input, but the skill itself does not automatically turn scheduled briefs into uploaded videos.
+**No publishing automation is enabled by this repository.** A separate brief from outside this repository may supply editorial input. This repository does not turn that brief into an uploaded video by itself.
