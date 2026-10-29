@@ -65,9 +65,9 @@ const Reversal:React.FC<{v:KciVisual;f:number}>=({v,f})=>(
 );
 
 const Spotlight:React.FC<{v:KciVisual;f:number;color:string}>=({v,f,color})=>(
-  <div style={{width:"100%",height:444,textAlign:"center",position:"relative",overflow:"hidden",padding:20,boxSizing:"border-box"}}>
+  <div style={{width:"100%",height:444,textAlign:"center",position:"relative",overflow:"visible",padding:20,boxSizing:"border-box"}}>
     <div style={{position:"absolute",left:"50%",top:20,width:390,height:390,borderRadius:"50%",border:`2px dashed ${color}44`,transform:`translateX(-50%) rotate(${f*.3}deg)`}}/>
-    <div style={{position:"relative"}}><div style={{fontSize:29,color,fontWeight:850,letterSpacing:1}}>{v.unit||"THỊ TRƯỜNG"}</div><div style={{...enter(f,16),fontSize:176,fontWeight:950,letterSpacing:-4,marginTop:25}}>{v.value}</div><div style={{...small,fontSize:30,marginTop:30,color:P.white,fontWeight:750}}>{v.qualifier}</div></div>
+    <div style={{position:"relative"}}><div style={{fontSize:29,color,fontWeight:850,letterSpacing:1}}>{v.unit||"THỊ TRƯỜNG"}</div><div style={{...enter(f,16),fontSize:148,fontWeight:950,letterSpacing:-3,marginTop:8,lineHeight:1.24,paddingBottom:12}}>{v.value}</div><div style={{...small,fontSize:30,marginTop:10,color:P.white,fontWeight:750,lineHeight:1.25}}>{v.qualifier}</div></div>
   </div>
 );
 
