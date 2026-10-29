@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-29-macro21",
+  "edition": "MACRO21 — Vĩ mô 29/10/2026",
+  "dataAsOf": "2026-10-29T21:04:48+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Fed giữ lãi suất, won chỉ nhích nhẹ: một thành viên BOK chú ý tốc độ biến động tỷ giá",
+  "sourceDisclaimer": "Fed statement 28 Oct 14:00 EDT = 29 Oct 03:00 KST; FX USD/KRW 1336.8 is 29 Oct 15:30 KST benchmark, not 21h live; Hwang comments are individual board member views, not BOK policy; BOK 3.00% is Oct 22 decision.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "articleId": "KCI-20261029-MACRO21",
+    "articlePath": "editorial/2026-10-29/macro21.md",
+    "eventKeys": [
+      "FOMC|HOLD|2026-10-28",
+      "USD-KRW|1530KST|2026-10-29",
+      "BOK-HWANG|FX-VOLATILITY|2026-10-29"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "V1",
+    "productionMode": "tts_motion",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "overlapNotes": "US_AM 29 covers Fed and US stocks/Big Tech; KR_AM CBSI, KR_MID Samsung segment results, KR_CLOSE Samsung/Hyundai/exports. MACRO21 distinct new angle is Oct29 Hwang FX speed/volatility, 15:30 Seoul USD/KRW and conditional import/export channels; not KOSPI recap.",
+    "qcPlan": {
+      "whisperWordAlignment": "NOT_VERIFIED",
+      "effectOffsetFrames": "NOT_MEASURED",
+      "audioLufs": "NOT_MEASURED",
+      "truePeak": "NOT_MEASURED",
+      "takes": "N/A",
+      "faceTracking": "N/A",
+      "publishing": "NOT_AUTHORIZED"
+    }
+  },
+  "sourceLedger": [
+    {
+      "id": "fed-fomc-1028",
+      "title": "Federal Reserve FOMC statement released 28 October 2026 14:00 EDT",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "kind": "primary",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T21:54:11+09:00",
+      "facts": [
+        "FOMC kept target federal funds range 3.75–4.00% on 28 October, vote 10–2; dissenters preferred 25bp hike.",
+        "FOMC described activity as expanding at a strong pace and inflation as elevated. The statement says more information will help determine the policy stance."
+      ]
+    },
+    {
+      "id": "bok-policy-1022",
+      "title": "Bank of Korea monetary policy statement 22 October 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11065823",
+      "kind": "primary",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-29T21:04:48+09:00",
+      "facts": [
+        "BOK held its base rate at 3.00% on 22 October 2026, with unanimous support; not a fresh Oct 29 decision.",
+        "BOK identifies international oil prices and exchange rate as uncertainties for Korean inflation."
+      ]
+    },
+    {
+      "id": "yonhap-fx-1029",
+      "title": "Yonhap 29 October 16:30 KST: won slightly stronger after Fed pause",
+      "url": "https://en.yna.co.kr/view/AEN20261029011200320",
+      "kind": "secondary",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T21:04:48+09:00",
+      "facts": [
+        "Seoul USD/KRW 15:30 benchmark 29 October was 1,336.8 KRW per USD, down 0.9 won from the comparable prior session close.",
+        "Intraday stronger-won point 1,331.3 KRW/USD is not the 15:30 benchmark or a 21:00 quote."
+      ]
+    },
+    {
+      "id": "reuters-hwang-1029",
+      "title": "Reuters exclusive via Channel NewsAsia 29 October 2026: BOK board member Hwang on won volatility",
+      "url": "https://www.channelnewsasia.com/business/exclusive-bank-korea-board-member-says-won-moves-faster-expected-6502366",
+      "kind": "secondary",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-29T21:54:11+09:00",
+      "note": "Link gốc Reuters cần đăng nhập (HTTP 401): https://www.reuters.com/world/asia-pacific/bank-korea-board-member-says-won-moves-faster-than-expected-2026-10-29/. URL chính là bản Channel NewsAsia mở được, cùng bài Reuters về thành viên BOK Hwang Kunil.",
+      "facts": [
+        "BOK board member Hwang Kunil said the recent pace of the won's move was somewhat faster than expected and stressed exchange-rate volatility and speed rather than its level.",
+        "This is the view of one BOK voting member, not a new monetary policy decision or commitment."
+      ]
+    }
+  ],
+  "rightsNotes": [
+    {
+      "item": "Giọng Vbee Anh Khôi",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    },
+    {
+      "item": "Nhạc nền",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    }
+  ],
+  "hook": {
+    "spoken": "Fed giữ lãi suất, đồng won chỉ nhích nhẹ. Nhưng vì sao một thành viên BOK lại lo về tốc độ biến động tỷ giá?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Fed giữ lãi suất, đồng won chỉ nhích nhẹ. Nhưng vì sao một thành viên BOK lại lo về tốc độ biến động tỷ giá?",
+        "score": 48
+      },
+      {
+        "style": "korea-impact",
+        "text": "Tỷ giá 1.336,8 won một đô la sau Fed. Điều đáng theo dõi với kinh tế Hàn Quốc không chỉ là con số này.",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Đồng won mạnh lên giúp giảm chi phí nhập khẩu, nhưng có phải lúc nào cũng tốt cho xuất khẩu Hàn Quốc?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "WON MẠNH: LỢI HAY KHÓ?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "WON: TỐC ĐỘ QUAN TRỌNG",
+      "summary": "Fed giữ lãi suất; một thành viên BOK chú ý tốc độ biến động tỷ giá.",
+      "voiceText": "Fed giữ lãi suất, đồng won chỉ nhích nhẹ. Nhưng vì sao một thành viên BOK lại lo về tốc độ biến động tỷ giá? Đây là góc vĩ mô đáng chú ý tại Hàn Quốc hôm nay.",
+      "source": "Fed 28/10 · Yonhap 29/10 · Reuters 29/10",
+      "sourceIds": [
+        "fed-fomc-1028",
+        "yonhap-fx-1029",
+        "reuters-hwang-1029"
+      ],
+      "stats": [
+        {
+          "label": "USD/KRW · 15:30 KST",
+          "value": "1.336,8",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.336,8",
+        "unit": "USD/KRW · 15:30 KST",
+        "qualifier": "KRW/USD 15:30 KST 29/10, không phải tỷ giá 21h"
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "CHÍNH SÁCH TIỀN TỆ MỸ",
+      "headline": "FED GIỮ 3,75–4,00%",
+      "summary": "Quyết định 28/10 giờ Mỹ; hai phiếu muốn tăng thêm 0,25 điểm.",
+      "voiceText": "Rạng sáng ngày hai mươi chín theo giờ Hàn Quốc, Fed công bố giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm. Mười thành viên đồng ý, hai người muốn tăng thêm không phẩy hai lăm điểm phần trăm. Fed chưa chốt hướng đi kỳ họp sau.",
+      "source": "Fed · 28/10 14:00 EDT = 29/10 03:00 KST",
+      "sourceIds": [
+        "fed-fomc-1028"
+      ],
+      "stats": [
+        {
+          "label": "Biên độ Fed",
+          "value": "3,75–4,00%",
+          "tone": "neutral"
+        },
+        {
+          "label": "Biểu quyết",
+          "value": "10–2",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,75–4,00%",
+        "qualifier": "Fed giữ nguyên 28/10/2026, quyết định 10–2"
+      }
+    },
+    {
+      "id": "won",
+      "eyebrow": "THỊ TRƯỜNG NGOẠI HỐI SEOUL",
+      "headline": "USD/KRW 1.336,8",
+      "summary": "Mốc 15:30 ngày 29/10; giảm 0,9 won so phiên trước.",
+      "voiceText": "Tại Seoul, tỷ giá một đô la Mỹ bằng một nghìn ba trăm ba mươi sáu phẩy tám won lúc mười lăm giờ ba mươi hôm nay, giảm không phẩy chín won so mốc tương ứng phiên trước. Nghĩa là won mạnh lên nhẹ. Đây không phải báo giá lúc hai mươi mốt giờ.",
+      "source": "Yonhap · 29/10 · 16:30 KST",
+      "sourceIds": [
+        "yonhap-fx-1029"
+      ],
+      "stats": [
+        {
+          "label": "USD/KRW · 15:30",
+          "value": "1.336,8",
+          "tone": "down"
+        },
+        {
+          "label": "So mốc trước",
+          "value": "−0,9 won",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.336,8",
+        "qualifier": "KRW cho 1 USD, mốc 15:30 KST 29/10"
+      }
+    },
+    {
+      "id": "hwang",
+      "eyebrow": "GÓC NHÌN THÀNH VIÊN BOK",
+      "headline": "CHÚ Ý TỐC ĐỘ TỶ GIÁ",
+      "summary": "Reuters: ông Hwang Kun-il theo dõi biến động và tốc độ đồng won.",
+      "voiceText": "Trong cuộc phỏng vấn Reuters công bố hôm nay, thành viên hội đồng BOK Hwang Kun-il cho rằng đồng won gần đây tăng giá phần nào nhanh hơn dự kiến. Ông nhấn mạnh tốc độ và biến động quan trọng hơn một mức tỷ giá đơn lẻ. Đây là nhận định cá nhân, không phải quyết định chính sách mới.",
+      "source": "Reuters · 29/10",
+      "sourceIds": [
+        "reuters-hwang-1029"
+      ],
+      "stats": [
+        {
+          "label": "Trọng tâm theo dõi",
+          "value": "Biến động",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "qualifier": "Quan điểm một thành viên BOK, không đại diện quyết định toàn hội đồng"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TÁC ĐỘNG HÀN QUỐC",
+      "headline": "NHẬP KHẨU VÀ XUẤT KHẨU",
+      "summary": "Won mạnh có thể giảm chi phí nhập khẩu, nhưng ảnh hưởng doanh thu quy đổi.",
+      "voiceText": "BOK đã giữ lãi suất ba phần trăm từ ngày hai mươi hai tháng mười. Won mạnh có thể giảm chi phí nhập khẩu tính bằng won, nhưng có thể gây áp lực lên doanh thu quy đổi của một số nhà xuất khẩu. Mức tác động còn tùy hợp đồng, phòng hộ tỷ giá và giá năng lượng.",
+      "source": "BOK 22/10 · phân tích cơ chế có điều kiện, góc nhìn của KCI",
+      "sourceIds": [
+        "bok-policy-1022"
+      ],
+      "stats": [
+        {
+          "label": "Lãi suất BOK · 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "qualifier": "BOK giữ 22/10; không phải quyết định mới 29/10"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "WON CÓ ỔN ĐỊNH?",
+      "summary": "Góc nhìn KCI: lạm phát, lợi suất Mỹ và dòng vốn sẽ quyết định sức ép tiếp theo.",
+      "voiceText": "Điều cần theo dõi là lạm phát, lợi suất Mỹ và dòng vốn sau Fed, cùng độ bền của đồng won. Chưa thể kết luận đồng won sẽ tiếp tục tăng giá hay BOK chắc chắn nâng lãi suất.",
+      "source": "Fed 28/10 · BOK 22/10 · Reuters 29/10",
+      "sourceIds": [
+        "fed-fomc-1028",
+        "bok-policy-1022",
+        "reuters-hwang-1029"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Fed: chờ thêm dữ liệu",
+          "Won: theo dõi tốc độ biến động",
+          "BOK: lạm phát, giá dầu và tỷ giá"
+        ]
+      }
+    }
+  ]
+}
