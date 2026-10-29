@@ -7,6 +7,7 @@ import {
   alignNarration,
   alignSceneCaptions,
   alignmentEnabled,
+  applyCaptionDisplay,
   cuesFromTimedWords,
   proportionalCaptions,
   timedWordsFromWhisperJson,
@@ -154,5 +155,22 @@ const hang = cuesFromTimedWords([
   { text: "Yonhap", start: 0.6, end: 0.9 },
 ], 60);
 assert.ok(hang.every((cue) => !cue.text.endsWith("Theo")), hang.map((cue) => cue.text).join(" | "));
+
+const spokenLine = "Cốt-đắc giảm hai phẩy ba bốn phần trăm.";
+const mapped = applyCaptionDisplay(proportionalCaptions(spokenLine, 90), [
+  { spoken: "Cốt-đắc", display: "KOSDAQ" },
+]);
+assert.equal(mapped.map((cue) => cue.text).join(" "), "KOSDAQ giảm hai phẩy ba bốn phần trăm.");
+assert.ok(!mapped.some((cue) => cue.text.includes("Cốt-đắc")));
+const timed = cuesFromTimedWords([
+  { text: "Cốt-đắc", start: 0.2, end: 0.6 },
+  { text: "giảm", start: 0.6, end: 0.9 },
+  { text: "hai", start: 0.9, end: 1.1 },
+], 60);
+const shown = applyCaptionDisplay(timed, [{ spoken: "Cốt-đắc", display: "KOSDAQ" }]);
+assert.equal(shown[0].text, "KOSDAQ giảm hai");
+assert.equal(shown[0].from, timed[0].from);
+assert.equal(shown[0].to, timed[0].to);
+assert.ok(!shown.some((cue) => cue.text.includes("Cốt-đắc")));
 
 console.log("align-captions tests: PASS");

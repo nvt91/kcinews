@@ -3,7 +3,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
 import { validateKciJob } from "./validate-kci-job.mjs";
-import { alignSceneCaptions, alignmentEnabled } from "./align-captions.mjs";
+import { alignSceneCaptions, alignmentEnabled, applyCaptionDisplay } from "./align-captions.mjs";
 
 const FPS = 30;
 if (process.argv.includes("--align-captions")) process.env.KCI_ALIGN_CAPTIONS = "1";
@@ -56,7 +56,9 @@ if (mode !== "validate") {
     .filter((part) => Number.isInteger(part) && part > 0));
   if (mode === "video" || mode === "voice-test") checkVbeeSettings();
   if (reuseAudio) {
-    console.log("video-reuse: narration MP3s are reused; Vbee will not be called.");
+    console.log(regenScenes.size
+      ? "video-reuse: Vbee only for 1-based scenes " + [...regenScenes].sort((a, b) => a - b).join(",") + "."
+      : "video-reuse: narration MP3s are reused; Vbee will not be called.");
   }
   const voiceDir = path.resolve("public/voice");
   if (mode === "video" || mode === "voice-test" || (reuseAudio && regenScenes.size > 0)) {
@@ -122,7 +124,7 @@ if (mode !== "validate") {
     const audioFrames = durationFrames-10;
     const audioPath = audioFile ? path.join(voiceDir, path.basename(audioFile)) : "";
     const aligned = alignSceneCaptions({ narration, audioFrames, audioPath });
-    const captions = aligned.captions;
+    const captions = applyCaptionDisplay(aligned.captions, scene.captionMap);
     if (aligned.method === "aligned") {
       alignedScenes += 1;
       console.log("captions: aligned " + scene.id + " (" + aligned.matched + "/" + aligned.total + " words, " + captions.length + " cues)");

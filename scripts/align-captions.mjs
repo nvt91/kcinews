@@ -408,6 +408,27 @@ export function alignNarration(narration, whisperWords, audioFrames, fps = FPS) 
   return { ok: true, captions, matched: aligned.matched, total: aligned.total, method: "aligned" };
 }
 
+/** Spoken tokens stay in the script for alignment. Display text can differ. */
+export function applyCaptionDisplay(captions, captionMap) {
+  if (!Array.isArray(captions) || !Array.isArray(captionMap) || captionMap.length === 0) return captions;
+  const pairs = captionMap.filter((entry) => entry && entry.spoken && entry.display);
+  if (!pairs.length) return captions;
+  return captions.map((cue) => {
+    const text = String(cue.text || "").split(/(\s+)/).map((part) => {
+      if (!part || /^\s+$/.test(part)) return part;
+      for (const entry of pairs) {
+        if (part === entry.spoken) return entry.display;
+        if (part.startsWith(entry.spoken)) {
+          const rest = part.slice(entry.spoken.length);
+          if (/^[.,!?;:…]+$/u.test(rest)) return entry.display + rest;
+        }
+      }
+      return part;
+    }).join("");
+    return text === cue.text ? cue : { ...cue, text };
+  });
+}
+
 export function alignSceneCaptions({ narration, audioFrames, audioPath }) {
   if (!alignmentEnabled()) {
     return { ok: true, method: "proportional", captions: proportionalCaptions(narration, audioFrames), reason: "disabled" };

@@ -217,7 +217,7 @@
       "eyebrow": "THỊ TRƯỜNG · KRX",
       "headline": "KOSPI đóng cửa dưới 6.000",
       "summary": "Số đóng cửa phiên chính KRX 29/10.",
-      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay đóng cửa ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm, giảm một phẩy hai bốn phần trăm, dưới mốc sáu nghìn điểm. KOSDAQ giảm hai phẩy ba bốn phần trăm, còn bảy trăm năm mươi ba phẩy hai ba điểm. Tỷ giá đô la so với won lúc mười lăm giờ ba mươi là một nghìn ba trăm ba mươi sáu phẩy tám won. Đây là giá đóng cửa KRX, theo Yonhap, chưa gộp dữ liệu NXT.",
+      "voiceText": "Sau phiên tăng mạnh hôm qua, KOSPI hôm nay đóng cửa ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm, giảm một phẩy hai bốn phần trăm, dưới mốc sáu nghìn điểm. Cốt-đắc giảm hai phẩy ba bốn phần trăm, còn bảy trăm năm mươi ba phẩy hai ba điểm. Tỷ giá đô la so với won lúc mười lăm giờ ba mươi là một nghìn ba trăm ba mươi sáu phẩy tám won. Đây là giá đóng cửa KRX, theo Yonhap, chưa gộp dữ liệu NXT.",
       "sourceIds": [
         "krx-yonhap-close",
         "krx-index-hankyung",
@@ -237,7 +237,10 @@
         "value": "5.937,66",
         "qualifier": "KOSPI đóng cửa 29/10 (−1,24%) · KOSDAQ 753,23 (−2,34%) · USD/KRW 1.336,8 lúc 15:30"
       },
-      "source": "Yonhap · KRX · 29/10 (giá đóng cửa 15:30, không gồm NXT)"
+      "source": "Yonhap · KRX · 29/10 (giá đóng cửa 15:30, không gồm NXT)",
+      "captionMap": [
+        { "spoken": "Cốt-đắc", "display": "KOSDAQ" }
+      ]
     },
     {
       "id": "samsung",
@@ -260,6 +263,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "SAMSUNG · GIÁ ĐÓNG CỬA",
         "value": "−4,13%",
         "qualifier": "Samsung đóng cửa 232.000 ₩ · giảm tới 6,2% trong phiên sáng (Reuters)"
       },
@@ -362,6 +366,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "DỰ BÁO XUẤT KHẨU T10 (CHƯA PHẢI SỐ THỰC)",
         "value": "+93,2%",
         "qualifier": "DỰ BÁO Reuters poll, 9 chuyên gia · KHÔNG PHẢI số thực tế"
       },
@@ -388,7 +393,7 @@
         ],
         "cta": true
       },
-      "source": "Reuters · Hyundai · 29/10"
+      "source": "Hyundai · Samsung · Reuters · Hankyung · Yonhap/KRX · dữ liệu 17:19 29/10 (giờ Seoul)"
     }
   ]
 }
