@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-29-us-am",
+  "articleId": "KCI-20261029-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "digest",
+  "edition": "29/10/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-10-29T09:00:11+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Fed giữ lãi suất, Phố Wall tăng nhẹ; Microsoft và Alphabet phân hóa — 29/10",
+  "sourceDisclaimer": "Cutoff 2026-10-29 09:00 KST = 2026-10-28 20:00 EDT. US Oct 28 cash close at 16:00 EDT = 05:00 KST Oct 29. Earnings after close separate from cash-session index returns. Treasury 10Y is official daily CMT 5.05%, not tick quote. Oil Brent settlement 115.32 USD/bbl. Korea impacts conditional; information only.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-10-29/us-am.md",
+  "eventKeys": [
+    "US-EQUITIES-20261028-CLOSE",
+    "FOMC-20261028-HOLD",
+    "US-TREASURY-10Y-20261028",
+    "BRENT-20261028-SETTLEMENT",
+    "MSFT-FY27Q1-20261028",
+    "GOOGL-Q3-20261028"
+  ],
+  "sourceLedger": [
+    {
+      "id": "fed-fomc-2810",
+      "title": "Federal Reserve FOMC official statement 28 Oct 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "FOMC voted 10-2 to maintain federal funds target at 3.75%-4.00%; two dissenters preferred +25bp.",
+        "The Fed described strong activity and elevated inflation; no December decision has been made."
+      ]
+    },
+    {
+      "id": "ap-wallstreet-2810",
+      "title": "AP: How major US stock indexes fared Wednesday 28 Oct",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-7864eac2e13db75f07758ed9c39ad96b",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US regular cash close Oct 28 16:00 EDT: S&P 500 7,743.98 (+0.3%), Nasdaq 26,549.85 (+0.3%), Dow 52,475.10 (+0.2%).",
+        "These are completed Oct 28 cash-session figures, not after-hours or Oct 29 KRX prices."
+      ]
+    },
+    {
+      "id": "treasury-yields-2810",
+      "title": "US Treasury daily par yield curve rates 28 Oct 2026",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "US Treasury 10-year constant-maturity yield 5.05% on Oct 28, versus 4.99% Oct 27, in daily Treasury yield table.",
+        "This is an official daily yield-curve estimate, not an intraday bond trade quote."
+      ]
+    },
+    {
+      "id": "msft-primary-2810",
+      "title": "Microsoft official FY27 Q1 earnings release 28 Oct 2026",
+      "url": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "Microsoft revenue $92.3 billion (+19% YoY) for fiscal Q1 ended Sept 30, 2026.",
+        "Azure revenue grew 48% YoY; this is reported growth, not guidance."
+      ]
+    },
+    {
+      "id": "alphabet-sec-2810",
+      "title": "Alphabet Q3 2026 results, SEC Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "Alphabet Q3 2026 revenue $127.6 billion (+25% YoY).",
+        "Google Cloud Q3 revenue $30.7 billion (+103% YoY); net income available to common stockholders $26.2 billion."
+      ]
+    },
+    {
+      "id": "reuters-global-2810",
+      "title": "Reuters global markets after Fed decision 28 Oct 2026",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-28/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters reports Dow +0.19%, S&P 500 +0.28%, Nasdaq +0.27% at regular close; after-hours Microsoft positive and Alphabet negative following earnings.",
+        "Brent crude settled at $115.32/bbl (+1%); WTI at $102.78/bbl (+3%) after renewed Saudi refinery supply concerns.",
+        "The ECB and Bank of Japan decisions and US PCE data were still upcoming at the Reuters cutoff."
+      ]
+    },
+    {
+      "id": "reuters-alphabet-2810",
+      "title": "Reuters Alphabet earnings and postmarket 28 Oct 2026",
+      "url": "https://www.reuters.com/business/alphabets-google-cloud-unit-beats-quarterly-revenue-estimates-steady-ai-demand-2026-10-28/",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-29T09:00:11+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Alphabet shares fell more than 10% after-hours in Reuters report; after-hours move is not the Oct 28 cash close.",
+        "Google Cloud grew strongly but capital expenditure and negative free cash flow worried investors."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Fed giữ nguyên lãi suất, Phố Wall tăng nhẹ. Nhưng kết quả AI của Microsoft và Alphabet lại khiến nhà đầu tư phản ứng khác nhau.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Fed giữ nguyên lãi suất, Phố Wall tăng nhẹ. Nhưng kết quả AI của Microsoft và Alphabet lại khiến nhà đầu tư phản ứng khác nhau.",
+        "score": 94
+      },
+      {
+        "style": "korea-impact",
+        "text": "Fed giữ lãi suất, dầu vẫn cao: cổ phiếu bán dẫn Hàn Quốc sẽ được hưởng lợi hay chịu sức ép?",
+        "score": 87
+      },
+      {
+        "style": "event-question",
+        "text": "Azure tăng bốn mươi tám phần trăm, Google Cloud tăng một trăm linh ba phần trăm. Vì sao thị trường lại phản ứng khác nhau?",
+        "score": 91
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhu cầu chip AI hay áp lực lãi suất đáng theo dõi hơn lúc này? Chia sẻ góc nhìn với Korea Capital Insight nhé.",
+    "screenHeadline": "CHIP AI HAY ÁP LỰC LÃI SUẤT?",
+    "screenSubline": "Anh chị đang theo dõi tín hiệu nào?",
+    "question": "Nhu cầu chip AI hay áp lực lãi suất đáng theo dõi hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI GLOBAL / US · 29/10 KST",
+      "headline": "FED GIỮ LÃI SUẤT · AI PHÂN HÓA",
+      "summary": "Phiên Mỹ 28/10 tăng nhẹ; báo cáo Big Tech sau giờ đóng cửa trái chiều.",
+      "source": "Fed / AP / Reuters · 28/10 Mỹ",
+      "sourceIds": [
+        "fed-fomc-2810",
+        "ap-wallstreet-2810",
+        "reuters-global-2810"
+      ],
+      "voiceText": "Fed giữ nguyên lãi suất, Phố Wall tăng nhẹ. Nhưng kết quả AI của Microsoft và Alphabet lại khiến nhà đầu tư phản ứng khác nhau. Đây là bản tin KCI sáng hai mươi chín tháng mười.",
+      "stats": [
+        {
+          "label": "FED · 28/10",
+          "value": "3,75–4,00%",
+          "tone": "neutral"
+        },
+        {
+          "label": "NASDAQ · ĐÓNG CỬA",
+          "value": "+0,27%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3,75–4,00%",
+        "unit": "FED · GIỮ NGUYÊN",
+        "qualifier": "FOMC 28/10/2026, 10-2; Nasdaq tăng 0,27% phiên chính Mỹ, không gồm sau giờ."
+      }
+    },
+    {
+      "id": "wallstreet",
+      "eyebrow": "PHỐ WALL · ĐÓNG CỬA 28/10 EDT",
+      "headline": "BA CHỈ SỐ CÙNG TĂNG NHẸ",
+      "summary": "S&P 500 +0,28% · Nasdaq +0,27% · Dow +0,19%.",
+      "source": "Reuters / AP · phiên chính 28/10 Mỹ",
+      "sourceIds": [
+        "ap-wallstreet-2810",
+        "reuters-global-2810"
+      ],
+      "voiceText": "Chốt phiên Mỹ ngày hai mươi tám tháng mười, S&P năm trăm tăng khoảng không phẩy hai tám phần trăm. Nasdaq tăng không phẩy hai bảy phần trăm, còn Dow Jones tăng không phẩy một chín. Đây là mức đóng cửa phiên chính, chưa bao gồm phản ứng sau báo cáo lợi nhuận.",
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.743,98 · +0,28%",
+          "tone": "up"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "26.549,85 · +0,27%",
+          "tone": "up"
+        },
+        {
+          "label": "DOW",
+          "value": "52.475,10 · +0,19%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 0.28,
+            "display": "+0,28%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 0.27,
+            "display": "+0,27%"
+          },
+          {
+            "label": "DOW",
+            "value": 0.19,
+            "display": "+0,19%"
+          }
+        ],
+        "qualifier": "Reuters mức % làm tròn 2 chữ số; AP xác nhận giá đóng cửa phiên 28/10/2026."
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "FOMC · 28/10/2026",
+      "headline": "GIỮ LÃI SUẤT 3,75–4%",
+      "summary": "Fed bỏ phiếu 10–2; lạm phát vẫn cao, chờ thêm dữ liệu.",
+      "source": "Federal Reserve · tuyên bố 14:00 EDT",
+      "sourceIds": [
+        "fed-fomc-2810"
+      ],
+      "voiceText": "Fed giữ biên độ lãi suất ba phẩy bảy lăm đến bốn phần trăm, với mười phiếu thuận và hai phiếu muốn tăng thêm. Ngân hàng trung ương đánh giá kinh tế vẫn tăng trưởng mạnh, nhưng lạm phát còn cao. Vì thế, không nên coi quyết định giữ nguyên lần này là cam kết sẽ giảm lãi suất.",
+      "stats": [
+        {
+          "label": "BIÊN ĐỘ MỤC TIÊU",
+          "value": "3,75–4,00%",
+          "tone": "neutral"
+        },
+        {
+          "label": "BIỂU QUYẾT",
+          "value": "10–2",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3,75–4,00%",
+        "unit": "FED · GIỮ NGUYÊN",
+        "qualifier": "Tuyên bố FOMC 28/10/2026, quyết định hiện tại; không phải dự báo tháng 12."
+      }
+    },
+    {
+      "id": "rates-oil",
+      "eyebrow": "LÃI SUẤT & NĂNG LƯỢNG",
+      "headline": "LỢI SUẤT VÀ DẦU VẪN CAO",
+      "summary": "US10Y 5,05% · Brent chốt 115,32 USD/thùng.",
+      "source": "US Treasury / Reuters · 28/10",
+      "sourceIds": [
+        "treasury-yields-2810",
+        "reuters-global-2810"
+      ],
+      "voiceText": "Theo bảng dữ liệu Bộ Tài chính Mỹ, lợi suất tham chiếu trái phiếu mười năm ngày hai mươi tám tháng mười ở mức năm phẩy không năm phần trăm. Dầu Brent chốt phiên khoảng một trăm mười lăm đô la một thùng sau lo ngại gián đoạn nguồn cung. Hai yếu tố này có thể giữ áp lực lên chi phí vốn và lạm phát.",
+      "stats": [
+        {
+          "label": "US10Y · TREASURY",
+          "value": "5,05%",
+          "tone": "neutral"
+        },
+        {
+          "label": "BRENT · SETTLEMENT",
+          "value": "115,32 USD/thùng",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "US10Y · 5,05% (Treasury 28/10)",
+          "Brent · 115,32 USD/thùng",
+          "Lãi vay và năng lượng: rủi ro"
+        ]
+      }
+    },
+    {
+      "id": "bigtech",
+      "eyebrow": "BIG TECH · BÁO CÁO SAU PHIÊN",
+      "headline": "CLOUD TĂNG, CHI PHÍ AI ĐƯỢC SOI",
+      "summary": "Microsoft: Azure +48%; Alphabet: Google Cloud +103% YoY.",
+      "source": "Microsoft / SEC / Reuters · 28/10",
+      "sourceIds": [
+        "msft-primary-2810",
+        "alphabet-sec-2810",
+        "reuters-global-2810",
+        "reuters-alphabet-2810"
+      ],
+      "voiceText": "Sau giờ đóng cửa, Microsoft công bố doanh thu quý đạt chín mươi hai phẩy ba tỷ đô la, Azure tăng bốn mươi tám phần trăm so cùng kỳ. Alphabet đạt doanh thu một trăm hai mươi bảy phẩy sáu tỷ đô la, Google Cloud tăng một trăm linh ba phần trăm. Nhưng cổ phiếu Alphabet giảm mạnh sau giờ giao dịch khi nhà đầu tư lo chi phí đầu tư AI và dòng tiền. Tăng trưởng doanh thu chưa đồng nghĩa lợi nhuận cho cổ đông tăng tương ứng.",
+      "stats": [
+        {
+          "label": "MICROSOFT · AZURE",
+          "value": "+48% YoY",
+          "tone": "up"
+        },
+        {
+          "label": "ALPHABET · CLOUD",
+          "value": "+103% YoY",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "AZURE",
+            "value": 48,
+            "display": "+48% YoY"
+          },
+          {
+            "label": "GOOGLE CLOUD",
+            "value": 103,
+            "display": "+103% YoY"
+          }
+        ],
+        "qualifier": "Tăng trưởng doanh thu quý kết thúc 30/09/2026, không phải mức tăng giá cổ phiếu."
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG CÓ ĐIỀU KIỆN · HÀN QUỐC",
+      "headline": "CHIP HƯỞNG LỢI, TỶ GIÁ CẦN CANH",
+      "summary": "Nhu cầu AI hỗ trợ xuất khẩu chip; dầu, lãi suất và USD/KRW là rủi ro.",
+      "source": "KCI analysis · Fed / Treasury / Microsoft / SEC",
+      "sourceIds": [
+        "fed-fomc-2810",
+        "treasury-yields-2810",
+        "msft-primary-2810",
+        "alphabet-sec-2810",
+        "reuters-global-2810"
+      ],
+      "voiceText": "Với Hàn Quốc, nhu cầu hạ tầng AI tăng có thể hỗ trợ đơn hàng bán dẫn và xuất khẩu, nếu chi tiêu của khách hàng thực sự chuyển thành doanh thu. Ngược lại, dầu cao và lợi suất Mỹ cao có thể gây sức ép lên đồng won, KOSPI và KOSDAQ. Cần theo dõi tỷ giá đô la trên won, biên lợi nhuận chip và dữ liệu lạm phát Mỹ tiếp theo. Đây là kịch bản có điều kiện, không phải dự báo chắc chắn.",
+      "stats": [
+        {
+          "label": "CƠ HỘI",
+          "value": "NHU CẦU CHIP AI",
+          "tone": "up"
+        },
+        {
+          "label": "RỦI RO",
+          "value": "DẦU · US10Y · USD/KRW",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "Cầu chip AI: điều kiện tích cực",
+          "Dầu + lãi suất: rủi ro chi phí",
+          "USD/KRW · KOSPI · KOSDAQ"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "THEO DÕI CÁC TÍN HIỆU TIẾP",
+      "summary": "Dữ liệu mới và tác động đến Hàn Quốc; không phải khuyến nghị giao dịch.",
+      "source": "KCI tổng hợp · cutoff 29/10 09:00 KST",
+      "sourceIds": [
+        "fed-fomc-2810",
+        "ap-wallstreet-2810",
+        "reuters-global-2810"
+      ],
+      "voiceText": "Điểm cần nhớ là Fed chưa nới lỏng, trong khi AI tăng trưởng nhưng thị trường vẫn cân nhắc chi phí. Thông tin chỉ để tham khảo, không phải khuyến nghị đầu tư.",
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Fed giữ lãi suất 3,75–4%",
+          "Cloud tăng, chi phí AI cần theo dõi",
+          "Hàn Quốc: chip · USD/KRW"
+        ],
+        "qualifier": "Thông tin tham khảo, không phải khuyến nghị giao dịch."
+      }
+    }
+  ]
+}
