@@ -101,6 +101,17 @@
       "facts": [
         "Doosan signed deal to supply first upper reactor pressure vessel module for NuScale SMR; no verified contract value."
       ]
+    },
+    {
+      "id": "krx-hours",
+      "title": "KRX official market rules: regular trading hours 09:00–15:30 KST",
+      "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602020204/GLB0602020204T1.jsp",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "KRX regular equities session trading hours 09:00–15:30 KST; does not establish 29 Oct closing print."
+      ]
     }
   ],
   "hook": {
@@ -164,7 +175,8 @@
       "voiceText": "KOSPI phiên hai mươi chín tháng mười đóng cửa tại năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm, giảm một phẩy hai bốn phần trăm. Trước đó chỉ số từng vượt sáu nghìn một trăm, nhưng không giữ được đà tăng. Samsung Electronics giảm bốn phẩy mười ba phần trăm, trong khi SK hynix tăng hai phẩy sáu hai phần trăm. Đây là giá đóng cửa trên KRX, không phải báo giá sáng nay hay dữ liệu cộng thêm từ NXT.",
       "sourceIds": [
         "market-yonhap",
-        "market-aju"
+        "market-aju",
+        "krx-hours"
       ],
       "stats": [
         {
