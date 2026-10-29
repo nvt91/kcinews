@@ -14,6 +14,6 @@ ArticleId **KCI-20261030-KR-AM** · Cutoff **07:58 KST 30/10/2026** · digest ·
 
 ## Biên tập và sản xuất
 
-Một video sáu cảnh, ba cụm thị trường/pin/hạt nhân, lời đọc Vbee Anh Khôi Tin tức, Remotion KciNewsDaily schema2. Điểm biên tập **91/100**: nguồn34, logic24, mới14, ngôn ngữ13, chống trùng6. KRX chính 09:00–15:30; NXT từ 08:00. TTS/motion, takes/face N/A; Whisper ±2frame, LUFS, silence cuts và beat stills NOT_VERIFIED trước QC. Giữ CHỜ DUYỆT — CHƯA ĐĂNG.
+Một video sáu cảnh, Vbee Anh Khôi, Remotion schema2. Điểm biên tập **91/100**. KRX 09:00–15:30; NXT từ 08:00. TTS/motion: takes/face N/A; Whisper, loudness, cuts, beat stills NOT_VERIFIED. Giữ CHỜ DUYỆT — CHƯA ĐĂNG.
 
-**Caption (<50 từ gồm hashtag):** 🇰🇷 KOSPI lại dưới 6.000 điểm, cổ phiếu pin giảm mạnh và hợp đồng xây dựng điện hạt nhân gặp trục trặc. Cùng KCI xem chuyện gì đang xảy ra nhé! #KCI #ChungKhoanHanQuoc
+Đối chiếu jobs 23–29/10, editorial KR_AM/KR_MID/KR_CLOSE/MACRO21 29/10, issues #23–54 và recent runs; chưa kiểm tra bài đăng ngoài repo.\n\n**Caption (<50 từ gồm hashtag):** 🇰🇷 KOSPI lại dưới 6.000 điểm, cổ phiếu pin giảm mạnh và hợp đồng xây dựng điện hạt nhân gặp trục trặc. Cùng KCI xem chuyện gì đang xảy ra nhé! #KCI #ChungKhoanHanQuoc
