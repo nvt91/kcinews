@@ -14,11 +14,11 @@ KR_AM cùng ngày cutoff 07:57:30 KST chỉ có Samsung guidance 08/10 và lịc
 Publication day 29/10, reporting period Q3 ending 30/09. Revenue 195,3tn KRW / profit 107,4tn KRW are confirmed actuals, similar to preliminary guidance 08/10; segment and payout details are NEW. 2026 payout range and 2027 AI supply/demand are company outlook, not finalized or guaranteed. Samsung plans to settle remaining shareholder-return details by Jan 2027. No contradictory intraday quotes included.
 
 ## Hooks (50-point scale)
-1. Contrast 48/50 (chosen): Samsung vừa công bố chi tiết lợi nhuận quý ba hơn một trăm linh bảy nghìn tỷ won. Nhưng có một điểm bất ngờ: mảng chip kiếm gần như toàn bộ lợi nhuận, còn mảng thiết bị lại lỗ.
+1. Contrast 48/50 (chosen): Samsung vừa công bố báo cáo quý ba: lợi nhuận hoạt động một trăm linh bảy phẩy bốn nghìn tỷ won. Nhưng mảng chip tạo gần hết lợi nhuận, còn mảng thiết bị lại lỗ.
 2. Investor impact 47/50: Samsung lãi kỷ lục, nhưng mảng thiết bị lại lỗ. Báo cáo chi tiết mới nói gì về chất lượng lợi nhuận?
 3. Question 45/50: Samsung dự kiến hoàn trả cổ đông tới một trăm mười nghìn tỷ won. Bao nhiêu là kế hoạch mới và bao nhiêu đã có?
 
 ## Production
-One 7-scene video, 564 Vietnamese space-delimited words including spoken CTA; estimated runtime ~90–110s subject to actual TTS. Narration Anh Khôi Tin tức, code n_hanoi_male_anhkhoitintuc_zero_shot_news_vc; Remotion KciNewsDaily/schema2. CTA exactly once at end. Caption 30 words incl hashtags: 🇰🇷 Samsung vừa công bố kết quả quý III: mảng chip lãi lớn, còn mảng thiết bị lại lỗ. Cùng xem điều gì đáng chú ý nhé! #KCI #Samsung #ChungKhoanHanQuoc
+One 7-scene video, 431 Vietnamese space-delimited words including spoken CTA; estimated runtime ~90–110s subject to actual TTS. Narration Anh Khôi Tin tức, code n_hanoi_male_anhkhoitintuc_zero_shot_news_vc; Remotion KciNewsDaily/schema2. CTA exactly once at end. Caption 30 words incl hashtags: 🇰🇷 Samsung vừa công bố kết quả quý III: mảng chip lãi lớn, còn mảng thiết bị lại lỗ. Cùng xem điều gì đáng chú ý nhé! #KCI #Samsung #ChungKhoanHanQuoc
 
 No camera footage/takes: N/A. Whisper word sync ±2 frames, silence cuts, beat stills, LUFS/true peak: NOT_MEASURED until real artifact QC. Rendered review MP4 required before owner decision; QC candid; never auto-publish.
