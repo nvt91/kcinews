@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-30-kr-am",
+  "edition": "KR_AM — Bản tin sáng Hàn Quốc 30/10/2026",
+  "dataAsOf": "2026-10-30T07:58:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI dưới 6.000, LG Chem dự kiến bán cổ phần pin, hợp đồng hạt nhân Séc trục trặc",
+  "sourceDisclaimer": "Market figures KRX 29 Oct regular close, not 30 Oct live or NXT. LG Chem sale planned, not completed. KHNP construction negotiations ended but Czech project not cancelled; Doosan separate equipment contract unaffected. Doosan Q3 actuals, SMR contract value unknown.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261030-KR-AM",
+    "articlePath": "editorial/2026-10-30/kr-am.md",
+    "eventKeys": [
+      "KRX|KOSPI-FINAL-29OCT-RECONCILIATION|2026-10-29",
+      "051910|LGES-PRS-STAKE-PLAN|2026-10-28",
+      "KHNP|DUKOVANY-CONSTRUCTION-TALKS-END|2026-10-29",
+      "034020|DOOSAN-Q3-SMR|2026-10-29"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Full narrated MP4 render before owner review, no posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "previewVersion": "v1-rendered-review",
+    "capability": "Legacy KciNewsDaily supports Vbee real MP3 + H264/AAC MP4. Whisper, ±2frame effects, loudness master, silence trim and beat stills NOT_VERIFIED; camera takes/face N/A",
+    "limitations": [
+      "KRX close sourced to Yonhap/Aju, official KRX date-specific API inaccessible.",
+      "NXT 08:00 and KRX 09:00; no 30 Oct live quotes.",
+      "LG planned PRS not executed, Czech project not cancelled.",
+      "Advanced word-timing and audio QC NOT_VERIFIED."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "market-yonhap",
+      "title": "Yonhap 29 Oct 16:34 KST: KOSPI closing, Samsung, SK hynix, LGES",
+      "url": "https://en.yna.co.kr/view/AEN20261029009452320",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX regular 29 Oct close 5,937.66 (-74.78/-1.24%), intraday high 6,100.11.",
+        "Samsung Electronics 29 Oct close -4.13%, SK hynix +2.62%, LG Energy Solution -8.6%."
+      ]
+    },
+    {
+      "id": "market-aju",
+      "title": "Aju Press 29 Oct 15:33: KOSPI final close corroboration",
+      "url": "https://m.ajupress.com/amp/20261029153336069",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX 29 Oct close 5,937.66 (-1.24%)."
+      ]
+    },
+    {
+      "id": "lg-sedaily",
+      "title": "Seoul Economic Daily 29 Oct 10:02: LG Chem planned LGES sale",
+      "url": "https://en.sedaily.com/finance/2026/10/29/lg-chem-keeps-selling-battery-stake-lg-energy-solution",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "LG Chem board 28 Oct decided planned PRS of 6,535,939 LGES shares (2.79%) ~KRW2.5tn, Nov27-Dec24; not completed.",
+        "Ownership expected 79.38% to 76.59% upon completion."
+      ]
+    },
+    {
+      "id": "khnp",
+      "title": "Yonhap 29 Oct 10:37 citing KHNP: Czech construction talks end",
+      "url": "https://en.yna.co.kr/view/AEN20261029004400320",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KHNP ended construction subcontract talks with Daewoo E&C/Doosan over key terms; new tender planned.",
+        "Overall Czech Dukovany nuclear project NOT cancelled."
+      ]
+    },
+    {
+      "id": "doosan",
+      "title": "Yonhap 29 Oct 16:34 citing Doosan regulatory filing: Q3 2026",
+      "url": "https://en.yna.co.kr/view/AEN20261029010051320",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Doosan Enerbility Q3 operating profit KRW261.2bn +90.6% YoY, sales KRW4.44tn +14.7%.",
+        "Separate major-equipment supply contract for Czech project unaffected."
+      ]
+    },
+    {
+      "id": "smr",
+      "title": "Yonhap 29 Oct 14:52: Doosan NuScale SMR contract",
+      "url": "https://en.yna.co.kr/view/AEN20261029008700320",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T07:58:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Doosan signed deal to supply first upper reactor pressure vessel module for NuScale SMR; no verified contract value."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI lại mất mốc sáu nghìn điểm. Cổ phiếu pin giảm mạnh, còn hợp đồng điện hạt nhân Hàn Quốc gặp trục trặc. Điều gì đang xảy ra?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI lại mất mốc sáu nghìn điểm. Cổ phiếu pin giảm mạnh, còn hợp đồng điện hạt nhân Hàn Quốc gặp trục trặc. Điều gì đang xảy ra?",
+        "score": 48
+      },
+      {
+        "style": "investor-impact",
+        "text": "KOSPI dưới sáu nghìn điểm, cổ phiếu pin giảm mạnh. Điều gì tác động tới thị trường Hàn Quốc?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Đàm phán xây dựng nhà máy điện hạt nhân tại Séc bị dừng. Có phải cả dự án đã bị hủy?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, rủi ro lớn hơn là áp lực cổ phiếu pin hay tiến độ hợp đồng điện hạt nhân? Chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "PIN HAY ĐIỆN HẠT NHÂN?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Rủi ro lớn hơn là áp lực cổ phiếu pin hay tiến độ hợp đồng điện hạt nhân?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN SÁNG · 30/10",
+      "headline": "KOSPI dưới 6.000 điểm",
+      "summary": "Tổng hợp thông tin ngày 29/10, không phải giá hiện tại.",
+      "voiceText": "KOSPI lại mất mốc sáu nghìn điểm. Cổ phiếu pin giảm mạnh, còn hợp đồng điện hạt nhân Hàn Quốc gặp trục trặc. Điều gì đang xảy ra? Đây là bản tin sáng ba mươi tháng mười, với số liệu thị trường của phiên hôm qua.",
+      "sourceIds": [
+        "market-yonhap",
+        "lg-sedaily",
+        "khnp"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI đóng cửa 29/10",
+          "value": "5.937,66",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "5.937,66",
+        "qualifier": "KRX 29/10 · không phải giá 30/10"
+      },
+      "source": "Yonhap · 29/10"
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG · KRX 29/10",
+      "headline": "KOSPI giảm 1,24%",
+      "summary": "Samsung giảm, SK hynix tăng.",
+      "voiceText": "KOSPI phiên hai mươi chín tháng mười đóng cửa tại năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm, giảm một phẩy hai bốn phần trăm. Trước đó chỉ số từng vượt sáu nghìn một trăm, nhưng không giữ được đà tăng. Samsung Electronics giảm bốn phẩy mười ba phần trăm, trong khi SK hynix tăng hai phẩy sáu hai phần trăm. Đây là giá đóng cửa trên KRX, không phải báo giá sáng nay hay dữ liệu cộng thêm từ NXT.",
+      "sourceIds": [
+        "market-yonhap",
+        "market-aju"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 29/10",
+          "value": "5.937,66",
+          "change": "−1,24%",
+          "tone": "down"
+        },
+        {
+          "label": "Samsung · 29/10",
+          "value": "−4,13%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung",
+            "value": -4.13,
+            "display": "−4,13%"
+          },
+          {
+            "label": "SK hynix",
+            "value": 2.62,
+            "display": "+2,62%"
+          }
+        ],
+        "qualifier": "Đóng cửa KRX 29/10; không phải giá hiện tại"
+      },
+      "source": "Yonhap · Aju Press · 29/10"
+    },
+    {
+      "id": "lg",
+      "eyebrow": "PIN XE ĐIỆN · LG CHEM",
+      "headline": "Kế hoạch bán cổ phần pin",
+      "summary": "Quy mô 2,5 nghìn tỷ won, chưa hoàn tất.",
+      "voiceText": "Nhóm pin chịu sức ép riêng. LG Energy Solution giảm tám phẩy sáu phần trăm trong phiên hôm qua, sau khi công ty mẹ LG Chem quyết định bán khoảng hai phẩy năm nghìn tỷ won cổ phần. Lượng cổ phần dự kiến bán tương đương hai phẩy bảy chín phần trăm LG Energy Solution. Đây là kế hoạch giao dịch từ cuối tháng mười một đến tháng mười hai, chưa phải giao dịch đã hoàn tất. Nhà đầu tư lo ngại nguồn cung cổ phiếu tăng thêm.",
+      "sourceIds": [
+        "market-yonhap",
+        "lg-sedaily"
+      ],
+      "stats": [
+        {
+          "label": "LGES · 29/10",
+          "value": "−8,6%",
+          "tone": "down"
+        },
+        {
+          "label": "LG Chem dự kiến bán",
+          "value": "~2,5 nghìn tỷ ₩",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~2,5 nghìn tỷ ₩",
+        "qualifier": "KẾ HOẠCH LG Chem · chưa hoàn tất"
+      },
+      "source": "Seoul Economic Daily · Yonhap"
+    },
+    {
+      "id": "nuclear",
+      "eyebrow": "ĐIỆN HẠT NHÂN · CỘNG HÒA SÉC",
+      "headline": "Dừng đàm phán xây dựng",
+      "summary": "Dự án tổng thể không bị hủy.",
+      "voiceText": "Một tin đáng chú ý khác đến từ điện hạt nhân. K H N P cho biết đã kết thúc đàm phán hợp đồng xây dựng nhà máy Dukovany ở Cộng hòa Séc với liên danh Daewoo và Doosan Enerbility, do bất đồng điều khoản. Nhưng dự án điện hạt nhân tổng thể không bị hủy. K H N P đang chuẩn bị tìm nhà thầu xây dựng mới. Hợp đồng riêng của Doosan về cung cấp thiết bị chính cho dự án vẫn được giữ nguyên, theo công ty.",
+      "sourceIds": [
+        "khnp",
+        "doosan"
+      ],
+      "stats": [
+        {
+          "label": "Đàm phán xây dựng",
+          "value": "ĐÃ DỪNG",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "KHÔNG HỦY DỰ ÁN",
+        "qualifier": "Chỉ dừng đàm phán hợp đồng xây dựng · 29/10"
+      },
+      "source": "KHNP · Doosan qua Yonhap 29/10"
+    },
+    {
+      "id": "doosan",
+      "eyebrow": "DOOSAN · KẾT QUẢ QUÝ III",
+      "headline": "Lợi nhuận tăng 90,6%",
+      "summary": "Có thêm hợp đồng SMR tại Mỹ.",
+      "voiceText": "Cũng trong ngày hai mươi chín, Doosan công bố lợi nhuận hoạt động quý ba đạt hai trăm sáu mươi mốt phẩy hai tỷ won, tăng chín mươi phẩy sáu phần trăm so với cùng kỳ. Doanh nghiệp còn thông báo hợp đồng cung cấp một bộ phận lò phản ứng mô đun nhỏ cho NuScale tại Mỹ. Tuy nhiên, giá trị đơn hàng chưa được xác minh. Vì vậy không thể lấy một hợp đồng mới để bù trừ ngay cho rủi ro đàm phán xây dựng tại Séc.",
+      "sourceIds": [
+        "doosan",
+        "smr"
+      ],
+      "stats": [
+        {
+          "label": "Lợi nhuận hoạt động Q3 YoY",
+          "value": "+90,6%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+90,6%",
+        "qualifier": "Doosan Q3/2026 · so với cùng kỳ"
+      },
+      "source": "Doosan / Yonhap · 29/10"
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Tách dữ kiện và kỳ vọng",
+      "summary": "Số liệu 29/10; chờ phiên mới.",
+      "voiceText": "Nhìn chung, thị trường đang phản ứng với những câu chuyện rất khác nhau: kỳ vọng lợi nhuận bán dẫn, nguồn cung cổ phiếu pin và tiến độ hợp đồng năng lượng. Trong phiên mới, chúng ta cần theo dõi phản ứng từng ngành thay vì quy tất cả vào một nguyên nhân. Các mức giá vừa nêu thuộc phiên hai mươi chín tháng mười. Thông tin chỉ để tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "sourceIds": [
+        "market-yonhap",
+        "lg-sedaily",
+        "khnp"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KOSPI: đóng cửa 29/10",
+          "LG Chem: kế hoạch bán",
+          "KHNP: đàm phán xây dựng"
+        ],
+        "cta": true
+      },
+      "source": "KCI · tổng hợp nguồn 29/10"
+    }
+  ]
+}
