@@ -83,6 +83,16 @@
       ]
     }
   ],
+  "rightsNotes": [
+    {
+      "item": "Giọng Vbee Anh Khôi",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    },
+    {
+      "item": "Nhạc nền",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    }
+  ],
   "hook": {
     "spoken": "Fed giữ lãi suất, đồng won chỉ nhích nhẹ. Nhưng vì sao một thành viên BOK lại lo về tốc độ biến động tỷ giá?",
     "candidates": [
@@ -105,9 +115,9 @@
   },
   "cta": {
     "type": "comment",
-    "spoken": "Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu? Bình luận góc nhìn và theo dõi KCI nhé.",
+    "spoken": "Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
     "screenHeadline": "WON MẠNH: LỢI HAY KHÓ?",
-    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi Korea Capital Insight",
     "question": "Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu?"
   },
   "scenes": [
@@ -220,7 +230,7 @@
       "eyebrow": "KÊNH TÁC ĐỘNG HÀN QUỐC",
       "headline": "NHẬP KHẨU VÀ XUẤT KHẨU",
       "summary": "Won mạnh có thể giảm chi phí nhập khẩu, nhưng ảnh hưởng doanh thu quy đổi.",
-      "voiceText": "BOK đã giữ lãi suất ba phần trăm từ ngày hai mươi hai tháng mười. Won mạnh có thể giảm chi phí nhập khẩu tính bằng won, nhưng cũng gây áp lực lên doanh thu quy đổi của một số nhà xuất khẩu. Mức tác động còn tùy hợp đồng, phòng hộ tỷ giá và giá năng lượng.",
+      "voiceText": "BOK đã giữ lãi suất ba phần trăm từ ngày hai mươi hai tháng mười. Won mạnh có thể giảm chi phí nhập khẩu tính bằng won, nhưng có thể gây áp lực lên doanh thu quy đổi của một số nhà xuất khẩu. Mức tác động còn tùy hợp đồng, phòng hộ tỷ giá và giá năng lượng.",
       "source": "BOK 22/10 · phân tích cơ chế có điều kiện, góc nhìn của KCI",
       "sourceIds": [
         "bok-policy-1022"
@@ -243,7 +253,7 @@
       "eyebrow": "ĐIỀU CẦN THEO DÕI",
       "headline": "WON CÓ ỔN ĐỊNH?",
       "summary": "Góc nhìn KCI: lạm phát, lợi suất Mỹ và dòng vốn sẽ quyết định sức ép tiếp theo.",
-      "voiceText": "Điều cần theo dõi là lạm phát, lợi suất Mỹ và dòng vốn sau Fed, cùng độ bền của đồng won. Chưa thể kết luận đồng won sẽ tiếp tục tăng giá hay BOK chắc chắn nâng lãi suất. Đây là Korea Capital Insight.",
+      "voiceText": "Điều cần theo dõi là lạm phát, lợi suất Mỹ và dòng vốn sau Fed, cùng độ bền của đồng won. Chưa thể kết luận đồng won sẽ tiếp tục tăng giá hay BOK chắc chắn nâng lãi suất.",
       "source": "Fed 28/10 · BOK 22/10 · Reuters 29/10",
       "sourceIds": [
         "fed-fomc-1028",

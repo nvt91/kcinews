@@ -30,22 +30,24 @@ BOK **giữ lãi suất cơ bản 3,00% ngày 22/10**, không có quyết địn
 
 **3 — Won · Yonhap:** Tại Seoul, tỷ giá một đô la Mỹ bằng một nghìn ba trăm ba mươi sáu phẩy tám won lúc mười lăm giờ ba mươi hôm nay, giảm không phẩy chín won so mốc tương ứng phiên trước. Nghĩa là won mạnh lên nhẹ. Đây không phải báo giá lúc hai mươi mốt giờ.
 
-**4 — Hwang · Reuters:** Trong cuộc phỏng vấn Reuters công bố hôm nay, thành viên hội đồng BOK Hwang Kun-il cho rằng đồng won gần đây tăng giá phần nào nhanh hơn dự kiến. Ông nhấn mạnh tốc độ và biến động quan trọng hơn một mức tỷ giá đơn lẻ. Đây là nhận định cá nhân, không phải quyết định chính sách mới. Nguồn trên màn hình: `Reuters · 29/10`. Chỉ cảnh này đọc lại bằng Vbee.
+**4 — Hwang · Reuters:** Trong cuộc phỏng vấn Reuters công bố hôm nay, thành viên hội đồng BOK Hwang Kun-il cho rằng đồng won gần đây tăng giá phần nào nhanh hơn dự kiến. Ông nhấn mạnh tốc độ và biến động quan trọng hơn một mức tỷ giá đơn lẻ. Đây là nhận định cá nhân, không phải quyết định chính sách mới. Nguồn trên màn hình: `Reuters · 29/10`. Cảnh này đọc lại bằng Vbee.
 
-**5 — Hàn Quốc · BOK:** BOK đã giữ lãi suất ba phần trăm từ ngày hai mươi hai tháng mười. Won mạnh có thể giảm chi phí nhập khẩu tính bằng won, nhưng cũng gây áp lực lên doanh thu quy đổi của một số nhà xuất khẩu. Mức tác động còn tùy hợp đồng, phòng hộ tỷ giá và giá năng lượng. Lời đọc giữ nguyên. Nguồn trên màn hình: `BOK 22/10 · phân tích cơ chế có điều kiện, góc nhìn của KCI`. Không gắn source Hwang.
+**5 — Hàn Quốc · BOK:** BOK đã giữ lãi suất ba phần trăm từ ngày hai mươi hai tháng mười. Won mạnh có thể giảm chi phí nhập khẩu tính bằng won, nhưng có thể gây áp lực lên doanh thu quy đổi của một số nhà xuất khẩu. Mức tác động còn tùy hợp đồng, phòng hộ tỷ giá và giá năng lượng. Nguồn trên màn hình: `BOK 22/10 · phân tích cơ chế có điều kiện, góc nhìn của KCI`. Không gắn source Hwang. Cảnh này đọc lại bằng Vbee.
 
-**6 — Theo dõi:** Điều cần theo dõi là lạm phát, lợi suất Mỹ và dòng vốn sau Fed, cùng độ bền của đồng won. Chưa thể kết luận đồng won sẽ tiếp tục tăng giá hay BOK chắc chắn nâng lãi suất. Đây là Korea Capital Insight. Lời đọc giữ nguyên, kể cả cụm lạm phát, lợi suất Mỹ và dòng vốn. Tóm tắt màn hình ghi `Góc nhìn KCI`. Gạch 01: `Fed: chờ thêm dữ liệu`. Gạch 03: `BOK: lạm phát, giá dầu và tỷ giá`.
+**6 — Theo dõi:** Điều cần theo dõi là lạm phát, lợi suất Mỹ và dòng vốn sau Fed, cùng độ bền của đồng won. Chưa thể kết luận đồng won sẽ tiếp tục tăng giá hay BOK chắc chắn nâng lãi suất. Cụm lạm phát, lợi suất Mỹ và dòng vốn vẫn trong lời đọc; tóm tắt màn hình ghi `Góc nhìn KCI`. Gạch 01: `Fed: chờ thêm dữ liệu`. Gạch 03: `BOK: lạm phát, giá dầu và tỷ giá`. Bỏ câu ký tên kênh ở cuối lời đọc. Cảnh này đọc lại bằng Vbee vì CTA nối vào cảnh cuối.
 
-**CTA append một lần:** Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu? Bình luận góc nhìn và theo dõi KCI nhé.
+**CTA append một lần, không lặp trong voiceText:** Theo anh chị, đồng won mạnh lên sẽ hỗ trợ kiểm soát giá cả hay tạo thêm sức ép cho xuất khẩu? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé. Màn hình: `WON MẠNH: LỢI HAY KHÓ?` / `Chia sẻ góc nhìn · Theo dõi Korea Capital Insight`.
 
 **Caption dưới 50 từ tính cả hashtag:** 🇰🇷 Fed giữ lãi suất, đồng won nhích lên nhẹ. Nhưng một thành viên BOK chú ý tốc độ biến động tỷ giá. Điều này ảnh hưởng tới giá cả và xuất khẩu Hàn Quốc thế nào? Cùng xem nhé! #KCI #ViMo
 
 ## Editorial & production gate
 
-**Biên tập 93/100**: nguồn 34/35, diễn giải 24/25, mới 14/15, lời đọc 14/15, chống trùng 7/10. **Job**: jobs/kci-2026-10-29-macro21.json, schemaVersion2 KciNewsDaily, sáu cảnh, 335 từ kể cả CTA (thời lượng thật đo sau TTS). Mốc 21h KST không phải đóng cửa Mỹ cùng ngày; Hoa Kỳ còn EDT (UTC-4) tới 01/11/2026.
+**Biên tập 93/100**: nguồn 34/35, diễn giải 24/25, mới 14/15, lời đọc 14/15, chống trùng 7/10. **Job**: jobs/kci-2026-10-29-macro21.json, schemaVersion2 KciNewsDaily, sáu cảnh, 333 từ kể cả CTA (thời lượng thật đo sau TTS). Mốc 21h KST không phải đóng cửa Mỹ cùng ngày; Hoa Kỳ còn EDT (UTC-4) tới 01/11/2026.
 
 **Preflight runner live:** scripts/run-job.mjs supports mode=video and video-reuse. Trên nhánh này workflow gán `KCI_ALIGN_CAPTIONS` thành `1` khi biến repository không được đặt; cue tối đa 3 từ, ngắt ở dấu câu, không kết thúc bằng từ treo. Nếu Whisper không chạy được, runner quay về cue 7 từ. Chưa đo effects-map ±2 frame, true peak hay đủ 9 bước QC; các mục đó vẫn NOT_VERIFIED. TTS/motion: footage, retake, face tracking, grading N/A. Không tự đăng.
 
 ## Vòng Water 1 — 29/10/2026
 
-Water: SỬA. Số liệu cốt lõi đạt. Lời đọc chỉ đổi cảnh 4. Cảnh 2 giữ câu `Fed chưa chốt hướng đi kỳ họp sau`. Cụm `lạm phát, lợi suất Mỹ và dòng vốn` vẫn nằm trong lời đọc cảnh 6; chỉ tóm tắt màn hình ghi góc nhìn KCI. Ledger Fed bỏ câu tiếng Anh mà thông cáo không viết. Ledger Hwang dùng URL Channel NewsAsia (HTTP 200); link Reuters gốc HTTP 401 nằm ở trường `note`. Không thêm dòng `BOK đã tăng lãi suất tháng 7 và 8`: fact đó không có sẵn trong ledger. Bài CNA có câu này, nhưng không đưa lên màn hình. Mốc `13:33 KST` của bản cũ không hiện trên trang CNA mở được, nên brief không giữ giờ đó. Chưa dựng lại MP4 trong lượt này.
+Water: SỬA. Số liệu cốt lõi đạt. Cảnh 2 giữ câu `Fed chưa chốt hướng đi kỳ họp sau`. Cụm `lạm phát, lợi suất Mỹ và dòng vốn` vẫn nằm trong lời đọc cảnh 6; chỉ tóm tắt màn hình ghi góc nhìn KCI. Ledger Fed bỏ câu tiếng Anh mà thông cáo không viết. Ledger Hwang dùng URL Channel NewsAsia (HTTP 200); link Reuters gốc HTTP 401 nằm ở trường `note`. Không thêm dòng `BOK đã tăng lãi suất tháng 7 và 8`: fact đó không có sẵn trong ledger. Bài CNA có câu này, nhưng không đưa lên màn hình. Mốc `13:33 KST` của bản cũ không hiện trên trang CNA mở được, nên brief không giữ giờ đó. Chưa dựng lại MP4 trong lượt này.
+
+Bổ sung trên cùng PR: CTA cuối dùng mẫu `Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.` Giọng và nhạc nền ghi trong `rightsNotes`, không có URL. Cảnh 5 đổi `cũng gây áp lực` thành `có thể gây áp lực`. Giọng cảnh 1–3 giữ MP3 run `40870488805`. Cảnh 4, 5 và 6 đọc lại.
