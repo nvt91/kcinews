@@ -116,4 +116,23 @@ const validated = execFileSync(process.execPath, [
 ], { encoding: "utf8" });
 assert.match(validated, /Validated kci-2026-10-29-kr-mid/);
 
+const realScript = "Samsung vừa công bố báo cáo quý ba: lợi nhuận hoạt động một trăm linh bảy phẩy bốn nghìn tỷ won. Nhưng mảng chip tạo gần hết lợi nhuận, còn mảng thiết bị lại lỗ. Bản sáng mới chỉ nói đến lịch công bố. Đây là số liệu chi tiết vừa ra.";
+const realOj = timedWordsFromWhisperJson({
+  transcription: [
+    {
+      timestamps: { from: "00:00:00,000", to: "00:00:06,400" },
+      text: " Samson vừa công bố báo cáo quý ba lợi nhận hoạt động 1007/4.000 tỷ huồn, nhưng màng chiếp tạo gần hết lợi nhận,",
+    },
+    {
+      timestamps: { from: "00:00:06,400", to: "00:00:11,320" },
+      text: " còn màng thiết bị lại lỗ, bản sáng mới chỉ nói đến lịch công bố, đây là số liệu chi tiết vừa gian.",
+    },
+  ],
+});
+assert.ok(realOj.length > 10, "segment text must be split into words");
+const realAligned = alignNarration(realScript, realOj, 339);
+assert.equal(realAligned.ok, true);
+assert.ok(realAligned.matched / realAligned.total >= 0.8, realAligned.matched + "/" + realAligned.total);
+assert.ok(realAligned.captions.every((cue) => cue.text.split(/\s+/).length <= 3));
+
 console.log("align-captions tests: PASS");

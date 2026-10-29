@@ -29,7 +29,7 @@ if (process.env.GITHUB_EVENT_NAME === "issues" && !explicitMode) {
   const issueBody = JSON.parse(issue.body || "{}");
   jobFile = issueBody.job || "jobs/kci-2026-10-23.json";
 }
-if (!["validate", "preview", "voice-test", "video"].includes(mode)) throw new Error("Invalid mode.");
+if (!["validate", "preview", "voice-test", "video", "video-reuse"].includes(mode)) throw new Error("Invalid mode.");
 if (!/^jobs\/[\w-]+\.json$/.test(jobFile)) throw new Error("Job filename must be within jobs/.");
 const job = JSON.parse(fs.readFileSync(jobFile, "utf8"));
 const dailyJob = job.schemaVersion === 2;
@@ -49,9 +49,24 @@ console.log("Validated", job.id, job.scenes.length, "scenes.");
 if (mode !== "validate") {
   const out = path.resolve("out");
   fs.mkdirSync(out, {recursive:true});
+  const reuseAudio = mode === "video-reuse";
   if (mode === "video" || mode === "voice-test") checkVbeeSettings();
+  if (reuseAudio) {
+    console.log("video-reuse: narration MP3s are reused; Vbee will not be called.");
+  }
   const voiceDir = path.resolve("public/voice");
   if (mode === "video" || mode === "voice-test") fs.mkdirSync(voiceDir, {recursive:true});
+  let reuseProps = null;
+  if (reuseAudio) {
+    const propsPath = process.env.KCI_REUSE_PROPS || path.resolve("reused-voice/out/props.json");
+    if (!fs.existsSync(propsPath)) {
+      throw new Error("Missing reused props at " + propsPath + ". Refusing to call Vbee.");
+    }
+    reuseProps = JSON.parse(fs.readFileSync(propsPath, "utf8"));
+    if (!Array.isArray(reuseProps.scenes) || reuseProps.scenes.length !== job.scenes.length) {
+      throw new Error("Reused props scene count does not match the job. Refusing to call Vbee.");
+    }
+  }
   const scenes = [];
   let startFrame = 0;
   let alignedScenes = 0;
@@ -69,7 +84,19 @@ if (mode !== "validate") {
     const isLastScene = i === job.scenes.length - 1;
     const narration = scene.voiceText +
       (dailyJob && isLastScene ? " " + job.cta.spoken : "");
-    if (mode === "voice-test" || mode === "video") {
+    if (reuseAudio) {
+      const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
+      if (!fs.existsSync(target) || fs.statSync(target).size < 2000) {
+        throw new Error("Missing reused MP3 " + target + ". Refusing to call Vbee.");
+      }
+      const output = execFileSync("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",target],{encoding:"utf8"}).trim();
+      seconds = Number(output);
+      const expected = (Number(reuseProps.scenes[i].durationFrames) - 10) / FPS;
+      if (!Number.isFinite(seconds) || seconds < 2 || seconds > 95 || !Number.isFinite(expected) || Math.abs(seconds - expected) > 0.35) {
+        throw new Error("Reused MP3 duration does not match props for scene " + scene.id + ". Refusing to call Vbee.");
+      }
+      audioFile = "voice/" + path.basename(target);
+    } else if (mode === "voice-test" || mode === "video") {
       const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
       await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
       const output = execFileSync("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",target],{encoding:"utf8"}).trim();

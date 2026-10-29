@@ -29,8 +29,8 @@ Script cục bộ vẫn tắt cho đến khi có `KCI_ALIGN_CAPTIONS=1` hoặc `
 
 - Biến `KCI_ALIGN_CAPTIONS=1` (hoặc `true` / `yes`), hoặc cờ `--align-captions` trên `node scripts/run-job.mjs`.
 - Bước cài whisper.cpp có `continue-on-error`. Cài hoặc tải model lỗi thì `run-job.mjs` quay về cue 7 từ và job dựng vẫn chạy tiếp.
-- Binary: `whisper-cli` (whisper.cpp) hoặc `whisper` local. Model file qua `KCI_WHISPER_MODEL`. Workflow khi được bật tải `ggml-base.bin` vào `~/.cache/kci-whisper/` và đặt `KCI_WHISPER_BIN`.
-- Bảng dung lượng của whisper.cpp, không đo trên máy này: tiny khoảng 75 MiB, base khoảng 142 MiB, small khoảng 466 MiB, medium khoảng 1,5 GiB. Workflow dùng base.
+- Binary: `whisper-cli` (whisper.cpp) hoặc `whisper` local. Model file qua `KCI_WHISPER_MODEL`. Workflow khi được bật tải `ggml-small.bin` (khoảng 466 MiB) vào `~/.cache/kci-whisper/`.
+- JSON `-oj` của whisper.cpp là vài đoạn cả câu, không phải từng từ. Parser tách đoạn đó thành từ và, khi có `-ojf`, ghép token con. Cụm số đọc (một, trăm, phẩy, nghìn...) được căn vào token có chữ số.
 - Thời gian cài và thời gian nhận dạng: chưa đo, vì test cục bộ không tải model và không chạy bước cài. Khi cờ bật, job `render` thêm một lần biên dịch whisper.cpp và một lần tải khoảng 142 MiB trước bước dựng hiện có.
 
 Khi cờ bật, mỗi cảnh có MP3 được đưa qua ffmpeg ra WAV 16 kHz rồi Whisper ngôn ngữ `vi`. Mốc từ được khớp với `voiceText` đã duyệt. Chữ trên hình vẫn là lời kịch bản, không phải chữ Whisper nghe được. Cue tối đa 3 từ, ngắt thêm ở `.?!…`. Nếu không có binary, không có model, JSON lỗi, hoặc khớp dưới 50% số từ, cảnh đó trở lại chia đều 7 từ và `console.warn` ghi lý do.

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "validate or preview are no-Vbee runs; voice-test and video invoke paid Vbee requests"
+        description: "validate or preview are no-Vbee; voice-test and video call Vbee; video-reuse renders from an existing artifact"
         type: choice
         required: true
         default: validate
@@ -13,11 +13,17 @@ on:
           - preview
           - voice-test
           - video
+          - video-reuse
       job:
         description: "Reviewed input JSON inside jobs/"
         type: string
         required: true
         default: jobs/kci-2026-10-23.json
+      voice_run_id:
+        description: "video-reuse only: Actions run id whose artifact kci-<id> holds public/voice MP3s"
+        type: string
+        required: false
+        default: ""
   pull_request:
     paths:
       - 'src/**'
@@ -58,6 +64,7 @@ jobs:
       - run: node --check scripts/run-job.mjs
       - run: node --check scripts/align-captions.mjs
       - run: node scripts/test-align-captions.mjs
+      - run: node scripts/test-video-reuse.mjs
       - run: node scripts/test-vbee-adapter.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
@@ -94,6 +101,7 @@ jobs:
     permissions:
       contents: read
       issues: write
+      actions: read
     env:
       KCI_JOB: ${{ inputs.job }}
       KCI_MODE: ${{ inputs.mode }}
@@ -122,7 +130,27 @@ jobs:
       - name: Validate job
         run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
       - name: Verify Cloudflare Worker before any Vbee request
+        if: inputs.mode != 'video-reuse'
         run: node scripts/check-worker.mjs
+      - name: Require a prior voice artifact for video-reuse
+        if: inputs.mode == 'video-reuse' && inputs.voice_run_id == ''
+        run: echo "video-reuse requires voice_run_id" && exit 1
+      - name: Download reused narration MP3s
+        if: inputs.mode == 'video-reuse'
+        uses: actions/download-artifact@v4
+        with:
+          name: kci-${{ inputs.voice_run_id }}
+          run-id: ${{ inputs.voice_run_id }}
+          github-token: ${{ github.token }}
+          path: reused-voice
+      - name: Place reused narration into public/voice
+        if: inputs.mode == 'video-reuse'
+        run: |
+          set -euo pipefail
+          mkdir -p public/voice
+          find reused-voice -type f -name 'scene-*.mp3' -exec cp {} public/voice/ \;
+          test -s reused-voice/out/props.json
+          find public/voice -name 'scene-*.mp3' | sort
       - name: Install offline whisper.cpp only when caption alignment is enabled
         if: env.KCI_ALIGN_CAPTIONS == '1'
         continue-on-error: true
@@ -139,13 +167,13 @@ jobs:
           fi
           sudo install -m 755 "$install_dir/whisper-cli" /usr/local/bin/whisper-cli
           mkdir -p "$HOME/.cache/kci-whisper"
-          if [ ! -s "$HOME/.cache/kci-whisper/ggml-base.bin" ]; then
-            curl -L --fail --retry 3 -o "$HOME/.cache/kci-whisper/ggml-base.bin" \
-              "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"
+          if [ ! -s "$HOME/.cache/kci-whisper/ggml-small.bin" ]; then
+            curl -L --fail --retry 3 -o "$HOME/.cache/kci-whisper/ggml-small.bin" \
+              "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin"
           fi
           echo "KCI_WHISPER_BIN=whisper-cli" >> "$GITHUB_ENV"
-          echo "KCI_WHISPER_MODEL=$HOME/.cache/kci-whisper/ggml-base.bin" >> "$GITHUB_ENV"
-          echo "Upstream whisper.cpp table lists ggml-base at about 142 MiB. If this step fails, run-job keeps the 7-word cues and the render continues."
+          echo "KCI_WHISPER_MODEL=$HOME/.cache/kci-whisper/ggml-small.bin" >> "$GITHUB_ENV"
+          echo "Upstream whisper.cpp table lists ggml-small at about 466 MiB. If this step fails, run-job keeps the 7-word cues and the render continues."
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - name: Preserve audio and review artifacts even if a later render step fails
