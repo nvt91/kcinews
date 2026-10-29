@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-30-us-am",
+  "articleId": "KCI-20261030-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "30/10/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-10-30T08:57:30+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq giảm 1,38%, GDP Mỹ tăng 3,4%: AI đối diện phép thử dòng tiền",
+  "sourceDisclaimer": "Nguồn công bố 28–29/10/2026; Phố Wall chốt phiên chính Mỹ 29/10, không phải giao dịch hiện tại.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-10-30/us-am.md",
+  "eventKeys": [
+    "us-index-close-2026-10-29",
+    "alphabet-earnings-market-reaction-2026-10-29",
+    "bea-gdp-q3-advance-2026-10-29",
+    "bea-pce-september-2026-10-29",
+    "fed-policy-2026-10-28"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-close-2910",
+      "title": "AP: US major stock indexes closing Thursday 29 October 2026",
+      "url": "https://apnews.com/article/2c26b0b1bbc3bfab9f3f4b902172f458",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US regular close 29 Oct: S&P 500 7,720.39 (-0.30%), Nasdaq Composite 26,184.72 (-1.38%), Dow 52,342.56 (-0.25%), Russell 2000 +1.01%.",
+        "Most stocks rose even as headline indexes fell; values exclude after-hours."
+      ]
+    },
+    {
+      "id": "reuters-close-2910",
+      "title": "Reuters: Wall Street ends lower as Alphabet revenue miss revives AI capex jitters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-slide-mixed-big-tech-results-test-ai-trade-2026-10-29/",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq -1.37% (rounding differs slightly from AP), S&P 500 -0.30%, Dow -0.25%; Alphabet shares fell 12.6% on 29 Oct.",
+        "Alphabet results and AI capex concerns weighed on technology shares."
+      ]
+    },
+    {
+      "id": "sec-alphabet-2810",
+      "title": "SEC Exhibit 99.1: Alphabet third-quarter 2026 earnings",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "primary",
+      "facts": [
+        "Alphabet Q3 revenue +25% to $127.6bn, Google Cloud revenue +103% YoY to $30.7bn; Search and other +12%.",
+        "Alphabet Q3 net income $26.2bn, EPS $2.12; quarter ended September 30, 2026."
+      ]
+    },
+    {
+      "id": "bea-gdp-2910",
+      "title": "BEA: US GDP advance estimate, third quarter 2026",
+      "url": "https://www.bea.gov/index.php/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "primary",
+      "facts": [
+        "Advance real US GDP grew 3.4% at seasonally adjusted annualized rate Q3 2026, versus 2.2% Q2.",
+        "GDP 3.4% is annualized quarter-on-quarter advance estimate, not year-over-year; subject to revision."
+      ]
+    },
+    {
+      "id": "bea-pce-2910",
+      "title": "BEA: Personal Income and Outlays, September 2026",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "primary",
+      "facts": [
+        "September core PCE price index +3.1% YoY; headline PCE +3.6% YoY.",
+        "September monthly headline PCE +0.5%, core PCE +0.3%; released October 29."
+      ]
+    },
+    {
+      "id": "fed-fomc-2810",
+      "title": "Federal Reserve: FOMC statement October 28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "primary",
+      "facts": [
+        "Fed held target rate range 3.75%-4.00% by 10-2 vote on Oct 28; two dissents preferred +25 basis points.",
+        "Inflation remains elevated; no guaranteed next move was announced."
+      ]
+    },
+    {
+      "id": "reuters-ai-cash-2910",
+      "title": "Reuters: Cash is king as investors redraw lines in AI spending boom",
+      "url": "https://www.reuters.com/business/cash-is-king-investors-draw-new-battle-lines-ai-spending-boom-2026-10-29/",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T08:57:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Investors increasingly assess AI infrastructure spending against sustainable cash flows, not cloud growth alone.",
+        "Alphabet share selloff highlighted doubts about cash returns from capital expenditure."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq giảm gần một phẩy bốn phần trăm, dù phần lớn cổ phiếu Mỹ vẫn tăng. Vì sao?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Nasdaq giảm gần một phẩy bốn phần trăm, dù phần lớn cổ phiếu Mỹ vẫn tăng. Vì sao?",
+        "score": 94
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nasdaq giảm mạnh, nhưng GDP Mỹ vẫn tăng. Điều gì đáng chú ý hơn với cổ phiếu Hàn Quốc?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Google Cloud tăng hơn gấp đôi, vậy vì sao Alphabet lại mất hơn mười hai phần trăm?",
+        "score": 92
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, tăng trưởng AI hay dòng tiền thực tế sẽ quyết định xu hướng công nghệ? Chia sẻ góc nhìn cùng Korea Capital Insight nhé.",
+    "screenHeadline": "AI HAY DÒNG TIỀN THỰC?",
+    "screenSubline": "Anh chị đang theo dõi tín hiệu nào?",
+    "question": "Tăng trưởng AI hay dòng tiền thực tế sẽ quyết định xu hướng công nghệ?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 29/10",
+      "headline": "Nasdaq −1,38% · phần lớn cổ phiếu vẫn tăng",
+      "summary": "Chỉ số công nghệ giảm mạnh vì cổ phiếu vốn hóa lớn.",
+      "source": "AP, đóng cửa Mỹ 29/10/2026",
+      "sourceIds": [
+        "ap-close-2910",
+        "reuters-close-2910"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ COMPOSITE",
+          "value": "−1,38%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500",
+          "value": "−0,30%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Nasdaq giảm gần một phẩy bốn phần trăm, dù phần lớn cổ phiếu Mỹ vẫn tăng. Vì sao? Đây là bức tranh Phố Wall ngày hai mươi chín tháng mười.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -1.38,
+            "display": "−1,38%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -0.3,
+            "display": "−0,30%"
+          },
+          {
+            "label": "RUSSELL 2000",
+            "value": 1.01,
+            "display": "+1,01%"
+          }
+        ],
+        "qualifier": "Phiên chính Mỹ 29/10/2026 · AP, không gồm sau giờ"
+      }
+    },
+    {
+      "id": "wallstreet",
+      "eyebrow": "CHỐT PHIÊN MỸ",
+      "headline": "Chỉ số đỏ, độ rộng thị trường tích cực",
+      "summary": "S&P 500 7.720,39 điểm; Dow 52.342,56 điểm.",
+      "source": "AP / Reuters · 29/10/2026",
+      "sourceIds": [
+        "ap-close-2910",
+        "reuters-close-2910"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.720,39",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "52.342,56",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "S&P năm trăm giảm không phẩy ba phần trăm, Nasdaq giảm một phẩy ba tám, Dow giảm không phẩy hai lăm. Nhưng Russell hai nghìn tăng khoảng một phần trăm. Độ rộng thị trường tích cực hơn các chỉ số lớn.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -0.3,
+            "display": "−0,30%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -1.38,
+            "display": "−1,38%"
+          },
+          {
+            "label": "DOW",
+            "value": -0.25,
+            "display": "−0,25%"
+          },
+          {
+            "label": "RUSSELL 2000",
+            "value": 1.01,
+            "display": "+1,01%"
+          }
+        ],
+        "qualifier": "Mức % phiên chính 29/10, không phải biến động sau giờ"
+      }
+    },
+    {
+      "id": "alphabet",
+      "eyebrow": "AI & BIG TECH",
+      "headline": "Alphabet giảm 12,6% sau báo cáo quý",
+      "summary": "Google Cloud tăng 103%, nhưng thị trường lo hiệu quả đầu tư AI.",
+      "source": "SEC 28/10 · Reuters 29/10",
+      "sourceIds": [
+        "sec-alphabet-2810",
+        "reuters-close-2910",
+        "reuters-ai-cash-2910"
+      ],
+      "stats": [
+        {
+          "label": "ALPHABET · GIÁ CP",
+          "value": "−12,6%",
+          "tone": "down"
+        },
+        {
+          "label": "GOOGLE CLOUD · DOANH THU",
+          "value": "+103% YoY",
+          "tone": "up"
+        }
+      ],
+      "voiceText": "Alphabet giảm mười hai phẩy sáu phần trăm. Google Cloud vẫn tăng doanh thu một trăm linh ba phần trăm so cùng kỳ, nhưng chi phí đầu tư AI và dòng tiền khiến nhà đầu tư thận trọng. Tăng trưởng không bảo đảm lợi nhuận tương ứng.",
+      "visual": {
+        "kind": "company",
+        "company": "Alphabet / Google",
+        "bullets": [
+          "GIÁ CỔ PHIẾU −12,6% · 29/10",
+          "CLOUD +103% YoY · Q3/2026",
+          "THỊ TRƯỜNG SOI DÒNG TIỀN AI"
+        ]
+      }
+    },
+    {
+      "id": "macro",
+      "eyebrow": "KINH TẾ MỸ · BEA",
+      "headline": "GDP quý III +3,4% · PCE lõi 3,1%",
+      "summary": "GDP tăng theo tốc độ năm hóa; lạm phát PCE lõi là so cùng kỳ.",
+      "source": "BEA, công bố 29/10/2026",
+      "sourceIds": [
+        "bea-gdp-2910",
+        "bea-pce-2910"
+      ],
+      "stats": [
+        {
+          "label": "GDP Q3 · NĂM HÓA",
+          "value": "+3,4%",
+          "tone": "up"
+        },
+        {
+          "label": "CORE PCE T9 · YOY",
+          "value": "+3,1%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Ước tính sơ bộ GDP Mỹ quý ba tăng ba phẩy bốn phần trăm theo tốc độ năm hóa. Còn lạm phát PCE lõi tháng chín tăng ba phẩy một phần trăm so cùng kỳ. Kinh tế vẫn mạnh, nhưng áp lực giá chưa hết.",
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "GDP Q3 · SAAR",
+            "value": 3.4,
+            "display": "+3,4%"
+          },
+          {
+            "label": "CORE PCE T9 · YOY",
+            "value": 3.1,
+            "display": "+3,1%"
+          }
+        ],
+        "qualifier": "GDP: ước tính sơ bộ, năm hóa; core PCE: tháng 9, so cùng kỳ"
+      }
+    },
+    {
+      "id": "fed-korea",
+      "eyebrow": "FED & TÁC ĐỘNG HÀN QUỐC",
+      "headline": "Lãi suất cao · cơ hội và rủi ro cho Hàn Quốc",
+      "summary": "Kịch bản có điều kiện cho bán dẫn, KOSPI/KOSDAQ và USD/KRW.",
+      "source": "Fed 28/10 · BEA 29/10 · KCI phân tích",
+      "sourceIds": [
+        "fed-fomc-2810",
+        "bea-gdp-2910",
+        "bea-pce-2910",
+        "reuters-close-2910"
+      ],
+      "stats": [
+        {
+          "label": "FED TARGET RANGE",
+          "value": "3,75–4,00%",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Fed giữ lãi suất ba phẩy bảy lăm đến bốn phần trăm. Nếu nhu cầu AI chuyển thành đơn hàng chip thật, xuất khẩu Hàn Quốc có thể hưởng lợi. Ngược lại, rủi ro định giá công nghệ và tỷ giá đô la trên won có thể gây sức ép lên KOSPI, KOSDAQ.",
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "CẦU CHIP AI: CẦN ĐƠN HÀNG THỰC",
+          "RỦI RO: ĐỊNH GIÁ & USD/KRW",
+          "THEO DÕI: LẠM PHÁT · LỢI NHUẬN"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "AI tăng trưởng, dòng tiền cần chứng minh",
+      "summary": "Theo dõi dữ liệu thực tế thay vì suy diễn từ một phiên.",
+      "source": "KCI · tổng hợp nguồn chính thức và Reuters/AP",
+      "sourceIds": [
+        "ap-close-2910",
+        "sec-alphabet-2810",
+        "bea-pce-2910"
+      ],
+      "stats": [],
+      "voiceText": "Điểm cần theo dõi là hiệu quả đầu tư AI, lạm phát Mỹ và lợi nhuận bán dẫn. Đây không phải khuyến nghị giao dịch.",
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "NASDAQ −1,38% · PHIÊN 29/10",
+          "GDP Q3 +3,4% · NĂM HÓA",
+          "CORE PCE T9 +3,1% · YOY"
+        ],
+        "qualifier": "Thông tin tham khảo · không phải khuyến nghị giao dịch"
+      }
+    }
+  ]
+}
