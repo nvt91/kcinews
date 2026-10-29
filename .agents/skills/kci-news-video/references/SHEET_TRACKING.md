@@ -2,7 +2,7 @@
 
 ## GLOBAL_US render-first instruction, 27 October 2026
 
-Beginning with the next GLOBAL_US/US_AM edition, the owner wants a fully rendered voiced MP4 delivered first, then owner review (no pre-render preview approval). Do not equate a finished technical render with approval or publication. In Trang tính1 write C=verified actual MP4 completion time KST, E=real playable video/run/artifact link, G=honest QC state, H=CHỜ DUYỆT and I=CHƯA ĐĂNG; if no actual MP4 leave C empty. Record technical limitations without inventing QC PASS. Preserve owner edits, articleId idempotency, history and the separate stream schedules. Lịch tác vụ row15 is for recording this configuration, never controlling the scheduler. Caption remains 50–100 total characters including hashtags.
+Beginning with the next GLOBAL_US/US_AM edition, the owner wants a fully rendered voiced MP4 delivered first, then owner review (no pre-render preview approval). Do not equate a finished technical render with approval or publication. In Trang tính1 write C=verified actual MP4 completion time KST, E=real playable video/run/artifact link, G=honest QC state, H=CHỜ DUYỆT and I=CHƯA ĐĂNG; if no actual MP4 leave C empty. Record technical limitations without inventing QC PASS. Preserve owner edits, articleId idempotency, history and the separate stream schedules. Lịch tác vụ row15 records this configuration. It is not a scheduler. Caption remains 50–100 total characters including hashtags.
 
 
 Owner requests: 25 October 2026 — use the existing KCI News Sheet as a logging/approval surface; 26 October 2026 — explicitly include the separate Global/US morning video task and switch NEW KCI narration to Anh Khôi Tin tức. The Sheet is NOT a publisher or a scheduler. Logging never changes schedules, production quotas, Vbee configuration, secrets, or permissions by itself; the new voice is configured separately in VOICE_PROFILE.md and the video workflow.
@@ -14,7 +14,7 @@ Owner requests: 25 October 2026 — use the existing KCI News Sheet as a logging
 - Time zone: Asia/Seoul; locale vi_VN.
 - Video ledger: sheetId `0`, title `Trang tính1` at initialization; headers row2, records from row3, columns B:O.
 - Existing native table: tableId `376391657`, name `Bảng_1`. Preserve its native structure, styles and dropdowns; extend its range when adding a row. Its initial authored range is B2:O3; do not assume this remains the populated end.
-- Schedule inventory: sheetId25001, `Lịch tác vụ`, table header B9:K9, existing tasks rows10–16; the GLOBAL_US / US_AM task is row15, schedule 09:00 Asia/Seoul Monday–Saturday. The task row is for oversight, not the scheduler.
+- Schedule inventory: sheetId25001, `Lịch tác vụ`, table header B9:K9, existing tasks rows10–16; the GLOBAL_US / US_AM task is row15, recorded as 09:00 Asia/Seoul Monday–Saturday. The task row is for oversight, not a scheduler.
 - Usage notes: sheetId25002, `Hướng dẫn`.
 
 Read metadata and bounded cell data through the connected Google Drive/Sheets tools before every write. The mounted Excel attachment is not the live destination. If access fails, do not create another spreadsheet, infer successful writes, replace credentials or change sharing.
@@ -92,4 +92,4 @@ KCI-20261025-KR-AM was seeded from the existing editorial file and completed Act
 
 Its artifact12578834545 (kci-40141745682) expires 2026-11-01T08:18:21+09:00 and requires GitHub access. Do not present this as a permanent streaming link. No bulk import of old clips or hypothetical future rows was performed.
 
-This reference configures agent-mediated logging through Google Drive tools. It does not install a Google API credential into GitHub Actions, create a webhook, guarantee immediate delivery, or change push/email settings. Never report a future automatic update as tested until an actual scheduled run has successfully written and been read back.
+This reference configures agent-mediated logging through Google Drive tools. It does not install a Google API credential into GitHub Actions, create a webhook, guarantee immediate delivery, or change push/email settings. Never report a future automatic update as tested until a run has successfully written and been read back.
