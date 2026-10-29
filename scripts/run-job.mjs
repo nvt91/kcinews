@@ -3,8 +3,10 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
 import { validateKciJob } from "./validate-kci-job.mjs";
+import { alignSceneCaptions, alignmentEnabled } from "./align-captions.mjs";
 
 const FPS = 30;
+if (process.argv.includes("--align-captions")) process.env.KCI_ALIGN_CAPTIONS = "1";
 const explicitMode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1];
 const explicitJob = process.argv.find(x => x.startsWith("--job="))?.slice(6);
 let mode = explicitMode || process.env.KCI_MODE || "validate";
@@ -52,6 +54,11 @@ if (mode !== "validate") {
   if (mode === "video" || mode === "voice-test") fs.mkdirSync(voiceDir, {recursive:true});
   const scenes = [];
   let startFrame = 0;
+  let alignedScenes = 0;
+  let fallbackScenes = 0;
+  if (!alignmentEnabled()) {
+    console.log("Caption alignment off (set KCI_ALIGN_CAPTIONS=1 for local Whisper).");
+  }
   for (let i=0; i < job.scenes.length; i++) {
     if (mode === "voice-test" && i > 0) break;
     const scene = job.scenes[i];
@@ -76,13 +83,16 @@ if (mode !== "validate") {
       }
     }
     const durationFrames = Math.ceil(seconds*FPS)+10;
-    const words=narration.trim().split(/\s+/);
-    const captions=[];
-    for(let wi=0; wi<words.length; wi+=7) {
-      const audioFrames=durationFrames-10;
-      const from=Math.floor(wi/words.length*audioFrames);
-      const to=Math.max(from+1,Math.floor(Math.min(wi+7,words.length)/words.length*audioFrames));
-      captions.push({from,to,text:words.slice(wi,wi+7).join(" ")});
+    const audioFrames = durationFrames-10;
+    const audioPath = audioFile ? path.join(voiceDir, path.basename(audioFile)) : "";
+    const aligned = alignSceneCaptions({ narration, audioFrames, audioPath });
+    const captions = aligned.captions;
+    if (aligned.method === "aligned") {
+      alignedScenes += 1;
+      console.log("captions: aligned " + scene.id + " (" + aligned.matched + "/" + aligned.total + " words, " + captions.length + " cues)");
+    } else if (alignmentEnabled()) {
+      fallbackScenes += 1;
+      console.warn("captions: alignment failed for " + scene.id + ": " + (aligned.reason || "unknown") + "; using proportional 7-word cues");
     }
     scenes.push({...scene,voiceText:narration,startFrame,durationFrames,audioFile,captions,cta:dailyJob&&isLastScene?job.cta:undefined});
     startFrame+=durationFrames;
@@ -124,6 +134,9 @@ if (mode !== "validate") {
     const streams=execFileSync("ffprobe",["-v","error","-select_streams","a","-show_entries","stream=codec_name","-of","csv=p=0",outputFile],{encoding:"utf8"}).trim();
     if (!streams) throw new Error("No voice in the exported MP4. Rejecting.");
   }
-  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
+  const subtitleNote = alignmentEnabled()
+    ? "Whisper alignment: " + alignedScenes + " aligned, " + fallbackScenes + " proportional fallback"
+    : "Estimated from words; requires listening alignment review";
+  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:subtitleNote,ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
   console.log("Output created; human review required:",outputFile);
 }

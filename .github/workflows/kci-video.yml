@@ -56,6 +56,8 @@ jobs:
       - run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
       - run: node --check scripts/vbee.mjs
       - run: node --check scripts/run-job.mjs
+      - run: node --check scripts/align-captions.mjs
+      - run: node scripts/test-align-captions.mjs
       - run: node scripts/test-vbee-adapter.mjs
       - run: node --check workers/vbee-callback.mjs
       - run: node scripts/test-vbee-callback.mjs
@@ -100,6 +102,7 @@ jobs:
       VBEE_VOICE_CODE: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc
       VBEE_WEBHOOK_URL: ${{ vars.VBEE_WEBHOOK_URL || 'https://kcinews.golffashion-vn.workers.dev/api/vbee-callback' }}
       VBEE_AUDIO_HOSTS: ${{ vars.VBEE_AUDIO_HOSTS || 'vbee-studio2-3.s3.ap-southeast-1.amazonaws.com' }}
+      KCI_ALIGN_CAPTIONS: ${{ vars.KCI_ALIGN_CAPTIONS || '0' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -117,6 +120,28 @@ jobs:
         run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
       - name: Verify Cloudflare Worker before any Vbee request
         run: node scripts/check-worker.mjs
+      - name: Install offline whisper.cpp only when caption alignment is enabled
+        if: env.KCI_ALIGN_CAPTIONS == '1'
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq cmake g++ 
+          git clone --depth 1 https://github.com/ggerganov/whisper.cpp.git "$RUNNER_TEMP/whisper.cpp"
+          cmake -S "$RUNNER_TEMP/whisper.cpp" -B "$RUNNER_TEMP/whisper.cpp/build" -DCMAKE_BUILD_TYPE=Release
+          cmake --build "$RUNNER_TEMP/whisper.cpp/build" -j 2 --target whisper-cli
+          install_dir="$RUNNER_TEMP/whisper.cpp/build/bin"
+          if [ ! -x "$install_dir/whisper-cli" ]; then
+            install_dir="$RUNNER_TEMP/whisper.cpp/build"
+          fi
+          sudo install -m 755 "$install_dir/whisper-cli" /usr/local/bin/whisper-cli
+          mkdir -p "$HOME/.cache/kci-whisper"
+          if [ ! -s "$HOME/.cache/kci-whisper/ggml-base.bin" ]; then
+            curl -L --fail --retry 3 -o "$HOME/.cache/kci-whisper/ggml-base.bin" \
+              "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"
+          fi
+          echo "KCI_WHISPER_BIN=whisper-cli" >> "$GITHUB_ENV"
+          echo "KCI_WHISPER_MODEL=$HOME/.cache/kci-whisper/ggml-base.bin" >> "$GITHUB_ENV"
+          echo "Upstream whisper.cpp table lists ggml-base at about 142 MiB. This step is skipped when KCI_ALIGN_CAPTIONS is 0."
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - name: Preserve audio and review artifacts even if a later render step fails

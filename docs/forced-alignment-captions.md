@@ -1,6 +1,6 @@
-# Đề xuất căn phụ đề theo thời gian từng từ (offline)
+# Căn phụ đề theo thời gian từng từ (offline)
 
-Chưa cài đặt và chưa đổi pipeline. Water đo phụ đề lệch khoảng 1 giây so với tiếng. Tài liệu này chỉ giải thích nguyên nhân khả dĩ và một cách căn lại miễn phí.
+Script đã có trong `scripts/align-captions.mjs` và được `scripts/run-job.mjs` gọi khi dựng cảnh. Mặc định tắt. Water đo phụ đề lệch khoảng 1 giây so với tiếng. Phần dưới giữ nguyên nhân khả dĩ và cách bật.
 
 ## Pipeline hiện tại
 
@@ -8,7 +8,7 @@ Phụ đề không được commit. `.gitignore` bỏ qua `out/`. `scripts/run-j
 
 - Gọi Vbee từng cảnh, đo độ dài MP3 bằng ffprobe.
 - `durationFrames = ceil(giây × 30) + 10`. Mười frame cuối (khoảng 0,33 giây) là đệm; phần phụ đề chỉ trải trên `durationFrames - 10`.
-- Tách `voiceText` bằng khoảng trắng, mỗi cue 7 từ, chia đều theo số từ trên độ dài audio. Không có mốc từng từ.
+- Mặc định vẫn tách `voiceText` bằng khoảng trắng, mỗi cue 7 từ, chia đều theo số từ trên độ dài audio. Không có mốc từng từ. Cờ `KCI_ALIGN_CAPTIONS=1` đổi bước này sang căn Whisper offline.
 - Ghi `out/props.json` và `out/subtitles-estimated.srt`. `out/qc.json` ghi phụ đề là ước lượng, cần nghe lại.
 - `src/KciNewsDaily.tsx` hiện cue theo frame trong cảnh. Chữ cue mờ dần 5 frame (khoảng 0,17 giây). Cả lớp hình mờ dần 10 frame đầu (khoảng 0,33 giây). Audio bắt đầu ở frame 0, ngoài lớp mờ đó.
 
@@ -23,20 +23,19 @@ Chưa đo lại MP3. Các cơ chế sau đủ lớn để giải thích mức Wa
 3. ffprobe tính cả khoảng lặng đầu/cuối của MP3. Phụ đề bắt đầu ở frame 0. Nếu Vbee có lặng đầu vài trăm mili giây tới khoảng một giây, chữ đi trước tiếng. Chưa mở file MP3 của hai video này để đo khoảng lặng.
 4. Fade hình 0,33 giây và fade chữ 0,17 giây làm chữ trông muộn hơn tiếng, nhưng riêng nó nhỏ hơn một giây. Đệm 10 frame ở cuối cảnh không đẩy cả dãy phụ đề đi một giây.
 
-## Cách căn lại, không tốn credit Vbee
+## Cách bật
 
-Dùng audio MP3 đã có. Không gọi lại Vbee nếu lời cảnh đó không đổi.
+Cờ mặc định tắt. Không tải model và không gọi Whisper.
 
-1. Chạy Whisper offline (`whisper.cpp` hoặc bản Python chạy máy cục bộ), model nhỏ hoặc base, `word_timestamps`, ngôn ngữ `vi`. Không gửi audio lên API trả phí.
-2. Không lấy chữ Whisper làm lời phát. Giữ nguyên `voiceText` đã duyệt. Chỉ dùng mốc thời gian: khớp chuỗi từ đã duyệt với token nhận dạng (forced alignment). Số, ngày và phủ định giữ đúng bản đã duyệt khi Whisper nghe sai.
-3. Ghi cue vào đúng dạng `{from, to, text}` mà `KciNewsDaily` đang đọc, và vào SRT. Mốc là frame 30fps trong cảnh, sau khi đã trừ lặng đầu đo được.
-4. Thêm một mode dựng chỉ render lại hình, trỏ vào MP3 cũ. `run-job.mjs` hiện không có mode đó: `video` gọi Vbee mọi cảnh rồi mới chia phụ đề theo số từ.
+- Biến `KCI_ALIGN_CAPTIONS=1` (hoặc `true` / `yes`), hoặc cờ `--align-captions` trên `node scripts/run-job.mjs`.
+- Trên GitHub Actions, biến repository `KCI_ALIGN_CAPTIONS=1` mới chạy bước cài trong job `render`. Giá trị khác hoặc trống được workflow coi là `0`, bước cài bị bỏ qua.
+- Binary: `whisper-cli` (whisper.cpp) hoặc `whisper` local. Model file qua `KCI_WHISPER_MODEL`. Workflow khi được bật tải `ggml-base.bin` vào `~/.cache/kci-whisper/` và đặt `KCI_WHISPER_BIN`.
+- Bảng dung lượng của whisper.cpp, không đo trên máy này: tiny khoảng 75 MiB, base khoảng 142 MiB, small khoảng 466 MiB, medium khoảng 1,5 GiB. Workflow dùng base.
+- Thời gian cài và thời gian nhận dạng: chưa đo, vì test cục bộ không tải model và không chạy bước cài. Khi cờ bật, job `render` thêm một lần biên dịch whisper.cpp và một lần tải khoảng 142 MiB trước bước dựng hiện có.
 
-Repo chưa có model aligner tiếng Việt (Montreal Forced Aligner / wav2vec2). Nếu Whisper lệch trên cụm số, bước 2 vẫn bắt buộc đối chiếu với lời đã duyệt. Không dùng eSpeak làm giọng đọc.
+Khi cờ bật, mỗi cảnh có MP3 được đưa qua ffmpeg ra WAV 16 kHz rồi Whisper ngôn ngữ `vi`. Mốc từ được khớp với `voiceText` đã duyệt. Chữ trên hình vẫn là lời kịch bản, không phải chữ Whisper nghe được. Cue tối đa 3 từ, ngắt thêm ở `.?!…`. Nếu không có binary, không có model, JSON lỗi, hoặc khớp dưới 50% số từ, cảnh đó trở lại chia đều 7 từ và `console.warn` ghi lý do.
 
-## Công sức
-
-Một script đọc MP3 có sẵn và ghi mảng caption. Không sửa workflow, không thêm dependency trong PR này. Model Whisper tải một lần, chạy CPU. Sau đó một lần render Remotion dùng lại MP3 (không có POST Vbee) để chữ burn-in khớp mốc mới. Cảnh vừa đổi chữ vẫn cần MP3 mới trước khi căn.
+Job `check` của pull request chỉ chạy `node scripts/test-align-captions.mjs` với WAV im lặng và dữ liệu giả. Không gọi Vbee và không tải model.
 
 ## File sẽ phải dựng lại nếu làm bước này
 
