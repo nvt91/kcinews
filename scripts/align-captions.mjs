@@ -278,12 +278,25 @@ function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
 }
 
+const HANGING = new Set("theo va cua cho voi tu den trong la cac nhung de khi ma hay hoac o tai mot".split(" "));
+
+function bareWord(text) {
+  return fold(text).replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
 export function cuesFromTimedWords(timedWords, audioFrames, fps = FPS) {
   const span = Math.max(1, audioFrames);
   const cues = [];
   let bucket = [];
-  const flush = () => {
-    if (!bucket.length) return;
+  const flush = (keepLast = false) => {
+    let held = null;
+    if (keepLast && bucket.length > 1 && HANGING.has(bareWord(bucket[bucket.length - 1].text))) {
+      held = bucket.pop();
+    }
+    if (!bucket.length) {
+      if (held) bucket = [held];
+      return;
+    }
     let from = clamp(Math.floor(bucket[0].start * fps), 0, span - 1);
     let to = clamp(Math.ceil(bucket[bucket.length - 1].end * fps), 0, span);
     if (to <= from) to = Math.min(span, from + 1);
@@ -292,13 +305,17 @@ export function cuesFromTimedWords(timedWords, audioFrames, fps = FPS) {
     if (from >= span) from = span - 1;
     if (to <= from) to = Math.min(span, from + 1);
     if (from < to) cues.push({ from, to, text: bucket.map((word) => word.text).join(" ") });
-    bucket = [];
+    bucket = held ? [held] : [];
   };
   for (const word of timedWords) {
     bucket.push(word);
-    if (bucket.length >= SHORT_CUE_WORDS || /[.?!…]$/.test(word.text)) flush();
+    const sentence = /[.?!…]$/.test(word.text);
+    const clause = /[,;:]$/.test(word.text);
+    if (sentence) flush(false);
+    else if (clause && bucket.length > 1) flush(false);
+    else if (bucket.length >= SHORT_CUE_WORDS) flush(true);
   }
-  flush();
+  flush(false);
   return cues;
 }
 

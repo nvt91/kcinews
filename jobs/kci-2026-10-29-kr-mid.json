@@ -130,6 +130,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "LỢI NHUẬN HOẠT ĐỘNG Q3",
         "value": "107,4 nghìn tỷ ₩",
         "qualifier": "Lợi nhuận hoạt động hợp nhất · Q3/2026 · Samsung 29/10"
       },
@@ -278,6 +279,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "HOÀN TRẢ CỔ ĐÔNG DỰ KIẾN 2026",
         "value": "90–110 nghìn tỷ ₩",
         "qualifier": "TỔNG hoàn trả cổ đông 2026 dự kiến · chưa chốt toàn bộ"
       },
@@ -302,6 +304,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "CHI ĐẦU TƯ DỰ KIẾN",
         "value": "84,4 nghìn tỷ ₩",
         "qualifier": "Chi đầu tư cơ sở vật chất 2026 dự kiến · Samsung"
       },

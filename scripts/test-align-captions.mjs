@@ -7,6 +7,7 @@ import {
   alignNarration,
   alignSceneCaptions,
   alignmentEnabled,
+  cuesFromTimedWords,
   proportionalCaptions,
   timedWordsFromWhisperJson,
 } from "./align-captions.mjs";
@@ -134,5 +135,24 @@ const realAligned = alignNarration(realScript, realOj, 339);
 assert.equal(realAligned.ok, true);
 assert.ok(realAligned.matched / realAligned.total >= 0.8, realAligned.matched + "/" + realAligned.total);
 assert.ok(realAligned.captions.every((cue) => cue.text.split(/\s+/).length <= 3));
+
+const phrase = cuesFromTimedWords([
+  { text: "sáu", start: 0.0, end: 0.3 },
+  { text: "phẩy", start: 0.3, end: 0.5 },
+  { text: "mươi", start: 0.5, end: 0.8 },
+  { text: "phần", start: 0.8, end: 1.0 },
+  { text: "trăm.", start: 1.0, end: 1.3 },
+  { text: "Con", start: 1.4, end: 1.6 },
+  { text: "số", start: 1.6, end: 1.8 },
+], 90);
+assert.ok(phrase.every((cue) => !cue.text.includes("trăm. Con")), phrase.map((cue) => cue.text).join(" | "));
+assert.ok(phrase.some((cue) => cue.text.startsWith("Con")));
+const hang = cuesFromTimedWords([
+  { text: "nhà", start: 0, end: 0.2 },
+  { text: "đầu", start: 0.2, end: 0.4 },
+  { text: "Theo", start: 0.4, end: 0.6 },
+  { text: "Yonhap", start: 0.6, end: 0.9 },
+], 60);
+assert.ok(hang.every((cue) => !cue.text.endsWith("Theo")), hang.map((cue) => cue.text).join(" | "));
 
 console.log("align-captions tests: PASS");

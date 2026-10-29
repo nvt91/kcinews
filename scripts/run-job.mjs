@@ -50,12 +50,18 @@ if (mode !== "validate") {
   const out = path.resolve("out");
   fs.mkdirSync(out, {recursive:true});
   const reuseAudio = mode === "video-reuse";
+  const regenScenes = new Set(String(process.env.KCI_REGEN_SCENES || "")
+    .split(/[^0-9]+/)
+    .map((part) => Number(part))
+    .filter((part) => Number.isInteger(part) && part > 0));
   if (mode === "video" || mode === "voice-test") checkVbeeSettings();
   if (reuseAudio) {
     console.log("video-reuse: narration MP3s are reused; Vbee will not be called.");
   }
   const voiceDir = path.resolve("public/voice");
-  if (mode === "video" || mode === "voice-test") fs.mkdirSync(voiceDir, {recursive:true});
+  if (mode === "video" || mode === "voice-test" || (reuseAudio && regenScenes.size > 0)) {
+    fs.mkdirSync(voiceDir, {recursive:true});
+  }
   let reuseProps = null;
   if (reuseAudio) {
     const propsPath = process.env.KCI_REUSE_PROPS || path.resolve("reused-voice/out/props.json");
@@ -84,8 +90,10 @@ if (mode !== "validate") {
     const isLastScene = i === job.scenes.length - 1;
     const narration = scene.voiceText +
       (dailyJob && isLastScene ? " " + job.cta.spoken : "");
-    if (reuseAudio) {
-      const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
+    const sceneNumber = i + 1;
+    const reuseThisScene = reuseAudio && !regenScenes.has(sceneNumber);
+    if (reuseThisScene) {
+      const target = path.join(voiceDir, "scene-" + String(sceneNumber).padStart(2,"0") + ".mp3");
       if (!fs.existsSync(target) || fs.statSync(target).size < 2000) {
         throw new Error("Missing reused MP3 " + target + ". Refusing to call Vbee.");
       }
@@ -96,8 +104,9 @@ if (mode !== "validate") {
         throw new Error("Reused MP3 duration does not match props for scene " + scene.id + ". Refusing to call Vbee.");
       }
       audioFile = "voice/" + path.basename(target);
-    } else if (mode === "voice-test" || mode === "video") {
-      const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
+    } else if (mode === "voice-test" || mode === "video" || (reuseAudio && regenScenes.has(sceneNumber))) {
+      if (reuseAudio) checkVbeeSettings();
+      const target = path.join(voiceDir, "scene-" + String(sceneNumber).padStart(2,"0") + ".mp3");
       await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
       const output = execFileSync("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",target],{encoding:"utf8"}).trim();
       seconds = Number(output);

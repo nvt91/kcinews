@@ -24,6 +24,11 @@ on:
         type: string
         required: false
         default: ""
+      regen_scenes:
+        description: "video-reuse only: 1-based scene numbers to re-synthesize with Vbee, comma-separated. Empty calls no Vbee."
+        type: string
+        required: false
+        default: ""
   pull_request:
     paths:
       - 'src/**'
@@ -114,6 +119,7 @@ jobs:
       # without changing repository settings. Set KCI_ALIGN_CAPTIONS to 0 to
       # force the old 7-word cues. Revisit this default when merging.
       KCI_ALIGN_CAPTIONS: ${{ vars.KCI_ALIGN_CAPTIONS || '1' }}
+      KCI_REGEN_SCENES: ${{ inputs.regen_scenes }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
