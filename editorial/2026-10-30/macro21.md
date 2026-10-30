@@ -18,30 +18,30 @@
 
 ## Script (scene voiceText; CTA appended exactly once by runner)
 ### 1. LẠM PHÁT TĂNG, SỨC MUA CHỮNG
-Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won? Đây là số liệu tháng chín được Mỹ công bố tối hai mươi chín tháng mười, theo giờ Hàn Quốc.
+Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won? Số liệu tháng chín được công bố tối hai mươi chín tháng mười, giờ Hàn.
 Source: bea-pce-sep.
 
 ### 2. PCE 3,6% SO CÙNG KỲ
-Theo Cục Phân tích Kinh tế Mỹ, chỉ số giá PCE tháng chín tăng ba phẩy sáu phần trăm so cùng kỳ, cao hơn ba phẩy bốn phần trăm của tháng tám. PCE lõi, không gồm thực phẩm và năng lượng, tăng ba phẩy một phần trăm so cùng kỳ.
+PCE Mỹ tháng chín tăng ba phẩy sáu phần trăm so cùng kỳ, từ ba phẩy bốn phần trăm tháng trước. PCE lõi, loại thực phẩm và năng lượng, tăng ba phẩy một phần trăm.
 Source: bea-pce-sep, reuters-pce-oct29.
 
 ### 3. TIỀN CHI TĂNG, LƯỢNG MUA CHỮNG
-Một chi tiết quan trọng: chi tiêu danh nghĩa của người Mỹ tăng không phẩy năm phần trăm trong tháng chín. Nhưng sau khi loại tác động giá cả, chi tiêu thực tăng chưa tới không phẩy một phần trăm. Tức là số tiền bỏ ra tăng, chưa có nghĩa lượng hàng hóa và dịch vụ mua được tăng tương ứng.
+Chi tiêu danh nghĩa của người Mỹ tăng không phẩy năm phần trăm trong tháng chín. Nhưng sau điều chỉnh giá, chi tiêu thực tăng chưa tới không phẩy một phần trăm. Tiền chi nhiều hơn không có nghĩa mua được nhiều hơn.
 Source: bea-pce-sep.
 
 ### 4. FED GIỮ 3,75–4,00%
-Trước báo cáo này, Fed đã giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm trong cuộc họp ngày hai mươi tám tháng mười. Fed đánh giá lạm phát vẫn cao. Dữ liệu PCE mới có thể tác động kỳ vọng thị trường, nhưng không tự động quyết định Fed sẽ tăng lãi suất ở kỳ họp tiếp theo.
+Fed giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm ngày hai mươi tám tháng mười. Lạm phát vẫn cao, nhưng báo cáo PCE không tự quyết định kỳ họp sau.
 Source: fed-oct28, bea-pce-sep.
 
 ### 5. USD/KRW · LỢI SUẤT · GIÁ NHẬP KHẨU
-Với Hàn Quốc, nếu kỳ vọng lãi suất Mỹ duy trì cao lâu hơn, lợi suất và đồng đô la có thể chịu tác động, rồi truyền sang tỷ giá won và chi phí nhập khẩu. Nhưng hướng đi không chắc chắn, vì còn phụ thuộc dòng vốn và thương mại. BOK hiện giữ lãi suất ba phần trăm theo quyết định ngày hai mươi hai tháng mười.
+Với Hàn Quốc, nếu kỳ vọng lãi suất Mỹ cao lâu hơn, đồng đô la và lợi suất có thể chịu tác động, rồi truyền sang tỷ giá won và giá nhập khẩu. BOK giữ lãi suất ba phần trăm từ quyết định hai mươi hai tháng mười.
 Source: fed-oct28, bok-oct22.
 
 ### 6. ĐỌC ĐÚNG PCE VÀ DÒNG VỐN
-Điều cần theo dõi là liệu giá cả Mỹ còn tăng nhanh, trong khi chi tiêu thực tiếp tục yếu, và thị trường phản ứng ra sao. Đừng lấy một số liệu để kết luận chắc hướng đi của đồng won.
+Hãy theo dõi xu hướng PCE Mỹ và phản ứng của tỷ giá won, thay vì kết luận chắc từ một số liệu.
 Source: bea-pce-sep, fed-oct28, bok-oct22.
 
-**CTA:** Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won như thế nào? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.
+**CTA:** Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won thế nào? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.
 
 **Caption (<50 words including hashtags):**
 
