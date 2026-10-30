@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-30-macro21",
+  "edition": "MACRO21 — Vĩ mô 30/10/2026",
+  "dataAsOf": "2026-10-30T20:59:52+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "PCE Mỹ lên 3,6% nhưng chi tiêu thực gần đứng yên: kênh tác động tới won Hàn Quốc",
+  "sourceDisclaimer": "PCE là dữ liệu THÁNG 9 công bố 29/10 08:30 EDT = 29/10 21:30 KST; Fed hold là quyết định 28/10 EDT; BOK hold là quyết định 22/10. Không đưa giá USD/KRW hiện tại hay dự báo Fed như quyết định chắc chắn.",
+  "metadata": {
+    "stream": "MACRO",
+    "slot": "MACRO21",
+    "articleId": "KCI-20261030-MACRO21",
+    "articlePath": "editorial/2026-10-30/macro21.md",
+    "eventKeys": [
+      "US-PCE|SEPTEMBER|2026-10-29",
+      "FED|HOLD|2026-10-28",
+      "BOK|HOLD|2026-10-22"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "V1",
+    "productionMode": "tts_motion",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "overlapNotes": "US_AM 30/10 covers GDP 3.4%, Nasdaq and AI investment; KR_AM/MID/CLOSE cover Korean stock/companies. This MACRO21 focuses on Sept US PCE inflation vs flat real consumption, conditional Fed->rates/USD/KRW->Korea channel; no KOSPI recap.",
+    "qcPlan": {
+      "whisperWordAlignment": "NOT_VERIFIED",
+      "effectOffsetFrames": "NOT_MEASURED",
+      "audioLufs": "NOT_MEASURED",
+      "truePeak": "NOT_MEASURED",
+      "takes": "N/A",
+      "faceTracking": "N/A",
+      "publishing": "NOT_AUTHORIZED"
+    }
+  },
+  "sourceLedger": [
+    {
+      "id": "bea-pce-sep",
+      "title": "BEA Personal Income and Outlays September 2026, released 29 Oct 08:30 EDT",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "kind": "primary",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T20:59:52+09:00",
+      "facts": [
+        "September headline PCE inflation +3.6% year on year, versus +3.4% in August; +0.5% month on month versus +0.3% in August.",
+        "September core PCE +3.1% year on year and +0.3% month on month.",
+        "September nominal consumer spending +0.5% month on month, while real PCE was less than +0.1% (table rounds to 0.0%)."
+      ]
+    },
+    {
+      "id": "fed-oct28",
+      "title": "Federal Reserve FOMC statement 28 Oct 2026 14:00 EDT",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "kind": "primary",
+      "eventDate": "2026-10-28",
+      "checkedAt": "2026-10-30T20:59:52+09:00",
+      "facts": [
+        "FOMC held federal funds target range 3.75%-4.00% by a 10-2 vote.",
+        "Fed says inflation remains elevated and future decisions depend on incoming information."
+      ]
+    },
+    {
+      "id": "bok-oct22",
+      "title": "Bank of Korea monetary policy statement 22 October 2026",
+      "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11065823",
+      "kind": "primary",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-10-30T20:59:52+09:00",
+      "facts": [
+        "BOK held its base rate at 3.00% on 22 October, a prior decision not new on 30 October.",
+        "BOK identified international oil prices, exchange rate, global policy shifts and domestic inflation as important uncertainties."
+      ]
+    },
+    {
+      "id": "reuters-pce-oct29",
+      "title": "Reuters 29 Oct 2026: US inflation heats up in September; consumer spending rises",
+      "url": "https://www.reuters.com/business/us-inflation-heats-up-september-consumer-spending-rises-2026-10-29/",
+      "kind": "secondary",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T20:59:52+09:00",
+      "facts": [
+        "Reuters cross-checks headline PCE 3.6% year-on-year and core PCE 3.1%.",
+        "Reuters notes nominal spending increased but inflation-adjusted spending was flat; market rate expectations are not a Fed commitment."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won?",
+        "score": 48
+      },
+      {
+        "style": "korea-impact",
+        "text": "PCE Mỹ lên ba phẩy sáu phần trăm: điều gì có thể truyền sang tỷ giá won và chi phí nhập khẩu Hàn Quốc?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Người Mỹ chi nhiều tiền hơn nhưng mua được gần như không nhiều hơn. Vì sao Fed và Hàn Quốc phải quan tâm?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won như thế nào? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "PCE MỸ VÀ ĐỒNG WON",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won như thế nào?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "LẠM PHÁT TĂNG, SỨC MUA CHỮNG",
+      "summary": "PCE Mỹ tháng 9: 3,6%/năm; chi tiêu thực gần như đi ngang.",
+      "voiceText": "Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won? Đây là số liệu tháng chín được Mỹ công bố tối hai mươi chín tháng mười, theo giờ Hàn Quốc.",
+      "source": "BEA · 29/10 08:30 EDT = 29/10 21:30 KST",
+      "sourceIds": [
+        "bea-pce-sep"
+      ],
+      "stats": [
+        {
+          "label": "PCE tháng 9 · so cùng kỳ",
+          "value": "+3,6%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3,6%",
+        "qualifier": "PCE Mỹ tháng 9/2026, so cùng kỳ năm trước"
+      }
+    },
+    {
+      "id": "pce",
+      "eyebrow": "LẠM PHÁT MỸ · THÁNG 9",
+      "headline": "PCE 3,6% SO CÙNG KỲ",
+      "summary": "Tăng từ 3,4% tháng 8; PCE lõi tháng 9 ở mức 3,1%.",
+      "voiceText": "Theo Cục Phân tích Kinh tế Mỹ, chỉ số giá PCE tháng chín tăng ba phẩy sáu phần trăm so cùng kỳ, cao hơn ba phẩy bốn phần trăm của tháng tám. PCE lõi, không gồm thực phẩm và năng lượng, tăng ba phẩy một phần trăm so cùng kỳ.",
+      "source": "BEA · công bố 29/10/2026",
+      "sourceIds": [
+        "bea-pce-sep",
+        "reuters-pce-oct29"
+      ],
+      "stats": [
+        {
+          "label": "PCE tháng 9 · năm/năm",
+          "value": "+3,6%",
+          "tone": "up"
+        },
+        {
+          "label": "PCE lõi · năm/năm",
+          "value": "+3,1%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Tháng 8 · PCE năm/năm",
+            "value": 3.4,
+            "display": "3,4%"
+          },
+          {
+            "label": "Tháng 9 · PCE năm/năm",
+            "value": 3.6,
+            "display": "3,6%"
+          }
+        ],
+        "qualifier": "PCE headline, % so cùng kỳ, không phải tăng tháng"
+      }
+    },
+    {
+      "id": "spending",
+      "eyebrow": "CHI TIÊU DANH NGHĨA VS THỰC",
+      "headline": "TIỀN CHI TĂNG, LƯỢNG MUA CHỮNG",
+      "summary": "Chi tiêu danh nghĩa +0,5% tháng; sau điều chỉnh giá gần 0%.",
+      "voiceText": "Một chi tiết quan trọng: chi tiêu danh nghĩa của người Mỹ tăng không phẩy năm phần trăm trong tháng chín. Nhưng sau khi loại tác động giá cả, chi tiêu thực tăng chưa tới không phẩy một phần trăm. Tức là số tiền bỏ ra tăng, chưa có nghĩa lượng hàng hóa và dịch vụ mua được tăng tương ứng.",
+      "source": "BEA · Personal Income and Outlays September",
+      "sourceIds": [
+        "bea-pce-sep"
+      ],
+      "stats": [
+        {
+          "label": "Chi tiêu danh nghĩa · tháng/tháng",
+          "value": "+0,5%",
+          "tone": "up"
+        },
+        {
+          "label": "Chi tiêu thực · tháng/tháng",
+          "value": "<+0,1%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Danh nghĩa · tháng/tháng",
+            "value": 0.5,
+            "display": "+0,5%"
+          },
+          {
+            "label": "Thực · tháng/tháng",
+            "value": 0,
+            "display": "~0,0%"
+          }
+        ],
+        "qualifier": "BEA: real PCE <+0,1%; 0,0% là số làm tròn"
+      }
+    },
+    {
+      "id": "fed",
+      "eyebrow": "CHÍNH SÁCH TIỀN TỆ MỸ",
+      "headline": "FED GIỮ 3,75–4,00%",
+      "summary": "Quyết định 28/10 giờ Mỹ; chưa phải cam kết cho kỳ tới.",
+      "voiceText": "Trước báo cáo này, Fed đã giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm trong cuộc họp ngày hai mươi tám tháng mười. Fed đánh giá lạm phát vẫn cao. Dữ liệu PCE mới có thể tác động kỳ vọng thị trường, nhưng không tự động quyết định Fed sẽ tăng lãi suất ở kỳ họp tiếp theo.",
+      "source": "Federal Reserve · 28/10 14:00 EDT",
+      "sourceIds": [
+        "fed-oct28",
+        "bea-pce-sep"
+      ],
+      "stats": [
+        {
+          "label": "Fed · quyết định 28/10",
+          "value": "3,75–4,00%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,75–4,00%",
+        "qualifier": "Fed giữ nguyên 28/10/2026, không phải quyết định 30/10"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "USD/KRW · LỢI SUẤT · GIÁ NHẬP KHẨU",
+      "summary": "Lạm phát Mỹ dai dẳng có thể gây sức ép qua kỳ vọng lãi suất.",
+      "voiceText": "Với Hàn Quốc, nếu kỳ vọng lãi suất Mỹ duy trì cao lâu hơn, lợi suất và đồng đô la có thể chịu tác động, rồi truyền sang tỷ giá won và chi phí nhập khẩu. Nhưng hướng đi không chắc chắn, vì còn phụ thuộc dòng vốn và thương mại. BOK hiện giữ lãi suất ba phần trăm theo quyết định ngày hai mươi hai tháng mười.",
+      "source": "Fed 28/10 · BOK 22/10 · KCI phân tích có điều kiện",
+      "sourceIds": [
+        "fed-oct28",
+        "bok-oct22"
+      ],
+      "stats": [
+        {
+          "label": "BOK · quyết định 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "3,00%",
+        "qualifier": "BOK giữ nguyên 22/10/2026; không phải quyết định mới"
+      }
+    },
+    {
+      "id": "closing",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "ĐỌC ĐÚNG PCE VÀ DÒNG VỐN",
+      "summary": "Theo dõi kỳ vọng Fed, USD/KRW và dữ liệu lạm phát tiếp theo.",
+      "voiceText": "Điều cần theo dõi là liệu giá cả Mỹ còn tăng nhanh, trong khi chi tiêu thực tiếp tục yếu, và thị trường phản ứng ra sao. Đừng lấy một số liệu để kết luận chắc hướng đi của đồng won.",
+      "source": "BEA 29/10 · Fed 28/10 · BOK 22/10",
+      "sourceIds": [
+        "bea-pce-sep",
+        "fed-oct28",
+        "bok-oct22"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "PCE Mỹ: xu hướng lạm phát",
+          "Fed: kỳ vọng và quyết định",
+          "USD/KRW: theo dõi có thời điểm"
+        ]
+      }
+    }
+  ]
+}
