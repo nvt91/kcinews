@@ -120,7 +120,7 @@
       "eyebrow": "TIN BỔ SUNG · 30/10",
       "headline": "KOSPI kích hoạt sidecar",
       "summary": "10:04:55 KST · lệnh bán chương trình bị tạm ngưng 5 phút.",
-      "voiceText": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI? Đây là sự kiện mới sau bản tin sáng ngày ba mươi tháng mười. Chúng ta cùng xem sidecar là gì, vì sao được kích hoạt và điều gì cần theo dõi tiếp theo. Các con số trong bản tin đều có mốc giờ cụ thể.",
+      "voiceText": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI? Đây là sự kiện mới sau bản tin sáng ngày ba mươi tháng mười. Chúng ta cùng xem vì sao sidecar được kích hoạt và điều gì cần theo dõi tiếp. Các con số đều có mốc giờ cụ thể.",
       "sourceIds": [
         "sedaily-sidecar",
         "genews-sidecar",
@@ -145,7 +145,7 @@
       "eyebrow": "MỞ CỬA · KRX",
       "headline": "KOSPI giảm ngay từ đầu phiên",
       "summary": "Giá mở cửa, không phải giá đóng cửa.",
-      "voiceText": "KOSPI mở cửa phiên chính K R X tại năm nghìn bảy trăm sáu mươi phẩy ba lăm điểm, giảm hai phẩy chín chín phần trăm so với hôm qua. Phiên hai mươi chín chỉ số đóng cửa ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm. Đây là hai mốc khác nhau, không phải một đường giá liên tục hay kết quả đóng cửa hôm nay.",
+      "voiceText": "KOSPI mở cửa phiên chính K R X tại năm nghìn bảy trăm sáu mươi phẩy ba lăm điểm, giảm hai phẩy chín chín phần trăm so với hôm qua. Phiên hai mươi chín chỉ số đóng cửa ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm. Đây là hai mốc khác nhau, không phải kết quả đóng cửa hôm nay.",
       "sourceIds": [
         "sedaily-open",
         "am-yesterday"
@@ -214,7 +214,7 @@
       "eyebrow": "SIDE CAR LÀ GÌ?",
       "headline": "Chỉ tạm dừng lệnh bán chương trình",
       "summary": "Không phải toàn bộ thị trường đóng cửa.",
-      "voiceText": "Sidecar là cơ chế hạn chế tác động từ giao dịch tự động. Theo quy định của K R X, khi hợp đồng tương lai tham chiếu giảm ít nhất năm phần trăm trong một phút, lệnh bán theo chương trình bị tạm dừng hiệu lực trong năm phút. Không phải mọi cổ phiếu đều ngừng giao dịch. Sidecar khác với circuit breaker, cơ chế ngắt giao dịch trên diện rộng.",
+      "voiceText": "Sidecar là cơ chế hạn chế tác động từ giao dịch tự động. Theo quy định của K R X, khi hợp đồng tương lai tham chiếu giảm ít nhất năm phần trăm trong một phút, lệnh bán theo chương trình bị tạm dừng hiệu lực trong năm phút. Không phải mọi cổ phiếu đều ngừng giao dịch. Sidecar không phải circuit breaker.",
       "sourceIds": [
         "krx-rules",
         "sedaily-sidecar"
@@ -277,7 +277,7 @@
       "eyebrow": "ĐỌC ĐÚNG TÍN HIỆU",
       "headline": "Áp lực bán chưa nói hết câu chuyện",
       "summary": "Cần chờ kết quả phiên và dòng tiền.",
-      "voiceText": "Sự kiện này đáng chú ý vì áp lực bán đã chạm ngưỡng kiểm soát giao dịch tự động. Nhưng sidecar không tự chứng minh lợi nhuận doanh nghiệp sẽ xấu đi. Muốn đánh giá xu hướng, cần xem dòng tiền, số lượng mã tăng giảm và diễn biến sau khi lệnh bán chương trình hoạt động trở lại. Đừng suy ra kết quả cả ngày từ một mốc giá buổi sáng.",
+      "voiceText": "Sự kiện này đáng chú ý vì áp lực bán đã chạm ngưỡng kiểm soát giao dịch tự động. Nhưng sidecar không tự chứng minh lợi nhuận doanh nghiệp sẽ xấu đi. Muốn đánh giá xu hướng, cần xem dòng tiền và độ rộng thị trường. Đừng suy ra kết quả cả ngày từ một mốc giá buổi sáng.",
       "sourceIds": [
         "sedaily-sidecar",
         "krx-rules",
