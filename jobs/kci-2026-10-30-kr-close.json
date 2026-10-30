@@ -135,7 +135,7 @@
       "summary": "Cổ phiếu công nghệ chịu áp lực; số đóng cửa chưa đối chiếu KRX.",
       "source": "AP, 30/10/2026; KRX phiên chính",
       "stats": [],
-      "voiceText": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc? Sáng nay, cơ chế sidecar bán đã được kích hoạt, nhưng đó chỉ là hạn chế tạm thời lệnh bán theo chương trình, không phải đóng cửa toàn thị trường. Bản tin chiều sẽ tập trung vào điều mới sau phiên và những dữ kiện thực sự đáng theo dõi.",
+      "voiceText": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc? Cơ chế sidecar bán lúc sáng chỉ hạn chế tạm thời lệnh theo chương trình, không phải đóng cửa toàn thị trường. Chiều nay, chúng ta nhìn vào diễn biến mới và những dữ kiện đáng chú ý.",
       "sourceIds": [
         "market-ap",
         "mid-sidecar",
@@ -152,7 +152,7 @@
       "summary": "KOSPI và KOSDAQ suy yếu; không dùng số đóng cửa đang xung đột.",
       "source": "AP, Investing, dữ liệu ngày 30/10",
       "stats": [],
-      "voiceText": "Cả KOSPI và KOSDAQ đều ghi nhận phiên giảm mạnh trong ngày ba mươi tháng mười. Tuy nhiên, các bảng dữ liệu thứ cấp hiện cho ra những con số đóng cửa khác nhau, nên KCI không đọc một mức điểm chính xác khi chưa xác minh với KRX. Diễn biến sáng có sidecar đã được bản tin trưa đề cập; chiều nay, điều mới là áp lực bán kéo dài tới sau phiên chính.",
+      "voiceText": "KOSPI và KOSDAQ đều giảm mạnh trong ngày ba mươi tháng mười. Nhưng các bảng giá thứ cấp đang hiển thị những mức đóng cửa khác nhau. Vì chưa đối chiếu được với KRX, KCI không đưa ra con số chính xác có thể gây hiểu lầm. Điểm mới sau bản tin trưa là sức ép bán tiếp diễn qua phiên chính, thay vì chỉ là biến động buổi sáng.",
       "sourceIds": [
         "market-ap",
         "market-kospi",
@@ -182,7 +182,7 @@
           "tone": "down"
         }
       ],
-      "voiceText": "Một nguyên nhân đáng chú ý đến từ phiên Mỹ đã kết thúc ngày hai mươi chín tháng mười. Nasdaq giảm một phẩy bốn phần trăm; cổ phiếu Alphabet loại A mất mười hai phẩy sáu phần trăm. Thị trường đang đặt câu hỏi liệu các khoản chi khổng lồ cho trí tuệ nhân tạo có tạo ra lợi nhuận tương xứng hay không. Tâm lý đó ảnh hưởng trực tiếp tới cách nhà đầu tư định giá các nhà cung ứng bộ nhớ Hàn Quốc.",
+      "voiceText": "Áp lực đến một phần từ phiên Mỹ đã kết thúc ngày hai mươi chín tháng mười. Nasdaq giảm một phẩy bốn phần trăm; Alphabet loại A mất mười hai phẩy sáu phần trăm. Giới đầu tư lo ngại các khoản chi khổng lồ cho AI có mang lại lợi nhuận tương xứng hay không. Tâm lý này tác động tới cách định giá những doanh nghiệp cung ứng bộ nhớ Hàn Quốc.",
       "sourceIds": [
         "market-ap"
       ],
@@ -197,7 +197,7 @@
       "summary": "Samsung và SK hynix chịu áp lực; phân biệt nhu cầu chip với tâm lý giá.",
       "source": "AP, 30/10/2026",
       "stats": [],
-      "voiceText": "Samsung Electronics và SK hynix đều giảm trong diễn biến được AP ghi nhận hôm nay. Nhưng giá cổ phiếu đi xuống không tự động có nghĩa nhu cầu chip đã sụp đổ. Nhà đầu tư đang đánh giá đồng thời tốc độ đầu tư hạ tầng AI, khả năng thu hồi vốn của khách hàng và mức kỳ vọng đã phản ánh vào giá cổ phiếu. Cần theo dõi thêm báo cáo đơn hàng và dòng tiền thực tế.",
+      "voiceText": "Theo AP, Samsung Electronics và SK hynix đều giảm trong diễn biến hôm nay. Nhưng giá cổ phiếu đi xuống không tự động chứng minh nhu cầu chip đã sụp đổ. Nhà đầu tư đang cân nhắc tốc độ đầu tư hạ tầng AI, khả năng thu hồi vốn của khách hàng và kỳ vọng lợi nhuận đã phản ánh vào giá. Đơn hàng thực tế vẫn là chỉ báo cần kiểm tra.",
       "sourceIds": [
         "market-ap"
       ],
@@ -223,7 +223,7 @@
           "tone": "neutral"
         }
       ],
-      "voiceText": "Không chỉ có chứng khoán. Theo Reuters, Bộ Công nghiệp Hàn Quốc cho biết doanh nghiệp và tổ chức Hàn Quốc, Đức đã ký chín biên bản ghi nhớ, hướng tới hỗ trợ doanh nghiệp khởi nghiệp và mở rộng thị trường trong điện, năng lượng và y tế sinh học. Đây là tín hiệu hợp tác ngành đáng theo dõi, nhưng biên bản ghi nhớ chưa phải hợp đồng đầu tư đã hoàn thành hay doanh thu chắc chắn.",
+      "voiceText": "Một diễn biến khác đến từ hợp tác công nghiệp. Reuters dẫn Bộ Công nghiệp Hàn Quốc cho biết các tổ chức và doanh nghiệp Hàn–Đức ký chín biên bản ghi nhớ, hỗ trợ khởi nghiệp và mở rộng thị trường trong điện, năng lượng, y tế sinh học. Đây là tín hiệu hợp tác mới, nhưng chưa phải hợp đồng đầu tư hoàn tất hay doanh thu chắc chắn. Cần theo dõi tiến độ triển khai.",
       "sourceIds": [
         "germany-reuters"
       ],
@@ -241,7 +241,7 @@
       "summary": "Kiểm chứng giá KRX, dòng vốn, đơn hàng chip và triển khai MOU.",
       "source": "KCI tổng hợp từ AP, Reuters, KRX",
       "stats": [],
-      "voiceText": "Trong những phiên tới, KCI sẽ theo dõi số liệu đóng cửa chính thức, dòng vốn tại KRX, nhu cầu thực của ngành bộ nhớ và tiến độ triển khai các thỏa thuận Hàn–Đức. Đừng nhầm biến động giá một ngày với sự thay đổi chắc chắn của triển vọng dài hạn. Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "voiceText": "Những phiên tới, hãy theo dõi số liệu KRX chính thức, dòng tiền vào nhóm chip và tiến độ triển khai các thỏa thuận Hàn–Đức. Một phiên giảm mạnh chưa đủ để kết luận xu hướng dài hạn đã đổi chiều. Thông tin tham khảo, không phải khuyến nghị đầu tư cá nhân.",
       "sourceIds": [
         "market-ap",
         "krx-hours",
