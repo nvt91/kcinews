@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-30-kr-mid",
+  "edition": "KR_MID — Bản tin bổ sung 30/10/2026",
+  "dataAsOf": "2026-10-30T11:33:05+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI kích hoạt sidecar bán lúc 10:04 sau đợt giảm mạnh",
+  "sourceDisclaimer": "All 30 Oct market figures are explicitly timestamped intraday; KOSPI200 futures -5.12% at trigger is not KOSPI close. Sidecar suspends program sell order validity for five minutes, not all trading. 29 Oct KRX close is prior-session context; no NXT combined.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_MID",
+    "format": "digest",
+    "articleId": "KCI-20261030-KR-MID",
+    "articlePath": "editorial/2026-10-30/kr-mid.md",
+    "eventKeys": [
+      "KRX|KOSPI-SELL-SIDECAR-100455|2026-10-30"
+    ],
+    "gate": "PASS: KRX sell-side sidecar 10:04:55 KST 30 Oct verified by two Korean press outlets citing KRX; new market-wide order-control event after KR_AM cutoff 07:58, not ordinary price fluctuation. One material event, single-story edition.",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Full narrated review MP4 before owner approval; no auto-publish",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "previewVersion": "v1-rendered-review",
+    "capability": "Legacy KciNewsDaily supports real Vbee MP3 and H264/AAC; Whisper word alignment, ±2 frames, LUFS, true peak, silence trimming, per-beat stills NOT_VERIFIED. TTS/motion camera takes and eye tracking N/A.",
+    "limitations": [
+      "KRX event-specific official KIND filing not independently retrieved; two outlets directly cite KRX; official KRX rules verified.",
+      "Intraday figures explicitly stamped 09:03, 10:04:55, 10:15; no close and no NXT.",
+      "Proportional captions do not satisfy precise word sync; requires QC."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "krx-rules",
+      "title": "Korea Exchange official rules for program trading sidecar",
+      "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602010204/GLB0602010204T4.jsp",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T11:33:05+09:00",
+      "kind": "primary",
+      "facts": [
+        "Official KRX sidecar mechanism: KOSPI200 futures move at least 5% for one minute triggers five-minute suspension of program order validity in the relevant direction; not an all-market trading halt."
+      ]
+    },
+    {
+      "id": "sedaily-sidecar",
+      "title": "Seoul Economic Daily 30 Oct 10:09 KST, updated 10:20: KOSPI sell-side sidecar",
+      "url": "https://en.sedaily.com/finance/2026/10/30/kospi-plunges-over-4-percent-triggering-sell-side-sidecar",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T11:33:05+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KRX cited: sell-side program order validity suspended for five minutes from 10:04:55 KST 30 Oct.",
+        "KOSPI200 futures at trigger 887.92, down 47.92 points or 5.12%; not the KOSPI cash index."
+      ]
+    },
+    {
+      "id": "genews-sidecar",
+      "title": "Global Economic 30 Oct 10:26 KST: KOSPI sell-side sidecar and time-stamped market quotes",
+      "url": "https://www.g-enews.com/article/Securities/2026/10/202610301021234890923c501012_1",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T11:33:05+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KRX cited sell sidecar 10:04 KST for five minutes; 10:15 KST KOSPI 5,640.86 (-5.00%) intraday, not close.",
+        "10:15 KST Samsung Electronics -5.39% and SK hynix -8.98%, intraday only."
+      ]
+    },
+    {
+      "id": "sedaily-open",
+      "title": "Seoul Economic Daily 30 Oct 09:03 KST: KOSPI opens lower",
+      "url": "https://en.sedaily.com/markets",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T11:33:05+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX regular-session open on 30 Oct 5,760.35, down 177.31 points or 2.99%; not the day's close."
+      ]
+    },
+    {
+      "id": "am-yesterday",
+      "title": "Yonhap 29 Oct regular-session KOSPI close, already in KR_AM 30 Oct",
+      "url": "https://en.yna.co.kr/view/AEN20261029009452320",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-10-30T11:33:05+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX regular close on 29 Oct 5,937.66, -1.24%, as covered in KR_AM 30 Oct."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI?",
+        "score": 48
+      },
+      {
+        "style": "investor-impact",
+        "text": "Thị trường Hàn Quốc vừa phải tạm dừng lệnh bán tự động trong năm phút. Vì sao một nhịp giảm lại kích hoạt cơ chế này?",
+        "score": 47
+      },
+      {
+        "style": "question",
+        "text": "KOSPI giảm mạnh sáng nay, nhưng sidecar có phải đóng cửa toàn bộ sàn giao dịch hay không?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều đáng theo dõi nhất là độ rộng thị trường hay dòng tiền khi đóng cửa? Bình luận góc nhìn và theo dõi KCI nhé.",
+    "question": "Theo anh chị, điều đáng theo dõi nhất là độ rộng thị trường hay dòng tiền khi đóng cửa?",
+    "screenHeadline": "CHỜ TÍN HIỆU CUỐI PHIÊN",
+    "screenSubline": "Độ rộng thị trường hay dòng tiền?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "TIN BỔ SUNG · 30/10",
+      "headline": "KOSPI kích hoạt sidecar",
+      "summary": "10:04:55 KST · lệnh bán chương trình bị tạm ngưng 5 phút.",
+      "voiceText": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI? Sáng ba mươi tháng mười, sàn chứng khoán Hàn Quốc ghi nhận một đợt bán tháo rất mạnh. Đây là diễn biến mới sau bản tin sáng, không phải câu chuyện giá đóng cửa hôm qua. Chúng ta sẽ phân biệt rõ mức giảm của chỉ số, tín hiệu từ thị trường phái sinh và cơ chế can thiệp của sở giao dịch.",
+      "sourceIds": [
+        "sedaily-sidecar",
+        "genews-sidecar",
+        "krx-rules"
+      ],
+      "stats": [
+        {
+          "label": "Kích hoạt sidecar",
+          "value": "10:04:55 KST",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "SIDECAR BÁN",
+        "qualifier": "KRX 30/10 · 10:04:55 KST · 5 phút"
+      },
+      "source": "KRX qua Seoul Economic Daily · 30/10"
+    },
+    {
+      "id": "opening",
+      "eyebrow": "MỞ CỬA · KRX",
+      "headline": "KOSPI giảm ngay từ đầu phiên",
+      "summary": "Giá mở cửa, không phải giá đóng cửa.",
+      "voiceText": "Ở phiên chính của K R X, KOSPI mở cửa tại năm nghìn bảy trăm sáu mươi phẩy ba lăm điểm, giảm hai phẩy chín chín phần trăm so với phiên trước. Để thấy sự khác biệt, cuối ngày hai mươi chín, chỉ số còn ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm. Nhưng các con số này thuộc hai thời điểm khác nhau. Không nên nối chúng thành một đường giá liên tục, cũng không coi mức mở cửa là kết quả cả ngày.",
+      "sourceIds": [
+        "sedaily-open",
+        "am-yesterday"
+      ],
+      "stats": [
+        {
+          "label": "Mở cửa KRX 30/10",
+          "value": "5.760,35",
+          "tone": "down"
+        },
+        {
+          "label": "So với 29/10",
+          "value": "−2,99%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "29/10 đóng cửa",
+            "value": 5937.66,
+            "display": "5.937,66"
+          },
+          {
+            "label": "30/10 mở cửa",
+            "value": 5760.35,
+            "display": "5.760,35"
+          }
+        ],
+        "qualifier": "Hai mốc giá độc lập · KRX"
+      },
+      "source": "Seoul Economic Daily 30/10 · Yonhap 29/10"
+    },
+    {
+      "id": "trigger",
+      "eyebrow": "CƠ CHẾ THỊ TRƯỜNG",
+      "headline": "Futures giảm 5,12%",
+      "summary": "KOSPI200 futures · không phải mức giảm KOSPI.",
+      "voiceText": "Điểm đáng chú ý nhất xuất hiện lúc mười giờ bốn phút năm mươi lăm giây. Theo thông tin từ sở giao dịch được báo chí Hàn Quốc dẫn lại, hợp đồng tương lai KOSPI hai trăm giảm năm phẩy mười hai phần trăm, còn tám trăm tám mươi bảy phẩy chín hai điểm. Mức giảm này duy trì đủ điều kiện kích hoạt sidecar bán. Lưu ý, năm phẩy mười hai phần trăm là biến động của hợp đồng tương lai tại thời điểm kích hoạt, không phải mức giảm đóng cửa của chỉ số KOSPI.",
+      "sourceIds": [
+        "sedaily-sidecar",
+        "genews-sidecar"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI200 futures",
+          "value": "−5,12%",
+          "tone": "down"
+        },
+        {
+          "label": "Thời điểm",
+          "value": "10:04:55",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−5,12%",
+        "qualifier": "KOSPI200 futures · lúc kích hoạt sidecar"
+      },
+      "source": "KRX qua Seoul Economic Daily · 10:04:55 KST"
+    },
+    {
+      "id": "mechanism",
+      "eyebrow": "SIDE CAR LÀ GÌ?",
+      "headline": "Chỉ tạm dừng lệnh bán chương trình",
+      "summary": "Không phải toàn bộ thị trường đóng cửa.",
+      "voiceText": "Sidecar là cơ chế làm dịu cú sốc từ giao dịch tự động. Theo quy định của K R X, khi hợp đồng tương lai tham chiếu giảm từ năm phần trăm trở lên trong ít nhất một phút, hiệu lực của lệnh bán theo chương trình được tạm dừng trong năm phút. Cổ phiếu không vì thế mà đồng loạt ngừng giao dịch. Đây cũng không phải circuit breaker, tức cơ chế ngắt giao dịch trên diện rộng. Phân biệt hai khái niệm này rất quan trọng để tránh hiểu nhầm mức độ sự kiện.",
+      "sourceIds": [
+        "krx-rules",
+        "sedaily-sidecar"
+      ],
+      "stats": [
+        {
+          "label": "Lệnh bán chương trình",
+          "value": "5 PHÚT",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "5 PHÚT",
+        "qualifier": "Chỉ lệnh bán chương trình · không đóng toàn thị trường"
+      },
+      "source": "Korea Exchange · quy định sidecar"
+    },
+    {
+      "id": "intraday",
+      "eyebrow": "DIỄN BIẾN · 10:15 KST",
+      "headline": "KOSPI giảm 5% trong phiên",
+      "summary": "Mốc 10:15, không phải giá hiện tại hay đóng cửa.",
+      "voiceText": "Đến mười giờ mười lăm, nguồn tin G E News ghi nhận KOSPI ở năm nghìn sáu trăm bốn mươi phẩy tám sáu điểm, giảm năm phần trăm so với hôm trước. Cùng thời điểm, Samsung Electronics giảm năm phẩy ba chín phần trăm, còn S K hynix giảm tám phẩy chín tám phần trăm. Đây chỉ là ảnh chụp thị trường lúc mười giờ mười lăm. Giá có thể thay đổi rất nhanh sau đó, nên chúng ta không dùng những con số này làm giá hiện tại hoặc giá đóng cửa.",
+      "sourceIds": [
+        "genews-sidecar"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · 10:15 KST",
+          "value": "−5,00%",
+          "tone": "down"
+        },
+        {
+          "label": "SK hynix · 10:15",
+          "value": "−8,98%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung",
+            "value": -5.39,
+            "display": "−5,39%"
+          },
+          {
+            "label": "SK hynix",
+            "value": -8.98,
+            "display": "−8,98%"
+          }
+        ],
+        "qualifier": "Giá trong phiên 10:15 KST 30/10"
+      },
+      "source": "Global Economic · 30/10 · 10:15 KST"
+    },
+    {
+      "id": "impact",
+      "eyebrow": "ĐỌC ĐÚNG TÍN HIỆU",
+      "headline": "Áp lực bán chưa nói hết câu chuyện",
+      "summary": "Cần chờ kết quả phiên và dòng tiền.",
+      "voiceText": "Vì sao diễn biến này đáng chú ý? Khi thị trường phải kích hoạt sidecar, áp lực bán đã đủ lớn để chạm ngưỡng kiểm soát giao dịch tự động. Nhưng điều đó không tự động chứng minh triển vọng lợi nhuận doanh nghiệp đã thay đổi. Bản tin sáng đã đề cập sự phân hóa giữa bán dẫn, pin và năng lượng. Đợt giảm mới hôm nay cần được đánh giá cùng dòng tiền, độ rộng thị trường và thông tin doanh nghiệp sau phiên. Một mốc giá trong buổi sáng chưa thể thay thế cho kết quả cả ngày.",
+      "sourceIds": [
+        "sedaily-sidecar",
+        "krx-rules",
+        "am-yesterday"
+      ],
+      "stats": [
+        {
+          "label": "Đánh giá",
+          "value": "CHỜ ĐÓNG CỬA",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "CHỜ 15:30",
+        "qualifier": "KRX phiên chính · cần xác nhận sau phiên"
+      },
+      "source": "KRX · Yonhap · KCI phân tích"
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Quan sát thay vì vội kết luận",
+      "summary": "Theo dõi thanh khoản, dòng tiền và mức đóng cửa.",
+      "voiceText": "Điều cần theo dõi tiếp theo là KOSPI có thu hẹp đà giảm trước giờ đóng cửa hay không, và áp lực bán có lan sang nhiều nhóm cổ phiếu hơn không. Kết quả cuối phiên sẽ được tách riêng khỏi các mốc trong buổi sáng. Thông tin chỉ nhằm giúp mọi người hiểu diễn biến thị trường, không phải khuyến nghị mua bán.",
+      "sourceIds": [
+        "genews-sidecar",
+        "krx-rules"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Sidecar: 10:04:55 KST",
+          "Mốc intraday: 10:15 KST",
+          "Chờ KRX close 15:30"
+        ],
+        "cta": true
+      },
+      "source": "KCI · nguồn xác minh 30/10"
+    }
+  ]
+}
