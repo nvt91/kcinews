@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-10-30-kr-close",
+  "edition": "KR_CLOSE — Bản tin chiều Hàn Quốc 30/10/2026",
+  "dataAsOf": "2026-10-30T17:18:30+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Chứng khoán Hàn Quốc giảm mạnh, tâm lý AI gây sức ép; Hàn–Đức ký 9 MOU",
+  "sourceDisclaimer": "KRX official close and flows not independently confirmed. Conflicting secondary exact index prints omitted. AP Korea price snapshot intraday; US figures from completed 29 Oct US session. 9 MOUs not completed revenue. No NXT aggregation.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261030-KR-CLOSE",
+    "articlePath": "editorial/2026-10-30/kr-close.md",
+    "eventKeys": [
+      "KRX|30OCT-SESSION-SELL-OFF|2026-10-30",
+      "US-TECH|ALPHABET-AI-CAPEX-REPRICING|2026-10-29",
+      "KOREA-GERMANY|NINE-MOUS|2026-10-30"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "productionDirective": "Render full voiced MP4 before owner review; no posting",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "previewVersion": "v1-rendered-review",
+    "capability": "Legacy KciNewsDaily real Vbee/Remotion; Whisper ±2-frame word alignment, -14 LUFS and effects map NOT_VERIFIED; camera takes N/A",
+    "limitations": [
+      "Exact KOSPI/KOSDAQ close values conflict between refreshes, intentionally omitted; no official KRX date-specific closing data.",
+      "NXT outside-hours data excluded.",
+      "AP intraday snapshot is not the KRX close.",
+      "Advanced timing/audio/safe-zone QC pending measurement."
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "market-ap",
+      "title": "AP 30 Oct Asian shares, Korea tech selloff and US completed session",
+      "url": "https://apnews.com/article/stock-markets-ai-alphabet-oil-16c266731fdf64178f38070af2b42497",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "30 Oct intraday KOSPI down nearly 4%, Samsung and SK hynix shares fell; this was not a KRX close.",
+        "Last completed US 29 Oct Nasdaq -1.4%, Alphabet Class A -12.6%, concerns over AI investment."
+      ]
+    },
+    {
+      "id": "market-kospi",
+      "title": "Investing.com KOSPI 30 Oct historical price table, provisional conflict",
+      "url": "https://kr.investing.com/indices/kospi-historical-data",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The 30 Oct KOSPI historical entry changed between two checks from 5725.95 (-3.57%) to 5713.21 (-3.78%); omit exact close as unverified."
+      ]
+    },
+    {
+      "id": "market-kosdaq",
+      "title": "Investing.com KOSDAQ 30 Oct historical price table, provisional conflict",
+      "url": "https://kr.investing.com/indices/kosdaq-historical-data",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The 30 Oct KOSDAQ historical entry changed between checks from 723.87 (-3.90%) to 724.38 (-3.83%); omit exact close as unverified."
+      ]
+    },
+    {
+      "id": "krx-hours",
+      "title": "KRX official regular market hours reference",
+      "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602020204/GLB0602020204T1.jsp",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "primary",
+      "facts": [
+        "KRX regular equity session generally 09:00–15:30 KST; no verified date-specific closing print from KRX available."
+      ]
+    },
+    {
+      "id": "mid-sidecar",
+      "title": "Seoul Economic Daily 30 Oct 10:09/10:20 KST: sell-side sidecar",
+      "url": "https://en.sedaily.com/finance/2026/10/30/kospi-plunges-over-4-percent-triggering-sell-side-sidecar",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "At 10:04:55 KST sell-side program-order sidecar was activated for five minutes; already reported in KR_MID, context only here."
+      ]
+    },
+    {
+      "id": "germany-reuters",
+      "title": "Reuters 30 Oct 12:11 KST Germany Korea industry agreements",
+      "url": "https://www.reuters.com/world/china/germanys-merz-says-eu-shape-better-offer-global-trade-order-comes-under-pressure-2026-10-30/",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-10-30T17:18:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "South Korea Industry Ministry said Korean and German organizations signed nine MOUs for startups and market entry in electricity, energy, biohealth.",
+        "MOUs are not completed investment or recognized revenue."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc?",
+        "score": 47
+      },
+      {
+        "style": "impact",
+        "text": "Chứng khoán Hàn Quốc giảm mạnh, trong khi thị trường Mỹ lo ngại hiệu quả đầu tư AI. Điều này ảnh hưởng tới ngành chip thế nào?",
+        "score": 45
+      },
+      {
+        "style": "question",
+        "text": "Vì sao lợi nhuận ngành bán dẫn tăng mạnh mà cổ phiếu công nghệ Hàn Quốc vẫn bị bán?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều đáng theo dõi hơn ở phiên tới là dòng tiền quay lại nhóm bán dẫn, hay diễn biến đầu tư AI toàn cầu? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "RỦI RO AI HAY DÒNG VỐN?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi Korea Capital Insight",
+    "question": "Điều đáng theo dõi hơn là dòng tiền bán dẫn hay diễn biến đầu tư AI toàn cầu?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN TIN SAU PHIÊN 30/10",
+      "headline": "THỊ TRƯỜNG HÀN QUỐC ĐỎ MẠNH",
+      "summary": "Cổ phiếu công nghệ chịu áp lực; số đóng cửa chưa đối chiếu KRX.",
+      "source": "AP, 30/10/2026; KRX phiên chính",
+      "stats": [],
+      "voiceText": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc? Sáng nay, cơ chế sidecar bán đã được kích hoạt, nhưng đó chỉ là hạn chế tạm thời lệnh bán theo chương trình, không phải đóng cửa toàn thị trường. Bản tin chiều sẽ tập trung vào điều mới sau phiên và những dữ kiện thực sự đáng theo dõi.",
+      "sourceIds": [
+        "market-ap",
+        "mid-sidecar",
+        "krx-hours"
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG KRX",
+      "headline": "ÁP LỰC BÁN CHƯA HẠ NHIỆT",
+      "summary": "KOSPI và KOSDAQ suy yếu; không dùng số đóng cửa đang xung đột.",
+      "source": "AP, Investing, dữ liệu ngày 30/10",
+      "stats": [],
+      "voiceText": "Cả KOSPI và KOSDAQ đều ghi nhận phiên giảm mạnh trong ngày ba mươi tháng mười. Tuy nhiên, các bảng dữ liệu thứ cấp hiện cho ra những con số đóng cửa khác nhau, nên KCI không đọc một mức điểm chính xác khi chưa xác minh với KRX. Diễn biến sáng có sidecar đã được bản tin trưa đề cập; chiều nay, điều mới là áp lực bán kéo dài tới sau phiên chính.",
+      "sourceIds": [
+        "market-ap",
+        "market-kospi",
+        "market-kosdaq",
+        "krx-hours",
+        "mid-sidecar"
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "us-impact",
+      "eyebrow": "ÁP LỰC TỪ CÔNG NGHỆ MỸ",
+      "headline": "AI VẪN LÀ TÂM ĐIỂM",
+      "summary": "Phiên Mỹ 29/10 đã kết thúc; lo ngại hiệu quả chi tiêu AI lan sang Seoul.",
+      "source": "AP, 30/10, phiên Mỹ 29/10",
+      "stats": [
+        {
+          "label": "Nasdaq phiên Mỹ 29/10",
+          "value": "−1,4%",
+          "tone": "down"
+        },
+        {
+          "label": "Alphabet Class A 29/10",
+          "value": "−12,6%",
+          "tone": "down"
+        }
+      ],
+      "voiceText": "Một nguyên nhân đáng chú ý đến từ phiên Mỹ đã kết thúc ngày hai mươi chín tháng mười. Nasdaq giảm một phẩy bốn phần trăm; cổ phiếu Alphabet loại A mất mười hai phẩy sáu phần trăm. Thị trường đang đặt câu hỏi liệu các khoản chi khổng lồ cho trí tuệ nhân tạo có tạo ra lợi nhuận tương xứng hay không. Tâm lý đó ảnh hưởng trực tiếp tới cách nhà đầu tư định giá các nhà cung ứng bộ nhớ Hàn Quốc.",
+      "sourceIds": [
+        "market-ap"
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "chip",
+      "eyebrow": "BÁN DẪN HÀN QUỐC",
+      "headline": "LỢI NHUẬN TỐT CHƯA ĐỦ",
+      "summary": "Samsung và SK hynix chịu áp lực; phân biệt nhu cầu chip với tâm lý giá.",
+      "source": "AP, 30/10/2026",
+      "stats": [],
+      "voiceText": "Samsung Electronics và SK hynix đều giảm trong diễn biến được AP ghi nhận hôm nay. Nhưng giá cổ phiếu đi xuống không tự động có nghĩa nhu cầu chip đã sụp đổ. Nhà đầu tư đang đánh giá đồng thời tốc độ đầu tư hạ tầng AI, khả năng thu hồi vốn của khách hàng và mức kỳ vọng đã phản ánh vào giá cổ phiếu. Cần theo dõi thêm báo cáo đơn hàng và dòng tiền thực tế.",
+      "sourceIds": [
+        "market-ap"
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "Samsung · SK hynix",
+        "bullets": [
+          "ÁP LỰC ĐỊNH GIÁ",
+          "CHƯA ĐỒNG NGHĨA CẦU CHIP GIẢM"
+        ]
+      }
+    },
+    {
+      "id": "germany",
+      "eyebrow": "KINH TẾ VÀ HỢP TÁC NGÀNH",
+      "headline": "HÀN–ĐỨC KÝ 9 BIÊN BẢN GHI NHỚ",
+      "summary": "Điện, năng lượng, y tế sinh học; chưa phải doanh thu hiện thực.",
+      "source": "Reuters, 30/10/2026",
+      "stats": [
+        {
+          "label": "MOU Hàn–Đức",
+          "value": "9",
+          "tone": "neutral"
+        }
+      ],
+      "voiceText": "Không chỉ có chứng khoán. Theo Reuters, Bộ Công nghiệp Hàn Quốc cho biết doanh nghiệp và tổ chức Hàn Quốc, Đức đã ký chín biên bản ghi nhớ, hướng tới hỗ trợ doanh nghiệp khởi nghiệp và mở rộng thị trường trong điện, năng lượng và y tế sinh học. Đây là tín hiệu hợp tác ngành đáng theo dõi, nhưng biên bản ghi nhớ chưa phải hợp đồng đầu tư đã hoàn thành hay doanh thu chắc chắn.",
+      "sourceIds": [
+        "germany-reuters"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "9 MOU",
+        "unit": "Hàn Quốc–Đức",
+        "qualifier": "Biên bản ghi nhớ, không phải doanh thu đã ghi nhận"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỂM CẦN THEO DÕI",
+      "headline": "ĐỪNG CHỈ NHÌN CHỈ SỐ",
+      "summary": "Kiểm chứng giá KRX, dòng vốn, đơn hàng chip và triển khai MOU.",
+      "source": "KCI tổng hợp từ AP, Reuters, KRX",
+      "stats": [],
+      "voiceText": "Trong những phiên tới, KCI sẽ theo dõi số liệu đóng cửa chính thức, dòng vốn tại KRX, nhu cầu thực của ngành bộ nhớ và tiến độ triển khai các thỏa thuận Hàn–Đức. Đừng nhầm biến động giá một ngày với sự thay đổi chắc chắn của triển vọng dài hạn. Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "sourceIds": [
+        "market-ap",
+        "krx-hours",
+        "germany-reuters"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "SỐ LIỆU KRX CHÍNH THỨC",
+          "NHU CẦU VÀ DÒNG TIỀN CHIP",
+          "TIẾN ĐỘ MOU HÀN–ĐỨC"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Sau cú sốc bán tháo buổi sáng, chứng khoán Hàn Quốc tiếp tục chịu áp lực khi kết thúc phiên chính. Điều gì khiến cổ phiếu công nghệ lao dốc?"
+}
