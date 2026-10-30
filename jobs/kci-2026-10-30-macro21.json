@@ -105,7 +105,7 @@
   },
   "cta": {
     "type": "comment",
-    "spoken": "Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won như thế nào? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "spoken": "Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won thế nào? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
     "screenHeadline": "PCE MỸ VÀ ĐỒNG WON",
     "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
     "question": "Theo anh chị, lạm phát Mỹ dai dẳng sẽ ảnh hưởng đến đồng won như thế nào?"
@@ -116,7 +116,7 @@
       "eyebrow": "KCI · VĨ MÔ 21H",
       "headline": "LẠM PHÁT TĂNG, SỨC MUA CHỮNG",
       "summary": "PCE Mỹ tháng 9: 3,6%/năm; chi tiêu thực gần như đi ngang.",
-      "voiceText": "Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won? Đây là số liệu tháng chín được Mỹ công bố tối hai mươi chín tháng mười, theo giờ Hàn Quốc.",
+      "voiceText": "Lạm phát Mỹ lên ba phẩy sáu phần trăm, nhưng chi tiêu thực gần như đứng yên. Điều này liên quan gì đến đồng won? Số liệu tháng chín được công bố tối hai mươi chín tháng mười, giờ Hàn.",
       "source": "BEA · 29/10 08:30 EDT = 29/10 21:30 KST",
       "sourceIds": [
         "bea-pce-sep"
@@ -139,7 +139,7 @@
       "eyebrow": "LẠM PHÁT MỸ · THÁNG 9",
       "headline": "PCE 3,6% SO CÙNG KỲ",
       "summary": "Tăng từ 3,4% tháng 8; PCE lõi tháng 9 ở mức 3,1%.",
-      "voiceText": "Theo Cục Phân tích Kinh tế Mỹ, chỉ số giá PCE tháng chín tăng ba phẩy sáu phần trăm so cùng kỳ, cao hơn ba phẩy bốn phần trăm của tháng tám. PCE lõi, không gồm thực phẩm và năng lượng, tăng ba phẩy một phần trăm so cùng kỳ.",
+      "voiceText": "PCE Mỹ tháng chín tăng ba phẩy sáu phần trăm so cùng kỳ, từ ba phẩy bốn phần trăm tháng trước. PCE lõi, loại thực phẩm và năng lượng, tăng ba phẩy một phần trăm.",
       "source": "BEA · công bố 29/10/2026",
       "sourceIds": [
         "bea-pce-sep",
@@ -179,7 +179,7 @@
       "eyebrow": "CHI TIÊU DANH NGHĨA VS THỰC",
       "headline": "TIỀN CHI TĂNG, LƯỢNG MUA CHỮNG",
       "summary": "Chi tiêu danh nghĩa +0,5% tháng; sau điều chỉnh giá gần 0%.",
-      "voiceText": "Một chi tiết quan trọng: chi tiêu danh nghĩa của người Mỹ tăng không phẩy năm phần trăm trong tháng chín. Nhưng sau khi loại tác động giá cả, chi tiêu thực tăng chưa tới không phẩy một phần trăm. Tức là số tiền bỏ ra tăng, chưa có nghĩa lượng hàng hóa và dịch vụ mua được tăng tương ứng.",
+      "voiceText": "Chi tiêu danh nghĩa của người Mỹ tăng không phẩy năm phần trăm trong tháng chín. Nhưng sau điều chỉnh giá, chi tiêu thực tăng chưa tới không phẩy một phần trăm. Tiền chi nhiều hơn không có nghĩa mua được nhiều hơn.",
       "source": "BEA · Personal Income and Outlays September",
       "sourceIds": [
         "bea-pce-sep"
@@ -218,7 +218,7 @@
       "eyebrow": "CHÍNH SÁCH TIỀN TỆ MỸ",
       "headline": "FED GIỮ 3,75–4,00%",
       "summary": "Quyết định 28/10 giờ Mỹ; chưa phải cam kết cho kỳ tới.",
-      "voiceText": "Trước báo cáo này, Fed đã giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm trong cuộc họp ngày hai mươi tám tháng mười. Fed đánh giá lạm phát vẫn cao. Dữ liệu PCE mới có thể tác động kỳ vọng thị trường, nhưng không tự động quyết định Fed sẽ tăng lãi suất ở kỳ họp tiếp theo.",
+      "voiceText": "Fed giữ lãi suất từ ba phẩy bảy lăm đến bốn phần trăm ngày hai mươi tám tháng mười. Lạm phát vẫn cao, nhưng báo cáo PCE không tự quyết định kỳ họp sau.",
       "source": "Federal Reserve · 28/10 14:00 EDT",
       "sourceIds": [
         "fed-oct28",
@@ -242,7 +242,7 @@
       "eyebrow": "KÊNH TÁC ĐỘNG TỚI HÀN QUỐC",
       "headline": "USD/KRW · LỢI SUẤT · GIÁ NHẬP KHẨU",
       "summary": "Lạm phát Mỹ dai dẳng có thể gây sức ép qua kỳ vọng lãi suất.",
-      "voiceText": "Với Hàn Quốc, nếu kỳ vọng lãi suất Mỹ duy trì cao lâu hơn, lợi suất và đồng đô la có thể chịu tác động, rồi truyền sang tỷ giá won và chi phí nhập khẩu. Nhưng hướng đi không chắc chắn, vì còn phụ thuộc dòng vốn và thương mại. BOK hiện giữ lãi suất ba phần trăm theo quyết định ngày hai mươi hai tháng mười.",
+      "voiceText": "Với Hàn Quốc, nếu kỳ vọng lãi suất Mỹ cao lâu hơn, đồng đô la và lợi suất có thể chịu tác động, rồi truyền sang tỷ giá won và giá nhập khẩu. BOK giữ lãi suất ba phần trăm từ quyết định hai mươi hai tháng mười.",
       "source": "Fed 28/10 · BOK 22/10 · KCI phân tích có điều kiện",
       "sourceIds": [
         "fed-oct28",
@@ -266,7 +266,7 @@
       "eyebrow": "ĐIỀU CẦN THEO DÕI",
       "headline": "ĐỌC ĐÚNG PCE VÀ DÒNG VỐN",
       "summary": "Theo dõi kỳ vọng Fed, USD/KRW và dữ liệu lạm phát tiếp theo.",
-      "voiceText": "Điều cần theo dõi là liệu giá cả Mỹ còn tăng nhanh, trong khi chi tiêu thực tiếp tục yếu, và thị trường phản ứng ra sao. Đừng lấy một số liệu để kết luận chắc hướng đi của đồng won.",
+      "voiceText": "Hãy theo dõi xu hướng PCE Mỹ và phản ứng của tỷ giá won, thay vì kết luận chắc từ một số liệu.",
       "source": "BEA 29/10 · Fed 28/10 · BOK 22/10",
       "sourceIds": [
         "bea-pce-sep",
