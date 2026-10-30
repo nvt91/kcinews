@@ -64,12 +64,23 @@ const Reversal:React.FC<{v:KciVisual;f:number}>=({v,f})=>(
   </div>
 );
 
-const Spotlight:React.FC<{v:KciVisual;f:number;color:string}>=({v,f,color})=>(
-  <div style={{width:"100%",height:444,textAlign:"center",position:"relative",overflow:"hidden",padding:20,boxSizing:"border-box"}}>
-    <div style={{position:"absolute",left:"50%",top:20,width:390,height:390,borderRadius:"50%",border:`2px dashed ${color}44`,transform:`translateX(-50%) rotate(${f*.3}deg)`}}/>
-    <div style={{position:"relative"}}><div style={{fontSize:29,color,fontWeight:850,letterSpacing:1}}>{v.unit||"THỊ TRƯỜNG"}</div><div style={{...enter(f,16),fontSize:176,fontWeight:950,letterSpacing:-4,marginTop:25}}>{v.value}</div><div style={{...small,fontSize:30,marginTop:30,color:P.white,fontWeight:750}}>{v.qualifier}</div></div>
+const Spotlight:React.FC<{v:KciVisual;f:number;color:string}>=({v,f,color})=>{
+  const figure=v.value||"";
+  const wrapped=figure.length>12;
+  const figureSize=wrapped?112:164;
+  const unit=v.unit||"THỊ TRƯỜNG";
+  const unitLong=unit.length>28;
+  return (
+  <div style={{width:"100%",alignSelf:"flex-start",textAlign:"center",position:"relative",overflow:"visible",padding:"8px 12px 20px",boxSizing:"border-box"}}>
+    <div style={{position:"absolute",left:"50%",top:8,width:360,height:360,borderRadius:"50%",border:`2px dashed ${color}44`,transform:`translateX(-50%) rotate(${f*.3}deg)`}}/>
+    <div style={{position:"relative"}}>
+      <div style={{fontSize:unitLong?22:26,color,fontWeight:850,letterSpacing:unitLong?0.3:1,lineHeight:1.3,maxWidth:"100%",overflowWrap:"break-word"}}>{unit}</div>
+      <div style={{...enter(f,16),fontSize:figureSize,fontWeight:950,letterSpacing:wrapped?-2:-3,marginTop:10,lineHeight:1.32,paddingBottom:16}}>{figure}</div>
+      <div style={{...small,fontSize:28,marginTop:6,color:P.white,fontWeight:750,lineHeight:1.3}}>{v.qualifier}</div>
+    </div>
   </div>
-);
+  );
+};
 
 const Company:React.FC<{v:KciVisual;s:RenderScene;f:number}>=({v,s,f})=>(
   <div style={{width:"100%"}}>

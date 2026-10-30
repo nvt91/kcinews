@@ -83,6 +83,16 @@
       ]
     }
   ],
+  "rightsNotes": [
+    {
+      "item": "Giọng Vbee Anh Khôi",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    },
+    {
+      "item": "Nhạc nền",
+      "note": "anh Tommy xác nhận 29/10/2026, chứng từ do anh Tommy giữ"
+    }
+  ],
   "hook": {
     "spoken": "Samsung vừa công bố báo cáo quý ba: lợi nhuận hoạt động một trăm linh bảy phẩy bốn nghìn tỷ won. Nhưng mảng chip tạo gần hết lợi nhuận, còn mảng thiết bị lại lỗ.",
     "candidates": [
@@ -130,6 +140,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "LỢI NHUẬN HOẠT ĐỘNG Q3",
         "value": "107,4 nghìn tỷ ₩",
         "qualifier": "Lợi nhuận hoạt động hợp nhất · Q3/2026 · Samsung 29/10"
       },
@@ -220,7 +231,7 @@
       "eyebrow": "THIẾT BỊ · DX",
       "headline": "Điện thoại, thiết bị chịu áp lực",
       "summary": "DX lỗ hoạt động 0,8 nghìn tỷ won.",
-      "voiceText": "Ngược lại, mảng thiết bị DX có doanh thu năm mươi hai phẩy một nghìn tỷ won nhưng lỗ hoạt động không phẩy tám nghìn tỷ. Chi phí linh kiện và logistics tiếp tục gây sức ép. Lợi nhuận kỷ lục toàn tập đoàn không có nghĩa mọi bộ phận đều tăng trưởng tốt.",
+      "voiceText": "Ngược lại, mảng thiết bị DX có doanh thu năm mươi hai phẩy một nghìn tỷ won nhưng lỗ hoạt động không phẩy tám nghìn tỷ. Chi phí linh kiện tiếp tục gây sức ép. Lợi nhuận kỷ lục toàn tập đoàn không có nghĩa mọi bộ phận đều tăng trưởng tốt.",
       "sourceIds": [
         "samsung-kr-q3",
         "samsung-global-q3"
@@ -278,6 +289,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "HOÀN TRẢ CỔ ĐÔNG DỰ KIẾN 2026",
         "value": "90–110 nghìn tỷ ₩",
         "qualifier": "TỔNG hoàn trả cổ đông 2026 dự kiến · chưa chốt toàn bộ"
       },
@@ -288,7 +300,7 @@
       "eyebrow": "TRIỂN VỌNG · 2027",
       "headline": "AI mạnh, rủi ro vẫn còn",
       "summary": "Triển vọng doanh nghiệp, không phải kết quả đã xảy ra.",
-      "voiceText": "Hãng dự kiến đầu tư cơ sở vật chất tám mươi bốn phẩy bốn nghìn tỷ won trong năm nay. Samsung nhận định nhu cầu chip AI năm sau có thể vượt xa nguồn cung. Đây là dự báo của doanh nghiệp, chưa phải kết quả đã xảy ra. Chi phí đầu tư và sức khỏe mảng thiết bị vẫn cần theo dõi.",
+      "voiceText": "Hãng dự kiến đầu tư cơ sở vật chất tám mươi bốn phẩy bốn nghìn tỷ won trong năm nay. Samsung nhận định nhu cầu bộ nhớ năm sau có thể vượt xa nguồn cung. Đây là dự báo của doanh nghiệp, chưa phải kết quả đã xảy ra. Chi phí đầu tư và sức khỏe mảng thiết bị vẫn cần theo dõi.",
       "sourceIds": [
         "samsung-kr-q3",
         "samsung-global-q3"
@@ -302,6 +314,7 @@
       ],
       "visual": {
         "kind": "spotlight",
+        "unit": "CHI ĐẦU TƯ DỰ KIẾN",
         "value": "84,4 nghìn tỷ ₩",
         "qualifier": "Chi đầu tư cơ sở vật chất 2026 dự kiến · Samsung"
       },
@@ -338,7 +351,7 @@
         ],
         "cta": true
       },
-      "source": "Samsung Newsroom · 29/10"
+      "source": "Samsung Newsroom · Reuters · dữ liệu 11:53 29/10 (giờ Seoul)"
     }
   ]
 }
