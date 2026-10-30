@@ -120,7 +120,7 @@
       "eyebrow": "TIN BỔ SUNG · 30/10",
       "headline": "KOSPI kích hoạt sidecar",
       "summary": "10:04:55 KST · lệnh bán chương trình bị tạm ngưng 5 phút.",
-      "voiceText": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI? Sáng ba mươi tháng mười, sàn chứng khoán Hàn Quốc ghi nhận một đợt bán tháo rất mạnh. Đây là diễn biến mới sau bản tin sáng, không phải câu chuyện giá đóng cửa hôm qua. Chúng ta sẽ phân biệt rõ mức giảm của chỉ số, tín hiệu từ thị trường phái sinh và cơ chế can thiệp của sở giao dịch.",
+      "voiceText": "Chỉ hơn một giờ sau khi mở cửa, thị trường Hàn Quốc đã phải kích hoạt cơ chế hạn chế lệnh bán tự động. Điều gì vừa xảy ra với KOSPI? Đây là sự kiện mới sau bản tin sáng ngày ba mươi tháng mười. Chúng ta cùng xem sidecar là gì, vì sao được kích hoạt và điều gì cần theo dõi tiếp theo. Các con số trong bản tin đều có mốc giờ cụ thể.",
       "sourceIds": [
         "sedaily-sidecar",
         "genews-sidecar",
@@ -145,7 +145,7 @@
       "eyebrow": "MỞ CỬA · KRX",
       "headline": "KOSPI giảm ngay từ đầu phiên",
       "summary": "Giá mở cửa, không phải giá đóng cửa.",
-      "voiceText": "Ở phiên chính của K R X, KOSPI mở cửa tại năm nghìn bảy trăm sáu mươi phẩy ba lăm điểm, giảm hai phẩy chín chín phần trăm so với phiên trước. Để thấy sự khác biệt, cuối ngày hai mươi chín, chỉ số còn ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm. Nhưng các con số này thuộc hai thời điểm khác nhau. Không nên nối chúng thành một đường giá liên tục, cũng không coi mức mở cửa là kết quả cả ngày.",
+      "voiceText": "KOSPI mở cửa phiên chính K R X tại năm nghìn bảy trăm sáu mươi phẩy ba lăm điểm, giảm hai phẩy chín chín phần trăm so với hôm qua. Phiên hai mươi chín chỉ số đóng cửa ở năm nghìn chín trăm ba mươi bảy phẩy sáu sáu điểm. Đây là hai mốc khác nhau, không phải một đường giá liên tục hay kết quả đóng cửa hôm nay.",
       "sourceIds": [
         "sedaily-open",
         "am-yesterday"
@@ -185,7 +185,7 @@
       "eyebrow": "CƠ CHẾ THỊ TRƯỜNG",
       "headline": "Futures giảm 5,12%",
       "summary": "KOSPI200 futures · không phải mức giảm KOSPI.",
-      "voiceText": "Điểm đáng chú ý nhất xuất hiện lúc mười giờ bốn phút năm mươi lăm giây. Theo thông tin từ sở giao dịch được báo chí Hàn Quốc dẫn lại, hợp đồng tương lai KOSPI hai trăm giảm năm phẩy mười hai phần trăm, còn tám trăm tám mươi bảy phẩy chín hai điểm. Mức giảm này duy trì đủ điều kiện kích hoạt sidecar bán. Lưu ý, năm phẩy mười hai phần trăm là biến động của hợp đồng tương lai tại thời điểm kích hoạt, không phải mức giảm đóng cửa của chỉ số KOSPI.",
+      "voiceText": "Đến mười giờ bốn phút năm mươi lăm giây, hợp đồng tương lai KOSPI hai trăm giảm năm phẩy mười hai phần trăm, còn tám trăm tám mươi bảy phẩy chín hai điểm. Sở giao dịch Hàn Quốc kích hoạt sidecar bán. Cần lưu ý, mức giảm năm phẩy mười hai phần trăm thuộc hợp đồng tương lai tại thời điểm đó, không phải mức giảm đóng cửa của KOSPI.",
       "sourceIds": [
         "sedaily-sidecar",
         "genews-sidecar"
@@ -214,7 +214,7 @@
       "eyebrow": "SIDE CAR LÀ GÌ?",
       "headline": "Chỉ tạm dừng lệnh bán chương trình",
       "summary": "Không phải toàn bộ thị trường đóng cửa.",
-      "voiceText": "Sidecar là cơ chế làm dịu cú sốc từ giao dịch tự động. Theo quy định của K R X, khi hợp đồng tương lai tham chiếu giảm từ năm phần trăm trở lên trong ít nhất một phút, hiệu lực của lệnh bán theo chương trình được tạm dừng trong năm phút. Cổ phiếu không vì thế mà đồng loạt ngừng giao dịch. Đây cũng không phải circuit breaker, tức cơ chế ngắt giao dịch trên diện rộng. Phân biệt hai khái niệm này rất quan trọng để tránh hiểu nhầm mức độ sự kiện.",
+      "voiceText": "Sidecar là cơ chế hạn chế tác động từ giao dịch tự động. Theo quy định của K R X, khi hợp đồng tương lai tham chiếu giảm ít nhất năm phần trăm trong một phút, lệnh bán theo chương trình bị tạm dừng hiệu lực trong năm phút. Không phải mọi cổ phiếu đều ngừng giao dịch. Sidecar khác với circuit breaker, cơ chế ngắt giao dịch trên diện rộng.",
       "sourceIds": [
         "krx-rules",
         "sedaily-sidecar"
@@ -238,7 +238,7 @@
       "eyebrow": "DIỄN BIẾN · 10:15 KST",
       "headline": "KOSPI giảm 5% trong phiên",
       "summary": "Mốc 10:15, không phải giá hiện tại hay đóng cửa.",
-      "voiceText": "Đến mười giờ mười lăm, nguồn tin G E News ghi nhận KOSPI ở năm nghìn sáu trăm bốn mươi phẩy tám sáu điểm, giảm năm phần trăm so với hôm trước. Cùng thời điểm, Samsung Electronics giảm năm phẩy ba chín phần trăm, còn S K hynix giảm tám phẩy chín tám phần trăm. Đây chỉ là ảnh chụp thị trường lúc mười giờ mười lăm. Giá có thể thay đổi rất nhanh sau đó, nên chúng ta không dùng những con số này làm giá hiện tại hoặc giá đóng cửa.",
+      "voiceText": "Lúc mười giờ mười lăm, G E News ghi nhận KOSPI giảm năm phần trăm, còn năm nghìn sáu trăm bốn mươi phẩy tám sáu điểm. Samsung Electronics giảm năm phẩy ba chín phần trăm, S K hynix giảm tám phẩy chín tám phần trăm. Đây là số liệu trong phiên lúc mười giờ mười lăm, không phải giá hiện tại và càng không phải kết quả đóng cửa.",
       "sourceIds": [
         "genews-sidecar"
       ],
@@ -277,7 +277,7 @@
       "eyebrow": "ĐỌC ĐÚNG TÍN HIỆU",
       "headline": "Áp lực bán chưa nói hết câu chuyện",
       "summary": "Cần chờ kết quả phiên và dòng tiền.",
-      "voiceText": "Vì sao diễn biến này đáng chú ý? Khi thị trường phải kích hoạt sidecar, áp lực bán đã đủ lớn để chạm ngưỡng kiểm soát giao dịch tự động. Nhưng điều đó không tự động chứng minh triển vọng lợi nhuận doanh nghiệp đã thay đổi. Bản tin sáng đã đề cập sự phân hóa giữa bán dẫn, pin và năng lượng. Đợt giảm mới hôm nay cần được đánh giá cùng dòng tiền, độ rộng thị trường và thông tin doanh nghiệp sau phiên. Một mốc giá trong buổi sáng chưa thể thay thế cho kết quả cả ngày.",
+      "voiceText": "Sự kiện này đáng chú ý vì áp lực bán đã chạm ngưỡng kiểm soát giao dịch tự động. Nhưng sidecar không tự chứng minh lợi nhuận doanh nghiệp sẽ xấu đi. Muốn đánh giá xu hướng, cần xem dòng tiền, số lượng mã tăng giảm và diễn biến sau khi lệnh bán chương trình hoạt động trở lại. Đừng suy ra kết quả cả ngày từ một mốc giá buổi sáng.",
       "sourceIds": [
         "sedaily-sidecar",
         "krx-rules",
@@ -302,7 +302,7 @@
       "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
       "headline": "Quan sát thay vì vội kết luận",
       "summary": "Theo dõi thanh khoản, dòng tiền và mức đóng cửa.",
-      "voiceText": "Điều cần theo dõi tiếp theo là KOSPI có thu hẹp đà giảm trước giờ đóng cửa hay không, và áp lực bán có lan sang nhiều nhóm cổ phiếu hơn không. Kết quả cuối phiên sẽ được tách riêng khỏi các mốc trong buổi sáng. Thông tin chỉ nhằm giúp mọi người hiểu diễn biến thị trường, không phải khuyến nghị mua bán.",
+      "voiceText": "Điều cần theo dõi tiếp theo là mức đóng cửa K R X lúc mười lăm giờ ba mươi, độ rộng thị trường và dòng vốn nước ngoài. Những dữ kiện này sẽ giúp phân biệt áp lực bán ngắn hạn với thay đổi đáng kể hơn. Nội dung chỉ để tham khảo, không phải khuyến nghị đầu tư cá nhân.",
       "sourceIds": [
         "genews-sidecar",
         "krx-rules"
