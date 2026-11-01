@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-02-kr-am",
+  "edition": "KR_AM — Bản tin sáng Hàn Quốc 02/11/2026",
+  "dataAsOf": "2026-11-02T08:05:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Xuất khẩu Hàn Quốc tăng 93,7%, chip bùng nổ nhưng KOSPI vừa giảm mạnh",
+  "sourceDisclaimer": "Exports October 2026 actual published November 1; October year-on-year holiday working-day base effect. KOSPI October 30 KRX close is historical, NOT November 2 live or NXT.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261102-KR-AM",
+    "articlePath": "editorial/2026-11-02/kr-am.md",
+    "eventKeys": [
+      "KOREA|OCTOBER-EXPORT-ACTUAL|2026-11-01",
+      "KOREA|OCTOBER-SEMICONDUCTOR-EXPORTS|2026-11-01",
+      "KRX|KOSPI-CLOSE-CONTEXT|2026-10-30"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-rendered-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "TTS motion; runner proportional seven-word cues; Whisper word timing, measured effects map, loudness, silence edits NOT_VERIFIED; footage-only steps N/A"
+  },
+  "sourceLedger": [
+    {
+      "id": "motir",
+      "title": "MOTIR official October 2026 trade report published Nov 1",
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+      "eventDate": "2026-11-01",
+      "checkedAt": "2026-11-02T08:05:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "October exports USD115.28bn +93.7% YoY, imports USD72.78bn +36.0%, trade surplus USD42.50bn.",
+        "Semiconductor exports +259% YoY; first ten months exports USD930bn; calendar/working days affect comparison."
+      ]
+    },
+    {
+      "id": "reuters",
+      "title": "Reuters Nov 1 export corroboration",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-exports-nearly-double-october-strongest-growth-since-1974-2026-11-01/",
+      "eventDate": "2026-11-01",
+      "checkedAt": "2026-11-02T08:05:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Chip exports USD56.44bn, +259.4% YoY; October exports +93.7%; year-on-year distorted by holiday timing."
+      ]
+    },
+    {
+      "id": "krxclose",
+      "title": "KOSPI KRX Friday October 30 closing reference, historical",
+      "url": "https://todaystk.kr/market/2026-10-30",
+      "eventDate": "2026-10-30",
+      "checkedAt": "2026-11-02T08:05:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI Oct30 regular close 5730.74 (-3.48%); KOSDAQ 724.38 (-3.83%); NOT live November 2."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Xuất khẩu Hàn Quốc tháng mười tăng tới chín mươi ba phẩy bảy phần trăm. Nhưng vì sao chứng khoán vẫn vừa trải qua phiên giảm mạnh?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu Hàn Quốc tháng mười tăng tới chín mươi ba phẩy bảy phần trăm. Nhưng vì sao chứng khoán vẫn vừa trải qua phiên giảm mạnh?",
+        "score": 48
+      },
+      {
+        "style": "impact",
+        "text": "Xuất khẩu chip Hàn Quốc tăng hơn hai trăm năm mươi chín phần trăm. Thị trường sẽ phản ứng ra sao?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Xuất khẩu lập mức cao, nhưng KOSPI vừa giảm mạnh. Dữ liệu nào quan trọng hơn?",
+        "score": 44
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, số liệu xuất khẩu có giúp thị trường lấy lại niềm tin? Chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "XUẤT KHẨU CÓ ĐỦ SỨC?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Số liệu xuất khẩu có giúp thị trường lấy lại niềm tin?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN SÁNG · 02/11",
+      "headline": "Xuất khẩu tăng 93,7%",
+      "summary": "Số liệu tháng 10 chính thức vừa công bố.",
+      "voiceText": "Xuất khẩu Hàn Quốc tháng mười tăng tới chín mươi ba phẩy bảy phần trăm. Nhưng vì sao chứng khoán vẫn vừa trải qua phiên giảm mạnh? Cùng xem ba dữ kiện quan trọng sáng nay.",
+      "sourceIds": [
+        "motir",
+        "krxclose"
+      ],
+      "stats": [
+        {
+          "label": "Xuất khẩu tháng 10",
+          "value": "+93,7%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+93,7%",
+        "qualifier": "Xuất khẩu tháng 10 · so với cùng kỳ"
+      },
+      "source": "Bộ Công nghiệp Hàn Quốc · 01/11"
+    },
+    {
+      "id": "exports",
+      "eyebrow": "THƯƠNG MẠI · THÁNG 10",
+      "headline": "Xuất khẩu 115,28 tỷ USD",
+      "summary": "Thặng dư thương mại 42,5 tỷ USD.",
+      "voiceText": "Theo Bộ Công nghiệp Hàn Quốc, xuất khẩu tháng mười đạt một trăm mười lăm phẩy hai tám tỷ đô la Mỹ, tăng chín mươi ba phẩy bảy phần trăm so với cùng kỳ. Nhập khẩu tăng ba mươi sáu phần trăm, còn thặng dư thương mại đạt bốn mươi hai phẩy năm tỷ đô la. Cần lưu ý số ngày làm việc khác nhau do lịch nghỉ Chuseok khiến mức tăng theo năm được khuếch đại.",
+      "sourceIds": [
+        "motir",
+        "reuters"
+      ],
+      "stats": [
+        {
+          "label": "Xuất khẩu tháng 10",
+          "value": "115,28 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "Thặng dư thương mại",
+          "value": "42,5 tỷ USD",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "115,28 tỷ USD",
+        "qualifier": "Tháng 10/2026 · số liệu chính thức"
+      },
+      "source": "MOTIR · 01/11"
+    },
+    {
+      "id": "chips",
+      "eyebrow": "BÁN DẪN · ĐỘNG LỰC CHÍNH",
+      "headline": "Chip tăng hơn 259%",
+      "summary": "Nhu cầu AI là động lực, không phải bảo đảm giá cổ phiếu.",
+      "voiceText": "Động lực nổi bật vẫn là bán dẫn. Xuất khẩu chip đạt khoảng năm mươi sáu phẩy bốn bốn tỷ đô la, tăng hai trăm năm mươi chín phẩy bốn phần trăm. Nhu cầu máy chủ trí tuệ nhân tạo hỗ trợ doanh số, nhưng tăng trưởng xuất khẩu không đồng nghĩa cổ phiếu chip chắc chắn tăng. Thị trường còn đánh giá định giá và hiệu quả vốn đầu tư.",
+      "sourceIds": [
+        "motir",
+        "reuters"
+      ],
+      "stats": [
+        {
+          "label": "Xuất khẩu chip tháng 10",
+          "value": "56,44 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "Tăng so cùng kỳ",
+          "value": "+259,4%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+259,4%",
+        "qualifier": "Xuất khẩu chip tháng 10 · Reuters"
+      },
+      "source": "Reuters · MOTIR · 01/11"
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG · PHIÊN 30/10",
+      "headline": "KOSPI giảm 3,48%",
+      "summary": "Đây là giá đóng cửa thứ Sáu, không phải giá sáng nay.",
+      "voiceText": "Đối chiếu với thị trường, KOSPI đã đóng cửa thứ Sáu ba mươi tháng mười ở năm nghìn bảy trăm ba mươi phẩy bảy bốn điểm, giảm ba phẩy bốn tám phần trăm. Đây là dữ liệu phiên cũ trên KRX, không phải báo giá sáng thứ Hai. Câu hỏi cần theo dõi là liệu số liệu xuất khẩu mới có cải thiện kỳ vọng lợi nhuận đủ để bù nỗi lo định giá hay không.",
+      "sourceIds": [
+        "krxclose",
+        "motir"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 30/10",
+          "value": "5.730,74",
+          "change": "−3,48%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "5.730,74",
+        "qualifier": "Đóng cửa KRX 30/10 · KHÔNG phải giá hiện tại"
+      },
+      "source": "KRX close qua Todaystk · 30/10"
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "Xuất khẩu mạnh, giá vẫn biến động",
+      "summary": "Phân biệt dữ liệu kinh tế và kỳ vọng thị trường.",
+      "voiceText": "Tóm lại, xuất khẩu đang rất mạnh, nhất là ngành chip, nhưng thị trường cổ phiếu còn chịu tác động từ kỳ vọng và rủi ro định giá. Hãy theo dõi phản ứng của nhóm bán dẫn trong phiên mới. Thông tin chỉ để tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "sourceIds": [
+        "motir",
+        "krxclose"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Xuất khẩu tháng 10 +93,7%",
+          "Chip +259,4%",
+          "KOSPI: tham chiếu 30/10"
+        ],
+        "cta": true
+      },
+      "source": "KCI · tổng hợp 02/11"
+    }
+  ]
+}
