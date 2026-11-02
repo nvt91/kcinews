@@ -36,3 +36,10 @@ Caption (<50 từ cả hashtag): 🇰🇷 Xuất khẩu Hàn Quốc tháng 10 t�
 ## Dựng và QC
 
 Profile KCI_EDIT_20261026_V1. TTS/motion, footage/takes/face tracking N/A. Runner hiện tại tạo captions 7 từ theo tỷ lệ, không có Whisper đo ±2 frame; âm lượng/peak và cắt khoảng lặng NOT_MEASURED. Video review phải có audio thật, kiểm tra artifact trước khi xác nhận. Chưa đăng, chờ chủ kênh duyệt.
+
+## Kết quả khắc phục và render xác minh 02/11
+
+- Sửa câu trong scene chips và preflight selected job đã được xác thực bằng lượt [GitHub Actions 41374480868](https://github.com/nvt91/kcinews/actions/runs/41374480868) SUCCESS, [Issue #61](https://github.com/nvt91/kcinews/issues/61). Video 5 scenes + 5 Vbee Anh Khôi MP3, H264/AAC 1080×1920 30fps, 72,8 giây, artifact 13109839741; full video/audio decode PASS. Không dùng run lỗi #60 để suy thành công.
+- Bản MP4 đã cân âm lượng (không tái tổng hợp giọng) giao trực tiếp trong ChatGPT: KCI_KR_AM_2026-11-02_AnhKhoi_Review.mp4, 15.975.249 bytes, -14,8 LUFS, truepeak ~-0,9 dBTP. 5 ảnh mẫu theo cảnh đã kiểm tra và không có khung đen >=0,08s; kiểm tra transcript theo thời gian thật/Whisper và nghe thẩm định toàn phần vẫn NOT_VERIFIED. Không nhận QC tổng thể đã đạt.
+- KCI News Sheet tab Trang tính1 hàng 35 đã cập nhật và đọc lại: giờ MP4 02/11 10:56:33 KST, G=MP4 — CẦN RÀ SOÁT, H=CHỜ DUYỆT, I=CHƯA ĐĂNG, E artifact gốc, M run. Artifact chứa video gốc; bản master audio chỉ trong ChatGPT. Chưa đăng.
+
