@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-02-kr-close",
+  "edition": "KR_CLOSE — Bản tin chiều Hàn Quốc 02/11/2026",
+  "dataAsOf": "2026-11-02T17:45:50+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI hồi 2,24%, tổ chức mua ròng; Hàn Quốc đề xuất ngân sách AI lớn",
+  "sourceDisclaimer": "KOSPI 5859.08 is KRX regular close on 2 Nov, not NXT after-hours. Institutional buying and foreign+retail combined selling must not be conflated. 2027 budget is proposal, not approved expenditure. October export figures already in KR_AM and not a new headline.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261102-KR-CLOSE",
+    "articlePath": "editorial/2026-11-02/kr-close.md",
+    "eventKeys": [
+      "KRX|KOSPI-REBOUND|2026-11-02",
+      "KRX|INSTITUTIONAL-BUYING|2026-11-02",
+      "KOREA|2027-AI-BUDGET-PROPOSAL|2026-11-02"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-rendered-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "TTS-motion, footage/takes N/A; measured Whisper word alignment, -14 LUFS and safe zone QA pending"
+  },
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 2 Nov 16:45 KOSPI regular close and investors",
+      "url": "https://en.yna.co.kr/view/AEN20261102007652320",
+      "eventDate": "2026-11-02",
+      "checkedAt": "2026-11-02T17:45:50+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX closed 5859.08, up 128.34 points (+2.24%); session high 5910.83.",
+        "Institutions net bought KRW1.23tn; foreign and retail combined net sold KRW1.72tn; winners 651, losers 229.",
+        "Samsung Electronics +1.78%, SK hynix +3.81%; Hanwha Ocean +9.8%.",
+        "KRW at 15:30 was 1343.8 per USD, weakened 9.5 won."
+      ]
+    },
+    {
+      "id": "motir-oct",
+      "title": "MOTIR October trade actual release 1 November",
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+      "eventDate": "2026-11-01",
+      "checkedAt": "2026-11-02T17:45:50+09:00",
+      "kind": "primary",
+      "facts": [
+        "October exports USD115.28bn, +93.7% year over year; semiconductor exports +259%; already covered KR_AM, background only."
+      ]
+    },
+    {
+      "id": "reuters-budget",
+      "title": "Reuters Nov 2 South Korean 2027 budget and AI plan",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-vows-make-bold-ai-investment-record-budget-push-2026-11-02/",
+      "eventDate": "2026-11-02",
+      "checkedAt": "2026-11-02T17:45:50+09:00",
+      "kind": "secondary",
+      "facts": [
+        "President Lee called for parliamentary approval of 2027 budget KRW820.9tn; AI allocation KRW21.3tn is a proposed budget, not enacted spending.",
+        "Proposal covers semiconductors, physical AI, data centres."
+      ]
+    },
+    {
+      "id": "reuters-won",
+      "title": "Reuters Nov 2 first offshore won payment by Woori",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-woori-bank-says-first-offshore-won-payment-carried-out-2026-11-02/",
+      "eventDate": "2026-11-02",
+      "checkedAt": "2026-11-02T17:45:50+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Woori Bank said it completed first offshore won payment for foreign investment via Singapore branch; no disclosed transaction value."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa bật tăng hơn hai phần trăm sau phiên bán tháo. Nhưng dòng tiền nào đang thực sự kéo thị trường Hàn Quốc đi lên?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI vừa bật tăng hơn hai phần trăm sau phiên bán tháo. Nhưng dòng tiền nào đang thực sự kéo thị trường Hàn Quốc đi lên?",
+        "score": 48
+      },
+      {
+        "style": "impact",
+        "text": "Nhóm chip phục hồi, tổ chức mua ròng mạnh. Phiên đầu tuần ở Seoul có điều gì đáng chú ý?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "KOSPI hồi phục, nhưng nhà đầu tư nước ngoài vẫn bán. Liệu thị trường đã ổn định?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, lực mua tổ chức có giúp thị trường giữ nhịp phục hồi? Bình luận góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "NHỊP HỒI CÓ BỀN?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Lực mua tổ chức có giúp thị trường giữ nhịp phục hồi?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "BẢN CHIỀU · 02/11",
+      "headline": "KOSPI HỒI PHỤC 2,24%",
+      "summary": "Phiên KRX chính · tổ chức dẫn dắt lực mua",
+      "source": "Yonhap · 02/11 16:45 KST",
+      "voiceText": "KOSPI vừa bật tăng hơn hai phần trăm sau phiên bán tháo. Nhưng dòng tiền nào đang thực sự kéo thị trường Hàn Quốc đi lên? Kết thúc phiên chính ngày hai tháng mười một, chỉ số tăng hai phẩy hai bốn phần trăm. Đây là số liệu đóng cửa KRX, không phải báo giá NXT ngoài giờ.",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI KRX 02/11",
+          "value": "5.859,08",
+          "change": "+2,24%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+2,24%",
+        "qualifier": "KOSPI · đóng cửa KRX 02/11"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "DÒNG TIỀN SAU PHIÊN",
+      "headline": "TỔ CHỨC MUA RÒNG",
+      "summary": "Tổ chức mua ròng, ngoại và cá nhân bán ròng gộp",
+      "source": "Yonhap · KRX 02/11",
+      "voiceText": "KOSPI đóng cửa tại năm nghìn tám trăm năm mươi chín phẩy không tám điểm, tăng một trăm hai mươi tám phẩy ba bốn điểm. Có sáu trăm năm mươi mốt mã tăng và hai trăm hai mươi chín mã giảm. Nhà đầu tư tổ chức mua ròng khoảng một phẩy hai ba nghìn tỷ won; trong khi khối ngoại và cá nhân bán ròng gộp một phẩy bảy hai nghìn tỷ won. Đây không phải số bán riêng của khối ngoại.",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "Tổ chức mua ròng",
+          "value": "1,23 nghìn tỷ KRW",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1,23 nghìn tỷ won",
+        "qualifier": "Mua ròng tổ chức · KOSPI 02/11"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "CỔ PHIẾU DẪN DẮT",
+      "headline": "CHIP VÀ ĐÓNG TÀU TĂNG",
+      "summary": "Samsung, SK hynix và Hanwha Ocean",
+      "source": "Yonhap · 02/11",
+      "voiceText": "Nhóm bán dẫn phục hồi sau đợt giảm cuối tuần trước. Samsung Electronics tăng một phẩy bảy tám phần trăm, còn SK hynix tăng ba phẩy tám mốt phần trăm. Hanwha Ocean cũng tăng chín phẩy tám phần trăm sau thông tin liên quan đến tàu đổ bộ cho Hải quân Mỹ. Một phiên phục hồi không đủ để khẳng định xu hướng tăng dài hạn.",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "Samsung Electronics",
+          "value": "+1,78%",
+          "tone": "up"
+        },
+        {
+          "label": "SK hynix",
+          "value": "+3,81%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "Samsung · SK hynix",
+        "bullets": [
+          "SAMSUNG +1,78%",
+          "SK HYNIX +3,81%"
+        ]
+      }
+    },
+    {
+      "id": "policy",
+      "eyebrow": "CHÍNH SÁCH · NGÂN SÁCH 2027",
+      "headline": "ĐỀ XUẤT ĐẦU TƯ AI",
+      "summary": "Ngân sách đề xuất, chưa được Quốc hội thông qua",
+      "source": "Reuters · 02/11",
+      "voiceText": "Ở góc độ chính sách, Tổng thống Lee Jae Myung kêu gọi Quốc hội thông qua dự toán ngân sách năm hai nghìn không trăm hai mươi bảy trị giá tám trăm hai mươi phẩy chín nghìn tỷ won. Trong đó, hai mươi mốt phẩy ba nghìn tỷ won dự kiến dành cho AI và các dự án liên quan. Đây mới là đề xuất, chưa phải chi tiêu đã thực hiện. Thị trường sẽ theo dõi tiến trình phê duyệt.",
+      "sourceIds": [
+        "reuters-budget"
+      ],
+      "stats": [
+        {
+          "label": "Đề xuất ngân sách 2027",
+          "value": "820,9 nghìn tỷ KRW",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "21,3 nghìn tỷ won",
+        "qualifier": "Dự toán AI 2027 · chờ Quốc hội"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "DÒNG TIỀN CÓ BỀN?",
+      "summary": "Theo dõi ngoại, chip và chính sách ngân sách",
+      "source": "Yonhap · Reuters · 02/11",
+      "voiceText": "Điều cần theo dõi trong các phiên tới là liệu lực mua tổ chức có duy trì, khối ngoại có quay lại và kỳ vọng đầu tư AI có chuyển thành kết quả kinh doanh hay không. Thông tin mang tính tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+      "sourceIds": [
+        "yonhap-close",
+        "reuters-budget"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG TIỀN TỔ CHỨC",
+          "NHÓM CHIP VÀ KHỐI NGOẠI",
+          "NGÂN SÁCH AI 2027"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
