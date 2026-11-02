@@ -23,6 +23,16 @@ Hook khác: Xuất khẩu chip Hàn Quốc tăng hơn hai trăm năm mươi chí
 CTA: Theo anh chị, số liệu xuất khẩu có giúp thị trường lấy lại niềm tin? Chia sẻ góc nhìn và theo dõi KCI nhé.
 Caption (<50 từ cả hashtag): 🇰🇷 Xuất khẩu Hàn Quốc tháng 10 tăng mạnh, đặc biệt là chip. Nhưng thị trường chứng khoán vẫn nhiều biến động. Cùng KCI xem điều gì đáng chú ý nhé! #KCI #KinhTeHanQuoc
 
+
+## Điều tra lỗi render 02/11 — đã sửa
+
+- [Issue #60](https://github.com/nvt91/kcinews/issues/60), [Actions run 41360236689](https://github.com/nvt91/kcinews/actions/runs/41360236689): FAILED BEFORE Vbee/Remotion. KCI editorial validator từ chối scene chips vì regex bắt cụm "chắc chắn tăng" bên trong lời phủ định "không đồng nghĩa cổ phiếu chip chắc chắn tăng". Không có audio/MP4 artifact; không phải lỗi nhà cung cấp Vbee hoặc decoder.
+- Sửa voiceText scene chips thành "tăng trưởng xuất khẩu không bảo đảm cổ phiếu chip sẽ tăng"; không thay số liệu, thesis, nguồn hay hook; giữ nghĩa cảnh báo không bảo đảm lợi nhuận. Đã đối chiếu job với bộ lọc đầu tư bị cấm.
+- Sửa workflow .github/workflows/kci-video.yml: bước preflight đọc đúng job từ issue body hoặc workflow input và validate trước paid voice. Bước cũ chỉ kiểm tra job demo 23/10 và không phát hiện lỗi KR_AM cho tới bước sản xuất.
+- [Issue #61 — retry cùng articleId](https://github.com/nvt91/kcinews/issues/61) được tạo 02/11 khoảng 10:49 KST. Chỉ xác nhận MP4 nếu có run SUCCESS và artifact thực. Sheet KCI News giữ một bản tin duy nhất hàng 35, H=CHỜ DUYỆT, I=CHƯA ĐĂNG.
+- Không rerun issue #60 theo commit cũ. Nếu #61 lỗi, đọc log mới và tránh gọi paid TTS trùng.
+
+
 ## Dựng và QC
 
 Profile KCI_EDIT_20261026_V1. TTS/motion, footage/takes/face tracking N/A. Runner hiện tại tạo captions 7 từ theo tỷ lệ, không có Whisper đo ±2 frame; âm lượng/peak và cắt khoảng lặng NOT_MEASURED. Video review phải có audio thật, kiểm tra artifact trước khi xác nhận. Chưa đăng, chờ chủ kênh duyệt.
