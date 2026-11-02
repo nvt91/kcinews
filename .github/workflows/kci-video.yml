@@ -117,8 +117,16 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           command -v ffprobe
           command -v ffmpeg
-      - name: Validate job
-        run: node scripts/run-job.mjs --mode=validate --job=jobs/kci-2026-10-23.json
+      - name: Validate the selected job before paid Vbee synthesis
+        run: |
+          # Owner-created [KCI VIDEO] issues select a checked-in job. This preflight must
+          # validate that exact job, not a legacy hard-coded demonstration story.
+          if [[ "$GITHUB_EVENT_NAME" == "issues" ]]; then
+            selected_job="$(node -e 'const fs=require("node:fs"); const e=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,"utf8")); const data=JSON.parse(e.issue?.body||"{}"); if(!/^jobs\/[a-z0-9-]+\.json$/.test(data.job||""))process.exit(2); process.stdout.write(data.job);')"
+          else
+            selected_job="$KCI_JOB"
+          fi
+          node scripts/run-job.mjs --mode=validate --job="$selected_job"
       - name: Verify Cloudflare Worker before any Vbee request
         run: node scripts/check-worker.mjs
       - name: Produce preview, Vbee test, or MP4
