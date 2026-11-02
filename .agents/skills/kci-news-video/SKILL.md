@@ -5,6 +5,11 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 # KCI News Video — Production Skill v2.0
 
+## Production regression prevention — 2 November 2026
+
+Before opening any paid [KCI VIDEO] issue or workflow_dispatch, validate the ACTUAL new episode job with scripts/validate-kci-job.mjs (not an archived demonstration job). A literal investment-promise regex can flag phrases such as 'không đồng nghĩa cổ phiếu chip chắc chắn tăng' despite the negation. Reword that warning truthfully to 'không bảo đảm cổ phiếu chip sẽ tăng' while retaining the investor-safety validator. Do not disable the safety checks. If a pipeline fails, read the EXACT failing command and exception in GitHub Actions, distinguish job validation from TTS/Remotion/host-video playback, and correct/retry only after confirming no prior successful MP4 or paid voice segment would be duplicated. Reference incident: 2026-11-02 KR_AM issue #60 failed during validation; issue #61 succeeded after the job and actual-target preflight fixes. Do not create duplicate content or auto-post.
+
+
 ## Latest owner instruction — ALL KCI production streams (27 October 2026)
 
 **Render first, owner reviews the actual video afterward.** This owner directive replaces the prior GLOBAL_US-only exception and all conflicting "approve preview first, then render final" instructions for KR_AM, conditional KR_MID, KR_CLOSE, MACRO21 and GLOBAL_US/US_AM. After verifying fresh source facts and script, produce the fully rendered, playable **H.264/AAC MP4 with Anh Khôi Vbee narration, motion graphics, sound-off first-three-second hook and spoken/visual CTA**, inspect the file, then send its actual link to the owner to judge content, voice, graphics and readiness to publish. Do **not** stop at brief, storyboards, stills or a muted/incomplete preview; do **not** request an additional user command to render. A "review" file may retain a technical filename like `preview.mp4` or `out/<job-id>.mp4`, but must be a real complete MP4, not a render plan. It is not owner-approved or posted. If the owner approves this cut, no mandatory second identical render is needed; modifications require re-rendering a revised review MP4 before a new approval. **Never automatically publish.**
