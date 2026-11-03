@@ -84,24 +84,15 @@ Before job/trigger creation, check exact date+stream+edition, issues/runs and le
 5. Save valid files on main, then create ONE owner-authored [KCI VIDEO] issue for the edition, using .github/workflows/kci-video.yml. Production runs do not modify workflows, Secrets, schedules or billing settings.
 6. Inspect actual MP4: source/date/venue labels, opening/middle/CTA/outro, Vietnamese overflow, audible correct narration, CTA, audio streams and captions. Word-count timing is estimated. Never claim listening/visual inspection not performed.
 
-## Sau khi render
+## Sau khi render — accurate 3 November 2026 event semantics
 
-The `render` job comments as soon as it finishes. That comment is review-only. It does not publish, attach the MP4, or call any channel besides the triggering issue.
+The actual workflow `.github/workflows/kci-video.yml` only emits a **GitHub issue comment** (for owner issue events) or a **GitHub run summary** (for dispatch). It does not post video into ChatGPT. Its current `scripts/notify-render.mjs` uses `<!-- KCI_RENDER_READY:<run-id> -->` after successful Actions completion and `<!-- KCI_VIDEO_FAILED:<run-id> -->` after failure. An `actions/upload-artifact` link is a private authenticated ZIP, NOT a directly attached MP4.
 
-- An issue-triggered run (`[KCI VIDEO]` or `[KCI VOICE TEST]` opened by the repository owner) gets one comment. The first line is the hidden marker `<!-- KCI_VIDEO_NOTIFIED:<run_id> -->`. The comment tags @nvt91, links the Actions run, links the artifact when upload-artifact provides `artifact-url` (otherwise the run page), names the edition and job, names the MP4 under `out/` (download requires a GitHub login), and summarizes only fixed fields from `out/qc.json`: status, published, ctaIncluded, voicePresent, whether any scene fell back from subtitle alignment, and the Vbee character count when that numeric field is present. The comment says: Chưa đăng. Chờ Water ĐẠT + anh duyệt.
-- Before commenting, the job reads existing issue comments. The same `run_id` is not reported again. `run_attempt` may appear in the text; the lock is `run_id` only. A failed render instead comments once, headed RENDER LỖI, with the run link and `<!-- KCI_VIDEO_FAILED:<run_id> -->`.
-- `workflow_dispatch` has no issue. The same text goes to the job summary only. It does not comment anywhere.
-- The notify step is `if: always()` and `continue-on-error: true`, so a comment problem cannot fail the render. It must not print secrets, tokens, or webhook URLs.
-- Publication is unchanged: Water ĐẠT, then the owner approves, and only then may a person publish.
+Before calling a production run completed, inspect a real fully voiced MP4 and actual QC evidence. `KCI_RENDER_READY` means an artifact/run notification was written, **not** proof of MP4 integrity, verified voice or delivery in ChatGPT. A successful issue comment must NEVER suppress the dedicated handoff. `workflow_dispatch` has no issue comment; look at the Actions summary and actual artifact.
 
-## Completion and notifications
+The ChatGPT Completion Watch/producer handles **all five** real video editions and must inspect the actual MP4, then attach that playable MP4 directly in ChatGPT alongside a friendly, ready-to-post caption when the connected environment supports the file transfer. If only GitHub artifact access is available, state explicitly that the direct ChatGPT MP4 attachment has NOT happened, and offer the authenticated artifact/run URL with expiry. No public mirror, email or other external delivery without authorization. See [DELIVERY_HANDOFF.md](DELIVERY_HANDOFF.md).
 
-Only verified playable MP4s count as completed. Draft, job-created, queued, rendering, failed, QA_REQUIRED and BLOCKED remain distinct. All outputs stay REVIEW_REQUIRED / CHỜ DUYỆT — CHƯA ĐĂNG.
+Dedup carefully: for a successfully delivered voiced review cut, use `KCI_PREVIEW_NOTIFIED:<run-id>:<review-version>` when that convention applies; for legacy/full delivery use `KCI_VIDEO_NOTIFIED:<run-id>` only after verifiable chat handoff. Include stream, edition, articleId, artifactId, version and actual QC scope, and retain historical markers. The GitHub `KCI_RENDER_READY` marker is not a chat-delivery marker. A known failure gets one report; no automatic Vbee retry or re-render. No actionable new result means silence.
 
-If finished within the producer run, deliver inspected MP4 or verified authenticated artifact, script, sources and QC. Otherwise record actual issue/run URL and state for KCI Video Completion Watch. The watcher serves BOTH streams and only checks/QCs/delivers: no paid TTS, new trigger or rerun.
+Keep the actual states `CHỜ DUYỆT — CHƯA ĐĂNG` until the owner approves publication. No forced second identical encode, no automatic posting, and no silent preview substitution. Log the actual MP4 completion and a real accessible link in the existing KCI News Sheet, with one row per articleId. Preserve existing schedules, sources, secrets, ownership and independent stream quotas.
 
-Producer/watcher read issue comments and skip a second delivery when `KCI_VIDEO_NOTIFIED:<run_id>` is already present, including the hidden marker written by the workflow above. A watcher note is still written only after actual MP4/QC verification in that delivery attempt, including stream/edition/articleId/artifactId/verified scope. A marker does not prove push receipt. Do not add a completion marker for in-progress or silent outputs. A failed run gets at most one alert, the workflow comment `KCI_VIDEO_FAILED:<run_id>`; no blind retry.
-
-Completion message identifies KINH TẾ & THỊ TRƯỜNG HÀN QUỐC or VĨ MÔ21H, edition/date/topic, actual duration, verified voice, real MP4/artifact link, QC caveats, CHỜ DUYỆT — CHƯA ĐĂNG. Push/email settings are separate and must not be claimed enabled without verification.
-
-Exclude already-delivered manual demo run40072923254/issue17 on24October2026 and earlier archival previews from notifications/counts. Never change other brands' or investment-monitoring tasks. No auto-posting.
