@@ -1,0 +1,33 @@
+# KCI — Complete MP4 handoff and caption (ALL production editions)
+
+Owner decision confirmed 3 November 2026. This is the authoritative handoff specification for **every new actual video edition** in the repository, not an instruction to regenerate historical work or alter recurring schedules.
+
+## Scope
+
+| Video stream | Edition | Slot recorded in existing ChatGPT automations | Caption |
+| --- | --- | --- | --- |
+| KR_NEWS | KR_AM | 08:00 Asia/Seoul daily | Vietnamese <50 words TOTAL including hashtags |
+| KR_NEWS | KR_MID | Around 12:00 KST, only material new news | Vietnamese <50 words TOTAL including hashtags |
+| KR_NEWS | KR_CLOSE | Around 17:00 KST daily | Vietnamese <50 words TOTAL including hashtags |
+| MACRO | MACRO21 | 21:00 KST daily, independent of KR_NEWS | Vietnamese <50 words TOTAL including hashtags |
+| GLOBAL_US | US_AM | 09:00 KST Monday–Saturday, independent | Vietnamese 50–100 Unicode characters TOTAL including spaces/hashtags |
+
+Do not turn conditional KR_MID into a compulsory video. Existing schedule IDs, enable states, clocks, stream separation, facts/voice gates, secrets, dedup and non-publishing authority remain unchanged. The repo has **no** cron/schedule trigger; producer ChatGPT automations or owner explicitly create reviewed jobs/issues or workflow_dispatch. This file cannot create or update those automations by itself.
+
+## End-to-end run contract
+
+1. **Producer**: research source-backed news, verify dates/venues/sessions and dedup same articleId/edition; make checked-in `schemaVersion:2` job plus a friendly **ready-to-post caption** grounded in its actual facts. The caption is part of every finished delivery. Save caption in the editorial record and, if the job schema supports it, a job-side field for handoff; never invent facts/trends to fill captions. Use plain text, one main news item, a natural opening, modest relevant hashtags, no bold markup. Preserve edits made by owner in the Sheet.
+2. **Trigger**: use a real reviewed `jobs/kci-YYYY-MM-DD-<edition>.json` on default branch, then owner issue `[KCI VIDEO] YYYY-MM-DD <EDITION>` with JSON body `{"job":"jobs/<existing>.json"}` (or `workflow_dispatch mode=video`). `mode=preview` in the currently checked-in runner is **silent** and does not meet the owner's handoff requirement. No duplicate paid TTS/cut for the same issue.
+3. **Engine**: Vbee **Anh Khôi Tin tức** `n_hanoi_male_anhkhoitintuc_zero_shot_news_vc` plus Remotion `KciNewsDaily`, one genuinely voiced 1080×1920 H.264/AAC MP4 for review. No second identical post-approval render is required. Never replace a real voiced MP4 with a muted/layout preview.
+4. **Check real output**: inspect artifact metadata and the **actual MP4**, including full decode integrity, H.264/AAC, voice (not just an audio-track flag), visuals, date/financial figures/CTA, first/middle/end and each beat when evidence exists. Report measured codec, duration, FPS, audio/bitrate/loudness when measured; advanced features unverified => `MP4 — CẦN RÀ SOÁT` / `TIMING_UNVERIFIED` / `NOT_MEASURED`, never false PASS. Facts/audio/decode material failure => BLOCKED, preserve already-generated audio, do not auto-regenerate.
+5. **Delivery to owner in ChatGPT**: the priority is to **attach the real verified playable MP4 directly in the conversation**, together with the caption and brief/QC limitations, titled `KCI — <edition/date> — VIDEO ĐÃ RENDER — CHỜ ANH DUYỆT — CHƯA ĐĂNG`. Links to the run and the GitHub authenticated artifact ZIP are supplementary, with real access conditions and expiry. An artifact ZIP, issue comment, thumbnail, script or sandbox path that has not been verified in the current runtime is **not an inline MP4 delivery**. If file materialization/attachment to ChatGPT is unavailable, report exactly this limitation, and give the verified authenticated artifact link without asserting direct delivery.
+6. **Responsibility split**: GitHub Actions can create/upload an artifact and comment on its issue, but **cannot by itself post an attachment inside the user's ChatGPT conversation**. The ChatGPT video producer/Completion Watch must retrieve the artifact, extract/verify the actual MP4 and attach it within the supported chat environment. Do not claim this ChatGPT handoff works unattended unless verified by a real delivery. Watch never calls Vbee, renders, retries or posts externally; producer may render as above.
+7. **No false delivery dedup**: workflow's `KCI_RENDER_READY:<run-id>` marker is only a GitHub artifact notice; it must **never** suppress chat MP4 delivery. After verification AND delivery in the same run, use `KCI_PREVIEW_NOTIFIED:<run-id>:<version>` for voiced review cuts when appropriate, or `KCI_VIDEO_NOTIFIED:<run-id>` for legacy/actual final, with articleId, stream, edition, artifactId/version and QC scope. Read previous comments/chat status; don't resend genuinely delivered historical MP4s. Existing legacy markers are retained but are not proof of a chat attachment. One failure alert per run and no blind retry.
+8. **Sheet**: one row per articleId in the existing KCI News `Trang tính1`, unique K. After a real narrated MP4 is created, C = measured render completion time (KST), E = truthful review MP4/artifact link with access/expiry, G = actual QC state, H = `CHỜ DUYỆT` for new row, I = `CHƯA ĐĂNG`, J = cut/version/remaining QA, D = source-backed caption (only if unedited/blank and permitted), L/M/N = source/run/actual update. Read before write, preserve owner title/caption/approval/publication/O and notes; read back. Sheet write failure does not trigger duplicate TTS.
+9. **Approval and publishing**: the owner reviews the delivered encoded video with its caption and approves, requests fixes or rejects. Rendering is not owner approval. No auto-post, trades, private disclosures, push/email setting changes, or publishing permissions added.
+
+## Completion Watch checklist
+
+For every genuine new voiced production artifact in all five streams: identify articleId/date/edition and voice config from checked-in job, dedup notifications, check artifact is unexpired and accessible, inspect audio/MP4 and per-beat evidence as available, attach verified MP4 in ChatGPT and caption, log once in the original Sheet. If not new or no action, remain silent. If file cannot be attached, describe the precise technical obstacle rather than mislabeling the artifact ZIP as delivered. A subsequent revision is a new review cut/version, not a duplicate news edition.
+
+**This policy is an operational contract, not an installed GitHub-to-ChatGPT file transfer connector.**
