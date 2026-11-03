@@ -53,6 +53,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: node scripts/test-kci-editorial.mjs
+      - run: node scripts/test-kci-visual-assets.mjs
       - run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
       - run: node --check scripts/vbee.mjs
       - run: node --check scripts/run-job.mjs
