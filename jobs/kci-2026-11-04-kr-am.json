@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-04-kr-am",
+  "edition": "KR_AM — Bản tin sáng Hàn Quốc 04/11/2026",
+  "dataAsOf": "2026-11-04T07:55:54+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 3,59%, dự trữ ngoại hối tăng và CPI tháng 10 ở mức 2,8%",
+  "sourceDisclaimer": "KOSPI là đóng cửa phiên chính KRX 03/11; dự trữ ngoại hối là số liệu cuối tháng 10 công bố 04/11; CPI là tháng 10 công bố 03/11. Không suy diễn biến động thị trường từ một số liệu đơn lẻ.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_AM",
+    "format": "digest",
+    "articleId": "KCI-20261104-KR-AM",
+    "articlePath": "editorial/2026-11-04/kr-am.md",
+    "eventKeys": [
+      "KRX|KOSPI-CLOSE|2026-11-03",
+      "BOK|FOREX-RESERVES-OCT|2026-11-04",
+      "BOK|CPI-OCT|2026-11-03"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-voiced-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "tts_motion; advanced timing and audio mastering not verified until real artifact QC"
+  },
+  "sourceLedger": [
+    {
+      "id": "bok-inflation",
+      "title": "Bank of Korea official portal inflation review 3 November 2026",
+      "url": "https://www.bok.or.kr/portal/main/main.do",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-04T07:55:54+09:00",
+      "kind": "primary",
+      "facts": [
+        "Bank of Korea reported October 2026 consumer inflation of 2.8 percent year-on-year, compared with 2.9 percent the prior month."
+      ]
+    },
+    {
+      "id": "yonhap-reserves",
+      "title": "Yonhap 4 November 06:00 foreign reserves rise in October",
+      "url": "https://en.yna.co.kr/view/AEN20261103010700320",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T07:55:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "End-October foreign reserves were USD 443.16 billion, up USD 2.6 billion from September, according to Bank of Korea data."
+      ]
+    },
+    {
+      "id": "yonhap-kospi",
+      "title": "Yonhap 3 November 15:57 KOSPI close",
+      "url": "https://en.yna.co.kr/view/AEN20261103007951320",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-04T07:55:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed at 5,648.79 on 3 November, down 210.29 points or 3.59 percent on the regular KRX session.",
+        "Tech selling and doubts over AI capital expenditure weighed on investor sentiment."
+      ]
+    },
+    {
+      "id": "bok-policy",
+      "title": "Bank of Korea policy statement 22 October 2026",
+      "url": "https://www.bok.or.kr/portal/main/main.do",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-11-04T07:55:54+09:00",
+      "kind": "primary",
+      "facts": [
+        "Bank of Korea held its policy rate at 3.00 percent on 22 October 2026."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa mất gần bốn phần trăm, nhưng dự trữ ngoại hối Hàn Quốc lại tăng. Hai tín hiệu này nói lên điều gì?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI vừa mất gần bốn phần trăm, nhưng dự trữ ngoại hối Hàn Quốc lại tăng. Hai tín hiệu này nói lên điều gì?",
+        "score": 47
+      },
+      {
+        "style": "impact",
+        "text": "Sau cú giảm mạnh của KOSPI, dự trữ ngoại hối Hàn Quốc bất ngờ tăng. Có đáng mừng không?",
+        "score": 44
+      },
+      {
+        "style": "question",
+        "text": "Vì sao thị trường chứng khoán Hàn Quốc giảm sâu trong khi dự trữ ngoại hối tăng?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều gì quan trọng hơn lúc này: áp lực bán cổ phiếu chip hay sức chống chịu của nền kinh tế? Bình luận góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "THỊ TRƯỜNG ĐANG LO GÌ?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Áp lực bán chip hay sức chống chịu kinh tế quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · BẢN SÁNG 04/11",
+      "headline": "THỊ TRƯỜNG GIẢM SÂU",
+      "summary": "Dự trữ ngoại hối lại tăng",
+      "source": "Yonhap · BOK · 03–04/11",
+      "voiceText": "KOSPI vừa mất gần bốn phần trăm, nhưng dự trữ ngoại hối Hàn Quốc lại tăng. Hai tín hiệu này nói lên điều gì? KOSPI đóng cửa phiên chính ngày ba tháng mười một ở mức năm nghìn sáu trăm bốn mươi tám phẩy bảy chín điểm, giảm ba phẩy năm chín phần trăm. Đây là giá đóng cửa hôm qua, không phải báo giá sáng nay.",
+      "sourceIds": [
+        "yonhap-kospi",
+        "yonhap-reserves"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 03/11",
+          "value": "5.648,79",
+          "change": "−3,59%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−3,59%",
+        "qualifier": "KOSPI · KRX close 03/11/2026"
+      }
+    },
+    {
+      "id": "reserves",
+      "eyebrow": "DỮ LIỆU MỚI 06:00",
+      "headline": "DỰ TRỮ NGOẠI HỐI TĂNG",
+      "summary": "Cuối tháng 10: 443,16 tỷ USD",
+      "source": "Yonhap dẫn BOK · 04/11 06:00",
+      "voiceText": "Sáng nay, Ngân hàng Trung ương Hàn Quốc cho biết dự trữ ngoại hối cuối tháng mười đạt bốn trăm bốn mươi ba phẩy mười sáu tỷ đô la Mỹ, tăng hai phẩy sáu tỷ đô la so với tháng trước. Phần tăng chủ yếu đến từ tiền gửi ngoại tệ và lợi nhuận quản lý tài sản. Đây là chỉ tiêu về bộ đệm ngoại hối, không có nghĩa thị trường chứng khoán sẽ lập tức phục hồi.",
+      "sourceIds": [
+        "yonhap-reserves"
+      ],
+      "stats": [
+        {
+          "label": "Dự trữ ngoại hối · 10/2026",
+          "value": "443,16 tỷ USD",
+          "change": "+2,6 tỷ USD",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "443,16 tỷ USD",
+        "qualifier": "Cuối tháng 10/2026 · BOK"
+      }
+    },
+    {
+      "id": "inflation",
+      "eyebrow": "GIÁ CẢ VÀ CHÍNH SÁCH",
+      "headline": "LẠM PHÁT 2,8%",
+      "summary": "Thấp hơn mức 2,9% tháng trước",
+      "source": "BOK · thông tin 03/11",
+      "voiceText": "Về giá cả, Ngân hàng Trung ương cho biết lạm phát tiêu dùng tháng mười ở mức hai phẩy tám phần trăm so với cùng kỳ, thấp hơn hai phẩy chín phần trăm của tháng chín. Dù giảm nhẹ, mức này vẫn cao hơn mục tiêu hai phần trăm. Lãi suất chính sách được giữ ở ba phần trăm tại quyết định ngày hai mươi hai tháng mười.",
+      "sourceIds": [
+        "bok-inflation",
+        "bok-policy"
+      ],
+      "stats": [
+        {
+          "label": "CPI tháng 10 · cùng kỳ",
+          "value": "2,8%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "2,8%",
+        "qualifier": "CPI tháng 10/2026 · so với cùng kỳ"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "CẦN THÊM TÍN HIỆU",
+      "summary": "Chip · dòng vốn · lạm phát",
+      "source": "KCI phân tích · 04/11",
+      "voiceText": "Điểm đáng chú ý là sức ép định giá công nghệ có thể xuất hiện cùng lúc với những chỉ báo kinh tế ổn định hơn. Trong phiên tới, hãy theo dõi dòng vốn, nhóm bán dẫn và phản ứng của tỷ giá. Những số liệu này chỉ mang tính tham khảo, không phải khuyến nghị mua bán.",
+      "sourceIds": [
+        "yonhap-kospi",
+        "yonhap-reserves",
+        "bok-inflation"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG VỐN VÀ CHIP",
+          "DỰ TRỮ NGOẠI HỐI",
+          "LẠM PHÁT VÀ TỶ GIÁ"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
