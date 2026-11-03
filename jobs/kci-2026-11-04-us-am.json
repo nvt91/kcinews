@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-04-us-am",
+  "edition": "GLOBAL_US / US_AM — sáng 04/11/2026 KST",
+  "dataAsOf": "2026-11-04T08:45:59+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq tăng 0,83% nhờ AI, AMD công bố doanh thu 13,4 tỷ USD và JOLTS 7,523 triệu",
+  "sourceDisclaimer": "Chỉ số là giá đóng cửa phiên Mỹ 03/11/2026 theo giờ New York (EST); AMD công bố sau đóng cửa; JOLTS là số liệu tháng 09 công bố 03/11. Tác động đến Hàn Quốc chỉ là kịch bản có điều kiện, không phải khuyến nghị mua bán.",
+  "metadata": {
+    "stream": "GLOBAL_US",
+    "slot": "US_AM",
+    "articleId": "KCI-20261104-US-AM",
+    "eventKeys": [
+      "US|INDEX-CLOSE|2026-11-03",
+      "AMD|EARNINGS-Q3|2026-11-03",
+      "BLS|JOLTS-SEP|2026-11-03"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "capability": "tts_motion; new narrated review render; advanced word timing and loudness not verified",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "caption": "📊 Nasdaq hồi nhờ nhóm AI, nhưng thị trường vẫn phân hóa. Cùng nhìn vào dữ liệu nhé! #KCI #PhoWall"
+  },
+  "sourceLedger": [
+    {
+      "id": "ap-close",
+      "title": "Associated Press: US stock indexes close 3 November 2026",
+      "url": "https://apnews.com/article/95ac47c160dba546cbbdf72c10010e2c",
+      "eventDate": "2026-11-03",
+      "kind": "secondary",
+      "facts": [
+        "November 3 US cash close: S&P 500 7,568.92, +0.36%; Nasdaq Composite 25,372.01, +0.83%; Dow 51,786.72, -0.38%.",
+        "US trading session ended at 16:00 America/New_York EST on November 3, before the KST November 4 morning brief."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "reuters-tech",
+      "title": "Reuters: Nasdaq higher as AI stocks rebound on 3 November",
+      "url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/",
+      "eventDate": "2026-11-03",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq rose 0.83% and S&P 500 rose 0.36% despite weak market breadth; Dow fell 0.38%.",
+        "Nvidia rose about 2.3%; Micron about 2.6%; Apple fell about 1.9%.",
+        "Most S&P 500 constituents fell despite positive headline index performance; markets awaited US midterm election results."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "apple-results",
+      "title": "Reuters: Apple warns memory costs to squeeze December-quarter margins",
+      "url": "https://www.reuters.com/business/retail-consumer/apple-results-beat-wall-street-expectations-on-strong-iphone-sales-2026-11-02/",
+      "eventDate": "2026-11-02",
+      "kind": "secondary",
+      "facts": [
+        "Apple reported September-quarter gross margin of 47.9%, guiding for 45% to 46% in the December quarter, citing rising memory costs.",
+        "Apple stock fell about 1.9% during the November 3 cash session."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "amd-sec",
+      "title": "AMD SEC Form 8-K dated 3 November 2026, Q3 results Exhibits 99.1 and 99.2",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/amd-20261103.htm",
+      "eventDate": "2026-11-03",
+      "kind": "primary",
+      "facts": [
+        "AMD furnished its third-quarter 2026 earnings release in Form 8-K on November 3, 2026; after US cash market close."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "amd-earn",
+      "title": "AMD earnings press release 3 November 2026 (company distribution)",
+      "url": "https://rss.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html",
+      "eventDate": "2026-11-03",
+      "kind": "primary",
+      "facts": [
+        "AMD Q3 2026 revenue USD 13.4 billion, with data center sales up 97% year over year.",
+        "AMD Q4 2026 management revenue forecast approximately USD 17 billion plus or minus 3%; forecast, not actual."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "bls-jolts",
+      "title": "US Bureau of Labor Statistics JOLTS September 2026 release dated 3 November",
+      "url": "https://www.bls.gov/news.release/jolts.htm",
+      "eventDate": "2026-11-03",
+      "kind": "primary",
+      "facts": [
+        "September 2026 US job openings 7.523 million, compared with revised August estimate of 7.190 million, preliminary seasonally adjusted figures.",
+        "October 2026 Employment Situation scheduled November 6 2026 at 08:30 ET, not yet published at KST November 4 morning."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    },
+    {
+      "id": "yonhap-kospi",
+      "title": "Yonhap: KOSPI 3 November 2026 cash-market close in South Korea",
+      "url": "https://en.yna.co.kr/view/AEN20261103007951320",
+      "eventDate": "2026-11-03",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI cash market close November 3 fell 3.59% to 5,648.79. This is previous-session KRX close, not a live November 4 quote."
+      ],
+      "checkedAt": "2026-11-04T08:45:59+09:00"
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq tăng, nhưng phần lớn cổ phiếu Mỹ vẫn giảm. Vì sao nhóm AI lại đi ngược thị trường?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Nasdaq tăng, nhưng phần lớn cổ phiếu Mỹ vẫn giảm. Vì sao nhóm AI lại đi ngược thị trường?",
+        "score": 48
+      },
+      {
+        "style": "impact",
+        "text": "Phố Wall bật tăng nhờ chip AI, điều đó có đủ giúp cổ phiếu bán dẫn Hàn Quốc hồi phục?",
+        "score": 45
+      },
+      {
+        "style": "question",
+        "text": "Nasdaq tăng không phẩy tám ba phần trăm, nhưng vì sao vẫn có nhiều cổ phiếu giảm?",
+        "score": 46
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, kết quả kinh doanh AI hay sức khỏe việc làm Mỹ sẽ ảnh hưởng thị trường mạnh hơn? Chia sẻ góc nhìn ở phần bình luận nhé.",
+    "screenHeadline": "AI HAY DỮ LIỆU VIỆC LÀM?",
+    "screenSubline": "Chia sẻ góc nhìn cùng Korea Capital Insight",
+    "question": "Kết quả AI hay dữ liệu việc làm ảnh hưởng thị trường mạnh hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "GLOBAL & US · 04/11 KST",
+      "headline": "NASDAQ HỒI, THỊ TRƯỜNG PHÂN HÓA",
+      "summary": "Phiên Mỹ 03/11 · S&P +0,36% · Nasdaq +0,83% · Dow −0,38%",
+      "source": "AP / Reuters · đóng cửa 03/11",
+      "voiceText": "Nasdaq tăng, nhưng phần lớn cổ phiếu Mỹ vẫn giảm. Vì sao nhóm AI lại đi ngược thị trường? Phiên Mỹ ngày ba tháng mười một khép lại với Nasdaq tăng không phẩy tám ba phần trăm, S and P năm trăm tăng không phẩy ba sáu phần trăm, còn Dow Jones giảm không phẩy ba tám phần trăm. Đây là kết quả đóng cửa, không phải giá giao dịch sáng nay.",
+      "sourceIds": [
+        "ap-close",
+        "reuters-tech"
+      ],
+      "stats": [
+        {
+          "label": "Nasdaq 03/11",
+          "value": "+0,83%",
+          "tone": "up"
+        },
+        {
+          "label": "Dow Jones 03/11",
+          "value": "−0,38%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 0.36,
+            "display": "+0,36%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 0.83,
+            "display": "+0,83%"
+          },
+          {
+            "label": "DOW",
+            "value": -0.38,
+            "display": "−0,38%"
+          }
+        ],
+        "qualifier": "Đóng cửa 03/11/2026, phiên Mỹ EST"
+      }
+    },
+    {
+      "id": "aitech",
+      "eyebrow": "CỔ PHIẾU CÔNG NGHỆ",
+      "headline": "AI HỒI PHỤC KHÔNG ĐỒNG ĐỀU",
+      "summary": "Nvidia và Micron tăng, Apple đi xuống",
+      "source": "Reuters · phiên 03/11",
+      "voiceText": "Nhóm công nghệ AI kéo Nasdaq hồi phục. Nvidia tăng khoảng hai phẩy ba phần trăm, Micron tăng khoảng hai phẩy sáu phần trăm. Nhưng Apple lại giảm gần một phẩy chín phần trăm. Phần lớn cổ phiếu trong S and P năm trăm vẫn giảm. Vì vậy, một chỉ số xanh chưa có nghĩa cả thị trường đã khỏe.",
+      "sourceIds": [
+        "reuters-tech"
+      ],
+      "stats": [
+        {
+          "label": "Nvidia",
+          "value": "+2,3%",
+          "tone": "up"
+        },
+        {
+          "label": "Apple",
+          "value": "−1,9%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NVIDIA",
+            "value": 2.3,
+            "display": "+2,3%"
+          },
+          {
+            "label": "MICRON",
+            "value": 2.6,
+            "display": "+2,6%"
+          },
+          {
+            "label": "APPLE",
+            "value": -1.9,
+            "display": "−1,9%"
+          }
+        ],
+        "qualifier": "Biến động giá cổ phiếu, phiên Mỹ 03/11"
+      }
+    },
+    {
+      "id": "apple",
+      "eyebrow": "RỦI RO CHI PHÍ",
+      "headline": "CHI PHÍ BỘ NHỚ ĐÈ LÊN APPLE",
+      "summary": "Biên lợi nhuận gộp dự kiến 45–46% trong quý kết thúc tháng 12",
+      "source": "Reuters / Apple · kết quả 02/11",
+      "voiceText": "Apple cảnh báo giá bộ nhớ tăng có thể làm giảm biên lợi nhuận gộp. Sau mức bốn mươi bảy phẩy chín phần trăm quý vừa qua, hãng dự kiến biên lợi nhuận quý kết thúc tháng mười hai chỉ còn khoảng bốn mươi lăm đến bốn mươi sáu phần trăm. Đây là dự báo của doanh nghiệp, chưa phải kết quả thực tế.",
+      "sourceIds": [
+        "apple-results"
+      ],
+      "stats": [
+        {
+          "label": "Quý kết thúc tháng 09",
+          "value": "47,9%",
+          "tone": "neutral"
+        },
+        {
+          "label": "Dự kiến quý tháng 12",
+          "value": "45–46%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Q3 THỰC TẾ",
+            "value": 47.9,
+            "display": "47,9%"
+          },
+          {
+            "label": "Q4 DỰ KIẾN (TRUNG ĐIỂM)",
+            "value": 45.5,
+            "display": "45–46%"
+          }
+        ],
+        "qualifier": "Biên lợi nhuận gộp; quý kết thúc tháng 12 là dự báo"
+      }
+    },
+    {
+      "id": "amd",
+      "eyebrow": "SAU GIỜ ĐÓNG CỬA MỸ",
+      "headline": "AMD BÁO DOANH THU 13,4 TỶ USD",
+      "summary": "Mảng Data Center tăng 97% so với cùng kỳ",
+      "source": "AMD / SEC · công bố 03/11 16:15 ET",
+      "voiceText": "Sau giờ đóng cửa, A M D công bố doanh thu quý ba đạt mười ba phẩy bốn tỷ đô la. Doanh thu mảng trung tâm dữ liệu tăng chín mươi bảy phần trăm so với cùng kỳ. Công ty dự kiến doanh thu quý bốn khoảng mười bảy tỷ đô la, cộng trừ ba phần trăm. Đây là dự báo, không phải doanh thu đã ghi nhận.",
+      "sourceIds": [
+        "amd-sec",
+        "amd-earn"
+      ],
+      "stats": [
+        {
+          "label": "AMD Q3 thực tế",
+          "value": "13,4 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "Data Center YoY",
+          "value": "+97%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "AMD · Q3/2026",
+        "bullets": [
+          "DOANH THU 13,4 TỶ USD",
+          "DATA CENTER TĂNG 97%",
+          "Q4 DỰ KIẾN 17 TỶ USD ±3%"
+        ]
+      }
+    },
+    {
+      "id": "jolts",
+      "eyebrow": "DỮ LIỆU LAO ĐỘNG MỸ",
+      "headline": "JOLTS THÁNG 09: 7,523 TRIỆU",
+      "summary": "Tăng so với 7,190 triệu vị trí tháng 08 đã điều chỉnh",
+      "source": "BLS · công bố 03/11 10:00 ET",
+      "voiceText": "Số vị trí tuyển dụng tại Mỹ trong tháng chín đạt bảy phẩy năm hai ba triệu, cao hơn mức bảy phẩy một chín triệu của tháng tám sau điều chỉnh, theo B L S. Dữ liệu cho thấy nhu cầu tuyển dụng chưa giảm mạnh. Báo cáo việc làm tháng mười dự kiến công bố ngày sáu tháng mười một, chưa có kết quả.",
+      "sourceIds": [
+        "bls-jolts"
+      ],
+      "stats": [
+        {
+          "label": "JOLTS · 09/2026",
+          "value": "7,523 triệu",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "THÁNG 08 ĐIỀU CHỈNH",
+            "value": 7.19,
+            "display": "7,190 triệu"
+          },
+          {
+            "label": "THÁNG 09 SƠ BỘ",
+            "value": 7.523,
+            "display": "7,523 triệu"
+          }
+        ],
+        "qualifier": "Số vị trí mở · triệu · BLS, điều chỉnh mùa vụ"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG CÓ ĐIỀU KIỆN",
+      "headline": "HÀN QUỐC: THEO DÕI CHIP VÀ TỶ GIÁ",
+      "summary": "KOSPI/KOSDAQ · xuất khẩu · USD/KRW · dòng vốn",
+      "source": "KCI phân tích · sau phiên Mỹ 03/11",
+      "voiceText": "Với Hàn Quốc, sự hồi phục của cổ phiếu chip Mỹ có thể hỗ trợ tâm lý nhóm bán dẫn và KOSPI, KOSDAQ. Nhưng chi phí bộ nhớ tăng, định giá AI và tỷ giá đô la trên won vẫn có thể tạo biến động ngược. Hãy theo dõi dòng vốn ngoại, báo cáo việc làm Mỹ và phản ứng của các doanh nghiệp xuất khẩu. Bản tin chỉ mang tính tham khảo.",
+      "sourceIds": [
+        "reuters-tech",
+        "apple-results",
+        "amd-earn",
+        "bls-jolts",
+        "yonhap-kospi"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "BÁN DẪN & XUẤT KHẨU",
+          "USD/KRW & DÒNG VỐN",
+          "BÁO CÁO VIỆC LÀM 06/11"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
