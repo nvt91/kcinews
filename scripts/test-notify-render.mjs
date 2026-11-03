@@ -91,7 +91,7 @@ assert.equal(failure.body.startsWith(`<!-- KCI_VIDEO_FAILED:${run} -->`), true);
 assert.match(failure.body, /@nvt91 RENDER LỖI/);
 assert.match(failure.body, new RegExp(`https://github.com/nvt91/kcinews/actions/runs/${run}`));
 assert.equal(failure.body.includes("status="), false);
-assert.match(failure.body, /Chưa đăng\. Chờ Water ĐẠT \+ anh duyệt\./);
+assert.match(failure.body, /Chưa đăng\. Chờ anh duyệt\./);
 
 const dispatch = planNotice({ ...base, event: "workflow_dispatch", issue: "" }, sample, ["clip.mp4"], [`<!-- KCI_VIDEO_NOTIFIED:${run} -->`]);
 assert.equal(dispatch.action, "summary");
