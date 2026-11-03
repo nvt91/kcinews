@@ -123,7 +123,7 @@ const Visual:React.FC<{s:RenderScene;f:number;color:string}>=({s,f,color})=>{
  * The source editor must declare the kind and provenance in the validated job.
  */
 const VisualAsset:React.FC<{v?:KciVisual;f:number;duration:number}>=({v,f,duration})=>{
-  if(!v?.assetPath || !v.assetKind || !/^assets\\/kci\\/[a-z0-9-]+(?:\\/[a-z0-9-]+)*\\.(?:png|jpe?g|webp)$/.test(v.assetPath))return null;
+  if(!v?.assetPath || !v.assetKind || !/^assets\/kci\/[a-z0-9-]+(?:\/[a-z0-9-]+)*\.(?:png|jpe?g|webp)$/.test(v.assetPath))return null;
   const progress=Math.max(0,Math.min(1,f/Math.max(1,duration-1)));
   const zoom=1.05+0.065*progress;
   const move=interpolate(progress,[0,1],[-15,15]);
