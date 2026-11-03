@@ -1,4 +1,9 @@
-# KCI — Nine-stage editing workflow and preview approval
+# KCI — Nine-stage editing workflow and render-first video review
+
+## Runtime clarification — 3 November 2026
+
+The owner reviews **one fully rendered narrated MP4**, not a silent pre-render preview followed by a second post-approval export. In today's checked-in `scripts/run-job.mjs`, `--mode=preview` is silent; an owner `[KCI VIDEO]` issue or explicit `workflow_dispatch mode=video` executes the known Vbee + Remotion MP4 path. This runtime distinction must not be confused with the colloquial phrase "preview video" or with a filename. First verify financial facts/job and avoid duplicate paid requests. After creating a playable voiced MP4, report unimplemented nine-stage substeps honestly as `NOT_MEASURED`/`TIMING_UNVERIFIED`/`MP4 — CẦN RÀ SOÁT` rather than blocking video delivery or claiming QC PASSED. Only serious factual, TTS, audio or video integrity problems stop delivery. The owner decides whether to approve publication or request a revised cut; no duplicate render or auto-posting.
+
 
 Owner request: 26 October 2026. Profile ID: `KCI_EDIT_20261026_V1`.
 
