@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-03-macro21",
+  "edition": "03/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-03T20:57:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Lạm phát Hàn Quốc tháng 10 hạ về 2,8%, BOK vẫn đối mặt áp lực",
+  "sourceDisclaimer": "CPI October 2026 released November 3; BOK path is conditional analysis, not a confirmed rate decision.",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261103-MACRO21",
+  "articlePath": "editorial/2026-11-03/macro21.md",
+  "eventKeys": [
+    "KR-CPI-2026-10-2026-11-03"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "mods-cpi-nov03",
+      "title": "National Data Office: October 2026 CPI release",
+      "url": "https://www.mods.go.kr/board.es?act=view&bid=213&list_no=447801&mainXml=Y&mid=b70203010000",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T20:57:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 headline CPI +2.8% year-on-year and +0.2% month-on-month.",
+        "Core excluding food and energy +2.8% year-on-year; living-cost index +2.6% year-on-year; fresh food index -6.2% year-on-year."
+      ]
+    },
+    {
+      "id": "mods-cpi-index",
+      "title": "National Data Office October CPI index",
+      "url": "https://www.mods.go.kr/cpi/",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T20:57:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 CPI index 120.73 on 2020=100 basis; transport category +6.8% year-on-year."
+      ]
+    },
+    {
+      "id": "reuters-cpi-nov03",
+      "title": "Reuters November 3 Korea October inflation and BOK outlook",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-october-headline-inflation-moderates-ahead-expected-rate-hike-2026-11-02/",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T20:57:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "October annual CPI 2.8% compared with September 2.9%; Reuters economist forecast 2.85%.",
+        "BOK target is 2%; forecasts for future hikes are analyst expectations, not decisions."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Lạm phát Hàn Quốc đã hạ nhiệt, nhưng vẫn cao hơn mục tiêu. Vì sao lãi suất chưa dễ giảm?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Lạm phát Hàn Quốc đã hạ nhiệt, nhưng vẫn cao hơn mục tiêu. Vì sao lãi suất chưa dễ giảm?"
+      },
+      {
+        "style": "mechanism",
+        "text": "Giá cả tăng chậm lại, nhưng chi phí sinh hoạt vẫn chịu áp lực. Đây là điểm cần theo dõi."
+      },
+      {
+        "style": "question",
+        "text": "Lạm phát tháng mười là hai phẩy tám phần trăm. Điều đó nói gì về lãi suất Hàn Quốc?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Nếu muốn theo dõi tác động của lạm phát tới lãi suất và đồng won, hãy theo dõi Korea Capital Insight để xem những cập nhật tiếp theo.",
+    "screenHeadline": "THEO DÕI CPI VÀ LÃI SUẤT",
+    "screenSubline": "Korea Capital Insight · cập nhật theo dữ liệu"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "ĐIỂM NÓNG VĨ MÔ",
+      "headline": "Lạm phát hạ nhiệt, áp lực vẫn còn",
+      "summary": "CPI tháng 10: 2,8% so cùng kỳ",
+      "source": "Cơ quan Dữ liệu Quốc gia, 03/11",
+      "voiceText": "Lạm phát Hàn Quốc đã hạ nhiệt, nhưng vẫn cao hơn mục tiêu. Vì sao lãi suất chưa dễ giảm? Báo cáo mới công bố hôm nay cho thấy câu chuyện không đơn giản chỉ là giá cả đang chậm lại.",
+      "sourceIds": [
+        "mods-cpi-nov03",
+        "reuters-cpi-nov03"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "2,8%",
+        "unit": "CPI THÁNG 10",
+        "qualifier": "So với cùng kỳ năm trước"
+      }
+    },
+    {
+      "id": "numbers",
+      "eyebrow": "SỐ LIỆU CHÍNH",
+      "headline": "CPI tăng 2,8% so cùng kỳ",
+      "summary": "Thấp hơn 2,9% của tháng 9",
+      "source": "Cơ quan Dữ liệu Quốc gia, 03/11",
+      "voiceText": "Theo Cơ quan Dữ liệu Quốc gia, chỉ số giá tiêu dùng tháng mười tăng hai phẩy tám phần trăm so với cùng kỳ, giảm nhẹ từ hai phẩy chín phần trăm của tháng chín. So với tháng trước, giá tăng không phẩy hai phần trăm.",
+      "sourceIds": [
+        "mods-cpi-nov03",
+        "reuters-cpi-nov03"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "core",
+      "eyebrow": "ÁP LỰC BÊN TRONG",
+      "headline": "Lạm phát cơ bản vẫn 2,8%",
+      "summary": "Giá sinh hoạt tăng 2,6%",
+      "source": "Cơ quan Dữ liệu Quốc gia, 03/11",
+      "voiceText": "Điểm cần chú ý là lạm phát cơ bản, loại trừ thực phẩm và năng lượng, vẫn tăng hai phẩy tám phần trăm so với cùng kỳ. Chỉ số giá sinh hoạt tăng hai phẩy sáu phần trăm. Trong khi đó, nhóm thực phẩm tươi sống giảm sáu phẩy hai phần trăm.",
+      "sourceIds": [
+        "mods-cpi-nov03"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "impact",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "BOK chưa thể chủ quan",
+      "summary": "Mục tiêu lạm phát: 2%",
+      "source": "Reuters, 03/11",
+      "voiceText": "Mức lạm phát này vẫn cao hơn mục tiêu hai phần trăm của Ngân hàng Trung ương Hàn Quốc. Vì thế, một tháng giảm nhẹ chưa đủ để kết luận chính sách tiền tệ sẽ nới lỏng. Nếu giá năng lượng tiếp tục cao hoặc áp lực lan sang dịch vụ, triển vọng lãi suất có thể còn thận trọng. Ngược lại, lạm phát giảm bền vững sẽ giúp áp lực đó dịu đi.",
+      "sourceIds": [
+        "reuters-cpi-nov03",
+        "mods-cpi-nov03"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "rate",
+        "value": "2,0%",
+        "unit": "MỤC TIÊU BOK",
+        "qualifier": "Mục tiêu, không phải số CPI tháng 10"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Theo dõi tháng tới",
+      "summary": "CPI cơ bản · năng lượng · BOK",
+      "source": "KCI phân tích dựa trên dữ liệu 03/11",
+      "voiceText": "Trong những tuần tới, hãy nhìn thêm lạm phát cơ bản, giá năng lượng và quyết định của BOK, thay vì chỉ một con số CPI. Korea Capital Insight sẽ tiếp tục cập nhật diễn biến vĩ mô Hàn Quốc.",
+      "sourceIds": [
+        "mods-cpi-nov03",
+        "reuters-cpi-nov03"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "LẠM PHÁT CƠ BẢN",
+          "GIÁ NĂNG LƯỢNG",
+          "QUYẾT ĐỊNH BOK"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Lạm phát Hàn Quốc hạ nhiệt nhưng vẫn cao hơn mục tiêu. Hãy cùng xem điều gì đang giữ áp lực lên lãi suất."
+}
