@@ -27,9 +27,9 @@ const base = {
 
 const success = planNotice(base, sample, ["kci-2026-10-29-kr-am.mp4"], []);
 assert.equal(success.action, "comment");
-assert.equal(success.body.startsWith(`<!-- KCI_VIDEO_NOTIFIED:${run} -->`), true);
-assert.match(success.body, /@nvt91 Render xong\. Chờ duyệt\./);
-assert.match(success.body, /Chưa đăng\. Chờ Water ĐẠT \+ anh duyệt\./);
+assert.equal(success.body.startsWith(`<!-- KCI_RENDER_READY:${run} -->`), true);
+assert.match(success.body, /@nvt91 MP4 đã render vào GitHub artifact; CHƯA GIAO TRONG CHAT\./);
+assert.match(success.body, /Chưa đăng\. Chờ anh duyệt\./);
 assert.match(success.body, /Review-only artifact; do not auto-publish\./);
 assert.match(success.body, new RegExp(`https://github.com/nvt91/kcinews/actions/runs/${run}/artifacts/99`));
 assert.match(success.body, /out\/kci-2026-10-29-kr-am\.mp4/);
@@ -76,6 +76,7 @@ assert.match(summarizeQc(sceneQc), /fallback căn phụ đề: có \(1 cảnh\)/
 assert.match(summarizeQc(sceneQc), /status=không có/);
 
 assert.equal(existingMarker([`<!-- KCI_VIDEO_NOTIFIED:${run} -->`], run), `KCI_VIDEO_NOTIFIED:${run}`);
+assert.equal(existingMarker([`<!-- KCI_RENDER_READY:${run} -->`], run), `KCI_RENDER_READY:${run}`);
 assert.equal(existingMarker([`<!-- KCI_VIDEO_FAILED:${run} -->`], run), `KCI_VIDEO_FAILED:${run}`);
 assert.equal(existingMarker([`<!-- KCI_VIDEO_NOTIFIED:${run}9 -->`], run), "");
 assert.equal(existingMarker([`KCI_VIDEO_NOTIFIED:${run.slice(0, -1)}`], run), "");
@@ -95,7 +96,7 @@ assert.match(failure.body, /Chưa đăng\. Chờ Water ĐẠT \+ anh duyệt\./)
 const dispatch = planNotice({ ...base, event: "workflow_dispatch", issue: "" }, sample, ["clip.mp4"], [`<!-- KCI_VIDEO_NOTIFIED:${run} -->`]);
 assert.equal(dispatch.action, "summary");
 assert.equal(dispatch.channel, "summary");
-assert.match(dispatch.body, /KCI_VIDEO_NOTIFIED/);
+assert.match(dispatch.body, /KCI_RENDER_READY/);
 
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), "kci-notify-"));
 fs.writeFileSync(path.join(dir, "kci-2026-10-29-kr-am.mp4"), "");
