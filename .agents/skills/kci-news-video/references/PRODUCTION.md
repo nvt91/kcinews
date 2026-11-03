@@ -1,5 +1,20 @@
 # KCI Production Contract: ChatGPT → GitHub → Vbee → Remotion
 
+## Executable render contract — 3 November 2026
+
+Use the existing **voiced `video` path** that has produced actual MP4 artifacts, rather than confusing the filename `preview.mp4` with the runner's `--mode=preview` flag:
+
+- `node scripts/run-job.mjs --mode=validate --job=jobs/<existing-episode>.json` — schema/editorial preflight, **no narration**.
+- `node scripts/run-job.mjs --mode=preview --job=jobs/<existing-episode>.json` — **silent graphics only** in this checkout; NOT sufficient for owner video review.
+- `node scripts/run-job.mjs --mode=voice-test --job=jobs/<existing-episode>.json` — optional paid voice sample, NOT the video; do not run for every approved voice.
+- `node scripts/run-job.mjs --mode=video --job=jobs/<existing-episode>.json` — production path: Vbee Anh Khôi Tin tức + data-driven Remotion + complete H.264/AAC MP4 review cut.
+
+Normal automated trigger (after saving the **actual verified new job** to the default branch): **one owner issue** named `[KCI VIDEO] YYYY-MM-DD KR_AM`, `KR_MID`, `KR_CLOSE`, `MACRO21` or `US_AM`, JSON body exactly `{"job":"jobs/kci-YYYY-MM-DD-<edition>.json"}`. The `issues: opened` trigger selects `mode=video`; alternatively use `workflow_dispatch` with **mode=video** and the real existing job path. Merely writing `jobs/` files/briefs or waiting for a repo cron does NOT render any video. The generic `workflow_dispatch` default is `validate`, so explicitly select `video` when actual narration and MP4 are requested. Do not open duplicate issues or retry chargeable audio while a prior result is unresolved.
+
+**Keep gates in their proper phase:** Before Vbee: factual/source/date accuracy, idempotence, job schema, technical prerequisites/secrets. Then synthesize existing authorized voice, build MP4, verify real video/audio/decode and serious factual errors. AFTER successful render: assess word timing, every beat, safe-zone, measured LUFS/true peak, bitrate and stylistic/advanced editing features; if missing, mark `MP4 — CẦN RÀ SOÁT` with true limitations and deliver the full voiced MP4 for the owner's review anyway. Fail only for a genuinely broken video/audio, false key fact, failed synthesis/callback or other material impairment, not because a feature absent from the current renderer hasn't passed. No automatic publishing.
+
+Delivery by Completion Watch requires the actual downloadable playable MP4 in ChatGPT when available, not just GitHub's ZIP or an issue notification; include real artifact/run evidence, a friendly caption, and retain `CHỜ DUYỆT — CHƯA ĐĂNG` until the owner decides. Actual completion time belongs in Sheet column C even when the full voiced review file has a `preview` filename. Do not render a redundant identical final copy just to rename it.
+
 ## Owner production directive — 27 October 2026
 
 For ALL five scheduled KCI streams, render the actual full narrated H.264/AAC MP4 and deliver it to the owner for **video-only review**. Do not stop at script, stills or a silent preview; do not ask the owner to approve before rendering or to request a second identical export after reviewing. A full-quality MP4 may have a review filename, but it must be playable, sourced and have real Anh Khôi voice + CTA. Owner approval concerns publication or requests for revisions, not creation of the MP4. No auto-posting. If advanced word-sync/mastering measurements are unavailable, render with feasible trustworthy checks and disclose QA gaps (e.g. MP4 — CẦN RÀ SOÁT), instead of pretending an unimplemented editor passed. Only serious factual/voice/render failures block production. Consult the latest EDITING_WORKFLOW.md override and preserve existing schedules, voices, dedup and secrets.
