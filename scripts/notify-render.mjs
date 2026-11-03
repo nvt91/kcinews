@@ -88,7 +88,7 @@ export function existingMarker(bodies, runId) {
   if (!RUN_ID.test(id)) return "";
   for (const body of bodies) {
     if (typeof body !== "string") continue;
-    for (const kind of ["NOTIFIED", "FAILED"]) {
+    for (const kind of ["RENDER_READY", "NOTIFIED", "FAILED"]) {
       if (hasExactMarker(body, kind, id)) return `KCI_VIDEO_${kind}:${id}`;
     }
   }
@@ -242,11 +242,10 @@ export function planNotice(input, qc, mp4Names, commentBodies) {
   if (!page) throw new Error("Run URL is not available.");
   const artifact = safeArtifactUrl(input.artifactUrl, input.server, input.repo, id);
   const failed = input.result !== "success";
-  const markerKind = failed ? "FAILED" : "NOTIFIED";
-  const marker = `<!-- KCI_VIDEO_${markerKind}:${id} -->`;
+  const marker = failed ? `<!-- KCI_VIDEO_FAILED:${id} -->` : `<!-- KCI_RENDER_READY:${id} -->`;
   const prior = existingMarker(commentBodies, id);
   const channel = input.event === "issues" && /^\d{1,10}$/.test(String(input.issue)) ? "issue" : "summary";
-  const lines = [marker, failed ? "@nvt91 RENDER LỖI" : "@nvt91 Render xong. Chờ duyệt.", ""];
+  const lines = [marker, failed ? "@nvt91 RENDER LỖI" : "@nvt91 MP4 đã render vào GitHub artifact; CHƯA GIAO TRONG CHAT.", ""];
   lines.push(`- Bản tin: ${safeLabel(input.edition)}`);
   lines.push(`- Job: ${safeJob(qc, input.job)}`);
   lines.push(`- Lần chạy: ${attemptLabel(input.runAttempt)}`);
@@ -261,7 +260,8 @@ export function planNotice(input, qc, mp4Names, commentBodies) {
     lines.push(`- QC: ${summarizeQc(qc)}`);
   }
   lines.push("");
-  lines.push("Chưa đăng. Chờ Water ĐẠT + anh duyệt.");
+  lines.push("Artifact là ZIP riêng tư, KHÔNG phải MP4 đính kèm ChatGPT. Completion Watch cần tải và gửi MP4 thật để anh duyệt sau QC.");
+  lines.push("Chưa đăng. Chờ anh duyệt.");
   lines.push("Review-only artifact; do not auto-publish.");
   const body = lines.join("\n");
   assertClean(body, [page, artifact]);
