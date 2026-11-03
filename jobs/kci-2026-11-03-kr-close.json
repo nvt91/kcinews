@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-03-kr-close",
+  "edition": "KR_CLOSE — Bản tin chiều Hàn Quốc 03/11/2026",
+  "dataAsOf": "2026-11-03T18:08:23+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 3,59%, KOSDAQ mất 4,08%: nhóm chip chịu áp lực bán",
+  "sourceDisclaimer": "Chỉ số là đóng cửa KRX phiên chính 03/11/2026, không phải báo giá NXT ngoài giờ. Tỷ lệ cổ phiếu Samsung/SK có sai biệt giữa vài báo, chỉ sử dụng nhận định chung nhóm chip giảm mạnh. Các mô tả dòng vốn nêu hướng, không dùng số tiền mâu thuẫn giữa nguồn. Lo ngại AI chỉ là yếu tố tâm lý được báo chí ghi nhận, không khẳng định nguyên nhân duy nhất.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261103-KR-CLOSE",
+    "articlePath": "editorial/2026-11-03/kr-close.md",
+    "eventKeys": [
+      "KRX|KOSPI-CLOSE|2026-11-03",
+      "KRX|KOSDAQ-CLOSE|2026-11-03",
+      "KOREA|AI-CHIP-SELLING|2026-11-03"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-voiced-rendered-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "tts_motion. Real voice/codec needs post-run verification; timing/LUFS/beat QA NOT_MEASURED until artifact inspection."
+  },
+  "sourceLedger": [
+    {
+      "id": "index-price-feed",
+      "title": "Investing Korea KOSPI verified 3 Nov regular market close and prior close",
+      "url": "https://kr.investing.com/indices/kospi-historical-data",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T18:08:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "Exchange-derived index quote feed lists KOSPI regular close 5,648.79 on 3 November 2026, -210.29 points or -3.59%.",
+        "Prior 2 November KOSPI regular close was 5,859.08, +2.24%."
+      ]
+    },
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap Nov 3 Seoul shares dip over 3 percent amid AI woes",
+      "url": "https://en.yna.co.kr/view/AEN20261103007900320",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T18:08:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI KRX regular close 5,648.79 (-3.59%) on 3 November; not a quote for NXT after-hours.",
+        "US tech and AI shares were weak in the preceding US session; investors expressed uncertainty about the returns on large AI-infrastructure spending."
+      ]
+    },
+    {
+      "id": "korea-close-reports",
+      "title": "Yonhap Infomax original KRX close report Nov 3",
+      "url": "https://en.infomaxai.com/news/articleView.html?idxno=146693",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T18:08:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSDAQ KRX close 704.39, down 29.97 points or -4.08%.",
+        "Major Korean memory-chip shares fell sharply and market breadth was predominantly negative.",
+        "Foreign and institutional investors both sold net, while retail investors bought net."
+      ]
+    },
+    {
+      "id": "newsis-stocks",
+      "title": "Newsis Nov 3 market selloff and Korean semiconductor leaders",
+      "url": "https://www.newsis.com/view/NISX20261103_0003853111",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-03T18:08:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Samsung Electronics and SK hynix shares both declined sharply in the 3 November KRX regular session.",
+        "Newsis attributed market caution partly to doubts about big-tech AI spending and pre-US-midterm uncertainty."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hôm qua KOSPI vừa bật tăng. Hôm nay thị trường Hàn Quốc lại giảm gần bốn phần trăm. Vì sao đảo chiều nhanh như vậy?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hôm qua KOSPI vừa bật tăng. Hôm nay thị trường Hàn Quốc lại giảm gần bốn phần trăm. Vì sao đảo chiều nhanh như vậy?",
+        "score": 48
+      },
+      {
+        "style": "impact",
+        "text": "KOSPI mất hơn hai trăm điểm chỉ trong một phiên. Nhà đầu tư Hàn Quốc đang lo điều gì?",
+        "score": 46
+      },
+      {
+        "style": "question",
+        "text": "Sau phiên hồi phục hôm qua, vì sao cổ phiếu chip lại kéo thị trường Hàn Quốc đi xuống?",
+        "score": 44
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, thị trường đang điều chỉnh ngắn hạn hay lo ngại về hiệu quả đầu tư AI còn kéo dài? Hãy chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "NHỊP GIẢM CÓ KÉO DÀI?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi KCI",
+    "question": "Đây là điều chỉnh ngắn hạn hay nỗi lo AI còn kéo dài?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · BẢN CHIỀU 03/11",
+      "headline": "KOSPI GIẢM 3,59%",
+      "summary": "Sau phiên hồi 2,24% ngày 02/11",
+      "source": "Investing · Yonhap · đóng cửa KRX 03/11",
+      "voiceText": "Hôm qua KOSPI vừa bật tăng. Hôm nay thị trường Hàn Quốc lại giảm gần bốn phần trăm. Vì sao đảo chiều nhanh như vậy? Kết thúc phiên chính ngày ba tháng mười một, KOSPI đóng cửa tại năm nghìn sáu trăm bốn mươi tám phẩy bảy chín điểm, mất ba phẩy năm chín phần trăm. Đây là dữ liệu phiên KRX, không phải giao dịch NXT ngoài giờ.",
+      "sourceIds": [
+        "index-price-feed",
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 03/11",
+          "value": "5.648,79",
+          "change": "−3,59%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−3,59%",
+        "qualifier": "KOSPI · đóng cửa KRX 03/11/2026"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "TOÀN THỊ TRƯỜNG",
+      "headline": "KOSDAQ CŨNG GIẢM 4,08%",
+      "summary": "Áp lực bán không chỉ ở cổ phiếu vốn hóa lớn",
+      "source": "Yonhap Infomax · KRX 03/11",
+      "voiceText": "KOSDAQ cũng mất bốn phẩy không tám phần trăm, xuống bảy trăm linh bốn phẩy ba chín điểm. Đáng chú ý, KOSPI vừa tăng hai phẩy hai bốn phần trăm trong phiên hôm qua, nhưng sang hôm nay đã đảo chiều giảm mạnh. Hai chỉ số đều phản ánh sức ép bán trên thị trường.",
+      "sourceIds": [
+        "korea-close-reports",
+        "index-price-feed"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "−3,59%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "−4,08%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -3.59,
+            "display": "−3,59%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -4.08,
+            "display": "−4,08%"
+          }
+        ],
+        "qualifier": "KRX regular close 03/11/2026"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "NHÓM BÁN DẪN",
+      "headline": "SAMSUNG VÀ SK HYNIX GIẢM",
+      "summary": "Lo ngại hiệu quả chi tiêu AI lan sang cổ phiếu chip",
+      "source": "Newsis · Yonhap · 03/11",
+      "voiceText": "Nhóm bán dẫn tiếp tục chịu áp lực. Samsung Electronics và SK hynix đều giảm mạnh trong phiên. Một phần tâm lý thận trọng đến từ Phố Wall, nơi nhà đầu tư đang đặt câu hỏi: các khoản đầu tư khổng lồ vào hạ tầng AI có mang lại lợi nhuận tương xứng hay không? Đây là lo ngại thị trường, chưa phải kết luận nhu cầu chip dài hạn đã suy giảm.",
+      "sourceIds": [
+        "newsis-stocks",
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "Samsung · SK hynix",
+          "value": "Giảm mạnh",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "Samsung · SK hynix",
+        "bullets": [
+          "CHIP GIẢM MẠNH",
+          "CHI TIÊU AI BỊ SOI XÉT"
+        ]
+      }
+    },
+    {
+      "id": "flow",
+      "eyebrow": "DÒNG TIỀN PHIÊN CHÍNH",
+      "headline": "KHỐI NGOẠI BÁN RÒNG",
+      "summary": "Tổ chức bán ròng, nhà đầu tư cá nhân mua ròng",
+      "source": "Yonhap Infomax · 03/11",
+      "voiceText": "Ở phía dòng tiền, nhà đầu tư nước ngoài và tổ chức cùng bán ròng, trong khi cá nhân mua ròng. Dòng tiền đối ứng này không đủ ngăn hai chỉ số giảm sâu. Điều đáng theo dõi không chỉ là một phiên giảm điểm, mà là liệu áp lực bán của khối ngoại có tiếp tục và cổ phiếu công nghệ có ổn định trở lại hay không.",
+      "sourceIds": [
+        "korea-close-reports"
+      ],
+      "stats": [
+        {
+          "label": "Khối ngoại và tổ chức",
+          "value": "BÁN RÒNG",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "BÁN RÒNG",
+        "qualifier": "Khối ngoại và tổ chức · KRX 03/11"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "CHỜ TÍN HIỆU XÁC NHẬN",
+      "summary": "Dòng vốn ngoại · lợi nhuận AI · diễn biến chip",
+      "source": "KCI tổng hợp · 03/11",
+      "voiceText": "Sau cú đảo chiều hôm nay, trọng tâm là dòng vốn nước ngoài, diễn biến cổ phiếu chip và thông tin mới về hiệu quả đầu tư AI. Không nên lấy một phiên giảm để kết luận xu hướng dài hạn. Đây là thông tin tham khảo, không phải khuyến nghị mua bán.",
+      "sourceIds": [
+        "korea-close-reports",
+        "yonhap-close"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG VỐN NƯỚC NGOÀI",
+          "LỢI NHUẬN ĐẦU TƯ AI",
+          "NHÓM CHIP VÀ RỦI RO"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
