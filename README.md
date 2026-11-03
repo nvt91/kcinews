@@ -32,6 +32,10 @@ No fabricated prices, chart paths or fake news footage. Quote verified market-se
 
 Secrets `VBEE_APP_ID` and `VBEE_API_TOKEN` remain only in GitHub Actions Secrets.
 
+## Delivery policy for every KCI video edition (3 November 2026)
+
+The same mandatory deliverable applies to KR_AM, KR_MID (only with significant new news), KR_CLOSE, MACRO21 and GLOBAL_US/US_AM: **real voiced MP4 + a ready-to-post caption, delivered to the owner for review**. See [DELIVERY_HANDOFF.md](.agents/skills/kci-news-video/references/DELIVERY_HANDOFF.md) for direct-in-ChatGPT MP4 verification/attachment, precise QC exceptions, dedup, Sheet logging, and caption length. A private GitHub Actions artifact ZIP/issue notification is not an embedded playable MP4, and the workflow itself has no automatic ChatGPT attachment action. Do not claim chat delivery until that file exists in the chat. No auto-posting or schedule changes.
+
 ## Render first — owner reviews the video (27 October 2026)
 
 Each KCI edition the owner starts creates the **complete MP4 with Vietnamese Anh Khôi voice, motion graphics, hook and CTA** before delivery to the owner. The owner reviews the actual encoded video for content and quality; there is no requirement to pre-approve a storyboard or render the unchanged video a second time after approval. Rendering is not permission to post. If a supported technique such as word-alignment precision hasn't been executed, report the QA limitation honestly without claiming a pass or silently withholding an otherwise playable sourced MP4. See [EDITING_WORKFLOW.md](.agents/skills/kci-news-video/references/EDITING_WORKFLOW.md) and [QC.md](.agents/skills/kci-news-video/references/QC.md). This repository has no cron. The owner opens an issue `[KCI VIDEO] YYYY-MM-DD <EDITION>` or dispatches the workflow at the KST slots in [DAILY_CADENCE.md](.agents/skills/kci-news-video/references/DAILY_CADENCE.md). Vbee credentials remain unchanged.
