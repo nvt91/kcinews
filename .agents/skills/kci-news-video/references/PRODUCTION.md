@@ -1,5 +1,9 @@
 # KCI Production Contract: ChatGPT → GitHub → Vbee → Remotion
 
+## Mandatory delivery after every video run
+
+All five KCI production editions follow [DELIVERY_HANDOFF.md](DELIVERY_HANDOFF.md). The issue-triggered `mode=video` branch produces the voiced MP4 artifact; `mode=preview` in the existing runner is silent. The producer or Completion Watch, using the connected ChatGPT environment, must fetch/verify the actual MP4 and **attach it directly to the ChatGPT reply with the caption** when the file transfer capability exists. An Actions artifact ZIP or issue comment is an intermediate transport, not successful chat delivery. For any inability to attach, report the specific limitation and authenticated artifact link without claiming completion of the direct handoff. GitHub cannot natively push a file into ChatGPT via this workflow. Caption rules: KR/MACRO under 50 words total including hashtags; US_AM 50–100 total Unicode characters. Do not leak private video via a public storage workaround.
+
 ## Executable render contract — 3 November 2026
 
 Use the existing **voiced `video` path** that has produced actual MP4 artifacts, rather than confusing the filename `preview.mp4` with the runner's `--mode=preview` flag:
