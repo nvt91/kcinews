@@ -1,5 +1,5 @@
 import React from "react";
-import {AbsoluteFill, Audio, Easing, interpolate, Sequence, staticFile, useCurrentFrame} from "remotion";
+import {AbsoluteFill, Audio, Easing, Img, interpolate, Sequence, staticFile, useCurrentFrame} from "remotion";
 import type {KciCta, KciVideoProps, KciVisual, RenderScene} from "./KciNews";
 
 /** Owner's 24 October revision: use the full middle width, not a narrow card.
@@ -38,7 +38,17 @@ const Masthead:React.FC<{edition:string;index:number;count:number;color:string}>
 const Headline:React.FC<{scene:RenderScene;f:number;color:string}>=({scene,f,color})=>(
   <>
     <div data-kci-safe="eyebrow" style={{...zone(394,30),...enter(f,1),fontSize:25,color,fontWeight:900,letterSpacing:1.7}}>▰ {scene.eyebrow.toUpperCase()}</div>
-    <div data-kci-safe="headline" style={{...zone(446,158),...enter(f,6),fontSize:scene.headline.length>70?55:65,fontWeight:950,lineHeight:1.1,letterSpacing:-.8}}>{scene.headline}</div>
+    <div data-kci-safe="headline" style={{...zone(446,158),...enter(f,scene.visual?.motionStyle==="cinematic"?0:6),fontSize:scene.headline.length>70?55:65,fontWeight:950,lineHeight:1.1,letterSpacing:-.8}}>
+      {scene.visual?.motionStyle==="cinematic"
+        ? scene.headline.split(/\s+/).filter(Boolean).map((word,i)=>(
+            <span key={i} style={{
+              display:"inline-block",marginRight:".24em",opacity:ease(f,Math.min(3,i)*9,10),
+              transform:`translateY(${(1-ease(f,Math.min(3,i)*9,10))*27}px)`,
+              color:i===0?"#63BFFE":P.white,
+            }}>{word}</span>
+          ))
+        : scene.headline}
+    </div>
     <div data-kci-safe="summary" style={{...zone(620,74),...enter(f,14),fontSize:29,color:"#BED1DF",lineHeight:1.28}}>{scene.summary}</div>
   </>
 );
@@ -105,6 +115,31 @@ const Visual:React.FC<{s:RenderScene;f:number;color:string}>=({s,f,color})=>{
   return <div style={{width:"100%",display:"grid",gridTemplateColumns:s.stats.length===2?"1fr 1fr":"1fr",gap:26}}>{s.stats.map((st,i)=><div key={i} style={{...enter(f,14+i*9),padding:"25px 0",borderTop:`2px solid ${P.border}`}}><div style={small}>{st.label}</div><div style={{fontSize:53,lineHeight:1.12,fontWeight:950,color:tone(st.tone),marginTop:22}}>{st.value}</div>{st.change&&<div style={{fontSize:26,marginTop:12,color:tone(st.tone)}}>{st.change}</div>}</div>)}</div>;
 };
 
+
+/**
+ * Asset-only enhancement: a slow, deterministic camera move on a reviewed local
+ * still. It is illustrative B-roll, never market footage or a price time series.
+ * No network fetch, GPU generation or API call happens during a video render.
+ * The source editor must declare the kind and provenance in the validated job.
+ */
+const VisualAsset:React.FC<{v?:KciVisual;f:number;duration:number}>=({v,f,duration})=>{
+  if(!v?.assetPath || !v.assetKind || !/^assets\\/kci\\/[a-z0-9-]+(?:\\/[a-z0-9-]+)*\\.(?:png|jpe?g|webp)$/.test(v.assetPath))return null;
+  const progress=Math.max(0,Math.min(1,f/Math.max(1,duration-1)));
+  const zoom=1.05+0.065*progress;
+  const move=interpolate(progress,[0,1],[-15,15]);
+  const label=v.assetKind==="ai-illustration"?"HÌNH MINH HỌA AI":"ẢNH MINH HỌA";
+  return <div data-kci-visual-asset={v.assetKind} style={{position:"absolute",inset:0,overflow:"hidden",zIndex:0,borderRadius:16}}>
+    <Img src={staticFile(v.assetPath)} style={{
+      position:"absolute",width:"100%",height:"100%",objectFit:"cover",
+      transform:`scale(${zoom}) translateX(${move}px)`,opacity:.32,
+    }}/>
+    <div style={{position:"absolute",inset:0,background:"linear-gradient(180deg,rgba(4,12,28,.35),rgba(4,12,28,.78))"}}/>
+    <div style={{position:"absolute",right:12,top:10,fontSize:16,fontWeight:800,color:"#ECF3FA",background:"rgba(1,12,27,.78)",borderRadius:7,padding:"6px 9px"}}>
+      {label}
+    </div>
+  </div>;
+};
+
 const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number;preview:boolean}>=({scene,edition,index,count,preview})=>{
   const f=useCurrentFrame(),v=scene.visual;
   const color=v?.kind==="risk-bars"?P.red:v?.kind==="spotlight"?P.amber:v?.kind==="rate"?P.blue:P.teal;
@@ -114,7 +149,10 @@ const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number
     <Background f={f} color={color}/>
     <AbsoluteFill style={{opacity}}>
       <Masthead edition={edition} index={index} count={count} color={color}/><Headline scene={scene} f={f} color={color}/>
-      <div data-kci-safe="visual" style={{...zone(718,474),display:"flex",alignItems:"center"}}><Visual s={scene} f={f} color={color}/></div>
+      <div data-kci-safe="visual" style={{...zone(718,474),display:"flex",alignItems:"center",position:"absolute"}}>
+         <VisualAsset v={v} f={f} duration={scene.durationFrames}/>
+         <div style={{position:"relative",zIndex:1,width:"100%"}}><Visual s={scene} f={f} color={color}/></div>
+       </div>
       <div data-kci-safe="captions" style={{...zone(1220,112,true),background:"linear-gradient(90deg,rgba(1,10,24,.8),rgba(1,10,24,.35))",borderTop:`3px solid ${color}`,padding:"15px 14px",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:38,lineHeight:1.22,fontWeight:850,textAlign:"center",whiteSpace:"pre-wrap",opacity:cue?ease(f,cue.from,4):0}}>{cue?.text||""}</div></div>
       <div data-kci-safe="source" style={{...zone(1347,48,true),fontSize:19,lineHeight:1.22,color:P.muted}}>Nguồn: {scene.source}</div>
       <div style={{...zone(1431,2,true),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
