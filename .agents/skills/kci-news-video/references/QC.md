@@ -2,6 +2,10 @@
 
 **All these checks are release gates, not just a score.** Failure yields `REVIEW_REQUIRED` or `BLOCKED`, never `READY_TO_PUBLISH`.
 
+## Full MP4 plus caption handoff check — 3 November 2026
+
+Read [DELIVERY_HANDOFF.md](DELIVERY_HANDOFF.md) for **all** KR_AM, KR_MID (when qualified), KR_CLOSE, MACRO21 and GLOBAL_US/US_AM production runs. The QC report and producer/Completion Watch completion reply must include the actual playable voiced MP4 **attached within ChatGPT when supported** and its source-grounded ready-to-post Vietnamese caption. A private GitHub ZIP/issue comment does NOT satisfy the direct ChatGPT file-delivery requirement. Do not label it delivered unless the file has actually been attached and verified. Report the transfer blocker and real authenticated artifact/run link when direct attachment is unavailable. Treat unmeasured advanced QA as qualified but do not block an otherwise usable voiced MP4. Do not confuse `KCI_RENDER_READY` (GitHub notification) with `KCI_VIDEO_NOTIFIED` (chat handoff) or the review approval. Never auto-post.
+
 ## 27 October 2026 — complete rendered MP4 before owner review
 
 On all new KR_AM/KR_MID/KR_CLOSE/MACRO21/GLOBAL_US runs, the user's expected delivery is an actual full voiced MP4, NOT merely a script, storyboard or unrendered preview. Complete the best available trustworthy render first, verify file H.264/AAC with Anh Khôi voice, financial facts and visible CTA, then send the playable file for owner review. Owner's approval is only required before publication or requested re-edit; a second identical encode is unnecessary. Optional unimplemented alignment/color/true-peak checks must be reported as NOT_VERIFIED or MP4 — CẦN RÀ SOÁT, not falsely PASS and not a reason to withhold an otherwise usable MP4. Missing voice, misleading numbers or corrupt video are blockers. Don't auto-post or imply approval because a render succeeded. See EDITING_WORKFLOW.md for stage mapping.
