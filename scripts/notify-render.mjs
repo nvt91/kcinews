@@ -260,7 +260,7 @@ export function planNotice(input, qc, mp4Names, commentBodies) {
     lines.push(`- QC: ${summarizeQc(qc)}`);
   }
   lines.push("");
-  lines.push("Artifact là ZIP riêng tư, KHÔNG phải MP4 đính kèm ChatGPT. Completion Watch cần tải và gửi MP4 thật để anh duyệt sau QC.");
+  if (!failed) lines.push("Artifact là ZIP riêng tư, KHÔNG phải MP4 đính kèm ChatGPT. Completion Watch cần tải và gửi MP4 thật để anh duyệt sau QC.");
   lines.push("Chưa đăng. Chờ anh duyệt.");
   lines.push("Review-only artifact; do not auto-publish.");
   const body = lines.join("\n");
