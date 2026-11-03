@@ -71,7 +71,7 @@ export function resolveInput(args, env = process.env) {
 }
 
 function hasExactMarker(body, kind, runId) {
-  const needle = `KCI_VIDEO_${kind}:${runId}`;
+  const needle = kind === "RENDER_READY" ? `KCI_RENDER_READY:${runId}` : `KCI_VIDEO_${kind}:${runId}`;
   let from = 0;
   while (from < body.length) {
     const at = body.indexOf(needle, from);
@@ -89,7 +89,7 @@ export function existingMarker(bodies, runId) {
   for (const body of bodies) {
     if (typeof body !== "string") continue;
     for (const kind of ["RENDER_READY", "NOTIFIED", "FAILED"]) {
-      if (hasExactMarker(body, kind, id)) return `KCI_VIDEO_${kind}:${id}`;
+      if (hasExactMarker(body, kind, id)) return kind === "RENDER_READY" ? `KCI_RENDER_READY:${id}` : `KCI_VIDEO_${kind}:${id}`;
     }
   }
   return "";
