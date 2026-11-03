@@ -260,7 +260,7 @@ export function planNotice(input, qc, mp4Names, commentBodies) {
     lines.push(`- QC: ${summarizeQc(qc)}`);
   }
   lines.push("");
-  if (!failed) lines.push("Artifact là ZIP riêng tư, KHÔNG phải MP4 đính kèm ChatGPT. Completion Watch cần tải và gửi MP4 thật để anh duyệt sau QC.");
+  if (!failed) lines.push("Artifact là ZIP riêng tư, KHÔNG phải MP4 đính kèm ChatGPT. Với mọi edition KR_AM/KR_MID/KR_CLOSE/MACRO21/US_AM: Completion Watch cần tải, kiểm tra và đính kèm MP4 thật trực tiếp trong ChatGPT KÈM CAPTION từ nguồn đã xác minh để anh duyệt. Nếu không thể đính kèm, báo rõ giới hạn; không đánh dấu đã giao. CHƯA ĐĂNG.");
   lines.push("Chưa đăng. Chờ anh duyệt.");
   lines.push("Review-only artifact; do not auto-publish.");
   const body = lines.join("\n");
