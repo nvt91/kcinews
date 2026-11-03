@@ -5,6 +5,10 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 # KCI News Video — Production Skill v2.0
 
+## Universal KCI MP4 + caption handoff — all recurring video streams
+
+**Mandatory for KR_AM, conditional KR_MID, KR_CLOSE, MACRO21 and GLOBAL_US/US_AM:** read and apply [DELIVERY_HANDOFF.md](references/DELIVERY_HANDOFF.md) on every new video production and Completion Watch check. For a verified real complete Vbee-voiced MP4, priority is **a playable MP4 attachment in ChatGPT plus a ready-to-post Vietnamese caption**, not only a GitHub artifact/ZIP, issue link or static preview. KR_NEWS/MACRO captions <50 words including hashtags; GLOBAL_US 50–100 Unicode characters total including hashtags. No material QC falsification, unverified attachment claims or auto-posting. GitHub Actions does not itself upload attachments to ChatGPT; the Watch/producer must make and verify the handoff where tooling supports it. Do not treat `KCI_RENDER_READY` as `KCI_VIDEO_NOTIFIED`.
+
 ## Operational override — 3 November 2026: restore the working voiced-render pipeline
 
 The user wants to APPROVE THE ACTUAL RENDERED VIDEO, accompanied by a caption. Follow the confirmed working `mode=video` path rather than treating an unimplemented nine-step editor as a precondition. Preserve source/voice/MP4 integrity gates and all existing schedules, streams, quotas, secrets, no-post restrictions.
