@@ -1,5 +1,11 @@
 # KCI News — Google Sheets production ledger
 
+## All-stream completed-video handoff — owner instruction 3 November 2026
+
+Every real production edition KR_AM, conditional KR_MID, KR_CLOSE, MACRO21 and GLOBAL_US/US_AM follows [DELIVERY_HANDOFF.md](DELIVERY_HANDOFF.md): attach a verified playable voiced MP4 directly in ChatGPT alongside a **ready-to-post caption** wherever the ChatGPT environment supports attachment; a GitHub artifact ZIP or issue comment is not this handoff. KR_NEWS/MACRO captions must remain under 50 total words **including hashtags**. GLOBAL_US/US_AM captions remain 50–100 total Unicode characters including spaces/hashtags. This newer limit supersedes the older generic 30–60-word caption recommendations in the column D notes below.
+
+The ChatGPT producer/Completion Watch performs file retrieval and verified attachment; GitHub itself cannot directly send a file to a ChatGPT conversation. Report accurately if that transfer is unavailable. Continue to record **actual MP4 render completion** in C (not a planned schedule, not user approval time), a real link with access/expiry in E, the caption in D only if not owner-edited, truthful QC in G, H=`CHỜ DUYỆT` and I=`CHƯA ĐĂNG`. Preserve old rows, owner edits, source evidence and one articleId per row. No extra render or paid TTS merely to repair logging.
+
 ## GLOBAL_US render-first instruction, 27 October 2026
 
 Beginning with the next GLOBAL_US/US_AM edition, the owner wants a fully rendered voiced MP4 delivered first, then owner review (no pre-render preview approval). Do not equate a finished technical render with approval or publication. In Trang tính1 write C=verified actual MP4 completion time KST, E=real playable video/run/artifact link, G=honest QC state, H=CHỜ DUYỆT and I=CHƯA ĐĂNG; if no actual MP4 leave C empty. Record technical limitations without inventing QC PASS. Preserve owner edits, articleId idempotency, history and the separate stream schedules. Lịch tác vụ row15 records this configuration. It is not a scheduler. Caption remains 50–100 total characters including hashtags.
