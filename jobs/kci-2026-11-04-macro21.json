@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-04-macro21",
+  "edition": "04/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-04T21:03:45+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "BOK giữ lãi suất 3%, nhưng lãi vay và tiền gửi vẫn tăng",
+  "sourceDisclaimer": "BOK new-loan and deposit averages refer to September 2026, released October 29; policy rate held October 22; not live November retail rates.",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261104-MACRO21",
+  "articlePath": "editorial/2026-11-04/macro21.md",
+  "eventKeys": [
+    "KR-BOK-2026-09-BANK-RATES-2026-10-29",
+    "KR-BOK-BASE-RATE-2026-10-22"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "bok-rates-sep",
+      "title": "Bank of Korea Interest Rates (Sep 2026)",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11066055",
+      "eventDate": "2026-10-29",
+      "checkedAt": "2026-11-04T21:03:45+09:00",
+      "kind": "primary",
+      "facts": [
+        "New deposit weighted average 3.45% in September, +24bp m/m.",
+        "New loan weighted average 4.57% in September, +17bp m/m.",
+        "Outstanding deposit rate 2.27%, outstanding loan rate 4.48% as of September end."
+      ]
+    },
+    {
+      "id": "bok-policy-oct",
+      "title": "Bank of Korea policy decision October 22, 2026",
+      "url": "https://www.bok.or.kr/eng/main/main.do",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-11-04T21:03:45+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK kept base rate at 3.00% at October 22 policy meeting."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Lãi suất cơ bản không đổi, nhưng tiền vay ngân hàng vẫn đắt hơn. Vì sao vậy?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Lãi suất cơ bản không đổi, nhưng tiền vay ngân hàng vẫn đắt hơn. Vì sao vậy?"
+      },
+      {
+        "style": "mechanism",
+        "text": "Lãi vay mới đã lên bốn phẩy năm bảy phần trăm. Tín hiệu gì cho người đi vay?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao lãi suất ngân hàng vẫn tăng khi BOK chưa nâng thêm lãi suất?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Nếu anh chị đang theo dõi lãi vay và đồng won, hãy lưu bản tin này và theo dõi Korea Capital Insight để cập nhật số liệu mới.",
+    "screenHeadline": "THEO DÕI LÃI VAY",
+    "screenSubline": "Korea Capital Insight · số liệu BOK"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "LÃI SUẤT THỰC TẾ",
+      "headline": "Lãi vay tăng dù BOK giữ nguyên",
+      "summary": "BOK 3,00% · lãi vay mới 4,57%",
+      "source": "BOK, 22 và 29/10",
+      "voiceText": "Lãi suất cơ bản không đổi, nhưng tiền vay ngân hàng vẫn đắt hơn. Vì sao vậy? BOK giữ lãi suất chính sách ở ba phần trăm trong cuộc họp ngày hai mươi hai tháng mười. Tuy nhiên, lãi vay thực tế không chỉ phụ thuộc vào một con số đó.",
+      "sourceIds": [
+        "bok-rates-sep",
+        "bok-policy-oct"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "4,57%",
+        "unit": "LÃI VAY MỚI THÁNG 9",
+        "qualifier": "Bình quân năm, BOK 29/10"
+      }
+    },
+    {
+      "id": "numbers",
+      "eyebrow": "SỐ LIỆU THÁNG CHÍN",
+      "headline": "Lãi vay mới bình quân 4,57%",
+      "summary": "Tăng 0,17 điểm phần trăm so tháng trước",
+      "source": "BOK, công bố 29/10",
+      "voiceText": "Theo thống kê BOK công bố ngày hai mươi chín tháng mười, lãi suất bình quân các khoản vay mới tại ngân hàng trong tháng chín là bốn phẩy năm bảy phần trăm một năm, tăng không phẩy mười bảy điểm phần trăm so với tháng tám. Đây không phải báo giá vay của ngày hôm nay.",
+      "sourceIds": [
+        "bok-rates-sep"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "core",
+      "eyebrow": "TIỀN GỬI CŨNG TĂNG",
+      "headline": "Lãi tiền gửi mới 3,45%",
+      "summary": "Tăng 0,24 điểm phần trăm",
+      "source": "BOK, công bố 29/10",
+      "voiceText": "Lãi suất bình quân tiền gửi mới cũng tăng lên ba phẩy bốn lăm phần trăm, cao hơn tháng trước không phẩy hai mươi bốn điểm phần trăm. Lãi suất tiền gửi tăng có thể khiến chi phí huy động vốn của ngân hàng thay đổi, rồi tác động tới giá cho vay.",
+      "sourceIds": [
+        "bok-rates-sep"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "impact",
+      "eyebrow": "PHÂN BIỆT SỐ LIỆU",
+      "headline": "Khoản vay cũ khác khoản vay mới",
+      "summary": "Lãi dư nợ cuối tháng 9: 4,48%",
+      "source": "BOK, 29/10",
+      "voiceText": "Điểm quan trọng là lãi suất bình quân trên dư nợ đang tồn tại chỉ ở mức bốn phẩy bốn tám phần trăm vào cuối tháng chín. Hai thước đo khác nhau vì khoản vay cũ có kỳ hạn và lịch điều chỉnh riêng. Vì vậy, không thể suy ra mọi người vay đều bị tăng lãi cùng lúc.",
+      "sourceIds": [
+        "bok-rates-sep"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "rate",
+        "value": "4,48%",
+        "unit": "DƯ NỢ CUỐI THÁNG 9",
+        "qualifier": "Bình quân năm, không phải lãi vay mới"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Theo dõi kỳ hạn điều chỉnh lãi",
+      "summary": "BOK giữ lãi suất 3,00% ngày 22/10",
+      "source": "BOK, 22 và 29/10",
+      "voiceText": "Từ nay, hãy theo dõi lãi suất huy động, lãi suất cho vay mới và lịch điều chỉnh của khoản vay mình đang có. Đây là dữ liệu tháng chín, không phải dự báo lãi suất tháng mười một. Nếu anh chị đang theo dõi lãi vay và đồng won, hãy lưu bản tin này và theo dõi Korea Capital Insight để cập nhật số liệu mới.",
+      "sourceIds": [
+        "bok-rates-sep",
+        "bok-policy-oct"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "LÃI SUẤT HUY ĐỘNG",
+          "LÃI VAY MỚI",
+          "KỲ ĐIỀU CHỈNH"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Lãi suất cơ bản không đổi, nhưng tiền vay ngân hàng vẫn đắt hơn. Vì sao vậy?"
+}
