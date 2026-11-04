@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-04-kr-close",
+  "edition": "KR_CLOSE — Bản tin chiều Hàn Quốc 04/11/2026",
+  "dataAsOf": "2026-11-04T18:41:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI đảo chiều hơn 400 điểm, khối ngoại bán ròng 2,5 nghìn tỷ won",
+  "sourceDisclaimer": "KRX regular session close at 15:30 KST on 2026-11-04; intraday milestones are discrete observations, not time series; KRX/NXT volumes are not combined; market and election links are contextual interpretation.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261104-KR-CLOSE",
+    "articlePath": "editorial/2026-11-04/kr-close.md",
+    "eventKeys": [
+      "KRX|KOSPI-KOSDAQ-REGULAR-CLOSE|2026-11-04",
+      "KRX|KOSPI-NET-FOREIGN-SELLING|2026-11-04",
+      "KRX|CHIP-VS-BATTERY-DISPERSION|2026-11-04"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-voiced-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "tts_motion; Whisper and advanced audio QC pending evidence"
+  },
+  "sourceLedger": [
+    {
+      "id": "krx-venue",
+      "title": "Korea Exchange — official market data venue (venue/session reference; daily close corroborated through Yonhap)",
+      "url": "https://data.krx.co.kr/",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T18:41:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "The KRX Data Marketplace is the official market-data venue for the KOSPI and KOSDAQ regular-session markets; the live site snapshot was not used as the source for 4 November closing figures."
+      ]
+    },
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 4 Nov 16:02 — Korean equities end higher despite foreign selling",
+      "url": "https://m-en.yna.co.kr/view/AEN20261104006851320?section=economy-finance%2Feconomy",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T18:41:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The KOSPI closed at 5683.80, up 35.01 points or 0.62 percent on 4 November 2026, after trading between an intraday low of 5421.72 and strong early gains.",
+        "Foreign investors sold net approximately KRW 2.5 trillion; institutions and individual investors bought approximately KRW 1.01 trillion and 1.15 trillion respectively.",
+        "Samsung Electronics declined 0.68 percent and SK hynix 0.14 percent; LG Energy Solution rose 5.03 percent and Samsung SDI 11.57 percent in the KRX session."
+      ]
+    },
+    {
+      "id": "yonhap-korean",
+      "title": "Yonhap Korean 4 Nov 15:35 — KOSPI/KOSDAQ official close",
+      "url": "https://www.yna.co.kr/view/AKR20261104133200008",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T18:41:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed at 5683.80 (+0.62 percent) and KOSDAQ at 714.95 (+1.50 percent), each KRX regular session on 4 November.",
+        "KOSPI opened at 5786.13, reached a high of 5828.13 and a low of 5421.72; these are observed points, not a continuous time series."
+      ]
+    },
+    {
+      "id": "newspim-flow",
+      "title": "Newspim 4 Nov 16:08 — close and investor trading",
+      "url": "https://member.newspim.com/news/view/20261104001137",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T18:41:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The KOSPI was up 0.62 percent to 5683.80 and KOSDAQ up 1.50 percent to 714.95; foreign investors sold net approximately KRW 2.5071 trillion in the KOSPI regular session.",
+        "U.S. midterm election developments and concerns about AI data-center regulation were cited as risk-sentiment context, not a proven sole driver."
+      ]
+    },
+    {
+      "id": "yonhap-english",
+      "title": "Yonhap 4 Nov updated 16:02 — sector dispersion, won-dollar quote",
+      "url": "https://m-en.yna.co.kr/view/AEN20261104006851320",
+      "eventDate": "2026-11-04",
+      "checkedAt": "2026-11-04T18:41:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI recorded gainers outnumbering decliners 566 to 302 at the regular close, according to the cited report.",
+        "Won-dollar was quoted at 1341.5 KRW/USD as of 15:30 KST; it is a session timestamp, not a later NXT quote."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI hôm nay dao động hơn bốn trăm điểm rồi vẫn đóng cửa tăng. Nhưng khối ngoại bán ròng tới hai nghìn năm trăm tỷ won. Vì sao?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI hôm nay dao động hơn bốn trăm điểm rồi vẫn đóng cửa tăng. Nhưng khối ngoại bán ròng tới hai nghìn năm trăm tỷ won. Vì sao?",
+        "score": 47
+      },
+      {
+        "style": "impact",
+        "text": "Khối ngoại bán ròng hai nghìn năm trăm tỷ won, nhưng KOSPI vẫn xanh. Điều gì đang giữ thị trường?",
+        "score": 44
+      },
+      {
+        "style": "question",
+        "text": "Chứng khoán Hàn Quốc hôm nay tăng điểm, nhưng nhóm chip giảm. Đà hồi có đáng tin?",
+        "score": 42
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà hồi hôm nay có bền vững khi khối ngoại vẫn bán mạnh không? Bình luận góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "ĐÀ HỒI CÓ BỀN VỮNG?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Đà hồi hôm nay có bền vững khi khối ngoại vẫn bán mạnh không?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · BẢN CHIỀU · 04/11",
+      "headline": "KOSPI QUAY ĐẦU SAU CÚ RƠI SÂU",
+      "summary": "Biên độ trong phiên hơn 400 điểm · KRX regular close",
+      "source": "Yonhap/KRX · 04/11 15:30 KST",
+      "voiceText": "KOSPI hôm nay dao động hơn bốn trăm điểm rồi vẫn đóng cửa tăng. Nhưng khối ngoại bán ròng tới hai nghìn năm trăm tỷ won. Vì sao? Tại phiên chính ngày bốn tháng mười một, KOSPI đóng cửa ở năm nghìn sáu trăm tám mươi ba phẩy tám điểm, tăng không phẩy sáu hai phần trăm. KOSDAQ cũng tăng một phẩy năm phần trăm, đạt bảy trăm mười bốn phẩy chín lăm điểm.",
+      "sourceIds": [
+        "yonhap-close",
+        "yonhap-korean",
+        "krx-venue"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX 04/11",
+          "value": "5.683,80",
+          "change": "+0,62%",
+          "tone": "up"
+        },
+        {
+          "label": "KOSDAQ · KRX 04/11",
+          "value": "714,95",
+          "change": "+1,50%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "display": "+0,62%",
+            "value": 0.62
+          },
+          {
+            "label": "KOSDAQ",
+            "display": "+1,50%",
+            "value": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "reversal",
+      "eyebrow": "BIẾN ĐỘNG PHIÊN CHÍNH",
+      "headline": "TỪ TĂNG MẠNH ĐẾN GIẢM SÂU",
+      "summary": "Các mốc giá đã được xác nhận; không phải đường giá liên tục",
+      "source": "Yonhap · KRX 04/11",
+      "voiceText": "Điểm đặc biệt là nhịp đảo chiều cực mạnh. Chỉ số mở cửa ở năm nghìn bảy trăm tám mươi sáu điểm, có lúc lên năm nghìn tám trăm hai mươi tám, rồi rơi xuống năm nghìn bốn trăm hai mươi mốt điểm vào giữa trưa. Sau đó KOSPI hồi phục để đóng cửa trên tham chiếu. Đây là ba mốc giá thực tế, không phải diễn biến tăng đều.",
+      "sourceIds": [
+        "yonhap-korean",
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "Đỉnh trong ngày",
+          "value": "5.828,13",
+          "tone": "up"
+        },
+        {
+          "label": "Đáy trong ngày",
+          "value": "5.421,72",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "reversal",
+        "milestones": [
+          {
+            "label": "MỞ CỬA",
+            "value": "5.786,13"
+          },
+          {
+            "label": "THẤP NHẤT",
+            "value": "5.421,72"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": "5.683,80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "flows",
+      "eyebrow": "DÒNG TIỀN · KOSPI",
+      "headline": "KHỐI NGOẠI VẪN BÁN MẠNH",
+      "summary": "Dữ liệu ròng chỉ tính KOSPI phiên chính KRX",
+      "source": "Yonhap / Newspim · 04/11",
+      "voiceText": "Nhưng màu xanh của chỉ số chưa nói hết câu chuyện. Khối ngoại bán ròng khoảng hai nghìn năm trăm tỷ won trên KOSPI. Trong khi đó, tổ chức mua ròng khoảng một nghìn không trăm mười tỷ won và nhà đầu tư cá nhân mua ròng khoảng một nghìn một trăm năm mươi tỷ won. Lực mua trong nước giúp hấp thụ một phần áp lực bán, nhưng chưa chứng minh xu hướng phục hồi đã bền vững.",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-flow"
+      ],
+      "stats": [
+        {
+          "label": "Khối ngoại · KOSPI",
+          "value": "−2,5 nghìn tỷ won",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Khối ngoại",
+            "display": "−2,50 nghìn tỷ won",
+            "value": -2.5
+          },
+          {
+            "label": "Tổ chức",
+            "display": "+1,01 nghìn tỷ won",
+            "value": 1.01
+          },
+          {
+            "label": "Cá nhân",
+            "display": "+1,15 nghìn tỷ won",
+            "value": 1.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "sectors",
+      "eyebrow": "PHÂN HÓA NGÀNH",
+      "headline": "PIN TĂNG — CHIP ĐI LÙI",
+      "summary": "Một phiên xanh không đồng nghĩa các cổ phiếu lớn cùng tăng",
+      "source": "Yonhap · KRX 04/11",
+      "voiceText": "Sự phân hóa giữa các ngành cũng rất rõ. LG Energy Solution tăng năm phẩy không ba phần trăm; Samsung SDI tăng hơn mười một phần trăm. Ngược lại, Samsung Electronics giảm không phẩy sáu tám phần trăm, còn SK hynix giảm nhẹ không phẩy một bốn phần trăm. Bầu cử giữa nhiệm kỳ Mỹ khiến thị trường cân nhắc thêm rủi ro chính sách với đầu tư AI. Đây là yếu tố bối cảnh, không thể quy mọi biến động cổ phiếu cho một nguyên nhân.",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-flow"
+      ],
+      "stats": [
+        {
+          "label": "Samsung SDI · KRX",
+          "value": "+11,57%",
+          "tone": "up"
+        },
+        {
+          "label": "Samsung Electronics · KRX",
+          "value": "−0,68%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "LG Energy Solution",
+            "display": "+5,03%",
+            "value": 5.03
+          },
+          {
+            "label": "Samsung SDI",
+            "display": "+11,57%",
+            "value": 11.57
+          },
+          {
+            "label": "Samsung Electronics",
+            "display": "−0,68%",
+            "value": -0.68
+          },
+          {
+            "label": "SK hynix",
+            "display": "−0,14%",
+            "value": -0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KCI · ĐIỀU CẦN THEO DÕI",
+      "headline": "ĐỪNG CHỈ NHÌN MÀU XANH",
+      "summary": "Dòng vốn ngoại · nhóm chip · rủi ro chính sách AI",
+      "source": "KCI phân tích từ Yonhap/Newspim · 04/11",
+      "voiceText": "Vậy điều cần theo dõi là gì? Trước hết, xem khối ngoại có còn bán mạnh không. Tiếp theo là sức bật của cổ phiếu bán dẫn và thông tin chính sách công nghệ sau bầu cử Mỹ. Một phiên tăng chưa đủ xóa hết rủi ro. Bản tin chỉ cung cấp thông tin, không phải khuyến nghị mua bán.",
+      "sourceIds": [
+        "yonhap-close",
+        "yonhap-korean",
+        "newspim-flow"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KHỐI NGOẠI CÓ NGỪNG BÁN?",
+          "NHÓM CHIP PHẢN ỨNG RA SAO?",
+          "CHÍNH SÁCH AI CÓ GÌ MỚI?"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
