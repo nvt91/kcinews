@@ -182,7 +182,7 @@ export function summarizeQc(qc) {
 export function safeLabel(value) {
   if (typeof value !== "string") return "không rõ";
   const cleaned = [...value]
-    .filter((ch) => /[\p{L}\p{N} \-_[\]:./]/u.test(ch))
+    .filter((ch) => /[\p{L}\p{N}]/u.test(ch) || " -_[]:./,%+−".includes(ch))
     .join("")
     .replace(/\s+/g, " ")
     .trim()

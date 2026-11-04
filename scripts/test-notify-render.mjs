@@ -7,6 +7,7 @@ import {
   existingMarker,
   planNotice,
   safeArtifactUrl,
+  safeLabel,
   summarizeQc,
 } from "./notify-render.mjs";
 
@@ -46,6 +47,9 @@ assert.equal(success.body.includes("hooks.example"), false);
 assert.equal(success.body.includes("<script>"), false);
 assert.equal(success.body.includes("alert(1)"), false);
 assert.equal(success.body.includes("scriptalert"), true);
+
+assert.equal(safeLabel("[KCI VIDEO] 2026-11-04 KR_CLOSE bán ròng 2,5 nghìn tỷ won"), "[KCI VIDEO] 2026-11-04 KR_CLOSE bán ròng 2,5 nghìn tỷ won");
+assert.equal(safeLabel("KOSPI +0,62% và KOSDAQ +1,50%"), "KOSPI +0,62% và KOSDAQ +1,50%");
 
 const poisoned = safeArtifactUrl("https://hooks.example/webhook?token=super-secret-token", base.server, base.repo, run);
 assert.equal(poisoned, "");
