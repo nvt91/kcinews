@@ -2,6 +2,12 @@
 
 Owner decision confirmed 3 November 2026. This is the authoritative handoff specification for **every new actual video edition** in the repository, not an instruction to regenerate historical work or alter recurring schedules.
 
+## Chat-delivery proof — 04 Nov 2026
+
+A producer or Completion Watch must confirm a real CHAT-VISIBLE playable MP4 before calling any edition delivered. GitHub comments by github-actions[bot], even if older comments contain KCI_VIDEO_NOTIFIED or KCI_PREVIEW_NOTIFIED, are not by themselves proof of a ChatGPT attachment. A GitHub run success or private ZIP artifact is a render receipt only. Check actual prior handoff evidence rather than assuming a marker or a previous conversation delivered the file.
+
+For an unexpired KCI_RENDER_READY artifact without confirmed delivery, retrieve authenticated ZIP, extract real MP4, verify video/audio decode and actual Vietnamese narration, and attach the MP4 in the current ChatGPT conversation. If not technically possible, mark DELIVERY_BLOCKED with exact run/artifact URL and do not record a delivered marker. Never re-run paid Vbee TTS for a ChatGPT attachment issue. Keep owner approval, publication permissions, schedules and other streams unchanged. These docs do not themselves install a GitHub-to-ChatGPT bridge or modify automation prompts.
+
 ## Scope
 
 | Video stream | Edition | Slot recorded in existing ChatGPT automations | Caption |
