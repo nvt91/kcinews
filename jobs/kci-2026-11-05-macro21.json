@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-05-macro21",
+  "edition": "05/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-05T20:57:23+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Hàn Quốc thặng dư vãng lai kỷ lục, nhưng won chưa chắc tăng",
+  "sourceDisclaimer": "BOK preliminary balance of payments for September 2026, released November 5 at 08:00 KST. Current account and financial account are distinct; no live USD/KRW quote or certain forecast.",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261105-MACRO21",
+  "articlePath": "editorial/2026-11-05/macro21.md",
+  "eventKeys": [
+    "KR-BOK-BOP-2026-09-RELEASE-2026-11-05"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "bok-bop",
+      "title": "BOK Balance of Payments September 2026 preliminary",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11066295&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T20:57:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "September current account surplus USD 61.46 billion.",
+        "Financial account net assets increased USD 54.34 billion in September.",
+        "BOK release date Nov 5 2026, reference period September 2026."
+      ]
+    },
+    {
+      "id": "yonhap-bop",
+      "title": "Yonhap reporting on BOK September balance of payments",
+      "url": "https://www.koreatimes.co.kr/amp/economy/20261105/korea-posts-record-high-current-account-surplus-of-over-60-bil-in-sept-on-chip-supercycle",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T20:57:23+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Goods account surplus USD 62.75 billion.",
+        "Services account deficit USD 3.35 billion.",
+        "Exports growth driven by semiconductors."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc vừa công bố thặng dư tài khoản vãng lai kỷ lục. Nhưng điều đó có đồng nghĩa đồng won sẽ mạnh lên ngay?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Thặng dư kỷ lục, nhưng đồng won chưa chắc mạnh lên. Vì sao?"
+      },
+      {
+        "style": "impact",
+        "text": "Hàn Quốc thặng dư hơn sáu mươi mốt tỷ đô. Đồng won có hưởng lợi?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao thặng dư đối ngoại lớn chưa bảo đảm tỷ giá đô la trên won giảm?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Nếu anh chị muốn hiểu điều gì thực sự tác động tới đồng won, hãy theo dõi Korea Capital Insight để cùng kiểm tra số liệu mỗi ngày.",
+    "screenHeadline": "ĐIỀU GÌ ĐẨY TỶ GIÁ?",
+    "screenSubline": "Theo dõi Korea Capital Insight"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "THẶNG DƯ KỶ LỤC",
+      "headline": "61,46 tỷ USD, đồng won sẽ mạnh?",
+      "summary": "Tài khoản vãng lai tháng 9/2026 · số sơ bộ",
+      "voiceText": "Hàn Quốc vừa công bố thặng dư tài khoản vãng lai kỷ lục. Nhưng điều đó có đồng nghĩa đồng won sẽ mạnh lên ngay? Chưa chắc. Con số này nói lên sức mạnh đối ngoại, chứ không phải toàn bộ lượng đô la bán ra trên thị trường hôm nay.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "bok-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "61,46",
+        "unit": "TỶ USD · THÁNG 9",
+        "qualifier": "BOK công bố 05/11, số sơ bộ"
+      }
+    },
+    {
+      "id": "balance",
+      "eyebrow": "SỐ LIỆU CHÍNH",
+      "headline": "Thặng dư 61,46 tỷ USD",
+      "summary": "Tài khoản vãng lai tháng 9/2026",
+      "voiceText": "Theo Ngân hàng Trung ương Hàn Quốc, số liệu sơ bộ tháng chín cho thấy thặng dư tài khoản vãng lai đạt sáu mươi mốt phẩy bốn sáu tỷ đô la Mỹ. Đây là dòng thu chi với nước ngoài trong cả tháng chín, được công bố sáng ngày năm tháng mười một.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "bok-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "goods",
+      "eyebrow": "ĐỘNG LỰC THƯƠNG MẠI",
+      "headline": "Thặng dư hàng hóa 62,75 tỷ USD",
+      "summary": "Xuất khẩu bán dẫn đóng góp lớn",
+      "voiceText": "Trong đó, cán cân hàng hóa thặng dư sáu mươi hai phẩy bảy lăm tỷ đô la. Xuất khẩu bán dẫn là động lực quan trọng. Nhưng cán cân dịch vụ lại thâm hụt ba phẩy ba lăm tỷ đô la. Vì vậy, không thể đánh đồng thặng dư hàng hóa với toàn bộ tài khoản vãng lai.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "yonhap-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "62,75",
+        "unit": "TỶ USD · HÀNG HÓA",
+        "qualifier": "BOK, số liệu tháng 9 sơ bộ"
+      }
+    },
+    {
+      "id": "financial",
+      "eyebrow": "DÒNG VỐN KHÁC DÒNG THƯƠNG MẠI",
+      "headline": "Tài sản tài chính ròng tăng 54,34 tỷ USD",
+      "summary": "Không cộng với thặng dư vãng lai",
+      "voiceText": "BOK cũng ghi nhận tài sản ròng trên tài khoản tài chính tăng năm mươi bốn phẩy ba bốn tỷ đô la trong tháng chín. Đây là chỉ tiêu riêng về giao dịch tài chính xuyên biên giới, không phải số tiền cần cộng thêm vào thặng dư vãng lai.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "bok-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "impact",
+      "eyebrow": "TÁC ĐỘNG TỚI ĐỒNG WON",
+      "headline": "Thặng dư không bảo đảm won tăng",
+      "summary": "Còn phụ thuộc chuyển đổi ngoại tệ và dòng vốn",
+      "voiceText": "Thặng dư lớn có thể hỗ trợ nền tảng đối ngoại của Hàn Quốc. Tuy nhiên, tác động tới tỷ giá đô la trên won còn phụ thuộc doanh nghiệp có bán ngoại tệ hay không, dòng đầu tư ra nước ngoài và nhu cầu đô la của thị trường. Đây là mối quan hệ có điều kiện, không phải dự báo tỷ giá chắc chắn.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "bok-bop",
+        "yonhap-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Theo dõi tỷ giá và dòng vốn",
+      "summary": "So sánh dữ liệu cùng kỳ và thời điểm công bố",
+      "voiceText": "Khi xem các bản tin tiếp theo, hãy phân biệt tháng số liệu, ngày công bố và dòng vốn thực tế. Chỉ một con số thặng dư không đủ để kết luận tỷ giá sẽ đi theo hướng nào.",
+      "source": "BOK / Yonhap, 05/11/2026",
+      "sourceIds": [
+        "bok-bop"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "THẶNG DƯ VÃNG LAI",
+          "DÒNG VỐN",
+          "USD/KRW"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Hàn Quốc vừa công bố thặng dư tài khoản vãng lai kỷ lục. Nhưng điều đó có đồng nghĩa đồng won sẽ mạnh lên ngay?"
+}
