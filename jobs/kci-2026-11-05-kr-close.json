@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-05-kr-close",
+  "edition": "KR_CLOSE — Bản tin chiều Hàn Quốc 05/11/2026",
+  "dataAsOf": "2026-11-05T17:09:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 5,28%, khối ngoại bán ròng 3,39 nghìn tỷ won",
+  "sourceDisclaimer": "KRX regular close 15:30 KST 2026-11-05; NXT excluded; potential U.S. AI policy changes are investor concerns, not enacted laws.",
+  "metadata": {
+    "stream": "KR_NEWS",
+    "slot": "KR_CLOSE",
+    "format": "digest",
+    "articleId": "KCI-20261105-KR-CLOSE",
+    "articlePath": "editorial/2026-11-05/kr-close.md",
+    "eventKeys": [
+      "KRX|KOSPI-CLOSE|2026-11-05",
+      "KRX|FOREIGN-NET-SELLING|2026-11-05",
+      "US-MIDTERMS|AI-REGULATION-CONCERN|2026-11-05"
+    ],
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "previewVersion": "v1-voiced-review",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "capability": "tts_motion; Whisper and advanced audio QC pending evidence"
+  },
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 5 Nov 16:01 — Seoul shares plunge 5.28%",
+      "url": "https://en.yna.co.kr/view/AEN20261105007251320",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T17:09:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed 5383.80, down 300 points (-5.28%) in KRX regular session.",
+        "Foreigners sold net KRW 3.39 trillion; institutions bought KRW 841.8 billion; individuals KRW 2.28 trillion.",
+        "Decliners 534, advancers 344; sidecar at 10:16 KST for five minutes.",
+        "Samsung Electronics -7.57%, SK hynix -9.46%, Hyundai Motor +3.53%, Kia +5.22%."
+      ]
+    },
+    {
+      "id": "yonhap-fx",
+      "title": "Yonhap 5 Nov 16:17 — Won at 1342.1 per dollar",
+      "url": "https://en.yna.co.kr/view/AEN20261105009000320",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T17:09:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Won quoted 1342.1 KRW per USD at 15:30 KST, down 0.6 won versus previous close.",
+        "Foreign net selling 3.39 trillion won and KOSPI -5.28% reiterated."
+      ]
+    },
+    {
+      "id": "ministry-policy",
+      "title": "Asia Business Daily 5 Nov 14:25 — Korean government market monitoring",
+      "url": "https://www.asiae.co.kr/en/article/2026110514245325639",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T17:09:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Finance ministry held interagency meeting to monitor impacts of U.S. midterm elections and potential policy shifts.",
+        "Government said impact depends on whether U.S. policy actually changes, and on timing and specifics."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI mất hơn năm phần trăm chỉ trong một phiên. Khối ngoại bán ròng tới ba nghìn ba trăm chín mươi tỷ won. Điều gì khiến thị trường Hàn Quốc lao dốc?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI mất hơn năm phần trăm, khối ngoại bán ròng ba nghìn ba trăm chín mươi tỷ won. Điều gì đang xảy ra?",
+        "score": 47
+      },
+      {
+        "style": "impact",
+        "text": "Cổ phiếu chip Hàn Quốc lao dốc khi thị trường lo ngại chính sách AI tại Mỹ.",
+        "score": 44
+      },
+      {
+        "style": "question",
+        "text": "Sau bầu cử Mỹ, vì sao KOSPI giảm mạnh hơn năm phần trăm?",
+        "score": 43
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhóm chip Hàn Quốc sẽ ổn định trở lại hay còn chịu sức ép? Bình luận góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "NHÓM CHIP CÒN GIẢM?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi KCI",
+    "question": "Nhóm chip Hàn Quốc sẽ ổn định hay còn chịu sức ép?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · BẢN CHIỀU · 05/11",
+      "headline": "KOSPI GIẢM 5,28%",
+      "summary": "Phiên chính KRX · 05/11 15:30 KST",
+      "source": "Yonhap · 05/11 16:01 KST",
+      "voiceText": "KOSPI mất hơn năm phần trăm chỉ trong một phiên. Khối ngoại bán ròng tới ba nghìn ba trăm chín mươi tỷ won. Điều gì khiến thị trường Hàn Quốc lao dốc? Chỉ số KOSPI đóng cửa ở năm nghìn ba trăm tám mươi ba phẩy tám điểm, giảm đúng ba trăm điểm. Trong phiên, cơ quan vận hành sàn kích hoạt cơ chế tạm dừng giao dịch chương trình phía bán trong năm phút lúc mười giờ mười sáu.",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX",
+          "value": "5.383,80",
+          "change": "−5,28%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "display": "−5,28%",
+            "value": -5.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "flows",
+      "eyebrow": "DÒNG TIỀN · PHIÊN CHÍNH",
+      "headline": "KHỐI NGOẠI BÁN MẠNH",
+      "summary": "Không cộng giao dịch NXT",
+      "source": "Yonhap · 05/11",
+      "voiceText": "Khối ngoại bán ròng khoảng ba nghìn ba trăm chín mươi tỷ won. Trong khi đó, nhà đầu tư cá nhân mua ròng hai nghìn hai trăm tám mươi tỷ won, còn tổ chức mua khoảng tám trăm bốn mươi hai tỷ won. Trên sàn, số mã giảm là năm trăm ba mươi bốn, nhiều hơn ba trăm bốn mươi bốn mã tăng.",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "stats": [
+        {
+          "label": "Khối ngoại",
+          "value": "−3,39 nghìn tỷ won",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Khối ngoại",
+            "display": "−3,39 nghìn tỷ won",
+            "value": -3.39
+          },
+          {
+            "label": "Cá nhân",
+            "display": "+2,28 nghìn tỷ won",
+            "value": 2.28
+          },
+          {
+            "label": "Tổ chức",
+            "display": "+0,842 nghìn tỷ won",
+            "value": 0.842
+          }
+        ]
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "CHIP · RỦI RO CHÍNH SÁCH",
+      "headline": "SAMSUNG VÀ SK HYNIX GIẢM",
+      "summary": "Lo ngại về chính sách AI chưa phải luật đã ban hành",
+      "source": "Yonhap · 05/11",
+      "voiceText": "Samsung Electronics giảm bảy phẩy năm bảy phần trăm; SK hynix giảm chín phẩy bốn sáu phần trăm. Sau kết quả bầu cử giữa nhiệm kỳ Mỹ, nhà đầu tư lo ngại Quốc hội mới có thể siết quy định với trung tâm dữ liệu AI. Đây mới là rủi ro chính sách được thị trường cân nhắc, không phải quy định đã có hiệu lực.",
+      "sourceIds": [
+        "yonhap-close",
+        "ministry-policy"
+      ],
+      "stats": [
+        {
+          "label": "Samsung Electronics",
+          "value": "−7,57%",
+          "tone": "down"
+        },
+        {
+          "label": "SK hynix",
+          "value": "−9,46%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung Electronics",
+            "display": "−7,57%",
+            "value": -7.57
+          },
+          {
+            "label": "SK hynix",
+            "display": "−9,46%",
+            "value": -9.46
+          }
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "RỦI RO CHƯA KẾT THÚC",
+      "summary": "Dòng vốn · chính sách AI · tỷ giá",
+      "source": "Yonhap / Asia Business Daily · 05/11",
+      "voiceText": "Chính phủ Hàn Quốc đã họp liên ngành để theo dõi biến động và tác động từ chính sách Mỹ. Đồng won ở mức một nghìn ba trăm bốn mươi hai phẩy một won đổi một đô la vào ba giờ ba mươi chiều. Điều quan trọng tiếp theo là dòng vốn ngoại và những thay đổi chính sách thực tế. Bản tin chỉ cung cấp thông tin, không phải khuyến nghị giao dịch.",
+      "sourceIds": [
+        "ministry-policy",
+        "yonhap-fx"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG VỐN NGOẠI",
+          "CHÍNH SÁCH AI",
+          "TỶ GIÁ WON"
+        ],
+        "cta": true
+      }
+    }
+  ]
+}
