@@ -6,7 +6,7 @@
   "status": "REVIEW_REQUIRED",
   "template": "KciNewsDaily",
   "headline": "KOSPI giảm 5,28%, khối ngoại bán ròng 3,39 nghìn tỷ won",
-  "sourceDisclaimer": "KRX regular close 15:30 KST 2026-11-05; NXT excluded; potential U.S. AI policy changes are investor concerns, not enacted laws.",
+  "sourceDisclaimer": "KRX regular close 15:30 KST 2026-11-05; NXT excluded; potential U.S. AI policy changes are investor concerns, not enacted laws. Primary KRX venue cross-check confirms the 09:00–15:30 KST regular-session definition only; 05 Nov 2026 prices/flows/sector moves rely on dated Yonhap secondary reports (not a direct extracted KRX historical table).",
   "metadata": {
     "stream": "KR_NEWS",
     "slot": "KR_CLOSE",
@@ -61,6 +61,17 @@
         "Finance ministry held interagency meeting to monitor impacts of U.S. midterm elections and potential policy shifts.",
         "Government said impact depends on whether U.S. policy actually changes, and on timing and specifics."
       ]
+    },
+    {
+      "id": "krx-session-venue",
+      "title": "Korea Exchange (KRX) Data Marketplace — quy ước phạm vi phiên chính",
+      "url": "https://data.krx.co.kr/contents/MDC/EASY/main/MDCEASY006.jsp",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-05T19:40:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "The Korea Exchange official data page defines the regular stock-market session as 09:00–15:30 KST; its page does not directly provide the historical Nov 5 closing figures used here, which are attributed to dated Yonhap reporting."
+      ]
     }
   ],
   "hook": {
@@ -68,7 +79,7 @@
     "candidates": [
       {
         "style": "contrast",
-        "text": "KOSPI mất hơn năm phần trăm, khối ngoại bán ròng ba nghìn ba trăm chín mươi tỷ won. Điều gì đang xảy ra?",
+        "text": "KOSPI mất hơn năm phần trăm chỉ trong một phiên. Khối ngoại bán ròng tới ba nghìn ba trăm chín mươi tỷ won. Điều gì khiến thị trường Hàn Quốc lao dốc?",
         "score": 47
       },
       {
@@ -99,7 +110,8 @@
       "source": "Yonhap · 05/11 16:01 KST",
       "voiceText": "KOSPI mất hơn năm phần trăm chỉ trong một phiên. Khối ngoại bán ròng tới ba nghìn ba trăm chín mươi tỷ won. Điều gì khiến thị trường Hàn Quốc lao dốc? Chỉ số KOSPI đóng cửa ở năm nghìn ba trăm tám mươi ba phẩy tám điểm, giảm đúng ba trăm điểm. Trong phiên, cơ quan vận hành sàn kích hoạt cơ chế tạm dừng giao dịch chương trình phía bán trong năm phút lúc mười giờ mười sáu.",
       "sourceIds": [
-        "yonhap-close"
+        "yonhap-close",
+        "krx-session-venue"
       ],
       "stats": [
         {
@@ -110,14 +122,9 @@
         }
       ],
       "visual": {
-        "kind": "comparison",
-        "bars": [
-          {
-            "label": "KOSPI",
-            "display": "−5,28%",
-            "value": -5.28
-          }
-        ]
+        "kind": "spotlight",
+        "value": "−5,28%",
+        "qualifier": "KOSPI · phiên chính KRX ngày 05/11/2026 (số đóng cửa theo Yonhap)"
       }
     },
     {
