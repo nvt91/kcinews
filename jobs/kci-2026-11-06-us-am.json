@@ -17,7 +17,8 @@
   "eventKeys": [
     "us-index-close-2026-11-05",
     "us-semiconductor-selloff-2026-11-05",
-    "brent-market-2026-11-05"
+    "brent-market-2026-11-05",
+    "bls-productivity-q3-2026-2026-11-05"
   ],
   "sourceLedger": [
     {
@@ -53,6 +54,18 @@
       "kind": "secondary",
       "facts": [
         "Russell 2000 -4.4% to 2729.89; figures are completed US regular session 5 November."
+      ]
+    },
+    {
+      "id": "bls-productivity-1105",
+      "title": "BLS Productivity and Costs Q3 2026 preliminary, released Nov 5",
+      "url": "https://www.bls.gov/news.release/prod2.nr0.htm",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-06T09:00:02+09:00",
+      "kind": "primary",
+      "facts": [
+        "US nonfarm business labor productivity Q3 2026 preliminary increased 3.6% quarter-on-quarter seasonally adjusted annualized.",
+        "Unit labor costs declined 0.7% annualized in Q3 2026; preliminary estimates subject to revision."
       ]
     }
   ],
@@ -206,10 +219,11 @@
       "eyebrow": "DẦU & TRÁI PHIẾU",
       "headline": "Dầu Brent tăng · lợi suất giảm",
       "summary": "Dầu hồi phục trong khi dòng tiền tìm tài sản an toàn.",
-      "voiceText": "Cùng phiên, giá dầu Brent tăng khoảng ba phẩy chín phần trăm theo AP, trong bối cảnh bất ổn liên quan Iran. Lợi suất trái phiếu Mỹ giảm khi nhà đầu tư tìm nơi trú ẩn. Hai tín hiệu này có thể tạo sức ép trái chiều lên kỳ vọng lạm phát và chi phí vốn.",
+      "voiceText": "Cùng phiên, giá dầu Brent tăng khoảng ba phẩy chín phần trăm theo AP, trong bối cảnh bất ổn liên quan Iran. Lợi suất trái phiếu Mỹ giảm khi nhà đầu tư tìm nơi trú ẩn. Hai tín hiệu này có thể tạo sức ép trái chiều lên kỳ vọng lạm phát và chi phí vốn. Theo công bố sơ bộ của BLS, năng suất lao động khu vực kinh doanh phi nông nghiệp quý ba tăng ba phẩy sáu phần trăm theo tốc độ năm hóa, còn chi phí lao động trên một đơn vị sản phẩm giảm không phẩy bảy phần trăm.",
       "source": "AP · 05/11/2026",
       "sourceIds": [
-        "ap-1105"
+        "ap-1105",
+        "bls-productivity-1105"
       ],
       "stats": [
         {
@@ -223,7 +237,8 @@
         "bullets": [
           "BRENT +3,9% · 05/11",
           "LỢI SUẤT MỸ GIẢM",
-          "RỦI RO LẠM PHÁT & CHI PHÍ VỐN"
+          "RỦI RO LẠM PHÁT & CHI PHÍ VỐN",
+          "BLS: NĂNG SUẤT Q3 +3,6% · NĂM HÓA"
         ]
       }
     },
