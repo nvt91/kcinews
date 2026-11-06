@@ -36,6 +36,11 @@ export type KciVisual = {
   numericValue?: number;
   scaleMax?: number;
   statusLabel?: string;
+  // Optional Phase-1 visual storytelling assets. Must be local, reviewed and licensed.
+  assetPath?: string; // e.g. assets/kci/semiconductors/fab-01.webp under public/
+  assetKind?: "ai-illustration" | "licensed-photo";
+  assetCredit?: string; // editorial provenance; stored in checked-in job
+  motionStyle?: "standard" | "cinematic";
 };
 
 export type KciCta = {

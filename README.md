@@ -40,6 +40,10 @@ The same mandatory deliverable applies to KR_AM, KR_MID (only with significant n
 
 Each KCI edition the owner starts creates the **complete MP4 with Vietnamese Anh Khôi voice, motion graphics, hook and CTA** before delivery to the owner. The owner reviews the actual encoded video for content and quality; there is no requirement to pre-approve a storyboard or render the unchanged video a second time after approval. Rendering is not permission to post. If a supported technique such as word-alignment precision hasn't been executed, report the QA limitation honestly without claiming a pass or silently withholding an otherwise playable sourced MP4. See [EDITING_WORKFLOW.md](.agents/skills/kci-news-video/references/EDITING_WORKFLOW.md) and [QC.md](.agents/skills/kci-news-video/references/QC.md). This repository has no cron. The owner opens an issue `[KCI VIDEO] YYYY-MM-DD <EDITION>` or dispatches the workflow at the KST slots in [DAILY_CADENCE.md](.agents/skills/kci-news-video/references/DAILY_CADENCE.md). Vbee credentials remain unchanged.
 
+## Optional visual storytelling upgrade (Phase 1 PR only)
+
+A proposed opt-in enhancement adds **cinematic headline reveals** and **subtle panning/zoom on reviewed local illustrative stills** to the active `KciNewsDaily` composition, without changing Vbee, timecodes, fact sourcing or published files. See [KCI Visual Phase 1](docs/KCI_VISUAL_PHASE1.md) for mflux/Qwen offline asset preparation, source/right-of-use disclosure, the `assetPath` / `assetKind` / `assetCredit` job schema fields, and QA. Production jobs lacking these fields render as before. Wan B-roll and MC avatars are later-stage experiments, not installed dependencies.
+
 ## New daily episode workflow
 
 1. Research new KST news and assemble a verified brief with precise source URLs.

@@ -96,6 +96,23 @@ export function validateKciJob(job) {
       scene.id + ": invalid stat cards");
     required(scene.visual && kinds.has(scene.visual.kind),
       scene.id + ": missing visual kind");
+    // Visual illustrations are opt-in, local and source-reviewed. Never fetch untrusted
+    // URLs at render time or let an illustration stand in for financial evidence.
+    if (scene.visual.motionStyle !== undefined) {
+      required(["standard", "cinematic"].includes(scene.visual.motionStyle),
+        scene.id + ": unsupported motion style");
+    }
+    if (scene.visual.assetPath !== undefined) {
+      required(typeof scene.visual.assetPath === "string" &&
+        /^assets\/kci\/[a-z0-9-]+(?:\/[a-z0-9-]+)*\.(png|jpe?g|webp)$/.test(scene.visual.assetPath),
+        scene.id + ": visual asset must be a local public/assets/kci png/jpg/webp");
+      required(["ai-illustration", "licensed-photo"].includes(scene.visual.assetKind),
+        scene.id + ": visual asset disclosure kind required");
+      required(nonempty(scene.visual.assetCredit, 5, 240),
+        scene.id + ": visual asset source/license/provenance required");
+      required(fs.existsSync(path.join("public", scene.visual.assetPath)),
+        scene.id + ": referenced visual asset does not exist in checked-out repo");
+    }
     if (scene.visual.kind === "reversal") {
       required(Array.isArray(scene.visual.milestones) &&
         scene.visual.milestones.length === 3 &&
