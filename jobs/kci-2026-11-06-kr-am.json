@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-06-kr-am",
+  "edition": "06/11/2026 KR_AM — bản sáng cập nhật muộn (tin đến 11:35 KST)",
+  "dataAsOf": "2026-11-06T11:35:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI lao dốc, KRX kích hoạt circuit breaker; Hàn Quốc theo dõi rủi ro AI",
+  "sourceDisclaimer": "Dữ liệu chứng khoán theo phiên sáng 06/11 (không phải giá đóng cửa); báo cáo cán cân vãng lai BOK công bố 05/11 cho tháng 09/2026. Không là khuyến nghị giao dịch.",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "articleId": "KCI-20261106-KR-AM",
+  "articlePath": "editorial/2026-11-06/kr-am.md",
+  "eventKeys": [
+    "krx-kospi-circuit-breaker-2026-11-06",
+    "bok-september-current-account-release-2026-11-05"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "yonhap-1106",
+      "title": "Yonhap 06 Nov: KOSPI halted after early selloff",
+      "url": "https://en.yna.co.kr/view/AEN20261106002100320",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T16:57:07+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KRX suspended KOSPI stock trading at 09:03 KST for 20 minutes after an early drop of more than 8%.",
+        "Concerns that US AI data-center investment might slow after the midterm election contributed to Korean chip-stock pressure; this is market concern, not enacted regulation."
+      ]
+    },
+    {
+      "id": "kbs-1106",
+      "title": "KBS World 06 Nov: early KOSPI fall and circuit breaker",
+      "url": "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=205388&lang=e",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T16:57:07+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The index stood at 4,924.61, down 459.19 points or 8.52%, when trading was halted for 20 minutes at 09:03.",
+        "A sell-side sidecar was separately activated later; do not describe these as one event."
+      ]
+    },
+    {
+      "id": "bok-1105",
+      "title": "Bank of Korea: September 2026 Balance of Payments preliminary",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11066295&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-06T16:57:07+09:00",
+      "kind": "primary",
+      "facts": [
+        "The current account recorded USD 61.46 billion surplus in September 2026; release date 5 November 2026.",
+        "Financial-account net assets increased USD 54.34 billion in September 2026; it is a separate statistic, not the same as spot FX flows."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI rơi hơn tám phần trăm ngay đầu phiên, buộc sàn Hàn Quốc tạm ngừng giao dịch. Vì sao cú sốc này xảy ra?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI rơi hơn tám phần trăm ngay đầu phiên, buộc sàn Hàn Quốc tạm ngừng giao dịch. Vì sao cú sốc này xảy ra?",
+        "score": 92
+      },
+      {
+        "style": "impact",
+        "text": "Cổ phiếu chip chịu sức ép từ Mỹ và KOSPI tạm ngừng giao dịch. Điều gì đáng theo dõi?",
+        "score": 88
+      },
+      {
+        "style": "question",
+        "text": "Sau một đêm Phố Wall lao dốc, vì sao KOSPI phải kích hoạt circuit breaker?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, dòng vốn ngoại hay triển vọng ngành chip mới là tín hiệu cần theo dõi sau cú giảm này? Bình luận góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "DÒNG VỐN HAY NHÓM CHIP?",
+    "screenSubline": "Anh chị sẽ quan sát tín hiệu nào?",
+    "question": "Dòng vốn ngoại hay triển vọng ngành chip quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "THỊ TRƯỜNG HÀN · SÁNG 06/11",
+      "headline": "KOSPI giảm hơn 8% đầu phiên",
+      "summary": "KRX phải kích hoạt cơ chế ngắt giao dịch.",
+      "voiceText": "KOSPI rơi hơn tám phần trăm ngay đầu phiên, buộc sàn Hàn Quốc tạm ngừng giao dịch. Vì sao cú sốc này xảy ra? Cần phân biệt nhịp rơi lúc mở cửa với kết quả cuối ngày: đây là thông tin phiên sáng ngày sáu tháng mười một.",
+      "source": "Yonhap / KBS · 06/11/2026",
+      "sourceIds": [
+        "yonhap-1106",
+        "kbs-1106"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · LÚC NGẮT MẠCH",
+          "value": "−8,52%",
+          "tone": "down"
+        },
+        {
+          "label": "TẠM DỪNG",
+          "value": "20 phút",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI · 09:03",
+            "value": -8.52,
+            "display": "−8,52%"
+          },
+          {
+            "label": "NGƯỠNG NGẮT MẠCH",
+            "value": -8,
+            "display": "−8%"
+          }
+        ],
+        "qualifier": "Chỉ là mốc đầu phiên 06/11, không phải điểm đóng cửa"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "CƠ CHẾ BẢO VỆ THỊ TRƯỜNG",
+      "headline": "Dừng giao dịch từ 09:03",
+      "summary": "Giảm sốc và gián đoạn giao dịch trong 20 phút.",
+      "voiceText": "Theo KBS, lúc chín giờ ba phút, KOSPI ở mốc bốn nghìn chín trăm hai mươi bốn phẩy sáu mốt điểm, thấp hơn tám phẩy năm hai phần trăm so với phiên trước. Cơ chế circuit breaker tạm dừng giao dịch hai mươi phút. Đây là một biện pháp ổn định thị trường, không phải đóng cửa cả ngày.",
+      "source": "KBS · 06/11/2026",
+      "sourceIds": [
+        "kbs-1106",
+        "yonhap-1106"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI TẠI 09:03",
+          "value": "4.924,61",
+          "tone": "down"
+        },
+        {
+          "label": "THỜI GIAN DỪNG",
+          "value": "20 phút",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "09:03 · KRX NGẮT MẠCH",
+          "KOSPI 4.924,61 ĐIỂM",
+          "DỪNG GIAO DỊCH 20 PHÚT",
+          "KHÔNG PHẢI ĐIỂM ĐÓNG CỬA"
+        ]
+      }
+    },
+    {
+      "id": "ai",
+      "eyebrow": "VÌ SAO NHÓM CHIP YẾU?",
+      "headline": "Lo ngại chính sách AI tại Mỹ",
+      "summary": "Rủi ro kỳ vọng đầu tư trung tâm dữ liệu.",
+      "voiceText": "Tâm lý bán tháo bắt nguồn một phần từ cú giảm cổ phiếu công nghệ Mỹ. Nhà đầu tư lo những thay đổi chính sách sau bầu cử giữa nhiệm kỳ có thể làm chậm đầu tư trung tâm dữ liệu AI. Đó là rủi ro được thị trường dự đoán, không phải bằng chứng một quy định hạn chế mới đã có hiệu lực.",
+      "source": "Yonhap · 06/11/2026",
+      "sourceIds": [
+        "yonhap-1106"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "company",
+        "company": "AI & BÁN DẪN",
+        "bullets": [
+          "LO NGẠI CHÍNH SÁCH MỸ",
+          "ĐẦU TƯ TRUNG TÂM DỮ LIỆU",
+          "CHƯA PHẢI QUY ĐỊNH MỚI"
+        ]
+      }
+    },
+    {
+      "id": "bok",
+      "eyebrow": "DỮ LIỆU VĨ MÔ HÀN QUỐC",
+      "headline": "Thặng dư vãng lai tháng 9 kỷ lục",
+      "summary": "BOK công bố số liệu sơ bộ ngày 05/11.",
+      "voiceText": "Trong khi thị trường biến động, Ngân hàng Trung ương Hàn Quốc vừa công bố thặng dư tài khoản vãng lai tháng chín đạt sáu mươi mốt phẩy bốn sáu tỷ đô la Mỹ. Đây là số liệu tháng chín, công bố ngày năm tháng mười một, không phải diễn biến vốn ngoại ngay trong phiên sáng. Không nên dùng một chỉ số để kết luận đồng won sẽ tăng.",
+      "source": "Bank of Korea · 05/11/2026",
+      "sourceIds": [
+        "bok-1105"
+      ],
+      "stats": [
+        {
+          "label": "THẶNG DƯ VÃNG LAI THÁNG 9",
+          "value": "61,46 tỷ USD",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "BOK · SỐ LIỆU THÁNG 09",
+          "THẶNG DƯ 61,46 TỶ USD",
+          "CÔNG BỐ 05/11/2026",
+          "KHÔNG PHẢI DÒNG TIỀN PHIÊN SÁNG"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Đừng nhầm biến động với xu hướng",
+      "summary": "Dữ liệu cần tách theo phiên và thời điểm.",
+      "voiceText": "Điểm đáng theo dõi tiếp theo là phản ứng của cổ phiếu bán dẫn, dòng vốn ngoại và tỷ giá đô la trên won khi giao dịch ổn định hơn. Biến động đầu phiên không tự nó quyết định triển vọng dài hạn. Bản tin dùng dữ liệu đến cuối buổi sáng ngày sáu tháng mười một và chỉ mang tính tham khảo, không phải khuyến nghị giao dịch.",
+      "source": "Yonhap / BOK · 05–06/11/2026",
+      "sourceIds": [
+        "yonhap-1106",
+        "bok-1105"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "THEO DÕI CỔ PHIẾU CHIP",
+          "DÒNG VỐN NGOẠI & USD/KRW",
+          "XÁC NHẬN DỮ LIỆU SAU PHIÊN"
+        ],
+        "qualifier": "Bản sáng cập nhật muộn · cutoff 11:35 KST"
+      }
+    }
+  ]
+}
