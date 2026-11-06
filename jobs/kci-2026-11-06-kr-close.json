@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-06-kr-close",
+  "edition": "06/11/2026 KR_CLOSE · KRX chính 15:30 KST",
+  "dataAsOf": "2026-11-06T16:15:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI đóng cửa giảm 6,02% sau circuit breaker, khối ngoại bán ròng gần 2,8 nghìn tỷ won",
+  "sourceDisclaimer": "KRX main session close 6 Nov 2026. Source: Reuters and NewsPim citing KRX; Bank of Korea bulletin released 6 Nov describes Nov 5 previous session; USD/KRW Seoul 15:30 reference. Not a recommendation.",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "articleId": "KCI-20261106-KR-CLOSE",
+  "articlePath": "editorial/2026-11-06/kr-close.md",
+  "eventKeys": [
+    "krx-kospi-circuit-breaker-close-2026-11-06",
+    "krx-foreign-selloff-chip-2026-11-06",
+    "seoul-fx-usdkrw-close-2026-11-06"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "reuters-close-1106",
+      "title": "Reuters: South Korea stocks plunge as US midterm results spark AI selloff — 06 Nov 2026",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-stocks-plunge-8-circuit-breaker-triggered-chip-shares-tumble-2026-11-06/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T17:04:39+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed at 5,059.69, down 6.02% on Friday 6 November after early intraday loss as much as 8.8%.",
+        "Samsung Electronics fell about 6.4%, SK Hynix about 10.4%; foreign investors net sold approximately 2.8 trillion KRW.",
+        "AI/data-center restrictions are market concerns, not proof of enactment."
+      ]
+    },
+    {
+      "id": "newspim-close-1106",
+      "title": "NewsPim KRX market close bulletin 06 Nov 2026, published 16:01 KST",
+      "url": "https://www.newspim.com/news/view/20261106000927",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T17:04:39+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed 5,059.69, 324.11 points or 6.02% below prior close.",
+        "Retail and institutions bought ~605.1 billion and 1.6998 trillion KRW, foreigners net sold 2.769 trillion KRW on KOSPI, as sourced to KRX.",
+        "Circuit breaker triggered early as KOSPI fell over 8%, and institutions later provided support."
+      ]
+    },
+    {
+      "id": "newspim-fx-1106",
+      "title": "NewsPim markets end-of-day 06 Nov 2026, published 16:10 KST",
+      "url": "https://ir.newspim.com/news/view/20261106000988",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T17:04:39+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSDAQ closed 644.27, down 34.14 points or 5.03%.",
+        "USD/KRW Seoul FX market 15:30 reference was 1,356.6 KRW per USD, up 14.5 KRW from previous daily close.",
+        "KOSPI closed at 5,059.69, down 6.02%."
+      ]
+    },
+    {
+      "id": "bok-daily-1106",
+      "title": "Bank of Korea daily financial market indicators published 6 November 2026 for 5 November session",
+      "url": "https://www.bok.or.kr/portal/bbs/P0002018/view.do?depth=200366&menuNo=200366&nttId=11066361&oldMenuNo=201150&programType=newsData&relate=Y",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-06T17:04:39+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK's daily bulletin published 6 Nov states KOSPI moved from 5,683.8 to 5,383.8 during 5 Nov.",
+        "The bulletin states USD/KRW moved 1,341.5 to 1,342.1 on 5 Nov.",
+        "Bulletin reflects previous completed session; it must not be misrepresented as today's 6 Nov close."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Sau khi giao dịch bị ngắt sáng nay, KOSPI vẫn đóng cửa giảm hơn sáu phần trăm. Vì sao thị trường khó phục hồi?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Sau khi giao dịch bị ngắt sáng nay, KOSPI vẫn đóng cửa giảm hơn sáu phần trăm. Vì sao thị trường khó phục hồi?",
+        "score": 94
+      },
+      {
+        "style": "impact",
+        "text": "KOSPI mất thêm sáu phần trăm, khối ngoại bán gần ba nghìn tỷ won. Đà bán tháo đã kết thúc?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Vì sao KOSPI vẫn mất hơn sáu phần trăm dù đã hồi từ mức giảm gần chín phần trăm?",
+        "score": 89
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, lực bán của khối ngoại hay triển vọng đầu tư AI sẽ quyết định tâm lý thị trường tuần tới? Chia sẻ góc nhìn và theo dõi Korea Capital Insight nhé.",
+    "screenHeadline": "RỦI RO NÀO LỚN HƠN?",
+    "screenSubline": "Khối ngoại hay triển vọng AI?",
+    "question": "Lực bán ngoại hay triển vọng AI quyết định thị trường tuần tới?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KOSPI · CHỐT PHIÊN 06/11",
+      "headline": "KOSPI −6,02% sau ngắt mạch",
+      "summary": "Đóng cửa 5.059,69 điểm, dù đã hồi từ đáy trong phiên.",
+      "voiceText": "Sau khi giao dịch bị ngắt sáng nay, KOSPI vẫn đóng cửa giảm hơn sáu phần trăm. Vì sao thị trường khó phục hồi? Đầu phiên, KRX phải tạm dừng giao dịch hai mươi phút vì chỉ số giảm hơn tám phần trăm. Đến cuối phiên chính ngày sáu tháng mười một, KOSPI vẫn giảm sáu phẩy không hai phần trăm.",
+      "source": "Reuters / NewsPim · 06/11",
+      "sourceIds": [
+        "reuters-close-1106",
+        "newspim-close-1106"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI ĐÓNG CỬA",
+          "value": "5.059,69",
+          "tone": "down"
+        },
+        {
+          "label": "THAY ĐỔI",
+          "value": "−6,02%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "ĐẦU PHIÊN",
+            "value": -8.52,
+            "display": "−8,52%"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": -6.02,
+            "display": "−6,02%"
+          }
+        ],
+        "qualifier": "Đầu phiên vs đóng cửa KRX chính · 06/11"
+      }
+    },
+    {
+      "id": "market",
+      "eyebrow": "ĐIỀU GÌ XẢY RA?",
+      "headline": "Ngắt giao dịch 20 phút đầu phiên",
+      "summary": "Nhịp bán tháo dữ dội không đồng nghĩa đóng cửa cả ngày.",
+      "voiceText": "Ngay đầu buổi sáng, mức giảm quá tám phần trăm khiến sàn kích hoạt circuit breaker. Giao dịch chỉ bị ngắt tạm thời rồi tiếp tục. Các báo cáo cuối ngày xác nhận KOSPI giảm ba trăm hai mươi bốn phẩy mười một điểm so với hôm trước, không phải giảm tám phần trăm lúc đóng cửa.",
+      "source": "Reuters / NewsPim · 06/11",
+      "sourceIds": [
+        "reuters-close-1106",
+        "newspim-close-1106"
+      ],
+      "stats": [
+        {
+          "label": "ĐIỂM GIẢM CẢ PHIÊN",
+          "value": "324,11",
+          "tone": "down"
+        },
+        {
+          "label": "NGẮT MẠCH",
+          "value": "20 phút",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "09:03 · CIRCUIT BREAKER",
+          "TẠM NGƯNG 20 PHÚT",
+          "ĐÓNG CỬA −324,11 ĐIỂM",
+          "KHÔNG PHẢI PHIÊN NGƯNG CẢ NGÀY"
+        ]
+      }
+    },
+    {
+      "id": "flows",
+      "eyebrow": "DÒNG TIỀN TRÊN KRX",
+      "headline": "Khối ngoại bán ròng 2,77 nghìn tỷ ₩",
+      "summary": "Tổ chức và cá nhân mua vào nhưng không đảo chiều chỉ số.",
+      "voiceText": "Áp lực nổi bật đến từ dòng tiền ngoại: nhà đầu tư nước ngoài bán ròng khoảng hai nghìn bảy trăm sáu mươi chín tỷ won trên sàn chính. Trong khi đó, tổ chức mua ròng gần một nghìn bảy trăm tỷ, và cá nhân mua hơn sáu trăm tỷ won. Chênh lệch này cho thấy lực đỡ trong nước vẫn chưa đủ đảo chiều thị trường.",
+      "source": "NewsPim dẫn KRX · 06/11",
+      "sourceIds": [
+        "newspim-close-1106"
+      ],
+      "stats": [
+        {
+          "label": "KHỐI NGOẠI",
+          "value": "−2,77 nghìn tỷ ₩",
+          "tone": "down"
+        },
+        {
+          "label": "TỔ CHỨC",
+          "value": "+1,70 nghìn tỷ ₩",
+          "tone": "up"
+        },
+        {
+          "label": "CÁ NHÂN",
+          "value": "+605 tỷ ₩",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "risk-bars",
+        "bars": [
+          {
+            "label": "KHỐI NGOẠI",
+            "value": -2.769,
+            "display": "−2,77 nghìn tỷ ₩"
+          },
+          {
+            "label": "TỔ CHỨC",
+            "value": 1.6998,
+            "display": "+1,70 nghìn tỷ ₩"
+          },
+          {
+            "label": "CÁ NHÂN",
+            "value": 0.6051,
+            "display": "+605 tỷ ₩"
+          }
+        ],
+        "qualifier": "Giá trị mua bán ròng, sàn KOSPI 06/11"
+      }
+    },
+    {
+      "id": "chip",
+      "eyebrow": "BÁN DẪN & AI",
+      "headline": "SK hynix giảm hơn 10%",
+      "summary": "Samsung Electronics cũng mất hơn 6% trong phiên.",
+      "voiceText": "Làn sóng giảm lan sang nhóm chip Hàn Quốc: theo Reuters, Samsung Electronics mất khoảng sáu phẩy bốn phần trăm, còn SK hynix giảm khoảng mười phẩy bốn phần trăm. Nhà đầu tư lo ngại chính sách Mỹ có thể ảnh hưởng tiến độ đầu tư AI. Đó là kỳ vọng rủi ro, không phải bằng chứng doanh nghiệp đã công bố hủy các dự án trung tâm dữ liệu.",
+      "source": "Reuters · 06/11",
+      "sourceIds": [
+        "reuters-close-1106"
+      ],
+      "stats": [
+        {
+          "label": "SAMSUNG ELECTRONICS",
+          "value": "khoảng −6,4%",
+          "tone": "down"
+        },
+        {
+          "label": "SK HYNIX",
+          "value": "khoảng −10,4%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "KOREA SEMICONDUCTORS",
+        "bullets": [
+          "SAMSUNG ELECTRONICS −6,4%",
+          "SK HYNIX −10,4%",
+          "RỦI RO AI LÀ KỲ VỌNG THỊ TRƯỜNG"
+        ]
+      }
+    },
+    {
+      "id": "fx",
+      "eyebrow": "KOSDAQ & NGOẠI HỐI",
+      "headline": "KOSDAQ −5,03% · USD/KRW 1.356,6",
+      "summary": "Tham chiếu thị trường ngoại hối Seoul lúc 15:30 KST.",
+      "voiceText": "KOSDAQ đóng cửa ở sáu trăm bốn mươi bốn phẩy hai bảy điểm, giảm năm phẩy không ba phần trăm. Tại thị trường ngoại hối Seoul lúc ba giờ ba mươi chiều, một đô la Mỹ đổi một nghìn ba trăm năm mươi sáu phẩy sáu won, tăng mười bốn phẩy năm won so với ngày trước. Bản tin BOK công bố sáng nay chỉ phản ánh phiên hôm qua; đừng nhầm hai mốc thời gian.",
+      "source": "NewsPim 06/11; BOK công bố 06/11 cho phiên 05/11",
+      "sourceIds": [
+        "newspim-fx-1106",
+        "bok-daily-1106"
+      ],
+      "stats": [
+        {
+          "label": "KOSDAQ ĐÓNG CỬA",
+          "value": "644,27",
+          "tone": "down"
+        },
+        {
+          "label": "USD/KRW · 15:30",
+          "value": "1.356,6",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "KOSDAQ 644,27 · −5,03%",
+          "USD/KRW 1.356,6",
+          "MỐC NGOẠI HỐI 15:30 KST",
+          "BOK 06/11 BÁO PHIÊN 05/11"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Tách kỳ vọng với dữ kiện",
+      "summary": "Dòng vốn ngoại và lợi nhuận chip vẫn quan trọng.",
+      "voiceText": "Sau hai phiên lao dốc, dữ liệu cần xem tiếp là lực bán của khối ngoại, diễn biến đơn hàng chip và thông báo chính sách thực tế từ Mỹ. Việc chỉ số hồi từ đáy trong ngày không tự động đồng nghĩa xu hướng giảm đã chấm dứt. Bản tin dựa trên số liệu kết phiên chính KRX ngày sáu tháng mười một và chỉ mang tính tham khảo, không phải khuyến nghị giao dịch.",
+      "source": "Reuters / NewsPim / BOK · 06/11",
+      "sourceIds": [
+        "reuters-close-1106",
+        "newspim-close-1106",
+        "bok-daily-1106"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KHỐI NGOẠI & DÒNG TIỀN",
+          "NHÓM CHIP & ĐẦU TƯ AI",
+          "TỶ GIÁ & THÔNG TIN CHÍNH SÁCH"
+        ],
+        "qualifier": "KRX main close · 06/11/2026 · Không khuyến nghị đầu tư"
+      }
+    }
+  ]
+}
