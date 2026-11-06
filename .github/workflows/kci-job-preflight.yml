@@ -1,0 +1,67 @@
+name: KCI Job Preflight — no Vbee
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'jobs/**'
+      - '.github/workflows/kci-job-preflight.yml'
+  pull_request:
+    paths:
+      - 'jobs/**'
+      - '.github/workflows/kci-job-preflight.yml'
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Existing schemaVersion 2 job path (jobs/*.json); validation only'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify schema validator (no TTS, no render)
+        run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
+      - name: Validate the selected or changed production jobs BEFORE a paid video issue
+        shell: bash
+        env:
+          SELECTED_JOB: ${{ inputs.job || '' }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" ]]; then
+            if [[ ! "$SELECTED_JOB" =~ ^jobs/[a-z0-9-]+\.json$ || ! -f "$SELECTED_JOB" ]]; then
+              echo "::error::Choose a checked-in job under jobs/."
+              exit 1
+            fi
+            echo "Validating $SELECTED_JOB"
+            node scripts/validate-kci-job.mjs "$SELECTED_JOB"
+            exit 0
+          fi
+          if [[ -z "$BASE_SHA" ]] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            BASE_SHA="$(git rev-list --max-parents=0 HEAD | tail -n1)"
+          fi
+          changed="$(git diff --name-only "$BASE_SHA" HEAD -- jobs || true)"
+          checked=0
+          while IFS= read -r filename; do
+            [[ "$filename" =~ ^jobs/[a-z0-9-]+\.json$ ]] || continue
+            [[ -f "$filename" ]] || continue
+            version="$(node -p 'JSON.parse(require("node:fs").readFileSync(process.argv[1],"utf8")).schemaVersion' "$filename")"
+            if [[ "$version" == "2" ]]; then
+              echo "Preflighting $filename"
+              node scripts/validate-kci-job.mjs "$filename"
+              checked=$((checked+1))
+            fi
+          done <<< "$changed"
+          echo "Validated $checked changed schemaVersion 2 jobs without voice synthesis."
