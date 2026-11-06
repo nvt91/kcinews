@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-06-us-am",
+  "articleId": "KCI-20261106-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "06/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-06T09:00:02+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq giảm 5,52%, SOX mất hơn 12%: AI và rủi ro lan sang Hàn Quốc",
+  "sourceDisclaimer": "Số liệu đóng cửa phiên chính Mỹ 05/11/2026, không phải giá trực tiếp 09:00 KST.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-06/us-am.md",
+  "eventKeys": [
+    "us-index-close-2026-11-05",
+    "us-semiconductor-selloff-2026-11-05",
+    "brent-market-2026-11-05"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-1105",
+      "title": "AP: Wall Street AI selloff 5 November",
+      "url": "https://apnews.com/article/7ee9c212805aa5e70cf34d25aab7a36e",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-06T09:00:02+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -4.36% to 7353.73; Dow -3.44% to 51523.06; Nasdaq -5.52% to about 24315.",
+        "Nvidia -9.3%, AMD -17.3%, Brent crude rose 3.9%."
+      ]
+    },
+    {
+      "id": "reuters-1105",
+      "title": "Reuters: Nasdaq biggest daily fall in 19 months",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-06T09:00:02+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq -5.52%, S&P -4.36%, Dow -3.44%; Philadelphia semiconductor index down more than 12%.",
+        "Investors reassessed AI infrastructure spending and potential regulation after midterm elections."
+      ]
+    },
+    {
+      "id": "ap-index-1105",
+      "title": "AP: US major stock indexes 5 November 2026",
+      "url": "https://apnews.com/article/afe254c608c3d1fe2ea792812ba9765a",
+      "eventDate": "2026-11-05",
+      "checkedAt": "2026-11-06T09:00:02+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Russell 2000 -4.4% to 2729.89; figures are completed US regular session 5 November."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq giảm hơn năm phần trăm trong một phiên. Nhóm bán dẫn Mỹ còn giảm sâu hơn. Điều gì đang xảy ra với làn sóng AI?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Nasdaq giảm hơn năm phần trăm trong một phiên. Nhóm bán dẫn Mỹ còn giảm sâu hơn. Điều gì đang xảy ra với làn sóng AI?",
+        "score": 92
+      },
+      {
+        "style": "korea-impact",
+        "text": "Chip Mỹ giảm hơn mười hai phần trăm. Điều gì đang chờ thị trường Hàn Quốc?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Vì sao Nasdaq giảm hơn năm phần trăm chỉ sau một ngày Phố Wall tăng mạnh?",
+        "score": 89
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, áp lực từ chip Mỹ hay tỷ giá sẽ ảnh hưởng KOSPI nhiều hơn? Chia sẻ góc nhìn cùng Korea Capital Insight nhé.",
+    "screenHeadline": "CHIP MỸ HAY TỶ GIÁ?",
+    "screenSubline": "Anh chị đang theo dõi yếu tố nào?",
+    "question": "Chip Mỹ hay tỷ giá sẽ ảnh hưởng KOSPI nhiều hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 05/11",
+      "headline": "Nasdaq −5,52% · chip Mỹ lao dốc",
+      "summary": "Phiên Mỹ thứ Năm giảm mạnh, nhóm AI chịu áp lực lớn.",
+      "voiceText": "Nasdaq giảm hơn năm phần trăm trong một phiên. Nhóm bán dẫn Mỹ còn giảm sâu hơn. Điều gì đang xảy ra với làn sóng AI?",
+      "source": "Reuters · 05/11/2026",
+      "sourceIds": [
+        "reuters-1105"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "−5,52%",
+          "tone": "down"
+        },
+        {
+          "label": "CHỈ SỐ CHIP SOX",
+          "value": "giảm hơn 12%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -5.52,
+            "display": "−5,52%"
+          },
+          {
+            "label": "SOX",
+            "value": -12,
+            "display": "hơn −12%"
+          }
+        ],
+        "qualifier": "Phiên chính Mỹ 05/11 · SOX giảm hơn 12%, không phải đúng 12%"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỐT PHIÊN MỸ",
+      "headline": "S&P 500 −4,36% · Dow −3,44%",
+      "summary": "Đà bán lan rộng ra ngoài nhóm công nghệ.",
+      "voiceText": "Chốt phiên Mỹ ngày năm tháng mười một, S&P năm trăm giảm bốn phẩy ba sáu phần trăm, còn Dow Jones giảm ba phẩy bốn bốn phần trăm. Russell hai nghìn cũng giảm khoảng bốn phẩy bốn phần trăm. Áp lực bán không chỉ nằm ở cổ phiếu công nghệ.",
+      "source": "AP / AP · 05/11/2026",
+      "sourceIds": [
+        "ap-1105",
+        "ap-index-1105"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.353,73",
+          "tone": "down"
+        },
+        {
+          "label": "DOW JONES",
+          "value": "51.523,06",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -4.36,
+            "display": "−4,36%"
+          },
+          {
+            "label": "DOW",
+            "value": -3.44,
+            "display": "−3,44%"
+          },
+          {
+            "label": "RUSSELL 2000",
+            "value": -4.4,
+            "display": "−4,4%"
+          }
+        ],
+        "qualifier": "Đóng cửa phiên Mỹ 05/11/2026 · AP"
+      }
+    },
+    {
+      "id": "chip",
+      "eyebrow": "BÁN DẪN & AI",
+      "headline": "Nvidia −9,3% · AMD −17,3%",
+      "summary": "Lo ngại tiến độ trung tâm dữ liệu và hiệu quả đầu tư AI.",
+      "voiceText": "Nvidia mất khoảng chín phẩy ba phần trăm, còn AMD giảm hơn mười bảy phần trăm. Nhà đầu tư lo việc mở rộng trung tâm dữ liệu có thể chậm lại vì chi phí vốn, phản đối tại địa phương và thay đổi chính sách. Đây là những lo ngại của thị trường, chưa phải bằng chứng mọi dự án AI đều bị hủy.",
+      "source": "AP / Reuters · 05/11/2026",
+      "sourceIds": [
+        "ap-1105",
+        "reuters-1105"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "−9,3%",
+          "tone": "down"
+        },
+        {
+          "label": "AMD",
+          "value": "−17,3%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "AI & SEMICONDUCTORS",
+        "bullets": [
+          "NVIDIA −9,3%",
+          "AMD −17,3%",
+          "SOX GIẢM HƠN 12%"
+        ]
+      }
+    },
+    {
+      "id": "macro",
+      "eyebrow": "DẦU & TRÁI PHIẾU",
+      "headline": "Dầu Brent tăng · lợi suất giảm",
+      "summary": "Dầu hồi phục trong khi dòng tiền tìm tài sản an toàn.",
+      "voiceText": "Cùng phiên, giá dầu Brent tăng khoảng ba phẩy chín phần trăm theo AP, trong bối cảnh bất ổn liên quan Iran. Lợi suất trái phiếu Mỹ giảm khi nhà đầu tư tìm nơi trú ẩn. Hai tín hiệu này có thể tạo sức ép trái chiều lên kỳ vọng lạm phát và chi phí vốn.",
+      "source": "AP · 05/11/2026",
+      "sourceIds": [
+        "ap-1105"
+      ],
+      "stats": [
+        {
+          "label": "BRENT",
+          "value": "+3,9%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "BRENT +3,9% · 05/11",
+          "LỢI SUẤT MỸ GIẢM",
+          "RỦI RO LẠM PHÁT & CHI PHÍ VỐN"
+        ]
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG HÀN QUỐC",
+      "headline": "KOSPI · KOSDAQ · USD/KRW",
+      "summary": "Rủi ro bán dẫn, tỷ giá và dòng vốn cần theo dõi.",
+      "voiceText": "Với Hàn Quốc, nếu đà bán cổ phiếu chip Mỹ kéo dài, nhóm bán dẫn và KOSPI có thể chịu áp lực tâm lý. KOSDAQ cũng nhạy cảm với khẩu vị rủi ro. Nhưng tác động thực tế còn phụ thuộc đơn hàng xuất khẩu, dòng vốn ngoại và tỷ giá đô la trên won. Cần theo dõi phản ứng phiên Hàn Quốc, không suy diễn chắc chắn từ một đêm Phố Wall.",
+      "source": "AP / Reuters · 05/11/2026",
+      "sourceIds": [
+        "ap-1105",
+        "reuters-1105"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "CHIP: TÂM LÝ & ĐƠN HÀNG",
+          "USD/KRW: THEO DÕI BIẾN ĐỘNG",
+          "DÒNG VỐN NGOẠI: RỦI RO"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Theo dõi dữ liệu, tránh suy diễn",
+      "summary": "Tin tức tham khảo, không phải khuyến nghị giao dịch.",
+      "voiceText": "Các mốc đáng chú ý tiếp theo là báo cáo việc làm Mỹ và phản ứng của nhóm bán dẫn Hàn Quốc. Bản tin mang tính tham khảo, không phải khuyến nghị giao dịch.",
+      "source": "AP / Reuters · 05/11/2026",
+      "sourceIds": [
+        "ap-1105",
+        "reuters-1105"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "NASDAQ −5,52% · 05/11",
+          "SOX GIẢM HƠN 12%",
+          "THEO DÕI VIỆC LÀM MỸ"
+        ],
+        "qualifier": "Thông tin tham khảo · không phải khuyến nghị giao dịch"
+      }
+    }
+  ]
+}
