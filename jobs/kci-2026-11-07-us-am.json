@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-07-us-am",
+  "articleId": "KCI-20261107-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "07/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-07T09:02:26+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Chip Mỹ bật lại, Nasdaq vẫn giảm cả tuần: việc làm Mỹ và rủi ro Hàn Quốc",
+  "sourceDisclaimer": "Đóng cửa phiên chính Mỹ thứ Sáu 06/11/2026; lúc 09:02 KST thứ Bảy 07/11, Mỹ đã kết thúc phiên (EST, UTC−5). Số liệu BLS tháng 10 sơ bộ.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-07/us-am.md",
+  "eventKeys": [
+    "us-index-close-2026-11-06",
+    "us-chip-rebound-2026-11-06",
+    "bls-jobs-october-2026-2026-11-06",
+    "korea-fx-risk-2026-11-06"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-close",
+      "title": "Reuters — Nasdaq rebounds but posts fourth straight weekly decline",
+      "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T09:02:26+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Friday regular close: S&P 500 7376.86 +0.32%, Nasdaq 24579.43 +1.1%, Dow 51285.73 -0.46%.",
+        "SOX +4.2%; Nvidia +2.8%, AMD +11%; Nasdaq -3.4% for week, S&P -2.7%, Dow -0.9%.",
+        "Reuters: market-implied probability of December Fed hike 78% from LSEG; not a Fed decision."
+      ]
+    },
+    {
+      "id": "bls-jobs",
+      "title": "BLS — Employment Situation October 2026",
+      "url": "https://www.bls.gov/ces/news.htm",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T09:02:26+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 nonfarm payrolls +165000 (preliminary); unemployment rate 4.1%."
+      ]
+    },
+    {
+      "id": "bls-household",
+      "title": "BLS — Employment Situation Table A October 2026",
+      "url": "https://www.bls.gov/news.release/empsit.a.htm",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T09:02:26+09:00",
+      "kind": "primary",
+      "facts": [
+        "October unemployment 4.1%, September 4.2%, seasonally adjusted."
+      ]
+    },
+    {
+      "id": "bls-establishment",
+      "title": "BLS — Employment Situation Table B October 2026",
+      "url": "https://www.bls.gov/news.release/empsit.b.htm",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T09:02:26+09:00",
+      "kind": "primary",
+      "facts": [
+        "October nonfarm payroll monthly change +165000 (thousands table shows 165), preliminary."
+      ]
+    },
+    {
+      "id": "fx-mufg",
+      "title": "MUFG Research — Asia FX Weekly 6 November",
+      "url": "https://www.mufgresearch.com/fx/asia-fx-weekly-6-november-2026/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T09:02:26+09:00",
+      "kind": "analysis",
+      "facts": [
+        "MUFG notes KRW sensitivity to semiconductor equity and foreign flows; next week's US CPI and PPI are risks, not yet released."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Chip Mỹ bật tăng hơn bốn phần trăm trong phiên thứ Sáu, nhưng Nasdaq vẫn giảm hơn ba phần trăm cả tuần. Vì sao thị trường chưa hết lo?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Chip Mỹ bật tăng hơn bốn phần trăm trong phiên thứ Sáu, nhưng Nasdaq vẫn giảm hơn ba phần trăm cả tuần. Vì sao thị trường chưa hết lo?",
+        "score": 92
+      },
+      {
+        "style": "korea-impact",
+        "text": "Chip Mỹ bật tăng sau cú lao dốc. Thị trường Hàn Quốc sẽ phản ứng ra sao?",
+        "score": 90
+      },
+      {
+        "style": "macro",
+        "text": "Việc làm Mỹ tăng mạnh, Fed có thể chịu áp lực gì khi Nasdaq vẫn giảm cả tuần?",
+        "score": 88
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà hồi phục chip Mỹ hay tỷ giá đô la trên won sẽ quan trọng hơn với KOSPI đầu tuần tới? Cùng chia sẻ góc nhìn nhé.",
+    "screenHeadline": "CHIP MỸ HAY TỶ GIÁ?",
+    "screenSubline": "Anh chị theo dõi yếu tố nào?",
+    "question": "Chip Mỹ hay tỷ giá ảnh hưởng KOSPI nhiều hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 06/11",
+      "headline": "Chip Mỹ bật lại · Nasdaq vẫn giảm cả tuần",
+      "summary": "Phiên thứ Sáu hồi phục sau cú bán tháo ngày thứ Năm.",
+      "voiceText": "Chip Mỹ bật tăng hơn bốn phần trăm trong phiên thứ Sáu, nhưng Nasdaq vẫn giảm hơn ba phần trăm cả tuần. Vì sao thị trường chưa hết lo?",
+      "source": "Reuters · 06/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX · THỨ SÁU",
+          "value": "+4,2%",
+          "tone": "up"
+        },
+        {
+          "label": "NASDAQ · TUẦN",
+          "value": "−3,4%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SOX · PHIÊN",
+            "value": 4.2,
+            "display": "+4,2%"
+          },
+          {
+            "label": "NASDAQ · TUẦN",
+            "value": -3.4,
+            "display": "−3,4%"
+          }
+        ],
+        "qualifier": "SOX: phiên 06/11 · Nasdaq: cả tuần kết thúc 06/11"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "ĐÓNG CỬA MỸ · THỨ SÁU",
+      "headline": "Nasdaq +1,1% · Dow −0,46%",
+      "summary": "Phục hồi không đồng đều giữa các chỉ số.",
+      "voiceText": "Đóng cửa phiên Mỹ ngày sáu tháng mười một, Nasdaq tăng khoảng một phẩy một phần trăm, S&P năm trăm tăng không phẩy ba hai phần trăm, còn Dow Jones giảm không phẩy bốn sáu phần trăm. Đây là kết quả phiên chính đã kết thúc, không phải giá trực tiếp sáng thứ Bảy.",
+      "source": "Reuters · 06/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "7.376,86",
+          "tone": "up"
+        },
+        {
+          "label": "DOW",
+          "value": "51.285,73",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": 1.1,
+            "display": "+1,1%"
+          },
+          {
+            "label": "S&P 500",
+            "value": 0.32,
+            "display": "+0,32%"
+          },
+          {
+            "label": "DOW",
+            "value": -0.46,
+            "display": "−0,46%"
+          }
+        ],
+        "qualifier": "Đóng cửa phiên chính Mỹ thứ Sáu 06/11"
+      }
+    },
+    {
+      "id": "chip",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "SOX +4,2% · AMD +11%",
+      "summary": "Cổ phiếu chip phục hồi một phần sau đợt bán mạnh.",
+      "voiceText": "Chỉ số bán dẫn Philadelphia tăng bốn phẩy hai phần trăm, Nvidia tăng hai phẩy tám phần trăm và AMD tăng khoảng mười một phần trăm. Nhưng Nasdaq vẫn mất ba phẩy bốn phần trăm trong cả tuần. Một phiên hồi phục chưa đủ xác nhận rủi ro đầu tư AI đã biến mất.",
+      "source": "Reuters · 06/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX",
+          "value": "+4,2%",
+          "tone": "up"
+        },
+        {
+          "label": "AMD",
+          "value": "+11%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "AI & SEMICONDUCTORS",
+        "bullets": [
+          "SOX +4,2% · PHIÊN",
+          "NVIDIA +2,8% · PHIÊN",
+          "AMD +11% · PHIÊN"
+        ]
+      }
+    },
+    {
+      "id": "jobs",
+      "eyebrow": "KINH TẾ MỸ · BLS",
+      "headline": "Việc làm +165.000 · thất nghiệp 4,1%",
+      "summary": "Số liệu sơ bộ tháng Mười cho thấy thị trường lao động còn vững.",
+      "voiceText": "Báo cáo chính thức của Cục Thống kê Lao động Mỹ cho biết việc làm phi nông nghiệp tháng mười tăng một trăm sáu mươi lăm nghìn, còn tỷ lệ thất nghiệp là bốn phẩy một phần trăm, giảm từ bốn phẩy hai phần trăm tháng trước. Đây là số liệu sơ bộ có thể được điều chỉnh. Theo Reuters, thị trường tăng kỳ vọng Fed có thể nâng lãi suất trong tháng mười hai, nhưng đó chưa phải quyết định của Fed.",
+      "source": "BLS / Reuters · 06/11/2026",
+      "sourceIds": [
+        "bls-jobs",
+        "bls-household",
+        "bls-establishment",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "VIỆC LÀM THÁNG 10",
+          "value": "+165.000",
+          "tone": "up"
+        },
+        {
+          "label": "THẤT NGHIỆP",
+          "value": "4,1%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "BLS · THÁNG 10/2026",
+          "+165.000 VIỆC LÀM · SƠ BỘ",
+          "THẤT NGHIỆP 4,1%"
+        ]
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG HÀN QUỐC",
+      "headline": "KOSPI · chip · USD/KRW",
+      "summary": "Theo dõi dữ liệu Mỹ, tỷ giá và dòng vốn đầu tuần.",
+      "voiceText": "Với Hàn Quốc, đà phục hồi chip Mỹ có thể hỗ trợ tâm lý cổ phiếu bán dẫn khi thị trường mở lại. Tuy nhiên, nếu lợi suất Mỹ và đồng đô la tăng do kỳ vọng lãi suất, tỷ giá đô la trên won và dòng vốn ngoại có thể chịu sức ép. KOSPI, KOSDAQ và doanh nghiệp xuất khẩu sẽ phản ứng khác nhau tùy đơn hàng và mức độ nhạy cảm với tỷ giá. Cần theo dõi dữ liệu lạm phát Mỹ tuần tới.",
+      "source": "Reuters / MUFG / BLS · 06/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "fx-mufg",
+        "bls-jobs"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "CHIP: HỒI PHỤC CÓ ĐIỀU KIỆN",
+          "USD/KRW: NHẠY CẢM LÃI SUẤT",
+          "CPI MỸ: THEO DÕI TUẦN TỚI"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Chip Mỹ hay tỷ giá?",
+      "summary": "Thông tin tham khảo, không phải khuyến nghị giao dịch.",
+      "voiceText": "Theo anh chị, đà hồi phục chip Mỹ hay tỷ giá đô la trên won sẽ quan trọng hơn với KOSPI đầu tuần tới? Cùng chia sẻ góc nhìn nhé. Bản tin chỉ mang tính tham khảo, không phải khuyến nghị giao dịch.",
+      "source": "Reuters / BLS · 06/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "bls-jobs"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "SOX +4,2% · 06/11",
+          "BLS +165.000 VIỆC LÀM",
+          "THEO DÕI CPI MỸ"
+        ],
+        "qualifier": "Thông tin tham khảo · không phải khuyến nghị giao dịch"
+      }
+    }
+  ]
+}
