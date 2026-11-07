@@ -5,10 +5,16 @@ on:
     branches: [main]
     paths:
       - 'jobs/**'
+      - 'scripts/validate-kci-job.mjs'
+      - 'scripts/test-kci-editorial.mjs'
+      - 'scripts/run-job.mjs'
       - '.github/workflows/kci-job-preflight.yml'
   pull_request:
     paths:
       - 'jobs/**'
+      - 'scripts/validate-kci-job.mjs'
+      - 'scripts/test-kci-editorial.mjs'
+      - 'scripts/run-job.mjs'
       - '.github/workflows/kci-job-preflight.yml'
   workflow_dispatch:
     inputs:
@@ -33,6 +39,8 @@ jobs:
           node-version: '22'
       - name: Verify schema validator (no TTS, no render)
         run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
+      - name: Run editorial regression tests against real US_AM job (no TTS)
+        run: node scripts/test-kci-editorial.mjs
       - name: Validate the selected or changed production jobs BEFORE a paid video issue
         shell: bash
         env:
@@ -65,3 +73,4 @@ jobs:
             fi
           done <<< "$changed"
           echo "Validated $checked changed schemaVersion 2 jobs without voice synthesis."
+          echo 'PRODUCER GATE: open no [KCI VIDEO] issue unless this exact commit/job preflight completes SUCCESS.'
