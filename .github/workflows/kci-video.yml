@@ -110,13 +110,6 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - run: npm ci
-      - name: Install FFmpeg and ffprobe
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-          command -v ffprobe
-          command -v ffmpeg
       - name: Validate the selected job before paid Vbee synthesis
         run: |
           # Owner-created [KCI VIDEO] issues select a checked-in job. This preflight must
@@ -127,6 +120,14 @@ jobs:
             selected_job="$KCI_JOB"
           fi
           node scripts/run-job.mjs --mode=validate --job="$selected_job"
+      - name: Install dependencies after successful editorial validation
+        run: npm ci
+      - name: Install FFmpeg and ffprobe after successful editorial validation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          command -v ffprobe
+          command -v ffmpeg
       - name: Verify Cloudflare Worker before any Vbee request
         run: node scripts/check-worker.mjs
       - name: Produce preview, Vbee test, or MP4
