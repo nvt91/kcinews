@@ -6,6 +6,21 @@ validateKciJob(source);
 // Regression fixture: the exact 07/11 US_AM production job must pass before any paid issue.
 const usAm=JSON.parse(fs.readFileSync("jobs/kci-2026-11-07-us-am.json","utf8"));
 validateKciJob(usAm);
+// Regression: 07/11 MACRO21 pre-TTS failure 42370942236: no primary evidence.
+// This exact repaired job must pass, and removing its official cross-check must fail.
+const macro21=JSON.parse(fs.readFileSync("jobs/kci-2026-11-07-macro21.json","utf8"));
+validateKciJob(macro21);
+if(!macro21.sourceLedger.some(s=>s.kind==="primary" &&
+  macro21.scenes.some(scene=>scene.sourceIds.includes(s.id)))) {
+  throw new Error("MACRO21 primary source must be relevant and linked to at least one scene");
+}
+const macroWithoutPrimary=copy(macro21);
+for(const s of macroWithoutPrimary.sourceLedger)s.kind="secondary";
+let primaryGateRejected=false;
+try{validateKciJob(macroWithoutPrimary);}catch(e){
+  primaryGateRejected=String(e.message).includes("primary-source cross-check required");
+}
+if(!primaryGateRejected)throw new Error("Expected primary-source gate to reject MACRO21 without primary evidence");
 const reject=(mutate,label)=>{
   const job=copy(source);
   mutate(job);
