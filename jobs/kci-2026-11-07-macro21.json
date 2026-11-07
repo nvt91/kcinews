@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-07-macro21",
+  "edition": "07/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-07T21:04:57+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Dầu giảm mạnh: áp lực năng lượng Hàn Quốc đã qua chưa?",
+  "sourceDisclaimer": "Reuters published 6 Nov 2026; Saturday 7 Nov KST is not a new oil market close. Weekly ~15% Brent move, not live quote. Korea impact conditional, not forecast.",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261107-MACRO21",
+  "articlePath": "editorial/2026-11-07/macro21.md",
+  "eventKeys": [
+    "GLOBAL-OIL-WEEK-2026-11-06",
+    "KOREA-ENERGY-IMPORT-TRANSMISSION-2026-11-07"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "reuters-oil",
+      "title": "Reuters 6 Nov: high oil prices curb demand, signs of glut",
+      "url": "https://www.reuters.com/business/energy/high-oil-prices-curb-demand-fresh-signs-glut-appear-2026-11-06/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T21:04:57+09:00",
+      "kind": "secondary",
+      "facts": [
+        "JP Morgan estimates supply exceeded demand in September and October; Gulf crude and condensate exports ~86% of pre-war October levels; refined products still lower."
+      ]
+    },
+    {
+      "id": "reuters-global",
+      "title": "Reuters 6 Nov: global markets stagflation risks",
+      "url": "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-07T21:04:57+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Oil fell about 15% this week to just below $100 per barrel, but remains up significantly year to date."
+      ]
+    },
+    {
+      "id": "korea-gov",
+      "title": "Yonhap 6 Oct: Korean ministry November oil import coverage",
+      "url": "https://www.yna.co.kr/view/AKR20261006087900003",
+      "eventDate": "2026-10-06",
+      "checkedAt": "2026-11-07T21:04:57+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Ministry said on 6 October it had secured more than 90% of November oil volumes relative to prior-year average; this is historical statement, not a current November 7 supply update."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá dầu hạ nhiệt, nhưng Hàn Quốc đã thực sự thoát áp lực năng lượng chưa?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá dầu hạ nhiệt, nhưng Hàn Quốc đã thực sự thoát áp lực năng lượng chưa?"
+      },
+      {
+        "style": "impact",
+        "text": "Dầu Brent giảm mạnh trong tuần, liệu hóa đơn nhập khẩu của Hàn Quốc có giảm ngay?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao dầu rẻ hơn chưa chắc khiến đồng won mạnh lên ngay?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Nếu muốn theo dõi ba tín hiệu này trong tuần tới, hãy theo dõi Korea Capital Insight. Thông tin chỉ để tham khảo, không phải khuyến nghị đầu tư cá nhân.",
+    "screenHeadline": "THEO DÕI GIÁ DẦU VÀ WON",
+    "screenSubline": "Korea Capital Insight"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "DẦU GIẢM, RỦI RO CÒN",
+      "headline": "Giá dầu hạ nhiệt",
+      "summary": "Brent tuần này giảm mạnh",
+      "voiceText": "Giá dầu hạ nhiệt, nhưng Hàn Quốc đã thực sự thoát áp lực năng lượng chưa? Giá dầu giảm có thể giúp Hàn Quốc, nhưng rủi ro nguồn cung chưa biến mất.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "BRENT",
+        "unit": "TUẦN KẾT THÚC 06/11",
+        "qualifier": "Reuters 06/11; không phải giá trực tiếp"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "DIỄN BIẾN TUẦN",
+      "headline": "Brent giảm mạnh",
+      "summary": "Reuters, 06/11/2026",
+      "voiceText": "Theo Reuters ngày sáu tháng mười một, dầu Brent đã giảm khoảng mười lăm phần trăm trong tuần, xuống dưới một trăm đô la một thùng. Đây là biến động trong tuần, không phải báo giá trực tiếp tối nay.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "supply",
+      "eyebrow": "CUNG VÀ CẦU",
+      "headline": "Nguồn cung phục hồi",
+      "summary": "Thị trường dầu toàn cầu",
+      "voiceText": "Một phân tích Reuters cùng ngày ghi nhận dòng dầu từ vùng Vịnh phục hồi, trong khi giá cao khiến nhu cầu yếu đi. Nhưng sản phẩm lọc dầu vẫn chưa trở lại mức bình thường trước xung đột.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-oil"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TÁC ĐỘNG",
+      "headline": "Hóa đơn nhập khẩu",
+      "summary": "Năng lượng nhập khẩu của Hàn Quốc",
+      "voiceText": "Với Hàn Quốc, nếu giá dầu giảm bền vững, chi phí nhập khẩu năng lượng và áp lực giá cả có thể dịu lại. Điều này có thể giúp cán cân thương mại và giảm bớt áp lực lên đồng won.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-oil",
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "risk",
+      "eyebrow": "ĐIỀU KIỆN QUAN TRỌNG",
+      "headline": "Chưa thể chủ quan",
+      "summary": "Giá, vận tải và tỷ giá",
+      "voiceText": "Tuy nhiên, giá dầu quốc tế không chuyển ngay thành giá xăng hay chi phí sản xuất trong nước. Tỷ giá đô la trên won, hợp đồng nhập khẩu và rủi ro vận tải vẫn có thể làm lợi ích đến chậm.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-oil",
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "TUẦN TỚI THEO DÕI",
+      "headline": "Ba tín hiệu chính",
+      "summary": "Brent · nguồn cung · USD/KRW",
+      "voiceText": "Tuần tới, hãy quan sát giá Brent, dòng cung từ Trung Đông và tỷ giá đô la trên won. Đây là ba tín hiệu giúp kiểm tra liệu áp lực năng lượng có thực sự hạ nhiệt.",
+      "source": "Reuters, 06/11/2026",
+      "sourceIds": [
+        "reuters-oil",
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "GIÁ BRENT",
+          "NGUỒN CUNG",
+          "USD/KRW"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Giá dầu hạ nhiệt, nhưng Hàn Quốc đã thực sự thoát áp lực năng lượng chưa?"
+}
