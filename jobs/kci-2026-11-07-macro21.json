@@ -6,7 +6,7 @@
   "status": "REVIEW_REQUIRED",
   "template": "KciNewsDaily",
   "headline": "Dầu giảm mạnh: áp lực năng lượng Hàn Quốc đã qua chưa?",
-  "sourceDisclaimer": "Reuters published 6 Nov 2026; Saturday 7 Nov KST is not a new oil market close. Weekly ~15% Brent move, not live quote. Korea impact conditional, not forecast.",
+  "sourceDisclaimer": "Reuters published 6 Nov 2026; Saturday 7 Nov KST is not a new oil market close. Weekly ~15% Brent move, not live quote. Korea impact conditional, not forecast. MOTIR 16 Oct official primary cross-check on Korean oil import supply and domestic price controls, added in post-failure audit 8 Nov; not a new 7 Nov update.",
   "stream": "MACRO",
   "slot": "MACRO21",
   "articleId": "KCI-20261107-MACRO21",
@@ -49,6 +49,18 @@
       "kind": "secondary",
       "facts": [
         "Ministry said on 6 October it had secured more than 90% of November oil volumes relative to prior-year average; this is historical statement, not a current November 7 supply update."
+      ]
+    },
+    {
+      "id": "motir-oil-oct16",
+      "title": "Korean Ministry of Trade, Industry and Resources (MOTIR), 16 Oct 2026: official oil price ceiling and import-security release",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785525",
+      "eventDate": "2026-10-16",
+      "checkedAt": "2026-11-08T00:19:01+09:00",
+      "kind": "primary",
+      "facts": [
+        "The ministry's 16 October release reported that October–November crude import volumes had been secured at more than 100% of the prior-year average; this is a dated statement, not live data for 7 November.",
+        "The Korean government extended domestic petroleum price ceilings starting 17 October, so international crude prices do not automatically transmit one-for-one to domestic pump prices."
       ]
     }
   ],
@@ -130,10 +142,11 @@
       "headline": "Hóa đơn nhập khẩu",
       "summary": "Năng lượng nhập khẩu của Hàn Quốc",
       "voiceText": "Với Hàn Quốc, nếu giá dầu giảm bền vững, chi phí nhập khẩu năng lượng và áp lực giá cả có thể dịu lại. Điều này có thể giúp cán cân thương mại và giảm bớt áp lực lên đồng won.",
-      "source": "Reuters, 06/11/2026",
+      "source": "Reuters 06/11; MOTIR 16/10/2026 (nguồn lịch sử)",
       "sourceIds": [
         "reuters-oil",
-        "reuters-global"
+        "reuters-global",
+        "motir-oil-oct16"
       ],
       "stats": [],
       "visual": {
@@ -146,10 +159,11 @@
       "headline": "Chưa thể chủ quan",
       "summary": "Giá, vận tải và tỷ giá",
       "voiceText": "Tuy nhiên, giá dầu quốc tế không chuyển ngay thành giá xăng hay chi phí sản xuất trong nước. Tỷ giá đô la trên won, hợp đồng nhập khẩu và rủi ro vận tải vẫn có thể làm lợi ích đến chậm.",
-      "source": "Reuters, 06/11/2026",
+      "source": "Reuters 06/11; MOTIR 16/10/2026 (nguồn lịch sử)",
       "sourceIds": [
         "reuters-oil",
-        "reuters-global"
+        "reuters-global",
+        "motir-oil-oct16"
       ],
       "stats": [],
       "visual": {
