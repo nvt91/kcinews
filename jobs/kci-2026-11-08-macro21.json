@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-08-macro21",
+  "edition": "08/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-08T20:59:19+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Căng thẳng Hormuz tái tăng: vì sao Hàn Quốc phải theo dõi chi phí vận tải?",
+  "sourceDisclaimer": "Sunday 8 Nov KST; Reuters 8 Nov is geopolitical news, not an oil-price quote or US market close. Korea ministry 16 Oct is dated historical primary context, not 8 Nov supply data. Impact conditional. Weekend special, distinct from 7 Nov weekly Brent-price explainer.",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261108-MACRO21",
+  "articlePath": "editorial/2026-11-08/macro21.md",
+  "eventKeys": [
+    "IRAN-HORMUZ-SHIPPING-2026-11-08",
+    "KOREA-ENERGY-IMPORT-TRANSMISSION-2026-11-08"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "sourceLedger": [
+    {
+      "id": "reuters-iran-nov8",
+      "title": "Reuters 8 Nov Gulf markets retreat amid Iran escalation uncertainty",
+      "url": "https://www.reuters.com/world/middle-east/gulf-markets-retreat-traders-await-trumps-next-move-iran-2026-11-08/",
+      "eventDate": "2026-11-08",
+      "checkedAt": "2026-11-08T20:59:19+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters published 08:20 UTC 8 Nov: IRGC Navy reported two tankers burning after mine hits; connection to other reported blasts unclear.",
+        "US CENTCOM reported a merchant vessel incident during the blockade; Qatar continues mediation. These are attributed reports, not independently confirmed causal links."
+      ]
+    },
+    {
+      "id": "motir-oct16",
+      "title": "Korean Industry Ministry official petroleum price-ceiling notice dated 16 October",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785525",
+      "eventDate": "2026-10-16",
+      "checkedAt": "2026-11-08T20:59:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "Ministry announced 11th petroleum maximum-price round frozen at the 10th-round level, dated 16 Oct; this is historical domestic price-transmission context, not a live 8 Nov policy update."
+      ]
+    },
+    {
+      "id": "reuters-korea-sep23",
+      "title": "Reuters 23 Sep: Korea plans to reduce Middle East crude dependence",
+      "url": "https://www.reuters.com/business/energy/south-korea-plans-cut-its-reliance-middle-east-crude-oil-imports-50-by-2035-2026-09-23/",
+      "eventDate": "2026-09-23",
+      "checkedAt": "2026-11-08T20:59:19+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Korean ministry roadmap aims to cut Middle East share of crude imports to 50% by 2035, versus 70% in 2025; strategic goal not completed diversification."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Eo biển Hormuz lại căng thẳng. Vì sao Hàn Quốc phải lo cả tiền vận chuyển dầu?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Eo biển Hormuz lại căng thẳng. Vì sao Hàn Quốc phải lo cả tiền vận chuyển dầu?"
+      },
+      {
+        "style": "impact",
+        "text": "Dầu chưa chắc tăng ngay, nhưng chi phí vận tải có thể gây sức ép lên Hàn Quốc."
+      },
+      {
+        "style": "question",
+        "text": "Tại sao một sự cố tàu dầu ở Trung Đông có thể ảnh hưởng tới giá cả Hàn Quốc?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Tuần tới, hãy theo dõi tin về an toàn tuyến vận tải, cước tàu và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cùng kiểm tra diễn biến bằng dữ liệu. Đây không phải khuyến nghị đầu tư.",
+    "screenHeadline": "BA TÍN HIỆU CẦN THEO DÕI",
+    "screenSubline": "Vận tải · Cước tàu · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ CUỐI TUẦN",
+      "headline": "Hormuz lại căng thẳng",
+      "summary": "Rủi ro vận tải dầu",
+      "voiceText": "Eo biển Hormuz lại căng thẳng. Vì sao Hàn Quốc phải lo cả tiền vận chuyển dầu? Câu trả lời không chỉ nằm ở giá dầu, mà còn ở tuyến vận tải.",
+      "source": "Reuters 08/11/2026",
+      "sourceIds": [
+        "reuters-iran-nov8"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "spotlight",
+        "value": "HORMUZ",
+        "unit": "RỦI RO VẬN TẢI",
+        "qualifier": "Reuters 08/11, diễn biến địa chính trị"
+      }
+    },
+    {
+      "id": "event",
+      "eyebrow": "DIỄN BIẾN MỚI",
+      "headline": "Báo cáo sự cố tàu",
+      "summary": "Chưa xác định quan hệ nhân quả",
+      "voiceText": "Reuters ngày tám tháng mười một đưa tin lực lượng hải quân Iran nói hai tàu chở dầu bốc cháy sau khi trúng thủy lôi trên một tuyến bị hạn chế. Mối liên hệ với các vụ nổ khác chưa được xác định.",
+      "source": "Reuters 08/11/2026",
+      "sourceIds": [
+        "reuters-iran-nov8"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "uncertainty",
+      "eyebrow": "RỦI RO CHƯA HẾT",
+      "headline": "Phong tỏa và đàm phán",
+      "summary": "Tin được quy nguồn rõ ràng",
+      "voiceText": "Cũng theo Reuters, quân đội Mỹ thông báo một sự cố với tàu thương mại trong hoạt động phong tỏa. Qatar vẫn đang làm trung gian đối thoại. Những thông tin này chưa có nghĩa một đợt gián đoạn nguồn cung mới đã được xác nhận.",
+      "source": "Reuters 08/11/2026",
+      "sourceIds": [
+        "reuters-iran-nov8"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "VÌ SAO HÀN QUỐC LIÊN QUAN",
+      "headline": "Phụ thuộc nguồn dầu",
+      "summary": "Mục tiêu giảm phụ thuộc đến 2035",
+      "voiceText": "Theo kế hoạch được Reuters đưa tin ngày hai mươi ba tháng chín, Hàn Quốc muốn giảm tỷ trọng dầu thô nhập từ Trung Đông xuống năm mươi phần trăm vào năm hai nghìn không trăm ba mươi lăm, so với khoảng bảy mươi phần trăm năm hai nghìn không trăm hai mươi lăm. Đây là mục tiêu, không phải kết quả đã đạt.",
+      "source": "Reuters 23/09/2026",
+      "sourceIds": [
+        "reuters-korea-sep23"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "2025",
+            "value": 70,
+            "display": "70%"
+          },
+          {
+            "label": "MỤC TIÊU 2035",
+            "value": 50,
+            "display": "50%"
+          }
+        ],
+        "qualifier": "Tỷ trọng dầu thô từ Trung Đông; mục tiêu chưa đạt"
+      }
+    },
+    {
+      "id": "transmission",
+      "eyebrow": "KÊNH TÁC ĐỘNG",
+      "headline": "Cước tàu và tỷ giá",
+      "summary": "Tác động có điều kiện",
+      "voiceText": "Nếu rủi ro trên tuyến vận tải kéo dài, phí bảo hiểm, cước tàu và thời gian giao hàng có thể tăng. Khi đó, hóa đơn nhập khẩu tính bằng đô la có thể chịu thêm áp lực, nhất là nếu đồng won yếu. Nhưng giá bán lẻ trong nước còn chịu tác động từ chính sách giá; thông báo của Bộ Công nghiệp ngày mười sáu tháng mười là một ví dụ lịch sử, không phải quyết định mới tối nay.",
+      "source": "Reuters 08/11; MOTIR 16/10/2026",
+      "sourceIds": [
+        "reuters-iran-nov8",
+        "motir-oct16"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "TUẦN MỚI",
+      "headline": "Ba tín hiệu cần theo dõi",
+      "summary": "Tuyến vận tải · cước tàu · USD/KRW",
+      "voiceText": "Vì vậy, điều đáng theo dõi trong tuần mới không chỉ là giá Brent. Hãy nhìn cả an toàn tuyến tàu, chi phí vận chuyển và tỷ giá đô la trên won trước khi kết luận áp lực đã giảm.",
+      "source": "Reuters 08/11; phân tích có điều kiện",
+      "sourceIds": [
+        "reuters-iran-nov8",
+        "motir-oct16"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "AN TOÀN TUYẾN TÀU",
+          "CƯỚC VẬN TẢI",
+          "USD/KRW"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Eo biển Hormuz lại căng thẳng. Vì sao Hàn Quốc phải lo cả tiền vận chuyển dầu?"
+}
