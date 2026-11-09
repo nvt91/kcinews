@@ -26,16 +26,16 @@ Chọn #1: tương phản rõ, số liệu chính xác, kích thích người xe
 
 #KoreaCapitalInsight #KOSPI
 
-## Kịch bản lời đọc — một video (dự kiến 90–110 giây, đo bằng file MP4 thật)
-1. KR_CLOSE · 09/11 · KRX: KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? KOSPI đóng cửa phiên chính KRX ngày chín tháng mười một tại năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng mất không phẩy tám hai phần trăm, còn sáu trăm ba mươi tám phẩy chín bảy điểm.
+## Kịch bản lời đọc — một video (90–110 giây mục tiêu; đo MP4 thật)
+1. KR_CLOSE · 09/11 · KRX: KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? Phiên chính KRX ngày chín tháng mười một, KOSPI đóng ở năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng giảm không phẩy tám hai phần trăm.
 
-2. DÒNG TIỀN: Điểm đáng chú ý là buổi sáng chỉ số có lúc đạt năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm. Nhưng lực bán quay lại vào buổi chiều. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua vào. Đây là số liệu phiên chính, không cộng giao dịch NXT ngoài giờ.
+2. DÒNG TIỀN: Giữa phiên, KOSPI từng lên năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm rồi mất đà tăng. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua ròng. Các nguồn khác nhau về giá trị chi tiết, nhưng cùng thống nhất chiều giao dịch.
 
-3. PHÂN HÓA NGÀNH: Hai cổ phiếu chip dẫn dắt vẫn giữ sắc xanh: Samsung Electronics tăng không phẩy sáu bốn phần trăm, SK hynix tăng không phẩy ba lăm phần trăm. Trái lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, còn Alteogen mất hơn mười sáu phần trăm. Áp lực bán đã lan sang nhiều nhóm ngoài bán dẫn.
+3. PHÂN HÓA NGÀNH: Samsung Electronics và SK hynix vẫn tăng nhẹ, lần lượt không phẩy sáu bốn và không phẩy ba lăm phần trăm. Ngược lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, Alteogen mất hơn mười sáu phần trăm. Thị trường phân hóa rõ giữa chip, pin và sinh học.
 
-4. CHÍNH SÁCH & ĐẦU TƯ: Cùng ngày, Reuters đưa tin Hàn Quốc đang đánh giá đề xuất chuyển trước mười tỷ đô la Mỹ cho một dự án điện hạt nhân tại Mỹ. Bộ trưởng Tài chính yêu cầu thẩm định hiệu quả thương mại trước khi quyết định. Dự án khí hóa lỏng Alaska cũng chưa có quyết định đầu tư cuối cùng. Đây là đề xuất, không phải vốn đã giải ngân.
+4. CHÍNH SÁCH & ĐẦU TƯ: Reuters cho biết Hàn Quốc xem xét đề xuất chuyển trước mười tỷ đô la cho dự án điện hạt nhân tại Mỹ. Chính phủ yêu cầu đánh giá hiệu quả thương mại trước khi quyết định. Dự án LNG Alaska cũng chưa được chốt. Đây là đề xuất, không phải vốn đã chuyển.
 
-5. ĐIỀU CẦN THEO DÕI: Dù biện pháp giảm áp lực bán giải chấp đã có hiệu lực hôm nay, phiên chính vẫn giảm. Những ngày tới, KCI sẽ theo dõi lực bán ngoại, nhóm chip và độ rộng thị trường. Bản tin không bao gồm NXT ngoài giờ và không phải khuyến nghị đầu tư.
+5. ĐIỀU CẦN THEO DÕI: Biện pháp hạn chế bán giải chấp có hiệu lực hôm nay nhưng không bảo đảm thị trường hồi phục. Trong phiên tới, cần theo dõi khối ngoại và sức khỏe từng ngành. Số liệu thuộc phiên chính KRX, không cộng NXT; bản tin không phải khuyến nghị đầu tư.
 
 CTA (runner đọc **một lần**): Theo anh chị, lực bán của khối ngoại hay sức yếu ở nhóm pin và công nghệ sinh học đáng chú ý hơn? Chia sẻ góc nhìn và theo dõi KCI nhé.
 
