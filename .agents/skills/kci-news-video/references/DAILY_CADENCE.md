@@ -88,6 +88,19 @@ For KR_AM on Mondays, holidays or the first session after a long closure, do **n
 
 This guardrail changes **no schedule, condition_watch, source threshold, voice, Vbee cost, auto-post authority or stream quota**.
 
+## US_AM 09 November producer gate deadlock — recovery without paid rerun
+
+Incident: the 09:00 KST 09/11/2026 GLOBAL_US/US_AM automation completed `BLOCKED / NO_MP4` despite identifying cited US market data, because it said it could not execute the live job validator or fully verify run/artifact history. No `jobs/kci-2026-11-09-us-am.json` was checked in and no production issue/run happened. The repo validator cannot validate an absent job; do not treat the missing job as evidence of a Vbee failure.
+
+**Ordered, non-billable preproduction workflow for all regular video editions:**
+1. Independently check `jobs/`, edition/articleId in the existing Sheet, issues and actual GitHub Actions runs for duplicate paid work. Existing successful or running voice/render takes precedence. If provider history is unavailable or conflicting, stop and report exactly what could not be checked rather than blindly retry.
+2. Complete the source-backed brief, unique canonical articleId, scenes, caption and **draft checked-in schema v2 JSON** for the intended edition. Drafting/committing a job is not a paid render or approval; only do this once sources and the underlying editorial gate are sufficient. Check the latest file/commit SHA to avoid overwriting owner work.
+3. Run or observe the no-Vbee `KCI Job Preflight` on that **exact** job/commit; the test suite is a precondition to opening a paid video issue, not a precondition to saving a valid draft job. If the GitHub push event triggers preflight, inspect the outcome; don't initiate another paid workflow while preflight is queued or failed.
+4. On `SUCCESS`, and only when the production issue/dispatch route is authorized by the owner, trigger exactly one video run on the checked-in job; verify full H.264/AAC MP4 and actual QC, then hand to the owner for **video approval before publishing**. If the environment has no code-write, job validation, issue-trigger or file-delivery capability, preserve the verified brief/partial state and surface `BLOCKED_INFRA` with the exact missing operation rather than claiming complete or silently dropping an episode.
+5. Use the previous **completed** US session on Monday morning, dated accurately, with the independent BLS/Fed/issuer original where applicable; don't invent Monday US closes or reuse Friday's report as new. Preserve GLOBAL_US caption 50–100 Unicode characters including hashtags, and never override an edited caption.
+
+This clarifies the existing paid-cost and review safety gates. It creates no cron, issue, render, posting permission or alternative Sheet and changes no schedules.
+
 ## Source and production gates
 
 1. Research the web anew; open sources/amendments. Prefer DART/KIND, KRX/NXT, company IR, BOK/ECOS, issuing Korean agencies, Fed/BLS/BEA/Treasury. Reuters/Yonhap support discovery/context/corroboration. Record real URLs, publication/event dates, reporting period, units, venue/session and KST cutoff. Old chat numbers and snippets are not fresh evidence.
