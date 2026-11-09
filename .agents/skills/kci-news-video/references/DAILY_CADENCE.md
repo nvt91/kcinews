@@ -75,6 +75,19 @@ Read accessible jobs/articles/issues for today and the preceding seven days. The
 
 Before job/trigger creation, check exact date+stream+edition, issues/runs and legacy v01/v02/v03/v04 paths during migration. Reuse/report queued/running/successful jobs, never duplicate Vbee. Read current file SHA before edits; preserve approved work. Diagnose failures first, preserve audio, reuse unchanged audio for visual-only revisions. Never blindly repeat paid synthesis on timeout. Staggering is not a global technical mutex.
 
+## Week-opening KR_AM guardrail — 09 November 2026
+
+Incident: the 08:00 KST 09/11/2026 KR_AM automation **completed in a BLOCKED_EDITORIAL state**, with no checked-in `jobs/kci-2026-11-09-kr-am.json`, owner video issue, or GitHub MP4 run. The repository's latest `KCI Job Preflight — no Vbee` SUCCESS was **not a video render**. This is an editorial/trigger handoff gap, **not evidence of a Vbee or FFmpeg error**. Do not mark that morning edition produced, approved or published. Do not infer a paid issue was triggered just because the automation says completed.
+
+For KR_AM on Mondays, holidays or the first session after a long closure, do **not** mistake the absence of a new KRX close for lack of eligible coverage. Before returning BLOCKED_EDITORIAL:
+1. Verify the latest completed KRX regular-session close (for Monday morning usually Friday), give its **actual date/session**, then check dated official BOK/KRX/DART/Korea Customs/industry releases, corroborating Reuters/Yonhap coverage and the verified next 24–72h calendar. A prior close is context, never labeled a live Monday close.
+2. Compare the previous seven days' editorial eventKeys for KR_AM, KR_CLOSE, KR_MID, MACRO21 and US_AM to avoid duplicates. Seek a distinct Korean causal angle or a source-backed next-session implications story; a different wording of Friday's headline is not new evidence. An important standalone main story is permitted when multiple new developments do not exist.
+3. Keep the original quality gate (source/data 35 + analysis 25 + freshness 15 + Vietnamese 15 + distinctness 10; >=85 and no critical missing evidence), original primary-source cross-check and schema validation. Calendar relevance/updated official context may support a genuine Monday angle but is **not a waiver** of freshness or fact checks. Do not invent news or misclassify a secondary citation as primary to reach the threshold.
+4. When qualified: save canonical articleId/job/brief, wait for the **exact-job no-Vbee preflight SUCCESS**, and only then follow the separately authorized owner issue/dispatch route to produce the full voiced review MP4. Check actual Actions run/artifact; GitHub has no production cron. No new issue or paid TTS based solely on this documentation.
+5. When still unqualified: surface `BLOCKED_EDITORIAL / NO_JOB / NO_MP4 / CHƯA ĐĂNG` with the precise missing sources, duplication/score reason and a link to the check; do **not** count a completed automation run as a completed video. Preserve owner approval/publication state. Completion Watch cannot deliver a nonexistent MP4; do not retry an unrelated successful preflight or blame Vbee. Report a genuinely actionable missing-delivery condition once, not repeated routine successful sync notices.
+
+This guardrail changes **no schedule, condition_watch, source threshold, voice, Vbee cost, auto-post authority or stream quota**.
+
 ## Source and production gates
 
 1. Research the web anew; open sources/amendments. Prefer DART/KIND, KRX/NXT, company IR, BOK/ECOS, issuing Korean agencies, Fed/BLS/BEA/Treasury. Reuters/Yonhap support discovery/context/corroboration. Record real URLs, publication/event dates, reporting period, units, venue/session and KST cutoff. Old chat numbers and snippets are not fresh evidence.
