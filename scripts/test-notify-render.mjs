@@ -5,6 +5,8 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import {
   existingMarker,
+  jobFromIssueEvent,
+  resolveInput,
   planNotice,
   safeArtifactUrl,
   safeLabel,
@@ -106,6 +108,25 @@ const dir = fs.mkdtempSync(path.join(os.tmpdir(), "kci-notify-"));
 fs.writeFileSync(path.join(dir, "kci-2026-10-29-kr-am.mp4"), "");
 fs.writeFileSync(path.join(dir, "ignore.txt"), "secret");
 fs.writeFileSync(path.join(dir, "bad name.mp4"), "");
+// Regression: issue runs have blank inputs.job, but the event body contains
+// the canonical job path. Invalid/malformed paths must not enter notifications.
+const eventPath = path.join(dir, "event.json");
+fs.writeFileSync(eventPath, JSON.stringify({ issue: { body: JSON.stringify({ job: "jobs/kci-2026-11-07-macro21.json" }) } }));
+assert.equal(jobFromIssueEvent(eventPath), "jobs/kci-2026-11-07-macro21.json");
+assert.equal(resolveInput({ dryRun: true }, {
+  KCI_EVENT_NAME: "issues", GITHUB_EVENT_PATH: eventPath, KCI_JOB: "",
+}).job, "jobs/kci-2026-11-07-macro21.json");
+assert.equal(resolveInput({ dryRun: true }, {
+  KCI_EVENT_NAME: "workflow_dispatch", GITHUB_EVENT_PATH: eventPath, KCI_JOB: "",
+}).job, "");
+assert.equal(resolveInput({ dryRun: true, job: "jobs/explicit-job.json" }, {
+  KCI_EVENT_NAME: "issues", GITHUB_EVENT_PATH: eventPath, KCI_JOB: "",
+}).job, "jobs/explicit-job.json");
+fs.writeFileSync(eventPath, JSON.stringify({ issue: { body: JSON.stringify({ job: "../unsafe.json" }) } }));
+assert.equal(jobFromIssueEvent(eventPath), "");
+fs.writeFileSync(eventPath, "{malformed");
+assert.equal(jobFromIssueEvent(eventPath), "");
+
 const comments = path.join(dir, "comments.json");
 fs.writeFileSync(comments, JSON.stringify(["older note"]));
 const stdout = execFileSync("node", [
