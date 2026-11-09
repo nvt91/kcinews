@@ -128,7 +128,11 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           command -v ffprobe
           command -v ffmpeg
-      - name: Verify Cloudflare Worker before any Vbee request
+      # Vbee synthesis is verified by its API response and authenticated polling in
+      # scripts/vbee.mjs. The callback Worker is telemetry, not the output source.
+      # Do not block an otherwise valid paid render solely on its health GET.
+      - name: Check Cloudflare callback Worker (advisory; Vbee polling remains required)
+        continue-on-error: true
         run: node scripts/check-worker.mjs
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs

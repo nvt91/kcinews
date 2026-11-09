@@ -51,13 +51,27 @@ export function parseArgs(argv) {
   };
 }
 
+// Issue-triggered runs have no workflow_dispatch inputs.job. Read the verified
+// jobs/*.json path from the issue payload so preflight failures identify the job.
+export function jobFromIssueEvent(eventPath) {
+  if (typeof eventPath !== "string" || !eventPath) return "";
+  try {
+    const event = JSON.parse(fs.readFileSync(eventPath, "utf8"));
+    const issue = JSON.parse(event.issue?.body || "{}");
+    return typeof issue.job === "string" && JOB_FILE.test(issue.job) ? issue.job : "";
+  } catch {
+    return "";
+  }
+}
+
 export function resolveInput(args, env = process.env) {
+  const event = args.event || env.KCI_EVENT_NAME || "";
   return {
     dryRun: args.dryRun,
     qcPath: args.qc || "out/qc.json",
     outDir: args.outDir || "out",
     commentsPath: args.comments || "",
-    event: args.event || env.KCI_EVENT_NAME || "",
+    event,
     issue: args.issue || env.KCI_ISSUE || "",
     repo: args.repo || env.KCI_REPO || "",
     runId: args.runId || env.KCI_RUN_ID || "",
@@ -66,7 +80,7 @@ export function resolveInput(args, env = process.env) {
     server: args.server || env.KCI_SERVER_URL || "https://github.com",
     artifactUrl: args.artifactUrl || env.KCI_ARTIFACT_URL || "",
     edition: args.edition || env.KCI_EDITION || "",
-    job: args.job || env.KCI_JOB || "",
+    job: args.job || env.KCI_JOB || (event === "issues" ? jobFromIssueEvent(env.GITHUB_EVENT_PATH) : ""),
   };
 }
 
