@@ -128,7 +128,7 @@
       "eyebrow": "KR_CLOSE · 09/11 · KRX",
       "headline": "Tăng hơn 2%, cuối phiên −0,81%",
       "summary": "KOSPI đảo chiều và chỉ giữ được mốc 5.000",
-      "voiceText": "KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? KOSPI đóng cửa phiên chính KRX ngày chín tháng mười một tại năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng mất không phẩy tám hai phần trăm, còn sáu trăm ba mươi tám phẩy chín bảy điểm.",
+      "voiceText": "KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? Phiên chính KRX ngày chín tháng mười một, KOSPI đóng ở năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng giảm không phẩy tám hai phần trăm.",
       "source": "Yonhap Infomax / NewsPim · 09/11",
       "sourceIds": [
         "yonhap-close",
@@ -173,7 +173,7 @@
       "eyebrow": "DÒNG TIỀN",
       "headline": "Khối ngoại vẫn bán ròng",
       "summary": "Lực mua tổ chức chưa đủ giữ nhịp hồi",
-      "voiceText": "Điểm đáng chú ý là buổi sáng chỉ số có lúc đạt năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm. Nhưng lực bán quay lại vào buổi chiều. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua vào. Đây là số liệu phiên chính, không cộng giao dịch NXT ngoài giờ.",
+      "voiceText": "Giữa phiên, KOSPI từng lên năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm rồi mất đà tăng. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua ròng. Các nguồn khác nhau về giá trị chi tiết, nhưng cùng thống nhất chiều giao dịch.",
       "source": "Yonhap Infomax / The Korea Times · 09/11",
       "sourceIds": [
         "yonhap-close",
@@ -210,7 +210,7 @@
       "eyebrow": "PHÂN HÓA NGÀNH",
       "headline": "Chip tăng nhẹ, pin và sinh học giảm",
       "summary": "Không phải cổ phiếu công nghệ nào cũng cùng chiều",
-      "voiceText": "Hai cổ phiếu chip dẫn dắt vẫn giữ sắc xanh: Samsung Electronics tăng không phẩy sáu bốn phần trăm, SK hynix tăng không phẩy ba lăm phần trăm. Trái lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, còn Alteogen mất hơn mười sáu phần trăm. Áp lực bán đã lan sang nhiều nhóm ngoài bán dẫn.",
+      "voiceText": "Samsung Electronics và SK hynix vẫn tăng nhẹ, lần lượt không phẩy sáu bốn và không phẩy ba lăm phần trăm. Ngược lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, Alteogen mất hơn mười sáu phần trăm. Thị trường phân hóa rõ giữa chip, pin và sinh học.",
       "source": "NewsPim / Korea Times · KRX 09/11",
       "sourceIds": [
         "newspim-close",
@@ -253,7 +253,7 @@
       "eyebrow": "CHÍNH SÁCH & ĐẦU TƯ",
       "headline": "10 tỷ USD chưa phải tiền đã chuyển",
       "summary": "Dự án điện hạt nhân Mỹ cần thẩm định hiệu quả",
-      "voiceText": "Cùng ngày, Reuters đưa tin Hàn Quốc đang đánh giá đề xuất chuyển trước mười tỷ đô la Mỹ cho một dự án điện hạt nhân tại Mỹ. Bộ trưởng Tài chính yêu cầu thẩm định hiệu quả thương mại trước khi quyết định. Dự án khí hóa lỏng Alaska cũng chưa có quyết định đầu tư cuối cùng. Đây là đề xuất, không phải vốn đã giải ngân.",
+      "voiceText": "Reuters cho biết Hàn Quốc xem xét đề xuất chuyển trước mười tỷ đô la cho dự án điện hạt nhân tại Mỹ. Chính phủ yêu cầu đánh giá hiệu quả thương mại trước khi quyết định. Dự án LNG Alaska cũng chưa được chốt. Đây là đề xuất, không phải vốn đã chuyển.",
       "source": "Reuters · công bố 09/11",
       "sourceIds": [
         "reuters-nuclear"
@@ -281,7 +281,7 @@
       "eyebrow": "ĐIỀU CẦN THEO DÕI",
       "headline": "Chưa thể kết luận đã ổn định",
       "summary": "Theo dõi dòng vốn, độ rộng và kết quả ngành",
-      "voiceText": "Dù biện pháp giảm áp lực bán giải chấp đã có hiệu lực hôm nay, phiên chính vẫn giảm. Những ngày tới, KCI sẽ theo dõi lực bán ngoại, nhóm chip và độ rộng thị trường. Bản tin không bao gồm NXT ngoài giờ và không phải khuyến nghị đầu tư.",
+      "voiceText": "Biện pháp hạn chế bán giải chấp có hiệu lực hôm nay nhưng không bảo đảm thị trường hồi phục. Trong phiên tới, cần theo dõi khối ngoại và sức khỏe từng ngành. Số liệu thuộc phiên chính KRX, không cộng NXT; bản tin không phải khuyến nghị đầu tư.",
       "source": "MOFE 06/11, hiệu lực 09/11; Yonhap / NewsPim 09/11",
       "sourceIds": [
         "mofe-primary",
