@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-09-us-am",
+  "articleId": "KCI-20261109-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "weekly_watch",
+  "edition": "09/11/2026 US_AM — bản chạy bù trước phiên Mỹ",
+  "dataAsOf": "2026-11-09T14:13:06+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Tuần mới Phố Wall: CPI Mỹ ngày 10/11 và kiểm chứng niềm tin vào AI",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-09/us-am.md",
+  "sourceDisclaimer": "US_AM Monday 9 Nov 2026: Friday 6 Nov is the latest COMPLETED US regular session; 9 Nov US session has not opened at KST cutoff. Focus is next-week official CPI/PPI calendar and risks, not a new Monday close; no unreleased inflation estimates presented as actual. Distinct angle from 7 Nov US_AM recap of Friday chip bounce/payroll release.",
+  "eventKeys": [
+    "BLS-CPI-OCT-2026-RELEASE-2026-11-10",
+    "BLS-PPI-OCT-2026-RELEASE-2026-11-13",
+    "US-AI-TECH-WEEK-AHEAD-2026-11-09"
+  ],
+  "sourceLedger": [
+    {
+      "id": "bls-cpi-schedule",
+      "title": "U.S. BLS official November 2026 economic release schedule",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+      "eventDate": "2026-11-03",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "primary",
+      "facts": [
+        "The October 2026 CPI is scheduled for Tuesday Nov 10 at 08:30 Eastern, before Nov 11 Korea trading; there is no published October CPI result as of this script cutoff.",
+        "The October 2026 PPI is scheduled for Friday Nov 13 at 08:30 Eastern; results must not be assumed."
+      ]
+    },
+    {
+      "id": "bls-payroll",
+      "title": "BLS official October 2026 Employment Situation released Nov 6",
+      "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "primary",
+      "facts": [
+        "Nonfarm payroll employment rose by 165,000 in October 2026; unemployment stood at 4.1%, per Nov 6 BLS release.",
+        "BLS payroll numbers are subject to ordinary revisions and do not in themselves prove a future Fed policy decision."
+      ]
+    },
+    {
+      "id": "reuters-week",
+      "title": "Reuters Nov 6 Wall Street week ahead: tech swoon and US inflation on tap",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Friday rebound did not erase a volatile week for technology shares; investors now await Tuesday CPI and technology-sector earnings.",
+        "Any market-implied expectations of Fed rate changes are conditional expectations, not central bank decisions."
+      ]
+    },
+    {
+      "id": "schwab-week",
+      "title": "Schwab Network Nov 8 calendar preview of inflation and technology company earnings",
+      "url": "https://schwabnetwork.com/articles/week-ahead-inflation-data-neocloud-and-space-earnings",
+      "eventDate": "2026-11-08",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Scheduled company earnings this week include CoreWeave on Tuesday and Applied Materials on Thursday U.S. time; these are scheduled events, not reported results.",
+        "Tuesday's CPI and Friday's PPI are the key upcoming U.S. inflation releases."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Mỹ sắp công bố lạm phát tháng mười: vì sao đây có thể là phép thử mới với cổ phiếu công nghệ?",
+    "candidates": [
+      {
+        "style": "question",
+        "text": "Mỹ sắp công bố lạm phát tháng mười: vì sao đây có thể là phép thử mới với cổ phiếu công nghệ?"
+      },
+      {
+        "style": "contrast",
+        "text": "Một phiên hồi phục chưa cứu được cả tuần giảm điểm, giờ Phố Wall chờ điều gì?"
+      },
+      {
+        "style": "impact",
+        "text": "CPI Mỹ ngày mai có thể ảnh hưởng lãi suất, cổ phiếu AI và cả thị trường Hàn Quốc ra sao?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, báo cáo lạm phát hay triển vọng đầu tư hạ tầng AI sẽ tác động mạnh hơn đến thị trường tuần này? Cùng trao đổi dưới phần bình luận nhé.",
+    "screenHeadline": "CPI HAY HẠ TẦNG AI?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "CPI hay triển vọng đầu tư AI sẽ tác động mạnh hơn tuần này?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "US_AM · TUẦN 09–13/11",
+      "headline": "CPI Mỹ: phép thử mới",
+      "summary": "Bản nhìn trước sự kiện, không phải kết quả CPI",
+      "voiceText": "Mỹ sắp công bố lạm phát tháng mười: vì sao đây có thể là phép thử mới với cổ phiếu công nghệ? Sáng thứ Hai theo giờ Hàn Quốc, phiên giao dịch Mỹ đầu tuần còn chưa bắt đầu. Vì thế bản tin này tập trung vào những sự kiện đã lên lịch.",
+      "source": "BLS lịch tháng 11/2026; Reuters 06/11",
+      "sourceIds": [
+        "bls-cpi-schedule",
+        "reuters-week"
+      ],
+      "stats": [
+        {
+          "label": "CPI THÁNG 10",
+          "value": "10/11",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "10/11",
+        "qualifier": "Ngày BLS dự kiến công bố CPI tháng 10; chưa có kết quả"
+      }
+    },
+    {
+      "id": "calendar",
+      "eyebrow": "LỊCH KINH TẾ MỸ",
+      "headline": "Hai mốc lạm phát",
+      "summary": "CPI thứ Ba và PPI thứ Sáu, theo lịch BLS",
+      "voiceText": "Cục Thống kê Lao động Mỹ ấn định công bố CPI tháng mười vào thứ Ba ngày mười tháng mười một, lúc tám giờ ba mươi sáng giờ miền Đông, tức mười giờ ba mươi tối giờ Hàn Quốc. Chỉ số giá sản xuất PPI được xếp lịch vào thứ Sáu ngày mười ba. Đây mới là lịch, chưa phải kết quả.",
+      "source": "BLS lịch phát hành cập nhật 03/11",
+      "sourceIds": [
+        "bls-cpi-schedule"
+      ],
+      "stats": [
+        {
+          "label": "CPI",
+          "value": "10/11",
+          "tone": "neutral"
+        },
+        {
+          "label": "PPI",
+          "value": "13/11",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "jobs",
+      "eyebrow": "NỀN KINH TẾ MỸ",
+      "headline": "Việc làm vẫn là biến số",
+      "summary": "BLS ngày 06/11: dữ liệu đã công bố, không phải dự báo",
+      "voiceText": "Số liệu việc làm tháng mười công bố thứ Sáu ghi nhận Mỹ có thêm một trăm sáu mươi lăm nghìn việc làm phi nông nghiệp, với thất nghiệp bốn phẩy một phần trăm. Thị trường sẽ kết hợp thông tin lao động và lạm phát để điều chỉnh kỳ vọng lãi suất, nhưng Fed chưa đưa ra quyết định mới chỉ từ hai con số này.",
+      "source": "BLS, 06/11/2026",
+      "sourceIds": [
+        "bls-payroll"
+      ],
+      "stats": [
+        {
+          "label": "VIỆC LÀM THÁNG 10",
+          "value": "+165.000",
+          "tone": "neutral"
+        },
+        {
+          "label": "THẤT NGHIỆP",
+          "value": "4,1%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "ai",
+      "eyebrow": "PHÉP THỬ CỔ PHIẾU AI",
+      "headline": "Chờ bằng chứng lợi nhuận",
+      "summary": "Các công bố doanh nghiệp sắp tới không phải kết quả đã biết",
+      "voiceText": "Một câu hỏi khác là liệu các doanh nghiệp hạ tầng AI có cho thấy khả năng biến chi phí đầu tư lớn thành doanh thu và dòng tiền. CoreWeave nằm trong lịch công bố kết quả tuần này, cùng với các công ty công nghệ khác. Lợi nhuận chưa công bố không thể được giả định trước là tốt hay xấu.",
+      "source": "Reuters 06/11; Schwab Network 08/11",
+      "sourceIds": [
+        "reuters-week",
+        "schwab-week"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ẢNH HƯỞNG ĐẾN HÀN QUỐC",
+      "headline": "Theo dõi trước khi kết luận",
+      "summary": "Lãi suất Mỹ, khẩu vị rủi ro và chip",
+      "voiceText": "Với Hàn Quốc, một báo cáo CPI bất ngờ có thể thay đổi kỳ vọng lãi suất Mỹ, tác động đến tỷ giá và tâm lý đối với nhóm chip. Ngược lại, số liệu phù hợp kỳ vọng cũng chưa bảo đảm thị trường sẽ tăng. Chúng ta cần chờ kết quả thực và phản ứng của nhà đầu tư.",
+      "source": "BLS lịch tháng 11; Reuters 06/11",
+      "sourceIds": [
+        "bls-cpi-schedule",
+        "reuters-week"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "CPI & PPI MỸ",
+          "LỢI NHUẬN AI",
+          "TỶ GIÁ & CHIP HÀN"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "Mỹ sắp công bố lạm phát tháng mười: vì sao đây có thể là phép thử mới với cổ phiếu công nghệ?"
+}
