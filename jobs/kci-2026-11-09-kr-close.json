@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-09-kr-close",
+  "edition": "09/11/2026 KR_CLOSE · KRX chính sau 15:30 KST",
+  "dataAsOf": "2026-11-09T18:28:36+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI đảo chiều từ +2,24% về đóng cửa −0,81%; khối ngoại bán ròng",
+  "sourceDisclaimer": "KOSPI/KOSDAQ KRX regular session close Nov 9 2026 only, not NXT after-market. Data corroborated from Korean reports citing KRX (original KRX table not directly fetched). Net flow amounts vary by source; only direction used. Reuters nuclear USD 10bn is proposal pending commercial review, not disbursement. MOFE margin measure announced Nov 6, effective Nov 9, already included in KR_AM; context only. Informational, not investment advice.",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "articleId": "KCI-20261109-KR-CLOSE",
+  "articlePath": "editorial/2026-11-09/kr-close.md",
+  "eventKeys": [
+    "krx-kospi-reversal-close-2026-11-09",
+    "krx-chip-vs-battery-biotech-divergence-2026-11-09",
+    "kr-us-nuclear-remittance-feasibility-2026-11-09"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap Infomax, Market Close Nov 9 16:04–16:11 KST",
+      "url": "https://en.infomaxai.com/news/articleView.html?idxno=147639",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI regular-session close Nov 9 was 5,018.85, down 40.84 points or 0.81%; intraday rally was up to 2.24%.",
+        "Foreigners were net sellers at close; exact flow figures differ among publisher categories and update points."
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim Korean market close, Nov 9 16:03 KST, citing KRX",
+      "url": "https://search.newspim.com/news/view/20261109001082",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5,018.85 (-0.81%); KOSDAQ 638.97 (-0.82%) at regular KRX close Nov 9.",
+        "Institutional buying coexisted with foreign and retail net selling; Samsung Electronics +0.64%, SK hynix +0.35%, LG Energy Solution -5.78%, Alteogen -16.01%."
+      ]
+    },
+    {
+      "id": "koreatimes-close",
+      "title": "The Korea Times Nov 9 16:24 KST KOSPI closes 5,018.85",
+      "url": "https://www.koreatimes.co.kr/economy/20261109/kospi-barely-holds-5000-fails-to-regain-momentum",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed 5,018.85 (-0.81%), KOSDAQ 638.97 (-0.82%), with institutions buying and foreigners selling.",
+        "Samsung Electronics +0.64%, SK hynix +0.35%; USD/KRW regular Seoul market ended at 1,347.1 won."
+      ]
+    },
+    {
+      "id": "reuters-nuclear",
+      "title": "Reuters Nov 9 proposed $10bn US nuclear project advance pending feasibility review",
+      "url": "https://www.reuters.com/world/asia-pacific/south-korea-says-10-billion-us-nuclear-project-remittance-requires-full-2026-11-09/",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Finance Minister Lee Hyoung-il said a proposed US $10 billion advance remittance for a nuclear project requires commercial feasibility review before commitment.",
+        "Alaska LNG investment has not received a final decision. These are not executed payments or finalized investments."
+      ]
+    },
+    {
+      "id": "mofe-primary",
+      "title": "Korean Ministry of Finance and Economy official market stabilization note published Nov 6, measures effective Nov 9",
+      "url": "https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6522",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "primary",
+      "facts": [
+        "The government announced a temporary three-month waiver of 140% collateral maintenance ratio requirements effective Nov 9.",
+        "This is background already covered in KR_AM; it does not guarantee equity-market gains, and is mentioned only to contextualize the observed Nov 9 closing reversal."
+      ]
+    },
+    {
+      "id": "newsis-close",
+      "title": "Newsis Nov 9 16:11 KST closing data citing KRX",
+      "url": "https://www.newsis.com/view/NISX20261109_0003860817",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T18:28:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI fell 40.84 points (-0.81%) to 5,018.85; KOSDAQ fell 5.30 (-0.82%) to 638.97.",
+        "KOSPI morning gain of over 2% disappeared in afternoon amid continued foreign selling."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều?",
+        "score": 94
+      },
+      {
+        "style": "impact",
+        "text": "Khối ngoại vẫn bán ròng dù cổ phiếu chip tăng nhẹ. Vì sao KOSPI cuối cùng vẫn mất điểm?",
+        "score": 91
+      },
+      {
+        "style": "question",
+        "text": "KOSPI từng vượt năm nghìn một trăm bảy mươi điểm. Vì sao nhịp hồi vẫn thất bại?",
+        "score": 89
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, lực bán của khối ngoại hay sức yếu ở nhóm pin và công nghệ sinh học đáng chú ý hơn? Chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "TÍN HIỆU NÀO QUAN TRỌNG?",
+    "screenSubline": "Khối ngoại hay sức yếu các ngành?",
+    "question": "Khối ngoại hay sức yếu ở các ngành quyết định thị trường hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KR_CLOSE · 09/11 · KRX",
+      "headline": "Tăng hơn 2%, cuối phiên −0,81%",
+      "summary": "KOSPI đảo chiều và chỉ giữ được mốc 5.000",
+      "voiceText": "KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? KOSPI đóng cửa phiên chính KRX ngày chín tháng mười một tại năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng mất không phẩy tám hai phần trăm, còn sáu trăm ba mươi tám phẩy chín bảy điểm.",
+      "source": "Yonhap Infomax / NewsPim · 09/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX ĐÓNG CỬA",
+          "value": "5.018,85",
+          "tone": "down"
+        },
+        {
+          "label": "THAY ĐỔI",
+          "value": "−0,81%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "638,97 · −0,82%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CAO NHẤT TRONG PHIÊN",
+            "value": 2.24,
+            "display": "+2,24%"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": -0.81,
+            "display": "−0,81%"
+          }
+        ],
+        "qualifier": "KRX phiên chính 09/11/2026; hai mốc quan sát, không phải đường giá"
+      }
+    },
+    {
+      "id": "flow",
+      "eyebrow": "DÒNG TIỀN",
+      "headline": "Khối ngoại vẫn bán ròng",
+      "summary": "Lực mua tổ chức chưa đủ giữ nhịp hồi",
+      "voiceText": "Điểm đáng chú ý là buổi sáng chỉ số có lúc đạt năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm. Nhưng lực bán quay lại vào buổi chiều. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua vào. Đây là số liệu phiên chính, không cộng giao dịch NXT ngoài giờ.",
+      "source": "Yonhap Infomax / The Korea Times · 09/11",
+      "sourceIds": [
+        "yonhap-close",
+        "koreatimes-close"
+      ],
+      "stats": [
+        {
+          "label": "ĐỈNH QUAN SÁT TRONG PHIÊN",
+          "value": "5.172,94",
+          "tone": "up"
+        },
+        {
+          "label": "KHỐI NGOẠI",
+          "value": "Bán ròng",
+          "tone": "down"
+        },
+        {
+          "label": "TỔ CHỨC",
+          "value": "Mua ròng",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "ĐẦU NGÀY: HỒI PHỤC",
+          "CUỐI NGÀY: BÁN RÒNG",
+          "CHỈ SỐ ĐÓNG CỬA GIẢM"
+        ]
+      }
+    },
+    {
+      "id": "sectors",
+      "eyebrow": "PHÂN HÓA NGÀNH",
+      "headline": "Chip tăng nhẹ, pin và sinh học giảm",
+      "summary": "Không phải cổ phiếu công nghệ nào cũng cùng chiều",
+      "voiceText": "Hai cổ phiếu chip dẫn dắt vẫn giữ sắc xanh: Samsung Electronics tăng không phẩy sáu bốn phần trăm, SK hynix tăng không phẩy ba lăm phần trăm. Trái lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, còn Alteogen mất hơn mười sáu phần trăm. Áp lực bán đã lan sang nhiều nhóm ngoài bán dẫn.",
+      "source": "NewsPim / Korea Times · KRX 09/11",
+      "sourceIds": [
+        "newspim-close",
+        "koreatimes-close"
+      ],
+      "stats": [
+        {
+          "label": "SAMSUNG ELECTRONICS",
+          "value": "+0,64%",
+          "tone": "up"
+        },
+        {
+          "label": "SK HYNIX",
+          "value": "+0,35%",
+          "tone": "up"
+        },
+        {
+          "label": "LG ENERGY SOLUTION",
+          "value": "−5,78%",
+          "tone": "down"
+        },
+        {
+          "label": "ALTEOGEN",
+          "value": "−16,01%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "company",
+        "company": "SECTOR DIVERGENCE",
+        "bullets": [
+          "CHIP TĂNG NHẸ",
+          "PIN GIẢM SÂU",
+          "SINH HỌC PHÂN HÓA"
+        ]
+      }
+    },
+    {
+      "id": "investment",
+      "eyebrow": "CHÍNH SÁCH & ĐẦU TƯ",
+      "headline": "10 tỷ USD chưa phải tiền đã chuyển",
+      "summary": "Dự án điện hạt nhân Mỹ cần thẩm định hiệu quả",
+      "voiceText": "Cùng ngày, Reuters đưa tin Hàn Quốc đang đánh giá đề xuất chuyển trước mười tỷ đô la Mỹ cho một dự án điện hạt nhân tại Mỹ. Bộ trưởng Tài chính yêu cầu thẩm định hiệu quả thương mại trước khi quyết định. Dự án khí hóa lỏng Alaska cũng chưa có quyết định đầu tư cuối cùng. Đây là đề xuất, không phải vốn đã giải ngân.",
+      "source": "Reuters · công bố 09/11",
+      "sourceIds": [
+        "reuters-nuclear"
+      ],
+      "stats": [
+        {
+          "label": "QUY MÔ ĐỀ XUẤT",
+          "value": "10 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "TRẠNG THÁI",
+          "value": "Chưa quyết định",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "10 tỷ USD",
+        "qualifier": "Khoản chuyển trước được đề xuất; chưa giải ngân"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Chưa thể kết luận đã ổn định",
+      "summary": "Theo dõi dòng vốn, độ rộng và kết quả ngành",
+      "voiceText": "Dù biện pháp giảm áp lực bán giải chấp đã có hiệu lực hôm nay, phiên chính vẫn giảm. Những ngày tới, KCI sẽ theo dõi lực bán ngoại, nhóm chip và độ rộng thị trường. Bản tin không bao gồm NXT ngoài giờ và không phải khuyến nghị đầu tư.",
+      "source": "MOFE 06/11, hiệu lực 09/11; Yonhap / NewsPim 09/11",
+      "sourceIds": [
+        "mofe-primary",
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KHỐI NGOẠI & DÒNG TIỀN",
+          "NHÓM CHIP & NGÀNH",
+          "ĐỘ RỘNG THỊ TRƯỜNG"
+        ]
+      }
+    }
+  ]
+}
