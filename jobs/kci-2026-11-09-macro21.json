@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-09-macro21",
+  "edition": "09/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-09T21:00:35+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Việc làm Mỹ mạnh, CPI sắp công bố: đồng won chịu sức ép nào?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261109-MACRO21",
+  "articlePath": "editorial/2026-11-09/macro21.md",
+  "eventKeys": [
+    "US-OCT-JOBS-2026-11-06-KRW-TRANSMISSION",
+    "US-OCT-CPI-RELEASE-2026-11-10-KRW-TRANSMISSION"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "As of 21:00 KST Nov 9 US October CPI not released. Market implied odds are not Fed decisions. US Nov 9 regular close not yet occurred. BOK decision dated Oct 22.",
+  "sourceLedger": [
+    {
+      "id": "bls-jobs",
+      "title": "BLS October 2026 Employment Situation",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "eventDate": "2026-11-06",
+      "kind": "primary",
+      "checkedAt": "2026-11-09T21:00:35+09:00",
+      "facts": [
+        "October nonfarm payrolls rose 165000, unemployment 4.1 percent."
+      ]
+    },
+    {
+      "id": "bls-cpi",
+      "title": "BLS November 2026 release calendar",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+      "eventDate": "2026-11-03",
+      "kind": "primary",
+      "checkedAt": "2026-11-09T21:00:35+09:00",
+      "facts": [
+        "October CPI scheduled Nov 10 08:30 ET, not yet released as of 21:00 KST Nov 9."
+      ]
+    },
+    {
+      "id": "bok-rate",
+      "title": "BOK October 22 monetary policy decision",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065825",
+      "eventDate": "2026-10-22",
+      "kind": "primary",
+      "checkedAt": "2026-11-09T21:00:35+09:00",
+      "facts": [
+        "BOK maintained its base rate at 3.00 percent on October 22."
+      ]
+    },
+    {
+      "id": "reuters-fx",
+      "title": "Reuters November 9 US dollar and Fed rate expectations",
+      "url": "https://www.reuters.com/world/asia-pacific/us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election-2026-11-09/",
+      "eventDate": "2026-11-09",
+      "kind": "secondary",
+      "checkedAt": "2026-11-09T21:00:35+09:00",
+      "facts": [
+        "Reuters reported market-implied 81 percent odds of a Fed December hike; this is not a Fed decision."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Mỹ thêm việc làm, nhưng vì sao đồng won vẫn phải chờ báo cáo lạm phát?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Mỹ thêm việc làm, nhưng vì sao đồng won vẫn phải chờ báo cáo lạm phát?"
+      },
+      {
+        "style": "impact",
+        "text": "Việc làm Mỹ tăng, kỳ vọng lãi suất thay đổi: đồng won Hàn Quốc chịu ảnh hưởng thế nào?"
+      },
+      {
+        "style": "question",
+        "text": "Trước giờ công bố CPI Mỹ, người theo dõi tỷ giá USD/KRW nên chú ý điều gì?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Muốn theo dõi phản ứng của đồng won sau khi CPI Mỹ công bố, hãy theo dõi Korea Capital Insight. Thông tin mang tính tham khảo, không phải khuyến nghị đầu tư.",
+    "screenHeadline": "THEO DÕI CPI VÀ WON",
+    "screenSubline": "Korea Capital Insight"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Won trước phép thử CPI",
+      "summary": "BLS và BOK; cập nhật 09/11",
+      "voiceText": "Mỹ thêm việc làm, nhưng vì sao đồng won vẫn phải chờ báo cáo lạm phát? Báo cáo việc làm Mỹ đã có, nhưng lạm phát tháng mười vẫn chưa được công bố. Đó là khác biệt quan trọng khi đánh giá áp lực lên đồng won.",
+      "source": "bls-jobs; bls-cpi",
+      "sourceIds": [
+        "bls-jobs",
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "CPI 10/11",
+        "qualifier": "Lịch công bố, chưa phải số thực tế"
+      },
+      "stats": []
+    },
+    {
+      "id": "labor",
+      "eyebrow": "DỮ LIỆU ĐÃ CÔNG BỐ",
+      "headline": "Mỹ thêm 165 nghìn việc",
+      "summary": "BLS, báo cáo 06/11",
+      "voiceText": "Theo Cục Thống kê Lao động Mỹ, tháng mười có thêm một trăm sáu mươi lăm nghìn việc làm phi nông nghiệp. Tỷ lệ thất nghiệp là bốn phẩy một phần trăm. Đây là số liệu công bố ngày sáu tháng mười một, không phải dự báo.",
+      "source": "bls-jobs",
+      "sourceIds": [
+        "bls-jobs"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "VIỆC LÀM",
+          "value": "+165.000",
+          "tone": "neutral"
+        },
+        {
+          "label": "THẤT NGHIỆP",
+          "value": "4,1%",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "rates",
+      "eyebrow": "LÃI SUẤT VÀ USD",
+      "headline": "Kỳ vọng Fed thay đổi",
+      "summary": "Reuters ngày 09/11",
+      "voiceText": "Reuters ngày chín tháng mười một ghi nhận thị trường hợp đồng tương lai nghiêng về khả năng Fed tăng lãi suất trong tháng mười hai. Đó là kỳ vọng có thể thay đổi, không phải quyết định đã được Fed công bố.",
+      "source": "reuters-fx",
+      "sourceIds": [
+        "reuters-fx"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN",
+      "headline": "Đồng won chịu hai lực",
+      "summary": "BOK ngày 22/10",
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc giữ lãi suất cơ bản ở ba phần trăm trong quyết định ngày hai mươi hai tháng mười. Nếu kỳ vọng lãi suất Mỹ tăng, chênh lệch lợi suất có thể gây sức ép lên won. Nhưng dòng vốn, xuất khẩu và khẩu vị rủi ro cũng quyết định tỷ giá.",
+      "source": "bok-rate; reuters-fx",
+      "sourceIds": [
+        "bok-rate",
+        "reuters-fx"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "LÃI SUẤT BOK",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "calendar",
+      "eyebrow": "MỐC SẮP TỚI",
+      "headline": "CPI chưa công bố",
+      "summary": "BLS lịch 10/11, 08:30 ET",
+      "voiceText": "CPI Mỹ tháng mười được xếp lịch công bố lúc tám giờ ba mươi sáng ngày mười tháng mười một theo giờ miền Đông, tức mười giờ ba mươi tối giờ Hàn Quốc. Nếu lạm phát khác dự báo, thị trường có thể điều chỉnh kỳ vọng lãi suất và tỷ giá.",
+      "source": "bls-cpi; reuters-fx",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-fx"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "CẦN THEO DÕI",
+      "headline": "Ba tín hiệu then chốt",
+      "summary": "Lao động · CPI · USD/KRW",
+      "voiceText": "Điều đáng theo dõi không chỉ là con số CPI, mà còn là phản ứng của lợi suất Mỹ và tỷ giá đô la trên won sau khi dữ liệu xuất hiện. Đừng coi kỳ vọng hiện tại là kết quả chắc chắn.",
+      "source": "bls-cpi; reuters-fx",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-fx"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "CPI MỸ 10/11",
+          "LỢI SUẤT MỸ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Mỹ thêm việc làm, nhưng vì sao đồng won vẫn phải chờ báo cáo lạm phát?"
+}
