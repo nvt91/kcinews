@@ -1,40 +1,52 @@
-# KCI — KR_CLOSE 09/11/2026 — SỐ LIỆU ĐÓNG CỬA ĐÃ ĐỐI CHIẾU
+# KR_CLOSE — 09/11/2026 — Production brief V1
 
-Article ID: KCI-20261109-KR-CLOSE
-Stream: KR_NEWS; slot: KR_CLOSE; format: digest
-Cutoff: 2026-11-09 18:00 KST (scheduled producer observation)
-Status: ĐANG BIÊN TẬP — mâu thuẫn KOSPI được giải quyết; chưa có job/Vbee/MP4
-Comparison: editorial/2026-11-09/kr-am.md; KR_AM was a delayed morning snapshot, not a KRX close.
-Editing profile: KCI_EDIT_20261026_V1; voice retained: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc.
-Event keys: KRX-20261109-KOSPI-CLOSE-VERIFIED; KRX-20261109-KOSDAQ-CLOSE-VERIFIED; KR-US-NUCLEAR-REMITTANCE-REVIEW-20261109; KR-MARGIN-WAIVER-20261109.
+Article ID: KCI-20261109-KR-CLOSE; stream KR_NEWS; slot KR_CLOSE; format digest.
+Cutoff kiểm tra: 09/11/2026 18:28 KST. Phiên: KRX chính ngày 09/11, đã đóng cửa; NXT ngoài giờ không cộng chung.
+Tình trạng: **đã có đủ dữ liệu biên tập cốt lõi**, chờ workflow Vbee/Remotion và QA file thật. Trước đó hồ sơ tạm BLOCKED do báo cáo thứ cấp xung đột; chủ kênh xác nhận KOSPI giảm ~0,8%, các nguồn đóng cửa Hàn Quốc xác nhận chính xác −0,81%.
 
-## Editorial brief (hold; not a voice script)
-Ngày 09/11, thị trường chứng khoán Hàn Quốc hồi phục trong buổi sáng nhưng không giữ được sắc xanh khi đóng cửa phiên chính. Theo Yonhap công bố lúc 15:38 KST và SBS lúc 16:57 KST, **KOSPI đóng cửa ở 5.018,85 điểm, giảm 40,84 điểm, tương đương 0,81%** so với phiên liền trước. **KOSDAQ đóng cửa tại 638,97 điểm, giảm 5,30 điểm, tương đương 0,82%**. Mức giảm 0,8% mà chủ kênh xác nhận là số làm tròn đúng. Số liệu này chỉ thuộc phiên chính KRX, không cộng với NXT ngoài giờ. Bản KR_AM đã nêu KOSPI tăng 1,66% lên 5.143,90 điểm tại mốc sáng 11:34; sự khác biệt là diễn biến đảo chiều trong cùng ngày, không phải hai số đóng cửa đối nghịch. Thông tin The Times nêu tăng 1,8% phải được phân loại là mốc khác hoặc chưa rõ thời điểm, **không sử dụng làm kết quả đóng cửa**. Các báo cáo Korea Times và MoneyToday cùng ngày cũng xác nhận chỉ số cuối phiên 5.018,85 và KOSDAQ 638,97. Khối ngoại tiếp tục bán ròng theo các báo cáo sau phiên; số mua/bán ròng chính xác cần ghi rõ KOSPI, phạm vi và nguồn trước khi đưa vào màn hình hoặc lời đọc.
+## Brief (~300 từ, 4 mảng)
+**1. Đảo chiều KOSPI sau nhịp hồi sáng.** Theo Yonhap Infomax lúc 16:04–16:11 và NewsPim lúc 16:03, KOSPI kết phiên chính tại **5.018,85 điểm, giảm 40,84 điểm (−0,81%)**. KOSDAQ đóng cửa **638,97 điểm, giảm 5,30 điểm (−0,82%)**. KOSPI có lúc đạt 5.172,94 điểm, tương đương tăng 2,24%, nhưng không giữ được thành quả; đây là một quan sát trong phiên, không phải giá kết phiên. Nhiều nguồn có số liệu nhất quán về đóng cửa; không dùng bài The Times nói tăng 1,8% làm close. KRX API gốc chưa đọc được, nên ghi rõ đây là nguồn báo chí dẫn dữ liệu KRX.
 
-Một diễn biến chính sách mới trong ngày là thông tin Bộ trưởng Tài chính Lee Hyoung-il phát biểu trước ủy ban ngân sách Quốc hội: đề xuất chuyển trước 10 tỷ USD cho một dự án điện hạt nhân tại Mỹ phải được thẩm định đầy đủ tính khả thi thương mại trước khi cam kết. Reuters ngày 9/11 nhấn mạnh khoản chuyển tiền vẫn ở giai đoạn đề xuất, không phải dòng vốn đã giải ngân. Thứ trưởng Công nghiệp Park Dong-il cũng nói chưa có quyết định đầu tư cuối cùng đối với dự án LNG Alaska. Hai trường hợp này liên quan trực tiếp đến phân bổ vốn và rủi ro tài chính của Hàn Quốc, nhưng không được gộp thành một cam kết đầu tư đã ký.
+**2. Dòng tiền và độ rộng.** NewsPim, Yonhap Infomax và Korea Times thống nhất khối ngoại và nhà đầu tư cá nhân bán ròng, còn tổ chức mua ròng trên KOSPI. Giá trị chi tiết có chênh lệch tùy nguồn và thời điểm cập nhật, nên video chỉ công bố chiều mua bán, không áp đặt một con số giao dịch chuẩn duy nhất. Bản tin sáng KR_AM lúc 11:34 ghi KOSPI +1,66%; tin chiều phải kể sự đảo chiều mới, không đọc lại mốc sáng như đóng cửa.
 
-Bối cảnh trong nước: thông cáo Bộ Tài chính và Kinh tế công bố ngày 6/11 cho biết việc tạm miễn yêu cầu duy trì tỷ lệ tài sản bảo đảm 140% tại công ty chứng khoán có hiệu lực từ ngày 9/11 trong ba tháng. Tin này đã được đưa vào KR_AM; bản chiều chỉ nhắc làm bối cảnh khi có cập nhật mới, không coi là tin độc lập. Các câu chuyện AI và bán dẫn toàn cầu cũng phải tách nhận định nhà đầu tư khỏi quyết định chính sách đã ban hành.
+**3. Phân hóa nhóm cổ phiếu.** Samsung Electronics đóng cửa +0,64%, SK hynix +0,35%. Ngược lại, LG Energy Solution −5,78%, Alteogen −16,01% theo NewsPim và các bản tin sau 15:30. Sự khác biệt giữa chip, pin và công nghệ sinh học giúp giải thích tại sao nhịp tăng ở một số cổ phiếu lớn không đủ đảo chiều chỉ số toàn thị trường. Không suy diễn giảm giá thành suy giảm nhu cầu dài hạn khi chưa có công bố doanh nghiệp.
 
-**Decision:** Mâu thuẫn đóng cửa KOSPI/KOSDAQ **ĐÃ GIẢI QUYẾT** qua Yonhap 15:38, SBS 16:57 và Korea Times cùng ngày. Đã có căn cứ biên tập cho phần thị trường. Tuy nhiên bước kiểm tra trùng lặp, duyệt kịch bản 90–110 giây, kiểm tra job thực tế và nguồn sơ cấp cho các tin chọn phát vẫn phải hoàn tất trước khi phát sinh Vbee; chưa khởi chạy sản xuất. Editorial score NOT_SCORED; video/audio QC NOT_MEASURED. Không đánh đồng xác minh dữ kiện với MP4 đã hoàn tất.
+**4. Rủi ro phân bổ vốn quốc tế.** Reuters ngày 09/11 đưa tin đề xuất chuyển trước **10 tỷ USD** cho dự án điện hạt nhân Mỹ phải qua đánh giá đầy đủ tính khả thi thương mại. Dự án LNG Alaska cũng chưa có quyết định đầu tư cuối cùng. Đây là thông tin chính sách tài chính mới trong ngày, không phải cam kết giải ngân. Thông cáo MOFE ngày 06/11 về miễn yêu cầu tài sản bảo đảm 140%, có hiệu lực 09/11, chỉ là bối cảnh đã phát trong KR_AM; không trình bày thành tin mới.
 
-## Source ledger
-- Yonhap 09/11 15:38 KST, KRX closing numbers: https://www.yna.co.kr/view/AKR20261109117700008
-- SBS English 09/11 16:57 KST, confirms KOSPI 5,018.85 (-0.81%): https://news.sbs.co.kr/english/article.do?news_id=N1008837715
-- Korea Times 09/11, detailed KOSPI/KOSDAQ and capital flows: https://www.koreatimes.co.kr/economy/20261109/kospi-barely-holds-5000-fails-to-regain-momentum
-- Korea government original 01/10 background on conditional nuclear framework: https://www.korea.net/Government/Briefing-Room/Press-Releases/view?articleId=2018868&insttCode=A260122&type=N
-- Yonhap, 09/11 11:34 KST, morning snapshot: https://en.yna.co.kr/view/AEN20261109004100320
-- Reuters, 09/11, proposed $10bn US nuclear advance and Alaska LNG conditional review: https://www.reuters.com/world/asia-pacific/south-korea-says-10-billion-us-nuclear-project-remittance-requires-full-2026-11-09/
-- Korea MOFE, published 06/11; effective 09/11, primary: https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6522
-- FT, 09/11, reports KOSPI -0.8%: https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b
-- WSJ, 09/11, reports KOSPI -0.8%: https://www.wsj.com/finance/stocks/asian-equities-mostly-rebound-though-sentiment-remains-fragile-34b7cc83
-- AP, 09/11, reports KOSPI -0.8%: https://apnews.com/article/d938f8e6ff42b3706e1d36e6245ec56b
-- The Times, 09/11, reports KOSPI +1.8% (conflict; verify timepoint): https://www.thetimes.com/business/companies-markets/article/asian-markets-rebound-after-chaotic-72-hours-in-wake-of-midterms-l2plf8hqc
+Chọn video 3 tuyến: đảo chiều thị trường; phân hóa ngành/dòng tiền; thẩm định vốn dự án Mỹ. CTA cuối một lần, không khuyến nghị giao dịch. Mức tin cậy dữ liệu đóng cửa: corroborated/secondary citing KRX. Giữ thời điểm xuất bản tin và cảnh báo nguồn.
 
-## QC and handoff
-MP4 NOT_AVAILABLE; voice NOT_CALLED; video/audio duration, takes, silences, effects alignment, LUFS, true peak NOT_MEASURED; recorded-footage camera operations N/A. Sheet should mark BLOCKED without C/E, H CHỜ DUYỆT, I CHƯA ĐĂNG. No publication.
+## Hooks đã chấm
+1. **94/100**: KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều?
+2. **91/100**: Khối ngoại vẫn bán ròng dù cổ phiếu chip tăng nhẹ. Vì sao KOSPI cuối cùng vẫn mất điểm?
+3. **89/100**: KOSPI từng vượt năm nghìn một trăm bảy mươi điểm. Vì sao nhịp hồi vẫn thất bại?
+Chọn #1: tương phản rõ, số liệu chính xác, kích thích người xem nhưng không giật gân. Điểm kiểm duyệt biên tập: **90/100** (nguồn phiên kết nhất quán, có rủi ro chênh lệch dòng vốn được loại khỏi kịch bản).
 
-## Correction receipt — 09/11/2026 KST
-- User confirmed KOSPI approximately −0.8%. Independent closing confirmation: Yonhap 15:38, SBS 16:57, Korea Times; exact KRX regular-session final **5,018.85 (−40.84; −0.81%)**, KOSDAQ **638.97 (−5.30; −0.82%)**.
-- Original BLOCKED_EDITORIAL decision based on unresolved closing direction is superseded. This correction does not claim original KRX API retrieval, full editorial production approval, Vbee voice, or rendered MP4.
-- Next episode hook idea: “Buổi sáng KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối ngày lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều?”
-- Caption draft (<50 words, not yet published): “🇰🇷 KOSPI hồi mạnh trong phiên nhưng chốt ngày lại giảm 0,81%. Khối ngoại tiếp tục bán ròng. Theo mọi người, lực bán đã dịu bớt chưa? #KCI #KOSPI”
+## Caption sẵn đăng (<50 từ)
+🇰🇷 KOSPI tăng mạnh trong phiên nhưng cuối ngày lại giảm 0,81%. Nhóm chip xanh nhẹ, còn cổ phiếu pin và sinh học chịu áp lực. Theo mọi người, tuần này thị trường sẽ đi đâu?
+
+#KoreaCapitalInsight #KOSPI
+
+## Kịch bản lời đọc — một video (dự kiến 90–110 giây, đo bằng file MP4 thật)
+1. KR_CLOSE · 09/11 · KRX: KOSPI có lúc tăng hơn hai phần trăm, nhưng cuối phiên lại giảm không phẩy tám mốt phần trăm. Điều gì đã đảo chiều? KOSPI đóng cửa phiên chính KRX ngày chín tháng mười một tại năm nghìn không trăm mười tám phẩy tám lăm điểm. KOSDAQ cũng mất không phẩy tám hai phần trăm, còn sáu trăm ba mươi tám phẩy chín bảy điểm.
+
+2. DÒNG TIỀN: Điểm đáng chú ý là buổi sáng chỉ số có lúc đạt năm nghìn một trăm bảy mươi hai phẩy chín bốn điểm. Nhưng lực bán quay lại vào buổi chiều. Khối ngoại và cá nhân bán ròng trên KOSPI, trong khi tổ chức mua vào. Đây là số liệu phiên chính, không cộng giao dịch NXT ngoài giờ.
+
+3. PHÂN HÓA NGÀNH: Hai cổ phiếu chip dẫn dắt vẫn giữ sắc xanh: Samsung Electronics tăng không phẩy sáu bốn phần trăm, SK hynix tăng không phẩy ba lăm phần trăm. Trái lại, LG Energy Solution giảm năm phẩy bảy tám phần trăm, còn Alteogen mất hơn mười sáu phần trăm. Áp lực bán đã lan sang nhiều nhóm ngoài bán dẫn.
+
+4. CHÍNH SÁCH & ĐẦU TƯ: Cùng ngày, Reuters đưa tin Hàn Quốc đang đánh giá đề xuất chuyển trước mười tỷ đô la Mỹ cho một dự án điện hạt nhân tại Mỹ. Bộ trưởng Tài chính yêu cầu thẩm định hiệu quả thương mại trước khi quyết định. Dự án khí hóa lỏng Alaska cũng chưa có quyết định đầu tư cuối cùng. Đây là đề xuất, không phải vốn đã giải ngân.
+
+5. ĐIỀU CẦN THEO DÕI: Dù biện pháp giảm áp lực bán giải chấp đã có hiệu lực hôm nay, phiên chính vẫn giảm. Những ngày tới, KCI sẽ theo dõi lực bán ngoại, nhóm chip và độ rộng thị trường. Bản tin không bao gồm NXT ngoài giờ và không phải khuyến nghị đầu tư.
+
+CTA (runner đọc **một lần**): Theo anh chị, lực bán của khối ngoại hay sức yếu ở nhóm pin và công nghệ sinh học đáng chú ý hơn? Chia sẻ góc nhìn và theo dõi KCI nhé.
+
+## Nguồn, loại và mốc quan sát
+- [yonhap-close] SECONDARY, sự kiện 2026-11-09, kiểm tra 2026-11-09T18:28:36+09:00: https://en.infomaxai.com/news/articleView.html?idxno=147639
+- [newspim-close] SECONDARY, sự kiện 2026-11-09, kiểm tra 2026-11-09T18:28:36+09:00: https://search.newspim.com/news/view/20261109001082
+- [koreatimes-close] SECONDARY, sự kiện 2026-11-09, kiểm tra 2026-11-09T18:28:36+09:00: https://www.koreatimes.co.kr/economy/20261109/kospi-barely-holds-5000-fails-to-regain-momentum
+- [reuters-nuclear] SECONDARY, sự kiện 2026-11-09, kiểm tra 2026-11-09T18:28:36+09:00: https://www.reuters.com/world/asia-pacific/south-korea-says-10-billion-us-nuclear-project-remittance-requires-full-2026-11-09/
+- [mofe-primary] PRIMARY, sự kiện 2026-11-06, kiểm tra 2026-11-09T18:28:36+09:00: https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6522
+- [newsis-close] SECONDARY, sự kiện 2026-11-09, kiểm tra 2026-11-09T18:28:36+09:00: https://www.newsis.com/view/NISX20261109_0003860817
+Dữ liệu từ MOFE là nguồn gốc nhưng công bố 06/11; các nguồn đóng cửa KRX ở trên là nguồn báo chí dẫn KRX, không giả danh truy cập trực tiếp số liệu gốc. Giữ dấu +/- và phạm vi phiên chính khi đưa lên hình.
+
+## QA & chi phí
+Không có quay hình: takes/grade/face N/A. Whisper từng từ, ±2 frame, -14LUFS/true peak và thông số 18Mbps/AAC320kbps là mục tiêu, không được khai đạt trước đo. Chỉ sử dụng **mode=video**, không lấy preview không tiếng làm thành phẩm. Voice: Vbee Anh Khôi Tin tức n_hanoi_male_anhkhoitintuc_zero_shot_news_vc. Nguồn giọng cần kiểm tra sau render; không fallback/không gọi lại trả phí. Trạng thái video: NOT_RENDERED trước trigger. Chủ kênh chỉ duyệt bản MP4 có tiếng, chưa cho phép đăng.
