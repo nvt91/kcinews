@@ -41,7 +41,9 @@ for (const scene of job.scenes) {
     if (typeof scene[key] !== "string" || scene[key].length < 3) throw new Error("Missing scene field " + key);
   }
   if (scene.voiceText.length > 1400 || scene.headline.length > 105 || scene.summary.length > 190) throw new Error("Scene too long.");
-  if (!Array.isArray(scene.stats) || scene.stats.length > 3) throw new Error("Invalid stats.");
+  // Match the schema-v2 editorial validator: up to four attributed stats per scene.
+  // The 09/11 KR_CLOSE job validly includes four sector stats.
+  if (!Array.isArray(scene.stats) || scene.stats.length > 4) throw new Error("Invalid stats (maximum four).");
 }
 console.log("Validated", job.id, job.scenes.length, "scenes.");
 if (mode !== "validate") {
