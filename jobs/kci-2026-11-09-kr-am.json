@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-09-kr-am",
+  "articleId": "KCI-20261109-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "daily_digest",
+  "edition": "09/11/2026 KR_AM — bản chạy bù sau giờ phát sáng",
+  "dataAsOf": "2026-11-09T14:13:06+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI đảo chiều tăng trong sáng 9/11: chip hồi phục, rủi ro bán ròng vẫn còn",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-09/kr-am.md",
+  "sourceDisclaimer": "Late KR_AM catch-up, cutoff 14:13 KST. The intraday observations cited occurred at 10:56–11:34 KST on 9 Nov; they are NOT final KRX close or real-time quotes at the later catch-up time. Nov 6 close is historical; MOFE policy published Nov 6 and effective Nov 9. KR_CLOSE remains a separate edition.",
+  "eventKeys": [
+    "KRX-KOSPI-NOV9-MORNING-REVERSAL",
+    "KR-SECURITIES-MARGIN-RATIO-WAIVER-EFFECTIVE-2026-11-09",
+    "KR-FOREIGN-SELLING-NOV9-INTRADAY"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-morning",
+      "title": "Yonhap Nov 9 11:34 KST: Seoul stocks move up late Monday morning on chip rebound",
+      "url": "https://en.yna.co.kr/view/AEN20261109004100320",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "At late Monday morning reporting point, KOSPI rose 84.21 points or 1.66% to 5,143.90 after initially opening lower; NOT a session close.",
+        "Samsung Electronics +2.97% and SK hynix +4.15% at the reporting point; won 1,357.1 per USD at 11:20 KST."
+      ]
+    },
+    {
+      "id": "mofe-market",
+      "title": "Korea Ministry of Finance and Economy: Market Situation Review Meeting Nov 6",
+      "url": "https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6522",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "primary",
+      "facts": [
+        "Authorities announced a three-month waiver of the securities firms' 140 percent collateral maintenance ratio on margin lending, effective Nov 9, to mitigate forced liquidation.",
+        "Officials said they would continue monitoring overseas chip policies and market capital flows; this is a stabilization measure, not a guarantee of market recovery."
+      ]
+    },
+    {
+      "id": "sedaily-week",
+      "title": "Seoul Economic Daily Nov 9: KOSPI hunts for bottom after 11.71% weekly fall",
+      "url": "https://en.sedaily.com/finance/2026/11/09/kospi-hunts-for-bottom-after-11-percent-plunge-with-nov-11",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The Nov 6 regular-session KOSPI close was 5,059.69, down 6.02% for that session; last week's KOSPI change was -11.71%.",
+        "Foreign investors sold a net 10.44 trillion won of KOSPI shares last week, regular and aftermarket combined, per article's KRX-based report."
+      ]
+    },
+    {
+      "id": "moneytoday-flow",
+      "title": "MoneyToday Nov 9: Samsung and SK hynix rebound while foreign sellers persist",
+      "url": "https://www.mt.co.kr/en/stock/2026/11/09/2026110911301182528",
+      "eventDate": "2026-11-09",
+      "checkedAt": "2026-11-09T14:13:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "At 10:56 KST, KOSPI was 5,118.17, up 1.16%, after dipping to 4,990.66 early in the session.",
+        "At the report's 11:10 KST investor-flow snapshot, foreign investors remained net sellers; trading flows can change intraday."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa rơi mạnh tuần trước, vậy vì sao sáng nay cổ phiếu chip Hàn Quốc lại bật tăng?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KOSPI vừa rơi mạnh tuần trước, vậy vì sao sáng nay cổ phiếu chip Hàn Quốc lại bật tăng?"
+      },
+      {
+        "style": "impact",
+        "text": "Samsung và SK hynix hồi phục sáng thứ Hai, nhưng dòng vốn ngoại đã thực sự quay lại chưa?"
+      },
+      {
+        "style": "question",
+        "text": "Một nhịp tăng đầu tuần đã đủ chấm dứt đợt bán tháo KOSPI hay chưa?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, tín hiệu nào đáng theo dõi hơn trong các phiên tới: dòng vốn ngoại hay đà phục hồi của cổ phiếu chip? Hãy chia sẻ góc nhìn nhé.",
+    "screenHeadline": "CHIP HỒI PHỤC HAY VỐN NGOẠI?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Dòng vốn ngoại hay đà phục hồi chip là tín hiệu quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KR_AM · 09/11 · CẬP NHẬT TRỄ",
+      "headline": "Chip Hàn Quốc bật lại",
+      "summary": "Các mốc sáng thứ Hai, không phải đóng cửa phiên",
+      "voiceText": "KOSPI vừa rơi mạnh tuần trước, vậy vì sao sáng nay cổ phiếu chip Hàn Quốc lại bật tăng? Đây là bản cập nhật trễ, sử dụng dữ liệu được ghi nhận trong buổi sáng ngày chín tháng mười một, không phải số đóng cửa.",
+      "source": "Yonhap 09/11 11:34 KST; Seoul Economic Daily 09/11",
+      "sourceIds": [
+        "yonhap-morning",
+        "sedaily-week"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI 11:34",
+          "value": "5.143,90",
+          "tone": "up"
+        },
+        {
+          "label": "TUẦN TRƯỚC",
+          "value": "−11,71%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "5.143,90",
+        "qualifier": "KOSPI sáng 09/11 lúc 11:34 KST; chưa phải đóng cửa"
+      }
+    },
+    {
+      "id": "rebound",
+      "eyebrow": "ĐÀ HỒI PHỤC",
+      "headline": "Chip dẫn nhịp tăng",
+      "summary": "Giá quan sát giữa phiên, không phải kết quả cuối ngày",
+      "voiceText": "Theo Yonhap lúc mười một giờ ba mươi tư, KOSPI tăng một phẩy sáu sáu phần trăm lên năm nghìn một trăm bốn mươi ba phẩy chín điểm, sau khi mở cửa giảm. Samsung Electronics tăng hai phẩy chín bảy phần trăm; SK hynix tăng bốn phẩy một năm phần trăm.",
+      "source": "Yonhap, 09/11 11:34 KST",
+      "sourceIds": [
+        "yonhap-morning"
+      ],
+      "stats": [
+        {
+          "label": "SAMSUNG",
+          "value": "+2,97%",
+          "tone": "up"
+        },
+        {
+          "label": "SK HYNIX",
+          "value": "+4,15%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "risk",
+      "eyebrow": "ÁP LỰC CHƯA BIẾN MẤT",
+      "headline": "Đừng nhầm hồi phục với đảo xu hướng",
+      "summary": "Tuần trước KOSPI giảm sâu và khối ngoại bán ròng",
+      "voiceText": "Điểm cần thận trọng là chỉ số vừa giảm mười một phẩy bảy một phần trăm trong tuần trước. Theo số liệu được báo chí dẫn từ KRX, khối ngoại bán ròng khoảng mười phẩy bốn bốn nghìn tỷ won cả tuần. Dòng vốn trong buổi sáng nay cũng chưa cho thấy sự đảo chiều chắc chắn.",
+      "source": "Seoul Economic Daily 09/11; MoneyToday 09/11",
+      "sourceIds": [
+        "sedaily-week",
+        "moneytoday-flow"
+      ],
+      "stats": [
+        {
+          "label": "BÁN RÒNG TUẦN",
+          "value": "10,44 nghìn tỷ won",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "policy",
+      "eyebrow": "CHÍNH SÁCH ỔN ĐỊNH",
+      "headline": "Giảm áp lực bán giải chấp",
+      "summary": "Biện pháp công bố 06/11, hiệu lực 09/11",
+      "voiceText": "Một điểm mới về chính sách: Bộ Tài chính và Kinh tế Hàn Quốc cho biết từ hôm nay, các công ty chứng khoán được miễn yêu cầu duy trì tỷ lệ tài sản bảo đảm một trăm bốn mươi phần trăm trong ba tháng. Mục tiêu là hạn chế bán giải chấp dây chuyền, không phải bảo đảm thị trường tăng.",
+      "source": "MOFE, công bố 06/11, hiệu lực 09/11",
+      "sourceIds": [
+        "mofe-market"
+      ],
+      "stats": [
+        {
+          "label": "TỶ LỆ QUY ĐỊNH",
+          "value": "140%",
+          "tone": "neutral"
+        },
+        {
+          "label": "HIỆU LỰC",
+          "value": "09/11",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "generic"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI SAU ĐÓNG CỬA",
+      "headline": "Ba tín hiệu cho phiên chiều",
+      "summary": "Không dự báo trước kết quả đóng cửa",
+      "voiceText": "Vì thế, đến lúc chốt phiên hãy kiểm tra liệu đà tăng của hai cổ phiếu chip có được giữ lại, khối ngoại bán ròng có giảm, và các biện pháp ổn định có giúp tâm lý thị trường bền hơn hay không. Một buổi sáng hồi phục vẫn cần được kiểm chứng.",
+      "source": "Yonhap 09/11; MOFE 06/11; MoneyToday 09/11",
+      "sourceIds": [
+        "yonhap-morning",
+        "mofe-market",
+        "moneytoday-flow"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "ĐÀ TĂNG CHIP",
+          "DÒNG VỐN NGOẠI",
+          "CHÍNH SÁCH ỔN ĐỊNH"
+        ]
+      }
+    }
+  ],
+  "voiceTestText": "KOSPI vừa rơi mạnh tuần trước, vậy vì sao sáng nay cổ phiếu chip Hàn Quốc lại bật tăng?"
+}
