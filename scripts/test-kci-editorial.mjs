@@ -1,7 +1,33 @@
 import fs from "node:fs";
+import { execFileSync } from "node:child_process";
 import {validateKciJob} from "./validate-kci-job.mjs";
 const source=JSON.parse(fs.readFileSync("jobs/kci-schema-v2-example.json","utf8"));
 const copy=(x)=>JSON.parse(JSON.stringify(x));
+// Regression: 09 Nov KR_CLOSE was editorial-schema valid, but the paid
+// runner's separate 3-card ceiling blocked it before any Vbee call.
+// Preflight must exercise the *same* non-billable runner validation.
+const krClose=JSON.parse(fs.readFileSync("jobs/kci-2026-11-09-kr-close.json","utf8"));
+validateKciJob(krClose);
+if(krClose.scenes.find(s=>s.id==="sectors")?.stats?.length!==4){
+  throw new Error("KR_CLOSE regression requires exactly four sector stats");
+}
+const runnerValidation=execFileSync(process.execPath,[
+  "scripts/run-job.mjs", "--mode=validate",
+  "--job=jobs/kci-2026-11-09-kr-close.json"
+],{encoding:"utf8"});
+if(!runnerValidation.includes("Validated kci-2026-11-09-kr-close")){
+  throw new Error("Paid runner did not validate the fixed KR_CLOSE regression job");
+}
+const invalidFive=copy(krClose);
+invalidFive.scenes.find(s=>s.id==="sectors").stats.push({
+  label:"UNSOURCED EXTRA", value:"+1%", tone:"up"
+});
+let rejectedFive=false;
+try{ validateKciJob(invalidFive); }catch(e){
+  rejectedFive=String(e.message).includes("invalid stat cards");
+}
+if(!rejectedFive)throw new Error("Expected schema validator to reject a fifth stat card");
+
 validateKciJob(source);
 // Regression fixture: the exact 07/11 US_AM production job must pass before any paid issue.
 const usAm=JSON.parse(fs.readFileSync("jobs/kci-2026-11-07-us-am.json","utf8"));
