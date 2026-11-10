@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-10-kr-close",
+  "articleId": "KCI-20261110-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "articlePath": "editorial/2026-11-10/kr-close.md",
+  "edition": "10/11/2026 KR_CLOSE · KRX regular session",
+  "dataAsOf": "2026-11-10T17:47:24+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI +4,39% và KOSDAQ +4,48%: khối ngoại mua ròng, chip hồi phục khi dầu giảm",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "All closes are KRX regular-session 10 Nov 2026 (not NXT). Korean Yonhap 16:03 and English Yonhap 16:32 have differing exact foreign flow amounts; only net buying direction narrated. KRX original daily table unavailable; independent Korean/English closing reports corroborate close, Partially verified. Brent Reuters observation is not a Korean market closing price. Not investment advice.",
+  "eventKeys": [
+    "krx-rebound-close-2026-11-10",
+    "krx-foreign-net-buying-reversal-2026-11-10",
+    "krx-chip-airline-oil-divergence-2026-11-10",
+    "korea-us-congress-engagement-2026-11-10"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-korean-close",
+      "title": "Yonhap Korean complete KRX close 10 Nov 2026 16:03 KST",
+      "url": "https://www.yna.co.kr/view/AKR20261110131951008",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T17:47:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5239.13 +220.28 (+4.39%), KOSDAQ 667.61 +28.64 (+4.48%) at KRX regular close.",
+        "Foreigners KOSPI net bought 358.6bn won, institutions bought 497.9bn, retail sold 1339.5bn; KOSPI advancers 716 and decliners 175.",
+        "Samsung Electronics +4.74%, SK hynix +6.69%, LG Energy Solution +3.93%, Korean Air +11.51%, Asiana +11.68%."
+      ]
+    },
+    {
+      "id": "yonhap-english-close",
+      "title": "Yonhap English updated Korean stock close 10 Nov 2026 16:32 KST",
+      "url": "https://en.yna.co.kr/view/AEN20261110007352320",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T17:47:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5239.13 +4.39% after three down sessions, touched 5300.92 intraday; KRX KOSPI buy-side sidecar 09:06.",
+        "Foreign net purchases 365.9bn won in English edition versus 358.6bn won Korean edition; exclude exact foreign value from narration due to differing updates.",
+        "Samsung Electronics +4.74%, SK hynix +6.69%, Korean Air +11.51%, Asiana +11.68%; won 1337.5 per USD at 15:30 KST."
+      ]
+    },
+    {
+      "id": "reuters-global",
+      "title": "Reuters Asian markets 10 Nov 2026 oil decline and Korean rebound",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-10/",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T17:47:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "South Korean KOSPI rallied about 4% as oil fell and risk appetite recovered; Brent was about 91.56 dollars per barrel at Reuters observation, not Korean closing price.",
+        "Oil and US equities provide macro context, not proof of a lasting Korean recovery."
+      ]
+    },
+    {
+      "id": "reuters-korea-policy",
+      "title": "Reuters President Lee calls for US bipartisan congressional engagement 10 Nov 2026",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-seoul-must-build-bipartisan-support-us-congress-2026-11-10/",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T17:47:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "President Lee requested stronger bipartisan engagement in US Congress after midterms, close financial market monitoring and contingency plans.",
+        "Trade, AI investment, and strategic security issues remain under negotiation; no finalized policy outcomes should be implied."
+      ]
+    },
+    {
+      "id": "krx-index-method",
+      "title": "KRX index official reference — KOSPI and KOSDAQ",
+      "url": "https://index.krx.co.kr/contents/OPN/02/02010100/OPN02010100.jsp",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T17:47:24+09:00",
+      "kind": "primary",
+      "facts": [
+        "KRX operates Korean market indices; this general reference is NOT the Nov 10 official daily market table.",
+        "Daily Nov 10 close independently corroborated by Yonhap Korean and English updated reports citing KRX, not by a retrieved primary daily KRX table."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa tăng hơn bốn phần trăm sau ba phiên giảm liên tiếp. Điều gì kéo thị trường Hàn Quốc bật lại?",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "KOSPI vừa tăng hơn bốn phần trăm sau ba phiên giảm liên tiếp. Điều gì kéo thị trường Hàn Quốc bật lại?",
+        "score": 96
+      },
+      {
+        "style": "impact",
+        "text": "Khối ngoại quay lại mua ròng sau tám phiên, KOSPI tăng hơn bốn phần trăm. Điều gì thay đổi?",
+        "score": 93
+      },
+      {
+        "style": "question",
+        "text": "Giá dầu giảm, cổ phiếu chip và hàng không bật mạnh. Nhịp hồi của KOSPI có bền?",
+        "score": 90
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhịp hồi này sẽ bền hơn nếu khối ngoại tiếp tục mua ròng, hay nếu giá dầu tiếp tục hạ? Chia sẻ góc nhìn nhé.",
+    "screenHeadline": "NHỊP HỒI CÓ BỀN?",
+    "screenSubline": "Khối ngoại hay giá dầu quan trọng hơn?",
+    "question": "Nhịp hồi có bền hơn nhờ khối ngoại hay giá dầu?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KR_CLOSE · 10/11 · KRX",
+      "headline": "KOSPI bật tăng +4,39%",
+      "summary": "KOSDAQ cũng phục hồi +4,48% sau ba phiên giảm",
+      "voiceText": "KOSPI vừa tăng hơn bốn phần trăm sau ba phiên giảm liên tiếp. Điều gì kéo thị trường Hàn Quốc bật lại? Chốt phiên chính ngày mười tháng mười một, KOSPI đạt năm nghìn hai trăm ba mươi chín phẩy mười ba điểm, tăng bốn phẩy ba chín phần trăm. KOSDAQ tăng bốn phẩy bốn tám phần trăm, lên sáu trăm sáu mươi bảy phẩy sáu mốt điểm.",
+      "source": "Yonhap 16:03 & 16:32 KST · KRX chính",
+      "sourceIds": [
+        "yonhap-korean-close",
+        "yonhap-english-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI · KRX",
+          "value": "5.239,13 · +4,39%",
+          "tone": "up"
+        },
+        {
+          "label": "KOSDAQ · KRX",
+          "value": "667,61 · +4,48%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": 4.39,
+            "display": "+4,39%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": 4.48,
+            "display": "+4,48%"
+          }
+        ],
+        "qualifier": "Đóng cửa KRX phiên chính 10/11, không gồm NXT"
+      }
+    },
+    {
+      "id": "flow",
+      "eyebrow": "DÒNG TIỀN",
+      "headline": "Khối ngoại trở lại mua ròng",
+      "summary": "Tổ chức cùng mua, cá nhân bán ròng",
+      "voiceText": "Điểm khác biệt so với hôm qua là khối ngoại quay lại mua ròng KOSPI, lần đầu sau tám phiên. Tổ chức cũng mua vào, trong khi cá nhân bán ròng. Buổi sáng, lực mua mạnh đến mức KRX kích hoạt sidecar bên mua. Nhưng chỉ số kết phiên dưới đỉnh trong ngày, nên chưa thể gọi đây là xu hướng tăng mới.",
+      "source": "Yonhap Korean 16:03 / English 16:32",
+      "sourceIds": [
+        "yonhap-korean-close",
+        "yonhap-english-close"
+      ],
+      "stats": [
+        {
+          "label": "KHỐI NGOẠI",
+          "value": "Mua ròng",
+          "tone": "up"
+        },
+        {
+          "label": "TỔ CHỨC",
+          "value": "Mua ròng",
+          "tone": "up"
+        },
+        {
+          "label": "ĐỈNH TRONG PHIÊN",
+          "value": "5.300,92",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "generic",
+        "bullets": [
+          "KHỐI NGOẠI: MUA RÒNG",
+          "TỔ CHỨC: MUA RÒNG",
+          "CÁ NHÂN: BÁN RÒNG"
+        ]
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "CHIP & CỔ PHIẾU",
+      "headline": "SK hynix tăng +6,69%",
+      "summary": "Samsung Electronics tăng +4,74%",
+      "voiceText": "Nhóm bán dẫn dẫn dắt. Samsung Electronics tăng bốn phẩy bảy bốn phần trăm; SK hynix tăng sáu phẩy sáu chín phần trăm. Đà phục hồi của công nghệ Mỹ hỗ trợ tâm lý, nhưng đây là biến động giá trong một phiên, chưa phải bằng chứng lợi nhuận doanh nghiệp đã thay đổi.",
+      "source": "Yonhap 16:03/16:32 · Reuters 10/11",
+      "sourceIds": [
+        "yonhap-korean-close",
+        "yonhap-english-close",
+        "reuters-global"
+      ],
+      "stats": [
+        {
+          "label": "SAMSUNG ELECTRONICS",
+          "value": "+4,74%",
+          "tone": "up"
+        },
+        {
+          "label": "SK HYNIX",
+          "value": "+6,69%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SAMSUNG",
+            "value": 4.74,
+            "display": "+4,74%"
+          },
+          {
+            "label": "SK HYNIX",
+            "value": 6.69,
+            "display": "+6,69%"
+          }
+        ],
+        "qualifier": "Thay đổi đóng cửa phiên chính 10/11"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "GIÁ DẦU & CHÍNH SÁCH",
+      "headline": "Dầu giảm, tâm lý cải thiện",
+      "summary": "Hàng không bật mạnh; Seoul theo dõi thay đổi chính trị Mỹ",
+      "voiceText": "Giá dầu giảm khi kỳ vọng đàm phán Trung Đông tăng lên, hỗ trợ nhóm vận tải. Korean Air tăng hơn mười một phần trăm, Asiana cũng tăng mạnh. Cùng ngày, Tổng thống Hàn Quốc yêu cầu theo dõi thị trường và tăng tiếp xúc với cả hai đảng trong Quốc hội Mỹ, vì các vấn đề thương mại và đầu tư vẫn còn bỏ ngỏ.",
+      "source": "Reuters 10/11 · Yonhap 16:32",
+      "sourceIds": [
+        "reuters-global",
+        "reuters-korea-policy",
+        "yonhap-english-close"
+      ],
+      "stats": [
+        {
+          "label": "KOREAN AIR",
+          "value": "+11,51%",
+          "tone": "up"
+        },
+        {
+          "label": "ASIANA AIRLINES",
+          "value": "+11,68%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOREAN AIR",
+            "value": 11.51,
+            "display": "+11,51%"
+          },
+          {
+            "label": "ASIANA",
+            "value": 11.68,
+            "display": "+11,68%"
+          }
+        ],
+        "qualifier": "Giá cổ phiếu KRX 10/11; không phải giá dầu"
+      }
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Hồi mạnh chưa chắc bền",
+      "summary": "Quan sát dòng vốn, dầu và CPI Mỹ",
+      "voiceText": "Với nhà đầu tư, ba điều đáng theo dõi là dòng vốn ngoại phiên tới, giá dầu và báo cáo lạm phát Mỹ sắp công bố. Một phiên tăng mạnh chưa xóa hết rủi ro. Đây là số liệu phiên chính KRX, không cộng giao dịch NXT ngoài giờ; thông tin chỉ để tham khảo.",
+      "source": "Yonhap 10/11 · Reuters 10/11",
+      "sourceIds": [
+        "yonhap-korean-close",
+        "reuters-global"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KHỐI NGOẠI PHIÊN TỚI",
+          "GIÁ DẦU & CHI PHÍ",
+          "LẠM PHÁT MỸ"
+        ]
+      }
+    }
+  ]
+}
