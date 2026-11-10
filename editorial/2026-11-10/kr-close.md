@@ -18,16 +18,16 @@ Article ID: KCI-20261110-KR-CLOSE. Stream KR_NEWS; slot KR_CLOSE; format digest.
 3. 90/100: Giá dầu giảm, cổ phiếu chip và hàng không bật mạnh. Nhịp hồi của KOSPI có bền?
 Chosen hook #1. Editorial 91/100; facts corroborated, optional conflicting amounts excluded.
 
-## Script for Vbee Anh Khôi (334 spoken words; target 90–110 seconds; actual audio controls duration)
-1. KR_CLOSE · 10/11 · KRX: KOSPI vừa tăng hơn bốn phần trăm sau ba phiên giảm liên tiếp. Điều gì kéo thị trường Hàn Quốc bật lại? Chốt phiên chính ngày mười tháng mười một, KOSPI đạt năm nghìn hai trăm ba mươi chín phẩy mười ba điểm, tăng bốn phẩy ba chín phần trăm. KOSDAQ tăng bốn phẩy bốn tám phần trăm, lên sáu trăm sáu mươi bảy phẩy sáu mốt điểm.
+## Script for Vbee Anh Khôi (301 spoken words; target 90–110 seconds; actual audio controls duration)
+1. KR_CLOSE · 10/11 · KRX: KOSPI vừa tăng hơn bốn phần trăm sau ba phiên giảm liên tiếp. Điều gì kéo thị trường Hàn Quốc bật lại? Kết phiên chính ngày mười tháng mười một, KOSPI đạt năm nghìn hai trăm ba mươi chín phẩy mười ba điểm, tăng bốn phẩy ba chín phần trăm. KOSDAQ tăng bốn phẩy bốn tám phần trăm, lên sáu trăm sáu mươi bảy phẩy sáu mốt.
 
-2. DÒNG TIỀN: Điểm khác biệt so với hôm qua là khối ngoại quay lại mua ròng KOSPI, lần đầu sau tám phiên. Tổ chức cũng mua vào, trong khi cá nhân bán ròng. Buổi sáng, lực mua mạnh đến mức KRX kích hoạt sidecar bên mua. Nhưng chỉ số kết phiên dưới đỉnh trong ngày, nên chưa thể gọi đây là xu hướng tăng mới.
+2. DÒNG TIỀN: Khối ngoại quay lại mua ròng KOSPI sau tám phiên. Tổ chức cũng mua vào, còn cá nhân bán ròng. Lực mua mạnh khiến KRX kích hoạt sidecar bên mua lúc chín giờ sáu phút. Nhưng chỉ số đóng cửa dưới đỉnh trong ngày, nên chưa thể khẳng định một xu hướng tăng mới.
 
-3. CHIP & CỔ PHIẾU: Nhóm bán dẫn dẫn dắt. Samsung Electronics tăng bốn phẩy bảy bốn phần trăm; SK hynix tăng sáu phẩy sáu chín phần trăm. Đà phục hồi của công nghệ Mỹ hỗ trợ tâm lý, nhưng đây là biến động giá trong một phiên, chưa phải bằng chứng lợi nhuận doanh nghiệp đã thay đổi.
+3. CHIP & CỔ PHIẾU: Nhóm bán dẫn dẫn dắt: Samsung Electronics tăng bốn phẩy bảy bốn phần trăm, SK hynix tăng sáu phẩy sáu chín phần trăm. Đà phục hồi của công nghệ Mỹ hỗ trợ tâm lý. Tuy nhiên, một phiên tăng giá chưa chứng minh lợi nhuận doanh nghiệp đã cải thiện.
 
-4. GIÁ DẦU & CHÍNH SÁCH: Giá dầu giảm khi kỳ vọng đàm phán Trung Đông tăng lên, hỗ trợ nhóm vận tải. Korean Air tăng hơn mười một phần trăm, Asiana cũng tăng mạnh. Cùng ngày, Tổng thống Hàn Quốc yêu cầu theo dõi thị trường và tăng tiếp xúc với cả hai đảng trong Quốc hội Mỹ, vì các vấn đề thương mại và đầu tư vẫn còn bỏ ngỏ.
+4. GIÁ DẦU & CHÍNH SÁCH: Giá dầu giảm giúp tâm lý thị trường tích cực hơn, đặc biệt ở hàng không. Korean Air tăng hơn mười một phần trăm, Asiana cũng tăng mạnh. Tổng thống Hàn Quốc đồng thời yêu cầu tăng tiếp xúc với cả hai đảng tại Mỹ, khi các vấn đề thương mại và đầu tư vẫn còn bỏ ngỏ.
 
-5. ĐIỀU CẦN THEO DÕI: Với nhà đầu tư, ba điều đáng theo dõi là dòng vốn ngoại phiên tới, giá dầu và báo cáo lạm phát Mỹ sắp công bố. Một phiên tăng mạnh chưa xóa hết rủi ro. Đây là số liệu phiên chính KRX, không cộng giao dịch NXT ngoài giờ; thông tin chỉ để tham khảo.
+5. ĐIỀU CẦN THEO DÕI: Phiên tới, hãy theo dõi khối ngoại, giá dầu và báo cáo lạm phát Mỹ. Một phiên tăng mạnh chưa xóa hết rủi ro. Các số liệu thuộc KRX chính, không cộng giao dịch NXT ngoài giờ; đây không phải khuyến nghị đầu tư.
 
 CTA appended ONCE by runner: Theo anh chị, nhịp hồi này sẽ bền hơn nếu khối ngoại tiếp tục mua ròng, hay nếu giá dầu tiếp tục hạ? Chia sẻ góc nhìn nhé.
 
