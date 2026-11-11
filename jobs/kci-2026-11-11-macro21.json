@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-11-macro21",
+  "edition": "11/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-11T20:55:48+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Vốn ngoại rút khỏi Hàn Quốc: CPI Mỹ tạo thêm áp lực lên won?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261111-MACRO21",
+  "articlePath": "editorial/2026-11-11/macro21.md",
+  "eventKeys": [
+    "asia-foreign-equity-outflow-oct-2026-reuters-nov11",
+    "us-oct-cpi-nov10-2026-bls",
+    "krw-flow-transmission-nov11"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 20:55 KST 11 Nov 2026; Reuters Oct foreign equity outflows are MONTHLY net equity flows, not all asset classes, not same-day flows. BLS Oct 2026 CPI MoM seasonally adjusted; no Oct 2026 headline YoY because Oct 2025 unavailable. US Nov 11 close has not occurred at this cutoff.",
+  "sourceLedger": [
+    {
+      "id": "reuters-flows",
+      "title": "Reuters Nov 11 Asia foreign equity flows",
+      "url": "https://www.reuters.com/world/china/foreign-investors-pull-out-50-billion-asian-equities-october-ai-cash-burn-woes-2026-11-11/",
+      "eventDate": "2026-11-11",
+      "kind": "secondary",
+      "checkedAt": "2026-11-11T20:55:48+09:00",
+      "facts": [
+        "Net foreign sales of South Korean equities in October 2026 $14.59bn; seven Asian markets combined $49.77bn; these are monthly equity flows not FX settlement totals."
+      ]
+    },
+    {
+      "id": "bls-cpi",
+      "title": "BLS CPI October 2026 official release",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "eventDate": "2026-11-10",
+      "kind": "primary",
+      "checkedAt": "2026-11-11T20:55:48+09:00",
+      "facts": [
+        "October CPI headline +0.4% seasonally adjusted MoM; core +0.3% MoM; October 2025 comparison data unavailable for aggregate YoY."
+      ]
+    },
+    {
+      "id": "reuters-fed",
+      "title": "Reuters Nov 11 rates and inflation context",
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-11/",
+      "eventDate": "2026-11-11",
+      "kind": "secondary",
+      "checkedAt": "2026-11-11T20:55:48+09:00",
+      "facts": [
+        "US CPI hotter than expected; Fed tightening expectations and US short-end Treasury yields increased."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Vốn ngoại rút khỏi cổ phiếu Hàn Quốc, trong lúc lạm phát Mỹ lại gây sức ép. Đồng won chịu tác động ra sao?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Vốn ngoại rút khỏi cổ phiếu Hàn Quốc, trong lúc lạm phát Mỹ lại gây sức ép. Đồng won chịu tác động ra sao?"
+      },
+      {
+        "style": "impact",
+        "text": "Hơn mười bốn tỷ đô la vốn ngoại rút khỏi cổ phiếu Hàn Quốc trong tháng mười. Điều gì đáng lo?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao lạm phát Mỹ có thể khuếch đại áp lực dòng vốn và tỷ giá won?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Anh chị hãy theo dõi dòng vốn thực tế, lợi suất Mỹ và tỷ giá đô la trên won cùng nhau. Theo dõi Korea Capital Insight để cập nhật các tín hiệu này; đây không phải khuyến nghị giao dịch.",
+    "screenHeadline": "THEO DÕI BA TÍN HIỆU",
+    "screenSubline": "Dòng vốn · Lợi suất · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Vốn ngoại và đồng won",
+      "summary": "Reuters 11/11 · số liệu tháng 10",
+      "voiceText": "Vốn ngoại rút khỏi cổ phiếu Hàn Quốc, trong lúc lạm phát Mỹ lại gây sức ép. Đồng won chịu tác động ra sao? Số liệu dòng vốn là cả tháng mười, không phải lượng bán riêng hôm nay.",
+      "source": "Reuters 11/11",
+      "sourceIds": [
+        "reuters-flows"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "14,59 tỷ USD",
+        "qualifier": "Bán ròng cổ phiếu Hàn Quốc, tháng 10/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "flows",
+      "eyebrow": "DÒNG VỐN THÁNG 10",
+      "headline": "Áp lực vốn ngoại",
+      "summary": "Bán ròng cổ phiếu, không phải toàn bộ dòng tiền",
+      "voiceText": "Theo Reuters ngày mười một tháng mười một, nhà đầu tư nước ngoài bán ròng khoảng mười bốn phẩy năm chín tỷ đô la cổ phiếu Hàn Quốc trong tháng mười. Bảy thị trường châu Á được khảo sát ghi nhận tổng mức rút vốn khoảng bốn mươi chín phẩy bảy bảy tỷ đô la. Đây là dòng vốn cổ phiếu, không đồng nghĩa toàn bộ số tiền lập tức được đổi sang đô la.",
+      "source": "Reuters 11/11",
+      "sourceIds": [
+        "reuters-flows"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "HÀN QUỐC · THÁNG 10",
+          "value": "−14,59 tỷ USD",
+          "tone": "down"
+        },
+        {
+          "label": "7 THỊ TRƯỜNG CHÂU Á",
+          "value": "−49,77 tỷ USD",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "cpi",
+      "eyebrow": "LẠM PHÁT MỸ",
+      "headline": "CPI tăng 0,4% trong tháng",
+      "summary": "BLS công bố 10/11 · so tháng trước",
+      "voiceText": "Báo cáo chính thức của Mỹ công bố ngày mười tháng mười một cho thấy CPI tháng mười tăng không phẩy bốn phần trăm so với tháng trước, sau điều chỉnh mùa vụ. CPI lõi tăng không phẩy ba phần trăm. Không có tỷ lệ tăng mười hai tháng cho chỉ số tổng hợp do thiếu dữ liệu tháng mười năm ngoái.",
+      "source": "BLS 10/11",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "CPI · SO THÁNG TRƯỚC",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "CPI LÕI · SO THÁNG TRƯỚC",
+          "value": "+0,3%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "eyebrow": "KÊNH TÁC ĐỘNG",
+      "headline": "Lợi suất · USD · won",
+      "summary": "Kịch bản có điều kiện, không dự báo chắc chắn",
+      "voiceText": "Khi lạm phát Mỹ cao hơn kỳ vọng, nhà đầu tư có thể dự đoán Fed giữ lãi suất cao hơn, khiến lợi suất Mỹ và sức hấp dẫn của đô la tăng. Nếu đồng thời vốn ngoại bán tài sản Hàn Quốc rồi chuyển tiền ra nước ngoài, nhu cầu đô la có thể tạo thêm áp lực lên won. Nhưng hoạt động phòng hộ, trái phiếu và xuất khẩu cũng có thể bù đắp một phần.",
+      "source": "BLS 10/11 · Reuters 11/11",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-fed",
+        "reuters-flows"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI TIẾP",
+      "headline": "Đừng nhìn một con số",
+      "summary": "Dòng vốn · lợi suất Mỹ · USD/KRW",
+      "voiceText": "Vì vậy, đừng suy ra đồng won chắc chắn yếu đi chỉ từ dòng vốn cổ phiếu. Hãy theo dõi cùng lúc dòng vốn thực tế, lợi suất Mỹ và tỷ giá đô la trên won. Những dữ liệu này giúp kiểm tra xem áp lực có thực sự lan rộng hay không.",
+      "source": "Reuters · BLS",
+      "sourceIds": [
+        "reuters-flows",
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn cổ phiếu",
+          "Lợi suất Mỹ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Vốn ngoại rút khỏi cổ phiếu Hàn Quốc, trong lúc lạm phát Mỹ lại gây sức ép. Đồng won chịu tác động ra sao?"
+}
