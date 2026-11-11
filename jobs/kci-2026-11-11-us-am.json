@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-11-us-am",
+  "articleId": "KCI-20261111-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "11/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-11T09:00:39+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "CPI Mỹ cao hơn dự báo, Phố Wall giảm và cổ phiếu AI chịu áp lực",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Bản tin 09:00 KST ngày 11/11/2026; số liệu CPI tháng 10 công bố 10/11 lúc 08:30 EST, chỉ số cổ phiếu là đóng cửa phiên Mỹ 10/11 lúc 16:00 EST = 06:00 KST 11/11. CPI tháng 10 không có tỷ lệ 12 tháng toàn phần do thiếu dữ liệu tháng 10/2025.",
+  "eventKeys": [
+    "us-cpi-october-2026-release-2026-11-10",
+    "us-market-close-2026-11-10",
+    "us-nvidia-sox-2026-11-10",
+    "us-fed-waller-rates-2026-11-10"
+  ],
+  "sourceLedger": [
+    {
+      "id": "bls-cpi",
+      "title": "BLS Consumer Price Index October 2026 official release",
+      "url": "https://www.bls.gov/news.release/cpi.htm",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T09:02:28+09:00",
+      "kind": "primary",
+      "facts": [
+        "Headline CPI +0.4% month-on-month seasonally adjusted October 2026; core CPI +0.3%.",
+        "October 2026 twelve-month CPI headline/core not available because October 2025 data were not collected."
+      ]
+    },
+    {
+      "id": "reuters-close",
+      "title": "Reuters US stocks close November 10 2026",
+      "url": "https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-10T09:02:28+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -0.38% to 7520.93; Nasdaq -0.74% to 25065.87; Dow -0.30% to 52231.89 at November 10 close.",
+        "Nvidia -5.4%, Philadelphia Semiconductor Index -0.4%; US 2-year Treasury yield 4.736%.",
+        "Reuters economists' headline CPI consensus +0.3%, actual +0.4%.",
+        "Fed Governor Waller suggested December rate hike and possible larger hike conditional on inflation."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Lạm phát Mỹ cao hơn dự báo, Phố Wall quay đầu giảm. Điều gì đáng chú ý với cổ phiếu Hàn Quốc?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Lạm phát Mỹ cao hơn dự báo, Phố Wall quay đầu giảm. Điều gì đáng chú ý với cổ phiếu Hàn Quốc?"
+      },
+      {
+        "style": "macro",
+        "text": "CPI Mỹ tăng không như kỳ vọng: lãi suất và tỷ giá won sẽ chịu áp lực ra sao?"
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nvidia giảm hơn năm phần trăm: cổ phiếu bán dẫn Hàn Quốc có bị ảnh hưởng?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, lạm phát Mỹ hay diễn biến nhóm chip sẽ ảnh hưởng thị trường Hàn Quốc nhiều hơn? Cùng chia sẻ góc nhìn nhé.",
+    "screenHeadline": "CPI HAY NHÓM CHIP?",
+    "screenSubline": "Cùng chia sẻ góc nhìn với KCI",
+    "question": "CPI hay nhóm chip ảnh hưởng mạnh hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "CPI MỸ · 10/11",
+      "headline": "CPI nóng hơn dự báo",
+      "summary": "Phố Wall giảm sau báo cáo lạm phát",
+      "voiceText": "Lạm phát Mỹ tháng mười cao hơn dự báo, khiến Phố Wall quay đầu giảm. Điều gì đáng chú ý với thị trường Hàn Quốc? Đây là kết quả sau phiên Mỹ ngày mười tháng mười một.",
+      "source": "BLS / REUTERS · 10/11/2026",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "CPI MỸ",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "S&P 500",
+          "value": "−0,38%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CPI MỸ",
+            "value": 0.4,
+            "display": "+0,4%"
+          },
+          {
+            "label": "S&P 500",
+            "value": 0.38,
+            "display": "−0,38%"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "PHỐ WALL · ĐÓNG CỬA 10/11",
+      "headline": "Ba chỉ số cùng giảm",
+      "summary": "Nasdaq chịu áp lực lớn hơn",
+      "voiceText": "Đóng cửa phiên Mỹ ngày mười tháng mười một, S&P năm trăm giảm không phẩy ba tám phần trăm. Nasdaq giảm không phẩy bảy bốn phần trăm, Dow Jones giảm không phẩy ba phần trăm. Đây là mức thay đổi trong phiên, không phải báo giá trực tiếp sáng nay.",
+      "source": "REUTERS · 10/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "−0,38%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "−0,74%",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "−0,30%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 0.38,
+            "display": "−0,38%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 0.74,
+            "display": "−0,74%"
+          },
+          {
+            "label": "DOW",
+            "value": 0.3,
+            "display": "−0,30%"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "Nvidia giảm 5,4%",
+      "summary": "Chỉ số SOX giảm nhẹ hơn",
+      "voiceText": "Nhóm công nghệ tiếp tục phân hóa. Nvidia giảm năm phẩy bốn phần trăm, trong khi chỉ số bán dẫn Philadelphia giảm không phẩy bốn phần trăm. Điều này cho thấy áp lực ở một cổ phiếu lớn không đại diện cho toàn bộ nhóm chip.",
+      "source": "REUTERS · 10/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "−5,4%",
+          "tone": "down"
+        },
+        {
+          "label": "SOX",
+          "value": "−0,4%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NVIDIA",
+            "value": 5.4,
+            "display": "−5,4%"
+          },
+          {
+            "label": "SOX",
+            "value": 0.4,
+            "display": "−0,4%"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "LẠM PHÁT · BLS",
+      "headline": "CPI tháng 10 tăng 0,4%",
+      "summary": "Cao hơn dự báo 0,3%",
+      "voiceText": "Theo Cục Thống kê Lao động Mỹ, CPI tháng mười tăng không phẩy bốn phần trăm so với tháng trước, cao hơn mức dự báo không phẩy ba phần trăm Reuters khảo sát. CPI lõi tăng không phẩy ba phần trăm. Do thiếu dữ liệu tháng mười năm ngoái, không có tỷ lệ tăng mười hai tháng cho hai chỉ số tổng hợp này.",
+      "source": "BLS / REUTERS · 10/11/2026",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "CPI",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "CPI LÕI",
+          "value": "+0,3%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "CPI",
+            "value": 0.4,
+            "display": "+0,4%"
+          },
+          {
+            "label": "CPI LÕI",
+            "value": 0.3,
+            "display": "+0,3%"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    },
+    {
+      "id": "cpi",
+      "eyebrow": "LÃI SUẤT MỸ",
+      "headline": "Lợi suất ngắn hạn tăng",
+      "summary": "Thị trường định giá lại lãi suất",
+      "voiceText": "Reuters ghi nhận lợi suất trái phiếu chính phủ Mỹ kỳ hạn hai năm tăng lên khoảng bốn phẩy bảy ba sáu phần trăm. Quan chức Fed Christopher Waller đề cập khả năng tăng lãi suất tháng mười hai, nhưng quyết định cuối cùng chưa được đưa ra. Kỳ vọng thị trường không phải cam kết của Fed.",
+      "source": "REUTERS · 10/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "US 2Y",
+          "value": "4,736%",
+          "tone": "neutral"
+        },
+        {
+          "label": "FED",
+          "value": "CHƯA QUYẾT",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "US 2Y",
+            "value": 4.736,
+            "display": "4,736%"
+          },
+          {
+            "label": "FED",
+            "value": 0,
+            "display": "CHƯA QUYẾT"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "GÓC NHÌN HÀN QUỐC",
+      "headline": "Theo dõi won và chip",
+      "summary": "Tác động phụ thuộc dòng vốn",
+      "voiceText": "Với Hàn Quốc, lợi suất Mỹ tăng có thể tạo áp lực lên tỷ giá đô la so với won và dòng vốn nước ngoài. Nvidia giảm có thể ảnh hưởng tâm lý đối với cổ phiếu bán dẫn, nhưng kết quả còn phụ thuộc triển vọng đơn hàng, xuất khẩu và diễn biến KOSPI, KOSDAQ. Đây là thông tin tham khảo, không phải khuyến nghị giao dịch. Theo anh chị, lạm phát Mỹ hay diễn biến nhóm chip sẽ ảnh hưởng thị trường Hàn Quốc nhiều hơn? Cùng chia sẻ góc nhìn nhé.",
+      "source": "BLS / REUTERS · 10/11/2026",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "BÁN DẪN",
+          "value": "PHÂN HÓA",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "USD/KRW",
+            "value": 0,
+            "display": "THEO DÕI"
+          },
+          {
+            "label": "BÁN DẪN",
+            "value": 0,
+            "display": "PHÂN HÓA"
+          }
+        ],
+        "qualifier": "Số liệu BLS / phiên Mỹ 10/11, EST"
+      }
+    }
+  ],
+  "voiceTestText": "CPI Mỹ tháng mười tăng không phẩy bốn phần trăm, cao hơn dự báo."
+}
