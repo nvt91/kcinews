@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-12-macro21",
+  "edition": "12/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-12T20:56:04+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "CPI Mỹ: vì sao thiếu số liệu năm trước lại quan trọng với đồng won?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261112-MACRO21",
+  "articlePath": "editorial/2026-11-12/macro21.md",
+  "eventKeys": [
+    "us-oct2026-cpi-bls-nov10-missing-oct2025",
+    "us-core-cpi-energy-oct2026",
+    "korea-fx-rates-transmission-nov12"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 20:56 KST 12 Nov 2026. BLS release 10 Nov 2026, October MoM seasonally adjusted. October 2025 missing for most indexes due to appropriations lapse; do not invent aggregate YoY. Fed/FX impacts are conditional interpretation, not live USD/KRW quote or Fed decision.",
+  "sourceLedger": [
+    {
+      "id": "bls-cpi",
+      "title": "BLS CPI October 2026 official release",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "eventDate": "2026-11-10",
+      "kind": "primary",
+      "checkedAt": "2026-11-12T20:56:04+09:00",
+      "facts": [
+        "October CPI headline +0.4% MoM seasonally adjusted versus +0.6% September; core +0.3% MoM; energy +0.7% MoM; October 2025 missing prevents aggregate October 2026 YoY."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "CPI Mỹ đã có, nhưng có một con số quan trọng không thể công bố. Điều đó liên quan gì đến đồng won?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "CPI Mỹ đã có, nhưng có một con số quan trọng không thể công bố. Điều đó liên quan gì đến đồng won?"
+      },
+      {
+        "style": "impact",
+        "text": "CPI Mỹ tăng không phẩy bốn phần trăm. Vì sao nhà đầu tư Hàn Quốc vẫn cần thận trọng?"
+      },
+      {
+        "style": "question",
+        "text": "Thiếu số liệu lạm phát cùng kỳ năm trước: nhà đầu tư nên đọc CPI Mỹ thế nào?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Hãy đối chiếu CPI theo tháng, lợi suất Mỹ và tỷ giá đô la trên won trước khi kết luận. Theo dõi Korea Capital Insight để cập nhật các tín hiệu này; đây không phải khuyến nghị giao dịch.",
+    "screenHeadline": "BA TÍN HIỆU CẦN XEM",
+    "screenSubline": "CPI tháng · Lợi suất · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "CPI Mỹ: thiếu dữ liệu năm",
+      "summary": "BLS công bố 10/11 · số liệu tháng 10",
+      "voiceText": "CPI Mỹ đã có, nhưng có một con số quan trọng không thể công bố. Điều đó liên quan gì đến đồng won? Báo cáo mới có một giới hạn dữ liệu cần hiểu đúng.",
+      "source": "BLS 10/11",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+0,4%",
+        "qualifier": "CPI tháng 10, so tháng trước"
+      },
+      "stats": []
+    },
+    {
+      "id": "actual",
+      "eyebrow": "SỐ LIỆU ĐÃ CÔNG BỐ",
+      "headline": "CPI tháng tăng 0,4%",
+      "summary": "Điều chỉnh mùa vụ · so tháng trước",
+      "voiceText": "Cục Thống kê Lao động Mỹ công bố ngày mười tháng mười một: CPI tháng mười tăng không phẩy bốn phần trăm so với tháng trước, sau điều chỉnh mùa vụ. Tháng chín tăng không phẩy sáu phần trăm. CPI lõi, không gồm thực phẩm và năng lượng, tăng không phẩy ba phần trăm.",
+      "source": "BLS 10/11",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "CPI THÁNG 10 · MOM",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "CPI LÕI · MOM",
+          "value": "+0,3%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "missing",
+      "eyebrow": "GIỚI HẠN DỮ LIỆU",
+      "headline": "Không có CPI tổng hợp YoY",
+      "summary": "Thiếu dữ liệu tháng 10/2025",
+      "voiceText": "Điểm dễ bị bỏ qua: BLS không thể công bố mức tăng mười hai tháng của CPI tổng hợp tháng mười năm nay, vì thiếu dữ liệu tháng mười năm ngoái trong thời gian gián đoạn ngân sách. Không nên tự suy ra một tỷ lệ lạm phát năm từ con số tăng theo tháng.",
+      "source": "BLS 10/11",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "Lợi suất · USD · won",
+      "summary": "Kênh tác động có điều kiện",
+      "voiceText": "Với Hàn Quốc, thị trường có thể điều chỉnh kỳ vọng lãi suất Fed từ dữ liệu CPI, rồi phản ánh qua lợi suất trái phiếu Mỹ và nhu cầu đô la. Nếu đô la mạnh lên, chi phí nhập khẩu tính bằng won có thể tăng. Nhưng tỷ giá còn phụ thuộc xuất khẩu, dòng vốn và chính sách Ngân hàng Trung ương Hàn Quốc; không có kết luận chắc chắn chỉ từ CPI.",
+      "source": "BLS 10/11 · phân tích điều kiện",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI TIẾP",
+      "headline": "Đọc đúng ba tín hiệu",
+      "summary": "CPI theo tháng · lợi suất Mỹ · USD/KRW",
+      "voiceText": "Hãy đối chiếu CPI theo tháng, lợi suất Mỹ và tỷ giá đô la trên won trước khi kết luận. Theo dõi Korea Capital Insight để cập nhật các tín hiệu này; đây không phải khuyến nghị giao dịch.",
+      "source": "BLS · phân tích",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "CPI so tháng trước",
+          "Lợi suất Mỹ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "CPI Mỹ đã có, nhưng có một con số quan trọng không thể công bố. Điều đó liên quan gì đến đồng won?"
+}
