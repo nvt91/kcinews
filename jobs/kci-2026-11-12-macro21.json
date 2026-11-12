@@ -31,6 +31,17 @@
       "facts": [
         "October CPI headline +0.4% MoM seasonally adjusted versus +0.6% September; core +0.3% MoM; energy +0.7% MoM; October 2025 missing prevents aggregate October 2026 YoY."
       ]
+    },
+    {
+      "id": "bls-method",
+      "title": "BLS explanation of approximating missing CPI data",
+      "url": "https://www.bls.gov/cpi/factsheets/approximating-missing-data.htm",
+      "eventDate": "2026-11-10",
+      "kind": "primary",
+      "checkedAt": "2026-11-12T20:56:04+09:00",
+      "facts": [
+        "BLS documents the October 2025 collection gap and limitations for twelve-month comparisons."
+      ]
     }
   ],
   "hook": {
@@ -135,7 +146,7 @@
       "eyebrow": "THEO DÕI TIẾP",
       "headline": "Đọc đúng ba tín hiệu",
       "summary": "CPI theo tháng · lợi suất Mỹ · USD/KRW",
-      "voiceText": "Hãy đối chiếu CPI theo tháng, lợi suất Mỹ và tỷ giá đô la trên won trước khi kết luận. Theo dõi Korea Capital Insight để cập nhật các tín hiệu này; đây không phải khuyến nghị giao dịch.",
+      "voiceText": "Vì vậy, đừng dựa vào một con số lạm phát để kết luận đồng won chắc chắn yếu đi. Điều quan trọng là xem dữ liệu tiếp theo có xác nhận xu hướng lợi suất và dòng vốn hay không.",
       "source": "BLS · phân tích",
       "sourceIds": [
         "bls-cpi"
