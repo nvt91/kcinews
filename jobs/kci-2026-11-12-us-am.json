@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-12-us-am",
+  "articleId": "KCI-20261112-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "12/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-12T09:02:18+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq phục hồi 1,6%, CoreWeave hỗ trợ nhóm AI, dầu tăng",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Bản tin 09:02 KST 12/11/2026; số liệu cổ phiếu đóng cửa Mỹ 11/11 16:00 EST = 06:00 KST 12/11. Thị trường trái phiếu Mỹ đóng cửa ngày Veterans Day; không gán lợi suất US10Y mới.",
+  "eventKeys": [
+    "us-market-close-2026-11-11",
+    "coreweave-earnings-2026-11-11",
+    "oil-settlement-2026-11-11",
+    "us-bond-market-veterans-day-2026-11-11"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-markets",
+      "title": "Reuters global markets November 11 US close",
+      "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
+      "eventDate": "2026-11-11",
+      "checkedAt": "2026-11-12T09:02:18+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49% at November 11 close.",
+        "CoreWeave shares +24.7%; Nvidia +2.9% regular session.",
+        "Brent settled at USD 92.76/barrel, WTI at USD 86.53/barrel.",
+        "US Treasury markets closed on Veterans Day."
+      ]
+    },
+    {
+      "id": "ap-close",
+      "title": "AP US market closing indexes November 11",
+      "url": "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
+      "eventDate": "2026-11-11",
+      "checkedAt": "2026-11-12T09:02:18+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 +1.3% to 7619.38; Nasdaq +1.6% to 25466.19; Dow +0.5% to 52486.49.",
+        "US bond market closed for holiday; oil prices rose."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq tăng một phẩy sáu phần trăm, nhưng rủi ro AI đã thực sự qua chưa?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Nasdaq tăng một phẩy sáu phần trăm, nhưng rủi ro AI đã thực sự qua chưa?"
+      },
+      {
+        "style": "macro",
+        "text": "Dầu Brent tăng lên hơn chín mươi hai đô la: Hàn Quốc cần chú ý điều gì?"
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nhóm công nghệ Mỹ hồi phục: cổ phiếu chip Hàn Quốc có được hưởng lợi?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà hồi phục AI hay giá dầu sẽ ảnh hưởng thị trường Hàn Quốc nhiều hơn? Cùng chia sẻ góc nhìn nhé.",
+    "screenHeadline": "AI HAY GIÁ DẦU?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "AI hay giá dầu tác động mạnh hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 11/11",
+      "headline": "Nasdaq hồi phục 1,6%",
+      "summary": "Cổ phiếu AI dẫn dắt phiên tăng",
+      "voiceText": "Nasdaq tăng một phẩy sáu phần trăm, nhưng rủi ro AI đã thực sự qua chưa? Cùng nhìn lại phiên Mỹ ngày mười một tháng mười một.",
+      "source": "REUTERS / AP · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "+1,60%",
+          "tone": "up"
+        },
+        {
+          "label": "S&P 500",
+          "value": "+1,31%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": 1.6,
+            "display": "+1,60%"
+          },
+          {
+            "label": "S&P 500",
+            "value": 1.31,
+            "display": "+1,31%"
+          }
+        ],
+        "qualifier": "Đóng cửa 11/11 EST"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỈ SỐ MỸ",
+      "headline": "Ba chỉ số cùng tăng",
+      "summary": "Nasdaq dẫn đầu phiên hồi phục",
+      "voiceText": "Đóng cửa phiên Mỹ, S&P năm trăm tăng một phẩy ba mốt phần trăm. Nasdaq tăng một phẩy sáu phần trăm, còn Dow Jones tăng không phẩy bốn chín phần trăm. Đây là thay đổi trong phiên, không phải giá trực tiếp sáng nay.",
+      "source": "REUTERS / AP · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "+1,31%",
+          "tone": "up"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "+1,60%",
+          "tone": "up"
+        },
+        {
+          "label": "DOW",
+          "value": "+0,49%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 1.31,
+            "display": "+1,31%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 1.6,
+            "display": "+1,60%"
+          },
+          {
+            "label": "DOW",
+            "value": 0.49,
+            "display": "+0,49%"
+          }
+        ],
+        "qualifier": "Đóng cửa 11/11 EST"
+      }
+    },
+    {
+      "id": "ai",
+      "eyebrow": "AI & DOANH NGHIỆP",
+      "headline": "CoreWeave tăng 24,7%",
+      "summary": "Triển vọng AI hỗ trợ tâm lý",
+      "voiceText": "CoreWeave tăng hai mươi bốn phẩy bảy phần trăm sau khi doanh nghiệp đưa ra triển vọng cải thiện lợi nhuận, giúp xoa dịu một phần lo ngại về chi tiêu hạ tầng AI. Nvidia tăng hai phẩy chín phần trăm trong phiên chính thức. Đà hồi phục không có nghĩa rủi ro định giá đã biến mất.",
+      "source": "REUTERS · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets"
+      ],
+      "stats": [
+        {
+          "label": "COREWEAVE",
+          "value": "+24,7%",
+          "tone": "up"
+        },
+        {
+          "label": "NVIDIA",
+          "value": "+2,9%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "COREWEAVE",
+            "value": 24.7,
+            "display": "+24,7%"
+          },
+          {
+            "label": "NVIDIA",
+            "value": 2.9,
+            "display": "+2,9%"
+          }
+        ],
+        "qualifier": "Phiên chính thức 11/11 EST"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "NĂNG LƯỢNG",
+      "headline": "Brent ở 92,76 USD",
+      "summary": "Rủi ro chi phí năng lượng",
+      "voiceText": "Giá dầu Brent chốt phiên ở chín mươi hai đô la bảy mươi sáu xu một thùng, còn dầu Mỹ ở tám mươi sáu đô la năm mươi ba xu. Diễn biến địa chính trị vẫn có thể khiến giá dầu biến động, tác động đến kỳ vọng lạm phát và chi phí nhập khẩu của Hàn Quốc.",
+      "source": "REUTERS · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets"
+      ],
+      "stats": [
+        {
+          "label": "BRENT",
+          "value": "92,76 USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "WTI",
+          "value": "86,53 USD",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "BRENT",
+            "value": 92.76,
+            "display": "92,76 USD"
+          },
+          {
+            "label": "WTI",
+            "value": 86.53,
+            "display": "86,53 USD"
+          }
+        ],
+        "qualifier": "USD/thùng, giá chốt 11/11"
+      }
+    },
+    {
+      "id": "rates",
+      "eyebrow": "TRÁI PHIẾU MỸ",
+      "headline": "Không có giá đóng cửa mới",
+      "summary": "Thị trường nghỉ Veterans Day",
+      "voiceText": "Thị trường trái phiếu chính phủ Mỹ đóng cửa ngày mười một tháng mười một vì lễ Veterans Day. Vì vậy, bản tin không dùng một mức lợi suất mười năm cũ như báo giá mới. Đồng đô la và triển vọng chính sách Fed vẫn cần được theo dõi trong các phiên tiếp theo.",
+      "source": "REUTERS / AP · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "US 10Y",
+          "value": "NGHỈ LỄ",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "NGHỈ LỄ",
+        "qualifier": "Treasury market closed 11/11"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "GÓC NHÌN HÀN QUỐC",
+      "headline": "Theo dõi chip và won",
+      "summary": "Tác động phụ thuộc dòng vốn",
+      "voiceText": "Với Hàn Quốc, tâm lý tích cực ở nhóm AI Mỹ có thể hỗ trợ cổ phiếu bán dẫn, nhưng mức độ còn tùy triển vọng đơn hàng và dòng vốn nước ngoài. Giá dầu tăng có thể tạo áp lực chi phí cho doanh nghiệp nhập khẩu năng lượng. KOSPI, KOSDAQ và tỷ giá đô la so với won vẫn cần được kiểm chứng theo phiên. Đây không phải khuyến nghị giao dịch.",
+      "source": "REUTERS / AP · 11/11/2026",
+      "sourceIds": [
+        "reuters-markets",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "BÁN DẪN",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "AI Mỹ hồi phục",
+          "Dầu vẫn biến động",
+          "Theo dõi won và chip"
+        ],
+        "cta": {
+          "headline": "AI HAY GIÁ DẦU?",
+          "subline": "Chia sẻ góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Nasdaq tăng một phẩy sáu phần trăm, nhóm công nghệ Mỹ phục hồi."
+}
