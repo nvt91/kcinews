@@ -46,6 +46,18 @@
         "S&P 500 +1.3% to 7619.38; Nasdaq +1.6% to 25466.19; Dow +0.5% to 52486.49.",
         "US bond market closed for holiday; oil prices rose."
       ]
+    },
+    {
+      "id": "bls-cpi",
+      "title": "BLS official October 2026 CPI release, published November 10",
+      "url": "https://www.bls.gov/news.release/cpi.htm",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-12T09:02:18+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 CPI-U +0.4% seasonally adjusted month-on-month; core CPI +0.3%.",
+        "October 2025 missing CPI observations prevent most October 2026 12-month changes."
+      ]
     }
   ],
   "hook": {
@@ -246,17 +258,23 @@
       "eyebrow": "TRÁI PHIẾU MỸ",
       "headline": "Không có giá đóng cửa mới",
       "summary": "Thị trường nghỉ Veterans Day",
-      "voiceText": "Thị trường trái phiếu chính phủ Mỹ đóng cửa ngày mười một tháng mười một vì lễ Veterans Day. Vì vậy, bản tin không dùng một mức lợi suất mười năm cũ như báo giá mới. Đồng đô la và triển vọng chính sách Fed vẫn cần được theo dõi trong các phiên tiếp theo.",
-      "source": "REUTERS / AP · 11/11/2026",
+      "voiceText": "Thị trường trái phiếu chính phủ Mỹ đóng cửa ngày mười một tháng mười một vì lễ Veterans Day, nên không có mức lợi suất mười năm mới từ phiên này. Trước đó, báo cáo chính thức ngày mười tháng mười một cho thấy CPI tháng mười tăng không phẩy bốn phần trăm so với tháng trước. Dữ liệu lạm phát vẫn là yếu tố cần theo dõi đối với Fed.",
+      "source": "BLS / REUTERS · 10–11/11/2026",
       "sourceIds": [
         "reuters-markets",
-        "ap-close"
+        "ap-close",
+        "bls-cpi"
       ],
       "stats": [
         {
           "label": "US 10Y",
           "value": "NGHỈ LỄ",
           "tone": "neutral"
+        },
+        {
+          "label": "CPI 10/2026",
+          "value": "+0,4%",
+          "tone": "up"
         }
       ],
       "visual": {
@@ -274,7 +292,8 @@
       "source": "REUTERS / AP · 11/11/2026",
       "sourceIds": [
         "reuters-markets",
-        "ap-close"
+        "ap-close",
+        "bls-cpi"
       ],
       "stats": [
         {
