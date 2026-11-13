@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-13-macro21",
+  "edition": "13/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-13T20:58:17+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Đô la mạnh, lợi suất Mỹ tăng: ba kênh sức ép lên kinh tế Hàn Quốc",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261113-MACRO21",
+  "articlePath": "editorial/2026-11-13/macro21.md",
+  "eventKeys": [
+    "usd-treasury-nov13-reuters",
+    "bok-base-rate-oct22-2026",
+    "us-oct-cpi-bls-nov10"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 20:58 KST 13 Nov 2026. Reuters USD and 2y yield snapshot dated Nov 13 morning Europe, NOT live 21:00 KST; BOK rate decision Oct 22; BLS Oct CPI released Nov 10. US market has NOT closed for Nov 13. Transmission to KRW is conditional, no live USD/KRW quote.",
+  "sourceLedger": [
+    {
+      "id": "reuters-usd",
+      "title": "Reuters: Dollar set for best week in two months",
+      "url": "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/",
+      "eventDate": "2026-11-13",
+      "kind": "secondary",
+      "checkedAt": "2026-11-13T20:58:17+09:00",
+      "facts": [
+        "As of Reuters Nov 13 publication, 2y Treasury yield around 4.85%, up 33 basis points week-to-date; dollar index 103.17; traders priced 12.1% probability of 50bp December hike, NOT a Fed decision."
+      ]
+    },
+    {
+      "id": "bok",
+      "title": "Bank of Korea Monetary Policy Decision October 22 2026",
+      "url": "https://www.bok.or.kr/eng/main/main.do",
+      "eventDate": "2026-10-22",
+      "kind": "primary",
+      "checkedAt": "2026-11-13T20:58:17+09:00",
+      "facts": [
+        "BOK kept Base Rate at 3.00% on October 22, 2026."
+      ]
+    },
+    {
+      "id": "bls",
+      "title": "BLS October 2026 CPI released November 10",
+      "url": "https://www.bls.gov/cpi/news.htm",
+      "eventDate": "2026-11-10",
+      "kind": "primary",
+      "checkedAt": "2026-11-13T20:58:17+09:00",
+      "facts": [
+        "October headline CPI +0.4% month-over-month seasonally adjusted; core +0.3% month-over-month seasonally adjusted."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Đô la mạnh lên, lợi suất Mỹ tăng. Vì sao Hàn Quốc có thể chịu sức ép dù chưa có quyết định lãi suất mới?",
+    "candidates": [
+      {
+        "style": "impact",
+        "text": "Đô la mạnh lên, lợi suất Mỹ tăng. Vì sao Hàn Quốc có thể chịu sức ép dù chưa có quyết định lãi suất mới?"
+      },
+      {
+        "style": "question",
+        "text": "Lợi suất Mỹ tăng, đồng won sẽ phản ứng thế nào?"
+      },
+      {
+        "style": "contrast",
+        "text": "Fed chưa họp, nhưng thị trường đã điều chỉnh kỳ vọng lãi suất. Điều gì đáng xem ở Hàn Quốc?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "follow",
+    "spoken": "Hãy theo dõi lợi suất Mỹ, tỷ giá đô la trên won và thông báo từ Ngân hàng Trung ương Hàn Quốc. Theo dõi Korea Capital Insight để cùng cập nhật, đây không phải khuyến nghị giao dịch.",
+    "screenHeadline": "BA TÍN HIỆU CẦN XEM",
+    "screenSubline": "Lợi suất Mỹ · USD/KRW · BOK"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Đô la và lợi suất tăng",
+      "summary": "Reuters 13/11 · số liệu tại thời điểm bài báo",
+      "voiceText": "Đô la mạnh lên, lợi suất Mỹ tăng. Vì sao Hàn Quốc có thể chịu sức ép dù chưa có quyết định lãi suất mới? Câu chuyện nằm ở kỳ vọng thị trường và chi phí vốn.",
+      "source": "Reuters 13/11",
+      "sourceIds": [
+        "reuters-usd"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "USD",
+        "qualifier": "Kỳ vọng lãi suất Mỹ"
+      },
+      "stats": []
+    },
+    {
+      "id": "rates",
+      "eyebrow": "LỢI SUẤT MỸ",
+      "headline": "Lợi suất hai năm quanh 4,85%",
+      "summary": "Reuters 13/11 · tăng 33 điểm cơ bản từ đầu tuần",
+      "voiceText": "Theo Reuters ngày mười ba tháng mười một, lợi suất trái phiếu Kho bạc Mỹ kỳ hạn hai năm ở quanh bốn phẩy tám lăm phần trăm, tăng ba mươi ba điểm cơ bản từ đầu tuần. Đây là mức được ghi nhận trong bản tin, không phải giá trực tiếp lúc chín giờ tối Hàn Quốc.",
+      "source": "Reuters 13/11",
+      "sourceIds": [
+        "reuters-usd"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "LỢI SUẤT MỸ 2 NĂM",
+          "value": "~4,85%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "expect",
+      "eyebrow": "KỲ VỌNG KHÁC QUYẾT ĐỊNH",
+      "headline": "Thị trường định giá rủi ro",
+      "summary": "Xác suất không phải quyết định Fed",
+      "voiceText": "Reuters cũng ghi nhận thị trường định giá xác suất khoảng mười hai phẩy một phần trăm cho khả năng Fed tăng năm mươi điểm cơ bản trong tháng mười hai. Đây chỉ là kỳ vọng giao dịch, không phải quyết định của Fed. CPI Mỹ tháng mười công bố hôm mười tháng mười một tăng không phẩy bốn phần trăm theo tháng, sau điều chỉnh mùa vụ.",
+      "source": "Reuters 13/11 · BLS 10/11",
+      "sourceIds": [
+        "reuters-usd",
+        "bls"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "XÁC SUẤT 50 ĐIỂM CƠ BẢN",
+          "value": "12,1%",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "Chi phí vốn và nhập khẩu",
+      "summary": "Ba kênh tác động có điều kiện",
+      "voiceText": "Tại Hàn Quốc, Ngân hàng Trung ương giữ lãi suất cơ bản ba phần trăm trong quyết định ngày hai mươi hai tháng mười. Nếu lợi suất Mỹ cao hơn kéo nhu cầu đô la tăng, đồng won có thể chịu áp lực và hàng nhập khẩu tính bằng won trở nên đắt hơn. Tuy vậy, tỷ giá còn phụ thuộc xuất khẩu, dòng vốn và chính sách trong nước, nên không thể kết luận chắc chắn.",
+      "source": "BOK 22/10 · Reuters 13/11",
+      "sourceIds": [
+        "bok",
+        "reuters-usd"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "LÃI SUẤT BOK 22/10",
+          "value": "3,00%",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI TIẾP",
+      "headline": "Ba tín hiệu quan trọng",
+      "summary": "Lợi suất · USD/KRW · BOK",
+      "voiceText": "Điểm cần nhớ: đừng đồng nhất kỳ vọng tăng lãi suất với quyết định chính thức, và đừng dùng một mức lợi suất để dự báo chắc chắn đồng won. Hãy đối chiếu diễn biến lợi suất Mỹ, tỷ giá đô la trên won và thông báo từ Ngân hàng Trung ương Hàn Quốc.",
+      "source": "Reuters · BOK",
+      "sourceIds": [
+        "reuters-usd",
+        "bok"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Lợi suất Mỹ",
+          "USD/KRW",
+          "Chính sách BOK"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Đô la mạnh lên, lợi suất Mỹ tăng. Vì sao Hàn Quốc có thể chịu sức ép dù chưa có quyết định lãi suất mới?"
+}
