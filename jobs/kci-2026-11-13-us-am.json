@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-13-us-am",
+  "articleId": "KCI-20261113-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "13/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-13T09:03:40+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall giảm nhẹ, Nvidia suy yếu, dầu Brent và lợi suất Mỹ tăng",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Bản tin 09:03 KST 13/11/2026. Phiên Mỹ 12/11 kết thúc 16:00 EST = 06:00 KST 13/11. CPI tháng 10 công bố 10/11, không phải dữ liệu mới ngày 12/11. Các tác động đến Hàn Quốc là kịch bản có điều kiện.",
+  "eventKeys": [
+    "us-market-close-2026-11-12",
+    "nvidia-leadership-shares-2026-11-12",
+    "oil-yield-2026-11-12",
+    "us-october-cpi-context"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-close",
+      "title": "Reuters Wall Street November 12 closing report",
+      "url": "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
+      "eventDate": "2026-11-12",
+      "checkedAt": "2026-11-13T09:03:40+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -0.35%, Nasdaq -0.39%, Dow -0.36% on November 12 close.",
+        "Nvidia -4.3%; AMD +5.9%, Broadcom +5.5% reported in market coverage.",
+        "Energy shares rose as oil prices advanced."
+      ]
+    },
+    {
+      "id": "ap-close",
+      "title": "AP Wall Street closing report November 12",
+      "url": "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a",
+      "eventDate": "2026-11-12",
+      "checkedAt": "2026-11-13T09:03:40+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nvidia fell 4.3% on November 12 after leadership changes; Broadcom and AMD rose.",
+        "Brent +3.3% to USD 95.82 per barrel; 10-year Treasury yield 5.12%.",
+        "Three major US stock indexes fell around 0.4%."
+      ]
+    },
+    {
+      "id": "bls-cpi",
+      "title": "BLS official October 2026 CPI",
+      "url": "https://www.bls.gov/news.release/cpi.htm",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-13T09:03:40+09:00",
+      "kind": "primary",
+      "facts": [
+        "October CPI-U +0.4% seasonally adjusted from prior month; core +0.3%.",
+        "This is October data released November 10, not a November 12 new CPI result."
+      ]
+    },
+    {
+      "id": "reuters-global",
+      "title": "Reuters global markets November 12",
+      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+      "eventDate": "2026-11-12",
+      "checkedAt": "2026-11-13T09:03:40+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US equities lower and US Treasury yields higher amid Nvidia CEO transition and inflation concerns."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall giảm nhẹ, nhưng cổ phiếu chip Mỹ lại phân hóa rất mạnh.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Phố Wall giảm nhẹ, nhưng cổ phiếu chip Mỹ lại phân hóa rất mạnh."
+      },
+      {
+        "style": "macro",
+        "text": "Dầu Brent gần chín mươi sáu đô la: Hàn Quốc cần theo dõi gì?"
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nvidia giảm nhưng đối thủ tăng: nhóm chip Hàn Quốc sẽ phản ứng ra sao?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, biến động ở Nvidia hay giá dầu sẽ tác động mạnh hơn đến thị trường Hàn Quốc?",
+    "screenHeadline": "CHIP HAY GIÁ DẦU?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Chip hay giá dầu?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 12/11",
+      "headline": "Nvidia giảm 4,3%",
+      "summary": "Ba chỉ số Mỹ cùng giảm",
+      "voiceText": "Phố Wall giảm nhẹ, nhưng cổ phiếu chip Mỹ lại phân hóa rất mạnh. Phiên Mỹ ngày mười hai tháng mười một vừa khép lại với nhiều tín hiệu trái chiều.",
+      "source": "REUTERS / AP · 12/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "-4,3%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-0,39%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NVIDIA",
+            "value": -4.3,
+            "display": "-4,3%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -0.39,
+            "display": "-0,39%"
+          }
+        ],
+        "qualifier": "Đóng cửa 12/11 EST"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỈ SỐ MỸ",
+      "headline": "Phố Wall giảm nhẹ",
+      "summary": "Nasdaq, Dow và S&P cùng đỏ",
+      "voiceText": "Kết thúc phiên, S&P năm trăm giảm không phẩy ba lăm phần trăm. Nasdaq giảm không phẩy ba chín phần trăm, còn Dow Jones giảm không phẩy ba sáu phần trăm. Đây là số liệu đóng cửa, không phải báo giá trực tiếp sáng nay.",
+      "source": "REUTERS / AP · 12/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "-0,35%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-0,39%",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "-0,36%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -0.35,
+            "display": "-0,35%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -0.39,
+            "display": "-0,39%"
+          },
+          {
+            "label": "DOW",
+            "value": -0.36,
+            "display": "-0,36%"
+          }
+        ],
+        "qualifier": "Phiên 12/11 EST"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "BÁN DẪN & AI",
+      "headline": "Nvidia và đối thủ trái chiều",
+      "summary": "Biến động lãnh đạo gây bất định",
+      "voiceText": "Nvidia giảm bốn phẩy ba phần trăm sau biến động ở ban lãnh đạo. Ngược chiều, AMD tăng năm phẩy chín phần trăm và Broadcom tăng năm phẩy năm phần trăm. Thị trường đang phân biệt rủi ro riêng của từng doanh nghiệp với nhu cầu chip AI nói chung.",
+      "source": "REUTERS / AP · 12/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "-4,3%",
+          "tone": "down"
+        },
+        {
+          "label": "AMD",
+          "value": "+5,9%",
+          "tone": "up"
+        },
+        {
+          "label": "BROADCOM",
+          "value": "+5,5%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NVIDIA",
+            "value": -4.3,
+            "display": "-4,3%"
+          },
+          {
+            "label": "AMD",
+            "value": 5.9,
+            "display": "+5,9%"
+          },
+          {
+            "label": "BROADCOM",
+            "value": 5.5,
+            "display": "+5,5%"
+          }
+        ],
+        "qualifier": "Phiên 12/11 EST"
+      }
+    },
+    {
+      "id": "oil",
+      "eyebrow": "DẦU & LỢI SUẤT",
+      "headline": "Brent lên 95,82 USD",
+      "summary": "Chi phí vốn và năng lượng tăng",
+      "voiceText": "Giá dầu Brent tăng ba phẩy ba phần trăm, lên chín mươi lăm đô la tám mươi hai xu một thùng. Lợi suất trái phiếu chính phủ Mỹ kỳ hạn mười năm lên khoảng năm phẩy mười hai phần trăm. Hai diễn biến này có thể làm tăng sức ép lên chi phí năng lượng và định giá tài sản.",
+      "source": "AP / REUTERS · 12/11/2026",
+      "sourceIds": [
+        "ap-close",
+        "reuters-global"
+      ],
+      "stats": [
+        {
+          "label": "BRENT",
+          "value": "95,82 USD",
+          "tone": "up"
+        },
+        {
+          "label": "US 10Y",
+          "value": "5,12%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "BRENT USD",
+            "value": 95.82,
+            "display": "95,82"
+          },
+          {
+            "label": "US 10Y %",
+            "value": 5.12,
+            "display": "5,12"
+          }
+        ],
+        "qualifier": "Brent USD/thùng; US10Y lợi suất"
+      }
+    },
+    {
+      "id": "inflation",
+      "eyebrow": "LẠM PHÁT & FED",
+      "headline": "CPI tháng 10 tăng 0,4%",
+      "summary": "Dữ liệu công bố ngày 10/11",
+      "voiceText": "Theo báo cáo chính thức công bố ngày mười tháng mười một, CPI Mỹ tháng mười tăng không phẩy bốn phần trăm so với tháng trước. Đây là dữ liệu đã công bố, không phải kết quả mới sáng nay. Kỳ vọng lãi suất Fed tiếp tục nhạy cảm với lạm phát và lợi suất.",
+      "source": "BLS / REUTERS · 12/11/2026",
+      "sourceIds": [
+        "bls-cpi",
+        "reuters-global"
+      ],
+      "stats": [
+        {
+          "label": "CPI 10/2026",
+          "value": "+0,4% MoM",
+          "tone": "up"
+        },
+        {
+          "label": "NGÀY CÔNG BỐ",
+          "value": "10/11",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "+0,4%",
+        "qualifier": "CPI MoM, BLS công bố 10/11"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "GÓC NHÌN HÀN QUỐC",
+      "headline": "Theo dõi chip và USD/KRW",
+      "summary": "Tác động phụ thuộc dòng vốn",
+      "voiceText": "Với Hàn Quốc, cổ phiếu bán dẫn có thể phân hóa theo mức độ liên quan đến Nvidia và đơn hàng AI. Dầu cao và lợi suất Mỹ tăng có thể gây áp lực lên doanh nghiệp nhập khẩu năng lượng, tỷ giá đô la so với won và dòng vốn vào KOSPI, KOSDAQ. Đây là phân tích có điều kiện, không phải khuyến nghị giao dịch.",
+      "source": "REUTERS / AP / BLS · 12/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close",
+        "bls-cpi"
+      ],
+      "stats": [
+        {
+          "label": "CHIP",
+          "value": "PHÂN HÓA",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chip Mỹ phân hóa",
+          "Dầu và lợi suất tăng",
+          "Theo dõi dòng vốn"
+        ],
+        "cta": {
+          "headline": "CHIP HAY GIÁ DẦU?",
+          "subline": "Chia sẻ góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Phố Wall giảm nhẹ, nhưng cổ phiếu chip Mỹ lại phân hóa rất mạnh."
+}
