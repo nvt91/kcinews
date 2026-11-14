@@ -57,6 +57,17 @@
         "Coupang quarterly revenue grew 7% to $10 billion while reporting $501 million net loss for July-September.",
         "South Korea antitrust regulator imposed $221 million fine related to alleged delivery platform conduct; Coupang intends to appeal; Breakingviews interpretation is opinion."
       ]
+    },
+    {
+      "id": "samsung-newsroom-july",
+      "title": "Samsung Newsroom July 2 2026: Chungcheong semiconductor and HBM investment plan",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1-%EB%AF%B8%EB%9E%98-%EC%84%B1%EC%9E%A5-%EC%9C%84%ED%95%B4-%EC%B6%A9%EC%B2%AD%EC%97%90-140%EC%A1%B0%EC%9B%90-%ED%88%AC%EC%9E%90-%EA%B3%84%ED%9A%8D",
+      "eventDate": "2026-07-02",
+      "checkedAt": "2026-11-15T08:03:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "Samsung officially announced Chungcheong HBM fab investment plans July 2, 2026; this provides corporate context only, NOT independent confirmation of November 12 Asan 6 trillion won figure."
+      ]
     }
   ],
   "hook": {
@@ -129,7 +140,8 @@
       "voiceText": "Ở ngành bán dẫn, Samsung công bố kế hoạch nhà máy đóng gói bộ nhớ băng thông cao tại Asan, với khoản đầu tư sáu nghìn tỷ won. Dây chuyền dự kiến hoạt động vào tháng sáu năm hai nghìn không trăm hai mươi tám, sớm hơn kế hoạch ban đầu một năm. Tổng thống Lee nói dự án có thể kéo theo khoảng bốn mươi nghìn tỷ won đầu tư thiết bị. Đây là kế hoạch tương lai, không phải vốn đã giải ngân.",
       "source": "Reuters 12/11",
       "sourceIds": [
-        "reuters-samsung"
+        "reuters-samsung",
+        "samsung-newsroom-july"
       ],
       "visual": {
         "kind": "generic"
