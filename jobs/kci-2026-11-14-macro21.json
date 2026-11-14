@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-14-macro21",
+  "edition": "14/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-14T21:02:22+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "PPI Mỹ tăng 0,3%: áp lực giá cả và ba kênh tác động tới Hàn Quốc",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261114-MACRO21",
+  "articlePath": "editorial/2026-11-14/macro21.md",
+  "eventKeys": [
+    "bls-ppi-oct-2026-release-nov13"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "BLS Oct 2026 PPI released 2026-11-13 08:30 ET = 22:30 KST. Data are US October producer prices, not Korean CPI, not real-time prices. Saturday 14 Nov KST is a weekend; US Friday Nov 13 cash session has ended before Saturday 21 KST. FX and Korea impacts are conditional, no live FX quote.",
+  "sourceLedger": [
+    {
+      "id": "bls-ppi",
+      "title": "BLS Producer Price Indexes October 2026, released Nov 13",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T21:02:22+09:00",
+      "kind": "primary",
+      "facts": [
+        "US final-demand PPI +0.3% October month-on-month seasonally adjusted; +6.5% 12-month unadjusted.",
+        "Final-demand goods +0.5% m/m, services +0.2% m/m; final-demand energy -0.1% m/m.",
+        "Final demand less foods, energy, trade services +0.5% m/m."
+      ]
+    },
+    {
+      "id": "bls-calendar",
+      "title": "BLS November 2026 release calendar",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T21:02:22+09:00",
+      "kind": "primary",
+      "facts": [
+        "PPI October release scheduled Nov 13 08:30 Eastern."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá sản xuất Mỹ tăng, nhưng giá năng lượng lại giảm. Vì sao đồng won vẫn cần thận trọng?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá sản xuất Mỹ tăng, nhưng giá năng lượng lại giảm. Vì sao đồng won vẫn cần thận trọng?"
+      },
+      {
+        "style": "impact",
+        "text": "PPI Mỹ tăng 0,3%. Điều gì có thể truyền sang chi phí nhập khẩu Hàn Quốc?"
+      },
+      {
+        "style": "question",
+        "text": "Giá năng lượng Mỹ giảm nhẹ, vậy áp lực lạm phát đã hết chưa?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu ba điểm cần theo dõi: lạm phát Mỹ, lợi suất trái phiếu và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cùng cập nhật các dữ liệu tiếp theo.",
+    "screenHeadline": "BA ĐIỂM CẦN THEO DÕI",
+    "screenSubline": "PPI · Lợi suất Mỹ · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "PPI tăng, năng lượng giảm",
+      "summary": "BLS công bố 13/11 · dữ liệu tháng 10",
+      "voiceText": "Giá sản xuất Mỹ tăng, nhưng giá năng lượng lại giảm. Vì sao đồng won vẫn cần thận trọng? Báo cáo mới nhất cho thấy áp lực giá cả không đồng đều giữa các nhóm hàng.",
+      "source": "BLS 13/11",
+      "sourceIds": [
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+0,3%",
+        "qualifier": "PPI Mỹ tháng 10 · so với tháng trước"
+      },
+      "stats": []
+    },
+    {
+      "id": "ppi",
+      "eyebrow": "GIÁ SẢN XUẤT MỸ",
+      "headline": "PPI tăng 0,3% trong tháng 10",
+      "summary": "Sau điều chỉnh mùa vụ · BLS 13/11",
+      "voiceText": "Theo Cục Thống kê Lao động Mỹ, chỉ số giá sản xuất cho nhu cầu cuối cùng tăng không phẩy ba phần trăm trong tháng mười, sau điều chỉnh mùa vụ. So với cùng kỳ năm trước, chỉ số tăng sáu phẩy năm phần trăm, tính theo dữ liệu chưa điều chỉnh mùa vụ. Đây là hai cách so sánh khác nhau.",
+      "source": "BLS 13/11",
+      "sourceIds": [
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "PPI THÁNG 10 · M/M",
+          "value": "+0,3%",
+          "tone": "up"
+        },
+        {
+          "label": "PPI · 12 THÁNG",
+          "value": "+6,5%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "eyebrow": "KHÔNG ĐỒNG ĐỀU",
+      "headline": "Hàng hóa tăng, năng lượng giảm",
+      "summary": "Hàng hóa +0,5% · dịch vụ +0,2% · năng lượng −0,1%",
+      "voiceText": "Nhìn sâu hơn, giá hàng hóa tăng không phẩy năm phần trăm, dịch vụ tăng không phẩy hai phần trăm, nhưng nhóm năng lượng trong chỉ số giá sản xuất lại giảm không phẩy một phần trăm. Một nhóm giảm không có nghĩa toàn bộ áp lực lạm phát đã biến mất.",
+      "source": "BLS 13/11",
+      "sourceIds": [
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "HÀNG HÓA",
+          "value": "+0,5%",
+          "tone": "up"
+        },
+        {
+          "label": "NĂNG LƯỢNG",
+          "value": "−0,1%",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TÁC ĐỘNG",
+      "headline": "Lãi suất, USD và nhập khẩu",
+      "summary": "Cơ chế có điều kiện, không dự báo tỷ giá",
+      "voiceText": "Với Hàn Quốc, điều cần xem là phản ứng của thị trường trái phiếu Mỹ và đồng đô la. Nếu dữ liệu giá sản xuất làm tăng kỳ vọng lãi suất cao kéo dài, lợi suất Mỹ và nhu cầu đô la có thể tăng, gây áp lực lên đồng won. Khi đó, chi phí nhập khẩu tính bằng won có thể cao hơn. Nhưng tỷ giá còn phụ thuộc dòng vốn và xuất khẩu Hàn Quốc.",
+      "source": "BLS 13/11 · KCI phân tích điều kiện",
+      "sourceIds": [
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "CUỐI TUẦN",
+      "headline": "Không suy từ một chỉ số",
+      "summary": "PPI không phải CPI và không phải quyết định Fed",
+      "voiceText": "Đây là dữ liệu giá ở cấp nhà sản xuất Mỹ, không phải CPI Hàn Quốc và cũng không phải quyết định lãi suất của Fed. Vì hôm nay là thứ Bảy, chúng ta tập trung vào cơ chế truyền dẫn, không dùng giá thị trường cũ làm báo giá trực tiếp.",
+      "source": "BLS 13/11",
+      "sourceIds": [
+        "bls-ppi",
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "PPI MỸ",
+          "LỢI SUẤT MỸ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Giá sản xuất Mỹ tăng, nhưng giá năng lượng lại giảm. Vì sao đồng won vẫn cần thận trọng?"
+}
