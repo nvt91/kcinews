@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-15-kr-am",
+  "articleId": "KCI-20261115-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "daily_digest",
+  "edition": "15/11/2026 KR_AM · tổng hợp Chủ nhật",
+  "dataAsOf": "2026-11-15T08:00:10+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Kinh tế Hàn Quốc cuối tuần: APEC, Samsung HBM và Coupang",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-15/kr-am.md",
+  "sourceDisclaimer": "Sunday 15 Nov 2026 KST: KRX regular market closed; this is a weekend roundup. China talks November 13 and Reuters November 14; Samsung plans November 12; Coupang Breakingviews November 13. Investment and operations dates are prospective, not completed. Breakingviews is commentary.",
+  "eventKeys": [
+    "kr-china-ministers-talks-2026-11-13",
+    "samsung-asan-hbm-investment-2026-11-12",
+    "coupang-antitrust-results-reuters-2026-11-13"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-china",
+      "title": "Reuters 14 Nov: Cho Hyun China cooperation and APEC",
+      "url": "https://www.reuters.com/world/china/south-korea-should-not-fear-chinas-rise-foreign-minister-says-2026-11-14/",
+      "eventDate": "2026-11-14",
+      "checkedAt": "2026-11-15T08:00:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Foreign Minister Cho Hyun called for mutually beneficial China-Korea cooperation after meeting Wang Yi on November 13.",
+        "APEC Shenzhen November 18-19; cooperation discussions include AI and biomedicine; no signed trade deal reported."
+      ]
+    },
+    {
+      "id": "reuters-samsung",
+      "title": "Reuters 12 Nov: Samsung HBM Asan expansion",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-samsung-chip-packaging-expansion-spur-30-billion-2026-11-12/",
+      "eventDate": "2026-11-12",
+      "checkedAt": "2026-11-15T08:00:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Samsung Electronics Asan HBM packaging plant investment 6 trillion won; President Lee said about 40 trillion won advanced-equipment investment would follow.",
+        "Samsung said the HBM line is scheduled to operate June 2028, one year ahead of prior plan; planned investment is not completed spending."
+      ]
+    },
+    {
+      "id": "reuters-coupang",
+      "title": "Reuters Breakingviews 13 Nov: Coupang recovery and antitrust",
+      "url": "https://www.reuters.com/commentary/breakingviews/seouls-ire-hounds-coupangs-fragile-comeback-2026-11-13/",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-15T08:00:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Coupang quarterly revenue grew 7% to $10 billion while reporting $501 million net loss for July-September.",
+        "South Korea antitrust regulator imposed $221 million fine related to alleged delivery platform conduct; Coupang intends to appeal; Breakingviews interpretation is opinion."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc bước vào tuần mới với ba câu chuyện: hợp tác Trung Quốc, đầu tư chip và sức ép lên thương mại điện tử.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hàn Quốc bước vào tuần mới với ba câu chuyện: hợp tác Trung Quốc, đầu tư chip và sức ép lên thương mại điện tử.",
+        "score": 91
+      },
+      {
+        "style": "impact",
+        "text": "Samsung đang đẩy nhanh dự án HBM, còn Coupang chịu sức ép quản lý. Điều gì đáng theo dõi?",
+        "score": 87
+      },
+      {
+        "style": "question",
+        "text": "APEC sắp diễn ra: hợp tác Trung Quốc có ý nghĩa gì với doanh nghiệp Hàn Quốc?",
+        "score": 85
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, câu chuyện nào ảnh hưởng lâu dài hơn đến doanh nghiệp Hàn Quốc? Chia sẻ cùng KCI và theo dõi các bản tin tiếp theo nhé.",
+    "screenHeadline": "CHỦ ĐỀ NÀO QUAN TRỌNG?",
+    "screenSubline": "APEC · HBM · COUPANG",
+    "question": "APEC, HBM hay Coupang quan trọng hơn với doanh nghiệp Hàn Quốc?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · CHỦ NHẬT 15/11",
+      "headline": "Ba câu chuyện kinh tế Hàn Quốc",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX Chủ nhật",
+      "voiceText": "Hàn Quốc bước vào tuần mới với ba câu chuyện: hợp tác Trung Quốc, đầu tư chip và sức ép lên thương mại điện tử. Hôm nay là Chủ nhật, nên đây là bản tin tổng hợp và triển vọng, không phải báo giá trực tiếp.",
+      "source": "Reuters 12–14/11",
+      "sourceIds": [
+        "reuters-china",
+        "reuters-samsung",
+        "reuters-coupang"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3 TÂM ĐIỂM",
+        "qualifier": "Hợp tác · Bán dẫn · Nền tảng"
+      },
+      "stats": []
+    },
+    {
+      "id": "china",
+      "eyebrow": "HÀN QUỐC & TRUNG QUỐC",
+      "headline": "Hợp tác trước thềm APEC",
+      "summary": "Ngoại trưởng Cho Hyun phát biểu 14/11",
+      "voiceText": "Trước hết, Ngoại trưởng Hàn Quốc Cho Hyun kêu gọi tăng cường hợp tác cùng có lợi với Trung Quốc sau cuộc gặp người đồng cấp tại Bắc Kinh. Hội nghị APEC tại Thâm Quyến dự kiến diễn ra ngày mười tám và mười chín tháng mười một. Hai phía đã thảo luận các lĩnh vực như trí tuệ nhân tạo và y sinh. Đây là định hướng hợp tác, chưa phải thỏa thuận thương mại mới đã ký.",
+      "source": "Reuters 14/11",
+      "sourceIds": [
+        "reuters-china"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "samsung",
+      "eyebrow": "ĐẦU TƯ BÁN DẪN",
+      "headline": "Samsung đẩy nhanh HBM",
+      "summary": "Kế hoạch nhà máy Asan · công bố 12/11",
+      "voiceText": "Ở ngành bán dẫn, Samsung công bố kế hoạch nhà máy đóng gói bộ nhớ băng thông cao tại Asan, với khoản đầu tư sáu nghìn tỷ won. Dây chuyền dự kiến hoạt động vào tháng sáu năm hai nghìn không trăm hai mươi tám, sớm hơn kế hoạch ban đầu một năm. Tổng thống Lee nói dự án có thể kéo theo khoảng bốn mươi nghìn tỷ won đầu tư thiết bị. Đây là kế hoạch tương lai, không phải vốn đã giải ngân.",
+      "source": "Reuters 12/11",
+      "sourceIds": [
+        "reuters-samsung"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "NHÀ MÁY ASAN",
+          "value": "6 nghìn tỷ won",
+          "tone": "neutral"
+        },
+        {
+          "label": "DỰ KIẾN VẬN HÀNH",
+          "value": "06/2028",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "coupang",
+      "eyebrow": "THƯƠNG MẠI ĐIỆN TỬ",
+      "headline": "Coupang đối mặt sức ép",
+      "summary": "Kết quả kinh doanh và giám sát cạnh tranh",
+      "voiceText": "Còn với thương mại điện tử, Reuters Breakingviews ghi nhận doanh thu quý của Coupang tăng bảy phần trăm lên mười tỷ đô la Mỹ, nhưng công ty lỗ ròng năm trăm linh một triệu đô la. Cơ quan cạnh tranh Hàn Quốc đã áp mức phạt tương đương hai trăm hai mươi mốt triệu đô la liên quan hành vi bị cáo buộc trong dịch vụ giao đồ ăn. Coupang dự định kháng nghị. Cần phân biệt số liệu công bố với đánh giá của chuyên mục bình luận.",
+      "source": "Reuters Breakingviews 13/11",
+      "sourceIds": [
+        "reuters-coupang"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "DOANH THU QUÝ",
+          "value": "10 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "LỖ RÒNG QUÝ",
+          "value": "501 triệu USD",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "eyebrow": "THEO DÕI TUẦN MỚI",
+      "headline": "APEC · HBM · Cạnh tranh",
+      "summary": "Không phải khuyến nghị giao dịch",
+      "voiceText": "Tuần tới, hãy theo dõi thông tin chính thức từ APEC, tiến độ đầu tư HBM và diễn biến pháp lý của Coupang. Theo anh chị, câu chuyện nào ảnh hưởng lâu dài hơn đến doanh nghiệp Hàn Quốc? Chia sẻ cùng KCI và theo dõi các bản tin tiếp theo nhé. Đây không phải khuyến nghị đầu tư.",
+      "source": "Reuters 12–14/11 · KCI theo dõi",
+      "sourceIds": [
+        "reuters-china",
+        "reuters-samsung",
+        "reuters-coupang"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "APEC 18–19/11",
+          "HBM ASAN",
+          "COUPANG"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Hàn Quốc bước vào tuần mới với ba câu chuyện: hợp tác Trung Quốc, đầu tư chip và sức ép lên thương mại điện tử."
+}
