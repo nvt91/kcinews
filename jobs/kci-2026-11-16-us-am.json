@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-16-us-am",
+  "articleId": "KCI-20261116-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "16/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-16T08:56:20+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Chip Mỹ giảm 3,4% phiên thứ Sáu, dầu hạ nhiệt cuối tuần",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Bản tin sáng thứ Hai 16/11 KST: chỉ số chứng khoán là đóng cửa phiên Mỹ thứ Sáu 13/11 lúc 16:00 EST = 06:00 KST 14/11; tin dầu diesel ngày Chủ nhật 15/11; không phải giá trực tiếp sáng 16/11.",
+  "eventKeys": [
+    "us-market-close-2026-11-13",
+    "us-semiconductors-2026-11-13",
+    "us-ppi-october-release-2026-11-13",
+    "oil-treasury-2026-11-13",
+    "us-diesel-weekend-2026-11-15"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-close",
+      "title": "Reuters Wall Street November 13 close",
+      "url": "https://www.reuters.com/business/nasdaq-futures-dip-nvidia-tumult-keeps-investors-edge-2026-11-13/",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T08:56:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -0.40%, Nasdaq -0.91%, Dow +0.10% on Nov 13 close.",
+        "SOX -3.4%, AMD -8.8%, Broadcom -4.8%, Nvidia -2.0%.",
+        "S&P 500 +2.51%, Nasdaq +2.27%, Dow +2.07% for the week."
+      ]
+    },
+    {
+      "id": "ap-close",
+      "title": "AP major US indexes November 13 close",
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T08:56:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 7561.67 (-0.4%), Dow 52347.55 (+0.1%), Nasdaq 25136.27 (-0.9%).",
+        "Weekly S&P 500 +2.5%, Nasdaq +2.3%, Dow +2.1%."
+      ]
+    },
+    {
+      "id": "bls-ppi",
+      "title": "BLS October 2026 Producer Price Index original release",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T08:56:06+09:00",
+      "kind": "primary",
+      "facts": [
+        "October final-demand PPI +0.3% seasonally adjusted MoM.",
+        "October final-demand PPI +6.5% YoY unadjusted; largest 12-month increase since November 2022."
+      ]
+    },
+    {
+      "id": "ap-energy",
+      "title": "AP Wall Street November 13 oil and yields",
+      "url": "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T08:56:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Brent crude settled at USD 95.84 per barrel on Friday November 13.",
+        "Treasury yields rose on Friday; no unverified yield level asserted."
+      ]
+    },
+    {
+      "id": "reuters-fed",
+      "title": "Reuters Fed commentary November 13",
+      "url": "https://www.reuters.com/business/finance/logan-says-treasury-market-functioning-very-well-fed-needs-strengthen-support-2026-11-13/",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-14T08:56:06+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Dallas Fed President Logan said Treasury markets functioning very well while discussing support tools and inflation-era policy."
+      ]
+    },
+    {
+      "id": "reuters-diesel",
+      "title": "Reuters US diesel falls below six dollars on November 15",
+      "url": "https://www.reuters.com/business/energy/us-diesel-below-6-gallon-2-month-low-easing-tensions-weaker-demand-2026-11-15/",
+      "eventDate": "2026-11-15",
+      "checkedAt": "2026-11-16T08:56:20+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Average US retail diesel price fell to USD 5.998 per gallon on November 15.",
+        "Reuters reports Brent crude futures down 18.5% over two weeks; this is not a November 16 live quote."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Chip Mỹ giảm ba phẩy bốn phần trăm phiên thứ Sáu, nhưng Phố Wall vẫn tăng cả tuần.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Chip Mỹ giảm ba phẩy bốn phần trăm phiên thứ Sáu, nhưng Phố Wall vẫn tăng cả tuần."
+      },
+      {
+        "style": "inflation",
+        "text": "Giá sản xuất Mỹ tăng sáu phẩy năm phần trăm một năm, Fed chịu áp lực gì?"
+      },
+      {
+        "style": "korea-impact",
+        "text": "Chip Mỹ giảm mạnh, dầu hạ nhiệt cuối tuần, thị trường Hàn Quốc cần chú ý gì?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, áp lực ở nhóm chip hay lạm phát Mỹ sẽ ảnh hưởng thị trường Hàn Quốc mạnh hơn?",
+    "screenHeadline": "CHIP HAY LẠM PHÁT?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Chip hay lạm phát Mỹ ảnh hưởng thị trường Hàn Quốc mạnh hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 13/11",
+      "headline": "SOX giảm 3,4%",
+      "summary": "Nasdaq giảm 0,91%",
+      "voiceText": "Chip Mỹ giảm ba phẩy bốn phần trăm phiên thứ Sáu, nhưng Phố Wall vẫn tăng cả tuần. Đây là đóng cửa phiên Mỹ ngày mười ba tháng mười một, không phải giá trực tiếp sáng thứ Hai.",
+      "source": "REUTERS / AP · 13/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX",
+          "value": "-3,4%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-0,91%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SOX",
+            "value": -3.4,
+            "display": "-3,4%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -0.91,
+            "display": "-0,91%"
+          }
+        ],
+        "qualifier": "Đóng cửa 13/11 EST"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỈ SỐ PHỐ WALL",
+      "headline": "Nasdaq giảm, Dow tăng",
+      "summary": "Ba chỉ số diễn biến trái chiều",
+      "voiceText": "Kết phiên ngày mười ba tháng mười một, S&P năm trăm giảm không phẩy bốn phần trăm. Nasdaq giảm không phẩy chín mươi mốt phần trăm, trong khi Dow Jones tăng không phẩy một phần trăm. Đây là dữ liệu đóng cửa, không phải giá trực tiếp sáng nay.",
+      "source": "REUTERS / AP · 13/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "-0,40%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-0,91%",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "+0,10%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -0.4,
+            "display": "-0,4%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -0.91,
+            "display": "-0,91%"
+          },
+          {
+            "label": "DOW",
+            "value": 0.1,
+            "display": "+0,1%"
+          }
+        ],
+        "qualifier": "Phiên Mỹ 13/11 EST"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "Nhóm chip chịu áp lực",
+      "summary": "Nvidia, AMD, Broadcom cùng giảm",
+      "voiceText": "Áp lực tập trung vào bán dẫn. Chỉ số SOX giảm ba phẩy bốn phần trăm; AMD giảm tám phẩy tám phần trăm, Broadcom giảm bốn phẩy tám phần trăm và Nvidia giảm hai phần trăm. Thị trường lo ngại về triển vọng đầu tư AI và bất định lãnh đạo Nvidia; không thể quy mọi biến động cho một nguyên nhân.",
+      "source": "REUTERS · 13/11/2026",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX",
+          "value": "-3,4%",
+          "tone": "down"
+        },
+        {
+          "label": "AMD",
+          "value": "-8,8%",
+          "tone": "down"
+        },
+        {
+          "label": "NVIDIA",
+          "value": "-2,0%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SOX",
+            "value": -3.4,
+            "display": "-3,4%"
+          },
+          {
+            "label": "AMD",
+            "value": -8.8,
+            "display": "-8,8%"
+          },
+          {
+            "label": "NVIDIA",
+            "value": -2,
+            "display": "-2%"
+          }
+        ],
+        "qualifier": "Biến động cổ phiếu và SOX, 13/11"
+      }
+    },
+    {
+      "id": "weekly",
+      "eyebrow": "GÓC NHÌN TUẦN",
+      "headline": "Tuần vẫn tăng điểm",
+      "summary": "Phân biệt phiên và tuần",
+      "voiceText": "Dù nhóm chip giảm mạnh trong phiên thứ Sáu, tính cả tuần S&P năm trăm tăng khoảng hai phẩy năm phần trăm, Nasdaq tăng hai phẩy ba phần trăm và Dow tăng hai phẩy một phần trăm. Cần phân biệt diễn biến của một phiên với cả tuần.",
+      "source": "REUTERS / AP · 13/11/2026",
+      "sourceIds": [
+        "reuters-close",
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P TUẦN",
+          "value": "+2,5%",
+          "tone": "up"
+        },
+        {
+          "label": "NASDAQ TUẦN",
+          "value": "+2,3%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 2.5,
+            "display": "+2,5%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": 2.3,
+            "display": "+2,3%"
+          },
+          {
+            "label": "DOW",
+            "value": 2.1,
+            "display": "+2,1%"
+          }
+        ],
+        "qualifier": "Biến động cả tuần kết thúc 13/11"
+      }
+    },
+    {
+      "id": "ppi",
+      "eyebrow": "LẠM PHÁT MỸ",
+      "headline": "PPI tăng 6,5% YoY",
+      "summary": "BLS công bố 13/11",
+      "voiceText": "Theo Cục Thống kê Lao động Mỹ, chỉ số giá sản xuất PPI tháng mười tăng không phẩy ba phần trăm so với tháng trước, và tăng sáu phẩy năm phần trăm so với cùng kỳ năm trước. Báo cáo được công bố ngày mười ba tháng mười một. Lạm phát sản xuất cao có thể khiến kỳ vọng lãi suất Fed duy trì ở mức thận trọng.",
+      "source": "BLS / REUTERS · 13/11/2026",
+      "sourceIds": [
+        "bls-ppi",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "PPI MoM",
+          "value": "+0,3%",
+          "tone": "up"
+        },
+        {
+          "label": "PPI YoY",
+          "value": "+6,5%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "+6,5%",
+        "qualifier": "PPI tháng 10, YoY chưa điều chỉnh"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "HÀN QUỐC",
+      "headline": "Chip, dầu và đồng won",
+      "summary": "Dữ liệu phiên Mỹ và tin cuối tuần",
+      "voiceText": "Cuối tuần, Reuters cho biết giá dầu diesel bán lẻ trung bình tại Mỹ ngày mười lăm tháng mười một giảm xuống dưới sáu đô la mỗi gallon. Đây không phải báo giá dầu Brent trực tiếp sáng nay. Với Hàn Quốc, chip Mỹ yếu có thể gây áp lực tâm lý lên nhóm bán dẫn, còn giá năng lượng hạ nhiệt có thể giảm chi phí nhập khẩu nếu xu hướng duy trì. Cần theo dõi lợi suất Mỹ, đô la so với won và dòng vốn KOSPI, KOSDAQ. Đây là phân tích có điều kiện, không phải khuyến nghị giao dịch.",
+      "source": "REUTERS / AP / BLS · 13–15/11/2026",
+      "sourceIds": [
+        "reuters-diesel",
+        "reuters-close",
+        "bls-ppi"
+      ],
+      "stats": [
+        {
+          "label": "DIESEL MỸ",
+          "value": "5,998 USD/gal",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chip Mỹ giảm",
+          "Diesel Mỹ hạ nhiệt",
+          "Theo dõi USD/KRW"
+        ],
+        "cta": {
+          "headline": "CHIP HAY LẠM PHÁT?",
+          "subline": "Chia sẻ góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Chip Mỹ giảm ba phẩy bốn phần trăm phiên thứ Sáu, nhưng Phố Wall vẫn tăng cả tuần."
+}
