@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-15-macro21",
+  "edition": "15/11/2026 MACRO21 KST · chuyên đề Chủ nhật",
+  "dataAsOf": "2026-11-15T20:57:28+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Xuất khẩu Hàn Quốc tăng mạnh: vì sao đồng won vẫn có thể chịu áp lực?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261115-MACRO21",
+  "articlePath": "editorial/2026-11-15/macro21.md",
+  "eventKeys": [
+    "kcs-sep-2026-final-oct15",
+    "korea-export-surplus-fx-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Sunday 15 November 2026 20:57 KST. Customs final September 2026 goods trade released October 15, NOT live November data. No real-time FX quote or KRX close; market closed Sunday. Trade surplus is not equivalent to immediate FX conversion; capital flows and hedging can offset. Distinct from Nov 14 PPI and Nov 13 USD/yields episodes.",
+  "sourceLedger": [
+    {
+      "id": "customs",
+      "title": "Korea Customs Service September 2026 final trade, released October 15",
+      "url": "https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&mi=2891&nttSn=10179763&nttSnUrl=94e483116f9b898190458b9bf79546a3",
+      "eventDate": "2026-10-15",
+      "checkedAt": "2026-11-15T20:57:28+09:00",
+      "kind": "primary",
+      "facts": [
+        "September exports 121.050 billion USD +83.7% y/y; imports about 71.1 billion USD +26.0% y/y; trade surplus about 50.0 billion USD.",
+        "Customs clearance basis, September final figures."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Xuất khẩu Hàn Quốc tăng rất mạnh, vậy tại sao đồng won vẫn có thể chịu sức ép?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu Hàn Quốc tăng rất mạnh, vậy tại sao đồng won vẫn có thể chịu sức ép?"
+      },
+      {
+        "style": "impact",
+        "text": "Thặng dư thương mại lớn có đủ để giữ đồng won mạnh?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao xuất khẩu tăng chưa chắc khiến tỷ giá đô la trên won giảm?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu ba tín hiệu cần đối chiếu trong tuần mới: xuất nhập khẩu, dòng vốn và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cùng cập nhật các dữ liệu tiếp theo.",
+    "screenHeadline": "BA TÍN HIỆU CẦN XEM",
+    "screenSubline": "Thương mại · Dòng vốn · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Xuất khẩu tăng, won vẫn có rủi ro",
+      "summary": "Hải quan Hàn Quốc · số liệu tháng 9",
+      "voiceText": "Xuất khẩu Hàn Quốc tăng rất mạnh, vậy tại sao đồng won vẫn có thể chịu sức ép? Câu trả lời nằm ở sự khác biệt giữa doanh thu xuất khẩu và dòng tiền ngoại hối.",
+      "source": "Hải quan Hàn Quốc 15/10",
+      "sourceIds": [
+        "customs"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+83,7%",
+        "qualifier": "Xuất khẩu tháng 9 · so cùng kỳ"
+      },
+      "stats": []
+    },
+    {
+      "id": "exports",
+      "eyebrow": "THƯƠNG MẠI HÀN QUỐC",
+      "headline": "Xuất khẩu tháng 9 đạt 121,1 tỷ USD",
+      "summary": "Số chính thức · Hải quan công bố 15/10",
+      "voiceText": "Theo số liệu chính thức của Hải quan Hàn Quốc công bố ngày mười lăm tháng mười, xuất khẩu tháng chín đạt khoảng một trăm hai mươi mốt phẩy một tỷ đô la Mỹ, tăng tám mươi ba phẩy bảy phần trăm so với cùng kỳ năm trước. Đây là kết quả của tháng chín, không phải báo giá hay số liệu tháng mười một.",
+      "source": "KCS 15/10",
+      "sourceIds": [
+        "customs"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "XUẤT KHẨU THÁNG 9",
+          "value": "121,1 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "SO VỚI CÙNG KỲ",
+          "value": "+83,7%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "eyebrow": "THẶNG DƯ THƯƠNG MẠI",
+      "headline": "Thặng dư khoảng 50 tỷ USD",
+      "summary": "Tháng 9 · thông quan · số chính thức",
+      "voiceText": "Cùng kỳ, nhập khẩu đạt khoảng bảy mươi mốt phẩy một tỷ đô la, tạo thặng dư thương mại khoảng năm mươi tỷ đô la. Thặng dư hàng hóa là tín hiệu hỗ trợ nguồn cung ngoại tệ, nhưng không đồng nghĩa từng đô la doanh thu đều được bán ngay để mua won.",
+      "source": "KCS 15/10",
+      "sourceIds": [
+        "customs"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "NHẬP KHẨU THÁNG 9",
+          "value": "71,1 tỷ USD",
+          "tone": "neutral"
+        },
+        {
+          "label": "THẶNG DƯ THÁNG 9",
+          "value": "50,0 tỷ USD",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "eyebrow": "VÌ SAO WON VẪN BIẾN ĐỘNG?",
+      "headline": "Dòng vốn khác cán cân hàng hóa",
+      "summary": "Phân tích cơ chế · không phải dự báo tỷ giá",
+      "voiceText": "Tỷ giá đô la trên won còn phụ thuộc dòng vốn đầu tư, nhu cầu phòng hộ của doanh nghiệp, kỳ vọng lãi suất và tâm lý rủi ro toàn cầu. Khi nhu cầu nắm giữ đô la tăng nhanh hơn nguồn cung trên thị trường, đồng won vẫn có thể yếu đi, dù cán cân thương mại đang thặng dư. Đây là cơ chế có điều kiện, không phải diễn biến đã được xác nhận hôm nay.",
+      "source": "KCS 15/10 · phân tích KCI",
+      "sourceIds": [
+        "customs"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "CHỦ NHẬT · CHUYÊN ĐỀ",
+      "headline": "Đừng chỉ nhìn xuất khẩu",
+      "summary": "Đối chiếu thương mại · dòng vốn · USD/KRW",
+      "voiceText": "Hôm nay là Chủ nhật, thị trường cổ phiếu Hàn Quốc nghỉ giao dịch thường lệ. Vì vậy, chúng ta không dùng tỷ giá cũ như mức giá trực tiếp. Khi theo dõi tuần mới, hãy phân biệt dữ liệu xuất nhập khẩu, dòng vốn thực tế và tỷ giá tại đúng thời điểm.",
+      "source": "KCS 15/10",
+      "sourceIds": [
+        "customs"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Xuất nhập khẩu",
+          "Dòng vốn",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Xuất khẩu Hàn Quốc tăng rất mạnh, vậy tại sao đồng won vẫn có thể chịu sức ép?"
+}
