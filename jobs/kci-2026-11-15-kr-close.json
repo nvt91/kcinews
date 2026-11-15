@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-15-kr-close",
+  "articleId": "KCI-20261115-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "15/11/2026 KR_CLOSE · tổng kết Chủ nhật",
+  "dataAsOf": "2026-11-15T17:49:44+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI cuối tuần: biến động chip, dư nợ ký quỹ và chính sách",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-15/kr-close.md",
+  "sourceDisclaimer": "Sunday 15 Nov 2026: no KRX regular trading session. Friday 13 Nov closing figures only; margin debt reported Sunday 15 Nov, and capital market reform remarks Friday 13 Nov. Nvidia rumors omitted due to unresolved reporting.",
+  "eventKeys": [
+    "krx-kospi-close-2026-11-13",
+    "margin-debt-samsung-hynix-2026-11-15",
+    "capital-market-reform-2026-11-13"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 13 Nov 16:34 KST KRX regular close",
+      "url": "https://en.yna.co.kr/view/AEN20261113005352320",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-15T17:49:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed 5290.53, down 52.20 points or 0.98%; KOSDAQ closed 699.66, up 0.45%.",
+        "These figures refer to Friday KRX regular close, not Sunday or NXT."
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim 13 Nov KOSPI KOSDAQ close",
+      "url": "https://www.newspim.com/news/view/20261113001251",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-15T17:49:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5290.53 (-0.98%); KOSDAQ 699.66 (+0.45%) Friday 13 Nov."
+      ]
+    },
+    {
+      "id": "sbs-margin",
+      "title": "SBS News 15 Nov 12:09 margin-financed funds concentrated in chip stocks",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008846344",
+      "eventDate": "2026-11-15",
+      "checkedAt": "2026-11-15T17:49:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "SBS reported approximately 30% of margin-financed stock funds concentrated in Samsung Electronics and SK hynix, raising volatility exposure; no claim this predicts a decline."
+      ]
+    },
+    {
+      "id": "yonhap-reform",
+      "title": "Yonhap 13 Nov 14:51 Lee capital-market reform pledge",
+      "url": "https://en.yna.co.kr/view/AEN20261113002551315",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-15T17:49:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "President Lee pledged capital market reforms addressing undervaluation, confidence and irregularities; pledges are not enacted measures."
+      ]
+    },
+    {
+      "id": "yonhap-outlook",
+      "title": "Yonhap 15 Nov 06:30 market year review and outlook",
+      "url": "https://www.yna.co.kr/view/AKR20261114025800008",
+      "eventDate": "2026-11-15",
+      "checkedAt": "2026-11-15T17:49:44+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Yonhap Sunday market feature identified AI, macroeconomic conditions and investor flows as monitoring factors; forward-looking commentary, not actual prices."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Không có phiên chứng khoán Chủ nhật, nhưng rủi ro với hai cổ phiếu chip lớn nhất Hàn Quốc vẫn đáng chú ý.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Không có phiên chứng khoán Chủ nhật, nhưng rủi ro với hai cổ phiếu chip lớn nhất Hàn Quốc vẫn đáng chú ý.",
+        "score": 92
+      },
+      {
+        "style": "impact",
+        "text": "KOSPI kết tuần dưới năm nghìn ba trăm điểm. Vì sao dòng tiền vào nhóm chip cần được theo dõi?",
+        "score": 89
+      },
+      {
+        "style": "question",
+        "text": "Sau phiên KOSPI giảm, liệu cải cách thị trường vốn có đủ để khôi phục niềm tin?",
+        "score": 85
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, tuần tới nên chú ý dòng tiền vào cổ phiếu chip hay chính sách thị trường hơn? Bình luận cùng KCI nhé.",
+    "screenHeadline": "THEO DÕI ĐIỀU GÌ?",
+    "screenSubline": "Cổ phiếu chip · Dòng tiền · Chính sách",
+    "question": "Dòng tiền chip hay chính sách thị trường?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · CHỦ NHẬT 15/11",
+      "headline": "CHIP & RỦI RO DÒNG TIỀN",
+      "summary": "Tổng kết cuối tuần, không có phiên KRX Chủ nhật",
+      "voiceText": "Không có phiên chứng khoán Chủ nhật, nhưng rủi ro với hai cổ phiếu chip lớn nhất Hàn Quốc vẫn đáng chú ý. Bản tin chiều nay tổng hợp ba điểm cần theo dõi trước tuần giao dịch mới.",
+      "source": "SBS 15/11; Yonhap 13/11",
+      "sourceIds": [
+        "sbs-margin",
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "30%",
+        "qualifier": "Tỷ trọng dư nợ giao dịch ký quỹ tập trung ở Samsung và SK hynix theo SBS"
+      },
+      "stats": []
+    },
+    {
+      "id": "market",
+      "eyebrow": "THỊ TRƯỜNG HÀN QUỐC",
+      "headline": "KOSPI KẾT TUẦN DƯỚI 5.300",
+      "summary": "Số liệu phiên thứ Sáu 13/11, không phải giá Chủ nhật",
+      "voiceText": "Trong phiên thứ Sáu ngày mười ba tháng mười một, KOSPI đóng cửa ở năm nghìn hai trăm chín mươi phẩy năm ba điểm, giảm không phẩy chín tám phần trăm. KOSDAQ ngược chiều, tăng không phẩy bốn lăm phần trăm lên sáu trăm chín mươi chín phẩy sáu sáu điểm. Đây là giá đóng cửa của KRX hôm thứ Sáu, không phải giao dịch hôm nay.",
+      "source": "Yonhap; NewsPim 13/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -0.98,
+            "display": "−0,98%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": 0.45,
+            "display": "+0,45%"
+          }
+        ],
+        "qualifier": "KRX regular session 13/11/2026"
+      },
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "5.290,53",
+          "change": "−0,98%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "699,66",
+          "change": "+0,45%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "margin",
+      "eyebrow": "RỦI RO ĐÒN BẨY",
+      "headline": "DƯ NỢ TẬP TRUNG VÀO CHIP",
+      "summary": "SBS ngày 15/11: khoảng 30% vốn vay giao dịch ký quỹ ở hai mã lớn",
+      "voiceText": "Đáng chú ý, SBS đưa tin ngày mười lăm tháng mười một rằng khoảng ba mươi phần trăm nguồn vốn giao dịch bằng tiền vay tập trung vào Samsung Electronics và SK hynix. Mức độ tập trung này có thể làm biến động giá mạnh hơn khi thị trường điều chỉnh. Tuy nhiên, đây là chỉ dấu rủi ro, không phải dự báo giá hai cổ phiếu sẽ giảm.",
+      "source": "SBS News 15/11",
+      "sourceIds": [
+        "sbs-margin"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~30%",
+        "unit": "VỐN VAY KÝ QUỸ",
+        "qualifier": "Tập trung ở Samsung Electronics và SK hynix; SBS 15/11"
+      },
+      "stats": [
+        {
+          "label": "Tỷ trọng tập trung",
+          "value": "Khoảng 30%",
+          "tone": "neutral"
+        }
+      ]
+    },
+    {
+      "id": "reform",
+      "eyebrow": "CHÍNH SÁCH THỊ TRƯỜNG",
+      "headline": "CẢI CÁCH VẪN LÀ TÂM ĐIỂM",
+      "summary": "Cam kết chính sách, chưa phải biện pháp đã thực thi",
+      "voiceText": "Ở góc độ chính sách, trong cuộc thảo luận tại Sở giao dịch Hàn Quốc hôm thứ Sáu, Tổng thống Lee Jae-myung tiếp tục cam kết cải cách thị trường vốn, tăng niềm tin và xử lý hành vi bất thường. Đây là định hướng được nêu ra, chưa đồng nghĩa tất cả biện pháp đã có hiệu lực. Tuần tới, nhà đầu tư cần theo dõi dòng vốn, ngành AI và các bước triển khai cụ thể.",
+      "source": "Yonhap 13/11; 15/11",
+      "sourceIds": [
+        "yonhap-reform",
+        "yonhap-outlook"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "DÒNG TIỀN HAY CHÍNH SÁCH?",
+      "summary": "Góc nhìn cho tuần tới · không phải khuyến nghị mua bán",
+      "voiceText": "Những con số này giúp nhận diện rủi ro, không bảo đảm xu hướng giá trong tuần tới. Korea Capital Insight sẽ tiếp tục cập nhật dữ liệu mới.",
+      "source": "KCI tổng hợp",
+      "sourceIds": [
+        "sbs-margin",
+        "yonhap-outlook"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "DÒNG TIỀN CHIP",
+          "BIẾN ĐỘNG KOSPI",
+          "CHÍNH SÁCH VỐN"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Không có phiên chứng khoán Chủ nhật, nhưng rủi ro với hai cổ phiếu chip lớn nhất Hàn Quốc vẫn đáng chú ý."
+}
