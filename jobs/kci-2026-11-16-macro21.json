@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-16-macro21",
+  "edition": "16/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-16T21:40:07+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "CPI năng lượng tăng, PPI năng lượng giảm: Hàn Quốc cần theo dõi gì?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261116-MACRO21",
+  "articlePath": "editorial/2026-11-16/macro21.md",
+  "eventKeys": [
+    "bls-cpi-oct-2026-energy",
+    "bls-ppi-oct-2026-energy",
+    "korea-imported-inflation-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 16 Nov 2026 21:40 KST. CPI/PPI refer to October US indices released Nov 10/13, not Korean fuel prices, not live FX or US close. Conditional transmission only; no prediction.",
+  "sourceLedger": [
+    {
+      "id": "bls-cpi",
+      "title": "BLS October 2026 CPI release November 10",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-16T21:40:07+09:00",
+      "kind": "primary",
+      "facts": [
+        "October CPI +0.4% month on month seasonally adjusted; core CPI +0.3%; energy CPI +0.7%.",
+        "October 2025 data missing for most categories; headline 12-month October 2026 rate not published."
+      ]
+    },
+    {
+      "id": "bls-ppi",
+      "title": "BLS October 2026 PPI release November 13",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-16T21:40:07+09:00",
+      "kind": "primary",
+      "facts": [
+        "October final demand PPI +0.3% month on month seasonally adjusted; +6.5% year on year unadjusted.",
+        "October final demand energy prices -0.1% month on month."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá năng lượng tại Mỹ đang gửi hai tín hiệu trái chiều. Điều đó có ý nghĩa gì với đồng won và chi phí nhập khẩu của Hàn Quốc?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá năng lượng tại Mỹ đang gửi hai tín hiệu trái chiều. Điều đó có ý nghĩa gì với đồng won và chi phí nhập khẩu của Hàn Quốc?"
+      },
+      {
+        "style": "impact",
+        "text": "CPI năng lượng Mỹ tăng, nhưng PPI năng lượng lại giảm. Hàn Quốc cần theo dõi gì?"
+      },
+      {
+        "style": "question",
+        "text": "Vì sao hai chỉ số năng lượng Mỹ có thể đi ngược chiều mà không mâu thuẫn?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu ba biến cần kiểm tra cùng nhau: giá năng lượng, lợi suất Mỹ và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cập nhật dữ liệu mới.",
+    "screenHeadline": "BA BIẾN CẦN THEO DÕI",
+    "screenSubline": "Năng lượng · Lợi suất · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Giá năng lượng: hai tín hiệu trái chiều",
+      "summary": "CPI và PPI Mỹ · tháng 10/2026",
+      "voiceText": "Giá năng lượng tại Mỹ đang gửi hai tín hiệu trái chiều. Điều đó có ý nghĩa gì với đồng won và chi phí nhập khẩu của Hàn Quốc?",
+      "source": "bls-cpi · bls-ppi",
+      "sourceIds": [
+        "bls-cpi",
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+0,7%",
+        "qualifier": "CPI năng lượng Mỹ · tháng 10"
+      },
+      "stats": []
+    },
+    {
+      "id": "consumer",
+      "eyebrow": "LẠM PHÁT TIÊU DÙNG",
+      "headline": "CPI năng lượng tăng 0,7%",
+      "summary": "BLS công bố 10/11 · so tháng trước",
+      "voiceText": "Báo cáo công bố ngày mười tháng mười một cho thấy chỉ số giá tiêu dùng Mỹ tháng mười tăng không phẩy bốn phần trăm so với tháng trước, sau điều chỉnh mùa vụ. Riêng nhóm năng lượng tăng không phẩy bảy phần trăm. Đây là mức tăng theo tháng, không phải theo năm.",
+      "source": "bls-cpi",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "CPI THÁNG 10",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "NĂNG LƯỢNG",
+          "value": "+0,7%",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "producer",
+      "eyebrow": "GIÁ SẢN XUẤT",
+      "headline": "Năng lượng PPI giảm nhẹ",
+      "summary": "BLS công bố 13/11 · phạm vi khác CPI",
+      "voiceText": "Nhưng báo cáo giá sản xuất công bố ngày mười ba tháng mười một lại ghi nhận năng lượng trong nhóm nhu cầu cuối cùng giảm không phẩy một phần trăm. Toàn bộ PPI tăng không phẩy ba phần trăm theo tháng. Hai chỉ số đo các khâu và rổ hàng khác nhau, nên không thể xem chúng là mâu thuẫn trực tiếp.",
+      "source": "bls-ppi",
+      "sourceIds": [
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": [
+        {
+          "label": "PPI THÁNG 10",
+          "value": "+0,3%",
+          "tone": "up"
+        },
+        {
+          "label": "NĂNG LƯỢNG PPI",
+          "value": "-0,1%",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "korea",
+      "eyebrow": "KÊNH TRUYỀN DẪN",
+      "headline": "Won và chi phí nhập khẩu",
+      "summary": "Phân tích có điều kiện · không báo giá trực tiếp",
+      "voiceText": "Đối với Hàn Quốc, cần theo dõi hai kênh. Một là kỳ vọng lãi suất Mỹ có thể ảnh hưởng lợi suất, dòng vốn và tỷ giá đô la trên won. Hai là giá dầu nhập khẩu tính bằng đô la và tỷ giá cùng quyết định chi phí quy đổi sang won. CPI Mỹ không phải giá dầu nhập khẩu thực tế của Hàn Quốc, và cũng không đủ để dự báo tỷ giá chắc chắn.",
+      "source": "bls-cpi · bls-ppi",
+      "sourceIds": [
+        "bls-cpi",
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Đối chiếu đúng ba biến",
+      "summary": "Dữ liệu · lợi suất · USD/KRW",
+      "voiceText": "Điểm quan trọng là phân biệt chỉ số giá tiêu dùng với giá sản xuất, và so sánh cùng kỳ đo lường. BLS cũng chưa công bố được mức tăng CPI toàn phần mười hai tháng của tháng mười vì thiếu dữ liệu gốc tháng mười năm trước. Vì vậy đừng tự suy ra một con số lạm phát năm.",
+      "source": "bls-cpi · bls-ppi",
+      "sourceIds": [
+        "bls-cpi",
+        "bls-ppi"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "CPI và PPI",
+          "Lợi suất Mỹ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Giá năng lượng tại Mỹ đang gửi hai tín hiệu trái chiều."
+}
