@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-17-us-am",
+  "articleId": "KCI-20261117-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "17/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-17T08:56:37+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq giảm 2,49%, SOX mất 5,3%: Nvidia và rủi ro cho bán dẫn Hàn Quốc",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Phiên Mỹ thứ Hai 16/11/2026 đóng cửa 16:00 EST, tương ứng 06:00 KST ngày 17/11/2026 (Mỹ đã hết DST). Dữ liệu dầu/lợi suất là quan sát báo chí ngày 16/11, không phải báo giá trực tiếp 17/11. BLS PPI công bố 13/11, chỉ là bối cảnh lịch sử.",
+  "eventKeys": [
+    "us-equities-close-2026-11-16",
+    "us-semiconductor-close-2026-11-16",
+    "nvidia-earnings-watch-2026-11-16",
+    "us-oil-yield-2026-11-16",
+    "bls-ppi-oct-2026-11-13"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-us-close",
+      "title": "Reuters US equities close 16 November 2026",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-17T08:56:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq Composite -2.49%, S&P 500 -1.92%, Dow -1.41% at November 16 US close.",
+        "Philadelphia Semiconductor Index -5.3%, Nvidia -4.1%.",
+        "Investors awaiting Nvidia earnings; technology and AI concerns weighed on shares."
+      ]
+    },
+    {
+      "id": "ap-us-close",
+      "title": "Associated Press US stock market November 16 close",
+      "url": "https://apnews.com/article/35786b8f539ec95f16ae0500f71cfcc7",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-17T08:56:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 closed 7416.59, Nasdaq 24509.76, Dow 51608.17.",
+        "10-year US Treasury yield 5.13% in AP market report, a reported observation not a live quote.",
+        "Brent crude fell 3.5% to USD 92.44 per barrel in AP report."
+      ]
+    },
+    {
+      "id": "reuters-global",
+      "title": "Reuters global markets November 16",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-17T08:56:37+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Semiconductor shares weakened across global markets; US SOX down 5.3%.",
+        "Dollar index reached highest level since April 2025; exact value not asserted.",
+        "Oil prices fell more than 3% amid global risk-off conditions."
+      ]
+    },
+    {
+      "id": "bls-ppi-primary",
+      "title": "US Bureau of Labor Statistics October 2026 PPI release",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-17T08:56:37+09:00",
+      "kind": "primary",
+      "facts": [
+        "BLS published October 2026 PPI report November 13.",
+        "Final demand PPI increased 0.3% month over month seasonally adjusted, and 6.5% year over year unadjusted.",
+        "This is November 13 published historical inflation context, not a November 16 new release."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq giảm gần hai phẩy năm phần trăm, còn chỉ số bán dẫn Mỹ mất năm phẩy ba phần trăm.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Nasdaq giảm gần hai phẩy năm phần trăm, còn chỉ số bán dẫn Mỹ mất năm phẩy ba phần trăm."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nhóm chip Mỹ mất hơn năm phần trăm, cổ phiếu bán dẫn Hàn Quốc có thể chịu tác động gì?"
+      },
+      {
+        "style": "risk",
+        "text": "Phố Wall giảm mạnh trước báo cáo Nvidia, nhà đầu tư đang lo điều gì?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, kết quả Nvidia hay diễn biến lợi suất Mỹ sẽ ảnh hưởng thị trường Hàn Quốc mạnh hơn?",
+    "screenHeadline": "CHỜ TÍN HIỆU NVIDIA",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Nvidia hay lợi suất Mỹ tác động mạnh hơn đến thị trường Hàn Quốc?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "PHỐ WALL · 16/11",
+      "headline": "SOX giảm 5,3%",
+      "summary": "Nasdaq giảm 2,49% tại đóng cửa",
+      "voiceText": "Nasdaq giảm gần hai phẩy năm phần trăm, còn chỉ số bán dẫn Mỹ mất năm phẩy ba phần trăm. Đây là kết quả đóng cửa phiên Mỹ ngày mười sáu tháng mười một, không phải giá trực tiếp sáng nay.",
+      "source": "REUTERS / AP · 16/11/2026",
+      "sourceIds": [
+        "reuters-us-close",
+        "ap-us-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX",
+          "value": "-5,3%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-2,49%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "SOX",
+            "value": -5.3,
+            "display": "-5,3%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -2.49,
+            "display": "-2,49%"
+          }
+        ],
+        "qualifier": "Đóng cửa 16/11 EST"
+      }
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỈ SỐ MỸ",
+      "headline": "Ba chỉ số cùng giảm",
+      "summary": "Áp lực lan rộng ngoài công nghệ",
+      "voiceText": "S&P năm trăm giảm một phẩy chín hai phần trăm, Nasdaq giảm hai phẩy bốn chín phần trăm và Dow Jones giảm một phẩy bốn một phần trăm. Theo AP, S&P năm trăm đóng cửa ở bảy nghìn bốn trăm mười sáu phẩy năm chín điểm. Đây là biến động một phiên.",
+      "source": "REUTERS / AP · 16/11/2026",
+      "sourceIds": [
+        "reuters-us-close",
+        "ap-us-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "-1,92%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "-2,49%",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "-1,41%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -1.92,
+            "display": "-1,92%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -2.49,
+            "display": "-2,49%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.41,
+            "display": "-1,41%"
+          }
+        ],
+        "qualifier": "Đóng cửa 16/11 EST"
+      }
+    },
+    {
+      "id": "chips",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "Nvidia giảm 4,1%",
+      "summary": "SOX giảm 5,3% trước báo cáo kết quả",
+      "voiceText": "Nvidia giảm bốn phẩy một phần trăm, trong khi chỉ số bán dẫn SOX giảm năm phẩy ba phần trăm. Thị trường theo dõi báo cáo kết quả của Nvidia và rủi ro hạn chế tiếp cận chip AI. Đây là những yếu tố được báo chí ghi nhận, không phải lời khẳng định một nguyên nhân duy nhất.",
+      "source": "REUTERS · 16/11/2026",
+      "sourceIds": [
+        "reuters-us-close",
+        "reuters-global"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "-4,1%",
+          "tone": "down"
+        },
+        {
+          "label": "SOX",
+          "value": "-5,3%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NVIDIA",
+            "value": -4.1,
+            "display": "-4,1%"
+          },
+          {
+            "label": "SOX",
+            "value": -5.3,
+            "display": "-5,3%"
+          }
+        ],
+        "qualifier": "Đóng cửa 16/11 EST"
+      }
+    },
+    {
+      "id": "macro",
+      "eyebrow": "LỢI SUẤT & DẦU",
+      "headline": "Brent còn 92,44 USD",
+      "summary": "Lợi suất 10 năm Mỹ khoảng 5,13%",
+      "voiceText": "AP ghi nhận dầu Brent giảm ba phẩy năm phần trăm về chín mươi hai đô la bốn mươi bốn xu một thùng; lợi suất trái phiếu Mỹ mười năm ở khoảng năm phẩy một ba phần trăm. Đây là số quan sát được báo cáo ngày mười sáu tháng mười một, không phải giá trực tiếp tại Hàn Quốc sáng nay. PPI tháng mười được BLS công bố từ ngày mười ba, không phải dữ liệu mới hôm nay.",
+      "source": "AP / BLS · 13–16/11/2026",
+      "sourceIds": [
+        "ap-us-close",
+        "bls-ppi-primary"
+      ],
+      "stats": [
+        {
+          "label": "BRENT",
+          "value": "92,44 USD/thùng",
+          "tone": "down"
+        },
+        {
+          "label": "US10Y",
+          "value": "5,13%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "rate",
+        "value": "92,44 USD",
+        "qualifier": "Brent theo AP, quan sát 16/11"
+      }
+    },
+    {
+      "id": "korea",
+      "eyebrow": "TÁC ĐỘNG HÀN QUỐC",
+      "headline": "Theo dõi chip và USD/KRW",
+      "summary": "KOSPI, KOSDAQ có thể biến động",
+      "voiceText": "Với Hàn Quốc, đà giảm cổ phiếu chip Mỹ có thể gây áp lực tâm lý lên Samsung Electronics, SK Hynix và nhóm công nghệ nếu dòng vốn né rủi ro tiếp tục. Dầu giảm có thể hỗ trợ chi phí nhập khẩu năng lượng nếu xu hướng kéo dài, nhưng đô la mạnh và lợi suất Mỹ cao có thể gây sức ép lên đồng won. Cần theo dõi kết quả Nvidia, USD so với won và phản ứng KOSPI, KOSDAQ. Đây là phân tích có điều kiện, không phải khuyến nghị giao dịch.",
+      "source": "REUTERS / AP / BLS · 13–16/11/2026",
+      "sourceIds": [
+        "reuters-us-close",
+        "reuters-global",
+        "ap-us-close"
+      ],
+      "stats": [
+        {
+          "label": "SOX",
+          "value": "-5,3%",
+          "tone": "down"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chip Mỹ giảm mạnh",
+          "Dầu giảm, USD mạnh",
+          "Theo dõi Nvidia và won"
+        ],
+        "cta": {
+          "headline": "CHỜ TÍN HIỆU NVIDIA",
+          "subline": "Chia sẻ góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Nasdaq giảm gần hai phẩy năm phần trăm, còn chỉ số bán dẫn Mỹ mất năm phẩy ba phần trăm."
+}
