@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-16-kr-close",
+  "articleId": "KCI-20261116-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "16/11/2026 KR_CLOSE · KRX regular close",
+  "dataAsOf": "2026-11-16T17:47:29+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 3,59%, khối ngoại bán mạnh; chip chịu áp lực",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-16/kr-close.md",
+  "sourceDisclaimer": "KRX regular session close 16 November 2026 as reported by Yonhap 16:10 and NewsPim 16:14; NXT after-hours excluded. Foreign flows are approximate and preliminary; do not claim primary KRX direct extraction. SK hynix 1.4 trillion supplier programme was first announced July 2, not a new November decision.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-16",
+    "krx-foreign-selloff-2026-11-16",
+    "semiconductor-weakness-2026-11-16",
+    "skhynix-supplier-programme-context-2026-07-02"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 16 Nov 2026 16:10 KOSPI KOSDAQ regular close",
+      "url": "https://www.yna.co.kr/view/AKR20261116134900008",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-16T17:47:29+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI regular close 5100.50, down 190.03 or 3.59%; KOSDAQ 665.65, down 34.01 or 4.86%.",
+        "Foreign investors net sold close to 1.4 trillion won; Samsung and SK hynix fell markedly."
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim 16 Nov 2026 16:14 Korean equity and FX close",
+      "url": "https://www.newspim.com/news/view/20261116001161",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-16T17:47:29+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5100.50 (-3.59%), KOSDAQ 665.65 (-4.86%) on November 16.",
+        "USD/KRW at 15:30 was 1335.7 won per dollar, down 1.0 won."
+      ]
+    },
+    {
+      "id": "newsis-flows",
+      "title": "Newsis 16 Nov 2026 15:52 foreign selling and AI sentiment",
+      "url": "https://nwww.newsis.com/view/NISX20261116_0003870105",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-16T17:47:29+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Newsis attributes selling pressure to foreign investors and weak AI chip sentiment.",
+        "Semiconductor shares and KOSDAQ were notably weak; no confirmed causal certainty."
+      ]
+    },
+    {
+      "id": "skhynix-primary",
+      "title": "SK hynix official newsroom 2 July 2026 supplier cooperation programme",
+      "url": "https://news.skhynix.co.kr/fact-08/",
+      "eventDate": "2026-07-02",
+      "checkedAt": "2026-11-16T17:47:29+09:00",
+      "kind": "primary",
+      "facts": [
+        "SK hynix announced a 1.4 trillion won five-year supplier programme on 2 July 2026; not a fresh 16 November announcement.",
+        "Programme covers supplier R&D, testing, manufacturing and sales."
+      ]
+    },
+    {
+      "id": "reuters-supplier",
+      "title": "Reuters 16 Nov 2026 report on SK hynix supplier programme",
+      "url": "https://www.reuters.com/world/asia-pacific/sk-hynix-spend-1-billion-over-five-years-support-chip-suppliers-2026-11-16/",
+      "eventDate": "2026-11-16",
+      "checkedAt": "2026-11-16T17:47:29+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters revisited the SK hynix 1.4 trillion won five-year supplier support plan and an 874.6 billion won testing facility.",
+        "Original company programme was announced July 2026; avoid presenting the programme as first announced today."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa mất gần ba phẩy sáu phần trăm trong một phiên. Vì sao cổ phiếu chip Hàn Quốc chịu sức ép lớn?",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "KOSPI vừa mất gần ba phẩy sáu phần trăm trong một phiên. Vì sao cổ phiếu chip Hàn Quốc chịu sức ép lớn?",
+        "score": 93
+      },
+      {
+        "style": "impact",
+        "text": "KOSPI lùi sát mốc năm nghìn một trăm điểm, còn KOSDAQ giảm gần năm phần trăm. Điều gì đang diễn ra?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Khối ngoại bán mạnh, cổ phiếu bán dẫn lao dốc. Đâu là điều cần theo dõi sau phiên hôm nay?",
+        "score": 88
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, phiên tới nên chú ý dòng vốn ngoại hay diễn biến cổ phiếu bán dẫn hơn? Bình luận cùng KCI nhé.",
+    "screenHeadline": "THEO DÕI ĐIỀU GÌ?",
+    "screenSubline": "Dòng vốn ngoại · Cổ phiếu chip · Tâm lý AI",
+    "question": "Dòng vốn ngoại hay cổ phiếu chip?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "eyebrow": "KCI · CHIỀU 16/11",
+      "headline": "KOSPI GIẢM 3,59%",
+      "summary": "Thị trường Hàn Quốc lao dốc sau phiên thứ Hai",
+      "voiceText": "KOSPI vừa mất gần ba phẩy sáu phần trăm trong một phiên. Vì sao cổ phiếu chip Hàn Quốc chịu sức ép lớn? Đây là bản tin thị trường Hàn Quốc chiều ngày mười sáu tháng mười một, với ba điểm đáng chú ý.",
+      "source": "Yonhap 16/11",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−3,59%",
+        "qualifier": "KOSPI · KRX regular close · 16/11/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "indices",
+      "eyebrow": "CHỈ SỐ THỊ TRƯỜNG",
+      "headline": "KOSPI & KOSDAQ CÙNG GIẢM",
+      "summary": "Số liệu phiên KRX thông thường ngày 16/11",
+      "voiceText": "Theo Yonhap, KOSPI đóng cửa tại năm nghìn một trăm phẩy năm mươi điểm, giảm một trăm chín mươi phẩy không ba điểm, tương đương ba phẩy năm chín phần trăm. KOSDAQ cũng giảm bốn phẩy tám sáu phần trăm, còn sáu trăm sáu mươi lăm phẩy sáu lăm điểm. Đây là giá đóng cửa phiên chính của KRX, không cộng giao dịch sau giờ trên NXT.",
+      "source": "Yonhap; NewsPim 16/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -3.59,
+            "display": "−3,59%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -4.86,
+            "display": "−4,86%"
+          }
+        ],
+        "qualifier": "KRX regular close 16/11/2026"
+      },
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "5.100,50",
+          "change": "−3,59%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "665,65",
+          "change": "−4,86%",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "flows",
+      "eyebrow": "DÒNG TIỀN VÀ BÁN DẪN",
+      "headline": "KHỐI NGOẠI BÁN MẠNH",
+      "summary": "Áp lực tập trung ở cổ phiếu chip lớn",
+      "voiceText": "Áp lực bán nổi bật ở nhà đầu tư nước ngoài, với giá trị bán ròng trên sàn KOSPI gần một phẩy bốn nghìn tỷ won theo thống kê báo chí cuối phiên. Samsung Electronics và SK hynix đều giảm mạnh. Thị trường lo ngại triển vọng đầu tư trí tuệ nhân tạo, nhưng đây là cách lý giải của giới phân tích, không phải nguyên nhân đã được chứng minh tuyệt đối.",
+      "source": "Yonhap; Newsis 16/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newsis-flows"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~1,4 nghìn tỷ ₩",
+        "qualifier": "Bán ròng khối ngoại KOSPI, số liệu cuối phiên sơ bộ"
+      },
+      "stats": [
+        {
+          "label": "Khối ngoại KOSPI",
+          "value": "Gần 1,4 nghìn tỷ won",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "sector",
+      "eyebrow": "GÓC NHÌN NGÀNH CHIP",
+      "headline": "GIÁ GIẢM, ĐẦU TƯ DÀI HẠN",
+      "summary": "Phân biệt biến động giá với kế hoạch doanh nghiệp",
+      "voiceText": "Ở chiều dài hạn, SK hynix vẫn triển khai chương trình hỗ trợ doanh nghiệp cung ứng trong nước quy mô một phẩy bốn nghìn tỷ won trong năm năm. Doanh nghiệp đã công bố chương trình này từ tháng bảy, và Reuters cập nhật thêm thông tin hôm nay. Đây là kế hoạch hỗ trợ chuỗi cung ứng, không phải tín hiệu giá cổ phiếu sẽ phục hồi ngay.",
+      "source": "SK hynix Newsroom 02/07; Reuters 16/11",
+      "sourceIds": [
+        "skhynix-primary",
+        "reuters-supplier"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1,4 nghìn tỷ ₩",
+        "qualifier": "Chương trình 5 năm công bố tháng 7/2026, không phải tin mới"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "eyebrow": "ĐIỂM CẦN THEO DÕI",
+      "headline": "QUAN SÁT DÒNG TIỀN",
+      "summary": "Chưa kết luận xu hướng chỉ từ một phiên",
+      "voiceText": "Sau phiên giảm mạnh, điều đáng theo dõi là dòng vốn ngoại có tiếp tục rút ra hay không, và nhóm bán dẫn có ổn định trở lại không. Một phiên giảm sâu chưa đủ để kết luận xu hướng trung hạn.",
+      "source": "Yonhap; Newsis 16/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newsis-flows"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhóm bán dẫn",
+          "Diễn biến phiên kế tiếp"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Không có phiên chứng khoán Chủ nhật, nhưng rủi ro với hai cổ phiếu chip lớn nhất Hàn Quốc vẫn đáng chú ý.",
+  "caption": "📉 KOSPI giảm 3,59%, KOSDAQ mất 4,86% trong phiên 16/11. Áp lực bán tập trung vào nhóm chip. Cùng KCI nhìn lại diễn biến và điều cần theo dõi nhé! #KOSPI #KOSDAQ #ChungKhoanHanQuoc"
+}
