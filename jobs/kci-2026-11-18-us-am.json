@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-18-us-am",
+  "articleId": "KCI-20261118-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "18/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-18T08:55:31+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall giảm phiên thứ hai: Nvidia và sức ép lên thị trường Hàn Quốc",
+  "scriptTitle": "KCI | Phố Wall tiếp tục giảm: Bán dẫn Hàn Quốc sẽ chịu tác động ra sao?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Đóng cửa Mỹ 17/11/2026 16:00 EST = 06:00 KST 18/11/2026; Mỹ đã hết DST. Báo cáo Nvidia sau đóng cửa là sự kiện riêng, không trộn giá ngoài giờ với giá đóng cửa. Dữ liệu BLS 13/11 chỉ là bối cảnh.",
+  "eventKeys": [
+    "us-equities-close-2026-11-17",
+    "nvidia-ai-volatility-2026-11-17",
+    "us-treasury-oil-2026-11-17",
+    "korea-risk-transmission-2026-11-18"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-close",
+      "title": "AP How major US indexes fared Tuesday 17 November",
+      "url": "https://apnews.com/article/ff6caef4d9289cf7f1e6ee48a706eddc",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 7340.53 -1.03%; Dow 50759.42 -1.64%; Nasdaq 24328.38 -0.74%.",
+        "Treasury yields eased; oil prices rose."
+      ]
+    },
+    {
+      "id": "ap-ai",
+      "title": "AP Wall Street shakes again as Nvidia and AI shares swing lower",
+      "url": "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nvidia -0.4% at regular close; AI stocks and financials weighed on market.",
+        "Four in five S&P 500 stocks declined."
+      ]
+    },
+    {
+      "id": "reuters-close",
+      "title": "Reuters Wall Street ends lower ahead of Nvidia results",
+      "url": "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US equities fell ahead of Nvidia results amid AI concerns."
+      ]
+    },
+    {
+      "id": "bls-context",
+      "title": "BLS October 2026 Producer Price Index",
+      "url": "https://www.bls.gov/news.release/archives/ppi_11132026.htm",
+      "eventDate": "2026-11-13",
+      "checkedAt": "2026-11-18T08:55:31+09:00",
+      "kind": "primary",
+      "facts": [
+        "October PPI +0.3% month over month; published Nov 13; historical context only."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall lại giảm, Dow Jones mất hơn tám trăm điểm trong phiên thứ Ba.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Phố Wall lại giảm, Dow Jones mất hơn tám trăm điểm trong phiên thứ Ba."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Cổ phiếu AI Mỹ tiếp tục biến động, nhóm bán dẫn Hàn Quốc cần theo dõi điều gì?"
+      },
+      {
+        "style": "risk",
+        "text": "Nvidia sắp công bố kết quả, nhưng Phố Wall đã có thêm một phiên đỏ."
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, kết quả Nvidia hay diễn biến lợi suất Mỹ sẽ ảnh hưởng nhóm chip Hàn Quốc nhiều hơn? Hãy chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "CHỜ TÍN HIỆU NVIDIA",
+    "screenSubline": "Cùng trao đổi với KCI",
+    "question": "Nvidia hay lợi suất Mỹ quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Phố Wall lại giảm",
+      "screenText": "DOW −1,64% | S&P 500 −1,03%",
+      "eyebrow": "PHỐ WALL · 17/11",
+      "headline": "Dow mất 848 điểm",
+      "summary": "Áp lực bán tiếp diễn",
+      "voiceText": "Phố Wall lại giảm, Dow Jones mất hơn tám trăm điểm trong phiên thứ Ba. S&P năm trăm cũng giảm hơn một phần trăm. Đây là kết quả đóng cửa ngày mười bảy tháng mười một tại Mỹ, không phải giá trực tiếp sáng nay.",
+      "source": "AP · 17/11/2026",
+      "sourceIds": [
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "DOW",
+          "value": "−1,64%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500",
+          "value": "−1,03%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "DOW",
+            "value": -1.64,
+            "display": "−1,64%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -1.03,
+            "display": "−1,03%"
+          }
+        ],
+        "qualifier": "Đóng cửa 17/11 EST"
+      }
+    },
+    {
+      "id": "indices",
+      "title": "Cảnh 2 — Các chỉ số Mỹ",
+      "screenText": "NASDAQ −0,74% | S&P 500 7.340,53",
+      "eyebrow": "CHỈ SỐ MỸ",
+      "headline": "Sắc đỏ lan rộng",
+      "summary": "Cả ba chỉ số giảm",
+      "voiceText": "Nasdaq giảm không phẩy bảy bốn phần trăm về hai mươi bốn nghìn ba trăm hai mươi tám phẩy ba tám điểm. S&P năm trăm đóng cửa ở bảy nghìn ba trăm bốn mươi phẩy năm ba điểm, còn Dow Jones ở năm mươi nghìn bảy trăm năm mươi chín phẩy bốn hai điểm. Theo AP, phần lớn cổ phiếu trong S&P năm trăm giảm giá.",
+      "source": "AP · 17/11/2026",
+      "sourceIds": [
+        "ap-close",
+        "ap-ai"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "−0,74%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500",
+          "value": "7.340,53",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -0.74,
+            "display": "−0,74%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -1.03,
+            "display": "−1,03%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.64,
+            "display": "−1,64%"
+          }
+        ],
+        "qualifier": "Biến động một phiên 17/11"
+      }
+    },
+    {
+      "id": "ai",
+      "title": "Cảnh 3 — Nvidia và AI",
+      "screenText": "NVIDIA −0,4% | CHỜ BÁO CÁO",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "Nvidia tiếp tục biến động",
+      "summary": "Tâm điểm là triển vọng AI",
+      "voiceText": "Điều đáng chú ý là Nvidia giảm khoảng không phẩy bốn phần trăm trong phiên chính thức, khi nhà đầu tư chờ báo cáo kết quả kinh doanh. Nhóm cổ phiếu AI và tài chính cũng gây áp lực lên thị trường. Diễn biến sau giờ giao dịch phải được xem riêng với giá đóng cửa.",
+      "source": "AP / REUTERS · 17/11/2026",
+      "sourceIds": [
+        "ap-ai",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "−0,4%",
+          "tone": "down"
+        },
+        {
+          "label": "AI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Nvidia giảm trong phiên",
+          "Chờ báo cáo lợi nhuận",
+          "Tách dữ liệu ngoài giờ"
+        ],
+        "cta": {
+          "headline": "TÂM ĐIỂM NVIDIA",
+          "subline": "Theo dõi thông tin mới"
+        }
+      }
+    },
+    {
+      "id": "macro",
+      "title": "Cảnh 4 — Lợi suất và dầu",
+      "screenText": "LỢI SUẤT GIẢM | DẦU TĂNG",
+      "eyebrow": "LỢI SUẤT & NĂNG LƯỢNG",
+      "headline": "Dòng tiền tìm nơi trú ẩn",
+      "summary": "Trái phiếu và dầu đi ngược chiều",
+      "voiceText": "Ở một diễn biến khác, AP ghi nhận lợi suất trái phiếu Mỹ giảm khi dòng tiền tìm đến tài sản an toàn hơn, trong khi giá dầu tăng. Đây là diễn biến của phiên Mỹ ngày mười bảy, không phải báo giá trực tiếp tại Seoul. Báo cáo giá sản xuất tháng mười của BLS được công bố từ ngày mười ba, chỉ dùng làm bối cảnh lạm phát.",
+      "source": "AP / BLS · 13–17/11/2026",
+      "sourceIds": [
+        "ap-close",
+        "bls-context"
+      ],
+      "stats": [
+        {
+          "label": "US10Y",
+          "value": "GIẢM",
+          "tone": "neutral"
+        },
+        {
+          "label": "DẦU",
+          "value": "TĂNG",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Lợi suất Mỹ hạ",
+          "Dầu tăng trong phiên",
+          "Theo dõi kỳ vọng Fed"
+        ],
+        "cta": {
+          "headline": "CHÚ Ý VĨ MÔ",
+          "subline": "Không phải giá trực tiếp"
+        }
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 5 — Tác động tới Hàn Quốc",
+      "screenText": "SAMSUNG | SK HYNIX | USD/KRW",
+      "eyebrow": "TÁC ĐỘNG HÀN QUỐC",
+      "headline": "Theo dõi nhóm chip Hàn",
+      "summary": "Tác động phụ thuộc dữ liệu mới",
+      "voiceText": "Với Hàn Quốc, tâm lý thận trọng về AI có thể tạo áp lực lên Samsung Electronics, SK Hynix và KOSPI, KOSDAQ nếu dòng vốn tiếp tục né rủi ro. Ngược lại, kết quả kinh doanh tích cực của Nvidia có thể hỗ trợ kỳ vọng về nhu cầu chip. Lợi suất Mỹ, giá dầu và tỷ giá đô la so với won vẫn cần được theo dõi. Đây là phân tích có điều kiện, không phải khuyến nghị giao dịch.",
+      "source": "AP / REUTERS · 17/11/2026",
+      "sourceIds": [
+        "ap-close",
+        "ap-ai",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chờ kết quả Nvidia",
+          "Theo dõi USD/KRW",
+          "Quan sát KOSPI/KOSDAQ"
+        ],
+        "cta": {
+          "headline": "CHỜ TÍN HIỆU NVIDIA",
+          "subline": "Chia sẻ góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Phố Wall lại giảm, Dow Jones mất hơn tám trăm điểm trong phiên thứ Ba."
+}
