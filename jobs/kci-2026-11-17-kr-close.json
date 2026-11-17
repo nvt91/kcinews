@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-17-kr-close",
+  "articleId": "KCI-20261117-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "17/11/2026 KR_CLOSE · KRX regular close",
+  "dataAsOf": "2026-11-17T17:27:36+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI mất mốc 5.000, khối ngoại bán mạnh và won suy yếu",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-17/kr-close.md",
+  "sourceDisclaimer": "KRX regular close 17 November 2026; NXT after-hours excluded. USD/KRW quoted at 15:30, not final FX close. Investor flows vary across providers and reporting scope; use NewsPim KOSPI-only figures with attribution. No unsupported causal certainty.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-17",
+    "krx-kospi-foreign-net-sales-2026-11-17",
+    "krw-usd-1530-2026-11-17",
+    "ipo-listings-review-2026-11-17"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 17 Nov 2026 16:28 KRX close",
+      "url": "https://www.yna.co.kr/view/AKR20261117138600008",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-17T17:27:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4968.48 (-2.59%) and KOSDAQ 650.06 (-2.34%) KRX regular close, November 17.",
+        "KOSPI first close below 5000 since February 2."
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim 17 Nov 2026 15:49 KRX and investor flows",
+      "url": "https://www.newspim.com/news/view/20261117000928",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-17T17:27:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI foreign investors net sold 1557.3 billion won; institutions net bought 683.4 billion won, individuals 389.2 billion won.",
+        "Samsung Electronics -3.30%, SK hynix -1.96%; KOSDAQ 650.06 -2.34%."
+      ]
+    },
+    {
+      "id": "yonhap-fx",
+      "title": "Yonhap 17 Nov 2026 16:19 Korean won and foreign outflows",
+      "url": "https://en.yna.co.kr/view/AEN20261117007800320",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-17T17:27:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "USD/KRW 1338.2 won per dollar at 15:30 KST, up 2.5 won on previous trading close; not a final FX-market quote.",
+        "Yonhap reports foreigners remained net sellers; FX pressure amid dollar strength."
+      ]
+    },
+    {
+      "id": "mt-ipo",
+      "title": "MoneyToday 17 Nov 2026 17:04 newly listed stocks review",
+      "url": "https://www.mt.co.kr/en/stock/2026/11/17/2026111716284564443",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-17T17:27:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "MoneyToday reports only 3 of 65 new 2026 listings including SPACs traded above offer price as of Nov 17; universe and methodology must be retained.",
+        "Mean return from IPO price was -36.27% per article, retrospective not forward forecast."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa rơi xuống dưới năm nghìn điểm. Điều gì đang khiến dòng tiền rời thị trường Hàn Quốc?",
+    "candidates": [
+      {
+        "style": "impact",
+        "text": "KOSPI vừa rơi xuống dưới năm nghìn điểm. Điều gì đang khiến dòng tiền rời thị trường Hàn Quốc?",
+        "score": 94
+      },
+      {
+        "style": "contrast",
+        "text": "KOSPI giảm mạnh, nhưng nhà đầu tư trong nước lại mua vào. Vì sao?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Đồng won yếu đi cùng đà bán ròng của khối ngoại. Nhà đầu tư cần theo dõi gì?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, phiên tới nên chú ý dòng vốn ngoại hay nhóm cổ phiếu chip hơn? Bình luận cùng KCI nhé.",
+    "screenHeadline": "ĐIỀU GÌ ĐÁNG THEO DÕI?",
+    "screenSubline": "Dòng vốn ngoại · Cổ phiếu chip · Đồng won",
+    "question": "Dòng vốn ngoại hay cổ phiếu chip?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "KOSPI mất mốc 5.000",
+      "screenText": "KOSPI DƯỚI 5.000",
+      "eyebrow": "KCI · CHIỀU 17/11",
+      "headline": "KOSPI DƯỚI 5.000",
+      "summary": "Đóng cửa phiên KRX ngày 17/11/2026",
+      "voiceText": "KOSPI vừa rơi xuống dưới năm nghìn điểm. Điều gì đang khiến dòng tiền rời thị trường Hàn Quốc? Đây là bản tin chiều ngày mười bảy tháng mười một, với ba diễn biến đáng chú ý.",
+      "source": "Yonhap 17/11",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "4.968,48",
+        "qualifier": "KOSPI · KRX regular close · 17/11/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "indices",
+      "title": "Hai chỉ số cùng giảm",
+      "screenText": "KOSPI −2,59%",
+      "eyebrow": "CHỈ SỐ THỊ TRƯỜNG",
+      "headline": "HAI CHỈ SỐ CÙNG GIẢM",
+      "summary": "KOSPI lần đầu đóng dưới 5.000 kể từ 2/2",
+      "voiceText": "Theo Yonhap, KOSPI đóng cửa tại bốn nghìn chín trăm sáu mươi tám phẩy bốn tám điểm, giảm hai phẩy năm chín phần trăm. Đây là lần đầu chỉ số đóng cửa dưới năm nghìn kể từ ngày hai tháng hai. KOSDAQ cũng giảm hai phẩy ba bốn phần trăm, còn sáu trăm năm mươi phẩy không sáu điểm. Các số liệu này thuộc phiên chính KRX, không cộng giao dịch NXT sau giờ.",
+      "source": "Yonhap; NewsPim 17/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -2.59,
+            "display": "−2,59%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -2.34,
+            "display": "−2,34%"
+          }
+        ],
+        "qualifier": "KRX regular close · 17/11/2026"
+      },
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "4.968,48",
+          "change": "−2,59%",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "650,06",
+          "change": "−2,34%",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "flows",
+      "title": "Khối ngoại bán ròng",
+      "screenText": "KHỐI NGOẠI BÁN",
+      "eyebrow": "DÒNG VỐN VÀ CHIP",
+      "headline": "ÁP LỰC BÁN TỪ KHỐI NGOẠI",
+      "summary": "NewsPim: KOSPI bán ròng khoảng 1,56 nghìn tỷ won",
+      "voiceText": "Theo NewsPim, riêng trên KOSPI, nhà đầu tư nước ngoài bán ròng khoảng một phẩy năm sáu nghìn tỷ won. Trong khi đó, tổ chức và nhà đầu tư cá nhân mua ròng, nhưng không đủ cân bằng áp lực bán. Samsung Electronics giảm ba phẩy ba phần trăm; SK hynix giảm một phẩy chín sáu phần trăm. Giới phân tích liên hệ diễn biến này với tâm lý thận trọng trước triển vọng đầu tư AI, chứ không phải một nguyên nhân chắc chắn duy nhất.",
+      "source": "NewsPim 17/11",
+      "sourceIds": [
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~1,56 nghìn tỷ ₩",
+        "qualifier": "Khối ngoại bán ròng riêng KOSPI, theo NewsPim 17/11"
+      },
+      "stats": [
+        {
+          "label": "Samsung Electronics",
+          "value": "−3,30%",
+          "tone": "down"
+        },
+        {
+          "label": "SK hynix",
+          "value": "−1,96%",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "title": "Đồng won yếu đi",
+      "screenText": "USD/KRW 1.338,2",
+      "eyebrow": "TỶ GIÁ VÀ RỦI RO",
+      "headline": "ĐỒNG WON TIẾP TỤC YẾU",
+      "summary": "Báo giá 15:30 KST, không phải tỷ giá cuối ngày",
+      "voiceText": "Ở thị trường ngoại hối, Yonhap ghi nhận một đô la Mỹ đổi được một nghìn ba trăm ba mươi tám phẩy hai won lúc ba giờ ba mươi chiều, tăng hai phẩy năm won so với phiên trước. Đồng won yếu đi cùng áp lực rút vốn và sức mạnh của đô la Mỹ. Đây là mốc báo giá theo giờ, không phải tỷ giá chốt cuối ngày.",
+      "source": "Yonhap 17/11 16:19",
+      "sourceIds": [
+        "yonhap-fx"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.338,2 ₩/$",
+        "qualifier": "15:30 KST 17/11 · +2,5 won so với phiên trước"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Theo dõi phiên tới",
+      "screenText": "THEO DÕI DÒNG TIỀN",
+      "eyebrow": "ĐIỂM CẦN THEO DÕI",
+      "headline": "ĐỪNG CHỈ NHÌN MỘT PHIÊN",
+      "summary": "Dòng vốn ngoại, bán dẫn và tỷ giá",
+      "voiceText": "Phiên tới, KCI sẽ tiếp tục theo dõi dòng vốn ngoại, nhóm bán dẫn và tỷ giá. Một phiên giảm sâu là tín hiệu cần chú ý, nhưng chưa đủ để kết luận xu hướng dài hạn.",
+      "source": "Yonhap; NewsPim 17/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close",
+        "yonhap-fx"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhóm bán dẫn",
+          "Tỷ giá won"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "KOSPI vừa rơi xuống dưới năm nghìn điểm. Điều gì đang khiến dòng tiền rời thị trường Hàn Quốc?",
+  "caption": "📉 KOSPI đóng cửa dưới 5.000 điểm, khối ngoại bán mạnh và đồng won suy yếu. Anh chị đang theo dõi yếu tố nào nhất? #KOSPI #ChungKhoanHanQuoc #KCI"
+}
