@@ -74,6 +74,12 @@ reject(j=>{j.hook.spoken="Cổ phiếu này chắc chắn tăng trong tuần t�
 reject(j=>{j.scenes[0].visual.milestones=[];},"fictional timeline");
 reject(j=>{j.scenes[1].visual.bars[0].value=NaN;},"invalid chart metric");
 reject(j=>{j.template="KciNewsV2";},"stale hardcoded graphics in a daily video");
+// Negated warnings are investor-safe and must not block (17/11 MACRO21 issue #109).
+const negated=copy(source);
+negated.scenes[1].voiceText+=" Không thể suy ra đồng won chắc chắn giảm.";
+validateKciJob(negated,quiet);
+reject(j=>{j.scenes[1].voiceText+=" Cổ phiếu chip chắc chắn tăng tuần tới.";},"un-negated promise in scene");
+reject(j=>{j.cta.spoken+=" Không mua sẽ tiếc.";},"FOMO pressure in CTA");
 
 // Friendly script export must render every scene plus the closing CTA block.
 const script=formatKciScript(usAm);
