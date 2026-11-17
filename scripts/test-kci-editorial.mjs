@@ -78,6 +78,7 @@ reject(j=>{j.template="KciNewsV2";},"stale hardcoded graphics in a daily video")
 const negated=copy(source);
 negated.scenes[1].voiceText+=" Không thể suy ra đồng won chắc chắn giảm.";
 validateKciJob(negated,quiet);
+expectWarning(negated,"tránh cụm","negated promise phrase still flagged for rewrite");
 reject(j=>{j.scenes[1].voiceText+=" Cổ phiếu chip chắc chắn tăng tuần tới.";},"un-negated promise in scene");
 reject(j=>{j.cta.spoken+=" Không mua sẽ tiếc.";},"FOMO pressure in CTA");
 
