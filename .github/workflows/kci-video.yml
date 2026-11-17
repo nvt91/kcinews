@@ -30,7 +30,7 @@ on:
       - 'package.json'
       - '.github/workflows/kci-video.yml'
   issues:
-    types: [opened]
+    types: [opened, reopened]
 
 permissions:
   contents: read
@@ -110,6 +110,20 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      # Retry = close then reopen the issue. Never re-render (and re-pay Vbee for)
+      # an issue that already produced an MP4.
+      - name: Refuse reopen when this issue already has a rendered MP4
+        if: github.event_name == 'issues' && github.event.action == 'reopened'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          mkdir -p out
+          if gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$ISSUE/comments" --jq '.[].body' | grep -q 'KCI_RENDER_READY:'; then
+            echo "Issue đã có MP4 render thành công; mở issue mới nếu thật sự cần render lại." | tee out/failure-reason.txt
+            echo "::error::Issue already has a rendered MP4; refusing a duplicate paid render."
+            exit 1
+          fi
       - name: Validate the selected job before paid Vbee synthesis
         run: |
           # Owner-created [KCI VIDEO] issues select a checked-in job. This preflight must
@@ -119,7 +133,13 @@ jobs:
           else
             selected_job="$KCI_JOB"
           fi
-          node scripts/run-job.mjs --mode=validate --job="$selected_job"
+          mkdir -p out
+          # Keep the exact reason so the issue comment can say what to fix.
+          if ! node scripts/run-job.mjs --mode=validate --job="$selected_job" 2> out/failure-reason.txt; then
+            cat out/failure-reason.txt >&2
+            exit 1
+          fi
+          rm -f out/failure-reason.txt
       - name: Install dependencies after successful editorial validation
         run: npm ci
       - name: Install FFmpeg and ffprobe after successful editorial validation
@@ -177,4 +197,5 @@ jobs:
           KCI_ARTIFACT_URL: ${{ steps.upload-review.outputs.artifact-url }}
           KCI_EDITION: ${{ github.event.issue.title || inputs.job }}
           KCI_JOB: ${{ inputs.job }}
+          KCI_FAILURE_FILE: out/failure-reason.txt
         run: node scripts/notify-render.mjs
