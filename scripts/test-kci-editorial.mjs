@@ -1,13 +1,15 @@
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
-import {validateKciJob} from "./validate-kci-job.mjs";
+import {validateKciJob, validateKciJobDetailed} from "./validate-kci-job.mjs";
+import {formatKciScript} from "./export-kci-script.mjs";
 const source=JSON.parse(fs.readFileSync("jobs/kci-schema-v2-example.json","utf8"));
 const copy=(x)=>JSON.parse(JSON.stringify(x));
+const quiet={quiet:true};
 // Regression: 09 Nov KR_CLOSE was editorial-schema valid, but the paid
 // runner's separate 3-card ceiling blocked it before any Vbee call.
 // Preflight must exercise the *same* non-billable runner validation.
 const krClose=JSON.parse(fs.readFileSync("jobs/kci-2026-11-09-kr-close.json","utf8"));
-validateKciJob(krClose);
+validateKciJob(krClose,quiet);
 if(krClose.scenes.find(s=>s.id==="sectors")?.stats?.length!==4){
   throw new Error("KR_CLOSE regression requires exactly four sector stats");
 }
@@ -23,35 +25,42 @@ invalidFive.scenes.find(s=>s.id==="sectors").stats.push({
   label:"UNSOURCED EXTRA", value:"+1%", tone:"up"
 });
 let rejectedFive=false;
-try{ validateKciJob(invalidFive); }catch(e){
+try{ validateKciJob(invalidFive,quiet); }catch(e){
   rejectedFive=String(e.message).includes("invalid stat cards");
 }
 if(!rejectedFive)throw new Error("Expected schema validator to reject a fifth stat card");
 
-validateKciJob(source);
-// Regression fixture: the exact 07/11 US_AM production job must pass before any paid issue.
+validateKciJob(source,quiet);
 const usAm=JSON.parse(fs.readFileSync("jobs/kci-2026-11-07-us-am.json","utf8"));
-validateKciJob(usAm);
-// Regression: 07/11 MACRO21 pre-TTS failure 42370942236: no primary evidence.
-// This exact repaired job must pass, and removing its official cross-check must fail.
+validateKciJob(usAm,quiet);
 const macro21=JSON.parse(fs.readFileSync("jobs/kci-2026-11-07-macro21.json","utf8"));
-validateKciJob(macro21);
-if(!macro21.sourceLedger.some(s=>s.kind==="primary" &&
-  macro21.scenes.some(scene=>scene.sourceIds.includes(s.id)))) {
-  throw new Error("MACRO21 primary source must be relevant and linked to at least one scene");
-}
+validateKciJob(macro21,quiet);
+
+// 17/11/2026 owner directive: editorial process rules WARN, they never block production.
+const expectWarning=(job,needle,label)=>{
+  const {warnings}=validateKciJobDetailed(job);
+  if(!warnings.some(w=>w.includes(needle)))throw new Error("Expected warning (not block) for "+label);
+};
 const macroWithoutPrimary=copy(macro21);
 for(const s of macroWithoutPrimary.sourceLedger)s.kind="secondary";
-let primaryGateRejected=false;
-try{validateKciJob(macroWithoutPrimary);}catch(e){
-  primaryGateRejected=String(e.message).includes("primary-source cross-check required");
-}
-if(!primaryGateRejected)throw new Error("Expected primary-source gate to reject MACRO21 without primary evidence");
+expectWarning(macroWithoutPrimary,"primary","missing primary source");
+const singleSource=copy(macro21);
+singleSource.sourceLedger=[singleSource.sourceLedger[0]];
+for(const scene of singleSource.scenes)scene.sourceIds=[singleSource.sourceLedger[0].id];
+expectWarning(singleSource,"only one source","single source");
+const dupCta=copy(source);
+dupCta.scenes.at(-1).voiceText+=" "+dupCta.cta.spoken;
+expectWarning(dupCta,"CTA","CTA duplication");
+const hookMismatch=copy(source);
+hookMismatch.hook.spoken="Một mở đầu khác hẳn các candidate đã viết";
+expectWarning(hookMismatch,"hook","mismatched hook");
+
+// Hard errors that still block: broken render data or investment promises.
 const reject=(mutate,label)=>{
   const job=copy(source);
   mutate(job);
   let failed=false;
-  try{validateKciJob(job);}catch{failed=true;}
+  try{validateKciJob(job,quiet);}catch{failed=true;}
   if(!failed)throw new Error("Expected validator to reject "+label);
 };
 reject(j=>{j.cta.spoken="";},"empty CTA");
@@ -59,20 +68,17 @@ reject(j=>{j.cta.type="spam";},"invalid CTA kind");
 reject(j=>{j.cta.question="";},"unanswerable comment CTA");
 reject(j=>{j.sourceLedger[0].url="http://example.com";},"non-HTTPS source");
 reject(j=>{j.sourceLedger[0].kind="analysis";},"unsupported research classification (use primary or secondary)");
+reject(j=>{j.sourceLedger=[];},"empty source ledger");
 reject(j=>{j.scenes[1].sourceIds=["invented-source"]; },"unattributed scene");
-reject(j=>{j.hook.spoken="A promise of guaranteed gains";},"mismatched hook");
+reject(j=>{j.hook.spoken="Cổ phiếu này chắc chắn tăng trong tuần tới";},"guaranteed-return hook");
 reject(j=>{j.scenes[0].visual.milestones=[];},"fictional timeline");
 reject(j=>{j.scenes[1].visual.bars[0].value=NaN;},"invalid chart metric");
 reject(j=>{j.template="KciNewsV2";},"stale hardcoded graphics in a daily video");
-reject(j=>{j.scenes.at(-1).voiceText+=" "+j.cta.spoken;},"CTA duplication");
-// Exercise the two defects seen in GitHub run 42315821888 against the real episode.
-const rejectUsAm=(mutate,label)=>{
-  const job=copy(usAm);
-  mutate(job);
-  let rejected=false;
-  try{validateKciJob(job);}catch{rejected=true;}
-  if(!rejected)throw new Error("Expected US_AM validator to reject "+label);
-};
-rejectUsAm(j=>{j.sourceLedger.find(x=>x.id==="fx-mufg").kind="analysis";},"unsupported MUFG source kind");
-rejectUsAm(j=>{j.scenes.at(-1).voiceText=j.cta.spoken+" "+j.scenes.at(-1).voiceText;},"repeated spoken outro CTA");
+
+// Friendly script export must render every scene plus the closing CTA block.
+const script=formatKciScript(usAm);
+if(!script.startsWith("KCI | ")||!script.includes("Cảnh 1 — Hook")||
+  !script.includes("Cảnh kết — CTA")||!script.includes("Lời dẫn:")){
+  throw new Error("Friendly script export is missing required sections");
+}
 console.log("KCI editorial validator regression tests: PASS");
