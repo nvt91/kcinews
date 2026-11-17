@@ -37,6 +37,17 @@ Trình tự nội dung: **Hook → Chuyện gì xảy ra → Điểm đáng chú
 - CTA: một câu hỏi hai lựa chọn rõ ràng + “Hãy chia sẻ góc nhìn của mình và theo dõi kênh để cập nhật…”.
 - Không hứa lợi nhuận, không thúc giục mua/bán (validator vẫn chặn các cụm như “chắc chắn tăng”, “mua ngay để”).
 
+### CẤM dùng khi viết kịch bản (kể cả trong câu phủ định)
+
+| Không viết | Viết thay bằng |
+|---|---|
+| chắc chắn tăng / giảm / thắng | có thể tăng/giảm; chưa thể kết luận sẽ tăng/giảm; không bảo đảm sẽ tăng |
+| cam kết lãi / lợi nhuận | (bỏ hẳn) |
+| lãi 100% / 200% / 300% | (bỏ hẳn; chỉ nêu số liệu thực tế có nguồn) |
+| mua ngay để… / không mua sẽ tiếc | (bỏ hẳn; CTA chỉ mời bình luận/theo dõi/lưu) |
+
+Ví dụ: “Không thể suy ra đồng won chắc chắn giảm” → “Chưa thể kết luận đồng won sẽ giảm”. Preflight hiện cảnh báo vàng “tránh cụm…” nếu còn sót; phải viết lại trước khi mở issue.
+
 ## 3. Text màn hình
 
 - 2–4 cụm từ khóa IN HOA, ngăn cách bằng dấu gạch đứng, tối đa 160 ký tự.
