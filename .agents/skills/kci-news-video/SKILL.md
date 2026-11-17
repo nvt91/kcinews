@@ -9,6 +9,7 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 - **Validator chỉ cảnh báo** (không chặn) khi: thiếu nguồn `primary`, chỉ có 1 nguồn, hook không khớp candidate / ít hơn 3 candidate, cảnh 1 không bắt đầu bằng hook, CTA lặp trong cảnh cuối (runner tự bỏ lần lặp). Preflight vẫn **xanh** với các cảnh báo vàng; producer cứ tiếp tục mở `[KCI VIDEO]` issue. Mọi câu “stop/HARD GATE/never open an issue” về nguồn primary bên dưới đã bị thay bằng quy định này.
 - **Vẫn chặn** (giữ an toàn): job sai cấu trúc khiến không render được, URL nguồn không phải HTTPS, scene trỏ tới nguồn không có trong ledger, câu hứa lợi nhuận/thúc giục mua bán. Không bịa số liệu hay nguồn.
+- **Khi render lỗi (từ 17/11):** đọc dòng “Lý do” trong comment RENDER LỖI của bot, sửa job trên main, chờ preflight xanh, rồi **Đóng → Mở lại chính issue đó** để render lại trên code mới nhất. Không tạo issue mới cho cùng bản tin; workflow tự từ chối mở lại issue đã có MP4. Câu cảnh báo có phủ định (“không thể suy ra … chắc chắn giảm”) không còn bị chặn.
 - **Kịch bản gửi anh duyệt và giọng văn lời dẫn** theo [SCRIPT_FORMAT.md](references/SCRIPT_FORMAT.md): `KCI | <tiêu đề>` → `Cảnh N — <tiêu đề>` / `Text màn hình:` / `Lời dẫn:` → `Cảnh kết — CTA`. Điền `scenes[].title`, `scenes[].screenText` (và `scriptTitle` nếu cần) trong job; xuất bằng `node scripts/export-kci-script.mjs <job>` (preflight tự in vào Job Summary).
 
 ## Universal KCI MP4 + caption handoff — all recurring video streams
