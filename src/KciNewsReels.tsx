@@ -1,6 +1,7 @@
 import React from "react";
 import {AbsoluteFill, Audio, Easing, interpolate, Sequence, staticFile, useCurrentFrame} from "remotion";
 import type {KciCta, KciVideoProps, KciVisual, RenderScene} from "./KciNews";
+import {CountUp, KeywordCaption, SceneWipe, TrendArrow} from "./kciMotion";
 
 /** Owner's 24 October revision: use the full middle width, not a narrow card.
  * Top/bottom clearance stays; only lower overlays reserve the right action rail.
@@ -16,7 +17,7 @@ const zone=(top:number,height:number,lower=false):React.CSSProperties=>({positio
 const small:React.CSSProperties={fontSize:25,lineHeight:1.3,color:P.muted};
 
 const Background:React.FC<{f:number;color:string}>=({f,color})=>(
-  <AbsoluteFill style={{background:"linear-gradient(135deg,#061126,#10243C 61%,#061226)",overflow:"hidden"}}>
+  <AbsoluteFill style={{background:"linear-gradient(135deg,#061126,#10243C 61%,#061226)",overflow:"hidden",transform:`scale(${1+Math.min(f,600)*.00008})`}}>
     <AbsoluteFill style={{background:`radial-gradient(ellipse at 72% 40%,${color}20,transparent 62%)`}}/>
     <AbsoluteFill style={{backgroundImage:"linear-gradient(90deg,#6A9FB21A 1px,transparent 1px),linear-gradient(#6A9FB21A 1px,transparent 1px)",backgroundSize:"88px 88px",transform:`translate(${f*.16%88}px,${f*.1%88}px)`}}/>
     {[0,1,2].map(i=><div key={i} style={{position:"absolute",left:800+i*40,top:420+i*70,width:360+i*90,height:360+i*90,borderRadius:"50%",border:`2px solid ${color}19`,transform:`rotate(${f*.2}deg)`}}/>)}
@@ -48,7 +49,7 @@ const Bars:React.FC<{v:KciVisual;f:number}>=({v,f})=>{
   return <div style={{width:"100%"}}>
     <div style={{fontSize:23,color:P.teal,fontWeight:850,letterSpacing:1}}>SO SÁNH CHỈ BÁO · CÙNG ĐƠN VỊ</div>
     {bars.map((b,i)=><div key={i} style={{...enter(f,18+i*8),marginTop:26}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:18}}><span style={{fontSize:31,fontWeight:850,flex:1,minWidth:0}}>{b.label}</span><span style={{fontSize:48,fontWeight:950,whiteSpace:"nowrap",color:tone(b.tone||(b.value<0?"down":"up"))}}>{b.display}</span></div>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:18}}><span style={{fontSize:31,fontWeight:850,flex:1,minWidth:0}}>{b.label}</span><span style={{fontSize:48,fontWeight:950,whiteSpace:"nowrap",color:tone(b.tone||(b.value<0?"down":"up"))}}><CountUp value={b.display} frame={f} start={24+i*9} duration={30}/></span></div>
       <div style={{height:24,marginTop:10,position:"relative",background:"#2B4158"}}><div style={{position:"absolute",left:"50%",height:"100%",width:2,background:P.muted,zIndex:2}}/><div style={{position:"absolute",top:0,height:"100%",left:b.value<0?undefined:"50%",right:b.value<0?"50%":undefined,width:`${46*Math.abs(b.value)/max*ease(f,24+i*9,30)}%`,background:b.value<0?P.red:P.teal}}/></div>
     </div>)}
     <div style={{...small,marginTop:27,maxWidth:858}}>{v.qualifier||"Số liệu so sánh, không phải đường thời gian"}</div>
@@ -59,7 +60,7 @@ const Reversal:React.FC<{v:KciVisual;f:number}>=({v,f})=>(
   <div style={{width:"100%"}}>
     <div style={{...enter(f,12),fontSize:98,fontWeight:950,letterSpacing:-3,color:P.teal}}>{v.banner||"PHIÊN ĐẢO CHIỀU"}</div>
     <div style={{...small,marginTop:12,fontSize:23,letterSpacing:1}}>CÁC MỐC QUAN SÁT RỜI RẠC</div>
-    <div style={{display:"flex",gap:22,marginTop:32}}>{(v.milestones||[]).map((m,i)=><div key={i} style={{...enter(f,24+i*10),flex:1,minWidth:0,padding:"24px 0",borderTop:`2px solid ${tone(m.tone)}77`}}><div style={{fontSize:23,fontWeight:850,color:P.muted}}>{m.label}</div><div style={{fontSize:49,fontWeight:950,color:tone(m.tone),marginTop:18,whiteSpace:"nowrap"}}>{m.value}</div></div>)}</div>
+    <div style={{display:"flex",gap:22,marginTop:32}}>{(v.milestones||[]).map((m,i)=><div key={i} style={{...enter(f,24+i*10),flex:1,minWidth:0,padding:"24px 0",borderTop:`2px solid ${tone(m.tone)}77`}}><div style={{fontSize:23,fontWeight:850,color:P.muted}}>{m.label}</div><div style={{fontSize:49,fontWeight:950,color:tone(m.tone),marginTop:18,whiteSpace:"nowrap"}}><CountUp value={m.value} frame={f} start={24+i*10}/></div></div>)}</div>
     <div style={{...small,marginTop:20,maxWidth:858}}>{v.qualifier||"Không phải đường giá từng phút"}</div>
   </div>
 );
@@ -67,7 +68,7 @@ const Reversal:React.FC<{v:KciVisual;f:number}>=({v,f})=>(
 const Spotlight:React.FC<{v:KciVisual;f:number;color:string}>=({v,f,color})=>(
   <div style={{width:"100%",height:444,textAlign:"center",position:"relative",overflow:"hidden",padding:20,boxSizing:"border-box"}}>
     <div style={{position:"absolute",left:"50%",top:20,width:390,height:390,borderRadius:"50%",border:`2px dashed ${color}44`,transform:`translateX(-50%) rotate(${f*.3}deg)`}}/>
-    <div style={{position:"relative"}}><div style={{fontSize:29,color,fontWeight:850,letterSpacing:1}}>{v.unit||"THỊ TRƯỜNG"}</div><div style={{...enter(f,16),fontSize:176,fontWeight:950,letterSpacing:-4,marginTop:25}}>{v.value}</div><div style={{...small,fontSize:30,marginTop:30,color:P.white,fontWeight:750}}>{v.qualifier}</div></div>
+    <div style={{position:"relative"}}><div style={{fontSize:29,color,fontWeight:850,letterSpacing:1}}>{v.unit||"THỊ TRƯỜNG"}</div><div style={{...enter(f,16),fontSize:176,fontWeight:950,letterSpacing:-4,marginTop:25}}><CountUp value={v.value||""} frame={f} start={16} duration={26}/></div><div style={{...small,fontSize:30,marginTop:30,color:P.white,fontWeight:750}}>{v.qualifier}</div></div>
   </div>
 );
 
@@ -102,7 +103,7 @@ const Visual:React.FC<{s:RenderScene;f:number;color:string}>=({s,f,color})=>{
   if(v?.kind==="company")return <Company v={v} s={s} f={f}/>;
   if(v?.kind==="rate")return <Rate v={v} f={f}/>;
   if(v?.kind==="closing")return <Closing v={v} cta={s.cta} f={f} duration={s.durationFrames}/>;
-  return <div style={{width:"100%",display:"grid",gridTemplateColumns:s.stats.length===2?"1fr 1fr":"1fr",gap:26}}>{s.stats.map((st,i)=><div key={i} style={{...enter(f,14+i*9),padding:"25px 0",borderTop:`2px solid ${P.border}`}}><div style={small}>{st.label}</div><div style={{fontSize:53,lineHeight:1.12,fontWeight:950,color:tone(st.tone),marginTop:22}}>{st.value}</div>{st.change&&<div style={{fontSize:26,marginTop:12,color:tone(st.tone)}}>{st.change}</div>}</div>)}</div>;
+  return <div style={{width:"100%",display:"grid",gridTemplateColumns:s.stats.length===2?"1fr 1fr":"1fr",gap:26}}>{s.stats.map((st,i)=><div key={i} style={{...enter(f,14+i*9),padding:"25px 0",borderTop:`2px solid ${P.border}`}}><div style={small}>{st.label}</div><div style={{display:"flex",alignItems:"center",gap:14,fontSize:53,lineHeight:1.12,fontWeight:950,color:tone(st.tone),marginTop:22}}><TrendArrow tone={st.tone} frame={f-i*9}/><span><CountUp value={st.value} frame={f} start={14+i*9}/></span></div>{st.change&&<div style={{fontSize:26,marginTop:12,color:tone(st.tone)}}>{st.change}</div>}</div>)}</div>;
 };
 
 const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number;preview:boolean}>=({scene,edition,index,count,preview})=>{
@@ -115,12 +116,13 @@ const Scene:React.FC<{scene:RenderScene;edition:string;index:number;count:number
     <AbsoluteFill style={{opacity}}>
       <Masthead edition={edition} index={index} count={count} color={color}/><Headline scene={scene} f={f} color={color}/>
       <div data-kci-safe="visual" style={{...zone(718,474),display:"flex",alignItems:"center"}}><Visual s={scene} f={f} color={color}/></div>
-      <div data-kci-safe="captions" style={{...zone(1220,112,true),background:"linear-gradient(90deg,rgba(1,10,24,.8),rgba(1,10,24,.35))",borderTop:`3px solid ${color}`,padding:"15px 14px",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:38,lineHeight:1.22,fontWeight:850,textAlign:"center",whiteSpace:"pre-wrap",opacity:cue?ease(f,cue.from,4):0}}>{cue?.text||""}</div></div>
+      <div data-kci-safe="captions" style={{...zone(1220,112,true),background:"linear-gradient(90deg,rgba(1,10,24,.8),rgba(1,10,24,.35))",borderTop:`3px solid ${color}`,padding:"15px 14px",display:"flex",alignItems:"center",justifyContent:"center"}}>{scene.words?.length?<KeywordCaption words={scene.words} frame={f} accent={color}/>:<div style={{fontSize:38,lineHeight:1.22,fontWeight:850,textAlign:"center",whiteSpace:"pre-wrap",opacity:cue?ease(f,cue.from,4):0}}>{cue?.text||""}</div>}</div>
       <div data-kci-safe="source" style={{...zone(1347,48,true),fontSize:19,lineHeight:1.22,color:P.muted}}>Nguồn: {scene.source}</div>
       <div style={{...zone(1431,2,true),background:P.border}}><div style={{height:2,width:`${100*f/Math.max(1,scene.durationFrames-1)}%`,background:color}}/></div>
       <div data-kci-safe="disclaimer" style={{...zone(1400,25,true),fontSize:19,lineHeight:1.2,color:P.muted}}>Thông tin tham khảo · Không phải khuyến nghị đầu tư cá nhân.</div>
       {preview&&<div data-kci-safe="preview" style={{...zone(1189,24,true),fontSize:18,fontWeight:900,color:P.red,textAlign:"right"}}>SILENT PREVIEW · CHƯA CÓ VOICE</div>}
     </AbsoluteFill>
+    <SceneWipe frame={f} color={color}/>
     {scene.audioFile&&<Audio src={staticFile(scene.audioFile)}/>}
   </AbsoluteFill>;
 };
