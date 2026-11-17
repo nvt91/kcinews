@@ -15,6 +15,18 @@ const kinds = new Set([
 ]);
 const actions = new Set(["comment","follow","save"]);
 const forbidden = /(chắc chắn (tăng|giảm|thắng)|cam kết (lãi|lợi nhuận)|lãi (100|200|300)%|mua ngay để|không mua sẽ tiếc)/iu;
+// A promise phrase inside a negated warning ("Không thể suy ra đồng won chắc chắn
+// giảm", "không bảo đảm ... chắc chắn tăng") is investor-safe, not a promise
+// (false positive: 17/11 MACRO21 issue #109). Only un-negated matches block.
+const promises = (text) => {
+  const re = new RegExp(forbidden.source, "giu");
+  for (const m of String(text || "").matchAll(re)) {
+    const before = text.slice(Math.max(0, m.index - 40), m.index);
+    const negated = /(không|chưa|chẳng|đừng)[^.!?]{0,35}$/iu.test(before) && !/^không mua/iu.test(m[0]);
+    if (!negated) return true;
+  }
+  return false;
+};
 const https = (x) => {
   try {
     const url = new URL(x);
@@ -73,7 +85,7 @@ export function validateKciJobDetailed(job) {
     "hook.spoken không khớp candidate nào");
   warn(candidates.every((c) => nonempty(c?.text,20,300) && nonempty(c?.style,4,80)),
     "hook candidates thiếu text/style");
-  required(!forbidden.test(job.hook.spoken), "unsafe investment promise in hook");
+  required(!promises(job.hook.spoken), "unsafe investment promise in hook");
 
   required(job.cta && actions.has(job.cta.type), "one primary CTA type required");
   required(nonempty(job.cta.spoken,24,460), "spoken CTA required");
@@ -83,7 +95,7 @@ export function validateKciJobDetailed(job) {
     required(nonempty(job.cta.question,15,220) && job.cta.question.includes("?"),
       "comment CTA needs an answerable question ending with ?");
   }
-  required(!forbidden.test(job.cta.spoken), "CTA must not promise profits or pressure trading");
+  required(!promises(job.cta.spoken), "CTA must not promise profits or pressure trading");
 
   required(Array.isArray(job.scenes) && job.scenes.length >= 3 &&
     job.scenes.length <= 12, "3–12 narrated scenes required");
@@ -103,7 +115,7 @@ export function validateKciJobDetailed(job) {
     if (scene.screenText !== undefined) {
       required(nonempty(scene.screenText,2,160), scene.id + ": invalid screenText");
     }
-    required(!forbidden.test(scene.voiceText), scene.id + ": unsafe price/return guarantee");
+    required(!promises(scene.voiceText), scene.id + ": unsafe price/return guarantee");
     required(Array.isArray(scene.sourceIds) && scene.sourceIds.length > 0 &&
       scene.sourceIds.every((id) => sources.has(id)),
       scene.id + ": unknown or missing source ID");
