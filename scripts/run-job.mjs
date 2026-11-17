@@ -63,7 +63,7 @@ if (mode !== "validate") {
     // Historical v1 jobs remain byte-for-byte unchanged.
     const isLastScene = i === job.scenes.length - 1;
     const narration = scene.voiceText +
-      (dailyJob && isLastScene ? " " + job.cta.spoken : "");
+      (dailyJob && isLastScene && !scene.voiceText.includes(job.cta.spoken) ? " " + job.cta.spoken : ""); // never speak the CTA twice
     if (mode === "voice-test" || mode === "video") {
       const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
       await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
