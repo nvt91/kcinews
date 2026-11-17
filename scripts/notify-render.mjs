@@ -81,7 +81,23 @@ export function resolveInput(args, env = process.env) {
     artifactUrl: args.artifactUrl || env.KCI_ARTIFACT_URL || "",
     edition: args.edition || env.KCI_EDITION || "",
     job: args.job || env.KCI_JOB || (event === "issues" ? jobFromIssueEvent(env.GITHUB_EVENT_PATH) : ""),
+    reason: readFailureReason(env.KCI_FAILURE_FILE),
   };
+}
+
+// 17/11/2026: tell the owner/producer exactly what blocked the render.
+export function failureReason(text) {
+  if (typeof text !== "string" || !text.trim()) return "";
+  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const hit = lines.find((l) => /^Error: KCI editorial validation:/.test(l)) ||
+    lines.find((l) => /^(Error|::error::)/.test(l)) || lines.find((l) => !/^at /.test(l)) || "";
+  return hit.replace(/^(Error:\s*|::error::)/, "").replace(/https?:\/\/\S+/gi, "[url]").replace(/[`<>]/g, "")
+    .replace(/(webhook|GH_TOKEN|VBEE_\w*|api_token|secret)/gi, "[ẩn]").slice(0, 220);
+}
+
+function readFailureReason(file) {
+  if (typeof file !== "string" || !file) return "";
+  try { return failureReason(fs.readFileSync(file, "utf8")); } catch { return ""; }
 }
 
 function hasExactMarker(body, kind, runId) {
@@ -264,6 +280,10 @@ export function planNotice(input, qc, mp4Names, commentBodies) {
   lines.push(`- Job: ${safeJob(qc, input.job)}`);
   lines.push(`- Lần chạy: ${attemptLabel(input.runAttempt)}`);
   lines.push(`- Run: ${page}`);
+  if (failed && input.reason) {
+    lines.push(`- Lý do: ${input.reason}`);
+    lines.push("- Cách chạy lại: sửa job trên main, chờ KCI Job Preflight xanh, rồi Đóng → Mở lại chính issue này (không cần issue mới). Lỗi ở bước kiểm tra thì chưa gọi Vbee, chưa tốn phí.");
+  }
   if (!failed) {
     lines.push(artifact ? `- Artifact: ${artifact}` : `- Artifact: không có artifact-url; xem trang run ${page}`);
     if (mp4Names.length) {
