@@ -15,8 +15,14 @@ if (process.env.GITHUB_EVENT_NAME === "issues" && !explicitMode) {
   // GitHub issues are the bridge to ChatGPT's GitHub connector.
   // Only an owner-authored, explicitly titled new issue can spend Vbee credits.
   const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
-  if (event.action !== "opened") throw new Error("Ignored non-new issue event.");
+  // 17/11/2026: "reopened" lets the owner retry a failed render on the latest
+  // main (close → reopen the same issue) instead of filing a new issue. The
+  // workflow refuses a reopen when the issue already has a rendered MP4.
+  if (!["opened","reopened"].includes(event.action)) throw new Error("Ignored issue event: " + event.action);
   const issue = event.issue || {};
+  if (event.action === "reopened" && event.sender?.login !== process.env.GITHUB_REPOSITORY_OWNER) {
+    throw new Error("Only the repository owner can reopen a paid KCI render.");
+  }
   if (issue.user?.login !== process.env.GITHUB_REPOSITORY_OWNER) {
     throw new Error("Only the repository owner can request a paid KCI render.");
   }
