@@ -134,6 +134,20 @@ jobs:
       - name: Check Cloudflare callback Worker (advisory; Vbee polling remains required)
         continue-on-error: true
         run: node scripts/check-worker.mjs
+      # 17/11/2026 step 1: per-word caption timing measured on the real Vbee audio.
+      # Optional and non-blocking: if this fails, run-job.mjs keeps proportional captions.
+      - name: Cache Whisper model for word timing
+        continue-on-error: true
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kci-whisper-small-v1
+      - name: Install word-timing aligner (optional, CPU only, no torch)
+        continue-on-error: true
+        timeout-minutes: 6
+        run: |
+          python3 -m pip install --quiet --user 'faster-whisper==1.2.1' numpy
+          python3 -c 'import faster_whisper; print("faster-whisper ready")'
       - name: Produce preview, Vbee test, or MP4
         run: node scripts/run-job.mjs
       - name: Preserve audio and review artifacts even if a later render step fails

@@ -86,7 +86,31 @@ if (mode !== "validate") {
       const to=Math.max(from+1,Math.floor(Math.min(wi+7,words.length)/words.length*audioFrames));
       captions.push({from,to,text:words.slice(wi,wi+7).join(" ")});
     }
-    scenes.push({...scene,voiceText:narration,startFrame,durationFrames,audioFile,captions,cta:dailyJob&&isLastScene?job.cta:undefined});
+    // 17/11/2026: per-word timing for animated keyword captions. Measured from the
+    // real Vbee audio when faster-whisper is installed; otherwise proportional.
+    // Alignment can never block a render: any failure falls back silently.
+    let wordTiming="estimated";
+    let timedWords=words.map((text,wi)=>({text,
+      from:Math.floor(wi/words.length*(durationFrames-10)),
+      to:Math.floor((wi+1)/words.length*(durationFrames-10))}));
+    if(audioFile && process.env.KCI_WORD_ALIGN!=="0") {
+      try {
+        const scriptFile=path.join(out,"script-"+String(i+1).padStart(2,"0")+".txt");
+        const alignFile=path.join(out,"words-"+String(i+1).padStart(2,"0")+".json");
+        fs.writeFileSync(scriptFile,narration.trim(),"utf8");
+        execFileSync(process.env.KCI_PYTHON||"python3",["scripts/align-words.py",path.resolve("public",audioFile),scriptFile,alignFile],{stdio:"inherit",timeout:600000});
+        const aligned=JSON.parse(fs.readFileSync(alignFile,"utf8"));
+        if(aligned.words?.length===words.length && aligned.matchedRatio>=0.5) {
+          timedWords=aligned.words.map(w=>({text:w.text,from:Math.round(w.startMs*FPS/1000),to:Math.max(Math.round(w.startMs*FPS/1000)+1,Math.round(w.endMs*FPS/1000))}));
+          wordTiming="measured:"+aligned.matchedRatio;
+        } else {
+          console.warn("Word alignment too weak for scene "+(i+1)+"; using proportional timing.");
+        }
+      } catch(error) {
+        console.warn("Word alignment unavailable for scene "+(i+1)+": "+String(error?.message||error).slice(0,200));
+      }
+    }
+    scenes.push({...scene,voiceText:narration,startFrame,durationFrames,audioFile,captions,words:timedWords,wordTiming,cta:dailyJob&&isLastScene?job.cta:undefined});
     startFrame+=durationFrames;
   }
   const props = {headline:job.headline,edition:job.edition,scenes,preview:mode==="preview"};
@@ -126,6 +150,6 @@ if (mode !== "validate") {
     const streams=execFileSync("ffprobe",["-v","error","-select_streams","a","-show_entries","stream=codec_name","-of","csv=p=0",outputFile],{encoding:"utf8"}).trim();
     if (!streams) throw new Error("No voice in the exported MP4. Rejecting.");
   }
-  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
+  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",wordTiming:scenes.map(s=>s.wordTiming),ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
   console.log("Output created; human review required:",outputFile);
 }

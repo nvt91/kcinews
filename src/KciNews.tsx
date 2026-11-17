@@ -57,6 +57,9 @@ export type RenderScene = {
   durationFrames: number;
   audioFile?: string;
   captions: SubtitleCue[];
+  /** Per-word timing (frames, scene-relative) for animated keyword captions. */
+  words?: Array<{ text: string; from: number; to: number }>;
+  wordTiming?: string;
   sourceIds?: string[];
   visual?: KciVisual;
   cta?: KciCta;

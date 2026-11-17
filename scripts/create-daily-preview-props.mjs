@@ -18,7 +18,9 @@ const scenes=job.scenes.map((scene,i)=>{
       text:chunks.slice(p,p+7).join(" "),
     });
   }
-  const s={...scene,startFrame:position,durationFrames,captions,
+  // Proportional per-word timing so previews show the animated keyword captions.
+  const words=chunks.map((text,w)=>({text,from:Math.floor(w/chunks.length*250),to:Math.floor((w+1)/chunks.length*250)}));
+  const s={...scene,startFrame:position,durationFrames,captions,words,wordTiming:"estimated",
     audioFile:undefined,
     cta:i===job.scenes.length-1?job.cta:undefined,
   };
