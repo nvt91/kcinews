@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-18-kr-am",
+  "articleId": "KCI-20261118-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "18/11/2026 KR_AM · 08:00 KST",
+  "dataAsOf": "2026-11-18T07:59:30+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "IMF nâng dự báo Hàn Quốc lên 3,9% giữa áp lực KOSPI và APEC",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-18/kr-am.md",
+  "sourceDisclaimer": "IMF 3.9% is forecast for calendar 2026 announced 17 Nov, not actual GDP; 17 Nov KRX close already covered KR_CLOSE and used only as context; APEC 18-19 Nov planned, no agreement assumed; exports 1-10 Nov are earlier customs data, not new release.",
+  "eventKeys": [
+    "imf-korea-article-iv-growth-forecast-2026-11-17",
+    "apec-korea-president-shenzhen-2026-11-18",
+    "korea-exports-chip-concentration-2026-11-10"
+  ],
+  "sourceLedger": [
+    {
+      "id": "imf-yonhap",
+      "title": "Yonhap 17 Nov 2026 IMF raises Korea 2026 forecast",
+      "url": "https://en.yna.co.kr/view/AEN20261117005651320",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T07:59:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "IMF upgraded Korea 2026 growth forecast to 3.9%, from 3.3%, citing semiconductor cycle."
+      ]
+    },
+    {
+      "id": "imf-times",
+      "title": "Korea Times 17 Nov 2026 IMF consultation",
+      "url": "https://www.koreatimes.co.kr/economy/20261117/imf-raises-koreas-2026-growth-forecast-to-39-on-chip-boom",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T07:59:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "IMF projects 3.9% growth 2026, 3.3% in 2027, inflation 2.7% in 2026 and 2.3% 2027; calls for reforms to broaden growth."
+      ]
+    },
+    {
+      "id": "apec-yonhap",
+      "title": "Yonhap 18 Nov 02:12 Lee arrives at APEC",
+      "url": "https://en.yna.co.kr/view/AEN20261117010600315",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-18T07:59:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Lee arrived Shenzhen 18 Nov for APEC through 19 Nov; scheduled CEO summit and main session; no agreement yet."
+      ]
+    },
+    {
+      "id": "customs-yonhap",
+      "title": "Yonhap 11 Nov customs first ten days",
+      "url": "https://en.yna.co.kr/view/AEN20261111002651320",
+      "eventDate": "2026-11-11",
+      "checkedAt": "2026-11-18T07:59:30+09:00",
+      "kind": "secondary",
+      "facts": [
+        "1-10 Nov exports $33.5bn, chips $16.6bn or 49.7%; historical data used as context, not new release."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "IMF vừa nâng dự báo tăng trưởng Hàn Quốc lên ba phẩy chín phần trăm. Vì sao thị trường chứng khoán vẫn chịu áp lực?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "IMF vừa nâng dự báo tăng trưởng Hàn Quốc lên ba phẩy chín phần trăm. Vì sao thị trường chứng khoán vẫn chịu áp lực?",
+        "score": 94
+      },
+      {
+        "style": "impact",
+        "text": "IMF nâng dự báo tăng trưởng Hàn Quốc, nhưng sự phụ thuộc vào chip vẫn là bài toán lớn.",
+        "score": 89
+      },
+      {
+        "style": "question",
+        "text": "Hàn Quốc tăng trưởng nhờ chip, còn APEC có thể mở thêm cơ hội thương mại nào?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều đáng theo dõi hơn là tăng trưởng ngành chip hay sức lan tỏa sang các ngành khác? Chia sẻ cùng KCI nhé.",
+    "screenHeadline": "TĂNG TRƯỞNG CÓ LAN TỎA?",
+    "screenSubline": "Chip · Doanh nghiệp khác · APEC",
+    "question": "Tăng trưởng chip hay lan tỏa?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "IMF nâng dự báo",
+      "screenText": "IMF: 3,9%",
+      "eyebrow": "KCI · SÁNG 18/11",
+      "headline": "DỰ BÁO TĂNG TRƯỞNG 3,9%",
+      "summary": "IMF nâng dự báo kinh tế Hàn Quốc năm 2026",
+      "voiceText": "IMF vừa nâng dự báo tăng trưởng Hàn Quốc lên ba phẩy chín phần trăm. Vì sao thị trường chứng khoán vẫn chịu áp lực? Đây là bản tin kinh tế Hàn Quốc sáng ngày mười tám tháng mười một.",
+      "source": "Yonhap; Korea Times 17/11",
+      "sourceIds": [
+        "imf-yonhap",
+        "imf-times"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3,9%",
+        "qualifier": "Dự báo GDP Hàn Quốc năm 2026 · IMF 17/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "imf",
+      "title": "Dự báo nâng 0,6 điểm",
+      "screenText": "TỪ 3,3% LÊN 3,9%",
+      "eyebrow": "KINH TẾ VĨ MÔ",
+      "headline": "CHIP THÚC ĐẨY TĂNG TRƯỞNG",
+      "summary": "Dự báo 2027: 3,3% · IMF",
+      "voiceText": "Trong kết quả tham vấn công bố hôm qua, IMF nâng dự báo tăng trưởng năm hai nghìn không trăm hai mươi sáu từ ba phẩy ba lên ba phẩy chín phần trăm. Dự báo năm sau là ba phẩy ba phần trăm. Động lực chính là nhu cầu chip phục vụ trí tuệ nhân tạo, đầu tư thiết bị và xuất khẩu. Nhưng đây vẫn là dự báo, không phải kết quả GDP đã thực hiện. IMF cũng lưu ý cần cải cách để lợi ích tăng trưởng lan sang nhiều ngành và doanh nghiệp hơn.",
+      "source": "Yonhap; Korea Times 17/11",
+      "sourceIds": [
+        "imf-yonhap",
+        "imf-times"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Trước",
+            "value": 3.3,
+            "display": "3,3%"
+          },
+          {
+            "label": "Mới",
+            "value": 3.9,
+            "display": "3,9%"
+          }
+        ],
+        "qualifier": "Dự báo tăng trưởng 2026 của IMF"
+      },
+      "stats": [
+        {
+          "label": "Dự báo 2026",
+          "value": "3,9%"
+        },
+        {
+          "label": "Dự báo 2027",
+          "value": "3,3%"
+        }
+      ]
+    },
+    {
+      "id": "exports",
+      "title": "Tăng trưởng tập trung vào chip",
+      "screenText": "CHIP CHIẾM 49,7%",
+      "eyebrow": "CƠ CẤU XUẤT KHẨU",
+      "headline": "SỨC MẠNH VÀ RỦI RO",
+      "summary": "Số liệu hải quan 1–10/11, không phải số mới sáng nay",
+      "voiceText": "Số liệu hải quan đã công bố ngày mười một tháng mười một cho thấy chip chiếm gần một nửa giá trị xuất khẩu trong mười ngày đầu tháng. Điều đó giải thích vì sao chu kỳ bán dẫn tác động mạnh đến triển vọng tăng trưởng. Nhưng cũng cho thấy kinh tế Hàn Quốc nhạy cảm với thay đổi trong nhu cầu đầu tư AI. Đà tăng xuất khẩu chưa tự động đồng nghĩa mọi doanh nghiệp đều hưởng lợi.",
+      "source": "Yonhap/Korea Customs 11/11",
+      "sourceIds": [
+        "customs-yonhap"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "49,7%",
+        "qualifier": "Tỷ trọng chip trong xuất khẩu 1–10/11/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "apec",
+      "title": "APEC tại Thâm Quyến",
+      "screenText": "APEC 18–19/11",
+      "eyebrow": "CHÍNH SÁCH VÀ THƯƠNG MẠI",
+      "headline": "THEO DÕI APEC",
+      "summary": "Lịch hội nghị, chưa phải kết quả thỏa thuận",
+      "voiceText": "Trong khi đó, Tổng thống Lee Jae Myung đã đến Thâm Quyến dự APEC. Chương trình dự kiến diễn ra trong hai ngày mười tám và mười chín tháng mười một, gồm hội nghị doanh nghiệp và phiên họp lãnh đạo. Giới đầu tư có thể theo dõi thông điệp về thương mại, chuỗi cung ứng và hợp tác khu vực. Hiện chưa thể coi các cuộc gặp dự kiến là thỏa thuận đã ký.",
+      "source": "Yonhap 18/11 02:12",
+      "sourceIds": [
+        "apec-yonhap"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "18–19/11",
+        "qualifier": "APEC · Thâm Quyến · lịch dự kiến"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Điểm cần theo dõi",
+      "screenText": "TĂNG TRƯỞNG LAN TỎA?",
+      "eyebrow": "KCI · ĐIỂM CẦN THEO DÕI",
+      "headline": "KHÔNG CHỈ NHÌN CHIP",
+      "summary": "GDP dự báo · Cơ cấu xuất khẩu · APEC",
+      "voiceText": "Điểm đáng theo dõi là liệu tăng trưởng từ chip có lan rộng sang tiêu dùng và các ngành khác, cùng những thông tin chính thức từ APEC. Theo anh chị, điều đáng theo dõi hơn là tăng trưởng ngành chip hay sức lan tỏa sang các ngành khác? Chia sẻ cùng KCI nhé.",
+      "source": "IMF; Yonhap 17–18/11",
+      "sourceIds": [
+        "imf-times",
+        "apec-yonhap"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Tăng trưởng từ chip",
+          "Lan tỏa kinh tế",
+          "Thông tin APEC"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "IMF vừa nâng dự báo tăng trưởng Hàn Quốc lên ba phẩy chín phần trăm.",
+  "caption": "🇰🇷 IMF nâng dự báo tăng trưởng Hàn Quốc lên 3,9%, nhưng kinh tế vẫn phụ thuộc nhiều vào chip. APEC tuần này có gì đáng chú ý? Cùng KCI theo dõi nhé! #KCI #KinhTeHanQuoc"
+}
