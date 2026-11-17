@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-17-macro21",
+  "edition": "17/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-17T21:00:19+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Giá nhập khẩu Mỹ sắp công bố: vì sao Hàn Quốc cần theo dõi?",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "articleId": "KCI-20261117-MACRO21",
+  "articlePath": "editorial/2026-11-17/macro21.md",
+  "eventKeys": [
+    "bls-us-import-export-prices-oct-2026-release-schedule",
+    "bls-oct-2026-cpi",
+    "korea-fx-import-cost-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 17 Nov 2026 21:00 KST. BLS import/export price indexes October scheduled 08:30 EST Nov 17 = 22:30 KST; NOT YET released at cutoff. CPI October published Nov 10. No fabricated import-price actual, no live USD/KRW, no US close for Nov 17.",
+  "sourceLedger": [
+    {
+      "id": "bls-schedule",
+      "title": "BLS 2026 selected releases calendar (updated Nov 9)",
+      "url": "https://www.bls.gov/schedule/2026/home.htm",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-17T21:00:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "October US import/export price indexes scheduled Nov 17 at 08:30 US Eastern Standard Time = 22:30 KST, after this episode cutoff."
+      ]
+    },
+    {
+      "id": "bls-cpi",
+      "title": "BLS CPI October 2026 released Nov 10",
+      "url": "https://www.bls.gov/news.release/cpi.htm",
+      "eventDate": "2026-11-10",
+      "checkedAt": "2026-11-17T21:00:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "October CPI +0.4% m/m seasonally adjusted; core +0.3%; energy +0.7%.",
+        "Most headline 12-month rates unavailable due to missing October 2025 indexes."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Tối nay, một chỉ số giá của Mỹ có thể ảnh hưởng cách thị trường nhìn đồng đô la. Nhưng số liệu vẫn chưa được công bố.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Tối nay, một chỉ số giá của Mỹ có thể ảnh hưởng cách thị trường nhìn đồng đô la. Nhưng số liệu vẫn chưa được công bố."
+      },
+      {
+        "style": "impact",
+        "text": "Giá nhập khẩu Mỹ sắp công bố. Vì sao Hàn Quốc cũng cần chú ý?"
+      },
+      {
+        "style": "question",
+        "text": "Giá nhập khẩu Mỹ có thể ảnh hưởng tới đồng won qua kênh nào?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu ba điểm cần kiểm tra sau giờ công bố: giá nhập khẩu thực tế, phản ứng lợi suất Mỹ và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cùng cập nhật khi có dữ liệu.",
+    "screenHeadline": "BA ĐIỂM CẦN KIỂM TRA",
+    "screenSubline": "Giá nhập khẩu · Lợi suất · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Chờ dữ liệu giá nhập khẩu Mỹ",
+      "screenText": "Chờ dữ liệu giá nhập khẩu Mỹ",
+      "eyebrow": "VĨ MÔ 21H",
+      "headline": "Chờ dữ liệu giá nhập khẩu Mỹ",
+      "summary": "Lịch BLS · 17/11 · 22:30 KST",
+      "voiceText": "Tối nay, một chỉ số giá của Mỹ có thể ảnh hưởng cách thị trường nhìn đồng đô la. Nhưng số liệu vẫn chưa được công bố.",
+      "source": "bls-schedule",
+      "sourceIds": [
+        "bls-schedule"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "22:30 KST",
+        "qualifier": "BLS · 17/11 · chưa công bố"
+      },
+      "stats": []
+    },
+    {
+      "id": "calendar",
+      "title": "Cảnh 2 — 22 giờ 30, giờ Hàn Quốc",
+      "screenText": "22 giờ 30, giờ Hàn Quốc",
+      "eyebrow": "LỊCH CÔNG BỐ",
+      "headline": "22 giờ 30, giờ Hàn Quốc",
+      "summary": "BLS · tháng 10/2026 · chưa có actual",
+      "voiceText": "Theo lịch BLS, chỉ số giá nhập khẩu và xuất khẩu Mỹ của tháng mười dự kiến công bố lúc tám giờ ba mươi sáng ngày mười bảy tháng mười một, giờ miền Đông nước Mỹ. Tương đương hai mươi hai giờ ba mươi tại Hàn Quốc. Lúc bản tin này lên sóng, kết quả thực tế chưa có.",
+      "source": "bls-schedule",
+      "sourceIds": [
+        "bls-schedule"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "cpi",
+      "title": "Cảnh 3 — CPI Mỹ tháng 10 tăng 0,4%",
+      "screenText": "CPI Mỹ tháng 10 tăng 0,4%",
+      "eyebrow": "DỮ LIỆU ĐÃ CÓ",
+      "headline": "CPI Mỹ tháng 10 tăng 0,4%",
+      "summary": "BLS công bố 10/11 · theo tháng",
+      "voiceText": "Dữ liệu đã có là CPI tháng mười, công bố ngày mười tháng mười một: tăng không phẩy bốn phần trăm theo tháng, sau điều chỉnh mùa vụ. CPI lõi tăng không phẩy ba phần trăm. Đây là chỉ số giá tiêu dùng, không phải chỉ số giá nhập khẩu sẽ công bố tối nay.",
+      "source": "bls-cpi",
+      "sourceIds": [
+        "bls-cpi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "transmission",
+      "title": "Cảnh 4 — Giá nhập khẩu → kỳ vọng lãi suất",
+      "screenText": "Giá nhập khẩu → kỳ vọng lãi suất",
+      "eyebrow": "KÊNH TÁC ĐỘNG",
+      "headline": "Giá nhập khẩu → kỳ vọng lãi suất",
+      "summary": "Phân tích có điều kiện, không dự báo",
+      "voiceText": "Nếu giá nhập khẩu Mỹ tăng mạnh hơn kỳ vọng, thị trường có thể đánh giá lại áp lực giá cả và lộ trình lãi suất Fed. Khi đó, lợi suất trái phiếu và nhu cầu đô la có thể thay đổi. Nhưng phản ứng còn tùy mức chênh lệch so với dự báo và các dữ liệu khác. Không thể suy ra đồng won chắc chắn giảm.",
+      "source": "bls-schedule",
+      "sourceIds": [
+        "bls-schedule"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh 5 — Đừng nhầm dữ liệu Mỹ với giá nhập khẩu Hàn",
+      "screenText": "Đừng nhầm dữ liệu Mỹ với giá nhập khẩu Hàn",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "Đừng nhầm dữ liệu Mỹ với giá nhập khẩu Hàn",
+      "summary": "Chờ actual · đối chiếu lợi suất và USD/KRW",
+      "voiceText": "Với Hàn Quốc, tỷ giá đô la trên won có thể ảnh hưởng chi phí nhập khẩu tính bằng won, nhất là năng lượng. Nhưng chỉ số giá nhập khẩu Mỹ không đo trực tiếp hóa đơn nhập khẩu của doanh nghiệp Hàn. Hãy kiểm tra kết quả thực tế sau hai mươi hai giờ ba mươi, rồi mới đánh giá tác động.",
+      "source": "bls-schedule",
+      "sourceIds": [
+        "bls-schedule"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Giá nhập khẩu Mỹ",
+          "Lợi suất Mỹ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Tối nay, một chỉ số giá của Mỹ có thể ảnh hưởng cách thị trường nhìn đồng đô la. Nhưng số liệu vẫn chưa được công bố."
+}
