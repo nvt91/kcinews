@@ -2,6 +2,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+// KCI schema v2 validator.
+// 17/11/2026 owner directive: editorial *process* rules (source count, primary
+// cross-check, hook-candidate bookkeeping, CTA duplication) are now WARNINGS that
+// are reported in GitHub Actions but never stop production. Only defects that
+// would make the render impossible, or that would publish an investment promise,
+// remain hard errors.
+
 const kinds = new Set([
   "reversal","comparison","company","risk-bars",
   "spotlight","rate","closing","generic",
@@ -24,7 +31,10 @@ const dateKst = (v) => nonempty(v) &&
   !Number.isNaN(Date.parse(v));
 const numeric = (v) => typeof v === "number" && Number.isFinite(v);
 
-export function validateKciJob(job) {
+export function validateKciJobDetailed(job) {
+  const warnings = [];
+  const warn = (condition, message) => { if (!condition) warnings.push(message); };
+
   required(job && typeof job === "object" && !Array.isArray(job), "job object required");
   required(job.schemaVersion === 2, "schemaVersion must be 2 for daily episodes");
   required(/^[a-z0-9-]{6,100}$/.test(job.id || ""), "invalid unique job id");
@@ -33,8 +43,10 @@ export function validateKciJob(job) {
   required(nonempty(job.headline,15,190), "headline invalid");
   required(job.status === "REVIEW_REQUIRED", "new episodes must start REVIEW_REQUIRED");
   required(job.template === "KciNewsDaily", "new jobs must use data-driven KciNewsDaily");
-  required(Array.isArray(job.sourceLedger) && job.sourceLedger.length >= 2 &&
-    job.sourceLedger.length <= 30, "sourceLedger requires 2–30 sources");
+  required(Array.isArray(job.sourceLedger) && job.sourceLedger.length >= 1 &&
+    job.sourceLedger.length <= 30, "sourceLedger requires 1–30 sources");
+  warn(job.sourceLedger.length >= 2,
+    "only one source in sourceLedger — nên bổ sung nguồn thứ hai để đối chiếu");
 
   const sources = new Set();
   for (const source of job.sourceLedger) {
@@ -55,13 +67,12 @@ export function validateKciJob(job) {
 
   required(job.hook && nonempty(job.hook.spoken,20,300),
     "factually grounded hook.spoken required");
-  required(Array.isArray(job.hook.candidates) && job.hook.candidates.length >= 3,
-    "produce at least three hook candidates");
-  required(job.hook.candidates.some((c) => c?.text === job.hook.spoken),
-    "selected spoken hook must match a candidate");
-  required(job.hook.candidates.every((c) =>
-    nonempty(c?.text,20,300) && nonempty(c?.style,4,80)),
-    "hook candidates need text and different approaches");
+  const candidates = Array.isArray(job.hook.candidates) ? job.hook.candidates : [];
+  warn(candidates.length >= 3, "nên có ít nhất 3 hook candidates");
+  warn(candidates.some((c) => c?.text === job.hook.spoken),
+    "hook.spoken không khớp candidate nào");
+  warn(candidates.every((c) => nonempty(c?.text,20,300) && nonempty(c?.style,4,80)),
+    "hook candidates thiếu text/style");
   required(!forbidden.test(job.hook.spoken), "unsafe investment promise in hook");
 
   required(job.cta && actions.has(job.cta.type), "one primary CTA type required");
@@ -84,6 +95,13 @@ export function validateKciJob(job) {
     for (const field of ["eyebrow","headline","summary","source","voiceText"]) {
       required(nonempty(scene[field],3,field==="voiceText"?1400:200),
         scene.id + ": invalid " + field);
+    }
+    // Optional friendly-script fields (see references/SCRIPT_FORMAT.md).
+    if (scene.title !== undefined) {
+      required(nonempty(scene.title,3,120), scene.id + ": invalid title");
+    }
+    if (scene.screenText !== undefined) {
+      required(nonempty(scene.screenText,2,160), scene.id + ": invalid screenText");
     }
     required(!forbidden.test(scene.voiceText), scene.id + ": unsafe price/return guarantee");
     required(Array.isArray(scene.sourceIds) && scene.sourceIds.length > 0 &&
@@ -128,15 +146,24 @@ export function validateKciJob(job) {
       required(!scene.visual.cta, "CTA overlay belongs only to last scene");
     }
   });
-  required(job.scenes[0].voiceText.startsWith(job.hook.spoken),
-    "first scene voice must begin exactly with the chosen hook");
-  required(!job.scenes.at(-1).voiceText.includes(job.cta.spoken),
-    "don't duplicate CTA in outro voiceText; runner appends it once");
+  warn(job.scenes[0].voiceText.startsWith(job.hook.spoken),
+    "lời dẫn cảnh 1 không bắt đầu đúng bằng hook.spoken");
+  warn(!job.scenes.at(-1).voiceText.includes(job.cta.spoken),
+    "CTA bị lặp trong voiceText cảnh cuối — runner sẽ không đọc lặp lần hai");
   required(job.scenes.at(-1).visual.kind === "closing",
     "last scene should use closing visual with CTA overlay");
-  required(job.sourceLedger.some((s) => s.kind === "primary"),
-    "at least one primary-source cross-check required");
+  warn(job.sourceLedger.some((s) => s.kind === "primary"),
+    "chưa có nguồn primary (BOK/KOSIS/KRX/Fed/BLS, thông cáo công ty...) — vẫn cho sản xuất");
 
+  return { job, warnings };
+}
+
+export function validateKciJob(job, { quiet = false } = {}) {
+  const { warnings } = validateKciJobDetailed(job);
+  if (!quiet) {
+    const prefix = process.env.GITHUB_ACTIONS ? "::warning::" : "WARNING: ";
+    for (const w of warnings) console.warn(prefix + "KCI " + (job.id || "job") + ": " + w);
+  }
   return job;
 }
 
@@ -147,7 +174,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === currentFile) {
     throw new Error("Usage: node scripts/validate-kci-job.mjs jobs/kci-YYYY-MM-DD-topic.json");
   }
   const job = JSON.parse(fs.readFileSync(argument, "utf8"));
+  const { warnings } = validateKciJobDetailed(job);
   validateKciJob(job);
   console.log("KCI editorial schema v2 valid:", job.id, "| sources:", job.sourceLedger.length,
-    "| scenes:", job.scenes.length, "| CTA:", job.cta.type);
+    "| scenes:", job.scenes.length, "| CTA:", job.cta.type, "| warnings:", warnings.length);
 }
