@@ -167,6 +167,16 @@ export function validateKciJobDetailed(job) {
   warn(job.sourceLedger.some((s) => s.kind === "primary"),
     "chưa có nguồn primary (BOK/KOSIS/KRX/Fed/BLS, thông cáo công ty...) — vẫn cho sản xuất");
 
+  // 17/11/2026 owner rule: scripts must not use promise phrases at all, even
+  // negated ("không thể suy ra ... chắc chắn giảm"). Negated use no longer
+  // blocks a render, but it is flagged so the producer rewrites it.
+  const texts = [job.hook.spoken, job.cta.spoken, ...job.scenes.map((s) => s.voiceText)];
+  for (const t of texts) {
+    for (const m of String(t || "").matchAll(new RegExp(forbidden.source, "giu"))) {
+      warnings.push(`tránh cụm "${m[0]}" (kể cả câu phủ định) — viết lại, ví dụ "chưa thể kết luận ... sẽ giảm"`);
+    }
+  }
+
   return { job, warnings };
 }
 
