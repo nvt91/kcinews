@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-18-macro21",
+  "articleId": "KCI-20261118-MACRO21",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "edition": "18/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-18T21:02:11+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Giá nhập khẩu Mỹ tăng 1,1%: ba kênh tác động tới đồng won",
+  "articlePath": "editorial/2026-11-18/macro21.md",
+  "eventKeys": [
+    "bls-oct-2026-import-prices-release-2026-11-17",
+    "bls-oct-2026-fuel-import-prices",
+    "us-korea-fx-rates-energy-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "BLS October 2026 US import prices released 17 Nov 08:30 EST = 22:30 KST. Monthly US import-price indexes, not Korea import prices or US CPI. Missing Oct 2025 survey data prevents many annual rates. Transmission conditional; no live USD/KRW quote.",
+  "sourceLedger": [
+    {
+      "id": "bls-import",
+      "title": "BLS October 2026 US Import and Export Price Indexes, published Nov 17",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T21:02:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "US import prices +1.1% month over month in October 2026.",
+        "Imported fuel prices +3.6% and nonfuel import prices +0.8% month over month.",
+        "Some 12-month changes unavailable because BLS did not collect October 2025 survey data."
+      ]
+    },
+    {
+      "id": "bls-calendar",
+      "title": "BLS official import and export price release calendar",
+      "url": "https://www.bls.gov/schedule/news_release/ximpim.htm",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-18T21:02:11+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 data released November 17, 2026 at 08:30 US Eastern Standard Time, equivalent to 22:30 KST."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá nhập khẩu Mỹ vừa tăng một phẩy một phần trăm. Nhưng đây không phải giá nhập khẩu của Hàn Quốc. Vậy đồng won liên quan gì?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá nhập khẩu Mỹ vừa tăng một phẩy một phần trăm. Nhưng đây không phải giá nhập khẩu của Hàn Quốc. Vậy đồng won liên quan gì?",
+        "score": 92
+      },
+      {
+        "style": "impact",
+        "text": "Giá nhập khẩu Mỹ tăng mạnh. Đồng won có chịu áp lực không?",
+        "score": 88
+      },
+      {
+        "style": "question",
+        "text": "Vì sao một chỉ số giá của Mỹ có thể ảnh hưởng chi phí năng lượng Hàn Quốc?",
+        "score": 86
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu lại ba điểm cần kiểm tra: lợi suất Mỹ, tỷ giá đô la trên won và giá năng lượng. Theo dõi Korea Capital Insight để cùng cập nhật.",
+    "screenHeadline": "BA ĐIỂM CẦN THEO DÕI",
+    "screenSubline": "Lợi suất Mỹ · USD/KRW · Năng lượng"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Giá nhập khẩu Mỹ +1,1%",
+      "screenText": "GIÁ NHẬP KHẨU MỸ +1,1%",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "GIÁ NHẬP KHẨU MỸ +1,1%",
+      "summary": "BLS 17/11 · tháng 10/2026",
+      "voiceText": "Giá nhập khẩu Mỹ vừa tăng một phẩy một phần trăm. Nhưng đây không phải giá nhập khẩu của Hàn Quốc. Vậy đồng won liên quan gì?",
+      "source": "BLS · 17/11/2026",
+      "sourceIds": [
+        "bls-import",
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+1,1%",
+        "qualifier": "Giá nhập khẩu Mỹ · tháng 10 · theo tháng"
+      },
+      "stats": []
+    },
+    {
+      "id": "facts",
+      "title": "Năng lượng nhập khẩu tăng 3,6%",
+      "screenText": "NĂNG LƯỢNG +3,6%",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "NĂNG LƯỢNG +3,6%",
+      "summary": "Giá nhập khẩu Mỹ · theo tháng",
+      "voiceText": "BLS công bố ngày mười bảy tháng mười một: giá nhập khẩu Mỹ tháng mười tăng một phẩy một phần trăm so với tháng trước. Trong đó, giá nhiên liệu nhập khẩu tăng ba phẩy sáu phần trăm, còn nhóm không gồm nhiên liệu tăng không phẩy tám phần trăm. Đây là dữ liệu thực tế, không phải dự báo.",
+      "source": "BLS · 17/11/2026",
+      "sourceIds": [
+        "bls-import"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Nhiên liệu",
+            "value": 3.6,
+            "display": "+3,6%"
+          },
+          {
+            "label": "Không gồm nhiên liệu",
+            "value": 0.8,
+            "display": "+0,8%"
+          }
+        ],
+        "qualifier": "Mỹ · tháng 10/2026 · theo tháng"
+      },
+      "stats": []
+    },
+    {
+      "id": "limits",
+      "title": "Thiếu mốc so sánh năm",
+      "screenText": "THIẾU MỐC NĂM",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "THIẾU MỐC NĂM",
+      "summary": "Không suy diễn tỷ lệ 12 tháng",
+      "voiceText": "BLS lưu ý nhiều mức thay đổi so với cùng kỳ không thể công bố, do thiếu dữ liệu khảo sát tháng mười năm ngoái. Vì vậy, không nên lấy con số tăng theo tháng rồi diễn giải thành lạm phát cả năm.",
+      "source": "BLS · 17/11/2026",
+      "sourceIds": [
+        "bls-import"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "transmission",
+      "title": "Ba kênh tới Hàn Quốc",
+      "screenText": "LỢI SUẤT · USD · WON",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "LỢI SUẤT · USD · WON",
+      "summary": "Phân tích có điều kiện",
+      "voiceText": "Với Hàn Quốc, tác động chủ yếu đi qua kỳ vọng lạm phát và chính sách tiền tệ Mỹ. Nếu thị trường nâng kỳ vọng lãi suất, lợi suất trái phiếu và nhu cầu đô la có thể biến động, từ đó ảnh hưởng tỷ giá đô la trên won. Đồng won yếu hơn có thể làm tăng hóa đơn nhập khẩu tính bằng won, nhất là năng lượng. Nhưng kết quả còn tùy dòng vốn, giá dầu và phản ứng của Fed.",
+      "source": "BLS · 17/11/2026",
+      "sourceIds": [
+        "bls-import"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Ba điểm cần theo dõi",
+      "screenText": "THEO DÕI BA ĐIỂM",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "THEO DÕI BA ĐIỂM",
+      "summary": "Không phải dự báo tỷ giá",
+      "voiceText": "Điểm quan trọng là chỉ số giá nhập khẩu Mỹ không đo trực tiếp chi phí nhập khẩu của doanh nghiệp Hàn Quốc. Khi theo dõi tác động, hãy đối chiếu lợi suất Mỹ, tỷ giá đô la trên won và giá năng lượng quốc tế, thay vì chỉ nhìn một chỉ số.",
+      "source": "BLS · 17/11/2026",
+      "sourceIds": [
+        "bls-import"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Lợi suất Mỹ",
+          "USD/KRW",
+          "Giá năng lượng"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Giá nhập khẩu Mỹ vừa tăng một phẩy một phần trăm. Nhưng đây không phải giá nhập khẩu của Hàn Quốc. Vậy đồng won liên quan gì?",
+  "caption": "🇺🇸 Giá nhập khẩu Mỹ tăng, đặc biệt ở nhóm nhiên liệu. Đồng won và chi phí nhập khẩu Hàn Quốc có thể chịu tác động ra sao? Cùng tìm hiểu nhé! #KoreaCapitalInsight #ViMo"
+}
