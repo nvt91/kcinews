@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-19-us-am",
+  "articleId": "KCI-20261119-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "19/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-19T08:55:31+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall trái chiều: Nvidia vượt kỳ vọng nhưng cổ phiếu giảm",
+  "scriptTitle": "KCI | Nvidia báo doanh thu kỷ lục: Vì sao Phố Wall vẫn thận trọng?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Đóng cửa Mỹ 18/11/2026 16:00 EST = 06:00 KST 19/11/2026; không dùng giá ngoài giờ hoặc dữ liệu 17/11 như giá mới. Doanh thu Nvidia là quý tài khóa kết thúc 25/10/2026; triển vọng Q4 là dự báo của doanh nghiệp, không phải doanh thu thực tế.",
+  "eventKeys": [
+    "us-equities-close-2026-11-18",
+    "nvidia-fy27-q3-earnings",
+    "fed-minutes-2026-11-18",
+    "korea-ai-fx-risk-2026-11-19"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-close",
+      "title": "AP major US indexes Wednesday November 18",
+      "url": "https://apnews.com/article/990749d3d269f7ef05b9f6c089713a58",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 7323.63 -0.2%; Dow 50198.17 -1.1%; Nasdaq 24429.88 +0.4%.",
+        "Treasury yields eased as oil prices fell."
+      ]
+    },
+    {
+      "id": "nvidia-ir",
+      "title": "NVIDIA Q3 FY2027 official financial results",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-19T08:55:31+09:00",
+      "kind": "primary",
+      "facts": [
+        "Revenue $115.8 billion, +103% YoY; data center revenue $107.6 billion.",
+        "Q4 FY2027 revenue outlook $130 billion +/-3%, forecast not realized revenue."
+      ]
+    },
+    {
+      "id": "reuters-nvda",
+      "title": "Reuters Nvidia retreats despite strong outlook",
+      "url": "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nvidia stock closed -2.9% Wednesday despite strong earnings and forecast."
+      ]
+    },
+    {
+      "id": "reuters-market",
+      "title": "Reuters Wall Street ends mixed after Nvidia earnings and Fed minutes",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:55:31+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Wall Street mixed; Nvidia earnings and Fed minutes among key themes."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nvidia công bố doanh thu hơn một trăm mười lăm tỷ đô, nhưng cổ phiếu vẫn giảm gần ba phần trăm.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Nvidia công bố doanh thu hơn một trăm mười lăm tỷ đô, nhưng cổ phiếu vẫn giảm gần ba phần trăm."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nvidia vượt kỳ vọng, vì sao nhóm chip Hàn Quốc vẫn phải thận trọng?"
+      },
+      {
+        "style": "risk",
+        "text": "Nasdaq tăng, Dow giảm hơn năm trăm điểm: Phố Wall đang phân hóa."
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, doanh thu AI tăng mạnh hay rủi ro định giá sẽ ảnh hưởng nhóm chip Hàn Quốc nhiều hơn? Hãy chia sẻ góc nhìn cùng KCI nhé.",
+    "screenHeadline": "AI TĂNG, RỦI RO CÒN",
+    "screenSubline": "Cùng trao đổi với KCI",
+    "question": "Nhu cầu AI hay định giá quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Nvidia vượt kỳ vọng",
+      "screenText": "NVIDIA 115,8 TỶ USD | CỔ PHIẾU −2,9%",
+      "eyebrow": "NVIDIA · 18/11",
+      "headline": "Doanh thu tăng, giá giảm",
+      "summary": "Kết quả tốt chưa xóa lo ngại",
+      "voiceText": "Nvidia công bố doanh thu hơn một trăm mười lăm tỷ đô, nhưng cổ phiếu vẫn giảm gần ba phần trăm. Đây là kết quả kinh doanh quý tài khóa được công bố ngày mười bảy và biến động cổ phiếu trong phiên Mỹ ngày mười tám, không phải giá trực tiếp sáng nay.",
+      "source": "NVIDIA IR / REUTERS · 17–18/11",
+      "sourceIds": [
+        "nvidia-ir",
+        "reuters-nvda"
+      ],
+      "stats": [
+        {
+          "label": "DOANH THU",
+          "value": "115,8 tỷ USD",
+          "tone": "up"
+        },
+        {
+          "label": "NVIDIA",
+          "value": "−2,9%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "DOANH THU YoY",
+            "value": 103,
+            "display": "+103%"
+          },
+          {
+            "label": "CỔ PHIẾU",
+            "value": -2.9,
+            "display": "−2,9%"
+          }
+        ],
+        "qualifier": "Q3 FY2027 / phiên 18/11"
+      }
+    },
+    {
+      "id": "indices",
+      "title": "Cảnh 2 — Phố Wall trái chiều",
+      "screenText": "NASDAQ +0,4% | DOW −1,1%",
+      "eyebrow": "PHỐ WALL · 18/11",
+      "headline": "Ba chỉ số phân hóa",
+      "summary": "S&P 500 giảm phiên thứ năm",
+      "voiceText": "Phiên Mỹ ngày mười tám tháng mười một khép lại với Nasdaq tăng không phẩy bốn phần trăm, nhưng Dow Jones giảm một phẩy một phần trăm. S&P năm trăm giảm không phẩy hai phần trăm xuống bảy nghìn ba trăm hai mươi ba phẩy sáu ba điểm, đánh dấu phiên giảm thứ năm liên tiếp.",
+      "source": "AP · 18/11",
+      "sourceIds": [
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "+0,4%",
+          "tone": "up"
+        },
+        {
+          "label": "DOW",
+          "value": "−1,1%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": 0.4,
+            "display": "+0,4%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -0.2,
+            "display": "−0,2%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.1,
+            "display": "−1,1%"
+          }
+        ],
+        "qualifier": "Đóng cửa Mỹ 18/11 EST"
+      }
+    },
+    {
+      "id": "earnings",
+      "title": "Cảnh 3 — Kết quả Nvidia",
+      "screenText": "DOANH THU +103% | DATA CENTER 107,6 TỶ",
+      "eyebrow": "BÁO CÁO NVIDIA",
+      "headline": "AI vẫn tăng trưởng mạnh",
+      "summary": "Triển vọng không phải kết quả",
+      "voiceText": "Theo báo cáo chính thức, Nvidia đạt doanh thu một trăm mười lăm phẩy tám tỷ đô la, tăng một trăm lẻ ba phần trăm so với cùng kỳ. Riêng trung tâm dữ liệu đạt một trăm lẻ bảy phẩy sáu tỷ đô la. Doanh nghiệp dự kiến doanh thu quý tiếp theo khoảng một trăm ba mươi tỷ đô la, cộng trừ ba phần trăm. Đây là dự báo, chưa phải kết quả thực tế.",
+      "source": "NVIDIA IR · 17/11",
+      "sourceIds": [
+        "nvidia-ir"
+      ],
+      "stats": [
+        {
+          "label": "TĂNG YoY",
+          "value": "+103%",
+          "tone": "up"
+        },
+        {
+          "label": "DATA CENTER",
+          "value": "107,6 tỷ",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Q3 FY27: 115,8 tỷ USD",
+          "Data Center: 107,6 tỷ",
+          "Q4 outlook: 130 tỷ ±3%"
+        ]
+      }
+    },
+    {
+      "id": "macro",
+      "title": "Cảnh 4 — Lợi suất và dầu",
+      "screenText": "LỢI SUẤT GIẢM | DẦU GIẢM",
+      "eyebrow": "VĨ MÔ MỸ",
+      "headline": "Dòng tiền thận trọng",
+      "summary": "Fed và giá năng lượng",
+      "voiceText": "Ở thị trường vĩ mô, AP ghi nhận lợi suất trái phiếu Mỹ và giá dầu cùng giảm trong phiên ngày mười tám. Nhà đầu tư cũng theo dõi biên bản cuộc họp Fed, nhưng không thể suy ra một quyết định lãi suất tương lai chỉ từ một phiên giao dịch. Đồng đô la và lợi suất Mỹ vẫn là các biến số quan trọng đối với tỷ giá won.",
+      "source": "AP / REUTERS · 18/11",
+      "sourceIds": [
+        "ap-close",
+        "reuters-market"
+      ],
+      "stats": [
+        {
+          "label": "LỢI SUẤT",
+          "value": "GIẢM",
+          "tone": "neutral"
+        },
+        {
+          "label": "DẦU",
+          "value": "GIẢM",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Lợi suất Mỹ giảm",
+          "Giá dầu hạ",
+          "Theo dõi Fed và USD"
+        ]
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 5 — Tác động tới Hàn Quốc",
+      "screenText": "SAMSUNG | SK HYNIX | USD/KRW",
+      "eyebrow": "THỊ TRƯỜNG HÀN QUỐC",
+      "headline": "Chip Hàn Quốc phân hóa?",
+      "summary": "Cần kiểm tra dòng vốn và tỷ giá",
+      "voiceText": "Với Hàn Quốc, doanh thu AI mạnh của Nvidia có thể hỗ trợ kỳ vọng nhu cầu bộ nhớ và thiết bị cho Samsung Electronics, SK Hynix. Tuy nhiên, giá cổ phiếu Nvidia giảm cho thấy thị trường còn thận trọng về định giá và chính sách xuất khẩu. Nếu tâm lý né rủi ro lan rộng, KOSPI và KOSDAQ có thể chịu áp lực; USD/KRW cần được theo dõi cùng lợi suất Mỹ. Theo anh chị, doanh thu AI tăng mạnh hay rủi ro định giá sẽ ảnh hưởng nhóm chip Hàn Quốc nhiều hơn? Hãy chia sẻ góc nhìn cùng KCI nhé.",
+      "source": "NVIDIA IR / AP / REUTERS · 17–18/11",
+      "sourceIds": [
+        "nvidia-ir",
+        "ap-close",
+        "reuters-nvda"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "AI: nhu cầu mạnh",
+          "Rủi ro định giá",
+          "Theo dõi USD/KRW"
+        ],
+        "cta": {
+          "headline": "AI TĂNG, RỦI RO CÒN",
+          "subline": "Cùng trao đổi với KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Nvidia công bố doanh thu tăng mạnh, nhưng Phố Wall vẫn thận trọng."
+}
