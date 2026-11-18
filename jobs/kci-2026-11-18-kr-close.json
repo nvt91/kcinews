@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-18-kr-close",
+  "articleId": "KCI-20261118-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "18/11/2026 KR_CLOSE · KRX regular close",
+  "dataAsOf": "2026-11-18T17:08:13+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI trở lại 5.000, chip hồi phục nhưng khối ngoại vẫn bán",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-18/kr-close.md",
+  "sourceDisclaimer": "KRX regular close 18 Nov; NXT excluded. Yonhap foreign net sales KOSPI ~328bn KRW; institution net buying ~505bn KRW. USD/KRW at 15:30 not full-day final. Suneung delayed open on 19 Nov. Direct KRX table inaccessible, two KRX-attributed reports corroborated.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-18",
+    "krx-foreign-flows-2026-11-18",
+    "krx-semiconductor-nvidia-reaction-2026-11-18",
+    "krw-usd-1530-2026-11-18",
+    "krx-suneung-open-2026-11-19"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 18 Nov 16:10 KRX regular close",
+      "url": "https://www.yna.co.kr/view/AKR20261118143200008",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-18T17:08:13+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5067.44 +1.99%, KOSDAQ 662.81 +1.96% at KRX regular close.",
+        "KOSPI foreign net sales ~328 billion KRW; institutional net buys ~505 billion KRW; Samsung +2.31%, SK hynix +4.19%."
+      ]
+    },
+    {
+      "id": "sedaily-close",
+      "title": "Seoul Economic Daily 18 Nov 16:07 KRX sourced close",
+      "url": "https://en.sedaily.com/market/2026/11/18/kospi-reclaims-5000-as-samsung-electro-mechanics-jumps-7",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-18T17:08:13+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 5067.44 +1.99%, KOSDAQ 662.81 +1.96%, Samsung +2.31%, SK hynix +4.19%.",
+        "Foreign net sales KOSPI 327.4bn KRW, institutions net bought 511.8bn KRW; differences in report timing or scope, video uses rounded Yonhap only."
+      ]
+    },
+    {
+      "id": "yonhap-fx",
+      "title": "Yonhap 18 Nov 16:15 won FX quote",
+      "url": "https://en.yna.co.kr/view/AEN20261118008500320",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-18T17:08:13+09:00",
+      "kind": "secondary",
+      "facts": [
+        "USD/KRW 1333.0 won per dollar at 15:30 KST, down 5.2 won from previous stock session close."
+      ]
+    },
+    {
+      "id": "herald-suneung",
+      "title": "Korea Herald 18 Nov 15:26 Suneung opening schedule",
+      "url": "https://www.koreaherald.com/article/10941492",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-18T17:08:13+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Korean stock markets will open one hour later on Nov 19 due to Suneung examination."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa trở lại trên năm nghìn điểm sau một phiên đảo chiều mạnh. Nhưng vì sao khối ngoại vẫn bán ròng?",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "KOSPI vừa trở lại trên năm nghìn điểm sau một phiên đảo chiều mạnh. Nhưng vì sao khối ngoại vẫn bán ròng?",
+        "score": 94
+      },
+      {
+        "style": "comparison",
+        "text": "Cổ phiếu chip tăng mạnh, nhưng khối ngoại vẫn bán. Điều gì thực sự kéo KOSPI đi lên?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "KOSPI lấy lại năm nghìn điểm. Nhịp hồi này đã đủ thuyết phục chưa?",
+        "score": 86
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, đà hồi này có bền khi khối ngoại vẫn bán? Chia sẻ góc nhìn cùng KCI nhé.",
+    "screenHeadline": "ĐÀ HỒI CÓ BỀN?",
+    "screenSubline": "Khối ngoại · Chip · KOSPI",
+    "question": "Đà hồi có bền khi khối ngoại vẫn bán?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "KOSPI lấy lại 5.000",
+      "screenText": "KOSPI TRỞ LẠI 5.000",
+      "eyebrow": "KCI · CHIỀU 18/11",
+      "headline": "KOSPI LẤY LẠI MỐC 5.000",
+      "summary": "Phiên chính KRX 18/11/2026",
+      "voiceText": "KOSPI vừa trở lại trên năm nghìn điểm sau một phiên đảo chiều mạnh. Nhưng vì sao khối ngoại vẫn bán ròng? Bản tin chiều nay có ba điểm đáng chú ý.",
+      "source": "Yonhap 18/11",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "5.067,44",
+        "qualifier": "KOSPI · KRX regular close · 18/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "market",
+      "title": "Hai chỉ số phục hồi",
+      "screenText": "KOSPI +1,99%",
+      "eyebrow": "CHỨNG KHOÁN HÀN QUỐC",
+      "headline": "CẢ HAI CHỈ SỐ CÙNG TĂNG",
+      "summary": "Đóng cửa KRX, không cộng NXT",
+      "voiceText": "Theo Yonhap, KOSPI kết phiên ở năm nghìn không trăm sáu mươi bảy phẩy bốn bốn điểm, tăng một phẩy chín chín phần trăm. KOSDAQ cũng tăng một phẩy chín sáu phần trăm, lên sáu trăm sáu mươi hai phẩy tám mốt điểm. KOSPI có lúc tăng hơn ba phần trăm, rồi chuyển sang giảm trong phiên, trước khi hồi lại. Đây là số liệu phiên chính KRX, không phải giao dịch NXT sau giờ.",
+      "source": "Yonhap; Seoul Economic Daily 18/11",
+      "sourceIds": [
+        "yonhap-close",
+        "sedaily-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": 1.99,
+            "display": "+1,99%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": 1.96,
+            "display": "+1,96%"
+          }
+        ],
+        "qualifier": "KRX regular close 18/11"
+      },
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "5.067,44",
+          "tone": "up"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "662,81",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "chip",
+      "title": "Chip hồi, ngoại vẫn bán",
+      "screenText": "CHIP TĂNG, NGOẠI BÁN",
+      "eyebrow": "DÒNG TIỀN & BÁN DẪN",
+      "headline": "CHIP HỒI NHƯNG NGOẠI VẪN BÁN",
+      "summary": "Khối ngoại bán ròng khoảng 328 tỷ won riêng KOSPI",
+      "voiceText": "Động lực phục hồi đến từ nhóm bán dẫn sau kết quả kinh doanh tích cực của Nvidia. Samsung Electronics tăng hai phẩy ba mốt phần trăm, còn SK hynix tăng bốn phẩy một chín phần trăm. Nhưng điểm cần lưu ý là khối ngoại vẫn bán ròng khoảng ba trăm hai mươi tám tỷ won riêng trên KOSPI, theo Yonhap. Tổ chức mua ròng khoảng năm trăm linh năm tỷ won. Như vậy, giá tăng không đồng nghĩa dòng vốn nước ngoài đã quay lại.",
+      "source": "Yonhap; Seoul Economic Daily 18/11",
+      "sourceIds": [
+        "yonhap-close",
+        "sedaily-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung",
+            "value": 2.31,
+            "display": "+2,31%"
+          },
+          {
+            "label": "SK hynix",
+            "value": 4.19,
+            "display": "+4,19%"
+          }
+        ],
+        "qualifier": "KRX regular close 18/11"
+      },
+      "stats": [
+        {
+          "label": "Khối ngoại KOSPI",
+          "value": "−328 tỷ ₩",
+          "tone": "down"
+        },
+        {
+          "label": "Tổ chức KOSPI",
+          "value": "+505 tỷ ₩",
+          "tone": "up"
+        }
+      ]
+    },
+    {
+      "id": "fx",
+      "title": "Won hồi và lịch mở cửa",
+      "screenText": "USD/KRW 1.333,0",
+      "eyebrow": "TỶ GIÁ & LỊCH GIAO DỊCH",
+      "headline": "ĐỒNG WON MẠNH HƠN",
+      "summary": "USD/KRW 15:30 KST, không phải cuối ngày",
+      "voiceText": "Trên thị trường ngoại hối, lúc ba giờ ba mươi chiều, một đô la Mỹ đổi được một nghìn ba trăm ba mươi ba won, giảm năm phẩy hai won so với mốc so sánh phiên trước. Đồng won vì thế mạnh hơn tại thời điểm ghi nhận. Một lưu ý cho ngày mai: do kỳ thi đại học Suneung, thị trường chứng khoán Hàn Quốc sẽ mở cửa muộn hơn thường lệ một giờ.",
+      "source": "Yonhap FX; Korea Herald 18/11",
+      "sourceIds": [
+        "yonhap-fx",
+        "herald-suneung"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.333,0 ₩/$",
+        "qualifier": "USD/KRW 15:30 KST 18/11 · −5,2 won"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Điểm cần theo dõi",
+      "screenText": "ĐÀ HỒI CÓ BỀN?",
+      "eyebrow": "KCI · PHIÊN TỚI",
+      "headline": "ĐÀ HỒI CẦN ĐƯỢC KIỂM CHỨNG",
+      "summary": "Khối ngoại · Chip · Lịch mở cửa",
+      "voiceText": "Phiên tới, điều đáng theo dõi là liệu khối ngoại ngừng bán, và nhóm chip có giữ được đà phục hồi hay không. Một phiên tăng chưa đủ xác nhận xu hướng mới.",
+      "source": "Yonhap; Korea Herald 18/11",
+      "sourceIds": [
+        "yonhap-close",
+        "herald-suneung"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Cổ phiếu bán dẫn",
+          "Giờ mở cửa 19/11"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "KOSPI vừa trở lại trên năm nghìn điểm sau một phiên đảo chiều mạnh. Nhưng vì sao khối ngoại vẫn bán ròng?",
+  "caption": "📈 KOSPI đã trở lại trên 5.000 điểm, nhóm chip phục hồi nhưng khối ngoại vẫn bán ròng. Anh chị nghĩ đà hồi này có bền không? #KOSPI #ChungKhoanHanQuoc #KCI"
+}
