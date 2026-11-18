@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-19-kr-am",
+  "articleId": "KCI-20261119-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "19/11/2026 KR_AM · 08:01 KST",
+  "dataAsOf": "2026-11-19T08:01:10+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KDI nâng dự báo 2027 lên 3,9% nhưng tiêu dùng Hàn Quốc vẫn chịu áp lực",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-19/kr-am.md",
+  "sourceDisclaimer": "KDI 3.9% forecast is for 2027, not 2026 and not realized GDP; Reuters is analysis about household spending. Nov 18 KRX close and Nov 19 delayed open already in KR_CLOSE, used as contextual reminder only. At 08:01 KST Nov 19 no KRX regular open yet; do not imply NXT premarket trade.",
+  "eventKeys": [
+    "kdi-korea-growth-outlook-2027-2026-11-18",
+    "reuters-korea-chip-consumption-divergence-2026-11-18"
+  ],
+  "sourceLedger": [
+    {
+      "id": "kdi-yonhap",
+      "title": "Yonhap 18 Nov KDI 2027 growth outlook",
+      "url": "https://en.yna.co.kr/view/AEN20261118003651320",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:01:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KDI raised 2027 Korean GDP growth forecast to 3.9% from 2.2% in August; 2026 forecast to 3.8%, amid semiconductor demand. Forecast not realized GDP."
+      ]
+    },
+    {
+      "id": "reuters-consumption",
+      "title": "Reuters 18 Nov chip boom and household consumption",
+      "url": "https://www.reuters.com/business/finance/south-koreas-chip-boom-bypasses-retail-investors-stock-rout-hits-spending-2026-11-18/",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:01:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters reported chip export strength has not broadly benefited jobs and consumer spending; semiconductor sector employs less than 1% of workforce; consumption contracted in third quarter, Reuters analysis."
+      ]
+    },
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap KOSPI regular close 18 Nov",
+      "url": "https://en.yna.co.kr/view/AEN20261118007500320",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:01:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI closed at 5067.44, up 98.96 points on Nov 18; already covered in KR_CLOSE and only context."
+      ]
+    },
+    {
+      "id": "herald-hours",
+      "title": "Korea Herald 18 Nov delayed opening 19 Nov",
+      "url": "https://www.koreaherald.com/article/10941492",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-19T08:01:10+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Stock market opens one hour later Nov 19 because of Suneung; already in KR_CLOSE."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KDI vừa nâng dự báo tăng trưởng Hàn Quốc năm hai nghìn không trăm hai mươi bảy lên ba phẩy chín phần trăm. Nhưng vì sao nhiều hộ gia đình vẫn cảm thấy khó khăn?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "KDI nâng dự báo tăng trưởng Hàn Quốc năm 2027 lên 3,9%. Vì sao nhiều hộ gia đình vẫn khó khăn?",
+        "score": 94
+      },
+      {
+        "style": "impact",
+        "text": "Chip giúp kinh tế Hàn Quốc tăng trưởng, nhưng sức mua có theo kịp?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Dự báo GDP Hàn Quốc tăng mạnh. Lợi ích có đến với mọi ngành?",
+        "score": 88
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, điều quan trọng hơn lúc này là tăng trưởng ngành chip hay sức mua trong nước? Chia sẻ cùng KCI nhé.",
+    "screenHeadline": "TĂNG TRƯỞNG CÓ LAN TỎA?",
+    "screenSubline": "Chip · Việc làm · Tiêu dùng",
+    "question": "Chip hay sức mua?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Tăng trưởng cao, tiêu dùng yếu",
+      "screenText": "DỰ BÁO 3,9%",
+      "eyebrow": "KCI · SÁNG 19/11",
+      "headline": "KINH TẾ TĂNG, AI HƯỞNG LỢI?",
+      "summary": "KDI dự báo GDP 2027; không phải kết quả thực tế",
+      "voiceText": "KDI vừa nâng dự báo tăng trưởng Hàn Quốc năm hai nghìn không trăm hai mươi bảy lên ba phẩy chín phần trăm. Nhưng vì sao nhiều hộ gia đình vẫn cảm thấy khó khăn?",
+      "source": "Yonhap/KDI 18/11",
+      "sourceIds": [
+        "kdi-yonhap"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "3,9%",
+        "qualifier": "KDI dự báo tăng trưởng GDP 2027"
+      },
+      "stats": []
+    },
+    {
+      "id": "growth",
+      "title": "KDI nâng triển vọng",
+      "screenText": "2,2% → 3,9%",
+      "eyebrow": "DỰ BÁO KINH TẾ",
+      "headline": "CHIP ĐẨY DỰ BÁO TĂNG",
+      "summary": "KDI nâng dự báo 2027 từ 2,2% lên 3,9%",
+      "voiceText": "Theo công bố ngày mười tám tháng mười một, Viện Phát triển Hàn Quốc, gọi tắt là KDI, nâng dự báo tăng trưởng năm sau từ hai phẩy hai lên ba phẩy chín phần trăm. Dự báo cho năm nay cũng được nâng lên ba phẩy tám phần trăm. Nguyên nhân chính là nhu cầu chip phục vụ trí tuệ nhân tạo, giúp xuất khẩu và đầu tư thiết bị tăng. Đây là các con số dự báo, chưa phải GDP đã thực hiện.",
+      "source": "Yonhap/KDI 18/11",
+      "sourceIds": [
+        "kdi-yonhap"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Dự báo cũ",
+            "value": 2.2,
+            "display": "2,2%"
+          },
+          {
+            "label": "Dự báo mới",
+            "value": 3.9,
+            "display": "3,9%"
+          }
+        ],
+        "qualifier": "Tăng trưởng GDP 2027 · KDI"
+      },
+      "stats": [
+        {
+          "label": "2026 dự báo",
+          "value": "3,8%"
+        },
+        {
+          "label": "2027 dự báo",
+          "value": "3,9%"
+        }
+      ]
+    },
+    {
+      "id": "households",
+      "title": "Lợi ích chưa lan rộng",
+      "screenText": "CHIP MẠNH, TIÊU DÙNG YẾU",
+      "eyebrow": "SỨC MUA TRONG NƯỚC",
+      "headline": "TĂNG TRƯỞNG CHƯA ĐỀU",
+      "summary": "Reuters 18/11: tác động khác nhau giữa các ngành",
+      "voiceText": "Nhưng câu chuyện không chỉ có chip. Reuters ngày mười tám tháng mười một cho biết lợi ích từ làn sóng bán dẫn vẫn tập trung ở những doanh nghiệp sử dụng nhiều vốn, trong khi việc làm và sức mua của hộ gia đình chưa cải thiện tương xứng. Biến động thị trường cổ phiếu cũng gây áp lực lên tâm lý chi tiêu. Vì vậy, dự báo GDP cao hơn không có nghĩa tất cả ngành nghề đều phục hồi cùng tốc độ.",
+      "source": "Reuters 18/11",
+      "sourceIds": [
+        "reuters-consumption"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "<1%",
+        "qualifier": "Tỷ trọng lao động ngành chip · Reuters"
+      },
+      "stats": []
+    },
+    {
+      "id": "market",
+      "title": "Lịch giao dịch đặc biệt",
+      "screenText": "HÔM NAY MỞ CỬA MUỘN",
+      "eyebrow": "LỊCH GIAO DỊCH 19/11",
+      "headline": "CHÚ Ý GIỜ MỞ CỬA",
+      "summary": "Suneung · KRX bắt đầu muộn một giờ",
+      "voiceText": "Với thị trường chứng khoán, KOSPI đã đóng cửa phiên chính hôm qua tại năm nghìn không trăm sáu mươi bảy phẩy bốn bốn điểm. Đây không phải giá sáng nay. Đặc biệt, hôm nay có kỳ thi đại học Suneung, nên phiên giao dịch chính mở cửa muộn một giờ. Tại thời điểm bản tin này, chưa có giá mở cửa KRX để kết luận thị trường tăng hay giảm.",
+      "source": "Yonhap; Korea Herald 18/11",
+      "sourceIds": [
+        "yonhap-close",
+        "herald-hours"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "10:00",
+        "qualifier": "KRX regular open · 19/11 KST"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Điểm cần theo dõi",
+      "screenText": "TĂNG TRƯỞNG CÓ LAN TỎA?",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "THEO DÕI SỨC MUA",
+      "summary": "Chip · Tiêu dùng · Dòng tiền",
+      "voiceText": "Điều cần theo dõi tiếp theo là liệu doanh thu chip có chuyển thành việc làm, thu nhập và tiêu dùng rộng hơn hay không. Một dự báo tăng trưởng tích cực vẫn cần được kiểm chứng bằng dữ liệu thực tế.",
+      "source": "KDI; Reuters 18/11",
+      "sourceIds": [
+        "kdi-yonhap",
+        "reuters-consumption"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dự báo tăng trưởng",
+          "Sức mua hộ gia đình",
+          "Dòng vốn sau mở cửa"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "KDI vừa nâng dự báo tăng trưởng Hàn Quốc năm hai nghìn không trăm hai mươi bảy lên ba phẩy chín phần trăm.",
+  "caption": "🇰🇷 KDI nâng dự báo tăng trưởng Hàn Quốc năm 2027 lên 3,9%, nhưng sức mua trong nước vẫn chịu áp lực. Anh chị nghĩ điều gì quan trọng hơn? #KCI #KinhTeHanQuoc"
+}
