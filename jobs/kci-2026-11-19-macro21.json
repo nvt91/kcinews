@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-19-macro21",
+  "articleId": "KCI-20261119-MACRO21",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "edition": "19/11/2026 MACRO21 KST",
+  "dataAsOf": "2026-11-19T21:00:23+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Mỹ sắp công bố thất nghiệp theo bang: đồng won cần theo dõi điều gì?",
+  "articlePath": "editorial/2026-11-19/macro21.md",
+  "eventKeys": [
+    "bls-state-employment-release-2026-11-20",
+    "bls-import-prices-release-2026-11-17",
+    "us-labor-fed-krw-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "At 21:00 KST 19 Nov 2026, BLS October 2026 State Employment and Unemployment release is scheduled for 20 Nov 10:00 EST = 21 Nov 00:00 KST, NOT YET PUBLISHED. The Nov 17 US import price release is historical context only; no current KRW quote or asserted Fed decision.",
+  "sourceLedger": [
+    {
+      "id": "bls-calendar",
+      "title": "BLS November 2026 release calendar, updated November 3",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-19T21:00:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 State Employment and Unemployment release scheduled November 20 at 10:00 Eastern Standard Time, November 21 at 00:00 KST.",
+        "No BLS state labor release scheduled on November 19."
+      ]
+    },
+    {
+      "id": "bls-import",
+      "title": "BLS October 2026 import/export price indexes, released Nov 17",
+      "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+      "eventDate": "2026-11-17",
+      "checkedAt": "2026-11-19T21:00:23+09:00",
+      "kind": "primary",
+      "facts": [
+        "Previously released US import price indexes are not Korean import prices and are not state employment data."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Một báo cáo lao động Mỹ sẽ ra lúc nửa đêm giờ Hàn. Vì sao đồng won cần theo dõi, dù đây chưa phải quyết định lãi suất?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Một báo cáo lao động Mỹ sẽ ra lúc nửa đêm giờ Hàn. Vì sao đồng won cần theo dõi, dù đây chưa phải quyết định lãi suất?",
+        "score": 92
+      },
+      {
+        "style": "impact",
+        "text": "Dữ liệu việc làm theo bang của Mỹ có thể thay đổi kỳ vọng lãi suất ra sao?",
+        "score": 89
+      },
+      {
+        "style": "question",
+        "text": "Tại sao tin lao động Mỹ công bố sau 21 giờ lại liên quan tới đồng won?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Hãy lưu lại ba điều cần đối chiếu sau khi số liệu công bố: mức thay đổi việc làm, lợi suất trái phiếu Mỹ và tỷ giá đô la trên won. Theo dõi Korea Capital Insight để cập nhật nhé.",
+    "screenHeadline": "BA ĐIỂM CẦN THEO DÕI",
+    "screenSubline": "Việc làm · Lợi suất Mỹ · USD/KRW"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Dữ liệu lao động Mỹ sắp ra",
+      "screenText": "LAO ĐỘNG MỸ SẮP RA",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "LAO ĐỘNG MỸ SẮP RA",
+      "summary": "Phân tích có điều kiện",
+      "voiceText": "Một báo cáo lao động Mỹ sẽ ra lúc nửa đêm giờ Hàn. Vì sao đồng won cần theo dõi, dù đây chưa phải quyết định lãi suất?",
+      "source": "BLS · lịch công bố 20/11/2026",
+      "sourceIds": [
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "00:00",
+        "qualifier": "KST 21/11 · dữ liệu theo bang"
+      },
+      "stats": []
+    },
+    {
+      "id": "facts",
+      "title": "Mốc công bố lúc nửa đêm",
+      "screenText": "00:00 KST · 21/11",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "00:00 KST · 21/11",
+      "summary": "BLS · lịch 20/11 10:00 EST",
+      "voiceText": "Theo lịch chính thức của Cục Thống kê Lao động Mỹ, báo cáo việc làm và thất nghiệp theo bang cho tháng mười dự kiến công bố ngày hai mươi tháng mười một, lúc mười giờ sáng giờ miền Đông. Tại Hàn Quốc, thời điểm tương ứng là đúng nửa đêm bước sang ngày hai mươi mốt. Lúc bản tin này lên sóng, kết quả chưa được công bố.",
+      "source": "BLS · lịch công bố 20/11/2026",
+      "sourceIds": [
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "limits",
+      "title": "Chưa phải quyết định Fed",
+      "screenText": "CHƯA CÓ KẾT QUẢ",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "CHƯA CÓ KẾT QUẢ",
+      "summary": "Chưa công bố lúc 21:00 KST",
+      "voiceText": "Đây là số liệu lao động cấp bang, không phải báo cáo việc làm toàn quốc và cũng không phải một quyết định của Fed. Vì thế, chúng ta không nên gọi con số dự kiến là kết quả thực tế, hoặc dùng số liệu cũ như thông tin mới.",
+      "source": "BLS · lịch công bố 20/11/2026",
+      "sourceIds": [
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "transmission",
+      "title": "Kênh truyền dẫn tới đồng won",
+      "screenText": "LỢI SUẤT · USD/KRW",
+      "eyebrow": "VĨ MÔ · MỸ VÀ HÀN",
+      "headline": "LỢI SUẤT · USD/KRW",
+      "summary": "Phân tích có điều kiện",
+      "voiceText": "Nếu dữ liệu sắp công bố khiến thị trường đánh giá lại sức khỏe việc làm Mỹ, kỳ vọng về chính sách tiền tệ có thể thay đổi. Khi đó, lợi suất trái phiếu Mỹ và nhu cầu đô la có thể biến động, gián tiếp tác động tới tỷ giá đô la trên won. Nhưng mức độ phản ứng còn phụ thuộc các dữ liệu khác, dòng vốn và tâm lý rủi ro. Không có một kết quả tỷ giá được bảo đảm.",
+      "source": "BLS · lịch công bố 20/11/2026",
+      "sourceIds": [
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Đọc dữ liệu đúng thời điểm",
+      "screenText": "ĐỐI CHIẾU SAU CÔNG BỐ",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "ĐỐI CHIẾU SAU CÔNG BỐ",
+      "summary": "Phân tích có điều kiện",
+      "voiceText": "Điểm cần nhớ tối nay là mốc công bố nằm sau bản tin, không phải trước. Khi dữ liệu thực tế xuất hiện, hãy đối chiếu với kỳ vọng, rồi kiểm tra lợi suất và tỷ giá tại cùng thời điểm. Đừng suy ra xu hướng chỉ từ một thông báo lịch.",
+      "source": "BLS · lịch công bố 20/11/2026",
+      "sourceIds": [
+        "bls-calendar"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Việc làm theo bang",
+          "Lợi suất Mỹ",
+          "USD/KRW"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Một báo cáo lao động Mỹ sẽ ra lúc nửa đêm giờ Hàn. Vì sao đồng won cần theo dõi, dù đây chưa phải quyết định lãi suất?",
+  "caption": "🇺🇸 Nửa đêm mai, Mỹ dự kiến công bố dữ liệu việc làm theo bang. Vì sao đồng won cũng cần theo dõi? Cùng tìm hiểu nhé! #KoreaCapitalInsight #ViMo"
+}
