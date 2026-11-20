@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-20-kr-close",
+  "articleId": "KCI-20261120-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "20/11/2026 KR_CLOSE · KRX regular close",
+  "dataAsOf": "2026-11-20T17:33:47+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 5,21%, KOSDAQ giảm 5,71%: khối ngoại và nhóm chip chịu áp lực",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-20/kr-close.md",
+  "sourceDisclaimer": "KRX regular close 20 Nov 2026; NXT excluded; direct KRX daily table not fetched, News1 and Asia Business Daily corroborate. Flows amounts omitted due to source discrepancies.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-20",
+    "krx-chip-selloff-2026-11-20",
+    "krx-foreign-institution-flow-2026-11-20",
+    "krx-sell-sidecars-2026-11-20"
+  ],
+  "sourceLedger": [
+    {
+      "id": "news1-close",
+      "title": "News1 20 Nov 15:56 KRX close",
+      "url": "https://www.news1.kr/photos/8225471",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-20T17:33:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4869.96 -5.21%, KOSDAQ 645.68 -5.71%, KRX close"
+      ]
+    },
+    {
+      "id": "asia-close",
+      "title": "Asia Business Daily 20 Nov 15:59 KRX close and sector",
+      "url": "https://view.asiae.co.kr/en/article/2026112015594961221",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-20T17:33:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4869.96 -5.21%, KOSDAQ 645.68 -5.71%",
+        "Samsung Electronics -7.0%, SK hynix -5.9%; foreign and institutional investors net sellers in KOSPI",
+        "Sell-sidecars triggered at 11:54 and 13:28 in KOSPI/KOSDAQ respectively"
+      ]
+    },
+    {
+      "id": "news1-report",
+      "title": "News1 20 Nov 15:37 index close",
+      "url": "https://www.news1.kr/finance/general-stock/6361112",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-20T17:33:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4869.96 -5.21%, KOSDAQ 645.68 -5.71%"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Chỉ trong một phiên, KOSPI mất hơn năm phần trăm và rơi xuống dưới bốn nghìn chín trăm điểm. Điều gì đang gây áp lực lên chứng khoán Hàn Quốc?",
+    "candidates": [
+      {
+        "style": "shock",
+        "text": "Chỉ trong một phiên, KOSPI mất hơn năm phần trăm và rơi xuống dưới bốn nghìn chín trăm điểm. Điều gì đang gây áp lực lên chứng khoán Hàn Quốc?",
+        "score": 95
+      },
+      {
+        "style": "comparison",
+        "text": "KOSPI và KOSDAQ cùng giảm hơn năm phần trăm. Vì sao nhóm chip chịu áp lực mạnh?",
+        "score": 91
+      },
+      {
+        "style": "question",
+        "text": "Sau một phiên đỏ sâu, nhà đầu tư Hàn Quốc cần theo dõi điều gì tiếp theo?",
+        "score": 86
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Anh chị đang chú ý nhất đến dòng vốn hay nhóm chip? Bình luận góc nhìn cùng KCI nhé.",
+    "screenHeadline": "ĐIỀU GÌ ĐÁNG THEO DÕI?",
+    "screenSubline": "Dòng vốn · Chip · Biến động",
+    "question": "Anh chị đang chú ý nhất đến dòng vốn hay nhóm chip?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Thị trường giảm sâu",
+      "screenText": "KOSPI GIẢM 5,21%",
+      "eyebrow": "KCI · CHIỀU 20/11",
+      "headline": "CHỨNG KHOÁN HÀN GIẢM SÂU",
+      "summary": "KRX regular close · 20/11/2026",
+      "voiceText": "Chỉ trong một phiên, KOSPI mất hơn năm phần trăm và rơi xuống dưới bốn nghìn chín trăm điểm. Điều gì đang gây áp lực lên chứng khoán Hàn Quốc? Cùng nhìn vào ba diễn biến quan trọng sau phiên.",
+      "source": "News1 · Asia Business Daily 20/11",
+      "sourceIds": [
+        "news1-close",
+        "asia-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−5,21%",
+        "qualifier": "KOSPI · KRX 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "indices",
+      "title": "Hai chỉ số cùng mất trên năm phần trăm",
+      "screenText": "KOSPI −5,21% · KOSDAQ −5,71%",
+      "eyebrow": "THỊ TRƯỜNG KRX",
+      "headline": "CẢ HAI CHỈ SỐ CÙNG GIẢM",
+      "summary": "Giá đóng cửa phiên chính, không cộng NXT",
+      "voiceText": "Theo News1 và Asia Business Daily, KOSPI đóng cửa ở bốn nghìn tám trăm sáu mươi chín phẩy chín sáu điểm, giảm năm phẩy hai mốt phần trăm. KOSDAQ xuống sáu trăm bốn mươi lăm phẩy sáu tám điểm, giảm năm phẩy bảy mốt phần trăm. Cả hai đều mất hơn năm phần trăm trong một ngày. Đây là giá đóng cửa phiên chính KRX ngày hai mươi tháng mười một, không phải báo giá NXT sau giờ.",
+      "source": "News1; Asia Business Daily 20/11",
+      "sourceIds": [
+        "news1-close",
+        "asia-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -5.21,
+            "display": "−5,21%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -5.71,
+            "display": "−5,71%"
+          }
+        ],
+        "qualifier": "KRX regular close · 20/11"
+      },
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "4.869,96",
+          "tone": "down"
+        },
+        {
+          "label": "KOSDAQ",
+          "value": "645,68",
+          "tone": "down"
+        }
+      ]
+    },
+    {
+      "id": "flows",
+      "title": "Khối ngoại và tổ chức bán",
+      "screenText": "ÁP LỰC BÁN LAN RỘNG",
+      "eyebrow": "DÒNG VỐN & BÁN DẪN",
+      "headline": "CHIP GIẢM, KHỐI NGOẠI BÁN",
+      "summary": "Số liệu giao dịch KOSPI · 20/11",
+      "voiceText": "Áp lực không chỉ nằm ở một nhóm cổ phiếu. Asia Business Daily ghi nhận nhà đầu tư nước ngoài và tổ chức cùng bán ròng trên KOSPI, trong khi nhà đầu tư cá nhân mua ròng. Samsung Electronics giảm bảy phần trăm, còn SK hynix giảm năm phẩy chín phần trăm. Nhóm điện tử và thiết bị điện cũng nằm trong các ngành giảm mạnh. Đây là tín hiệu về sức ép bán trên diện rộng, nhưng chưa đủ để kết luận xu hướng những phiên tới.",
+      "source": "Asia Business Daily 20/11",
+      "sourceIds": [
+        "asia-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung",
+            "value": -7,
+            "display": "−7,0%"
+          },
+          {
+            "label": "SK hynix",
+            "value": -5.9,
+            "display": "−5,9%"
+          }
+        ],
+        "qualifier": "KRX regular close 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "sidecars",
+      "title": "Cơ chế sidecar được kích hoạt",
+      "screenText": "SIDE-CAR ĐƯỢC KÍCH HOẠT",
+      "eyebrow": "BIẾN ĐỘNG TRONG PHIÊN",
+      "headline": "LỆNH BÁN CHƯƠNG TRÌNH TẠM NGỪNG",
+      "summary": "KOSPI 11:54 · KOSDAQ 13:28 KST",
+      "voiceText": "Mức biến động lớn còn khiến cơ chế sidecar bán được kích hoạt ở cả hai thị trường. Theo Asia Business Daily, thời điểm là khoảng mười một giờ năm mươi tư phút trên KOSPI và một giờ hai mươi tám phút chiều trên KOSDAQ. Sidecar tạm dừng hiệu lực lệnh bán theo chương trình, không đồng nghĩa toàn bộ thị trường đóng cửa. Điều đáng theo dõi là liệu lực bán có tiếp diễn trong phiên giao dịch kế tiếp.",
+      "source": "Asia Business Daily 20/11",
+      "sourceIds": [
+        "asia-close"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "KOSPI · 11:54 KST",
+          "KOSDAQ · 13:28 KST",
+          "Theo dõi lực bán phiên tới"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Theo dõi phiên tới",
+      "screenText": "LỰC BÁN CÓ HẠ NHIỆT?",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "CHƯA THỂ KẾT LUẬN ĐÃ TẠO ĐÁY",
+      "summary": "Dòng vốn · Chip · Biến động",
+      "voiceText": "Sau phiên giảm sâu, ba điểm cần theo dõi là giao dịch của khối ngoại, diễn biến nhóm bán dẫn và mức độ biến động chung. Một phiên giảm mạnh chưa tự nó xác nhận điều gì sẽ xảy ra tiếp theo.",
+      "source": "News1; Asia Business Daily 20/11",
+      "sourceIds": [
+        "news1-close",
+        "asia-close"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhóm bán dẫn",
+          "Biến động phiên tới"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Chỉ trong một phiên, KOSPI mất hơn năm phần trăm và rơi xuống dưới bốn nghìn chín trăm điểm. Điều gì đang gây áp lực lên chứng khoán Hàn Quốc?",
+  "caption": "📉 KOSPI và KOSDAQ cùng giảm hơn 5%, nhóm chip chịu áp lực lớn. Anh chị đang theo dõi dòng vốn hay cổ phiếu bán dẫn? #KOSPI #KOSDAQ #KCI"
+}
