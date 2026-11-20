@@ -57,7 +57,7 @@
       ]
     },
     {
-      "id": "reuters-boK-20",
+      "id": "reuters-bok-20",
       "title": "Reuters Take Five November 20",
       "url": "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-11-20/",
       "eventDate": "2026-11-20",
@@ -186,7 +186,7 @@
       "source": "Reuters 19–20/11",
       "sourceIds": [
         "reuters-export-19",
-        "reuters-boK-20"
+        "reuters-bok-20"
       ],
       "visual": {
         "kind": "spotlight",
@@ -207,7 +207,7 @@
       "sourceIds": [
         "reuters-global-20",
         "yonhap-krx-20",
-        "reuters-boK-20"
+        "reuters-bok-20"
       ],
       "visual": {
         "kind": "closing",
