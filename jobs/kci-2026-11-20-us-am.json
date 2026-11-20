@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-20-us-am",
+  "articleId": "KCI-20261120-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "20/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-20T09:03:36+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall giảm hơn 2%: Chip Hàn Quốc chịu tác động ra sao?",
+  "scriptTitle": "KCI | Phố Wall giảm mạnh: Thị trường Hàn Quốc cần theo dõi gì?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Phiên Mỹ thứ Năm 19/11/2026 đóng cửa 16:00 EST = 06:00 KST 20/11/2026. Số liệu AP làm tròn, Reuters dùng số chính xác khác do quy ước làm tròn; không phải giá trực tiếp. Phân tích Hàn Quốc là kịch bản có điều kiện.",
+  "eventKeys": [
+    "us-equities-close-2026-11-19",
+    "anthropic-ipo-2026-11-19",
+    "korea-chip-fx-risk-2026-11-20"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-close",
+      "title": "AP US market close Nov 19",
+      "url": "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-20T09:03:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 -2.0% to 7175.83, Dow -2.2% to 49097.06, Nasdaq -2.3% to 23879.20.",
+        "More than 90% of S&P 500 constituents declined; sixth straight S&P decline."
+      ]
+    },
+    {
+      "id": "reuters-close",
+      "title": "Reuters Wall Street sharply lower as Anthropic IPO fails to revive AI sentiment",
+      "url": "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-20T09:03:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P -2.03%, Nasdaq -2.23%, Dow -2.20%; IPO enthusiasm did not prevent broad selloff.",
+        "Investors worry about data center costs and AI infrastructure spending; Nvidia extends decline."
+      ]
+    },
+    {
+      "id": "reuters-ipo",
+      "title": "Reuters global markets Anthropic IPO debut Nov 19",
+      "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-19/",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-20T09:03:36+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Anthropic IPO and market risk sentiment on November 19."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall vừa có một phiên giảm mạnh, cả ba chỉ số lớn đều mất khoảng hai phần trăm.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Phố Wall vừa có một phiên giảm mạnh, cả ba chỉ số lớn đều mất khoảng hai phần trăm."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Phố Wall đồng loạt giảm sâu, điều gì đáng lo nhất cho nhóm chip Hàn Quốc?"
+      },
+      {
+        "style": "risk",
+        "text": "Hơn chín mươi phần trăm cổ phiếu S&P năm trăm giảm trong phiên Mỹ mới nhất."
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, thị trường Hàn Quốc sẽ chịu áp lực từ tâm lý né rủi ro hay được hỗ trợ bởi nhu cầu chip AI? Hãy chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "CHIP HÀN QUỐC SẼ RA SAO?",
+    "screenSubline": "Cùng trao đổi với KCI",
+    "question": "Áp lực tâm lý hay nhu cầu AI quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Phố Wall giảm mạnh",
+      "screenText": "S&P 500 −2,0% | NASDAQ −2,3%",
+      "eyebrow": "PHỐ WALL · 19/11",
+      "headline": "Sắc đỏ lan rộng",
+      "summary": "Đóng cửa phiên Mỹ 19/11",
+      "voiceText": "Phố Wall vừa có một phiên giảm mạnh, cả ba chỉ số lớn đều mất khoảng hai phần trăm. Đây là kết quả đóng cửa ngày mười chín tháng mười một tại Mỹ, không phải giá trực tiếp sáng nay.",
+      "source": "AP / REUTERS · 19/11",
+      "sourceIds": [
+        "ap-close",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "−2,0%",
+          "tone": "down"
+        },
+        {
+          "label": "NASDAQ",
+          "value": "−2,3%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": -2,
+            "display": "−2,0%"
+          },
+          {
+            "label": "NASDAQ",
+            "value": -2.3,
+            "display": "−2,3%"
+          },
+          {
+            "label": "DOW",
+            "value": -2.2,
+            "display": "−2,2%"
+          }
+        ],
+        "qualifier": "AP · đóng cửa Mỹ 19/11"
+      }
+    },
+    {
+      "id": "breadth",
+      "title": "Cảnh 2 — Lực bán lan rộng",
+      "screenText": "HƠN 90% CỔ PHIẾU GIẢM",
+      "eyebrow": "ĐỘ RỘNG THỊ TRƯỜNG",
+      "headline": "Không chỉ riêng công nghệ",
+      "summary": "S&P 500 giảm phiên thứ sáu",
+      "voiceText": "Điểm đáng chú ý là hơn chín mươi phần trăm cổ phiếu trong S&P năm trăm đi xuống. Chỉ số này giảm phiên thứ sáu liên tiếp. Điều đó cho thấy áp lực bán đã lan rộng, thay vì chỉ tập trung vào một vài cổ phiếu công nghệ.",
+      "source": "AP · 19/11",
+      "sourceIds": [
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "CỔ PHIẾU GIẢM",
+          "value": ">90%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": ">90%",
+        "unit": "CỔ PHIẾU S&P 500 GIẢM",
+        "qualifier": "Theo AP, phiên 19/11"
+      }
+    },
+    {
+      "id": "ai",
+      "title": "Cảnh 3 — IPO Anthropic và tâm lý AI",
+      "screenText": "ANTHROPIC IPO | AI BỊ BÁN",
+      "eyebrow": "CÔNG NGHỆ MỸ",
+      "headline": "IPO lớn không kéo nổi thị trường",
+      "summary": "Lo ngại chi phí đầu tư AI",
+      "voiceText": "Ở nhóm AI, đợt chào sàn của Anthropic thu hút chú ý, nhưng không giúp Phố Wall đảo chiều. Reuters ghi nhận nhà đầu tư lo ngại chi phí trung tâm dữ liệu, tốc độ triển khai hạ tầng và khả năng thu hồi vốn. Nvidia cùng nhiều cổ phiếu chip tiếp tục chịu sức ép.",
+      "source": "REUTERS · 19/11",
+      "sourceIds": [
+        "reuters-close",
+        "reuters-ipo"
+      ],
+      "stats": [
+        {
+          "label": "AI",
+          "value": "THẬN TRỌNG",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Anthropic IPO",
+          "Chi phí data center",
+          "Áp lực định giá AI"
+        ]
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 4 — Hàn Quốc cần theo dõi gì?",
+      "screenText": "KOSPI | SK HYNIX | USD/KRW",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "Chip và tỷ giá chịu thử thách",
+      "summary": "Hai kịch bản cần quan sát",
+      "voiceText": "Với Hàn Quốc, nếu tâm lý né rủi ro tiếp tục lan rộng, KOSPI, KOSDAQ và nhóm bán dẫn có thể chịu áp lực đầu phiên. Tuy nhiên, biến động giá cổ phiếu Mỹ chưa đủ chứng minh nhu cầu chip nhớ suy giảm. Hãy theo dõi Samsung Electronics, SK Hynix, dòng vốn ngoại và tỷ giá đô la trên won trước khi kết luận.",
+      "source": "KCI · phân tích có điều kiện từ AP / REUTERS",
+      "sourceIds": [
+        "ap-close",
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Áp lực tâm lý ngắn hạn",
+          "Nhu cầu chip chưa kết luận",
+          "Theo dõi USD/KRW"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh kết — CTA",
+      "screenText": "CHIP HÀN QUỐC SẼ RA SAO?",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Điều gì quan trọng hơn?",
+      "summary": "Theo dõi dữ liệu và rủi ro",
+      "voiceText": "Những phiên tới, hãy chú ý dòng vốn ngoại và diễn biến của nhóm chip. Đây là phân tích kịch bản, không phải dự báo kết quả.",
+      "source": "KCI / AP / REUTERS",
+      "sourceIds": [
+        "ap-close",
+        "reuters-close"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhóm chip",
+          "Tỷ giá USD/KRW"
+        ],
+        "cta": {
+          "headline": "CHIP HÀN QUỐC SẼ RA SAO?",
+          "subline": "Bình luận góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Phố Wall giảm mạnh, nhóm chip Hàn Quốc sẽ chịu ảnh hưởng như thế nào?"
+}
