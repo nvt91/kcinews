@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-21-kr-am",
+  "articleId": "KCI-20261121-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "21/11/2026 KR_AM · weekend outlook",
+  "dataAsOf": "2026-11-21T07:57:47+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall lao dốc, KOSPI dưới 4.900: ba yếu tố cần theo dõi tuần tới",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-21/kr-am.md",
+  "sourceDisclaimer": "Weekend Saturday 21 Nov KST, no KRX/NXT session. US figures are Friday 20 Nov US close; Korean figures are KRX 20 Nov close. BOK rate is Reuters forecast, not decision. KRX direct table unavailable.",
+  "eventKeys": [
+    "us-ai-chip-selloff-2026-11-20-weekend-kr-transmission",
+    "krx-kospi-kosdaq-close-2026-11-20-context-only",
+    "kr-export-1tn-2026-11-19-context-only",
+    "bok-policy-expectations-2026-11-20"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-global-20",
+      "title": "Reuters global markets Nov 20",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T07:57:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US Nasdaq -5.28%, S&P500 -3.70%, chip stocks -10.7% on Friday US close; next Korea trading session not yet open"
+      ]
+    },
+    {
+      "id": "yonhap-krx-20",
+      "title": "Yonhap Nov 20 KRX regular close",
+      "url": "https://www.yna.co.kr/amp/view/AKR20261120137600008",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T07:57:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4869.96 -5.21%, KOSDAQ 645.68 -5.71%, KRX Friday close; foreign net selling sixth consecutive day"
+      ]
+    },
+    {
+      "id": "reuters-export-19",
+      "title": "Reuters Nov 19 export milestone",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-21T07:57:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "South Korea cumulative 2026 exports surpassed USD 1 trillion on November 19; semiconductor-driven, uneven domestic benefits"
+      ]
+    },
+    {
+      "id": "reuters-boK-20",
+      "title": "Reuters Take Five November 20",
+      "url": "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T07:57:47+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Reuters preview anticipates BOK 25bp rate rise to 3.25%; market expectation not policy decision"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall lại giảm mạnh sau khi KOSPI mất hơn năm phần trăm. Thị trường Hàn Quốc sẽ phải đối mặt điều gì trong tuần tới?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Phố Wall lại giảm mạnh sau khi KOSPI mất hơn năm phần trăm. Thị trường Hàn Quốc sẽ phải đối mặt điều gì trong tuần tới?",
+        "score": 94
+      },
+      {
+        "style": "question",
+        "text": "KOSPI giảm sâu, trong khi xuất khẩu Hàn Quốc lập kỷ lục. Vì sao hai tín hiệu lại trái chiều?",
+        "score": 89
+      },
+      {
+        "style": "mechanism",
+        "text": "Nhóm chip Mỹ giảm mạnh. Điều gì có thể ảnh hưởng đến Samsung và SK hynix tuần tới?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, dòng vốn ngoại hay triển vọng ngành chip sẽ quyết định tâm lý thị trường tuần tới? Chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "ĐIỀU GÌ QUAN TRỌNG NHẤT?",
+    "screenSubline": "Dòng vốn · Chip · BOK",
+    "question": "Dòng vốn ngoại hay triển vọng ngành chip sẽ quyết định tâm lý tuần tới?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Hai cú sốc liên tiếp",
+      "screenText": "CHIP MỸ GIẢM 10,7%",
+      "eyebrow": "KCI · SÁNG THỨ BẢY 21/11",
+      "headline": "ÁP LỰC CHƯA HẠ NHIỆT",
+      "summary": "Mỹ đóng cửa 20/11 · Hàn Quốc nghỉ cuối tuần",
+      "voiceText": "Phố Wall lại giảm mạnh sau khi KOSPI mất hơn năm phần trăm. Thị trường Hàn Quốc sẽ phải đối mặt điều gì trong tuần tới? Đây là bản tổng hợp cuối tuần, không phải diễn biến giao dịch trực tiếp sáng nay.",
+      "source": "Reuters 20/11",
+      "sourceIds": [
+        "reuters-global-20"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−10,7%",
+        "qualifier": "Nhóm chip Mỹ · phiên 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "us",
+      "title": "Áp lực từ Phố Wall",
+      "screenText": "NASDAQ GIẢM 5,28%",
+      "eyebrow": "TÂM LÝ THỊ TRƯỜNG",
+      "headline": "CÔNG NGHỆ MỸ TIẾP TỤC GIẢM",
+      "summary": "Phiên Mỹ kết thúc ngày 20/11",
+      "voiceText": "Reuters ghi nhận Nasdaq mất năm phẩy hai tám phần trăm, S&P năm trăm giảm ba phẩy bảy phần trăm, còn nhóm cổ phiếu chip Mỹ giảm mười phẩy bảy phần trăm trong phiên thứ Sáu. Nhà đầu tư lo ngại mức định giá và hiệu quả của khoản đầu tư khổng lồ vào trí tuệ nhân tạo. Với Hàn Quốc, đây là rủi ro tâm lý đối với Samsung Electronics và SK hynix khi giao dịch trở lại, không phải dự báo giá cổ phiếu.",
+      "source": "Reuters 20/11",
+      "sourceIds": [
+        "reuters-global-20"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -5.28,
+            "display": "−5,28%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -3.7,
+            "display": "−3,70%"
+          }
+        ],
+        "qualifier": "Mỹ · 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "kr",
+      "title": "Thị trường Hàn Quốc và dòng vốn",
+      "screenText": "KOSPI ĐÓNG CỬA 4.869,96",
+      "eyebrow": "BỐI CẢNH HÀN QUỐC",
+      "headline": "KHỐI NGOẠI VẪN BÁN RÒNG",
+      "summary": "KRX đóng cửa thứ Sáu 20/11",
+      "voiceText": "Trước đó, KOSPI đã giảm năm phẩy hai mốt phần trăm, đóng cửa tại bốn nghìn tám trăm sáu mươi chín phẩy chín sáu điểm. KOSDAQ giảm năm phẩy bảy mốt phần trăm. Yonhap ghi nhận khối ngoại bán ròng cổ phiếu KOSPI sáu phiên liên tiếp. Các con số này thuộc phiên KRX ngày hai mươi tháng mười một; thứ Bảy không có phiên KRX mới. Điều cần theo dõi là lực bán có giảm khi thị trường mở cửa trở lại hay không.",
+      "source": "Yonhap 20/11",
+      "sourceIds": [
+        "yonhap-krx-20"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -5.21,
+            "display": "−5,21%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -5.71,
+            "display": "−5,71%"
+          }
+        ],
+        "qualifier": "KRX close 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "macro",
+      "title": "Xuất khẩu mạnh nhưng rủi ro chính sách",
+      "screenText": "XUẤT KHẨU VƯỢT 1.000 TỶ USD",
+      "eyebrow": "KINH TẾ HÀN QUỐC",
+      "headline": "CHIP MẠNH, CẦU NỘI ĐỊA YẾU",
+      "summary": "Xuất khẩu lũy kế 2026 · Reuters 19/11",
+      "voiceText": "Trong khi đó, xuất khẩu lũy kế của Hàn Quốc đã vượt một nghìn tỷ đô la Mỹ ngày mười chín tháng mười một, chủ yếu nhờ bán dẫn. Nhưng Reuters lưu ý lợi ích chưa lan tỏa đều sang tiêu dùng và việc làm. Báo cáo triển vọng ngày hai mươi tháng mười một cũng đề cập khả năng Ngân hàng Trung ương Hàn Quốc tăng lãi suất. Đây mới là dự báo, chưa phải quyết định chính sách.",
+      "source": "Reuters 19–20/11",
+      "sourceIds": [
+        "reuters-export-19",
+        "reuters-boK-20"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": ">1.000 tỷ USD",
+        "qualifier": "Xuất khẩu lũy kế 2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Ba điều cần quan sát",
+      "screenText": "TUẦN TỚI THEO DÕI GÌ?",
+      "eyebrow": "KCI · TRIỂN VỌNG",
+      "headline": "DÒNG VỐN · CHIP · LÃI SUẤT",
+      "summary": "Không phải khuyến nghị giao dịch",
+      "voiceText": "Tóm lại, ba yếu tố đáng theo dõi trong tuần tới là dòng vốn ngoại, triển vọng nhu cầu chip và tín hiệu lãi suất từ BOK. Thị trường đang biến động mạnh, nhưng một phiên giảm sâu không đủ để xác nhận xu hướng tiếp theo.",
+      "source": "Reuters; Yonhap",
+      "sourceIds": [
+        "reuters-global-20",
+        "yonhap-krx-20",
+        "reuters-boK-20"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhu cầu chip",
+          "Tín hiệu BOK"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Phố Wall lại giảm mạnh sau khi KOSPI mất hơn năm phần trăm. Thị trường Hàn Quốc sẽ phải đối mặt điều gì trong tuần tới?",
+  "caption": "📉 KOSPI vừa giảm sâu, Phố Wall tiếp tục lao dốc vì nhóm chip. Tuần tới, dòng vốn và lãi suất sẽ ảnh hưởng ra sao? Cùng KCI theo dõi nhé! #KCI #KOSPI"
+}
