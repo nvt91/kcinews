@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-21-kr-close",
+  "articleId": "KCI-20261121-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "21/11/2026 KR_CLOSE · Saturday weekly economy recap",
+  "dataAsOf": "2026-11-21T17:09:38+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Xuất khẩu Hàn Quốc vượt 1.000 tỷ USD nhưng KOSPI giảm sâu: nghịch lý cuối tuần",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-21/kr-close.md",
+  "sourceDisclaimer": "Saturday 21 Nov 2026: no new KRX regular session; index figures are Friday 20 Nov KRX close. Reuters exports event occurred 19 Nov. Citi household impact is estimate, BOK next-week policy is forecast, not decision.",
+  "eventKeys": [
+    "kr-export-trillion-2026-11-19",
+    "krx-weekly-close-2026-11-20",
+    "citi-korean-household-wealth-effect-2026-11-21",
+    "bok-nov-policy-preview-2026-11-21"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-exports",
+      "title": "Reuters 19 Nov 2026 Korea annual exports pass USD 1 trillion",
+      "url": "https://www.reuters.com/world/south-korea-becomes-fourth-country-globally-hit-1-trillion-exports-ai-chip-boom-2026-11-19/",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-21T17:09:38+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Exports passed USD 1 trillion on 19 Nov, fourth country to reach milestone; AI semiconductor demand a major driver"
+      ]
+    },
+    {
+      "id": "reuters-outflows",
+      "title": "Reuters 19 Nov 2026 Korean equity foreign outflows",
+      "url": "https://www.reuters.com/world/asia-pacific/record-profits-record-outflows-sell-korea-trade-stalks-seoul-market-2026-11-19/",
+      "eventDate": "2026-11-19",
+      "checkedAt": "2026-11-21T17:09:38+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Foreign equity selling persists despite strong chip earnings; concern over AI investment returns"
+      ]
+    },
+    {
+      "id": "fn-bok",
+      "title": "Financial News 21 Nov 2026 next week's BOK meeting and market risks",
+      "url": "https://en.fnnews.com/news/202611211105346704",
+      "eventDate": "2026-11-21",
+      "checkedAt": "2026-11-21T17:09:38+09:00",
+      "kind": "secondary",
+      "facts": [
+        "November BOK policy meeting next week; expectations about rate decision are forecasts, not outcomes"
+      ]
+    },
+    {
+      "id": "sed-consumption",
+      "title": "Seoul Economic Daily 21 Nov 2026 Citi household wealth effect estimate",
+      "url": "https://en.sedaily.com/economy/2026/11/21/citi-sees-383-billion-in-korean-household-stock-losses",
+      "eventDate": "2026-11-21",
+      "checkedAt": "2026-11-21T17:09:38+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Citi estimate of household equity losses and potential consumption impact is a model estimate, not observed household consumption"
+      ]
+    },
+    {
+      "id": "close-week",
+      "title": "Gangneung News 21 Nov weekly market analysis",
+      "url": "https://www.gangneungnews.kr/news/articleView.html?idxno=70332",
+      "eventDate": "2026-11-21",
+      "checkedAt": "2026-11-21T17:09:38+09:00",
+      "kind": "secondary",
+      "facts": [
+        "20 Nov KRX KOSPI close 4869.96 (-5.21%), KOSDAQ 645.68 (-5.71%); no Saturday trading"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Xuất khẩu Hàn Quốc vượt một nghìn tỷ đô la, nhưng chứng khoán lại lao dốc. Vì sao hai bức tranh trái ngược?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu Hàn Quốc vượt một nghìn tỷ đô la, nhưng chứng khoán lại lao dốc. Vì sao hai bức tranh trái ngược?",
+        "score": 94
+      },
+      {
+        "style": "question",
+        "text": "Xuất khẩu tăng kỷ lục, vậy vì sao cổ phiếu Hàn Quốc vẫn bị bán mạnh?",
+        "score": 90
+      },
+      {
+        "style": "outlook",
+        "text": "Sau phiên KOSPI giảm hơn năm phần trăm, tuần tới cần theo dõi điều gì?",
+        "score": 84
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Anh chị quan tâm nhất đến xuất khẩu hay chính sách lãi suất? Bình luận cùng KCI nhé.",
+    "screenHeadline": "XUẤT KHẨU HAY LÃI SUẤT?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Anh chị quan tâm nhất đến xuất khẩu hay chính sách lãi suất?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "XUẤT KHẨU KỶ LỤC, CỔ PHIẾU GIẢM",
+      "screenText": "XUẤT KHẨU KỶ LỤC, CỔ PHIẾU GIẢM",
+      "eyebrow": "KCI · CUỐI TUẦN 21/11",
+      "headline": "XUẤT KHẨU KỶ LỤC, CỔ PHIẾU GIẢM",
+      "summary": "Hàn Quốc đạt mốc xuất khẩu lớn nhưng thị trường vẫn chịu sức ép.",
+      "voiceText": "Xuất khẩu Hàn Quốc vượt một nghìn tỷ đô la, nhưng chứng khoán lại lao dốc. Vì sao hai bức tranh trái ngược? Hôm nay là thứ Bảy, không có phiên KRX mới. Chúng ta nhìn lại diễn biến cuối tuần và các tin kinh tế đáng chú ý.",
+      "source": "reuters-exports · close-week",
+      "sourceIds": [
+        "reuters-exports",
+        "close-week"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "XUẤT KHẨU KỶ LỤC, CỔ PHIẾU GIẢM",
+          "Hàn Quốc đạt mốc xuất khẩu lớn nhưng thị trường vẫn chịu sức ép."
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "exports",
+      "title": "XUẤT KHẨU VƯỢT 1.000 TỶ USD",
+      "screenText": "XUẤT KHẨU VƯỢT 1.000 TỶ USD",
+      "eyebrow": "KINH TẾ HÀN QUỐC",
+      "headline": "XUẤT KHẨU VƯỢT 1.000 TỶ USD",
+      "summary": "Mốc được Reuters đưa tin ngày 19/11, không phải số liệu riêng phiên 21/11.",
+      "voiceText": "Theo Reuters, xuất khẩu Hàn Quốc đã vượt một nghìn tỷ đô la trong năm vào ngày mười chín tháng mười một, nhờ nhu cầu chip phục vụ trí tuệ nhân tạo. Đây là cột mốc thương mại quan trọng. Tuy nhiên, tăng trưởng xuất khẩu mạnh không đồng nghĩa mọi doanh nghiệp và hộ gia đình đều hưởng lợi ngay.",
+      "source": "reuters-exports",
+      "sourceIds": [
+        "reuters-exports"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1.000 tỷ USD",
+        "qualifier": "Xuất khẩu năm · Reuters 19/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "market",
+      "title": "KOSPI DƯỚI 4.900 ĐIỂM",
+      "screenText": "KOSPI DƯỚI 4.900 ĐIỂM",
+      "eyebrow": "KINH TẾ HÀN QUỐC",
+      "headline": "KOSPI DƯỚI 4.900 ĐIỂM",
+      "summary": "Đóng cửa KRX thứ Sáu 20/11; thứ Bảy không có phiên mới.",
+      "voiceText": "Ở chiều ngược lại, phiên thứ Sáu ngày hai mươi tháng mười một, KOSPI đóng cửa tại bốn nghìn tám trăm sáu mươi chín phẩy chín sáu điểm, giảm năm phẩy hai mốt phần trăm. KOSDAQ giảm năm phẩy bảy mốt phần trăm. Reuters cho biết nhà đầu tư nước ngoài vẫn lo ngại hiệu quả các khoản đầu tư AI và tiếp tục rút vốn, dù lợi nhuận ngành chip đang mạnh.",
+      "source": "close-week · reuters-outflows",
+      "sourceIds": [
+        "close-week",
+        "reuters-outflows"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -5.21,
+            "display": "−5,21%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -5.71,
+            "display": "−5,71%"
+          }
+        ],
+        "qualifier": "KRX close 20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "consumption",
+      "title": "TÀI SẢN HỘ GIA ĐÌNH CHỊU ÁP LỰC",
+      "screenText": "TÀI SẢN HỘ GIA ĐÌNH CHỊU ÁP LỰC",
+      "eyebrow": "KINH TẾ HÀN QUỐC",
+      "headline": "TÀI SẢN HỘ GIA ĐÌNH CHỊU ÁP LỰC",
+      "summary": "Citi: ước tính tác động, không phải số liệu tiêu dùng thực tế.",
+      "voiceText": "Một diễn biến khác được Seoul Economic Daily đăng hôm nay là ước tính của Citi về tổn thất tài sản chứng khoán của hộ gia đình và nguy cơ ảnh hưởng đến tiêu dùng. Cần lưu ý đây là mô hình dự báo, không phải số liệu chi tiêu đã xảy ra. Thị trường giảm sâu có thể ảnh hưởng tâm lý tiêu dùng, nhưng mức độ thực tế vẫn cần theo dõi.",
+      "source": "sed-consumption",
+      "sourceIds": [
+        "sed-consumption"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "TÀI SẢN HỘ GIA ĐÌNH CHỊU ÁP LỰC",
+          "Citi: ước tính tác động, không phải số liệu tiêu dùng thực tế."
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "TUẦN TỚI THEO DÕI ĐIỀU GÌ?",
+      "screenText": "TUẦN TỚI THEO DÕI ĐIỀU GÌ?",
+      "eyebrow": "KINH TẾ HÀN QUỐC",
+      "headline": "TUẦN TỚI THEO DÕI ĐIỀU GÌ?",
+      "summary": "BOK · vốn ngoại · nhóm chip",
+      "voiceText": "Tuần tới, thị trường sẽ theo dõi quyết định lãi suất của Ngân hàng Trung ương Hàn Quốc, dòng vốn ngoại và nhóm bán dẫn. Kỳ vọng tăng lãi suất được báo chí nhắc đến chỉ là dự báo, chưa phải quyết định. Anh chị quan tâm nhất đến xuất khẩu hay chính sách lãi suất? Bình luận cùng KCI nhé.",
+      "source": "fn-bok · reuters-outflows",
+      "sourceIds": [
+        "fn-bok",
+        "reuters-outflows"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "TUẦN TỚI THEO DÕI ĐIỀU GÌ?",
+          "BOK · vốn ngoại · nhóm chip"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Xuất khẩu Hàn Quốc vượt một nghìn tỷ đô la, nhưng chứng khoán lại lao dốc. Vì sao hai bức tranh trái ngược?",
+  "caption": "📉 Xuất khẩu Hàn Quốc lập cột mốc mới, nhưng chứng khoán vẫn giảm mạnh. Tuần tới, anh chị chú ý điều gì nhất? #KOSPI #KinhTeHanQuoc #KCI"
+}
