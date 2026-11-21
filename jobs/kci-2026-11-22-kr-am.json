@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-22-kr-am",
+  "articleId": "KCI-20261122-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "22/11/2026 KR_AM · Sunday industry outlook",
+  "dataAsOf": "2026-11-22T07:59:14+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Thặng dư thương mại nhờ chip, SK mở rộng hạ tầng AI: điểm nghẽn tăng trưởng Hàn Quốc",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-22/kr-am.md",
+  "sourceDisclaimer": "Sunday Nov 22 no KRX trading. China trade figures Jan-Oct 2026 as reported by Seoul Economic Daily citing KITA and ministry; primary tables not independently retrieved. Ulsan visit Nov 21; workforce review not enacted policy. BOK meeting Nov 26 is future event.",
+  "eventKeys": [
+    "kr-cn-trade-exchip-deficit-kita-2026-11-21",
+    "sk-ulsan-ai-datacenter-presidential-visit-2026-11-21",
+    "kr-weekend-bok-calendar-2026-11-22"
+  ],
+  "sourceLedger": [
+    {
+      "id": "sed-china-21",
+      "title": "Seoul Economic Daily 21 Nov Korea-China trade composition",
+      "url": "https://en.sedaily.com/economy/2026/11/21/koreas-china-trade-surplus-returns-but-deficit-widens",
+      "eventDate": "2026-11-21",
+      "checkedAt": "2026-11-22T07:59:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KITA and industry ministry data as reported: Jan-Oct Korea-China trade surplus USD 43.3bn, semiconductor exports USD 124.3bn out of USD 198.5bn exports to China (63%), ex-chip trade deficit USD 41.5bn."
+      ]
+    },
+    {
+      "id": "sed-sk-ulsan-21",
+      "title": "Seoul Economic Daily 21 Nov President visits SK Ulsan AI data center",
+      "url": "https://en.sedaily.com/politics/2026/11/21/lee-visits-sk-ai-data-center-in-ulsan-says-speed-is-key-to",
+      "eventDate": "2026-11-21",
+      "checkedAt": "2026-11-22T07:59:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "President Lee visited SK AI data center construction site in Ulsan on Nov 21, called for speed, noted construction workforce shortage and asked ministries to consider measures; no new labor policy announced."
+      ]
+    },
+    {
+      "id": "sed-market-22",
+      "title": "Seoul Economic Daily 22 Nov weekend market outlook",
+      "url": "https://en.sedaily.com/market/2026/11/22/retail-investors-brace-for-monday-as-us-stocks-plunge-again",
+      "eventDate": "2026-11-22",
+      "checkedAt": "2026-11-22T07:59:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Sunday no KRX session; Nov 20 KOSPI close 4869.96 -5.21%; market commentary anticipates BOK meeting Nov 26, not yet decision."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc thặng dư thương mại với Trung Quốc, nhưng nếu bỏ chip ra thì lại thâm hụt. Vì sao điều này đáng lo?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hàn Quốc thặng dư thương mại với Trung Quốc, nhưng nếu bỏ chip ra thì lại thâm hụt. Vì sao điều này đáng lo?",
+        "score": 94
+      },
+      {
+        "style": "mechanism",
+        "text": "Chip chiếm tới sáu mươi ba phần trăm xuất khẩu Hàn Quốc sang Trung Quốc. Điều gì xảy ra với các ngành còn lại?",
+        "score": 91
+      },
+      {
+        "style": "question",
+        "text": "SK xây trung tâm dữ liệu AI ở Ulsan, nhưng thiếu nhân lực thi công. Đâu là nút thắt tăng trưởng?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, Hàn Quốc cần ưu tiên đa dạng xuất khẩu hay đầu tư hạ tầng AI? Chia sẻ cùng KCI và theo dõi bản tin tiếp theo nhé.",
+    "screenHeadline": "ĐA DẠNG HÓA HAY HẠ TẦNG AI?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Hàn Quốc cần ưu tiên đa dạng xuất khẩu hay hạ tầng AI?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Nghịch lý thương mại",
+      "screenText": "THẶNG DƯ NHỜ CHIP",
+      "eyebrow": "KCI · CHỦ NHẬT 22/11",
+      "headline": "THẶNG DƯ NHỜ CHIP",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX mới",
+      "voiceText": "Hàn Quốc thặng dư thương mại với Trung Quốc, nhưng nếu bỏ chip ra thì lại thâm hụt. Vì sao điều này đáng lo? Đây là bản tin kinh tế Hàn Quốc sáng Chủ nhật, khi thị trường chứng khoán không giao dịch.",
+      "source": "sed-china-21",
+      "sourceIds": [
+        "sed-china-21"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "63%",
+        "qualifier": "Tỷ trọng chip trong xuất khẩu sang Trung Quốc · 10 tháng"
+      },
+      "stats": []
+    },
+    {
+      "id": "trade",
+      "title": "Thặng dư phụ thuộc bán dẫn",
+      "screenText": "KHÔNG CHIP: THÂM HỤT",
+      "eyebrow": "KCI · CHỦ NHẬT 22/11",
+      "headline": "KHÔNG CHIP: THÂM HỤT",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX mới",
+      "voiceText": "Theo số liệu Hiệp hội Thương mại quốc tế Hàn Quốc và Bộ Công nghiệp được Seoul Economic Daily dẫn ngày hai mươi mốt tháng mười một, cán cân thương mại với Trung Quốc trong mười tháng đầu năm thặng dư bốn mươi ba phẩy ba tỷ đô la. Nhưng nếu loại bán dẫn, Hàn Quốc lại thâm hụt bốn mươi mốt phẩy năm tỷ đô la. Chip chiếm sáu mươi ba phần trăm xuất khẩu sang thị trường này.",
+      "source": "sed-china-21",
+      "sourceIds": [
+        "sed-china-21"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−41,5 tỷ USD",
+        "qualifier": "Cán cân không gồm chip · 10 tháng 2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "implication",
+      "title": "Thách thức ngoài ngành chip",
+      "screenText": "Ô TÔ VÀ PIN CHỊU SỨC ÉP",
+      "eyebrow": "KCI · CHỦ NHẬT 22/11",
+      "headline": "Ô TÔ VÀ PIN CHỊU SỨC ÉP",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX mới",
+      "voiceText": "Điểm đáng chú ý là thâm hụt ở ô tô và pin sạc tiếp tục gia tăng. Điều này cho thấy tăng trưởng thương mại chưa lan đều tới các ngành công nghiệp. Để bớt phụ thuộc, Hàn Quốc cần phát triển sản phẩm và linh kiện có lợi thế cạnh tranh riêng, thay vì chỉ dựa vào chu kỳ bán dẫn.",
+      "source": "sed-china-21",
+      "sourceIds": [
+        "sed-china-21"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Ô tô",
+          "Pin sạc",
+          "Đa dạng xuất khẩu"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "sk",
+      "title": "SK và trung tâm dữ liệu AI",
+      "screenText": "ULSAN: ĐẦU TƯ AI",
+      "eyebrow": "KCI · CHỦ NHẬT 22/11",
+      "headline": "ULSAN: ĐẦU TƯ AI",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX mới",
+      "voiceText": "Cũng trong ngày hai mươi mốt, Tổng thống Lee Jae Myung đến thăm công trường trung tâm dữ liệu AI của SK tại Ulsan. Ông nhấn mạnh tốc độ triển khai và nêu tình trạng thiếu nhân lực xây dựng các cơ sở công nghệ cao. Chính phủ sẽ xem xét giải pháp nhân lực, nhưng chưa có chính sách mới được ban hành tại chuyến thăm.",
+      "source": "sed-sk-ulsan-21",
+      "sourceIds": [
+        "sed-sk-ulsan-21"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "ULSAN",
+        "qualifier": "SK AI data center · thăm công trường 21/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Điều cần theo dõi",
+      "screenText": "THƯƠNG MẠI · AI · BOK",
+      "eyebrow": "KCI · CHỦ NHẬT 22/11",
+      "headline": "THƯƠNG MẠI · AI · BOK",
+      "summary": "Tổng hợp cuối tuần · không có phiên KRX mới",
+      "voiceText": "Bước sang tuần tới, cần quan sát khả năng đa dạng hóa xuất khẩu, tiến độ hạ tầng AI và cuộc họp chính sách Ngân hàng Trung ương Hàn Quốc dự kiến ngày hai mươi sáu. Đây là các yếu tố cần theo dõi, không phải dự báo giá cổ phiếu. Theo anh chị, Hàn Quốc cần ưu tiên đa dạng xuất khẩu hay đầu tư hạ tầng AI? Chia sẻ cùng KCI và theo dõi bản tin tiếp theo nhé.",
+      "source": "sed-china-21 · sed-sk-ulsan-21 · sed-market-22",
+      "sourceIds": [
+        "sed-china-21",
+        "sed-sk-ulsan-21",
+        "sed-market-22"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Cơ cấu xuất khẩu",
+          "Hạ tầng AI",
+          "BOK 26/11"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Hàn Quốc thặng dư thương mại với Trung Quốc, nhưng nếu bỏ chip ra thì lại thâm hụt. Vì sao điều này đáng lo?",
+  "caption": "🇰🇷 Hàn Quốc thặng dư thương mại nhờ chip, nhưng nhiều ngành vẫn gặp khó. SK cũng đang đẩy mạnh hạ tầng AI. Tuần tới nên theo dõi điều gì? #KCI #KinhTeHanQuoc"
+}
