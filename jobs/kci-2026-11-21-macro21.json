@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-21-macro21",
+  "articleId": "KCI-20261121-MACRO21",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "edition": "21/11/2026 MACRO21 KST · Saturday",
+  "dataAsOf": "2026-11-21T20:59:40+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Thất nghiệp Mỹ 4,1%: ba kênh tác động tới đồng won",
+  "articlePath": "editorial/2026-11-21/macro21.md",
+  "eventKeys": [
+    "bls-state-labor-oct2026-release-nov20",
+    "bls-national-employment-oct2026",
+    "fed-krw-conditional-transmission"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Saturday Nov 21: no KRX regular session. BLS state data published Friday Nov 20 10:00 EST = Saturday Nov 21 00:00 KST. US national unemployment 4.1% is from October 2026. State report is not the national payroll report. No live USD/KRW quote or guaranteed FX direction.",
+  "sourceLedger": [
+    {
+      "id": "bls-laus",
+      "title": "BLS State Employment and Unemployment October 2026",
+      "url": "https://www.bls.gov/news.release/archives/laus_11202026.htm",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T20:59:40+09:00",
+      "kind": "primary",
+      "facts": [
+        "October US national unemployment rate 4.1%, little changed; state release published Nov 20 at 10:00 EST = Nov 21 00:00 KST.",
+        "State unemployment rates decreased in three states and DC, increased in one, stable in 46; payrolls rose in four states.",
+        "October 2025 LAUS data unavailable, so year-over-year unemployment-rate comparisons omitted."
+      ]
+    },
+    {
+      "id": "bls-national",
+      "title": "BLS Employment Situation October 2026",
+      "url": "https://www.bls.gov/news.release/empsit.htm",
+      "eventDate": "2026-11-06",
+      "checkedAt": "2026-11-21T20:59:40+09:00",
+      "kind": "primary",
+      "facts": [
+        "National payroll employment increased 165,000 in October 2026; unemployment 4.1%."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Mỹ vừa công bố thất nghiệp tháng mười ở mức bốn phẩy một phần trăm. Con số này nói gì về lãi suất Mỹ và đồng won Hàn Quốc?",
+    "candidates": [
+      {
+        "style": "impact",
+        "text": "Mỹ vừa công bố thất nghiệp tháng mười ở mức bốn phẩy một phần trăm. Con số này nói gì về lãi suất Mỹ và đồng won Hàn Quốc?",
+        "score": 92
+      },
+      {
+        "style": "question",
+        "text": "Thất nghiệp Mỹ ổn định, đồng won có bớt áp lực không?",
+        "score": 89
+      },
+      {
+        "style": "contrast",
+        "text": "Việc làm Mỹ tăng, nhưng nhiều bang không đổi. Fed sẽ nhìn gì?",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Tuần tới, anh chị hãy đối chiếu ba chỉ báo này cùng thời điểm. Theo dõi Korea Capital Insight để cập nhật nhé.",
+    "screenHeadline": "THEO DÕI 3 CHỈ BÁO",
+    "screenSubline": "Lợi suất Mỹ · USD/KRW · BOK"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "MỸ: THẤT NGHIỆP 4,1%",
+      "screenText": "MỸ: THẤT NGHIỆP 4,1%",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "MỸ: THẤT NGHIỆP 4,1%",
+      "summary": "BLS · tháng 10/2026",
+      "voiceText": "Mỹ vừa công bố thất nghiệp tháng mười ở mức bốn phẩy một phần trăm. Con số này nói gì về lãi suất Mỹ và đồng won Hàn Quốc?",
+      "source": "BLS · 20/11/2026",
+      "sourceIds": [
+        "bls-laus"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "4,1%",
+        "qualifier": "BLS · tháng 10/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "data",
+      "title": "4,1% · THÁNG 10",
+      "screenText": "4,1% · THÁNG 10",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "4,1% · THÁNG 10",
+      "summary": "BLS · tháng 10/2026",
+      "voiceText": "Theo Cục Thống kê Lao động Mỹ, báo cáo theo bang công bố ngày hai mươi tháng mười một cho biết tỷ lệ thất nghiệp toàn quốc tháng mười là bốn phẩy một phần trăm, gần như không đổi so với tháng trước. Đây là dữ liệu tháng mười, không phải diễn biến mới trong ngày thứ Bảy.",
+      "source": "BLS · 20/11/2026",
+      "sourceIds": [
+        "bls-laus"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "states",
+      "title": "3 BANG GIẢM · 1 TĂNG",
+      "screenText": "3 BANG GIẢM · 1 TĂNG",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "3 BANG GIẢM · 1 TĂNG",
+      "summary": "BLS · tháng 10/2026",
+      "voiceText": "Tỷ lệ thất nghiệp giảm tại ba bang và thủ đô Washington, tăng tại một bang, còn bốn mươi sáu bang ổn định. Việc làm phi nông nghiệp tăng đáng kể tại bốn bang. Các con số theo bang không thay thế báo cáo việc làm toàn quốc.",
+      "source": "BLS · 20/11/2026",
+      "sourceIds": [
+        "bls-laus"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "national",
+      "title": "165.000 VIỆC LÀM",
+      "screenText": "165.000 VIỆC LÀM",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "165.000 VIỆC LÀM",
+      "summary": "BLS · tháng 10/2026",
+      "voiceText": "Báo cáo việc làm toàn quốc công bố ngày sáu tháng mười một ghi nhận một trăm sáu mươi lăm nghìn việc làm mới trong tháng mười. Cần xem hai báo cáo đúng phạm vi, và lưu ý dữ liệu tháng mười năm ngoái bị thiếu ở khảo sát thất nghiệp theo bang.",
+      "source": "BLS · 06/11/2026",
+      "sourceIds": [
+        "bls-national"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "impact",
+      "title": "FED → USD/KRW",
+      "screenText": "FED → USD/KRW",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "FED → USD/KRW",
+      "summary": "BLS · tháng 10/2026",
+      "voiceText": "Với Hàn Quốc, dữ liệu lao động Mỹ có thể ảnh hưởng kỳ vọng lãi suất Fed, từ đó tác động tới lợi suất trái phiếu, nhu cầu đô la và tỷ giá đô la trên won. Nhưng hướng đi còn phụ thuộc lạm phát, dòng vốn và chính sách Ngân hàng Trung ương Hàn Quốc. Tuần tới, anh chị hãy đối chiếu ba chỉ báo này cùng thời điểm. Theo dõi Korea Capital Insight để cập nhật nhé.",
+      "source": "BLS · 20/11/2026",
+      "sourceIds": [
+        "bls-laus"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Mỹ vừa công bố thất nghiệp tháng mười ở mức bốn phẩy một phần trăm. Con số này nói gì về lãi suất Mỹ và đồng won Hàn Quốc?",
+  "caption": "🇺🇸 Thất nghiệp Mỹ tháng 10 ở mức 4,1%. Vì sao con số này đáng chú ý với lãi suất và đồng won Hàn Quốc? Cùng tìm hiểu nhé! #KoreaCapitalInsight #ViMo"
+}
