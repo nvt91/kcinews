@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-21-us-am",
+  "articleId": "KCI-20261121-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "21/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-21T09:02:14+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall lao dốc: Nasdaq mất 5,28%, Hàn Quốc cần theo dõi gì?",
+  "scriptTitle": "KCI | Phố Wall giảm sâu: Áp lực lên cổ phiếu chip Hàn Quốc ra sao?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Đóng cửa phiên Mỹ thứ Sáu 20/11/2026 lúc 16:00 EST = 06:00 KST thứ Bảy 21/11/2026. Số liệu Reuters công bố sau phiên; không phải giá trực tiếp. Kịch bản Hàn Quốc có điều kiện.",
+  "eventKeys": [
+    "us-equities-close-2026-11-20",
+    "ai-chip-selloff-2026-11-20",
+    "korea-market-risk-2026-11-21"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-close",
+      "title": "Reuters: Wall St ends sharply lower on AI selloff, Nov 20",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T09:02:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Friday close: S&P 500 -3.70%, Nasdaq -5.28%, Dow -1.93%.",
+        "S&P 500 and Dow closed more than 10% below record closing highs, a correction.",
+        "Anthropic -9.1% a day after IPO."
+      ]
+    },
+    {
+      "id": "reuters-rotation",
+      "title": "Reuters: AI tech rout prompts investors toward value stocks",
+      "url": "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T09:02:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "AI-linked technology shares sold off and investors moved toward Treasury bonds and value shares.",
+        "Broadcom lost roughly 12% in Friday trading; uncertainty over Fed rates weighed on growth shares."
+      ]
+    },
+    {
+      "id": "reuters-week",
+      "title": "Reuters: Week ahead Black Friday and consumer spending",
+      "url": "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-21T09:02:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US consumer spending and Black Friday are a coming catalyst after a volatile AI-led week."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq vừa giảm hơn năm phần trăm trong một phiên, còn S&P năm trăm mất gần bốn phần trăm.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Nasdaq vừa giảm hơn năm phần trăm trong một phiên, còn S&P năm trăm mất gần bốn phần trăm."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Phố Wall lao dốc cuối tuần, nhóm chip Hàn Quốc có thể chịu tác động gì?"
+      },
+      {
+        "style": "risk",
+        "text": "Hai chỉ số lớn của Mỹ đã rơi vào vùng điều chỉnh, khi cổ phiếu AI tiếp tục bị bán."
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, phiên tới nhóm chip Hàn Quốc sẽ chịu áp lực tâm lý hay có lực đỡ từ nhu cầu thực tế? Hãy chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "CHIP HÀN QUỐC SẼ RA SAO?",
+    "screenSubline": "Cùng trao đổi với KCI",
+    "question": "Tâm lý thị trường hay nhu cầu chip quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Nasdaq giảm sâu",
+      "screenText": "NASDAQ −5,28% | S&P 500 −3,70%",
+      "eyebrow": "PHỐ WALL · 20/11",
+      "headline": "Nasdaq mất hơn 5%",
+      "summary": "Đóng cửa phiên Mỹ thứ Sáu 20/11",
+      "voiceText": "Nasdaq vừa giảm hơn năm phần trăm trong một phiên, còn S&P năm trăm mất gần bốn phần trăm. Đây là kết quả đóng cửa phiên thứ Sáu ngày hai mươi tháng mười một tại Mỹ, tương ứng sáu giờ sáng thứ Bảy ở Hàn Quốc. Không phải giá trực tiếp.",
+      "source": "REUTERS · 20/11",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "−5,28%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500",
+          "value": "−3,70%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -5.28,
+            "display": "−5,28%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -3.7,
+            "display": "−3,70%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.93,
+            "display": "−1,93%"
+          }
+        ],
+        "qualifier": "Reuters · đóng cửa Mỹ 20/11"
+      }
+    },
+    {
+      "id": "breadth",
+      "title": "Cảnh 2 — Hai chỉ số vào vùng điều chỉnh",
+      "screenText": "S&P 500 | DOW | ĐIỀU CHỈNH",
+      "eyebrow": "RỦI RO THỊ TRƯỜNG",
+      "headline": "Hai chỉ số vào vùng điều chỉnh",
+      "summary": "Giảm hơn 10% từ đỉnh đóng cửa",
+      "voiceText": "Không chỉ Nasdaq, Dow Jones cũng giảm một phẩy chín ba phần trăm. Theo Reuters, S&P năm trăm và Dow đều đã thấp hơn hơn mười phần trăm so với đỉnh đóng cửa, bước vào vùng điều chỉnh. Đây là mức giảm tính từ đỉnh, khác với biến động riêng của phiên hôm nay.",
+      "source": "REUTERS · 20/11",
+      "sourceIds": [
+        "reuters-close"
+      ],
+      "stats": [
+        {
+          "label": "DOW",
+          "value": "−1,93%",
+          "tone": "down"
+        },
+        {
+          "label": "VÙNG ĐIỀU CHỈNH",
+          "value": ">10%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": ">10%",
+        "unit": "GIẢM TỪ ĐỈNH ĐÓNG CỬA",
+        "qualifier": "Reuters · S&P 500 và Dow 20/11"
+      }
+    },
+    {
+      "id": "ai",
+      "title": "Cảnh 3 — Áp lực lên AI và Big Tech",
+      "screenText": "ANTHROPIC −9,1% | AI BỊ BÁN",
+      "eyebrow": "CÔNG NGHỆ MỸ",
+      "headline": "Áp lực bán cổ phiếu AI",
+      "summary": "Lo ngại định giá và chi phí vốn",
+      "voiceText": "Ở nhóm công nghệ, cổ phiếu Anthropic giảm chín phẩy một phần trăm sau ngày chào sàn. Reuters ghi nhận nhà đầu tư chuyển bớt khỏi cổ phiếu liên quan AI, trong bối cảnh lo ngại chi phí vốn và triển vọng lãi suất. Đây là diễn biến thị trường, chưa đủ để kết luận nhu cầu công nghệ sẽ suy giảm.",
+      "source": "REUTERS · 20/11",
+      "sourceIds": [
+        "reuters-close",
+        "reuters-rotation"
+      ],
+      "stats": [
+        {
+          "label": "ANTHROPIC",
+          "value": "−9,1%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−9,1%",
+        "unit": "ANTHROPIC · PHIÊN 20/11",
+        "qualifier": "Reuters · sau IPO"
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 4 — Tác động có điều kiện đến Hàn Quốc",
+      "screenText": "KOSPI | SK HYNIX | USD/KRW",
+      "eyebrow": "TÁC ĐỘNG TỚI HÀN QUỐC",
+      "headline": "Chip Hàn Quốc cần theo dõi gì?",
+      "summary": "Kịch bản có điều kiện, không dự báo chắc",
+      "voiceText": "Với Hàn Quốc, nếu làn sóng né rủi ro kéo dài, KOSPI, KOSDAQ và nhóm bán dẫn có thể chịu sức ép khi thị trường mở cửa trở lại. Nhưng giá cổ phiếu Mỹ giảm không tự động đồng nghĩa đơn hàng chip nhớ giảm. Cần theo dõi Samsung Electronics, SK Hynix, dòng vốn ngoại và tỷ giá đô la trên won.",
+      "source": "KCI · phân tích có điều kiện từ Reuters",
+      "sourceIds": [
+        "reuters-close",
+        "reuters-rotation"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Tâm lý né rủi ro",
+          "Nhu cầu chip thực tế",
+          "Dòng vốn và USD/KRW"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh kết — CTA",
+      "screenText": "CHIP HÀN QUỐC SẼ RA SAO?",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Chờ tín hiệu phiên tới",
+      "summary": "Theo dõi rủi ro và chất xúc tác",
+      "voiceText": "Trong tuần tới, diễn biến nhóm AI và sức mua của người tiêu dùng Mỹ sẽ là những điểm đáng theo dõi. Đó là các chất xúc tác cần kiểm chứng, không phải kết quả đã xảy ra.",
+      "source": "KCI / REUTERS · 20/11",
+      "sourceIds": [
+        "reuters-week",
+        "reuters-close"
+      ],
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Nhóm AI và chip",
+          "Sức mua tiêu dùng Mỹ",
+          "Dòng vốn và tỷ giá"
+        ],
+        "cta": {
+          "headline": "CHIP HÀN QUỐC SẼ RA SAO?",
+          "subline": "Bình luận góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Phố Wall giảm mạnh, nhóm chip Hàn Quốc sẽ chịu ảnh hưởng như thế nào?"
+}
