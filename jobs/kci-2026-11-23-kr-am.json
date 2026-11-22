@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-23-kr-am",
+  "articleId": "KCI-20261123-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "23/11/2026 KR_AM · Monday morning",
+  "dataAsOf": "2026-11-23T07:59:24+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Hàn Quốc chuẩn bị quỹ bình ổn chứng khoán, thị trường chờ quyết định lãi suất",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-23/kr-am.md",
+  "sourceDisclaimer": "As of 07:59 KST Monday 23 Nov. Fund activation preparedness is not actual deployment. Nov 24 buyback relief pending FSC decision Nov 23. BOK hike is a survey expectation, not a policy decision. No live KRX/NXT quote. Ramyeon Jan-Oct period; USD 2bn is outlook.",
+  "eventKeys": [
+    "kr-finance-emergency-market-stabilization-2026-11-22",
+    "kr-bok-nov26-survey-2026-11-23",
+    "kr-ramyeon-exports-jan-oct-2026-release-nov22"
+  ],
+  "sourceLedger": [
+    {
+      "id": "gov-22",
+      "title": "Kyunghyang 22 Nov Ministry of Finance emergency meeting",
+      "url": "https://www.khan.co.kr/en/article/202611221846007",
+      "eventDate": "2026-11-22",
+      "checkedAt": "2026-11-23T07:59:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Government prepared to activate securities stabilization fund if needed; no capital deployed",
+        "Buyback order limits to ease starting Nov 24 for three months subject to regulator approval",
+        "Special surveillance of illegal short selling"
+      ]
+    },
+    {
+      "id": "reuters-22",
+      "title": "Reuters 22 Nov Korea market stabilization",
+      "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/south-korea-prepares-market-stabilisation-funds-after-kospi-hits-10-month-low/articleshow/136073016.cms",
+      "eventDate": "2026-11-22",
+      "checkedAt": "2026-11-23T07:59:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Government prepared stock stabilization fund following weekly market selloff; not yet an injection"
+      ]
+    },
+    {
+      "id": "sed-23",
+      "title": "Seoul Economic Daily 23 Nov analyst BOK survey",
+      "url": "https://en.sedaily.com/economy/2026/11/23/90-percent-of-experts-see-korea-rate-hike-this-month-some",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T07:59:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "90 percent of surveyed experts expect a rate increase at November BOK meeting; forecast, not policy decision"
+      ]
+    },
+    {
+      "id": "yonhap-22",
+      "title": "Yonhap 22 Nov Korea ramyeon exports",
+      "url": "https://en.yna.co.kr/view/AEN20261122001200320",
+      "eventDate": "2026-11-22",
+      "checkedAt": "2026-11-23T07:59:24+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Jan-Oct 2026 ramyeon exports USD 1.59bn up 26.3% yoy, aT statistics; USD 2bn annual figure is projection"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Hàn Quốc chuẩn bị quỹ bình ổn chứng khoán sau đợt giảm sâu. Nhưng tiền đã được bơm vào thị trường chưa?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Hàn Quốc chuẩn bị quỹ bình ổn chứng khoán sau đợt giảm sâu. Nhưng tiền đã được bơm vào thị trường chưa?",
+        "score": 94
+      },
+      {
+        "style": "mechanism",
+        "text": "Chính phủ Hàn Quốc nới quy định mua cổ phiếu quỹ. Biện pháp này tác động thế nào?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Lãi suất có thể tăng, trong khi chứng khoán giảm mạnh. Hàn Quốc sẽ ứng phó ra sao?",
+        "score": 88
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, biện pháp bình ổn hay quyết định lãi suất sẽ ảnh hưởng tâm lý thị trường nhiều hơn? Chia sẻ cùng KCI và theo dõi cập nhật nhé.",
+    "screenHeadline": "BÌNH ỔN HAY LÃI SUẤT?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Biện pháp bình ổn hay lãi suất quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "CHUẨN BỊ QUỸ BÌNH ỔN",
+      "screenText": "CHUẨN BỊ QUỸ BÌNH ỔN",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "CHUẨN BỊ QUỸ BÌNH ỔN",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Hàn Quốc chuẩn bị quỹ bình ổn chứng khoán sau đợt giảm sâu. Nhưng tiền đã được bơm vào thị trường chưa? Bản tin sáng nay sẽ phân biệt kế hoạch ứng phó với quyết định đã thực hiện.",
+      "source": "gov-22 · reuters-22",
+      "sourceIds": [
+        "gov-22",
+        "reuters-22"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Chuẩn bị quỹ bình ổn",
+          "Chưa xác nhận giải ngân"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "fund",
+      "title": "CHƯA GIẢI NGÂN QUỸ",
+      "screenText": "CHƯA GIẢI NGÂN QUỸ",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "CHƯA GIẢI NGÂN QUỸ",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Ngày hai mươi hai tháng mười một, giới chức tài chính Hàn Quốc họp khẩn và chuẩn bị cơ chế để quỹ bình ổn chứng khoán có thể hoạt động khi cần. Đây chưa phải thông báo đã giải ngân. Mục tiêu là giảm rủi ro bán tháo sau khi thị trường giảm sâu vào thứ Sáu.",
+      "source": "gov-22 · reuters-22",
+      "sourceIds": [
+        "gov-22",
+        "reuters-22"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "CHƯA",
+        "qualifier": "Chưa công bố giải ngân quỹ"
+      },
+      "stats": []
+    },
+    {
+      "id": "buyback",
+      "title": "NỚI GIỚI HẠN MUA LẠI",
+      "screenText": "NỚI GIỚI HẠN MUA LẠI",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "NỚI GIỚI HẠN MUA LẠI",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Chính phủ cũng dự kiến nới giới hạn đặt lệnh mua cổ phiếu quỹ của doanh nghiệp niêm yết trong ba tháng, bắt đầu từ ngày hai mươi bốn, sau bước phê duyệt của cơ quan quản lý. Đồng thời, cơ quan giám sát tăng kiểm tra bán khống bất hợp pháp. Đây là biện pháp quản lý, không bảo đảm thị trường sẽ hồi phục.",
+      "source": "gov-22",
+      "sourceIds": [
+        "gov-22"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dự kiến từ 24/11",
+          "Giám sát bán khống"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "bok",
+      "title": "BOK: DỰ BÁO TĂNG LÃI",
+      "screenText": "BOK: DỰ BÁO TĂNG LÃI",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "BOK: DỰ BÁO TĂNG LÃI",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Một khảo sát do Seoul Economic Daily công bố sáng hai mươi ba tháng mười một cho thấy chín mươi phần trăm chuyên gia được hỏi dự báo Ngân hàng Trung ương Hàn Quốc tăng lãi suất trong tháng này. Đây là dự báo, chưa phải quyết định chính thức. Nhà đầu tư cần theo dõi cuộc họp ngày hai mươi sáu và phản ứng của đồng won.",
+      "source": "sed-23",
+      "sourceIds": [
+        "sed-23"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "90%",
+        "qualifier": "Chuyên gia khảo sát dự báo tăng lãi suất"
+      },
+      "stats": []
+    },
+    {
+      "id": "ramyeon",
+      "title": "XUẤT KHẨU MÌ ĂN LIỀN",
+      "screenText": "XUẤT KHẨU MÌ ĂN LIỀN",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "XUẤT KHẨU MÌ ĂN LIỀN",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Ngoài thị trường vốn, xuất khẩu mì ăn liền Hàn Quốc mười tháng đầu năm đạt một phẩy năm chín tỷ đô la Mỹ, tăng hai mươi sáu phẩy ba phần trăm so với cùng kỳ, theo số liệu aT được Yonhap đưa tin hôm qua. Mốc hai tỷ đô la cho cả năm vẫn là triển vọng, không phải kết quả đã đạt.",
+      "source": "yonhap-22",
+      "sourceIds": [
+        "yonhap-22"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "1,59 tỷ USD",
+        "qualifier": "Xuất khẩu ramyeon · 10 tháng 2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "THEO DÕI PHIÊN MỚI",
+      "screenText": "THEO DÕI PHIÊN MỚI",
+      "eyebrow": "KCI · SÁNG 23/11",
+      "headline": "THEO DÕI PHIÊN MỚI",
+      "summary": "Dữ liệu đến 07:59 KST · 23/11/2026",
+      "voiceText": "Trong phiên hôm nay, hãy phân biệt thông báo chính sách với việc thực thi, và theo dõi diễn biến thực tế của thị trường Hàn Quốc. Chúng tôi sẽ cập nhật khi có số liệu xác minh.",
+      "source": "gov-22 · sed-23",
+      "sourceIds": [
+        "gov-22",
+        "sed-23"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Biện pháp bình ổn",
+          "BOK 26/11",
+          "Phản ứng thị trường"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Hàn Quốc chuẩn bị quỹ bình ổn chứng khoán sau đợt giảm sâu. Nhưng tiền đã được bơm vào thị trường chưa?",
+  "caption": "🇰🇷 Hàn Quốc chuẩn bị biện pháp bình ổn chứng khoán, trong khi thị trường chờ quyết định lãi suất. Chính sách nào đáng theo dõi hơn? #KCI #KinhTeHanQuoc"
+}
