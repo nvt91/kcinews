@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-22-macro21",
+  "articleId": "KCI-20261122-MACRO21",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "edition": "22/11/2026 MACRO21 KST · Sunday",
+  "dataAsOf": "2026-11-22T20:57:19+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nợ hộ gia đình 2.030,5 nghìn tỷ won: BOK cân nhắc gì tuần tới?",
+  "articlePath": "editorial/2026-11-22/macro21.md",
+  "eventKeys": [
+    "bok-household-credit-q3-2026-nov18",
+    "bok-policy-calendar-nov26-2026"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Sunday Nov 22 no KRX session. Q3 household credit data released Nov 18; stock at Q3 end, not current debt flow. BOK Nov 26 decision pending. 3.00% refers Oct 22 decision. No current FX quote or forecast presented as actual.",
+  "sourceLedger": [
+    {
+      "id": "bok-home",
+      "title": "BOK press release: Q3 2026 household credit (preliminary), November 18",
+      "url": "https://www.bok.or.kr/portal/main/main.do?menuNo=200560",
+      "eventDate": "2026-11-18",
+      "checkedAt": "2026-11-22T20:57:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "Q3 end household credit 2,030.5 trillion KRW, +9.8 trillion quarter-on-quarter",
+        "Household loans 1,896.8 trillion KRW; sales credit 133.7 trillion KRW"
+      ]
+    },
+    {
+      "id": "bok-calendar",
+      "title": "BOK Monetary Policy Board 2026 meeting dates",
+      "url": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400020",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-22T20:57:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "November 26, 2026 monetary policy meeting scheduled; not yet held"
+      ]
+    },
+    {
+      "id": "bok-policy",
+      "title": "BOK policy releases October 22 2026",
+      "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200755",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-11-22T20:57:19+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 22 BOK policy decision was 3.00%; this is not November decision"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nợ hộ gia đình Hàn Quốc vượt hai nghìn ba mươi nghìn tỷ won. Cuộc họp lãi suất tuần tới sẽ cân nhắc điều gì?",
+    "candidates": [
+      {
+        "style": "impact",
+        "text": "Nợ hộ gia đình Hàn Quốc vượt hai nghìn ba mươi nghìn tỷ won. Cuộc họp lãi suất tuần tới sẽ cân nhắc điều gì?",
+        "score": 93
+      },
+      {
+        "style": "question",
+        "text": "Lãi suất sắp quyết định, nợ hộ gia đình Hàn Quốc đang ở mức nào?",
+        "score": 90
+      },
+      {
+        "style": "contrast",
+        "text": "Xuất khẩu mạnh, nhưng gánh nợ hộ gia đình vẫn là bài toán lớn.",
+        "score": 86
+      }
+    ]
+  },
+  "cta": {
+    "type": "save",
+    "spoken": "Tuần tới, anh chị hãy theo dõi quyết định thực tế và lý do của BOK. Theo dõi Korea Capital Insight để cùng cập nhật nhé.",
+    "screenHeadline": "THEO DÕI QUYẾT ĐỊNH BOK",
+    "screenSubline": "26/11 · lãi suất · nợ hộ gia đình"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "NỢ HỘ GIA ĐÌNH",
+      "screenText": "NỢ HỘ GIA ĐÌNH",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "NỢ HỘ GIA ĐÌNH",
+      "summary": "BOK · dữ liệu quý III/2026",
+      "voiceText": "Nợ hộ gia đình Hàn Quốc vượt hai nghìn ba mươi nghìn tỷ won. Cuộc họp lãi suất tuần tới sẽ cân nhắc điều gì?",
+      "source": "BOK · 18/11/2026",
+      "sourceIds": [
+        "bok-home"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "debt",
+      "title": "2.030,5 NGHÌN TỶ WON",
+      "screenText": "2.030,5 NGHÌN TỶ WON",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "2.030,5 NGHÌN TỶ WON",
+      "summary": "BOK · 18/11/2026",
+      "voiceText": "Theo Ngân hàng Trung ương Hàn Quốc, số dư tín dụng hộ gia đình cuối quý ba năm hai nghìn không trăm hai mươi sáu đạt hai nghìn không trăm ba mươi phẩy năm nghìn tỷ won, tăng chín phẩy tám nghìn tỷ won so với cuối quý trước. Đây là số dư tại cuối quý, không phải khoản vay mới trong tháng mười một.",
+      "source": "BOK · 18/11/2026",
+      "sourceIds": [
+        "bok-home"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "components",
+      "title": "VAY 1.896,8 NGHÌN TỶ",
+      "screenText": "VAY 1.896,8 NGHÌN TỶ",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "VAY 1.896,8 NGHÌN TỶ",
+      "summary": "BOK · 18/11/2026",
+      "voiceText": "Trong tổng đó, dư nợ cho vay hộ gia đình là một nghìn tám trăm chín mươi sáu phẩy tám nghìn tỷ won, còn tín dụng bán hàng là một trăm ba mươi ba phẩy bảy nghìn tỷ won. Hai cấu phần này giúp nhìn rõ hơn sức ép tài chính đối với người dân.",
+      "source": "BOK · 18/11/2026",
+      "sourceIds": [
+        "bok-home"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "meeting",
+      "title": "BOK HỌP 26/11",
+      "screenText": "BOK HỌP 26/11",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "BOK HỌP 26/11",
+      "summary": "Cuộc họp dự kiến 26/11",
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc lên lịch họp quyết định chính sách vào thứ Năm ngày hai mươi sáu tháng mười một. Mức lãi suất ba phần trăm được giữ tại cuộc họp tháng mười; quyết định tuần tới hiện chưa được công bố. Dự báo của giới phân tích không phải quyết định chính thức.",
+      "source": "BOK · lịch 26/11",
+      "sourceIds": [
+        "bok-calendar",
+        "bok-policy"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "impact",
+      "title": "LÃI SUẤT · WON · TIÊU DÙNG",
+      "screenText": "LÃI SUẤT · WON · TIÊU DÙNG",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "LÃI SUẤT · WON · TIÊU DÙNG",
+      "summary": "BOK · 18/11/2026",
+      "voiceText": "Nếu lãi suất tăng, chi phí trả nợ biến đổi có thể cao hơn, ảnh hưởng tiêu dùng; nhưng đồng won còn chịu tác động của lợi suất Mỹ, dòng vốn và giá năng lượng. Nếu lãi suất giữ nguyên, thông điệp về lạm phát và nợ hộ gia đình vẫn rất quan trọng. Tuần tới, anh chị hãy theo dõi quyết định thực tế và lý do của BOK. Theo dõi Korea Capital Insight để cùng cập nhật nhé.",
+      "source": "BOK · 18/11/2026",
+      "sourceIds": [
+        "bok-calendar"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Nợ hộ gia đình Hàn Quốc vượt hai nghìn ba mươi nghìn tỷ won. Cuộc họp lãi suất tuần tới sẽ cân nhắc điều gì?",
+  "caption": "🇰🇷 Nợ hộ gia đình Hàn Quốc tiếp tục tăng. Trước cuộc họp ngày 26/11, BOK sẽ phải cân nhắc những gì? Cùng tìm hiểu nhé! #KoreaCapitalInsight #ViMo"
+}
