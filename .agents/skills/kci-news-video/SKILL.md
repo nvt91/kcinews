@@ -5,6 +5,15 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 # KCI News Video — Production Skill v2.0
 
+## CHỈ ĐẠO BIÊN TẬP MỚI 23/11/2026 — PERSONAL FINANCIAL NEWSROOM V1 (ưu tiên cao nhất cho văn phong và CTA)
+
+**Áp dụng cho tất cả video MỚI KR_AM, KR_MID khi đủ tin, KR_CLOSE, MACRO21, GLOBAL_US/US_AM**, không trừ tin Mỹ 09h. BẮT BUỘC đọc và làm theo **[PERSONAL_NEWSROOM_V1.md](references/PERSONAL_NEWSROOM_V1.md)** mỗi lượt trước khi viết hook, scenes[].voiceText, CTA và caption. Các tác vụ đang chạy đều đọc LIVE SKILL.md từ repo này; không cần thay lịch để nhận quy chuẩn biên tập. Hướng dẫn này có ưu tiên hơn những ví dụ/lời văn cũ trong HOOK_CTA.md hoặc SCRIPT_FORMAT.md (nhất là "mỗi cảnh kết bằng Đây là...", CTA hai lựa chọn ép buộc, câu "theo dõi Korea Capital Insight"). Không thay đổi nghĩa vụ kiểm chứng nguồn và luật an toàn tài chính.
+
+- **Dẫn như bản tin tài chính của kênh cá nhân**: diễn biến bất thường → dữ kiện được xác minh → động lực/cơ chế ảnh hưởng → phản ứng chính sách/ngành hoặc Hàn Quốc → chỉ báo có thể theo dõi. Ít số đọc lặp trên hình, không câu đệm/máy móc. Nói rõ khi cơ chế chỉ là khả năng, không quy một sự kiện là nguyên nhân duy nhất nếu thiếu căn cứ.
+- **CTA**: một câu hỏi MỞ, sát nội dung, không ép người xem chọn 2 đáp án hoặc dự báo giá; lời mời bình luận + theo dõi kênh nhẹ nhàng, ví dụ: "Hãy chia sẻ góc nhìn tại phần bình luận và theo dõi kênh để cùng cập nhật những diễn biến mới nhất về thị trường nhé!" Không đọc tên thương hiệu ở cuối; logo vẫn có thể hiển thị. CTA trong cta.spoken một lần, KHÔNG lặp scenes[last].voiceText.
+- **GLOBAL_US/US_AM bắt buộc** nối dữ kiện Phố Wall/Fed/SOX/lợi suất/USD với tác động có cơ sở tới Hàn Quốc; không chỉ đọc bảng chỉ số Mỹ. US_AM caption vẫn **50–100 KÝ TỰ tổng**, còn lời CTA không bị giới hạn caption. KR/MACRO caption vẫn dưới 50 từ.
+- **Thực thi:** kịch bản mới gắn newsroomStyle=PERSONAL_FINANCIAL_NEWSROOM_V1 trong hồ sơ biên tập, ưu tiên cả trong job metadata nếu tiện; tự rà checklist trước Vbee để tránh mất phí render lại. Đây là quy chuẩn văn phong, không phải một bộ chặn regex. KHÔNG re-render video cũ, KHÔNG chuyển repo, đổi giờ hoặc tự đăng; render MP4 thật → QC → anh duyệt.
+
 ## Owner directive 17/11/2026 — KHÔNG CHẶN sản xuất + kịch bản thân thiện (ưu tiên cao nhất)
 
 - **Validator chỉ cảnh báo** (không chặn) khi: thiếu nguồn `primary`, chỉ có 1 nguồn, hook không khớp candidate / ít hơn 3 candidate, cảnh 1 không bắt đầu bằng hook, CTA lặp trong cảnh cuối (runner tự bỏ lần lặp). Preflight vẫn **xanh** với các cảnh báo vàng; producer cứ tiếp tục mở `[KCI VIDEO]` issue. Mọi câu “stop/HARD GATE/never open an issue” về nguồn primary bên dưới đã bị thay bằng quy định này.
