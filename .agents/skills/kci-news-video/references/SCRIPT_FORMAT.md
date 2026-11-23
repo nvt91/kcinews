@@ -6,6 +6,10 @@
 
 Mọi video MỚI, kể cả **GLOBAL_US/US_AM 09h**, dùng [PERSONAL_NEWSROOM_V1.md](PERSONAL_NEWSROOM_V1.md). Tiêu chí: Hook bất thường có nguồn → sự kiện → **vì sao/đường truyền tài chính** → ngành/chính sách/tác động tới Hàn Quốc → tín hiệu có thể quan sát → **câu hỏi MỞ + mời bình luận/theo dõi kênh**. Phong cách là người am hiểu tài chính dẫn tin cá nhân, KHÔNG đọc PR tổ chức. Không bắt buộc "mỗi cảnh đều kết bằng Đây là..." và KHÔNG dùng CTA lựa chọn nhị phân như mặc định cũ. Giảm đọc bảng số; để đồ họa thể hiện các trị số phụ. Caption US_AM giữ riêng 50–100 ký tự; không áp con số ấy cho lời CTA. Mọi nguồn, ngày, giờ, dữ kiện thực và cảnh báo đầu tư phải giữ đúng.
 
+## MỞ RỘNG KỊCH BẢN & CTA ĐA DẠNG — 23/11/2026
+
+Thư viện dùng chung cho mọi video kể cả US_AM: [VARIATION_LIBRARY_V1.md](VARIATION_LIBRARY_V1.md). Biên tập viên chọn mạch dẫn phù hợp nhất với tin thật, không lặp tình huống, cách nối cảnh và câu CTA trong các bản gần đây. Giữ mạch tổng quan sự kiện–nguyên nhân–tác động–tín hiệu, nhưng linh hoạt thứ tự theo loại tin. Câu hỏi cuối dạng MỞ và mang tính quan sát, không ép chọn hai đáp án; lời mời bình luận/theo dõi mang giọng cá nhân, không đọc tên Korea Capital Insight. Khi chuẩn bị bản mới, so sánh với 7 job cùng edition + 12 job mọi stream rồi ghi `variationReview` trong brief; soft-warning không chặn video.
+
 ## 1. Khung kịch bản
 
 ```
