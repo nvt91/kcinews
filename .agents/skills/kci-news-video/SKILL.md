@@ -5,6 +5,10 @@ description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news
 
 # KCI News Video — Production Skill v2.0
 
+## CHỐNG LẶP GIỌNG DẪN VÀ CTA — V1 (23/11/2026)
+
+**BẮT BUỘC trên KR_AM, KR_MID khi đủ tin, KR_CLOSE, MACRO21 và GLOBAL_US/US_AM**: đọc [VARIATION_LIBRARY_V1.md](references/VARIATION_LIBRARY_V1.md) TRƯỚC mỗi job mới. Thư viện gồm **12 mạch kể, 18 kiểu hook, 24 câu chuyển ý, 35 câu hỏi mở, 10 cách mời theo dõi**. Các mẫu chỉ là biện pháp kể chuyện, KHÔNG phải câu rập khuôn hay dữ kiện mới. Đối chiếu 7 job gần nhất cùng edition + 12 job toàn stream gần nhất, tự kiểm tra sự trùng góc kể, câu hỏi và lời mời; ghi `variationReview` vào brief. Chạy `node scripts/check-editorial-variety.mjs jobs/<episode>.json` trước paid TTS nếu có công cụ. Cảnh báo lặp câu chỉ là **WARN**, không được chặn pipeline/đòi render lại bản cũ chỉ vì phong cách. Mọi luồng giữ câu hỏi MỞ sát chủ đề + lời mời bình luận và theo dõi kênh cá nhân, không spoken brand sign-off, không khuyên mua/bán. US_AM phải có mắt xích Mỹ → Hàn. Giữ nguyên giờ chạy, source/safety, giọng Anh Khôi, captions, chủ kênh duyệt MP4, không auto-post.
+
 ## CHỈ ĐẠO BIÊN TẬP MỚI 23/11/2026 — PERSONAL FINANCIAL NEWSROOM V1 (ưu tiên cao nhất cho văn phong và CTA)
 
 **Áp dụng cho tất cả video MỚI KR_AM, KR_MID khi đủ tin, KR_CLOSE, MACRO21, GLOBAL_US/US_AM**, không trừ tin Mỹ 09h. BẮT BUỘC đọc và làm theo **[PERSONAL_NEWSROOM_V1.md](references/PERSONAL_NEWSROOM_V1.md)** mỗi lượt trước khi viết hook, scenes[].voiceText, CTA và caption. Các tác vụ đang chạy đều đọc LIVE SKILL.md từ repo này; không cần thay lịch để nhận quy chuẩn biên tập. Hướng dẫn này có ưu tiên hơn những ví dụ/lời văn cũ trong HOOK_CTA.md hoặc SCRIPT_FORMAT.md (nhất là "mỗi cảnh kết bằng Đây là...", CTA hai lựa chọn ép buộc, câu "theo dõi Korea Capital Insight"). Không thay đổi nghĩa vụ kiểm chứng nguồn và luật an toàn tài chính.
