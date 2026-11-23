@@ -2,6 +2,10 @@
 
 Áp dụng cho MỌI stream (KR_AM, KR_MID, KR_CLOSE, MACRO21, GLOBAL_US/US_AM). Đây là dạng kịch bản gửi anh duyệt và là giọng văn cho `voiceText`. Quy định này thay thế các hướng dẫn giọng văn cũ hơn nếu có mâu thuẫn.
 
+## Cập nhật owner 23/11/2026 — personal financial newsroom (ưu tiên cao nhất)
+
+Mọi video MỚI, kể cả **GLOBAL_US/US_AM 09h**, dùng [PERSONAL_NEWSROOM_V1.md](PERSONAL_NEWSROOM_V1.md). Tiêu chí: Hook bất thường có nguồn → sự kiện → **vì sao/đường truyền tài chính** → ngành/chính sách/tác động tới Hàn Quốc → tín hiệu có thể quan sát → **câu hỏi MỞ + mời bình luận/theo dõi kênh**. Phong cách là người am hiểu tài chính dẫn tin cá nhân, KHÔNG đọc PR tổ chức. Không bắt buộc "mỗi cảnh đều kết bằng Đây là..." và KHÔNG dùng CTA lựa chọn nhị phân như mặc định cũ. Giảm đọc bảng số; để đồ họa thể hiện các trị số phụ. Caption US_AM giữ riêng 50–100 ký tự; không áp con số ấy cho lời CTA. Mọi nguồn, ngày, giờ, dữ kiện thực và cảnh báo đầu tư phải giữ đúng.
+
 ## 1. Khung kịch bản
 
 ```
@@ -32,9 +36,9 @@ Trình tự nội dung: **Hook → Chuyện gì xảy ra → Điểm đáng chú
 - Thân thiện, như người dẫn bản tin nói chuyện với khán giả. Câu ngắn, mỗi câu một ý.
 - Dùng từ nối tự nhiên: “Điều đáng chú ý là…”, “Không chỉ riêng…”, “Ở một diễn biến khác…”, “Vậy…?”, “Trước hết…”, “Ở chiều tích cực…”, “Tuy nhiên…”, “Vì vậy, trong những phiên tới…”.
 - Hook có thể dùng câu cảm thán, nhưng phải đúng sự thật, có số liệu ngay câu thứ hai.
-- Mỗi cảnh kết thúc bằng một câu giải thích ý nghĩa (“Đây là những con số đáng chú ý khi…”).
+- Mỗi cảnh bổ sung một dữ kiện, cơ chế hoặc tín hiệu mới; chỉ giải thích ý nghĩa khi có cơ sở và không kết bằng một câu văn mẫu. Dẫn số liệu vừa đủ, phần còn lại giao cho đồ họa.
 - Cảnh Hàn Quốc nêu rõ tên mã/chỉ báo cần theo dõi (Samsung Electronics, SK Hynix, USD/KRW, KOSPI) và cả chiều tích cực lẫn tiêu cực.
-- CTA: một câu hỏi hai lựa chọn rõ ràng + “Hãy chia sẻ góc nhìn của mình và theo dõi kênh để cập nhật…”.
+- CTA: một câu hỏi **mở** gắn với tín hiệu theo dõi, không buộc chọn hai đáp án; mời bình luận và theo dõi kênh tự nhiên. Không đọc tên thương hiệu trong CTA.
 - Không hứa lợi nhuận, không thúc giục mua/bán (validator vẫn chặn các cụm như “chắc chắn tăng”, “mua ngay để”).
 
 ### CẤM dùng khi viết kịch bản (kể cả trong câu phủ định)
