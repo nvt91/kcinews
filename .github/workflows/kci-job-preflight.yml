@@ -9,6 +9,8 @@ on:
       - 'scripts/test-kci-editorial.mjs'
       - 'scripts/run-job.mjs'
       - 'scripts/export-kci-script.mjs'
+      - 'scripts/check-editorial-variety.mjs'
+      - 'scripts/test-editorial-variety.mjs'
       - '.github/workflows/kci-job-preflight.yml'
   pull_request:
     paths:
@@ -17,6 +19,8 @@ on:
       - 'scripts/test-kci-editorial.mjs'
       - 'scripts/run-job.mjs'
       - 'scripts/export-kci-script.mjs'
+      - 'scripts/check-editorial-variety.mjs'
+      - 'scripts/test-editorial-variety.mjs'
       - '.github/workflows/kci-job-preflight.yml'
   workflow_dispatch:
     inputs:
@@ -43,6 +47,8 @@ jobs:
         run: node scripts/validate-kci-job.mjs jobs/kci-schema-v2-example.json
       - name: Run editorial regression tests against real US_AM job (no TTS)
         run: node scripts/test-kci-editorial.mjs
+      - name: Run editorial variety advisor tests (no TTS)
+        run: node scripts/test-editorial-variety.mjs
       - name: Validate the selected or changed production jobs BEFORE a paid video issue
         shell: bash
         env:
@@ -59,6 +65,7 @@ jobs:
             node scripts/validate-kci-job.mjs "$SELECTED_JOB"
             # Mirror the actual paid-workflow pre-TTS gate, without synthesizing.
             node scripts/run-job.mjs --mode=validate --job="$SELECTED_JOB"
+            node scripts/check-editorial-variety.mjs "$SELECTED_JOB"
             { echo "### Kịch bản — $SELECTED_JOB"; echo; echo '```text'; node scripts/export-kci-script.mjs "$SELECTED_JOB"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
@@ -75,6 +82,7 @@ jobs:
               echo "Preflighting $filename"
               node scripts/validate-kci-job.mjs "$filename"
               node scripts/run-job.mjs --mode=validate --job="$filename"
+              node scripts/check-editorial-variety.mjs "$filename"
               { echo "### Kịch bản — $filename"; echo; echo '```text'; node scripts/export-kci-script.mjs "$filename"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
               checked=$((checked+1))
             fi
