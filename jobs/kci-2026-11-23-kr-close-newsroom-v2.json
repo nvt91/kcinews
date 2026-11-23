@@ -6,7 +6,7 @@
   "slot": "KR_CLOSE",
   "format": "digest",
   "edition": "23/11/2026 KR_CLOSE · phiên bản tin cá nhân V2 · KRX regular close",
-  "dataAsOf": "2026-11-23T20:31:52.973+09:00",
+  "dataAsOf": "2026-11-23T20:31:52+09:00",
   "status": "REVIEW_REQUIRED",
   "template": "KciNewsDaily",
   "headline": "KOSPI có lúc giảm gần 6%: Phố Wall, dòng vốn và phản ứng chính sách",
@@ -69,7 +69,7 @@
       "title": "Nasdaq official PHLX Semiconductor Sector Index SOX, Nov 20 2026 close",
       "url": "https://indexes.nasdaqomx.com/index/Overview/SOX",
       "eventDate": "2026-11-20",
-      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "checkedAt": "2026-11-23T20:31:52+09:00",
       "kind": "primary",
       "facts": [
         "Official Nasdaq SOX data as of Nov 20, 2026: 8,408.59 points, down 1,011.13 points or 10.73% in the completed U.S. session; do not label as Nov 23 U.S. close."
@@ -80,7 +80,7 @@
       "title": "Financial Services Commission Korea, daily treasury-stock buy-order relief approved 23 Nov 2026",
       "url": "https://www.fsc.go.kr/po010106/88190",
       "eventDate": "2026-11-23",
-      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "checkedAt": "2026-11-23T20:31:52+09:00",
       "kind": "primary",
       "facts": [
         "FSC approved easing of listed companies' daily treasury-stock purchase order quantity limit for 3 months from 2026-11-24 to 2027-02-23.",
@@ -92,7 +92,7 @@
       "title": "Yonhap 23 Nov 2026 KOSPI 4,586.80 intraday low and sidecar",
       "url": "https://www.yna.co.kr/view/AKR20261123129851008",
       "eventDate": "2026-11-23",
-      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "checkedAt": "2026-11-23T20:31:52+09:00",
       "kind": "secondary",
       "facts": [
         "KOSPI fell as much as 5.8% intraday to 4,586.80 and closed at 4,708.54 (-3.31%).",
@@ -299,6 +299,6 @@
       "kci-2026-11-20-kr-close"
     ],
     "dissimilarityReason": "Lead with intraday near-6% drawdown and sidecar, then trace verified US SOX shock into Korean chip sentiment, distinguish flows and FSC policy effectiveness; open-ended CTA is not the old binary poll.",
-    "reviewedAtKST": "2026-11-23T20:31:52.973+09:00"
+    "reviewedAtKST": "2026-11-23T20:31:52+09:00"
   }
 }
