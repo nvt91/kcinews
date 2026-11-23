@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-23-macro21",
+  "articleId": "KCI-20261123-MACRO21",
+  "stream": "MACRO",
+  "slot": "MACRO21",
+  "edition": "23/11/2026 MACRO21 KST · Monday",
+  "dataAsOf": "2026-11-23T21:04:20+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Giá sản xuất Hàn Quốc giảm nhưng chi phí đầu vào tăng: BOK nhìn vào đâu?",
+  "articlePath": "editorial/2026-11-23/macro21.md",
+  "eventKeys": [
+    "bok-ppi-oct2026-release-nov20",
+    "bok-policy-oct22",
+    "bok-meeting-nov26"
+  ],
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+  "variationReview": "A12 macro paradox; reviewed 22 Nov MACRO debt topic and 23 Nov KR_AM/KR_CLOSE issue titles; no complete 7-day full script comparison.",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Cutoff 21:04 KST Nov 23; BOK October PPI released Nov20 provisional; m/m vs y/y separate. BOK Oct22 policy rate 3.00%; Nov26 pending. No live USD/KRW price or guaranteed pass-through.",
+  "sourceLedger": [
+    {
+      "id": "bok-ppi",
+      "title": "BOK: October 2026 Producer Price Index preliminary, released November 20",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?depth=201264&menuNo=201264&nttId=11066826&programType=newsData&relate=Y",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-23T21:04:20+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 PPI -0.1% month-on-month and +7.2% year-on-year; provisional",
+        "Agriculture forestry fisheries -8.3% month-on-month; manufactured goods +0.3%",
+        "Domestic supply price index +0.7% month-on-month; imported raw materials contributed"
+      ]
+    },
+    {
+      "id": "kdi-ppi",
+      "title": "KDI Economic Information Center repost of BOK PPI release November 20",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=289838",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-23T21:04:20+09:00",
+      "kind": "secondary",
+      "facts": [
+        "BOK October PPI -0.1% m/m; domestic supply prices +0.7% m/m"
+      ]
+    },
+    {
+      "id": "bok-rate",
+      "title": "BOK October 22 Monetary Policy Decision",
+      "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11065825&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+      "eventDate": "2026-10-22",
+      "checkedAt": "2026-11-23T21:04:20+09:00",
+      "kind": "primary",
+      "facts": [
+        "BOK maintained base rate 3.00% October 22; inflation around 3% and financial stability risks persist"
+      ]
+    },
+    {
+      "id": "bok-calendar",
+      "title": "BOK 2026 monetary policy meeting calendar",
+      "url": "https://www.bok.or.kr/eng/main/contents.do?menuNo=400020",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-23T21:04:20+09:00",
+      "kind": "primary",
+      "facts": [
+        "Next policy meeting scheduled November 26, not yet decided"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Giá sản xuất Hàn Quốc giảm, nhưng chi phí đầu vào lại tăng. Vì sao hai tín hiệu đi ngược nhau?",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Giá sản xuất Hàn Quốc giảm, nhưng chi phí đầu vào lại tăng. Vì sao hai tín hiệu đi ngược nhau?",
+        "score": 94
+      },
+      {
+        "style": "question",
+        "text": "Vì sao giá sản xuất giảm mà chi phí cung ứng tại Hàn Quốc vẫn tăng?",
+        "score": 91
+      },
+      {
+        "style": "impact",
+        "text": "Giá đầu vào tăng có thể làm BOK khó xử trước cuộc họp tuần này.",
+        "score": 87
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "question": "Theo anh chị, chỉ báo nào sẽ giúp đánh giá áp lực giá tại Hàn Quốc rõ nhất trong tháng tới?",
+    "spoken": "Theo anh chị, chỉ báo nào sẽ giúp đánh giá áp lực giá tại Hàn Quốc rõ nhất trong tháng tới? Để lại góc nhìn ở phần bình luận và theo dõi kênh để cập nhật các số liệu tiếp theo nhé.",
+    "screenHeadline": "THEO DÕI ÁP LỰC GIÁ",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi kênh"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "GIÁ SẢN XUẤT GIẢM",
+      "screenText": "GIÁ SẢN XUẤT GIẢM",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "GIÁ SẢN XUẤT GIẢM",
+      "summary": "Số liệu tháng 10 · BOK công bố 20/11/2026",
+      "voiceText": "Giá sản xuất Hàn Quốc giảm, nhưng chi phí đầu vào lại tăng. Vì sao hai tín hiệu đi ngược nhau?",
+      "source": "BOK · 20/11/2026",
+      "sourceIds": [
+        "bok-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "ppi",
+      "title": "PPI THÁNG 10: −0,1%",
+      "screenText": "PPI THÁNG 10: −0,1%",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "PPI THÁNG 10: −0,1%",
+      "summary": "Số liệu tháng 10 · BOK công bố 20/11/2026",
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc công bố ngày hai mươi tháng mười một: chỉ số giá sản xuất tháng mười giảm không phẩy một phần trăm so với tháng trước, nhưng vẫn cao hơn bảy phẩy hai phần trăm so với cùng kỳ năm ngoái. Đây là số liệu sơ bộ, không phải chỉ số giá tiêu dùng.",
+      "source": "BOK · 20/11/2026",
+      "sourceIds": [
+        "bok-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "split",
+      "title": "THỰC PHẨM GIẢM · CÔNG NGHIỆP TĂNG",
+      "screenText": "THỰC PHẨM GIẢM · CÔNG NGHIỆP TĂNG",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "THỰC PHẨM GIẢM · CÔNG NGHIỆP TĂNG",
+      "summary": "Số liệu tháng 10 · BOK công bố 20/11/2026",
+      "voiceText": "Giá nông, lâm và thủy sản giảm tám phẩy ba phần trăm theo tháng, kéo chỉ số chung xuống. Ngược lại, giá hàng công nghiệp tăng không phẩy ba phần trăm. Vì vậy, một con số âm không có nghĩa toàn bộ áp lực giá đã biến mất.",
+      "source": "BOK · 20/11/2026",
+      "sourceIds": [
+        "bok-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "supply",
+      "title": "CHI PHÍ CUNG ỨNG +0,7%",
+      "screenText": "CHI PHÍ CUNG ỨNG +0,7%",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "CHI PHÍ CUNG ỨNG +0,7%",
+      "summary": "Số liệu tháng 10 · BOK công bố 20/11/2026",
+      "voiceText": "Đáng chú ý, chỉ số giá cung ứng trong nước lại tăng không phẩy bảy phần trăm theo tháng. Giá nguyên liệu đầu vào cao hơn có thể dần truyền sang chi phí doanh nghiệp, nhưng mức độ và thời gian phụ thuộc khả năng chuyển giá và nhu cầu tiêu dùng. Đồng won và giá năng lượng cũng là những biến số cần theo dõi.",
+      "source": "BOK · 20/11/2026",
+      "sourceIds": [
+        "kdi-ppi"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "policy",
+      "title": "BOK HỌP 26/11",
+      "screenText": "BOK HỌP 26/11",
+      "eyebrow": "KCI · VĨ MÔ 21H",
+      "headline": "BOK HỌP 26/11",
+      "summary": "Số liệu tháng 10 · BOK công bố 20/11/2026",
+      "voiceText": "Ở cuộc họp ngày hai mươi hai tháng mười, BOK giữ lãi suất cơ bản ở ba phần trăm. Cuộc họp kế tiếp dự kiến ngày hai mươi sáu tháng mười một; chưa có quyết định mới. Khi đánh giá chính sách, cần nhìn đồng thời lạm phát, tỷ giá và ổn định tài chính, thay vì chỉ một chỉ số PPI.",
+      "source": "BOK · 20/11/2026",
+      "sourceIds": [
+        "bok-rate",
+        "bok-calendar"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Giá sản xuất Hàn Quốc giảm, nhưng chi phí đầu vào lại tăng. Vì sao hai tín hiệu đi ngược nhau?",
+  "caption": "🇰🇷 Giá sản xuất Hàn Quốc giảm nhẹ, nhưng chi phí cung ứng lại tăng. Vì sao có sự khác biệt này và BOK sẽ cân nhắc gì? Cùng tìm hiểu nhé! #KoreaCapitalInsight #ViMo"
+}
