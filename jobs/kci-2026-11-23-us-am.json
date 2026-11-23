@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-23-us-am",
+  "articleId": "KCI-20261123-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "23/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-23T09:00:49+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall sau cú giảm sâu: hợp đồng tương lai hồi phục, Hàn Quốc cần theo dõi gì?",
+  "scriptTitle": "KCI | Sau tuần bán tháo AI: Tín hiệu hồi phục có bền?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Đóng cửa Mỹ 20/11 lúc 16:00 EST = 06:00 KST 21/11. Futures sáng 23/11 chỉ là giá quan sát trước phiên, không phải kết quả đóng cửa. Phân tích Hàn Quốc có điều kiện.",
+  "eventKeys": [
+    "us-futures-asia-open-2026-11-23",
+    "us-dollar-fed-probability-2026-11-23",
+    "ai-market-correction-week-ahead-2026-11-22",
+    "korea-opening-risk-2026-11-23"
+  ],
+  "sourceLedger": [
+    {
+      "id": "reuters-futures",
+      "title": "Reuters: US futures bounce while Asia markets brace for AI wipeout",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T09:00:49+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nasdaq 100 futures up about 2% and S&P 500 futures around 1% in early Monday Asian trade, indicative not closing figures.",
+        "Asian chip-heavy markets face AI-related risk; Korea potential market stabilization conditional."
+      ]
+    },
+    {
+      "id": "reuters-dollar",
+      "title": "Reuters: Dollar edges off 19-month high after market rout",
+      "url": "https://www.reuters.com/world/middle-east/dollar-edges-off-19-month-high-after-market-rout-yen-softens-2026-11-22/",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T09:00:49+09:00",
+      "kind": "secondary",
+      "facts": [
+        "DXY approximately 103.80 in early Monday Asia trade; observation not closing price.",
+        "Futures implied 88.6% chance of 25bp December Fed hike at article observation, not a Fed decision."
+      ]
+    },
+    {
+      "id": "reuters-friday",
+      "title": "Reuters: Wall St ends sharply lower on AI selloff",
+      "url": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-23T09:00:49+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Friday regular close Nasdaq -5.28%, S&P 500 -3.70%, Dow -1.93%; historic context already covered Saturday."
+      ]
+    },
+    {
+      "id": "reuters-week",
+      "title": "Reuters: Correction or deeper reckoning? Investors seek signs selling will abate",
+      "url": "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/",
+      "eventDate": "2026-11-22",
+      "checkedAt": "2026-11-23T09:00:49+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Market participants debate whether selling pressure is exhausted; indicators not conclusive.",
+        "Next catalysts Fed December meeting and Micron earnings."
+      ]
+    },
+    {
+      "id": "reuters-oil",
+      "title": "Reuters: Oil gains on Iran war worries",
+      "url": "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-23T09:00:49+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Brent settled Friday at USD 92.57/bbl; historical Friday settlement not live Monday."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Sau cú giảm sâu của Phố Wall, hợp đồng tương lai Nasdaq đang hồi phục khoảng hai phần trăm sáng thứ Hai.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Sau cú giảm sâu của Phố Wall, hợp đồng tương lai Nasdaq đang hồi phục khoảng hai phần trăm sáng thứ Hai."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Phố Wall vừa trải qua tuần khó khăn, Hàn Quốc cần nhìn vào điều gì khi mở cửa?"
+      },
+      {
+        "style": "risk",
+        "text": "Thị trường tương lai Mỹ đang hồi phục, nhưng điều đó có đồng nghĩa áp lực bán đã kết thúc?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, nhịp hồi của hợp đồng tương lai Mỹ có đủ giúp thị trường Hàn Quốc ổn định? Hãy chia sẻ góc nhìn và theo dõi KCI nhé.",
+    "screenHeadline": "NHỊP HỒI CÓ BỀN?",
+    "screenSubline": "Cùng trao đổi với KCI",
+    "question": "Tâm lý thị trường hay nền tảng doanh nghiệp quan trọng hơn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Futures hồi phục",
+      "screenText": "NASDAQ 100 FUTURES ~+2%",
+      "eyebrow": "SÁNG THỨ HAI · 23/11",
+      "headline": "Tương lai Mỹ bật tăng",
+      "summary": "Giá quan sát trước phiên, không phải đóng cửa",
+      "voiceText": "Sau cú giảm sâu của Phố Wall, hợp đồng tương lai Nasdaq đang hồi phục khoảng hai phần trăm sáng thứ Hai. Đây là diễn biến hợp đồng tương lai trong phiên châu Á ngày hai mươi ba tháng mười một, không phải kết quả đóng cửa của Phố Wall.",
+      "source": "REUTERS · 23/11",
+      "sourceIds": [
+        "reuters-futures"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ 100 FUTURES",
+          "value": "~+2%",
+          "tone": "up"
+        },
+        {
+          "label": "S&P 500 FUTURES",
+          "value": "~+1%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ 100 FUTURES",
+            "value": 2,
+            "display": "~+2%"
+          },
+          {
+            "label": "S&P 500 FUTURES",
+            "value": 1,
+            "display": "~+1%"
+          }
+        ],
+        "qualifier": "Reuters · quan sát đầu phiên châu Á 23/11"
+      }
+    },
+    {
+      "id": "friday",
+      "title": "Cảnh 2 — Bối cảnh phiên thứ Sáu",
+      "screenText": "NASDAQ −5,28% | S&P −3,70%",
+      "eyebrow": "ĐÓNG CỬA MỸ · 20/11",
+      "headline": "Cú giảm vẫn là nền rủi ro",
+      "summary": "Phiên Mỹ thứ Sáu, không phải giá hôm nay",
+      "voiceText": "Để hiểu nhịp hồi này, cần nhìn lại phiên thứ Sáu. Nasdaq giảm năm phẩy hai tám phần trăm, S&P năm trăm giảm ba phẩy bảy phần trăm và Dow mất một phẩy chín ba phần trăm. Đây là số liệu lịch sử, không phải biến động trực tiếp sáng nay.",
+      "source": "REUTERS · 20/11",
+      "sourceIds": [
+        "reuters-friday"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "−5,28%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500",
+          "value": "−3,70%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -5.28,
+            "display": "−5,28%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -3.7,
+            "display": "−3,70%"
+          },
+          {
+            "label": "DOW",
+            "value": -1.93,
+            "display": "−1,93%"
+          }
+        ],
+        "qualifier": "Đóng cửa Mỹ 20/11 · Reuters"
+      }
+    },
+    {
+      "id": "risk",
+      "title": "Cảnh 3 — Fed và tâm lý",
+      "screenText": "DXY ~103,80 | FED THÁNG 12",
+      "eyebrow": "VĨ MÔ MỸ",
+      "headline": "Lãi suất vẫn là biến số",
+      "summary": "Xác suất thị trường, chưa phải quyết định Fed",
+      "voiceText": "Reuters ghi nhận chỉ số đô la quanh một trăm linh ba phẩy tám trong đầu phiên châu Á. Thị trường phái sinh đang nghiêng về khả năng Fed nâng lãi suất một phần tư điểm phần trăm trong tháng Mười Hai. Đây chỉ là xác suất kỳ vọng, chưa phải quyết định chính thức.",
+      "source": "REUTERS · 23/11",
+      "sourceIds": [
+        "reuters-dollar"
+      ],
+      "stats": [
+        {
+          "label": "DXY",
+          "value": "~103,80",
+          "tone": "neutral"
+        },
+        {
+          "label": "FED",
+          "value": "KỲ VỌNG",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~103,80",
+        "unit": "DXY · quan sát đầu phiên 23/11",
+        "qualifier": "Reuters · không phải đóng cửa"
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 4 — Kịch bản Hàn Quốc",
+      "screenText": "KOSPI | CHIP | USD/KRW",
+      "eyebrow": "TÁC ĐỘNG CÓ ĐIỀU KIỆN",
+      "headline": "Hàn Quốc cần tín hiệu xác nhận",
+      "summary": "Theo dõi dòng vốn và tỷ giá",
+      "voiceText": "Nếu hợp đồng tương lai Mỹ duy trì đà hồi, tâm lý đối với KOSPI và nhóm chip Hàn Quốc có thể được hỗ trợ. Nhưng nếu dòng vốn ngoại tiếp tục rút và đô la mạnh lên, KOSDAQ, bán dẫn và tỷ giá đô la trên won vẫn có thể chịu sức ép. Giá futures chưa xác nhận phiên Mỹ sẽ tăng.",
+      "source": "KCI · phân tích từ Reuters",
+      "sourceIds": [
+        "reuters-futures",
+        "reuters-dollar"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Đà hồi futures",
+          "Dòng vốn ngoại",
+          "USD/KRW và chip"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh kết — Catalyst và CTA",
+      "screenText": "NHỊP HỒI CÓ BỀN?",
+      "eyebrow": "KOREA CAPITAL INSIGHT",
+      "headline": "Đừng nhầm futures với kết quả",
+      "summary": "Theo dõi Fed và sức mua tiêu dùng",
+      "voiceText": "Tuần này, nhà đầu tư sẽ chú ý diễn biến tiêu dùng Mỹ và tín hiệu chính sách Fed. Giá dầu Brent đóng cửa thứ Sáu ở chín mươi hai phẩy năm bảy đô la một thùng, cũng là một biến số rủi ro cần quan sát. Các kịch bản này không bảo đảm kết quả thị trường.",
+      "source": "REUTERS · 20–23/11",
+      "sourceIds": [
+        "reuters-week",
+        "reuters-oil"
+      ],
+      "stats": [
+        {
+          "label": "BRENT · 20/11",
+          "value": "92,57 USD",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Tiêu dùng Mỹ",
+          "Tín hiệu Fed",
+          "Giá dầu và tỷ giá"
+        ],
+        "cta": {
+          "headline": "NHỊP HỒI CÓ BỀN?",
+          "subline": "Bình luận góc nhìn cùng KCI"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Hợp đồng tương lai Mỹ hồi phục, Hàn Quốc sẽ phản ứng ra sao?"
+}
