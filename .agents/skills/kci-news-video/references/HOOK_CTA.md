@@ -6,6 +6,10 @@ Trước mọi video mới, áp dụng [PERSONAL_NEWSROOM_V1.md](PERSONAL_NEWSRO
 
 **CTA mới:** ưu tiên một câu hỏi MỞ có trọng tâm + lời mời **bình luận và theo dõi kênh**, không CTA giả định tăng/giảm hoặc ép chọn một trong hai đáp án. Không xướng tên "Korea Capital Insight" trong câu kết, vẫn được dùng làm logo. Ví dụ: "Theo mọi người, tín hiệu nào cần cải thiện để thị trường ổn định trở lại? Hãy chia sẻ góc nhìn tại phần bình luận và theo dõi kênh để cùng cập nhật nhé!" Mỗi lần thay câu hỏi cho phù hợp tin. US_AM cũng bắt buộc. Không thêm chữ CTA vào outro voiceText; runner tự nối cta.spoken.
 
+## BỘ NGÂN HÀNG HOOK, CHUYỂN Ý, CTA PHIÊN BẢN MỚI
+
+Dùng [VARIATION_LIBRARY_V1.md](VARIATION_LIBRARY_V1.md) cho cả KR_AM / KR_MID / KR_CLOSE / MACRO21 / US_AM. Đa dạng về **góc kể** trước, sau đó mới đa dạng câu chữ; CTA có một câu hỏi MỞ gắn sự kiện, nhưng biến tấu cả câu mời bình luận/theo dõi kênh, không lặp "Theo mọi người…" hoặc "Hãy chia sẻ góc nhìn…" hàng ngày. Không thêm số liệu/tin giả và không hô hào đầu tư. Trước Vbee, kiểm tra lịch sử job và thử advisory similarity, cảnh báo không chặn.
+
 ## Brand voice
 Professional newsroom, clear and energetic **without** hysterical urgency or artificial AI filler. Spoken Vietnamese for investors following Korean equities and macroeconomic developments. Explain what happened, *why*, Korean market relevance, then the next checkpoint. Voice is Vbee Anh Khôi Tin tức (`n_hanoi_male_anhkhoitintuc_zero_shot_news_vc`); pronounce stocks, acronyms, numbers and dates consistently. Follow [VOICE_PROFILE.md](VOICE_PROFILE.md) for the changed-speaker trial and historical-audio rules.
 
