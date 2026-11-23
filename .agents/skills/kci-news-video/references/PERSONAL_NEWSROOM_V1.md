@@ -4,6 +4,10 @@
 
 **Applies to ALL new scheduled KCI videos:** KR_AM 08:00, GLOBAL_US/US_AM 09:00 Mon–Sat, conditional KR_MID 12:00, KR_CLOSE 17:00, MACRO21 21:00 (Asia/Seoul). Also applies to producer briefs, JSON scenes[].voiceText, hook, cta.spoken, export-to-script and reviewer of new scripts. Existing rendered videos are historical and should NOT be revoiced or rerendered solely for a style update.
 
+## THƯ VIỆN BIẾN TẤU MỚI (23/11/2026)
+
+Mỗi video mới đọc [VARIATION_LIBRARY_V1.md](VARIATION_LIBRARY_V1.md) để lựa chọn một trong 12 mạch kể, 18 kiểu hook, 24 câu nối, 35 góc CTA MỞ và 10 nhịp mời bình luận/theo dõi. Đọc 7 bản gần nhất của cùng edition và 12 bản gần nhất trên toàn stream khi có thể để KHÔNG lặp nguyên văn câu hook và CTA; chỉ thay góc khi có dữ kiện mới, không tạo tình tiết để tránh giống nhau. Đây là chuẩn biên tập, không phải dữ liệu đầu tư hay bộ chặn tự động. GLOBAL_US/US_AM cũng áp dụng.
+
 ## 1. Editorial identity
 
 A **personal Vietnamese finance-news channel**: informed, objective, conversational, professional, never corporate-sounding or robotic. Korea Capital Insight appears in graphic identity/logo, but NOT as a spoken brand-signoff or a mandatory "follow Korea Capital Insight" call. Avoid self-praise, stock-buy prompts, and guaranteed forecasts.
