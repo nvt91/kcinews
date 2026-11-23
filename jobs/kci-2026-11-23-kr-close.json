@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-23-kr-close",
+  "articleId": "KCI-20261123-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "23/11/2026 KR_CLOSE · KRX regular close",
+  "dataAsOf": "2026-11-23T18:44:14+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI giảm 3,31%: khối ngoại bán ròng, FSC nới mua cổ phiếu quỹ",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-23/kr-close.md",
+  "sourceDisclaimer": "KRX regular close 23 Nov 2026; NXT excluded. Secondary Yonhap and NewsPim corroborated. Foreign KOSPI net selling rounded to ~KRW247bn due to 0.1bn source discrepancy. USD/KRW quote 15:30 KST only; omitted from voice. FSC buyback order relief decided, stabilization fund not confirmed deployed.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-23",
+    "krx-kospi-foreign-flow-2026-11-23",
+    "krx-chip-selloff-2026-11-23",
+    "kr-fsc-buyback-relief-2026-11-23"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 23 Nov 16:11 KRX close, flows and FSC measures",
+      "url": "https://www.yna.co.kr/view/AKR20261123129851008",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4708.54 -3.31%; KOSDAQ 635.45 -1.58%; regular KRX close",
+        "KOSPI foreigners net sold KRW247.2bn; individuals KRW366.9bn net sold; institutions KRW187.2bn net bought",
+        "KOSPI sell-sidecar around 11:33 KST, second consecutive trading session",
+        "FSC decided three-month easing of daily listed-company treasury-stock buy order limit; securities stabilization fund only preparation, not deployed",
+        "USD/KRW 1345.9 at 15:30 KST, up 9.7 won"
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim 23 Nov 16:09 KRX close and chip stocks",
+      "url": "https://www.newspim.com/news/view/20261123000978",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4708.54 -3.31%; KOSDAQ 635.45 -1.58%",
+        "Samsung Electronics -3.06%; SK hynix -2.52%",
+        "KOSPI foreigners KRW247.1bn net sellers; institutions KRW187.2bn net buyers; rounding differs KRW0.1bn from Yonhap"
+      ]
+    },
+    {
+      "id": "yonhap-chips",
+      "title": "Yonhap 23 Nov 16:32 Samsung and SK hynix close",
+      "url": "https://www.yna.co.kr/view/AKR20261123037351008",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Samsung Electronics -3.06%; SK hynix -2.52%"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI vừa mất hơn ba phần trăm và lùi sát mốc bốn nghìn bảy trăm điểm. Vì sao lực bán vẫn chưa dừng lại?",
+    "candidates": [
+      {
+        "style": "shock",
+        "text": "KOSPI vừa mất hơn ba phần trăm và lùi sát mốc bốn nghìn bảy trăm điểm. Vì sao lực bán vẫn chưa dừng lại?",
+        "score": 94
+      },
+      {
+        "style": "comparison",
+        "text": "KOSPI lại giảm hơn ba phần trăm, nhưng tổ chức đang mua ròng. Điều gì đáng chú ý?",
+        "score": 90
+      },
+      {
+        "style": "question",
+        "text": "Sau hai phiên giảm sâu, biện pháp bình ổn của Hàn Quốc có gì mới?",
+        "score": 88
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Anh chị quan tâm nhất đến dòng vốn hay chính sách bình ổn? Chia sẻ cùng KCI nhé.",
+    "screenHeadline": "DÒNG VỐN HAY CHÍNH SÁCH?",
+    "screenSubline": "Chia sẻ góc nhìn cùng KCI",
+    "question": "Dòng vốn hay chính sách bình ổn?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "KOSPI LẠI GIẢM SÂU",
+      "screenText": "KOSPI −3,31%",
+      "eyebrow": "KCI · CHIỀU 23/11",
+      "headline": "KOSPI SÁT MỐC 4.700",
+      "summary": "Đóng cửa KRX · 23/11/2026",
+      "voiceText": "KOSPI vừa mất hơn ba phần trăm và lùi sát mốc bốn nghìn bảy trăm điểm. Vì sao lực bán vẫn chưa dừng lại? Cùng KCI nhìn vào ba diễn biến đáng chú ý sau phiên.",
+      "source": "yonhap-close · newspim-close",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−3,31%",
+        "qualifier": "KOSPI · KRX 23/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "indices",
+      "title": "HAI CHỈ SỐ CÙNG GIẢM",
+      "screenText": "KOSPI −3,31% · KOSDAQ −1,58%",
+      "eyebrow": "THỊ TRƯỜNG KRX",
+      "headline": "SẮC ĐỎ TIẾP DIỄN",
+      "summary": "Giá đóng cửa KRX; không cộng NXT",
+      "voiceText": "KOSPI đóng cửa tại bốn nghìn bảy trăm linh tám phẩy năm tư điểm, giảm ba phẩy ba mốt phần trăm. KOSDAQ xuống sáu trăm ba mươi lăm phẩy bốn lăm điểm, giảm một phẩy năm tám phần trăm. Đây là kết quả phiên chính KRX ngày hai mươi ba tháng mười một, không phải giá giao dịch NXT sau giờ.",
+      "source": "yonhap-close · newspim-close",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "KOSPI",
+            "value": -3.31,
+            "display": "−3,31%"
+          },
+          {
+            "label": "KOSDAQ",
+            "value": -1.58,
+            "display": "−1,58%"
+          }
+        ],
+        "qualifier": "KRX regular close · 23/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "flows",
+      "title": "KHỐI NGOẠI VẪN BÁN",
+      "screenText": "NGOẠI BÁN RÒNG",
+      "eyebrow": "DÒNG VỐN KOSPI",
+      "headline": "BÁN RÒNG TIẾP DIỄN",
+      "summary": "Chỉ tính KOSPI · 23/11",
+      "voiceText": "Trên KOSPI, khối ngoại bán ròng khoảng hai trăm bốn mươi bảy tỷ won, đánh dấu phiên bán ròng thứ bảy liên tiếp. Cá nhân cũng bán ròng, trong khi tổ chức mua ròng khoảng một trăm tám mươi bảy tỷ won. Samsung Electronics giảm ba phẩy không sáu phần trăm, còn SK hynix giảm hai phẩy năm hai phần trăm. Đây là diễn biến giá và dòng vốn, không phải kết luận về giá trị doanh nghiệp.",
+      "source": "yonhap-close · newspim-close · yonhap-chips",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close",
+        "yonhap-chips"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Samsung",
+            "value": -3.06,
+            "display": "−3,06%"
+          },
+          {
+            "label": "SK hynix",
+            "value": -2.52,
+            "display": "−2,52%"
+          }
+        ],
+        "qualifier": "KRX 23/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "policy",
+      "title": "CHÍNH SÁCH ỨNG PHÓ",
+      "screenText": "NỚI MUA CỔ PHIẾU QUỸ",
+      "eyebrow": "ỔN ĐỊNH THỊ TRƯỜNG",
+      "headline": "BIỆN PHÁP MỚI TỪ FSC",
+      "summary": "Quyết định 23/11 · thời hạn 3 tháng",
+      "voiceText": "Trong phiên, cơ chế sidecar bán được kích hoạt trên KOSPI khoảng mười một giờ ba mươi ba phút. Chiều cùng ngày, cơ quan quản lý tài chính quyết định nới giới hạn đặt lệnh mua cổ phiếu quỹ hằng ngày trong ba tháng. Đây là biện pháp đã được quyết định, khác với quỹ bình ổn chứng khoán vẫn ở giai đoạn chuẩn bị, chưa xác nhận giải ngân.",
+      "source": "yonhap-close",
+      "sourceIds": [
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Sidecar bán · 11:33",
+          "Nới giới hạn mua cổ phiếu quỹ",
+          "Quỹ bình ổn: đang chuẩn bị"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "ĐIỀU GÌ CẦN THEO DÕI?",
+      "screenText": "THEO DÕI DÒNG VỐN",
+      "eyebrow": "KCI · GÓC NHÌN",
+      "headline": "CHƯA THỂ KẾT LUẬN XU HƯỚNG",
+      "summary": "Thị trường và chính sách",
+      "voiceText": "Điểm cần theo dõi tiếp theo là sức ép bán của khối ngoại, phản ứng nhóm chip và hiệu quả thực tế của các biện pháp bình ổn. Một phiên giảm mạnh không tự xác nhận xu hướng của ngày mai.",
+      "source": "yonhap-close · newspim-close",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Cổ phiếu bán dẫn",
+          "Thực thi chính sách"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "KOSPI vừa mất hơn ba phần trăm và lùi sát mốc bốn nghìn bảy trăm điểm. Vì sao lực bán vẫn chưa dừng lại?",
+  "caption": "📉 KOSPI tiếp tục giảm sâu, khối ngoại vẫn bán ròng. Hàn Quốc vừa có biện pháp hỗ trợ mới. Anh chị quan tâm dòng vốn hay chính sách hơn? #KOSPI #KinhTeHanQuoc #KCI"
+}
