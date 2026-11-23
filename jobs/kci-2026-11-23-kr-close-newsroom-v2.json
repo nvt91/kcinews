@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-23-kr-close-newsroom-v2",
+  "articleId": "KCI-20261123-KR-CLOSE",
+  "stream": "KR_NEWS",
+  "slot": "KR_CLOSE",
+  "format": "digest",
+  "edition": "23/11/2026 KR_CLOSE · phiên bản tin cá nhân V2 · KRX regular close",
+  "dataAsOf": "2026-11-23T20:31:52.973+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "KOSPI có lúc giảm gần 6%: Phố Wall, dòng vốn và phản ứng chính sách",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v2-personal-financial-newsroom",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-23/kr-close-newsroom-v2.md",
+  "sourceDisclaimer": "Edited/reverified 23 November 2026; original KRX close from dated Yonhap/NewsPim, intraday low from dated Yonhap. Nasdaq official SOX quote is the completed Friday 20 Nov US session, NOT 23 Nov US session. FSC decision effective 24 Nov 2026 through 23 Feb 2027; no claim stabilization fund was disbursed. US tech selling is a documented contributing market sentiment channel, not exclusive cause of the Korean index move. KRX regular session only; NXT excluded.",
+  "eventKeys": [
+    "krx-kospi-kosdaq-close-2026-11-23",
+    "krx-kospi-foreign-flow-2026-11-23",
+    "krx-chip-selloff-2026-11-23",
+    "kr-fsc-buyback-relief-2026-11-23",
+    "us-sox-2026-11-20",
+    "fsc-buyback-rule-2026-11-23"
+  ],
+  "sourceLedger": [
+    {
+      "id": "yonhap-close",
+      "title": "Yonhap 23 Nov 16:11 KRX close, flows and FSC measures",
+      "url": "https://www.yna.co.kr/view/AKR20261123129851008",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4708.54 -3.31%; KOSDAQ 635.45 -1.58%; regular KRX close",
+        "KOSPI foreigners net sold KRW247.2bn; individuals KRW366.9bn net sold; institutions KRW187.2bn net bought",
+        "KOSPI sell-sidecar around 11:33 KST, second consecutive trading session",
+        "FSC decided three-month easing of daily listed-company treasury-stock buy order limit; securities stabilization fund only preparation, not deployed",
+        "USD/KRW 1345.9 at 15:30 KST, up 9.7 won"
+      ]
+    },
+    {
+      "id": "newspim-close",
+      "title": "NewsPim 23 Nov 16:09 KRX close and chip stocks",
+      "url": "https://www.newspim.com/news/view/20261123000978",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI 4708.54 -3.31%; KOSDAQ 635.45 -1.58%",
+        "Samsung Electronics -3.06%; SK hynix -2.52%",
+        "KOSPI foreigners KRW247.1bn net sellers; institutions KRW187.2bn net buyers; rounding differs KRW0.1bn from Yonhap"
+      ]
+    },
+    {
+      "id": "yonhap-chips",
+      "title": "Yonhap 23 Nov 16:32 Samsung and SK hynix close",
+      "url": "https://www.yna.co.kr/view/AKR20261123037351008",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T18:44:14+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Samsung Electronics -3.06%; SK hynix -2.52%"
+      ]
+    },
+    {
+      "id": "nasdaq-sox-nov20",
+      "title": "Nasdaq official PHLX Semiconductor Sector Index SOX, Nov 20 2026 close",
+      "url": "https://indexes.nasdaqomx.com/index/Overview/SOX",
+      "eventDate": "2026-11-20",
+      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "kind": "primary",
+      "facts": [
+        "Official Nasdaq SOX data as of Nov 20, 2026: 8,408.59 points, down 1,011.13 points or 10.73% in the completed U.S. session; do not label as Nov 23 U.S. close."
+      ]
+    },
+    {
+      "id": "fsc-buyback-nov23",
+      "title": "Financial Services Commission Korea, daily treasury-stock buy-order relief approved 23 Nov 2026",
+      "url": "https://www.fsc.go.kr/po010106/88190",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "kind": "primary",
+      "facts": [
+        "FSC approved easing of listed companies' daily treasury-stock purchase order quantity limit for 3 months from 2026-11-24 to 2027-02-23.",
+        "The temporary order-limit easing permits flexibility but does not require each issuer to buy shares."
+      ]
+    },
+    {
+      "id": "yonhap-intraday-nov23",
+      "title": "Yonhap 23 Nov 2026 KOSPI 4,586.80 intraday low and sidecar",
+      "url": "https://www.yna.co.kr/view/AKR20261123129851008",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-23T20:31:52.973+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI fell as much as 5.8% intraday to 4,586.80 and closed at 4,708.54 (-3.31%).",
+        "Selling-side KOSPI program-trading sidecar was activated around 11:33 KST, second consecutive session."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt.",
+    "candidates": [
+      {
+        "style": "intraday-reversal",
+        "text": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt.",
+        "score": 96
+      },
+      {
+        "style": "us-korea-transmission",
+        "text": "Nhóm bán dẫn Mỹ vừa giảm hơn mười phần trăm, và cổ phiếu chip Hàn Quốc tiếp tục chịu sức ép. Mắt xích nằm ở đâu?",
+        "score": 90
+      },
+      {
+        "style": "policy-mechanism",
+        "text": "KOSPI giảm hơn ba phần trăm trong khi cơ quan quản lý Hàn Quốc tung biện pháp mới. Chính sách có thể làm được gì?",
+        "score": 89
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "question": "Theo mọi người, tín hiệu nào sẽ giúp nhận biết áp lực giảm trên thị trường Hàn Quốc đang bắt đầu hạ nhiệt?",
+    "spoken": "Theo mọi người, tín hiệu nào sẽ giúp nhận biết áp lực giảm trên thị trường Hàn Quốc đang bắt đầu hạ nhiệt? Để lại góc nhìn ở phần bình luận và theo dõi kênh để cùng cập nhật những diễn biến tiếp theo nhé!",
+    "screenHeadline": "TÍN HIỆU NÀO BÁO HIỆU ỔN ĐỊNH?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi kênh"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "KOSPI lao dốc gần 6%",
+      "screenText": "KOSPI CÓ LÚC −5,8% | SIDECAR BÁN",
+      "eyebrow": "CHIỀU 23/11 · KRX",
+      "headline": "KOSPI CÓ LÚC MẤT GẦN 6%",
+      "summary": "Đáy trong phiên 4.586,80",
+      "voiceText": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt. Đến cuối phiên, thị trường đã thu hẹp đáng kể mức giảm.",
+      "source": "Yonhap 23/11 · KRX",
+      "sourceIds": [
+        "yonhap-intraday-nov23"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−5,8%",
+        "qualifier": "Mức giảm lớn nhất trong phiên 23/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "close",
+      "title": "Hai chỉ số đóng cửa trong sắc đỏ",
+      "screenText": "KOSPI −3,31% | KOSDAQ −1,58%",
+      "eyebrow": "ĐÓNG CỬA 23/11",
+      "headline": "ĐÀ GIẢM ĐƯỢC THU HẸP",
+      "summary": "Phiên chính KRX · không gồm NXT",
+      "voiceText": "KOSPI đóng cửa tại bốn nghìn bảy trăm linh tám phẩy năm tư điểm, giảm ba phẩy ba mốt phần trăm. KOSDAQ mất một phẩy năm tám phần trăm, còn sáu trăm ba mươi lăm phẩy bốn lăm điểm. So với đáy bốn nghìn năm trăm tám mươi sáu phẩy tám điểm, KOSPI đã hồi lên trước giờ kết phiên.",
+      "source": "Yonhap · NewsPim 23/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close",
+        "yonhap-intraday-nov23"
+      ],
+      "visual": {
+        "kind": "reversal",
+        "milestones": [
+          {
+            "label": "MỞ CỬA",
+            "value": "4.734,90"
+          },
+          {
+            "label": "ĐÁY PHIÊN",
+            "value": "4.586,80"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": "4.708,54"
+          }
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "wallstreet",
+      "title": "Sức ép từ nhóm bán dẫn Mỹ",
+      "screenText": "SOX MỸ −10,73% | SAMSUNG −3,06%",
+      "eyebrow": "PHỐ WALL → HÀN QUỐC",
+      "headline": "CÚ SỐC TỪ NHÓM CHIP MỸ",
+      "summary": "SOX phiên Mỹ 20/11, không phải 23/11",
+      "voiceText": "Một yếu tố gây sức ép lên tâm lý là phiên bán tháo nhóm bán dẫn Mỹ ngày hai mươi tháng mười một. Chỉ số SOX giảm mười phẩy bảy ba phần trăm, giữa lo ngại về định giá và lợi nhuận tương lai của làn sóng AI. Tại Hàn Quốc, Samsung Electronics giảm ba phẩy không sáu phần trăm, SK hynix giảm hai phẩy năm hai phần trăm. Mối liên hệ nằm ở kỳ vọng đối với ngành chip, không phải bằng chứng Phố Wall là nguyên nhân duy nhất.",
+      "source": "Nasdaq SOX 20/11 · Yonhap/NewsPim 23/11",
+      "sourceIds": [
+        "nasdaq-sox-nov20",
+        "yonhap-chips",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−10,73%",
+        "qualifier": "SOX · đóng cửa phiên Mỹ 20/11/2026"
+      },
+      "stats": []
+    },
+    {
+      "id": "flows",
+      "title": "Dòng tiền bán ròng tiếp diễn",
+      "screenText": "NGOẠI −247 TỶ KRW | TỔ CHỨC +187 TỶ",
+      "eyebrow": "DÒNG VỐN KOSPI",
+      "headline": "BÊN BÁN VẪN ÁP ĐẢO",
+      "summary": "Khối ngoại bán ròng phiên thứ 7",
+      "voiceText": "Trên KOSPI, khối ngoại bán ròng khoảng hai trăm bốn mươi bảy tỷ won, đánh dấu phiên thứ bảy liên tiếp. Cá nhân cũng bán ra, trong khi tổ chức trong nước mua ròng khoảng một trăm tám mươi bảy tỷ won. Dòng tiền có sự phân hóa, nhưng lực mua này chưa giúp chỉ số chuyển sang sắc xanh.",
+      "source": "Yonhap · NewsPim 23/11",
+      "sourceIds": [
+        "yonhap-close",
+        "newspim-close"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "Khối ngoại",
+            "value": -247,
+            "display": "−247 tỷ KRW"
+          },
+          {
+            "label": "Cá nhân",
+            "value": -367,
+            "display": "−367 tỷ KRW"
+          },
+          {
+            "label": "Tổ chức",
+            "value": 187,
+            "display": "+187 tỷ KRW"
+          }
+        ],
+        "qualifier": "KOSPI riêng phiên KRX · xấp xỉ tỷ won"
+      },
+      "stats": []
+    },
+    {
+      "id": "policy",
+      "title": "FSC nới giới hạn mua cổ phiếu quỹ",
+      "screenText": "FSC | 24/11/2026 – 23/02/2027",
+      "eyebrow": "CHÍNH SÁCH ỔN ĐỊNH",
+      "headline": "MỞ RỘNG QUYỀN MUA CỔ PHIẾU QUỸ",
+      "summary": "Hiệu lực ba tháng, không bắt buộc mua",
+      "voiceText": "Khoảng mười một giờ ba mươi ba phút, sidecar bán được kích hoạt, tạm dừng hiệu lực lệnh bán theo chương trình trong năm phút, không phải đóng cửa sàn. Chiều cùng ngày, cơ quan quản lý quyết định nới giới hạn đặt lệnh mua cổ phiếu quỹ từ ngày hai mươi bốn tháng mười một, trong ba tháng. Doanh nghiệp có thể linh hoạt mua lại cổ phiếu hơn, nhưng không bắt buộc mua. Quỹ bình ổn vẫn được chuẩn bị, chưa xác nhận giải ngân.",
+      "source": "FSC chính thức 23/11 · Yonhap",
+      "sourceIds": [
+        "fsc-buyback-nov23",
+        "yonhap-close"
+      ],
+      "visual": {
+        "kind": "generic",
+        "banner": "HỖ TRỢ THANH KHOẢN · KHÔNG BẢO ĐẢM PHỤC HỒI"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Tín hiệu để đánh giá thị trường",
+      "screenText": "DÒNG VỐN | NHÓM CHIP | MUA CỔ PHIẾU QUỸ",
+      "eyebrow": "ĐIỀU CẦN THEO DÕI",
+      "headline": "BA TÍN HIỆU KẾ TIẾP",
+      "summary": "Các yếu tố có thể kiểm chứng",
+      "voiceText": "Trong các phiên tới, điểm cần quan sát là liệu khối ngoại có giảm bán ròng, nhóm bán dẫn có ổn định cùng diễn biến từ Mỹ, và doanh nghiệp có thực sự sử dụng quy định mua cổ phiếu quỹ mới hay không. Các tín hiệu thực tế sẽ cho thấy rõ hơn sức ép trên thị trường có đang hạ nhiệt.",
+      "source": "Yonhap · Nasdaq · FSC",
+      "sourceIds": [
+        "yonhap-close",
+        "nasdaq-sox-nov20",
+        "fsc-buyback-nov23"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Nhóm chip Mỹ và Hàn",
+          "Mua lại cổ phiếu quỹ"
+        ],
+        "cta": true
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt.",
+  "caption": "📉 KOSPI có lúc mất gần 6%, nhóm chip Hàn Quốc chịu sức ép sau phiên bán tháo ở Mỹ. FSC đã nới giới hạn mua cổ phiếu quỹ. Theo mọi người, tín hiệu nào sẽ giúp thị trường ổn định trở lại? #KOSPI #ChungKhoanHanQuoc #KCI",
+  "scriptTitle": "KCI | KOSPI có lúc giảm gần 6%: Phố Wall, dòng vốn và phản ứng chính sách",
+  "revisionOf": "kci-2026-11-23-kr-close",
+  "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+  "variationReview": {
+    "edition": "KR_CLOSE",
+    "arcId": "A10",
+    "hookPatternId": "H01",
+    "ctaAngleId": "KR_CLOSE_22",
+    "closingRhythmId": "E08",
+    "comparedJobIds": [
+      "kci-2026-11-22-kr-close",
+      "kci-2026-11-21-kr-close",
+      "kci-2026-11-20-kr-close"
+    ],
+    "dissimilarityReason": "Lead with intraday near-6% drawdown and sidecar, then trace verified US SOX shock into Korean chip sentiment, distinguish flows and FSC policy effectiveness; open-ended CTA is not the old binary poll.",
+    "reviewedAtKST": "2026-11-23T20:31:52.973+09:00"
+  }
+}
