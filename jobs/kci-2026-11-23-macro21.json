@@ -180,7 +180,13 @@
         "bok-calendar"
       ],
       "visual": {
-        "kind": "generic"
+        "kind": "closing",
+        "bullets": [
+          "PPI tháng 10: −0,1%",
+          "Giá cung ứng: +0,7%",
+          "BOK họp 26/11"
+        ],
+        "cta": true
       },
       "stats": []
     }
