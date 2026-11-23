@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-24-kr-am",
+  "articleId": "KCI-20261124-KR-AM",
+  "stream": "KR_NEWS",
+  "slot": "KR_AM",
+  "format": "digest",
+  "edition": "24/11/2026 KR_AM · Tuesday morning",
+  "dataAsOf": "2026-11-24T08:00:34+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Tâm lý tiêu dùng Hàn Quốc giảm, trong khi xuất khẩu chip lập kỷ lục",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "previewVersion": "v1",
+  "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "articlePath": "editorial/2026-11-24/kr-am.md",
+  "sourceDisclaimer": "08:00:34 KST 24 Nov 2026. CCSI survey November is published actual, not realtime; export data are preliminary 1–20 Nov only. FSC buyback relief effective Nov24, not evidence of executed buybacks or stabilization fund disbursement. No live NXT quote or KRX current price; previous KRX close not mislabelled.",
+  "eventKeys": [
+    "kr-bok-ccsi-nov2026-release-nov24",
+    "kr-customs-exports-nov1-20-release-nov23",
+    "kr-fsc-treasury-buyback-relief-effective-nov24"
+  ],
+  "sourceLedger": [
+    {
+      "id": "bok-sentiment",
+      "title": "Yonhap 24 Nov 06:00 BOK November consumer sentiment",
+      "url": "https://en.yna.co.kr/view/AEN20261123008800320",
+      "eventDate": "2026-11-24",
+      "checkedAt": "2026-11-24T08:00:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "BOK CCSI November 103.1 down 2.3 points October; second monthly fall",
+        "survey Nov 9-16 among 2500 households",
+        "current conditions 78 down 4; outlook 86 down 2"
+      ]
+    },
+    {
+      "id": "sed-sentiment",
+      "title": "Seoul Economic Daily 24 Nov consumer sentiment details",
+      "url": "https://en.sedaily.com/economy/2026/11/24/korea-consumer-sentiment-falls-to-seven-month-low-on-stock",
+      "eventDate": "2026-11-24",
+      "checkedAt": "2026-11-24T08:00:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "November CCSI 103.1 lowest in seven months but remains above 100",
+        "inflation expectations 2.6 percent; housing price outlook down 6 points"
+      ]
+    },
+    {
+      "id": "yonhap-exports",
+      "title": "Yonhap 23 Nov Korea Customs Service 1-20 Nov exports",
+      "url": "https://en.yna.co.kr/view/AEN20261123002551320",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T08:00:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nov 1-20 exports USD77.4bn vs USD38.4bn a year earlier; preliminary period not full month",
+        "chip exports USD38.5bn account for 49.7 percent; imports USD50.3bn; trade surplus USD27.1bn",
+        "automobiles down 5.6 percent yoy"
+      ]
+    },
+    {
+      "id": "fsc-buyback",
+      "title": "FSC official 23 Nov treasury-stock buyback relief",
+      "url": "https://www.fsc.go.kr/po010106/88190",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T08:00:34+09:00",
+      "kind": "primary",
+      "facts": [
+        "Temporary listed-company daily treasury-stock buy-order limit relief starts Nov 24 through Feb 23 2027",
+        "Permission does not imply issuers actually bought shares"
+      ]
+    },
+    {
+      "id": "reuters-market",
+      "title": "Reuters 23 Nov Korea market stabilization and KOSPI",
+      "url": "https://www.reuters.com/world/asia-pacific/south-koreas-finance-minister-sees-solid-growth-next-year-flags-chip-volatility-2026-11-23/",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T08:00:34+09:00",
+      "kind": "secondary",
+      "facts": [
+        "KOSPI fell on Nov 23; government preparing stabilization measures",
+        "Market fund not confirmed disbursed"
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Tâm lý người tiêu dùng Hàn Quốc vừa giảm tháng thứ hai liên tiếp. Nhưng cùng lúc, xuất khẩu bán dẫn lại lập kỷ lục.",
+    "candidates": [
+      {
+        "style": "contrast",
+        "text": "Tâm lý người tiêu dùng Hàn Quốc vừa giảm tháng thứ hai liên tiếp. Nhưng cùng lúc, xuất khẩu bán dẫn lại lập kỷ lục.",
+        "score": 95
+      },
+      {
+        "style": "policy",
+        "text": "Từ hôm nay, doanh nghiệp Hàn Quốc được nới giới hạn mua cổ phiếu quỹ. Biện pháp này có ý nghĩa gì?",
+        "score": 90
+      },
+      {
+        "style": "macro",
+        "text": "Xuất khẩu chip chiếm gần một nửa kim ngạch hai mươi ngày đầu tháng, nhưng tâm lý người dân lại giảm.",
+        "score": 92
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "question": "Điều gì sẽ giúp đà tăng xuất khẩu lan tỏa rõ hơn tới đời sống người dân?",
+    "spoken": "Điều gì sẽ giúp đà tăng xuất khẩu lan tỏa rõ hơn tới đời sống người dân? Mời mọi người chia sẻ góc nhìn ở phần bình luận và theo dõi kênh để cập nhật các diễn biến tiếp theo nhé!",
+    "screenHeadline": "XUẤT KHẨU CÓ LAN TỎA?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi kênh"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "TÂM LÝ TIÊU DÙNG GIẢM",
+      "screenText": "CCSI 103,1 | THÁNG 11",
+      "eyebrow": "KCI · SÁNG 24/11",
+      "headline": "TÂM LÝ TIÊU DÙNG GIẢM",
+      "summary": "Dữ liệu đến 08:00 KST · 24/11/2026",
+      "voiceText": "Tâm lý người tiêu dùng Hàn Quốc vừa giảm tháng thứ hai liên tiếp. Nhưng cùng lúc, xuất khẩu bán dẫn lại lập kỷ lục. Hai tín hiệu này nói gì về kinh tế Hàn Quốc?",
+      "source": "bok-sentiment · yonhap-exports",
+      "sourceIds": [
+        "bok-sentiment",
+        "yonhap-exports"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "CCSI 103,1 · giảm 2,3 điểm",
+          "Chip chiếm 49,7% xuất khẩu 1–20/11"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "sentiment",
+      "title": "SỨC MUA VÀ CHI PHÍ VỐN",
+      "screenText": "103,1 | GIẢM 2,3 ĐIỂM",
+      "eyebrow": "KCI · SÁNG 24/11",
+      "headline": "SỨC MUA VÀ CHI PHÍ VỐN",
+      "summary": "Dữ liệu đến 08:00 KST · 24/11/2026",
+      "voiceText": "Ngân hàng Trung ương Hàn Quốc công bố sáng hai mươi bốn tháng mười một: chỉ số tâm lý tiêu dùng tháng này còn một trăm linh ba phẩy một điểm, giảm hai phẩy ba điểm so với tháng mười. Chỉ số vẫn trên mốc một trăm, nhưng thấp nhất bảy tháng. Khảo sát thực hiện từ ngày chín đến mười sáu, phản ánh lo ngại về chứng khoán và lãi vay.",
+      "source": "bok-sentiment · sed-sentiment",
+      "sourceIds": [
+        "bok-sentiment",
+        "sed-sentiment"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "103,1",
+        "qualifier": "CCSI tháng 11 · BOK công bố 24/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "exports",
+      "title": "CHIP DẪN DẮT XUẤT KHẨU",
+      "screenText": "77,4 TỶ USD | 1–20/11",
+      "eyebrow": "KCI · SÁNG 24/11",
+      "headline": "CHIP DẪN DẮT XUẤT KHẨU",
+      "summary": "Dữ liệu đến 08:00 KST · 24/11/2026",
+      "voiceText": "Ở chiều ngược lại, Hải quan Hàn Quốc cho biết xuất khẩu hai mươi ngày đầu tháng mười một đạt bảy mươi bảy phẩy bốn tỷ đô la, hơn gấp đôi cùng kỳ năm trước. Riêng bán dẫn đạt ba mươi tám phẩy năm tỷ, chiếm gần một nửa tổng kim ngạch. Nhưng xuất khẩu ô tô lại giảm năm phẩy sáu phần trăm. Đây mới là dữ liệu hai mươi ngày, không phải kết quả cả tháng.",
+      "source": "yonhap-exports",
+      "sourceIds": [
+        "yonhap-exports"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "49,7%",
+        "qualifier": "Tỷ trọng chip trong xuất khẩu 1–20/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "policy",
+      "title": "NỚI MUA CỔ PHIẾU QUỸ",
+      "screenText": "HIỆU LỰC TỪ 24/11",
+      "eyebrow": "KCI · SÁNG 24/11",
+      "headline": "NỚI MUA CỔ PHIẾU QUỸ",
+      "summary": "Dữ liệu đến 08:00 KST · 24/11/2026",
+      "voiceText": "Về thị trường vốn, quyết định của Ủy ban Dịch vụ Tài chính cho phép doanh nghiệp niêm yết linh hoạt hơn về lượng đặt mua cổ phiếu quỹ từ hôm nay, trong ba tháng. Đây là quyền được mua, không đồng nghĩa doanh nghiệp đã mua hoặc quỹ bình ổn đã giải ngân. Phiên KRX chính ngày hôm nay chưa mở cửa tại thời điểm bản tin.",
+      "source": "fsc-buyback · reuters-market",
+      "sourceIds": [
+        "fsc-buyback",
+        "reuters-market"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "FSC nới giới hạn đặt mua",
+          "Không đồng nghĩa đã mua thực tế"
+        ]
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "BA TÍN HIỆU CẦN THEO DÕI",
+      "screenText": "TIÊU DÙNG · CHIP · DÒNG VỐN",
+      "eyebrow": "KCI · SÁNG 24/11",
+      "headline": "BA TÍN HIỆU CẦN THEO DÕI",
+      "summary": "Dữ liệu đến 08:00 KST · 24/11/2026",
+      "voiceText": "Như vậy, xuất khẩu mạnh chưa tự động chuyển thành tâm lý tiêu dùng tích cực. Trong phiên mới, đáng theo dõi là dòng vốn ngoại, giao dịch mua cổ phiếu quỹ thực tế và kỳ vọng lãi suất trước cuộc họp BOK. Các dữ kiện này sẽ giúp đánh giá áp lực trong nước có dịu đi hay không.",
+      "source": "bok-sentiment · yonhap-exports · fsc-buyback",
+      "sourceIds": [
+        "bok-sentiment",
+        "yonhap-exports",
+        "fsc-buyback"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Mua cổ phiếu quỹ thực tế",
+          "Quyết định BOK 26/11"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Tâm lý người tiêu dùng Hàn Quốc vừa giảm tháng thứ hai liên tiếp. Nhưng cùng lúc, xuất khẩu bán dẫn lại lập kỷ lục.",
+  "caption": "🇰🇷 Xuất khẩu chip lập kỷ lục, nhưng tâm lý tiêu dùng Hàn Quốc lại giảm. Chính sách mới sẽ giúp thị trường ra sao? #KCI #KinhTeHanQuoc",
+  "variationReview": {
+    "edition": "KR_AM",
+    "arcId": "A03",
+    "hookPatternId": "contrast-consumer-exports",
+    "ctaAngleId": "household-spillover",
+    "closingRhythmId": "open-question",
+    "comparedJobIds": [
+      "kci-2026-11-23-kr-am",
+      "kci-2026-11-23-kr-close-newsroom-v2"
+    ],
+    "dissimilarityReason": "Lead with new BOK CCSI release and contrast with 23 Nov customs exports, not repeated stabilization fund headline.",
+    "reviewedAtKST": "2026-11-24T08:00:34+09:00"
+  }
+}
