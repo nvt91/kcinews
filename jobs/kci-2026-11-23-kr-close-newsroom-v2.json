@@ -122,8 +122,8 @@
   },
   "cta": {
     "type": "comment",
-    "question": "Theo mọi người, tín hiệu nào sẽ giúp nhận biết áp lực giảm trên thị trường Hàn Quốc đang bắt đầu hạ nhiệt?",
-    "spoken": "Theo mọi người, tín hiệu nào sẽ giúp nhận biết áp lực giảm trên thị trường Hàn Quốc đang bắt đầu hạ nhiệt? Để lại góc nhìn ở phần bình luận và theo dõi kênh để cùng cập nhật những diễn biến tiếp theo nhé!",
+    "question": "Theo mọi người, tín hiệu nào sẽ cho thấy thị trường Hàn Quốc bắt đầu ổn định trở lại?",
+    "spoken": "Theo mọi người, tín hiệu nào sẽ cho thấy thị trường Hàn Quốc bắt đầu ổn định trở lại? Cùng chia sẻ ở phần bình luận và theo dõi kênh để cập nhật những diễn biến tiếp theo nhé!",
     "screenHeadline": "TÍN HIỆU NÀO BÁO HIỆU ỔN ĐỊNH?",
     "screenSubline": "Bình luận góc nhìn · Theo dõi kênh"
   },
@@ -135,7 +135,7 @@
       "eyebrow": "CHIỀU 23/11 · KRX",
       "headline": "KOSPI CÓ LÚC MẤT GẦN 6%",
       "summary": "Đáy trong phiên 4.586,80",
-      "voiceText": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt. Đến cuối phiên, thị trường đã thu hẹp đáng kể mức giảm.",
+      "voiceText": "KOSPI có lúc lao dốc gần sáu phần trăm, thủng mốc bốn nghìn sáu trăm điểm. Cơ chế sidecar bán lại được kích hoạt. Cuối phiên, đà giảm đã thu hẹp.",
       "source": "Yonhap 23/11 · KRX",
       "sourceIds": [
         "yonhap-intraday-nov23"
@@ -154,7 +154,7 @@
       "eyebrow": "ĐÓNG CỬA 23/11",
       "headline": "ĐÀ GIẢM ĐƯỢC THU HẸP",
       "summary": "Phiên chính KRX · không gồm NXT",
-      "voiceText": "KOSPI đóng cửa tại bốn nghìn bảy trăm linh tám phẩy năm tư điểm, giảm ba phẩy ba mốt phần trăm. KOSDAQ mất một phẩy năm tám phần trăm, còn sáu trăm ba mươi lăm phẩy bốn lăm điểm. So với đáy bốn nghìn năm trăm tám mươi sáu phẩy tám điểm, KOSPI đã hồi lên trước giờ kết phiên.",
+      "voiceText": "Kết phiên chính KRX, KOSPI mất ba phẩy ba mốt phần trăm, còn bốn nghìn bảy trăm linh tám phẩy năm tư điểm. KOSDAQ giảm một phẩy năm tám phần trăm. Trên bảng điện, KOSPI đã hồi lên từ mức đáy bốn nghìn năm trăm tám mươi sáu phẩy tám điểm.",
       "source": "Yonhap · NewsPim 23/11",
       "sourceIds": [
         "yonhap-close",
@@ -187,7 +187,7 @@
       "eyebrow": "PHỐ WALL → HÀN QUỐC",
       "headline": "CÚ SỐC TỪ NHÓM CHIP MỸ",
       "summary": "SOX phiên Mỹ 20/11, không phải 23/11",
-      "voiceText": "Một yếu tố gây sức ép lên tâm lý là phiên bán tháo nhóm bán dẫn Mỹ ngày hai mươi tháng mười một. Chỉ số SOX giảm mười phẩy bảy ba phần trăm, giữa lo ngại về định giá và lợi nhuận tương lai của làn sóng AI. Tại Hàn Quốc, Samsung Electronics giảm ba phẩy không sáu phần trăm, SK hynix giảm hai phẩy năm hai phần trăm. Mối liên hệ nằm ở kỳ vọng đối với ngành chip, không phải bằng chứng Phố Wall là nguyên nhân duy nhất.",
+      "voiceText": "Phiên Mỹ ngày hai mươi tháng mười một, chỉ số bán dẫn SOX mất mười phẩy bảy ba phần trăm. Lo ngại về định giá và lợi nhuận AI tiếp tục gây sức ép lên kỳ vọng ngành chip. Tại Hàn Quốc, Samsung Electronics giảm ba phẩy không sáu phần trăm, SK hynix mất hai phẩy năm hai phần trăm. Sức ép từ Mỹ là một mắt xích, không phải lời giải thích duy nhất.",
       "source": "Nasdaq SOX 20/11 · Yonhap/NewsPim 23/11",
       "sourceIds": [
         "nasdaq-sox-nov20",
@@ -208,7 +208,7 @@
       "eyebrow": "DÒNG VỐN KOSPI",
       "headline": "BÊN BÁN VẪN ÁP ĐẢO",
       "summary": "Khối ngoại bán ròng phiên thứ 7",
-      "voiceText": "Trên KOSPI, khối ngoại bán ròng khoảng hai trăm bốn mươi bảy tỷ won, đánh dấu phiên thứ bảy liên tiếp. Cá nhân cũng bán ra, trong khi tổ chức trong nước mua ròng khoảng một trăm tám mươi bảy tỷ won. Dòng tiền có sự phân hóa, nhưng lực mua này chưa giúp chỉ số chuyển sang sắc xanh.",
+      "voiceText": "Khối ngoại bán ròng khoảng hai trăm bốn mươi bảy tỷ won trên KOSPI, phiên thứ bảy liên tiếp. Cá nhân cũng bán ra, trong khi tổ chức trong nước mua ròng khoảng một trăm tám mươi bảy tỷ won. Dòng tiền phân hóa nhưng chưa đủ kéo chỉ số trở lại sắc xanh.",
       "source": "Yonhap · NewsPim 23/11",
       "sourceIds": [
         "yonhap-close",
@@ -244,7 +244,7 @@
       "eyebrow": "CHÍNH SÁCH ỔN ĐỊNH",
       "headline": "MỞ RỘNG QUYỀN MUA CỔ PHIẾU QUỸ",
       "summary": "Hiệu lực ba tháng, không bắt buộc mua",
-      "voiceText": "Khoảng mười một giờ ba mươi ba phút, sidecar bán được kích hoạt, tạm dừng hiệu lực lệnh bán theo chương trình trong năm phút, không phải đóng cửa sàn. Chiều cùng ngày, cơ quan quản lý quyết định nới giới hạn đặt lệnh mua cổ phiếu quỹ từ ngày hai mươi bốn tháng mười một, trong ba tháng. Doanh nghiệp có thể linh hoạt mua lại cổ phiếu hơn, nhưng không bắt buộc mua. Quỹ bình ổn vẫn được chuẩn bị, chưa xác nhận giải ngân.",
+      "voiceText": "Khoảng mười một giờ ba mươi ba phút, sidecar tạm ngừng hiệu lực lệnh bán theo chương trình trong năm phút, không phải đóng cửa sàn. Chiều cùng ngày, FSC quyết định nới giới hạn mua cổ phiếu quỹ trong ba tháng, bắt đầu từ hai mươi bốn tháng mười một. Doanh nghiệp có thêm dư địa mua lại nhưng không bắt buộc phải mua. Quỹ bình ổn vẫn đang chuẩn bị, chưa xác nhận giải ngân.",
       "source": "FSC chính thức 23/11 · Yonhap",
       "sourceIds": [
         "fsc-buyback-nov23",
@@ -263,7 +263,7 @@
       "eyebrow": "ĐIỀU CẦN THEO DÕI",
       "headline": "BA TÍN HIỆU KẾ TIẾP",
       "summary": "Các yếu tố có thể kiểm chứng",
-      "voiceText": "Trong các phiên tới, điểm cần quan sát là liệu khối ngoại có giảm bán ròng, nhóm bán dẫn có ổn định cùng diễn biến từ Mỹ, và doanh nghiệp có thực sự sử dụng quy định mua cổ phiếu quỹ mới hay không. Các tín hiệu thực tế sẽ cho thấy rõ hơn sức ép trên thị trường có đang hạ nhiệt.",
+      "voiceText": "Trong những phiên tới, hãy chú ý liệu khối ngoại có giảm bán ròng, nhóm bán dẫn Mỹ và Hàn có ổn định, và doanh nghiệp có thực sự mua thêm cổ phiếu quỹ hay không. Những diễn biến ấy sẽ giúp đánh giá áp lực thị trường đang thay đổi ra sao.",
       "source": "Yonhap · Nasdaq · FSC",
       "sourceIds": [
         "yonhap-close",
