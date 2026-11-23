@@ -33,6 +33,18 @@ Three falsifiable indicators with concrete next sources.
 | Source ID | Exact source URL | Event date | Checked at KST | Facts it supports |
 |---|---|---|---|---|
 
+## Newsroom voice checkpoint (PERSONAL_FINANCIAL_NEWSROOM_V1)
+
+For ALL streams including US_AM, before writing voiceText/CTA record:
+- **Why / mechanism:** <source-supported path; qualify unproven causality>
+- **Korean read-through:** <affected market/sector and channel>
+- **Next observable signals:** <1–3 specific verifiable indicators>
+- **Open question:** <audience question that cannot be answered only yes/no or as forced buy/sell>
+- **Personal-channel closing:** <invite comment and follow the channel; do not read brand name>
+- **Anti-boilerplate:** <repeated "Đây là…", generic cautions and duplicate data removed>
+- **Style ID:** PERSONAL_FINANCIAL_NEWSROOM_V1
+- **Caption:** KR/MACRO <50 words; US_AM 50–100 characters (hashtags included)
+
 ## Video handoff
 **Hook 1 / Hook 2 / Hook 3**, with scoring and chosen hook.  
 **Audience promise:** one sentence.  
