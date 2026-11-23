@@ -6,6 +6,10 @@ For KR_CLOSE, distinguish an essential unsupported market claim from a single un
 
 If an OPTIONAL breadth/flow/FX figure conflicts, omit that individual metric rather than blocking a video supported by other verified close, sector and policy facts. Never mix NXT after-market and KRX regular-session data, or draw an imaginary minute-by-minute chart from high/low/open/close samples. At a KR_CLOSE start around 17:00 KST, recheck Yonhap closing reports published 15:35–16:30 before declaring BLOCKED_EDITORIAL. If the central thesis remains unverified after corroboration, block before paid TTS and report exactly which claim failed. Retain one edition/job and no duplicate trigger.
 
+## New editorial test — 23/11/2026
+
+Read [PERSONAL_NEWSROOM_V1.md](PERSONAL_NEWSROOM_V1.md) for all KR/US/MACRO videos. Beyond factual accuracy, verify that the selected video script states (a) the news, (b) its supported **cause/transmission** and limitations, (c) a testable future indicator, and (d) a personal-channel CTA question OPEN to audience perspectives. For US_AM, identify how U.S. markets/data concretely affect Korean equities/macroeconomy. These are editorial checks, not invented numerical news or an automatic hard regex.
+
 ## Purpose and research discipline
 Deliver credible Vietnamese Korean equity/macro coverage, not a general global-news dump. Research from live sources on **every run**. Anchor all reported changes to the exact publication date, event date, observation period and local KST data-cutoff (Asia/Seoul). On weekends or holidays report the last completed trading session without calling prices live.
 
