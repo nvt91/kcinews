@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-24-us-am",
+  "articleId": "KCI-20261124-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "format": "daily_digest",
+  "edition": "24/11/2026 KST — GLOBAL_US / US_AM",
+  "dataAsOf": "2026-11-24T09:03:32+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Nasdaq bật 6,51% khi Nvidia tăng mạnh: tác động nào đến bán dẫn Hàn Quốc?",
+  "scriptTitle": "KCI | Phố Wall hồi phục mạnh, nhóm chip Hàn Quốc chờ tín hiệu nào?",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "sourceDisclaimer": "Đóng cửa Mỹ 23/11/2026 lúc 16:00 EST = 06:00 KST 24/11. Các kịch bản Hàn Quốc có điều kiện, không phải dự báo chắc chắn.",
+  "eventKeys": [
+    "wall-street-rebound-2026-11-23",
+    "nvidia-ceo-return-market-reaction-2026-11-23",
+    "treasury-oil-2026-11-23",
+    "korea-chip-transmission-2026-11-24"
+  ],
+  "sourceLedger": [
+    {
+      "id": "ap-close",
+      "title": "AP: How major US stock indexes fared Monday 11/23/2026",
+      "url": "https://apnews.com/article/fcdf1bad36b4f81c90cbb0f33a2c5704",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T09:03:32+09:00",
+      "kind": "secondary",
+      "facts": [
+        "S&P 500 +4.73% to 7237.17, Nasdaq +6.51% to 24089.56, Dow +3.01% to 49595.31, regular US close 23 November."
+      ]
+    },
+    {
+      "id": "reuters-ai",
+      "title": "Reuters: Wall Street rebounds as Jensen Huang returns as Nvidia CEO",
+      "url": "https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T09:03:32+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nvidia rose about 31.5% after reinstatement of Jensen Huang as CEO; semiconductor stocks jumped about 14%; risk remains around AI investment, regulation."
+      ]
+    },
+    {
+      "id": "ap-risk",
+      "title": "AP: US stocks surge and recover half of last week's plunge",
+      "url": "https://apnews.com/article/49ba1beba78fa4ed2bd5898029f79c91",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T09:03:32+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Treasury 10-year yield around 4.93%; Brent crude down about 3.6%; high AI valuations and borrowing costs remain risks."
+      ]
+    },
+    {
+      "id": "reuters-fed",
+      "title": "Reuters: Wall Street rebounds; markets watch upcoming PCE",
+      "url": "https://www.reuters.com/business/wall-street-futures-rebound-after-rough-week-ai-linked-shares-2026-11-23/",
+      "eventDate": "2026-11-23",
+      "checkedAt": "2026-11-24T09:03:32+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Markets monitoring Wednesday PCE release for monetary-policy clues; not a released result."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Nasdaq vừa tăng hơn sáu phần trăm trong phiên Mỹ, còn Nvidia bật gần ba mươi hai phần trăm.",
+    "candidates": [
+      {
+        "style": "numbers",
+        "text": "Nasdaq vừa tăng hơn sáu phần trăm trong phiên Mỹ, còn Nvidia bật gần ba mươi hai phần trăm."
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nhóm chip Mỹ bật mạnh sau cú bán tháo. Liệu cổ phiếu bán dẫn Hàn Quốc có hưởng lợi?"
+      },
+      {
+        "style": "risk",
+        "text": "Phố Wall hồi phục rất mạnh, nhưng rủi ro đầu tư AI đã thực sự giảm chưa?"
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo mọi người, tín hiệu nào từ doanh nghiệp chip Mỹ sẽ quan trọng nhất với thị trường Hàn Quốc trong những phiên tới? Mời chia sẻ góc nhìn ở phần bình luận và theo dõi kênh để cùng cập nhật nhé.",
+    "screenHeadline": "NHỊP HỒI CÓ LAN TỎA?",
+    "screenSubline": "Bình luận góc nhìn của bạn",
+    "question": "Tín hiệu nào xác nhận sức cầu chip?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Hook: Nasdaq và Nvidia bật tăng",
+      "screenText": "NASDAQ +6,51% | NVIDIA +31,5%",
+      "eyebrow": "PHỐ WALL · ĐÓNG CỬA 23/11",
+      "headline": "Cú hồi mạnh của nhóm AI",
+      "summary": "Kết quả phiên Mỹ, không phải futures sáng nay",
+      "voiceText": "Nasdaq vừa tăng hơn sáu phần trăm trong phiên Mỹ, còn Nvidia bật gần ba mươi hai phần trăm. Sau tuần bán tháo nhóm AI, đây là một phiên đảo chiều rất đáng chú ý.",
+      "source": "AP · REUTERS · 23/11",
+      "sourceIds": [
+        "ap-close",
+        "reuters-ai"
+      ],
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "+6,51%",
+          "tone": "up"
+        },
+        {
+          "label": "NVIDIA",
+          "value": "+31,5%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": 6.51,
+            "display": "+6,51%"
+          },
+          {
+            "label": "NVIDIA",
+            "value": 31.5,
+            "display": "+31,5%"
+          }
+        ],
+        "qualifier": "Đóng cửa Mỹ 23/11 · AP/Reuters"
+      }
+    },
+    {
+      "id": "market",
+      "title": "Cảnh 2 — Chỉ số Mỹ đồng loạt tăng",
+      "screenText": "S&P +4,73% | DOW +3,01%",
+      "eyebrow": "ĐÓNG CỬA MỸ · 23/11",
+      "headline": "Đà tăng lan ra thị trường",
+      "summary": "S&P 500 đóng cửa 7.237,17 điểm",
+      "voiceText": "Kết thúc phiên thứ Hai ngày hai mươi ba tháng mười một tại Mỹ, S&P năm trăm tăng bốn phẩy bảy ba phần trăm, Dow tăng ba phẩy không một phần trăm. Đà hồi phục không chỉ nằm ở một cổ phiếu, nhưng thị trường mới lấy lại một phần mức giảm của tuần trước.",
+      "source": "AP · 23/11",
+      "sourceIds": [
+        "ap-close"
+      ],
+      "stats": [
+        {
+          "label": "S&P 500",
+          "value": "+4,73%",
+          "tone": "up"
+        },
+        {
+          "label": "DOW",
+          "value": "+3,01%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "S&P 500",
+            "value": 4.73,
+            "display": "+4,73%"
+          },
+          {
+            "label": "DOW",
+            "value": 3.01,
+            "display": "+3,01%"
+          }
+        ],
+        "qualifier": "Đóng cửa phiên Mỹ 23/11 · AP"
+      }
+    },
+    {
+      "id": "nvidia",
+      "title": "Cảnh 3 — Động lực từ Nvidia",
+      "screenText": "NVIDIA +31,5% | CHIP MỸ HỒI PHỤC",
+      "eyebrow": "AI & BÁN DẪN",
+      "headline": "Nvidia trở lại tâm điểm",
+      "summary": "Phản ứng sau tin Jensen Huang trở lại vị trí CEO",
+      "voiceText": "Reuters cho biết cổ phiếu Nvidia tăng khoảng ba mươi mốt phẩy năm phần trăm sau thông tin Jensen Huang trở lại vị trí giám đốc điều hành. Nhóm bán dẫn Mỹ cũng bật mạnh. Tuy vậy, chi phí đầu tư AI, định giá và rủi ro quản trị vẫn là những câu hỏi chưa được giải quyết.",
+      "source": "REUTERS · 23/11",
+      "sourceIds": [
+        "reuters-ai"
+      ],
+      "stats": [
+        {
+          "label": "NVIDIA",
+          "value": "+31,5%",
+          "tone": "up"
+        },
+        {
+          "label": "CHIP MỸ",
+          "value": "~+14%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+31,5%",
+        "unit": "NVIDIA · phiên Mỹ 23/11",
+        "qualifier": "Reuters · phản ứng thị trường"
+      }
+    },
+    {
+      "id": "macro",
+      "title": "Cảnh 4 — Lợi suất và giá dầu",
+      "screenText": "US10Y ~4,93% | BRENT GIẢM",
+      "eyebrow": "VĨ MÔ MỸ",
+      "headline": "Chi phí vốn vẫn quan trọng",
+      "summary": "Lợi suất và dầu là hai kênh tác động khác nhau",
+      "voiceText": "Lợi suất trái phiếu Mỹ kỳ hạn mười năm quanh bốn phẩy chín ba phần trăm, còn giá dầu Brent giảm trong phiên. Với các doanh nghiệp công nghệ cần vốn lớn, chi phí tài trợ vẫn đáng theo dõi. Giá dầu thấp hơn có thể hỗ trợ nhà nhập khẩu năng lượng như Hàn Quốc, nếu xu hướng được duy trì.",
+      "source": "AP · 23/11",
+      "sourceIds": [
+        "ap-risk"
+      ],
+      "stats": [
+        {
+          "label": "US10Y",
+          "value": "~4,93%",
+          "tone": "neutral"
+        },
+        {
+          "label": "BRENT",
+          "value": "GIẢM",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "~4,93%",
+        "unit": "US10Y · 23/11",
+        "qualifier": "AP · mức quan sát"
+      }
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh kết — Tác động Hàn Quốc và CTA",
+      "screenText": "KOSPI | SK HYNIX | USD/KRW",
+      "eyebrow": "TÁC ĐỘNG CÓ ĐIỀU KIỆN",
+      "headline": "Hàn Quốc chờ xác nhận",
+      "summary": "Dòng vốn, chip và báo cáo PCE",
+      "voiceText": "Nếu nhu cầu đối với cổ phiếu chip Mỹ tiếp tục phục hồi, tâm lý dành cho Samsung Electronics và SK hynix có thể được hỗ trợ. Ngược lại, đồng đô la mạnh hoặc dòng vốn ngoại suy yếu vẫn có thể gây sức ép lên KOSPI, KOSDAQ và tỷ giá đô la trên won. Thị trường sẽ theo dõi thêm báo cáo PCE của Mỹ dự kiến công bố trong tuần.",
+      "source": "KCI · AP/REUTERS",
+      "sourceIds": [
+        "reuters-ai",
+        "reuters-fed",
+        "ap-risk"
+      ],
+      "stats": [
+        {
+          "label": "KOSPI",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        },
+        {
+          "label": "USD/KRW",
+          "value": "THEO DÕI",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Dòng vốn ngoại",
+          "Cổ phiếu bán dẫn",
+          "PCE và USD/KRW"
+        ],
+        "cta": {
+          "headline": "NHỊP HỒI CÓ LAN TỎA?",
+          "subline": "Bình luận góc nhìn của bạn"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Nasdaq hồi phục mạnh, bán dẫn Hàn Quốc có được hỗ trợ?",
+  "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+  "variationReview": "A04 chuỗi truyền dẫn Mỹ–Hàn, hook số liệu Nvidia; CTA mở về tín hiệu chip, khác góc futures của 23/11."
+}
