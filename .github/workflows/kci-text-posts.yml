@@ -1,0 +1,59 @@
+name: KCI Text posts to Telegram channel
+
+# Owner request 26/11/2026: GPT writes company/market news posts as plain-text
+# files in posts/ (see .agents/skills/kci-news-video/references/TEXT_POSTS.md).
+# Every NEW posts/*.txt pushed to main is checked and posted once to the channel.
+# Editing an existing file never re-posts it. Problems are reported privately.
+
+on:
+  push:
+    branches: [main]
+    paths: ['posts/*.txt']
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'posts/<file>.txt to (re)post'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kci-text-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Post new text files
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight' }}
+          SELECTED: ${{ inputs.file }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -uo pipefail
+          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" ]]; then
+            files="$SELECTED"
+          else
+            if [[ -z "$BEFORE" ]] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then BEFORE="HEAD~1"; fi
+            files="$(git diff --name-only --diff-filter=A "$BEFORE" HEAD -- 'posts/*.txt' | sort)"
+          fi
+          status=0
+          for f in $files; do
+            echo "::group::$f"
+            node scripts/post-text.mjs "$f" || status=1
+            echo "::endgroup::"
+            sleep 3
+          done
+          exit $status
