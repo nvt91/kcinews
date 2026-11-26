@@ -149,21 +149,20 @@
         }
       ],
       "visual": {
-        "kind": "reversal",
-        "banner": "−3,2% → ~−0,3%",
-        "milestones": [
+        "kind": "comparison",
+        "bars": [
           {
-            "label": "MỨC GIẢM LỚN NHẤT",
-            "value": "−3,2%",
-            "tone": "down"
+            "label": "MỨC GIẢM LỚN NHẤT TRONG PHIÊN",
+            "value": -3.2,
+            "display": "−3,2%"
           },
           {
-            "label": "ĐÓNG CỬA",
-            "value": "~−0,3%",
-            "tone": "down"
+            "label": "S&P 500 ĐÓNG CỬA",
+            "value": -0.3,
+            "display": "~−0,3%"
           }
         ],
-        "qualifier": "AP · 25/11; không mô phỏng chart phút"
+        "qualifier": "AP · 25/11/2026; hai mốc được công bố, không tạo chart phút"
       }
     },
     {
