@@ -1,0 +1,51 @@
+name: KCI Telegram resend (no Vbee, no render)
+
+# Re-sends an already rendered MP4 (from a KCI News Video run whose artifact is
+# still kept, i.e. under 2 days old) to the owner's Telegram with the current
+# post-ready caption. Costs nothing: no Vbee call, no re-render.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Run ID of a successful KCI News Video run (number in the run URL)'
+        required: true
+        type: string
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  resend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download the run's review artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+        run: |
+          set -euo pipefail
+          [[ "$RUN_ID" =~ ^[0-9]{5,20}$ ]] || { echo "::error::run_id must be the numeric run ID"; exit 1; }
+          gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" -D dl
+          mkdir -p out
+          find dl -type f -name '*.mp4' ! -name '*preview*' -exec cp {} out/ \;
+          qc="$(find dl -type f -name qc.json | head -n1)"
+          ls -la out
+          [[ -n "$(ls out/*.mp4 2>/dev/null)" ]] || { echo "::error::No MP4 in that run's artifact (expired or not a video run)."; exit 1; }
+          job_id="$(node -p 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).job' "$qc")"
+          [[ "$job_id" =~ ^[a-z0-9-]+$ && -f "jobs/$job_id.json" ]] || { echo "::error::Job file for $job_id not found"; exit 1; }
+          echo "KCI_JOB_PATH=jobs/$job_id.json" >> "$GITHUB_ENV"
+      - name: Install FFmpeg (only used if the MP4 is over 50 MB)
+        run: command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Send to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          KCI_RESULT: success
+        run: node scripts/send-telegram.mjs
