@@ -74,8 +74,8 @@ export function buildPost({ date, kospi, kosdaq, gainers, industries, themes }) 
   if (themes.length) {
     lines.push("", "🚀 Chủ đề nổi bật", ...themes.map((g) => `• ${g.name} ${pct(num(g.changeRate))}`));
   }
-  lines.push("", "Nguồn: Naver Finance (dữ liệu KRX) · Thông tin tham khảo, không phải khuyến nghị đầu tư.",
-    "#ChungKhoanHanQuoc #KOSPI #KOSDAQ");
+  // Owner request 26/11/2026: no source/disclaimer line, hashtags only.
+  lines.push("", "#ChungKhoanHanQuoc #KOSPI #KOSDAQ");
   return lines.join("\n");
 }
 
