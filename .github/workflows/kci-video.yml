@@ -133,6 +133,7 @@ jobs:
           else
             selected_job="$KCI_JOB"
           fi
+          echo "KCI_SELECTED_JOB=$selected_job" >> "$GITHUB_ENV"
           mkdir -p out
           # Keep the exact reason so the issue comment can say what to fix.
           if ! node scripts/run-job.mjs --mode=validate --job="$selected_job" 2> out/failure-reason.txt; then
@@ -205,3 +206,17 @@ jobs:
           KCI_JOB: ${{ inputs.job }}
           KCI_FAILURE_FILE: out/failure-reason.txt
         run: node scripts/notify-render.mjs
+      # 26/11/2026: deliver every finished MP4 (and every failure reason) to the
+      # owner's private Telegram chat. Review copy only; never publishes, never
+      # blocks or retries the render. Skips silently until both secrets exist.
+      - name: Deliver to owner's Telegram (review copy, not a publication)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 12
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          KCI_RESULT: ${{ job.status }}
+          KCI_EDITION: ${{ github.event.issue.title || inputs.job }}
+          KCI_JOB_PATH: ${{ env.KCI_SELECTED_JOB }}
+        run: node scripts/send-telegram.mjs
