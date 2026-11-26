@@ -29,3 +29,19 @@ jobs:
             .then(r=>r.json()).then(b=>{if(!b.ok){console.error("::error::Telegram: "+(b.description||"lỗi"));process.exit(1)}console.log("Telegram OK")})
             .catch(e=>{console.error("::error::"+String(e.message).replace(/bot\d+:[\w-]+/g,"bot[ẩn]"));process.exit(1)});
           '
+      - name: Check the bot can post to the channel (posts nothing)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight' }}
+        run: |
+          node -e '
+            const t=process.env.TELEGRAM_BOT_TOKEN.trim(), ch=process.env.TELEGRAM_CHANNEL_ID.trim(), api="https://api.telegram.org/bot"+t+"/";
+            (async()=>{
+              const me=await (await fetch(api+"getMe")).json();
+              const m=await (await fetch(api+"getChatMember?chat_id="+encodeURIComponent(ch)+"&user_id="+me.result.id)).json();
+              if(!m.ok){console.error("::error::Kênh "+ch+": "+(m.description||"lỗi"));process.exit(1)}
+              const ok=m.result.status==="creator"||(m.result.status==="administrator"&&m.result.can_post_messages!==false);
+              if(!ok){console.error("::error::Bot chưa có quyền đăng bài ở "+ch+" (status="+m.result.status+")");process.exit(1)}
+              console.log("Bot có quyền đăng bài ở "+ch);
+            })().catch(e=>{console.error("::error::"+String(e.message).replace(/bot\d+:[\w-]+/g,"bot[ẩn]"));process.exit(1)});
+          '
