@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-26-us-am",
+  "edition": "GLOBAL_US / US_AM — 26/11/2026 KST",
+  "dataAsOf": "2026-11-26T09:06:00+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall thu hẹp đà giảm; PCE Mỹ 3,8%, GDP tăng 4,3%",
+  "scriptTitle": "KCI | Phố Wall thu hẹp đà giảm, PCE và GDP Mỹ tạo sức ép gì?",
+  "sourceDisclaimer": "Phiên Mỹ 25/11 kết thúc trước sáng 26/11 KST, giờ mùa đông EST. Các số liệu BEA là kỳ tháng 10 (PCE) và quý III (GDP). Nhận định về Hàn Quốc có điều kiện và không phải khuyến nghị giao dịch.",
+  "metadata": {
+    "stream": "GLOBAL_US",
+    "slot": "US_AM",
+    "articleId": "KCI-20261126-US-AM",
+    "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+    "editingProfile": "KCI_EDIT_20261026_V1",
+    "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+    "inputType": "tts_motion",
+    "variationReview": "A04 transmission chain + H01 reversal, unlike prior index-first hooks; latest 7 editions not all accessible for manual line-by-line review.",
+    "caption": "📉 Phố Wall thu hẹp đà giảm, PCE Mỹ vẫn cao. Hàn Quốc cần chú ý gì? #KCI #PhoWall",
+    "eventKeys": [
+      "US|EQUITIES_CLOSE|2026-11-25",
+      "BEA|PCE_OCT|2026-11-25",
+      "BEA|GDP_Q3_SECOND|2026-11-25"
+    ]
+  },
+  "sourceLedger": [
+    {
+      "id": "ap-us-close",
+      "title": "AP: How major US stock indexes fared Wednesday November 25, 2026",
+      "url": "https://apnews.com/article/94fdb0ecb060ec65c0b02879ce0d2d09",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "November 25 US close: S&P 500 down approximately 0.3% after dropping as much as 3.2% intraday; Dow Jones up 164.25 points to 50,182.95; Nasdaq down 147.73 points to 23,585.80."
+      ]
+    },
+    {
+      "id": "reuters-us-close",
+      "title": "Reuters: Nasdaq and S&P 500 retreat but end well off lows, Nov 25",
+      "url": "https://ca.marketscreener.com/news/nasdaq-s-p-500-end-down-but-well-off-lows-as-investors-buy-bargains-ce7851d8da81ff22",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "The S&P 500 and Nasdaq closed down but recovered much of intraday losses before Thanksgiving; buying after early selloff and uncertainty about AI-related equities."
+      ]
+    },
+    {
+      "id": "bea-pce-oct",
+      "title": "BEA: Personal Income and Outlays October 2026, published Nov 25",
+      "url": "https://bea.gov/news/2026/personal-income-and-outlays-october-2026",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "October 2026 headline PCE price index +0.3% month over month and +3.8% year over year.",
+        "October 2026 core PCE +0.3% month over month and +3.3% year over year.",
+        "Real PCE spending fell less than 0.1% month over month; current-dollar PCE rose 0.3%."
+      ]
+    },
+    {
+      "id": "bea-gdp-q3",
+      "title": "BEA: US real GDP Q3 2026 second estimate, published Nov 25",
+      "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "US real GDP Q3 2026 increased 4.3% at an annualized rate according to the second estimate, released November 25.",
+        "The 4.3% is annualized quarter over quarter growth, not year over year growth."
+      ]
+    },
+    {
+      "id": "reuters-bond",
+      "title": "Reuters: US Treasury yields decline Wednesday as equities pare sharp losses",
+      "url": "https://www.livemint.com/market/us-yields-fall-but-move-off-lows-as-stocks-pare-sharp-losses/amp-11795635802694.html",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "secondary",
+      "facts": [
+        "US Treasury yields fell on Nov 25 but moved off intraday lows as equity losses narrowed. Avoid claiming an exact US10Y close here."
+      ]
+    },
+    {
+      "id": "ap-calendar",
+      "title": "US equities Thanksgiving closing calendar — Nov 26 holiday, Nov 27 shortened session",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-26T09:06:00+09:00",
+      "kind": "primary",
+      "facts": [
+        "NYSE is closed on Thanksgiving November 26, 2026, and has a shortened 1:00 pm Eastern close Friday November 27, 2026."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall có lúc giảm hơn ba phần trăm, nhưng cuối phiên đã thu hẹp gần hết đà giảm.",
+    "candidates": [
+      {
+        "style": "reversal",
+        "text": "Phố Wall có lúc giảm hơn ba phần trăm, nhưng cuối phiên đã thu hẹp gần hết đà giảm.",
+        "score": 47
+      },
+      {
+        "style": "macro-contrast",
+        "text": "GDP Mỹ tăng bốn phẩy ba phần trăm, nhưng lạm phát PCE vẫn cao. Fed sẽ cân nhắc điều gì?",
+        "score": 46
+      },
+      {
+        "style": "korea-impact",
+        "text": "Nasdaq thu hẹp đà giảm trước kỳ nghỉ Mỹ. Cổ phiếu chip Hàn Quốc cần tín hiệu nào?",
+        "score": 45
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "spoken": "Theo anh chị, yếu tố nào có thể giúp thị trường bán dẫn ổn định trở lại sau kỳ nghỉ lễ Mỹ? Chia sẻ góc nhìn dưới phần bình luận và theo dõi kênh để cập nhật nhé.",
+    "screenHeadline": "CHIP HÀN QUỐC CẦN TÍN HIỆU GÌ?",
+    "screenSubline": "Chia sẻ góc nhìn · Theo dõi kênh",
+    "question": "Yếu tố nào có thể giúp thị trường bán dẫn ổn định trở lại sau kỳ nghỉ lễ Mỹ?"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Cảnh 1 — Thị trường Mỹ đảo chiều từ mức thấp",
+      "screenText": "GIẢM >3% TRONG PHIÊN · CUỐI PHIÊN HỒI PHỤC",
+      "eyebrow": "PHỐ WALL · 25/11",
+      "headline": "GIẢM SÂU, RỒI THU HẸP ĐÀ GIẢM",
+      "summary": "S&P 500 từ lúc giảm tới 3,2% còn giảm khoảng 0,3% lúc đóng cửa",
+      "source": "AP / Reuters · 25/11 EST",
+      "sourceIds": [
+        "ap-us-close",
+        "reuters-us-close"
+      ],
+      "voiceText": "Phố Wall có lúc giảm hơn ba phần trăm, nhưng cuối phiên đã thu hẹp gần hết đà giảm. S and P năm trăm đóng cửa chỉ còn giảm khoảng không phẩy ba phần trăm. Lực mua trở lại khi thị trường Mỹ chuẩn bị nghỉ lễ Tạ ơn.",
+      "stats": [
+        {
+          "label": "S&P 500 đáy phiên",
+          "value": "−3,2%",
+          "tone": "down"
+        },
+        {
+          "label": "S&P 500 đóng cửa",
+          "value": "~−0,3%",
+          "tone": "down"
+        }
+      ],
+      "visual": {
+        "kind": "reversal",
+        "banner": "−3,2% → ~−0,3%",
+        "milestones": [
+          {
+            "label": "MỨC GIẢM LỚN NHẤT",
+            "value": "−3,2%",
+            "tone": "down"
+          },
+          {
+            "label": "ĐÓNG CỬA",
+            "value": "~−0,3%",
+            "tone": "down"
+          }
+        ],
+        "qualifier": "AP · 25/11; không mô phỏng chart phút"
+      }
+    },
+    {
+      "id": "close",
+      "title": "Cảnh 2 — Nasdaq và Dow phân hóa",
+      "screenText": "NASDAQ GIẢM · DOW TĂNG",
+      "eyebrow": "CHỐT PHIÊN MỸ",
+      "headline": "AI CÒN THẬN TRỌNG",
+      "summary": "Nasdaq giảm khoảng 0,6%; Dow tăng khoảng 0,3%",
+      "source": "AP · đóng cửa 25/11 EST",
+      "sourceIds": [
+        "ap-us-close",
+        "reuters-us-close"
+      ],
+      "voiceText": "Nasdaq mất khoảng không phẩy sáu phần trăm, trong khi Dow Jones tăng khoảng không phẩy ba phần trăm. Nhóm liên quan đến đầu tư trí tuệ nhân tạo vẫn chịu sức ép; một phiên hồi khỏi đáy chưa đủ xác nhận tâm lý thị trường đã ổn định.",
+      "stats": [
+        {
+          "label": "NASDAQ",
+          "value": "~−0,6%",
+          "tone": "down"
+        },
+        {
+          "label": "DOW",
+          "value": "~+0,3%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "NASDAQ",
+            "value": -0.6,
+            "display": "~−0,6%"
+          },
+          {
+            "label": "DOW JONES",
+            "value": 0.3,
+            "display": "~+0,3%"
+          },
+          {
+            "label": "S&P 500",
+            "value": -0.3,
+            "display": "~−0,3%"
+          }
+        ],
+        "qualifier": "Đóng cửa Mỹ 25/11; số làm tròn AP"
+      }
+    },
+    {
+      "id": "pce",
+      "title": "Cảnh 3 — PCE Mỹ tháng 10",
+      "screenText": "PCE THÁNG 10: 3,8% NĂM · CORE 3,3%",
+      "eyebrow": "LẠM PHÁT MỸ · BEA",
+      "headline": "ÁP LỰC GIÁ CHƯA HẠ",
+      "summary": "PCE tháng 10: 3,8% so cùng kỳ, core 3,3%",
+      "source": "BEA · 25/11/2026",
+      "sourceIds": [
+        "bea-pce-oct"
+      ],
+      "voiceText": "Báo cáo chính thức của B E A cho thấy lạm phát P C E tháng mười tăng ba phẩy tám phần trăm so với cùng kỳ. P C E lõi tăng ba phẩy ba phần trăm. Mức giá này có thể khiến Fed thận trọng hơn khi cân nhắc lãi suất, nhưng chưa thể suy ra quyết định cụ thể.",
+      "stats": [
+        {
+          "label": "PCE YoY tháng 10",
+          "value": "3,8%",
+          "tone": "neutral"
+        },
+        {
+          "label": "CORE PCE YoY",
+          "value": "3,3%",
+          "tone": "neutral"
+        }
+      ],
+      "visual": {
+        "kind": "comparison",
+        "bars": [
+          {
+            "label": "PCE YOY",
+            "value": 3.8,
+            "display": "3,8%"
+          },
+          {
+            "label": "CORE PCE YOY",
+            "value": 3.3,
+            "display": "3,3%"
+          }
+        ],
+        "qualifier": "BEA · tháng 10/2026 · so cùng kỳ"
+      }
+    },
+    {
+      "id": "gdp",
+      "title": "Cảnh 4 — GDP Mỹ tăng mạnh",
+      "screenText": "GDP Q3: +4,3% THƯỜNG NIÊN HÓA",
+      "eyebrow": "TĂNG TRƯỞNG KINH TẾ MỸ",
+      "headline": "GDP MỸ TĂNG 4,3%",
+      "summary": "Ước tính lần hai, tăng trưởng thực quý III theo tốc độ năm hóa",
+      "source": "BEA · second estimate 25/11",
+      "sourceIds": [
+        "bea-gdp-q3"
+      ],
+      "voiceText": "Cùng ngày, B E A điều chỉnh ước tính tăng trưởng G D P thực quý ba lên bốn phẩy ba phần trăm theo tốc độ năm hóa. Kinh tế tăng mạnh trong lúc lạm phát còn cao khiến câu chuyện lãi suất và chi phí vốn chưa dễ lắng xuống.",
+      "stats": [
+        {
+          "label": "GDP Q3/2026",
+          "value": "+4,3%",
+          "tone": "up"
+        }
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "+4,3%",
+        "unit": "GDP Q3 · TỐC ĐỘ NĂM HÓA",
+        "qualifier": "Ước tính lần hai · BEA, 25/11"
+      }
+    },
+    {
+      "id": "korea",
+      "title": "Cảnh 5 — Tác động có điều kiện đến Hàn Quốc",
+      "screenText": "KOSPI · CHIP · USD/KRW",
+      "eyebrow": "GÓC NHÌN HÀN QUỐC",
+      "headline": "NHÓM CHIP VÀ TỶ GIÁ CẦN THEO DÕI",
+      "summary": "Chi phí vốn, tâm lý AI, dòng vốn nước ngoài",
+      "source": "KCI · tổng hợp từ AP, BEA, Reuters",
+      "sourceIds": [
+        "ap-us-close",
+        "reuters-bond",
+        "bea-pce-oct",
+        "bea-gdp-q3"
+      ],
+      "voiceText": "Với Hàn Quốc, nếu áp lực định giá A I tại Mỹ kéo dài, cổ phiếu bán dẫn và KOSPI, KOSDAQ có thể chịu tác động tâm lý. Nếu lợi suất Mỹ và đô la mạnh trở lại, chi phí vốn cùng tỷ giá đô la trên won cần theo dõi sát. Ngược lại, lợi nhuận doanh nghiệp và dòng tiền cải thiện có thể giảm bớt sức ép.",
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "NHU CẦU BÁN DẪN",
+          "LỢI SUẤT MỸ · USD/KRW",
+          "DÒNG VỐN NGOẠI"
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "title": "Cảnh kết — Lịch nghỉ lễ và CTA",
+      "screenText": "MỸ NGHỈ LỄ 26/11 · 27/11 ĐÓNG SỚM",
+      "eyebrow": "CÁC MỐC CẦN THEO DÕI",
+      "headline": "THỊ TRƯỜNG MỸ NGHỈ LỄ",
+      "summary": "26/11 nghỉ lễ Tạ ơn; 27/11 đóng cửa sớm",
+      "source": "NYSE · lịch giao dịch 2026",
+      "sourceIds": [
+        "ap-calendar",
+        "bea-pce-oct"
+      ],
+      "voiceText": "Thị trường Mỹ nghỉ Lễ Tạ ơn ngày hai mươi sáu tháng mười một và đóng cửa sớm ngày hai mươi bảy. Sau kỳ nghỉ, hãy theo dõi sức hồi của nhóm chip, tín hiệu lợi suất và phản ứng với dữ liệu lạm phát.",
+      "stats": [],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "MỸ NGHỈ 26/11",
+          "ĐÓNG SỚM 27/11",
+          "CHIP · YIELD · USD/KRW"
+        ],
+        "cta": {
+          "headline": "THỊ TRƯỜNG ỔN ĐỊNH CHƯA?",
+          "subline": "Bình luận góc nhìn · Theo dõi kênh"
+        }
+      }
+    }
+  ],
+  "voiceTestText": "Phố Wall có lúc giảm hơn ba phần trăm, nhưng cuối phiên đã thu hẹp gần hết đà giảm."
+}
