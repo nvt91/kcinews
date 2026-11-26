@@ -169,7 +169,13 @@ jobs:
           python3 -m pip install --quiet --user 'faster-whisper==1.2.1' numpy
           python3 -c 'import faster_whisper; print("faster-whisper ready")'
       - name: Produce preview, Vbee test, or MP4
-        run: node scripts/run-job.mjs
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p out
+          # Keep the render error too, so the issue comment states the real reason
+          # (e.g. Vbee HTTP 400 + Vbee's message) instead of only "RENDER LỖI".
+          node scripts/run-job.mjs 2> >(tee out/failure-reason.txt >&2)
       - name: Preserve audio and review artifacts even if a later render step fails
         id: upload-review
         uses: actions/upload-artifact@v4
