@@ -1,0 +1,40 @@
+name: KCI Market movers post (Telegram, free)
+
+# Owner request 26/11/2026: after the Korean close, post today's indexes, liquid
+# top gainers, leading industries and themes to the Telegram channel.
+# Market data only (Naver Finance / KRX), no opinions or buy/sell calls.
+# Holidays are skipped automatically. Errors go privately to the owner.
+
+on:
+  schedule:
+    - cron: '43 6 * * 1-5'   # 15:43 KST, Monday–Friday
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'owner = gửi thử vào chat riêng; channel = đăng lên kênh'
+        type: choice
+        default: owner
+        options: [owner, channel]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kci-market-movers
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build and send the movers post
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_POST_CHAT: ${{ (github.event_name == 'schedule' || inputs.target == 'channel') && (vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight') || secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/market-movers.mjs
