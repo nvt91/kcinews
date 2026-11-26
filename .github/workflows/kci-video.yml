@@ -216,6 +216,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Public channel: finished videos only (owner request 26/11/2026).
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight' }}
           KCI_RESULT: ${{ job.status }}
           KCI_EDITION: ${{ github.event.issue.title || inputs.job }}
           KCI_JOB_PATH: ${{ env.KCI_SELECTED_JOB }}
