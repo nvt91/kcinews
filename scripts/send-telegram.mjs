@@ -10,11 +10,15 @@ import { fileURLToPath } from "node:url";
 
 const LIMIT = 49 * 1024 * 1024; // Telegram bot upload limit is 50 MB.
 
+// 26/11/2026: personal channel - no KCI branding required in captions.
 const TAGS = {
-  GLOBAL_US: "#KCI #PhoWall #ChungKhoanMy",
-  MACRO: "#KCI #KinhTeHanQuoc",
-  KR_NEWS: "#KCI #ChungKhoanHanQuoc #KOSPI",
+  GLOBAL_US: "#PhoWall #ChungKhoanMy",
+  MACRO: "#KinhTeHanQuoc #ViMo",
+  KR_NEWS: "#ChungKhoanHanQuoc #KOSPI",
 };
+const stripBrand = (text) => String(text)
+  .replace(/\s*#(KCI|KoreaCapitalInsight)\b/gi, "")
+  .replace(/[ \t]+\n/g, "\n").replace(/[ \t]{2,}/g, " ").trim();
 
 function streamOf(job) {
   if (job?.stream && TAGS[job.stream]) return job.stream;
@@ -38,7 +42,7 @@ const cut = (text, max) => {
 // Uses the producer's job.caption; otherwise builds one from the headline.
 export function postCaption(job) {
   const own = typeof job?.caption === "string" ? job.caption.replace(/\s+\n/g, "\n").trim() : "";
-  if (own) return own.slice(0, 1000);
+  if (own) return stripBrand(own).slice(0, 1000);
   const stream = streamOf(job);
   const tags = TAGS[stream];
   const emoji = stream === "GLOBAL_US" ? "🇺🇸" : "🇰🇷";
