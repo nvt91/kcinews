@@ -2,6 +2,10 @@
 
 Owner decision confirmed 3 November 2026. This is the authoritative handoff specification for **every new actual video edition** in the repository, not an instruction to regenerate historical work or alter recurring schedules.
 
+## Automatic Telegram delivery — 26 Nov 2026 (owner request, all streams)
+
+Every `[KCI VIDEO]` render now ends with workflow step "Deliver to owner's Telegram": the finished voiced MP4 (re-encoded under 50 MB only if needed) plus the job's `caption`, labelled `VIDEO ĐÃ RENDER — CHỜ ANH DUYỆT — CHƯA ĐĂNG`, is sent to the owner's private Telegram chat; a failed render sends the exact reason instead. It needs repository secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`; without them it skips. This is a review copy, not a publication. Producers must always fill job `caption` so it arrives with the video. ChatGPT attachment below remains desirable but Telegram is the guaranteed channel.
+
 ## Chat-delivery proof — 04 Nov 2026
 
 A producer or Completion Watch must confirm a real CHAT-VISIBLE playable MP4 before calling any edition delivered. GitHub comments by github-actions[bot], even if older comments contain KCI_VIDEO_NOTIFIED or KCI_PREVIEW_NOTIFIED, are not by themselves proof of a ChatGPT attachment. A GitHub run success or private ZIP artifact is a render receipt only. Check actual prior handoff evidence rather than assuming a marker or a previous conversation delivered the file.
