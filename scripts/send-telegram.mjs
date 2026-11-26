@@ -101,6 +101,7 @@ async function telegram(method, token, form) {
   if (!response.ok || body.ok === false) {
     throw new Error(`Telegram ${method} failed: HTTP ${response.status} ${String(body.description || "").slice(0, 120)}`);
   }
+  return body;
 }
 
 async function main() {
@@ -138,8 +139,23 @@ async function main() {
     const file = fitForTelegram(mp4);
     form.append("supports_streaming", "true");
     form.append("video", new Blob([fs.readFileSync(file)], { type: "video/mp4" }), path.basename(mp4));
-    await telegram("sendVideo", token, form);
+    const sent = await telegram("sendVideo", token, form);
     console.log(`Telegram: sent ${path.basename(mp4)} (${(fs.statSync(file).size / 1048576).toFixed(1)} MB).`);
+    // 26/11/2026 owner request: also post finished videos to the public channel
+    // (TELEGRAM_CHANNEL_ID, e.g. @koreacapitalinsight). Failure notices never go
+    // there. Reuses the uploaded file_id, so the video is not uploaded twice.
+    const channel = process.env.TELEGRAM_CHANNEL_ID?.trim();
+    if (channel && channel !== chatId) {
+      const fileId = sent?.result?.video?.file_id || sent?.result?.document?.file_id;
+      const post = new FormData();
+      post.append("chat_id", channel);
+      post.append("caption", caption);
+      post.append("supports_streaming", "true");
+      if (fileId) post.append("video", fileId);
+      else post.append("video", new Blob([fs.readFileSync(file)], { type: "video/mp4" }), path.basename(mp4));
+      await telegram("sendVideo", token, post);
+      console.log(`Telegram: posted to channel ${channel}.`);
+    }
   } else {
     const text = new FormData();
     text.append("chat_id", chatId);
