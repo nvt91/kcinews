@@ -1,0 +1,31 @@
+name: KCI Telegram test (free, no Vbee)
+
+# Sends one text message to the owner's Telegram to confirm the bot secrets work.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Send test message
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          node -e '
+            const t=process.env.TELEGRAM_BOT_TOKEN?.trim(), c=process.env.TELEGRAM_CHAT_ID?.trim();
+            if(!t||!c){console.error("::error::Thiếu TELEGRAM_BOT_TOKEN hoặc TELEGRAM_CHAT_ID");process.exit(1)}
+            fetch("https://api.telegram.org/bot"+t+"/sendMessage",{method:"POST",headers:{"content-type":"application/json"},
+              body:JSON.stringify({chat_id:c,text:"✅ KCI: kết nối Telegram thành công. Video render xong sẽ tự gửi về đây."})})
+            .then(r=>r.json()).then(b=>{if(!b.ok){console.error("::error::Telegram: "+(b.description||"lỗi"));process.exit(1)}console.log("Telegram OK")})
+            .catch(e=>{console.error("::error::"+String(e.message).replace(/bot\d+:[\w-]+/g,"bot[ẩn]"));process.exit(1)});
+          '
