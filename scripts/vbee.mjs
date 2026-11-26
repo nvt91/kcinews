@@ -35,7 +35,20 @@ async function jsonRequest(url, config) {
     throw new Error("Vbee request timed out or network failed. No automatic retry of POST.");
   }
   if (!response.ok) {
-    throw new Error("Vbee returned HTTP " + response.status + " (" + (config?.method || "GET") + ").");
+    // 26/11/2026: surface Vbee's own error text (e.g. quota/characters, invalid
+    // voice, text rejected) so the failed-render issue comment says why.
+    let detail = "";
+    try {
+      const raw = await response.text();
+      let msg = raw;
+      try { const j = JSON.parse(raw); msg = j?.error_message ?? j?.message ?? j?.error ?? j?.msg ?? j?.data?.message ?? raw; } catch {}
+      detail = String(typeof msg === "string" ? msg : JSON.stringify(msg))
+        .replace(/https?:\/\/\S+/gi, "[url]")
+        .replace(/[A-Za-z0-9_\-.]{24,}/g, "[ẩn]")
+        .replace(/\s+/g, " ").trim().slice(0, 180);
+    } catch {}
+    throw new Error("Vbee returned HTTP " + response.status + " (" + (config?.method || "GET") + ")" +
+      (detail ? ": " + detail : ".") );
   }
   try { return await response.json(); }
   catch { throw new Error("Vbee returned unexpected non-JSON."); }
