@@ -10,9 +10,53 @@ import { fileURLToPath } from "node:url";
 
 const LIMIT = 49 * 1024 * 1024; // Telegram bot upload limit is 50 MB.
 
+const TAGS = {
+  GLOBAL_US: "#KCI #PhoWall #ChungKhoanMy",
+  MACRO: "#KCI #KinhTeHanQuoc",
+  KR_NEWS: "#KCI #ChungKhoanHanQuoc #KOSPI",
+};
+
+function streamOf(job) {
+  if (job?.stream && TAGS[job.stream]) return job.stream;
+  const id = String(job?.id || "");
+  if (/us-am|global/.test(id)) return "GLOBAL_US";
+  if (/macro/.test(id)) return "MACRO";
+  return "KR_NEWS";
+}
+
+const cut = (text, max) => {
+  const t = String(text || "").replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  // Prefer a whole clause (text before ":" or ";") over a mid-sentence cut.
+  const clause = t.split(/\s*[:;]\s*/)[0];
+  if (clause.length >= 20 && clause.length <= max) return clause;
+  return t.slice(0, max).replace(/\s+\S*$/, "").replace(/[,:;–—-]+$/, "") + "…";
+};
+
+// 26/11/2026 owner request: the Telegram copy must be ready to post as-is —
+// only a short, friendly caption plus hashtags (no labels, no run links).
+// Uses the producer's job.caption; otherwise builds one from the headline.
+export function postCaption(job) {
+  const own = typeof job?.caption === "string" ? job.caption.replace(/\s+\n/g, "\n").trim() : "";
+  if (own) return own.slice(0, 1000);
+  const stream = streamOf(job);
+  const tags = TAGS[stream];
+  const emoji = stream === "GLOBAL_US" ? "🇺🇸" : "🇰🇷";
+  const headline = String(job?.headline || job?.edition || "Bản tin KCI").replace(/[.!?…\s]+$/, "");
+  if (stream === "GLOBAL_US") {
+    // GLOBAL_US caption: 50–100 characters in total, hashtags included.
+    const room = 100 - tags.length - emoji.length - 3;
+    return `${emoji} ${cut(headline, room)}\n${tags}`;
+  }
+  const question = typeof job?.cta?.question === "string" ? " " + job.cta.question.trim() : "";
+  // KR_NEWS / MACRO: under 50 words in total, hashtags included.
+  const body = cut(`${headline}.${question}`, 230);
+  return `${emoji} ${body}\n${tags}`;
+}
+
 export function buildCaption({ edition, job, runUrl, result, reason }) {
-  const title = String(edition || job?.id || "KCI").replace(/\s+/g, " ").trim().slice(0, 120);
   if (result !== "success") {
+    const title = String(edition || job?.id || "KCI").replace(/\s+/g, " ").trim().slice(0, 120);
     return [
       `❌ KCI — RENDER LỖI`,
       title,
@@ -21,15 +65,7 @@ export function buildCaption({ edition, job, runUrl, result, reason }) {
       "Sửa job rồi Đóng → Mở lại issue để render lại.",
     ].join("\n").slice(0, 1000);
   }
-  const caption = typeof job?.caption === "string" ? job.caption.trim() : "";
-  return [
-    `✅ ${title}`,
-    "VIDEO ĐÃ RENDER — CHỜ ANH DUYỆT — CHƯA ĐĂNG",
-    "",
-    caption ? `Caption đề xuất:\n${caption}` : "Caption: (job chưa có caption)",
-    "",
-    `Run: ${runUrl}`,
-  ].join("\n").slice(0, 1000);
+  return postCaption(job);
 }
 
 function findMp4(outDir) {
