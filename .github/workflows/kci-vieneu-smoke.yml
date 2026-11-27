@@ -1,0 +1,50 @@
+name: KCI VieNeu voice smoke (no Vbee, no publish)
+on:
+  pull_request:
+    paths:
+      - 'scripts/vieneu-voice.py'
+      - 'scripts/requirements-vieneu.txt'
+      - 'scripts/run-job.mjs'
+      - '.github/workflows/kci-vieneu-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned VieNeu CPU backend
+        run: |
+          python -m venv .venv-vieneu
+          .venv-vieneu/bin/python -m pip install -r scripts/requirements-vieneu.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Synthesize actual KCI test phrase through the runner
+        env:
+          KCI_TTS_PROVIDER: vieneu
+          KCI_VIENEU_PYTHON: .venv-vieneu/bin/python
+        run: |
+          node scripts/run-job.mjs --mode=voice-test --job=jobs/kci-2026-11-27-us-am.json
+          test -s out/vieneu-voice-test.mp3
+          ffprobe -v error -show_streams -show_format -of json out/vieneu-voice-test.mp3 > out/vieneu-test-probe.json
+          ffmpeg -v error -i out/vieneu-voice-test.mp3 -f null -
+          ffmpeg -hide_banner -i out/vieneu-voice-test.mp3 -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null - 2> out/vieneu-loudness.txt
+      - name: Preserve test evidence (no Telegram)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kci-vieneu-thuy-dung-1x-${{ github.run_id }}
+          path: |
+            out/vieneu-voice-test.mp3
+            out/vieneu-test-probe.json
+            out/vieneu-loudness.txt
+          if-no-files-found: warn
+          retention-days: 7
