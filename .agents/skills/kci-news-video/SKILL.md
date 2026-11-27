@@ -1,9 +1,13 @@
 ---
 name: kci-news-video
-description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news, from a verified brief and strong truthful hook to script, follow/comment/save CTA, Vbee Anh Khôi Tin tức narration, Remotion motion graphics, and MP4 quality control. Use for "bản tin KCI", "video chứng khoán Hàn Quốc", "brief vĩ mô", "kịch bản hook và CTA" and recurring news-video requests.
+description: Produce Korea Capital Insight Vietnamese Korea-stock and macro news, from a verified brief and strong truthful hook to script, follow/comment/save CTA, VieNeu Thùy Dung native 1x narration, Remotion motion graphics, and MP4 quality control. Use for "bản tin KCI", "video chứng khoán Hàn Quốc", "brief vĩ mô", "kịch bản hook và CTA" and recurring news-video requests.
 ---
 
 # KCI News Video — Production Skill v2.0
+
+## CHỈ ĐẠO GIỌNG ĐỌC 27/11/2026 — VIENEU THÙY DUNG 1X (ưu tiên cao nhất về TTS)
+
+Đọc [VOICE_PROFILE.md](references/VOICE_PROFILE.md). Sau khi bản tích hợp được merge và kiểm thử audio thật, mặc định mọi video MỚI KR_AM, KR_MID khi đủ gate, KR_CLOSE, MACRO21, GLOBAL_US/US_AM dùng **VieNeu-TTS v3 Turbo, preset Thùy Dung (nữ miền Nam, tin tức), tốc độ tự nhiên 1x**. Không dùng lại chỉ thị Anh Khôi/Vbee cũ làm điều kiện bắt buộc; chúng là lịch sử, Vbee chỉ dùng khi chủ kênh yêu cầu fallback cụ thể. Không tự chuyển giọng hay gọi paid Vbee nếu VieNeu lỗi. Runner đọc manifest một lần, xuất MP3 theo cảnh, căn theo audio thật và render Remotion. Ghi voiceProvider/voiceName/voiceSpeed vào job mới, đối chiếu QC thực. Không yêu cầu render lại bản cũ hoặc thay giờ/Secrets/chính sách đăng bài. Các quy chuẩn Newsroom cá nhân, CTA, GITHUB_HANDOFF, chống trùng, nguồn, duyệt MP4 giữ nguyên.
 
 ## CHỈ ĐẠO VẬN HÀNH 27/11/2026 — GITHUB HANDOFF FIRST (ưu tiên cao nhất về trình tự sản xuất)
 

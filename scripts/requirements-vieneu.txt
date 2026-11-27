@@ -1,0 +1,3 @@
+# Pinned official upstream SDK source. Model downloaded at runtime from the official Hugging Face repository.
+# Apache-2.0: https://github.com/pnnbao97/VieNeu-TTS
+vieneu @ git+https://github.com/pnnbao97/VieNeu-TTS.git@2e3532fd65c00fc1862cf8ba89f309899453b4f7
