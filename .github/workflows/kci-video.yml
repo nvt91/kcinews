@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "validate or preview are no-Vbee runs; voice-test and video invoke paid Vbee requests"
+        description: "validate or preview are silent/no TTS; voice-test and video use VieNeu unless Vbee explicitly selected"
         type: choice
         required: true
         default: validate
@@ -18,6 +18,14 @@ on:
         type: string
         required: true
         default: jobs/kci-2026-10-23.json
+      tts_provider:
+        description: "VieNeu Thuy Dung 1x by default; Vbee is explicit fallback only"
+        type: choice
+        required: true
+        default: vieneu
+        options:
+          - vieneu
+          - vbee
   pull_request:
     paths:
       - 'src/**'
@@ -92,13 +100,15 @@ jobs:
        (startsWith(github.event.issue.title, '[KCI VOICE TEST]') ||
         startsWith(github.event.issue.title, '[KCI VIDEO]')))
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 55
     permissions:
       contents: read
       issues: write
     env:
       KCI_JOB: ${{ inputs.job }}
       KCI_MODE: ${{ inputs.mode }}
+      KCI_TTS_PROVIDER: ${{ inputs.tts_provider || 'vieneu' }}
+      KCI_VIENEU_PYTHON: .venv-vieneu/bin/python
       VBEE_APP_ID: ${{ secrets.VBEE_APP_ID }}
       VBEE_API_TOKEN: ${{ secrets.VBEE_API_TOKEN }}
       VBEE_VOICE_CODE: n_hanoi_male_anhkhoitintuc_zero_shot_news_vc
@@ -149,10 +159,22 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           command -v ffprobe
           command -v ffmpeg
+      - name: Prepare Python for VieNeu CPU voice
+        if: env.KCI_TTS_PROVIDER == 'vieneu' && (github.event_name == 'issues' || inputs.mode == 'video' || inputs.mode == 'voice-test')
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned VieNeu TTS backend
+        if: env.KCI_TTS_PROVIDER == 'vieneu' && (github.event_name == 'issues' || inputs.mode == 'video' || inputs.mode == 'voice-test')
+        timeout-minutes: 12
+        run: |
+          python -m venv .venv-vieneu
+          .venv-vieneu/bin/python -m pip install -r scripts/requirements-vieneu.txt
       # Vbee synthesis is verified by its API response and authenticated polling in
       # scripts/vbee.mjs. The callback Worker is telemetry, not the output source.
       # Do not block an otherwise valid paid render solely on its health GET.
       - name: Check Cloudflare callback Worker (advisory; Vbee polling remains required)
+        if: env.KCI_TTS_PROVIDER == 'vbee'
         continue-on-error: true
         run: node scripts/check-worker.mjs
       # 17/11/2026 step 1: per-word caption timing measured on the real Vbee audio.
