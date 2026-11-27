@@ -210,7 +210,8 @@ jobs:
       # owner's private Telegram chat. Review copy only; never publishes, never
       # blocks or retries the render. Skips silently until both secrets exist.
       - name: Deliver to owner's Telegram (review copy, not a publication)
-        # [REVIEW ONLY] issues: private copy to the owner only, never the public channel.
+        # Owner request 27/11/2026: every finished video auto-posts to the channel,
+        # including issues titled [REVIEW ONLY]. Failures stay private.
         if: always()
         continue-on-error: true
         timeout-minutes: 12
@@ -218,7 +219,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           # Public channel: finished videos only (owner request 26/11/2026).
-          TELEGRAM_CHANNEL_ID: ${{ !contains(github.event.issue.title || '', '[REVIEW ONLY]') && (vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight') || '' }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight' }}
           KCI_RESULT: ${{ job.status }}
           KCI_EDITION: ${{ github.event.issue.title || inputs.job }}
           KCI_JOB_PATH: ${{ env.KCI_SELECTED_JOB }}
