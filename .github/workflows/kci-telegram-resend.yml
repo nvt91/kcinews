@@ -11,6 +11,10 @@ on:
         description: 'Run ID of a successful KCI News Video run (number in the run URL)'
         required: true
         type: string
+      post_channel:
+        description: 'Also post to the public Telegram channel'
+        type: boolean
+        default: false
 
 permissions:
   actions: read
@@ -48,4 +52,5 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           KCI_RESULT: success
+          TELEGRAM_CHANNEL_ID: ${{ inputs.post_channel && (vars.TELEGRAM_CHANNEL_ID || '@koreacapitalinsight') || '' }}
         run: node scripts/send-telegram.mjs
