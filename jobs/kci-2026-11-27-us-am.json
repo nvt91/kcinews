@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 2,
+  "id": "kci-2026-11-27-us-am",
+  "articleId": "KCI-20261127-US-AM",
+  "stream": "GLOBAL_US",
+  "slot": "US_AM",
+  "edition": "GLOBAL_US / US_AM — 27/11/2026 KST",
+  "format": "digest",
+  "dataAsOf": "2026-11-27T09:46:54+09:00",
+  "status": "REVIEW_REQUIRED",
+  "template": "KciNewsDaily",
+  "headline": "Phố Wall nghỉ lễ, Brent vượt 96 USD: Hàn Quốc cần theo dõi gì?",
+  "scriptTitle": "Phố Wall nghỉ lễ, giá dầu và chi phí nhập khẩu Hàn Quốc",
+  "voiceName": "Anh Khôi Tin tức",
+  "voiceCode": "n_hanoi_male_anhkhoitintuc_zero_shot_news_vc",
+  "editingProfile": "KCI_EDIT_20261026_V1",
+  "metadata": {
+    "articleId": "KCI-20261127-US-AM",
+    "stream": "GLOBAL_US",
+    "slot": "US_AM",
+    "newsroomStyle": "PERSONAL_FINANCIAL_NEWSROOM_V1",
+    "reviewOnly": true,
+    "articlePath": "editorial/2026-11-27/us-am.md",
+    "eventKeys": [
+      "us-thanksgiving-2026-11-26",
+      "brent-close-2026-11-26",
+      "us-chip-2026-11-25"
+    ]
+  },
+  "sourceDisclaimer": "US cash equities were closed November 26; chip change is November 25 close, oil is November 26 settlement. Reuters and News1-derived Korean report agree on Brent price $96.57; percentage change omitted because reported amount and percentage conflict. No claims of current Korean equity prices. Transmission to Korean costs is conditional, not a measured outcome. KNOC homepage open returned stale data, excluded as primary price evidence.",
+  "sourceLedger": [
+    {
+      "id": "nyse-calendar",
+      "title": "NYSE official Holidays & Trading Hours 2026",
+      "url": "https://www.nyse.com/trade/hours-calendars?os=0",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-27T09:46:54+09:00",
+      "kind": "primary",
+      "facts": [
+        "NYSE holiday Thursday November 26, 2026; early close 13:00 ET Friday November 27."
+      ]
+    },
+    {
+      "id": "reuters-oil",
+      "title": "Reuters November 26 Brent settlement and supply concerns",
+      "url": "https://www.reuters.com/business/energy/oil-rises-supply-concerns-iran-claims-mine-strikes-ships-2026-11-26/",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-27T09:46:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Brent futures settled at USD96.57 per barrel; reporting identifies renewed Middle East supply concerns.",
+        "Percentage change omitted because the article's absolute change and percentage are inconsistent."
+      ]
+    },
+    {
+      "id": "news1-oil",
+      "title": "NewDaily November 27 citing News1 on November 26 Brent",
+      "url": "https://www.newdaily.co.kr/site/data/html/2026/11/27/2026112750015.html",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-27T09:46:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Korean report at 07:44 KST cites News1: Brent futures settled at USD96.57 on November 26."
+      ]
+    },
+    {
+      "id": "reuters-equities",
+      "title": "Reuters syndicated report on November 25 US equities",
+      "url": "https://wealthinsights.metrobank.com.ph/news/global-markets-world-stocks-tumble-as-trump-tariffs-rattle-markets-ai-rally-fades",
+      "eventDate": "2026-11-25",
+      "checkedAt": "2026-11-27T09:46:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "Nvidia fell more than 8% intraday and closed down 3.91% on November 25; AI stock weakness preceded Thanksgiving."
+      ]
+    },
+    {
+      "id": "ap-holiday",
+      "title": "AP November 26 global stocks and US Thanksgiving holiday",
+      "url": "https://apnews.com/article/320cd8c9c286a7773797bf2f478ef314",
+      "eventDate": "2026-11-26",
+      "checkedAt": "2026-11-27T09:46:54+09:00",
+      "kind": "secondary",
+      "facts": [
+        "AP reported US cash market closed for Thanksgiving and Nvidia fell approximately 3.9% in the preceding session."
+      ]
+    }
+  ],
+  "hook": {
+    "spoken": "Phố Wall nghỉ lễ Tạ ơn, nhưng thị trường năng lượng vẫn biến động. Dầu Brent đã vượt chín mươi sáu đô la một thùng.",
+    "candidates": [
+      {
+        "style": "cross-market-contrast",
+        "text": "Phố Wall nghỉ lễ Tạ ơn, nhưng thị trường năng lượng vẫn biến động. Dầu Brent đã vượt chín mươi sáu đô la một thùng.",
+        "score": 48
+      },
+      {
+        "style": "korea-cost-channel",
+        "text": "Giá dầu Brent vượt chín mươi sáu đô la một thùng. Chi phí nhập khẩu của Hàn Quốc có thể chịu tác động ra sao?",
+        "score": 46
+      },
+      {
+        "style": "holiday-context",
+        "text": "Thị trường Mỹ không có phiên đóng cửa mới vì nghỉ lễ Tạ ơn. Hai tín hiệu quốc tế vẫn đáng theo dõi.",
+        "score": 44
+      }
+    ]
+  },
+  "cta": {
+    "type": "comment",
+    "question": "Nếu giá dầu duy trì ở mức cao, mọi người sẽ theo dõi dữ liệu nào để đánh giá tác động lên kinh tế Hàn Quốc?",
+    "spoken": "Nếu giá dầu duy trì ở mức cao, mọi người sẽ theo dõi dữ liệu nào để đánh giá tác động lên kinh tế Hàn Quốc? Cùng trao đổi ở phần bình luận và theo dõi kênh để cập nhật nhé!",
+    "screenHeadline": "TÍN HIỆU NÀO ĐÁNG THEO DÕI?",
+    "screenSubline": "Bình luận góc nhìn · Theo dõi kênh"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Phố Wall nghỉ lễ, dầu tăng",
+      "screenText": "DẦU BRENT VƯỢT 96 USD",
+      "eyebrow": "QUỐC TẾ · SÁNG 27/11",
+      "headline": "DẦU BRENT VƯỢT 96 USD",
+      "summary": "Brent chốt phiên 26/11 · USD/thùng",
+      "voiceText": "Phố Wall nghỉ lễ Tạ ơn, nhưng thị trường năng lượng vẫn biến động. Dầu Brent đã vượt chín mươi sáu đô la một thùng. Với Hàn Quốc, diễn biến này đáng chú ý vì chi phí nhập khẩu năng lượng.",
+      "source": "nyse-calendar · reuters-oil · news1-oil",
+      "sourceIds": [
+        "nyse-calendar",
+        "reuters-oil",
+        "news1-oil"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "96,57 USD",
+        "qualifier": "Brent · chốt 26/11 · mỗi thùng"
+      },
+      "stats": []
+    },
+    {
+      "id": "oil",
+      "title": "Rủi ro nguồn cung",
+      "screenText": "NGUỒN CUNG DẦU CHỊU SỨC ÉP",
+      "eyebrow": "QUỐC TẾ · SÁNG 27/11",
+      "headline": "NGUỒN CUNG DẦU CHỊU SỨC ÉP",
+      "summary": "Lo ngại gián đoạn nguồn cung Trung Đông",
+      "voiceText": "Theo Reuters, lo ngại gián đoạn nguồn cung ở Trung Đông đã hỗ trợ giá dầu. Brent kết phiên ngày hai mươi sáu tháng mười một ở mức chín mươi sáu phẩy năm bảy đô la một thùng. Điều cần phân biệt là mức giá đã được ghi nhận và nguy cơ nguồn cung còn chưa rõ.",
+      "source": "reuters-oil · news1-oil",
+      "sourceIds": [
+        "reuters-oil",
+        "news1-oil"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "96,57 USD",
+        "qualifier": "Giá chốt Brent 26/11, không phải giá trực tiếp"
+      },
+      "stats": []
+    },
+    {
+      "id": "chips",
+      "title": "Nhóm chip trước kỳ nghỉ",
+      "screenText": "NVIDIA GIẢM GẦN 4%",
+      "eyebrow": "QUỐC TẾ · SÁNG 27/11",
+      "headline": "NVIDIA GIẢM GẦN 4%",
+      "summary": "Phiên Mỹ gần nhất · 25/11",
+      "voiceText": "Ở nhóm công nghệ, Nvidia đã giảm gần bốn phần trăm trong phiên Mỹ ngày hai mươi lăm tháng mười một. Do Phố Wall nghỉ lễ ngày hôm sau, chưa có kết quả đóng cửa mới để đánh giá tâm lý ngành chip. Nhà đầu tư Hàn Quốc vẫn cần theo dõi phản ứng của nhóm bán dẫn khi Mỹ giao dịch trở lại.",
+      "source": "nyse-calendar · reuters-equities · ap-holiday",
+      "sourceIds": [
+        "nyse-calendar",
+        "reuters-equities",
+        "ap-holiday"
+      ],
+      "visual": {
+        "kind": "spotlight",
+        "value": "−3,91%",
+        "qualifier": "Nvidia · đóng cửa phiên Mỹ 25/11"
+      },
+      "stats": []
+    },
+    {
+      "id": "transmission",
+      "title": "Kênh tác động đến Hàn Quốc",
+      "screenText": "GIÁ DẦU → CHI PHÍ NHẬP KHẨU",
+      "eyebrow": "QUỐC TẾ · SÁNG 27/11",
+      "headline": "GIÁ DẦU → CHI PHÍ NHẬP KHẨU",
+      "summary": "Tác động có điều kiện, không phải dự báo chắc chắn",
+      "voiceText": "Nếu giá dầu cao kéo dài, doanh nghiệp nhập khẩu nhiên liệu có thể chịu thêm chi phí vận hành. Một đồng won yếu cũng có thể làm hóa đơn nhập khẩu tính bằng won đắt hơn. Mức ảnh hưởng đến lợi nhuận còn phụ thuộc vào hợp đồng mua nhiên liệu, tỷ giá và khả năng chuyển chi phí vào giá bán.",
+      "source": "reuters-oil · news1-oil",
+      "sourceIds": [
+        "reuters-oil",
+        "news1-oil"
+      ],
+      "visual": {
+        "kind": "generic"
+      },
+      "stats": []
+    },
+    {
+      "id": "outro",
+      "title": "Những tín hiệu cần theo dõi",
+      "screenText": "DẦU · TỶ GIÁ · BÁN DẪN",
+      "eyebrow": "QUỐC TẾ · SÁNG 27/11",
+      "headline": "DẦU · TỶ GIÁ · BÁN DẪN",
+      "summary": "NYSE giao dịch rút ngắn ngày 27/11",
+      "voiceText": "Trong những giờ tới, hãy chú ý diễn biến giá dầu, tỷ giá đô la trên won và phản ứng của nhóm chip. Theo lịch NYSE, phiên Mỹ ngày hai mươi bảy tháng mười một sẽ kết thúc sớm. Các tín hiệu mới sẽ giúp đánh giá rõ hơn sức ép chi phí và tâm lý thị trường.",
+      "source": "nyse-calendar · reuters-oil · reuters-equities",
+      "sourceIds": [
+        "nyse-calendar",
+        "reuters-oil",
+        "reuters-equities"
+      ],
+      "visual": {
+        "kind": "closing",
+        "bullets": [
+          "Brent và nguồn cung",
+          "USD/KRW",
+          "Nhóm bán dẫn"
+        ]
+      },
+      "stats": []
+    }
+  ],
+  "voiceTestText": "Phố Wall nghỉ lễ Tạ ơn, nhưng thị trường năng lượng vẫn biến động. Dầu Brent đã vượt chín mươi sáu đô la một thùng.",
+  "caption": "Phố Wall nghỉ lễ, Brent vượt 96 USD. Hàn Quốc chịu tác động thế nào? #ChungKhoan"
+}
