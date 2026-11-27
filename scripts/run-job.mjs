@@ -5,6 +5,10 @@ import { synthesizeVbee, checkVbeeSettings } from "./vbee.mjs";
 import { validateKciJob } from "./validate-kci-job.mjs";
 
 const FPS = 30;
+// Owner selection 27/11: VieNeu by default, Vbee only by explicit override.
+const ttsProvider = process.env.KCI_TTS_PROVIDER || "vieneu";
+if (!["vieneu","vbee"].includes(ttsProvider)) throw new Error("Unsupported KCI_TTS_PROVIDER");
+const voiceEvidence = ttsProvider === "vieneu" ? {provider:"vieneu",model:"v3turbo",voice:"Thùy Dung",speed:1,sourceSampleRate:48000} : {provider:"vbee",voiceCode:process.env.VBEE_VOICE_CODE || null};
 const explicitMode = process.argv.find(x => x.startsWith("--mode="))?.split("=")[1];
 const explicitJob = process.argv.find(x => x.startsWith("--job="))?.slice(6);
 let mode = explicitMode || process.env.KCI_MODE || "validate";
@@ -55,9 +59,22 @@ console.log("Validated", job.id, job.scenes.length, "scenes.");
 if (mode !== "validate") {
   const out = path.resolve("out");
   fs.mkdirSync(out, {recursive:true});
-  if (mode === "video" || mode === "voice-test") checkVbeeSettings();
+  const needsVoice = mode === "video" || mode === "voice-test";
+  if (needsVoice && ttsProvider === "vbee") checkVbeeSettings();
   const voiceDir = path.resolve("public/voice");
   if (mode === "video" || mode === "voice-test") fs.mkdirSync(voiceDir, {recursive:true});
+  const narrationFor = (scene,i) => scene.voiceText +
+    (dailyJob && i===job.scenes.length-1 && !scene.voiceText.includes(job.cta.spoken) ? " " + job.cta.spoken : "");
+  if (needsVoice && ttsProvider === "vieneu") {
+    const texts = mode === "voice-test" ? [{text:job.voiceTestText || job.scenes[0].voiceText}] :
+      job.scenes.map((scene,i)=>({text:narrationFor(scene,i)}));
+    const manifest = path.join(out,"vieneu-manifest.json");
+    fs.writeFileSync(manifest,JSON.stringify(texts,null,2),"utf8");
+    const py = process.env.KCI_VIENEU_PYTHON || ".venv-vieneu/bin/python";
+    // Load once per job. Do not fall back to paid Vbee if synthesis fails.
+    execFileSync(py,["scripts/vieneu-voice.py","--manifest",manifest,"--out-dir",voiceDir],
+      {stdio:"inherit",timeout:1200000});
+  }
   const scenes = [];
   let startFrame = 0;
   for (let i=0; i < job.scenes.length; i++) {
@@ -72,13 +89,15 @@ if (mode !== "validate") {
       (dailyJob && isLastScene && !scene.voiceText.includes(job.cta.spoken) ? " " + job.cta.spoken : ""); // never speak the CTA twice
     if (mode === "voice-test" || mode === "video") {
       const target = path.join(voiceDir, "scene-" + String(i+1).padStart(2,"0") + ".mp3");
-      await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
+      if (ttsProvider === "vbee") await synthesizeVbee(mode === "voice-test" ? (job.voiceTestText || scene.voiceText) : narration,target);
+      if (!fs.existsSync(target) || fs.statSync(target).size === 0) throw new Error("Missing generated audio "+target);
       const output = execFileSync("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",target],{encoding:"utf8"}).trim();
       seconds = Number(output);
       if (!Number.isFinite(seconds) || seconds < 2 || seconds > 95) throw new Error("Invalid voice duration");
       audioFile = "voice/" + path.basename(target);
       if (mode === "voice-test") {
-        fs.copyFileSync(target,path.join(out,"vbee-voice-test.mp3"));
+        fs.copyFileSync(target,path.join(out,ttsProvider+"-voice-test.mp3"));
+        fs.writeFileSync(path.join(out,"voice-profile.json"),JSON.stringify(voiceEvidence,null,2));
         console.log("Voice test complete. Listening approval is required.");
         process.exit(0);
       }
@@ -156,6 +175,6 @@ if (mode !== "validate") {
     const streams=execFileSync("ffprobe",["-v","error","-select_streams","a","-show_entries","stream=codec_name","-of","csv=p=0",outputFile],{encoding:"utf8"}).trim();
     if (!streams) throw new Error("No voice in the exported MP4. Rejecting.");
   }
-  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",wordTiming:scenes.map(s=>s.wordTiming),ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
+  fs.writeFileSync(path.join(out,"qc.json"),JSON.stringify({job:job.id,status:"REVIEW_REQUIRED",mode,voiceProvider:mode==="video"?voiceEvidence:null,voicePresent:mode==="video",subtitles:"Estimated from words; requires listening alignment review",wordTiming:scenes.map(s=>s.wordTiming),ctaIncluded:dailyJob,composition:dailyJob?"KciNewsDaily":"KciNews",published:false},null,2));
   console.log("Output created; human review required:",outputFile);
 }
