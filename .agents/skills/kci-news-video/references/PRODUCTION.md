@@ -1,5 +1,9 @@
 # KCI Production Contract: ChatGPT → GitHub → Vbee → Remotion
 
+## Handoff-first recovery — 27 November 2026 (all five editions)
+
+Read [GITHUB_HANDOFF.md](GITHUB_HANDOFF.md) first. Commit the actual source-verified schema-v2 job to main, read back its blob SHA, confirm the exact-job no-Vbee preflight, then create one owner issue and verify the run. Do not end an eligible run with only a chat script. A new dated path returning 404 is not automatically a connector failure. Sheet sync, optional alignment, unavailable nonessential history and advanced polish are separate from the producer handoff. Keep source, schema, material-news, safety and exact-episode deduplication gates. Render-first means a full voiced review MP4, not approval to publish. Report evidence for each stage and never revoice a finished MP4 to solve delivery.
+
 ## Mandatory delivery after every video run
 
 All five KCI production editions follow [DELIVERY_HANDOFF.md](DELIVERY_HANDOFF.md). The issue-triggered `mode=video` branch produces the voiced MP4 artifact; `mode=preview` in the existing runner is silent. The producer or Completion Watch, using the connected ChatGPT environment, must fetch/verify the actual MP4 and **attach it directly to the ChatGPT reply with the caption** when the file transfer capability exists. An Actions artifact ZIP or issue comment is an intermediate transport, not successful chat delivery. For any inability to attach, report the specific limitation and authenticated artifact link without claiming completion of the direct handoff. GitHub cannot natively push a file into ChatGPT via this workflow. Caption rules: KR/MACRO under 50 words total including hashtags; US_AM 50–100 total Unicode characters. Do not leak private video via a public storage workaround.
