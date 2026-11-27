@@ -45,6 +45,7 @@ jobs:
           path: |
             out/vieneu-voice-test.mp3
             out/vieneu-test-probe.json
+            out/voice-profile.json
             out/vieneu-loudness.txt
           if-no-files-found: warn
           retention-days: 7
