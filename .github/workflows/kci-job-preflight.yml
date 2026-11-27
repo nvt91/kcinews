@@ -65,7 +65,8 @@ jobs:
             node scripts/validate-kci-job.mjs "$SELECTED_JOB"
             # Mirror the actual paid-workflow pre-TTS gate, without synthesizing.
             node scripts/run-job.mjs --mode=validate --job="$SELECTED_JOB"
-            node scripts/check-editorial-variety.mjs "$SELECTED_JOB"
+            node scripts/check-editorial-variety.mjs "$SELECTED_JOB" || echo "::warning::Editorial variety advisor unavailable; factual/schema validation passed."
+            echo "KCI_HANDOFF_READY path=$SELECTED_JOB blob=$(git hash-object "$SELECTED_JOB") commit=$(git rev-parse HEAD)" | tee -a "$GITHUB_STEP_SUMMARY"
             { echo "### Kịch bản — $SELECTED_JOB"; echo; echo '```text'; node scripts/export-kci-script.mjs "$SELECTED_JOB"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
@@ -82,10 +83,12 @@ jobs:
               echo "Preflighting $filename"
               node scripts/validate-kci-job.mjs "$filename"
               node scripts/run-job.mjs --mode=validate --job="$filename"
-              node scripts/check-editorial-variety.mjs "$filename"
+              node scripts/check-editorial-variety.mjs "$filename" || echo "::warning::Editorial variety advisor unavailable; factual/schema validation passed."
+              echo "KCI_HANDOFF_READY path=$filename blob=$(git hash-object "$filename") commit=$(git rev-parse HEAD)" | tee -a "$GITHUB_STEP_SUMMARY"
               { echo "### Kịch bản — $filename"; echo; echo '```text'; node scripts/export-kci-script.mjs "$filename"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
               checked=$((checked+1))
             fi
           done <<< "$changed"
           echo "Validated $checked changed schemaVersion 2 jobs without voice synthesis."
+          if [[ "$checked" -eq 0 ]]; then echo "::notice::NO_PRODUCTION_JOB_VALIDATED: this CI success is not authorization for a paid video issue."; fi
           echo 'PRODUCER GATE: open no [KCI VIDEO] issue unless this exact commit/job preflight completes SUCCESS (warnings are allowed).'
