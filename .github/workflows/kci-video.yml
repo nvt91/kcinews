@@ -210,7 +210,8 @@ jobs:
       # owner's private Telegram chat. Review copy only; never publishes, never
       # blocks or retries the render. Skips silently until both secrets exist.
       - name: Deliver to owner's Telegram (review copy, not a publication)
-        if: always()
+        # Explicit one-off review-only test issues must never send externally.
+        if: ${{ always() && !contains(github.event.issue.title || '', '[REVIEW ONLY]') }}
         continue-on-error: true
         timeout-minutes: 12
         env:
